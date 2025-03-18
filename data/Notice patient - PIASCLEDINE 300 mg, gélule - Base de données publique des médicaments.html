@@ -1,0 +1,330 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="fr" lang="fr">
+<head>
+	<title>Notice patient - PIASCLEDINE 300 mg, gélule  - Base de données publique des médicaments</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=windows-1252"/>
+	<meta name="robots" content="index, follow"/>
+	<meta name="Description" content="Base de données publique des médicaments"/>
+	<meta name="Keywords" content="base, données, publique, médicaments, Notice patient, PIASCLEDINE 300 mg, gélule "/>
+	<meta name="Subject" content="medicament"/>
+	<link href='https://fonts.googleapis.com/css?family=Noticia+Text' rel='stylesheet' type='text/css' />
+	<link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro' rel='stylesheet' type='text/css' />
+	<link href="style/style_bdm.css?v=2.2.3" type="text/css" rel="stylesheet"/>
+	<link href="style/style_RCP_Notice.css" type="text/css" rel="stylesheet"/>
+  <link rel="alternate" href="http://m.base-donnees-publique.medicaments.gouv.fr/#!info-65125261">
+    <script type="text/javascript" src="scripts/autocomplete.js?v=2.2.3"></script>
+	<script type="text/javascript" src="scripts/jquery.js"></script>
+    <script type="text/javascript" src="scripts/jquery-ui.min.js"></script>
+	<script type="text/javascript" src="scripts/common.js"></script>
+	<link rel="icon" type="image/x-icon" href="favicon.ico" />
+</head>
+
+<body>
+
+<a name="HautDePage" />
+<div id="bandeauhaut">
+	<a id="lien_ministere" class="lienmenu" href="http://www.sante.gouv.fr" target="_blank" title="Site du ministère des affaires sociales et de la santé - nouvelle fenêtre"><img id="logoministere" src="img/Logo_Ministere.jpg"  alt="Logo du ministère des affaires sociales et de la santé"/></a>
+	<h1 class="texteTitreSite">
+		Base <span class="texteBleu">de</span> données <span class="texteBleu">publique</span><br/><span class="texteBleu">des</span> médicaments
+	</h1>
+		<a id="lien_medicament_gouv" class="lienEspaceMedic" target="_blank" href="http://medicaments.gouv.fr" title="Visiter [medicaments.gouv.fr] - nouvelle fenêtre">Visiter [medicaments.gouv.fr] <img src="/img/icone_lien.png" alt="Visiter [medicaments.gouv.fr]"  title="Visiter [medicaments.gouv.fr] - nouvelle fenetre" /></a>
+</div>
+<!--div align="center">
+	<a id="banniere" target="_blank" href="http://social-sante.gouv.fr/soins-et-maladies/medicaments/medicaments-generiques/" title="Visiter [medicaments.gouv.fr] - M?dicaments g?n?riques">
+		<img width="1000"   src ="/img/carrouselbannieres.gif" alt="Visiter [medicaments.gouv.fr] - M?dicaments g?n?riques" title="Visiter [medicaments.gouv.fr] - M?dicaments g?n?riques" />
+	</a>
+</div-->
+
+<div id="menuhaut">
+	<span id="menuhaut_gauche">
+		<a id="lien_accueil" class="navigation" href="index.php">Accueil</a>&nbsp;|&nbsp;
+		<a id="lien_glossaire" class="navigation" href="glossaire.php">Glossaire</a>&nbsp;|&nbsp;
+		<a id="lien_aide" class="navigation" href="aide.php">Aide</a>		
+	</span>
+	
+		
+	<span id="menuhaut_dernmaj">
+        <br>Dernière <span title=" 2.4.4
+">mise à jour</span> le 03/03/2025	</span>
+</div>
+
+	<script language="javascript" type="text/javascript">
+		//<![CDATA[ 
+		function Aff(men) {
+			document.write("<ul class=\"menuDoc\">");
+			for(var no_rub=0;no_rub<men.num_rub;no_rub++) {
+				document.write("<li><a class='leftMenu' href='"+menu[no_rub].page+"'>");
+				document.write(men[no_rub].txt);
+				document.write("</a></li>");
+				if (men[no_rub].nb_lien != 0){
+					document.write("<ul class=\"sousMenuDoc\">");
+				}
+				for(var no_lien=0;no_lien<men[no_rub].nb_lien;no_lien++) {
+					document.write("<li><a class='leftMenu' href='"+men[no_rub][no_lien].page+"'>");
+					document.write(men[no_rub][no_lien].txt);
+					document.write("</a></li>");
+				}
+				if (men[no_rub].nb_lien != 0){
+					document.write("</ul>");
+				}
+			}
+			document.write("</ul>");
+		}
+		
+		function CreerMenu(police,imgRub,imgOption,imgOptionFin,hauteur) {
+			this.num_rub=0;
+			this.police=police;
+			this.imgRub=imgRub;
+			this.imgOpt=imgOption;
+			this.imgOptFin=imgOptionFin;
+			this.hauteur=hauteur;
+			this.AddRub=AddRub;
+			this.AddLien=AddLien;
+		}
+		
+		function AddRub(txt,aff,page) {
+			var rub = new Object;
+				rub.txt=txt;
+				rub.aff=aff;
+				rub.page=page;
+				rub.nb_lien=0;
+			this[this.num_rub]=rub;
+			this.num_rub++;
+		}
+
+		function AddLien(txt,page) {
+			var no_rub = this.num_rub-1;
+			var no_lien= this[no_rub].nb_lien;
+			var lien = new Object;
+				lien.txt=txt;
+				lien.page=page;
+			this[no_rub][no_lien]=lien;
+			this[no_rub].nb_lien++;
+		}
+		var menu=new CreerMenu("arial","img/dyn04.gif","img/dyn22.gif","img/dyn55.gif",18);
+		//]]> 
+		menu.AddRub("Description médicament","O","#Ann3bQuestceque");
+			menu.AddRub("Informations","O","#Ann3bInfoNecessaires");
+			menu.AddRub("Utilisation","O","#Ann3bCommentPrendre");
+			menu.AddRub("Effets indésirables","O","#Ann3bEffetsIndesirables");
+			menu.AddRub("Conservation","O","#Ann3bConservation");
+			menu.AddRub("Info. supplémentaires","O","#Ann3bEmballage");
+				</script>
+
+	<div id="container">
+		<div id="leftnav">
+			<div id="cadreMenuGauche">
+				<h2 class="sommaireMenu">Sommaire</h2>
+				<div id="menuGauche">
+					<script language="JavaScript" type="text/javascript">Aff(menu);</script>
+				</div>
+			</div>
+		</div>
+		<div id="contentPrincipal">
+			<div id="boutonsliens">
+				<a id='lien_fiche_info' href='extrait.php?specid=65125261' ><img id="ongletficheinfo" alt="Onglet fiche information" src="img/onglet_fiche_info_vert.png" /></a><a id='lien_rcp' href='affichageDoc.php?specid=65125261&amp;typedoc=R'><img class="onglet" alt="Onglet résumé des caractéristiques du produit" src="img/onglet_rcp_vert.png" /></a><a id='lien_notice' href='affichageDoc.php?specid=65125261&amp;typedoc=N'><img class="onglet" alt="Onglet notice patient" src="img/onglet_notice_gris.png" /></a>			</div>
+			<div class="titredeno">
+				<table summary="" border="0" cellspacing="0">
+					<tr><td colspan="3" height="10px"></td></tr>
+					<tr>
+						<td width="15px">&nbsp;</td>
+						<td width="685px"><h1 class="textedeno">PIASCLEDINE 300 mg, gélule  - Notice patient</h1></td>
+						<td width="43px" class="tdcenter"><a href="Javascript:void(null)" onclick="print();"><img src="img/imprimante.png" height="20px" width="20px" alt="Imprimer le document" title="Imprimer le document" border="0" /></a></td>
+					</tr>
+					<tr><td colspan="3" height="10px"></td></tr>
+				</table>
+			</div>
+			
+			<div id="contentDocument">
+				<div id="textDocument">
+					<p class="DateNotif">ANSM - Mis à jour le : 10/11/2020</p>
+<p class="AmmNoticeTitre1"><a name="Ann3bDenomination">Dénomination du médicament</a></p>
+<p class=AmmCorpsTexteGras align=center style='text-align:center'><a name="_Toc142278999">PIASCLEDINE 300 mg, gélule</a></p>
+<p class=AmmCorpsTexteGras align=center style='text-align:center'>Insaponifiables d’avocat et de soja</p>
+<p class="AmmNoticeTitre1"><a name="Ann3bEncadre">Encadré</a></p>
+<p class=AmmCorpsTexteGras><a name="_Toc142279000">Veuillez lire attentivement cette notice avant de prendre ce médicament car elle contient des informations importantes pour vous.</a></p>
+<p class=AmmCorpsTexte>Vous devez toujours prendre ce médicament en suivant scrupuleusement les informations fournies dans cette notice ou par votre médecin, votre pharmacien ou votre infirmier/ère.</p>
+<p class=AmmListePuces1 style='text-align:justify'><span style='font-family: Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>Gardez cette notice. Vous pourriez avoir besoin de la relire.</p>
+<p class=AmmListePuces1 style='text-align:justify'><span style='font-family: Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>Adressez-vous à votre pharmacien pour tout conseil ou information.</p>
+<p class=AmmListePuces1 style='text-align:justify'><span style='font-family: Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>Si vous ressentez un quelconque effet indésirable, parlez-en à votre médecin, votre pharmacien ou votre infirmier/ère. Ceci s’applique aussi à tout effet indésirable qui ne serait pas mentionné dans cette notice. Voir rubrique 4.</p>
+<p class=AmmListePuces1 style='text-align:justify'><span style='font-family: Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>Vous devez vous adresser à votre médecin si vous ne ressentez aucune amélioration ou si vous vous sentez moins bien.</p>
+<p class="AmmNoticeTitre1"><a name="Ann3bSomm">Que contient cette notice ?</a></p>
+<p class=AmmCorpsTexte style='margin-top:0cm;margin-right:0cm;margin-bottom: 0cm;margin-left:14.2pt;margin-bottom:.0001pt;text-indent:-14.2pt'>1. Qu'est-ce que PIASCLEDINE 300 mg, gélule et dans quels cas est-il utilisé ?</p>
+<p class=AmmCorpsTexte style='margin-top:0cm;margin-right:0cm;margin-bottom: 0cm;margin-left:14.2pt;margin-bottom:.0001pt;text-indent:-14.2pt'>2. Quelles sont les informations à connaître avant de prendre PIASCLEDINE 300 mg, gélule ?</p>
+<p class=AmmCorpsTexte style='margin-top:0cm;margin-right:0cm;margin-bottom: 0cm;margin-left:14.2pt;margin-bottom:.0001pt;text-indent:-14.2pt'>3. Comment prendre PIASCLEDINE 300 mg, gélule ?</p>
+<p class=AmmCorpsTexte style='margin-top:0cm;margin-right:0cm;margin-bottom: 0cm;margin-left:14.2pt;margin-bottom:.0001pt;text-indent:-14.2pt'>4. Quels sont les effets indésirables éventuels ?</p>
+<p class=AmmCorpsTexte style='margin-top:0cm;margin-right:0cm;margin-bottom: 0cm;margin-left:14.2pt;margin-bottom:.0001pt;text-indent:-14.2pt'>5. Comment conserver PIASCLEDINE 300 mg, gélule ?</p>
+<p class=AmmCorpsTexte style='margin-top:0cm;margin-right:0cm;margin-bottom: 0cm;margin-left:14.2pt;margin-bottom:.0001pt;text-indent:-14.2pt'><span style='color:black'>6. Contenu de l’emballage et autres informations.</span></p>
+<h2><a name="Ann3bQuestceque">1. QU’EST-CE QUE PIASCLEDINE 300 mg, gélule ET DANS QUELS CAS EST-IL UTILISE ?</a>&nbsp;&nbsp;<a href='#HautDePage'><img src='img/BackToTop.jpg' width='15px' height='15px' alt='Retour en haut de la page' title='Retour en haut de la page' /></a></h2>
+<p class=AmmCorpsTexte><a name="_Toc142279003">Ce médicament contient une substance active extraite d’huiles d’avocat et de soja. </a></p>
+<p class=AmmCorpsTexte>Ce médicament agit sur les articulations (il appartient au groupe de médicaments appelés autres agents anti-inflammatoires et antirhumatismaux, non stéroïdiens).</p>
+<p class=AmmCorpsTexte>Ce médicament est indiqué chez l’adulte en traitement symptomatique (douleur et gêne lors des mouvements) à effet différé de l'arthrose du genou.</p>
+<p class=AmmCorpsTexte>Ce médicament a une action lente, retardée d'environ 2 mois et son effet peut persister après l'arrêt du traitement.</p>
+<h2><a name="Ann3bInfoNecessaires">2. QUELLES SONT LES INFORMATIONS A CONNAITRE AVANT DE PRENDRE PIASCLEDINE 300 mg, gélule ?</a>&nbsp;&nbsp;<a href='#HautDePage'><img src='img/BackToTop.jpg' width='15px' height='15px' alt='Retour en haut de la page' title='Retour en haut de la page' /></a></h2>
+<p class=AmmCorpsTexteGras><a name="_Toc142279015">Ne prenez jamais PIASCLEDINE 300 mg </a><span style='font-weight:normal'>:</span></p>
+<p class=AmmListePuces1><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>si vous êtes allergique à la substance active ou à l’un des autres composants contenus dans ce médicament, mentionnés dans la rubrique 6.</p>
+<p class=AmmCorpsTexteGras style='margin-top:6.0pt'>Avertissements et précautions</p>
+<p class=AmmCorpsTexte><span lang=FR-BE>Adressez-vous à votre médecin, pharmacien ou votre infirmier/ère avant de prendre </span>PIASCLEDINE 300 mg<span lang=FR-BE>. </span></p>
+<p class=AmmCorpsTexte><span lang=FR-BE>Si vous avez ou avez eu une maladie du foie ou de la vésicule biliaire, prévenez votre médecin ou votre pharmacien avant de prendre PIASCLEDINE. En cas de survenue de signes ou symptômes de problèmes de foie ou de vésicule biliaire, comme des nausées inexpliquées, des vomissements, des douleurs abdominales, une fatigue, une perte d’appétit, un jaunissement de la peau et des yeux (jaunisse) et des urines foncées, arrêtez le traitement et contactez immédiatement votre médecin.</span></p>
+<p class=AmmCorpsTexte><span lang=FR-BE>Arrêtez le traitement et contactez immédiatement votre médecin en cas de survenue de signes et symptômes de réactions allergiques, comme des démangeaisons, une urticaire, une éruption/des rougeurs cutanées, un gonflement du visage, des difficultés respiratoires. </span></p>
+<p class=AmmCorpsTexte style='margin-bottom:0cm;margin-bottom:.0001pt'><span lang=FR-BE>Avant de prendre PIASCLEDINE, prévenez votre médecin ou votre pharmacien si vous êtes traité(e) par des anticoagulants (voir rubrique « Autres médicaments et PIASCLEDINE 300 mg »). </span></p>
+<p class=AmmCorpsTexte style='margin-top:6.0pt'><span lang=FR-BE>Arrêtez le traitement et contactez immédiatement votre médecin en cas de survenue de signes et symptômes de troubles de la coagulation, comme des taches rouges ou violettes sur la peau, des bleus ou ecchymoses spontanés ainsi que des saignements des muqueuses.</span></p>
+<p class=AmmCorpsTexteGras>Enfants et adolescents</p>
+<p class=AmmCorpsTexte>PIASCLEDINE est réservé à l’adulte. Ne donnez pas ce médicament à des enfants et adolescents de moins de 18 ans.</p>
+<p class=AmmCorpsTexteGras>Autres médicaments et PIASCLEDINE 300 mg</p>
+<p class=AmmCorpsTexte>Informez votre médecin ou pharmacien si vous prenez, avez récemment pris ou pourriez prendre tout autre médicament.</p>
+<p class=AmmCorpsTexte>PIASCLEDINE doit être utilisé avec précaution en cas de traitement anticoagulant associé, en raison du risque potentiel de survenue de troubles de la coagulation. </p>
+<p class=AmmCorpsTexteGras>PIASCLEDINE 300 mg avec des aliments et boissons</p>
+<p class=AmmCorpsTexte>Vous pouvez manger et boire normalement pendant l’utilisation de ce médicament.</p>
+<p class=AmmCorpsTexteGras><a name="_Toc142279012">Grossesse, allaitement et fertilité</a></p>
+<p class=AmmCorpsTexte>L’utilisation de PIASCLEDINE 300 mg n’est pas recommandée pendant la grossesse et chez les femmes en âge de procréer n’utilisant pas de contraception.</p>
+<p class=AmmCorpsTexte>PIASCLEDINE 300 mg ne devrait pas être utilisé pendant l’allaitement.</p>
+<p class=AmmCorpsTexte><span lang=FR-BE>Si vous êtes enceinte ou que vous allaitez, si vous pensez être enceinte ou planifiez une grossesse, demandez conseil à votre médecin ou pharmacien avant de prendre ce médicament.</span></p>
+<p class=AmmCorpsTexteGras>Conduite de véhicules et utilisation de machines</p>
+<p class=AmmCorpsTexte><span lang=FR-BE>PIASCLEDINE n’affecte pas l’aptitude à conduire des véhicules ou à utiliser des machines.</span></p>
+<p class=AmmCorpsTexteGras>PIASCLEDINE 300 mg contient :</p>
+<p class=AmmCorpsTexte>Sans objet.</p>
+<h2><a name="Ann3bCommentPrendre">3. COMMENT PRENDRE PIASCLEDINE 300 mg, gélule ?</a>&nbsp;&nbsp;<a href='#HautDePage'><img src='img/BackToTop.jpg' width='15px' height='15px' alt='Retour en haut de la page' title='Retour en haut de la page' /></a></h2>
+<p class=AmmCorpsTexte><a name="_Toc142279021"><span lang=FR-BE>Veillez à toujours prendre ce médicament en suivant exactement les instructions de cette notice ou les indications de votre médecin, ou pharmacien ou infirmier/ère. Vérifiez auprès de votre médecin ou pharmacien ou infirmier/ère en cas de doute.</span></a></p>
+<p class=AmmCorpsTexteGras>Adultes :</p>
+<p class=AmmCorpsTexte>La dose recommandée est d’une gélule par jour au milieu d'un repas.</p>
+<p class=AmmCorpsTexte>Voie orale.</p>
+<p class=AmmCorpsTexte>La gélule doit être avalée entière, avec un grand verre d'eau. Ne pas croquer.</p>
+<p class=AmmCorpsTexte>La durée du traitement sera modulée en fonction des résultats cliniques en sachant que l'effet est retardé de 2 mois environ et qu'il peut persister après l'arrêt du traitement. </p>
+<p class=AmmCorpsTexte>Pour une bonne utilisation de ce médicament, il est indispensable de vous soumettre à une surveillance médicale régulière.</p>
+<p class=AmmCorpsTexteGras>Si vous avez pris plus de PIASCLEDINE 300 mg que vous n’auriez dû</p>
+<p class=AmmCorpsTexte>Les surdosages de PIASCLEDINE peuvent provoquer ou exacerber des troubles gastro-intestinaux et/ou hépatiques. Si vous avez pris une dose de PIASCLEDINE supérieure à la dose recommandée, consultez immédiatement votre médecin ou votre pharmacien.</p>
+<p class=AmmCorpsTexteGras>Si vous oubliez de prendre PIASCLEDINE 300 mg</p>
+<p class=AmmCorpsTexte style='margin-bottom:0cm;margin-bottom:.0001pt'>Ne prenez pas de dose double pour compenser la dose que vous avez oublié de prendre.</p>
+<p class=AmmCorpsTexte>Prenez la dose suivante du médicament comme prévu.</p>
+<p class=AmmCorpsTexteGras>Si vous arrêtez de prendre PIASCLEDINE 300 mg</p>
+<p class=AmmCorpsTexte>Sans objet.</p>
+<p class=AmmCorpsTexte style='margin-top:12.0pt'>Si vous avez d’autres questions sur l’utilisation de ce médicament, demandez plus d’informations à votre médecin, à votre pharmacien ou à votre infirmier/ère.</p>
+<h2><a name="Ann3bEffetsIndesirables">4. QUELS SONT LES EFFETS INDESIRABLES EVENTUELS ?</a>&nbsp;&nbsp;<a href='#HautDePage'><img src='img/BackToTop.jpg' width='15px' height='15px' alt='Retour en haut de la page' title='Retour en haut de la page' /></a></h2>
+<p class=AmmCorpsTexte><a name="_Toc142279023">Comme tous les médicaments, ce médicament peut provoquer des effets indésirables, mais ils ne surviennent pas systématiquement chez tout le monde. Les effets indésirables les plus fréquemment rapportés avec PIASCLEDINE sont des diarrhées, des douleurs abdominales, une gêne en haut de l’abdomen et des nausées.</a></p>
+<p class=AmmAnnexeTitre3>Effets indésirables graves possibles :</p>
+<p class=AmmCorpsTexte><span class=AmmCorpsTexteGrasCar>Contactez immédiatement votre médecin</span> et arrêtez le traitement en cas de survenue de l'un des effets indésirables suivants, qui pourrait être grave et pour lequel vous pourriez avoir besoin d’un traitement médical en urgence : </p>
+<p class=AmmCorpsTexteGras>Signes et symptômes qui peuvent être des signes de réactions allergiques sévères (peu fréquents)<span style='font-weight:normal'> :</span></p>
+<p class=AmmCorpsTexte>Démangeaisons, urticaire, éruption/rougeurs cutanées, gonflement du visage, difficultés respiratoires. </p>
+<p class=AmmCorpsTexteGras>Éruption cutanée intense (rare) </p>
+<p class=AmmCorpsTexteGras>Troubles hépatiques (peu fréquents) :</p>
+<p class=AmmCorpsTexte>Des lésions hépatiques ou une obstruction des canaux biliaires pouvant être associées parfois à un jaunissement de la peau et une augmentation des enzymes hépatiques dans le sang (comme les transaminases, la phosphatase alcaline, la bilirubine et la gamma-glutamyltranspeptidase) peuvent survenir peu fréquemment (voir « Avertissements et précautions » en rubrique 2).</p>
+<p class=AmmAnnexeTitre3>Les autres effets indésirables suivants ont aussi été rapportés :</p>
+<p class=AmmCorpsTexte>Fréquent (pouvant concerner jusqu’à 1 patient sur 10) :</p>
+<p class=AmmListePuces1 style='margin-top:6.0pt;margin-right:0cm;margin-bottom: 6.0pt;margin-left:18.0pt'><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>diarrhées.</p>
+<p class=AmmCorpsTexte>Peu fréquent (pouvant concerner jusqu’à 1 patient sur 100) :</p>
+<p class=AmmListePuces1 style='text-align:justify'><span style='font-family: Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>gêne en haut de l’abdomen, brûlures d’estomac, nausées, goût désagréable dans la bouche pouvant être évité en prenant la gélule au milieu d’un repas (voir rubrique 3), douleur abdominale, décoloration des selles,</p>
+<p class=AmmListePuces1><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>maux de tête,</p>
+<p class=AmmListePuces1><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>urines foncées,</p>
+<p class=AmmListePuces1><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>faiblesse, fatigue,</p>
+<p class=AmmListePuces1 style='margin-top:0cm;margin-right:0cm;margin-bottom: 6.0pt;margin-left:17.85pt;text-indent:-17.85pt'><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>douleur dans les seins, gonflement des seins et saignement gynécologique.</p>
+<p class=AmmCorpsTexte>Rare (pouvant concerner jusqu’à 1 patient sur 1 000) :</p>
+<p class=AmmListePuces1 style='text-align:justify'><span style='font-family: Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>troubles gastro-intestinaux comme : inflammation des intestins, vomissements, sécheresse buccale, éructation (rot),</p>
+<p class=AmmListePuces1><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>eczéma,</p>
+<p class=AmmListePuces1><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>calculs rénaux,</p>
+<p class=AmmListePuces1 style='text-align:justify'><span style='font-family: Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>troubles de la coagulation tels que diminution du nombre de plaquettes<span style='font-size:11.0pt;font-family:"Times New Roman",serif'> </span>sanguines (voir « Avertissements et précautions » en rubrique 2),</p>
+<p class=AmmListePuces1 style='margin-top:0cm;margin-right:0cm;margin-bottom: 6.0pt;margin-left:17.85pt;text-indent:-17.85pt'><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>augmentation de la pression artérielle.</p>
+<p class=AmmCorpsTexteGras style='margin-top:6.0pt'>Déclaration des effets secondaires</p>
+<p class=AmmCorpsTexte>Si vous ressentez un quelconque effet indésirable, parlez-en à votre médecin ou votre pharmacien ou à votre infirmier/ère. Ceci s’applique aussi à tout effet indésirable qui ne serait pas mentionné dans cette notice. Vous pouvez également déclarer les effets indésirables directement via le système national de déclaration : Agence nationale de sécurité du médicament et des produits de santé (ANSM) et réseau des Centres Régionaux de Pharmacovigilance - Site internet:<span style='color:red'> </span><a href="http://www.signalement-sante.gouv.fr">www.signalement-sante.gouv.fr</a><span style='color:red'> </span></p>
+<p class=AmmCorpsTexte>En signalant les effets indésirables, vous contribuez à fournir davantage d’informations sur la sécurité du médicament.</p>
+<h2><a name="Ann3bConservation">5. COMMENT CONSERVER PIASCLEDINE 300 mg, gélule ?</a>&nbsp;&nbsp;<a href='#HautDePage'><img src='img/BackToTop.jpg' width='15px' height='15px' alt='Retour en haut de la page' title='Retour en haut de la page' /></a></h2>
+<p class=AmmCorpsTexte><a name="_Toc142279026"></a><a name="_Toc142279024">Tenir ce médicament hors de la vue et de la portée des enfants. </a></p>
+<p class=AmmCorpsTexte><span lang=FR-BE>N’utilisez pas ce médicament après la date de péremption indiquée sur l’emballage. La date de péremption fait référence au dernier jour de ce mois.</span><span lang=FR-BE> </span></p>
+<p class=AmmCorpsTexte>Pas de précautions particulières de conservation.</p>
+<p class=AmmCorpsTexte><span lang=FR-BE>Ne jetez aucun médicament au tout-à-l’égout <span style='color:black'>ou avec </span>les ordures ménagères. Demandez à votre pharmacien d’éliminer les médicaments que vous n’utilisez plus. Ces mesures contribueront à protéger l’environnement.</span></p>
+<h2><a name="Ann3bEmballage">6. CONTENU DE L’EMBALLAGE ET AUTRES INFORMATIONS</a>&nbsp;&nbsp;<a href='#HautDePage'><img src='img/BackToTop.jpg' width='15px' height='15px' alt='Retour en haut de la page' title='Retour en haut de la page' /></a></h2>
+<p class="AmmAnnexeTitre2"><a name="Ann3bContenu">Ce que contient PIASCLEDINE 300 mg</a>&nbsp;&nbsp;<a href='#HautDePage'><img src='img/BackToTop.jpg' width='15px' height='15px' alt='Retour en haut de la page' title='Retour en haut de la page' /></a></p>
+<p class=AmmListePuces1 style='margin-top:0cm;margin-right:0cm;margin-bottom: 6.0pt;margin-left:17.85pt;text-indent:-17.85pt'><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>La substance active est :</p>
+<p class=AmmComposition>Extrait total d'insaponifiables avocat-soja........................................................................ 300,00 mg</p>
+<p class=AmmCorpsTexte>Correspondant à :</p>
+<p class=AmmComposition>Insaponifiable d'huile d'avocat ........................................................................................ 100,00 mg</p>
+<p class=AmmComposition>Insaponifiable d'huile de soja .......................................................................................... 200,00 mg</p>
+<p class=AmmCorpsTexte align=center style='text-align:center'>Pour une gélule.</p>
+<p class=AmmListePuces1 style='margin-top:0cm;margin-right:0cm;margin-bottom: 6.0pt;margin-left:17.85pt;text-indent:-17.85pt'><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>Les autres composants sont : </p>
+<p class=AmmCorpsTexte>Silice colloïdale anhydre, butylhydroxytoluène</p>
+<p class=AmmCorpsTexte><span class='souligne'>Enveloppe de la gélule</span> : gélatine, polysorbate 80, dioxyde de titane, érythrosine, oxyde de fer jaune.</p>
+<p class="AmmAnnexeTitre2"><a name="RcpEmballage">Qu’est-ce que PIASCLEDINE 300 mg, gélule et contenu de l’emballage extérieur</a>&nbsp;&nbsp;<a href='#HautDePage'><img src='img/BackToTop.jpg' width='15px' height='15px' alt='Retour en haut de la page' title='Retour en haut de la page' /></a></p>
+<p class=AmmCorpsTexte>Ce médicament se présente sous forme de gélule de couleur orange et beige-gris. Boîte de 15, 30, 60 ou 90 gélules.</p>
+<p class="AmmAnnexeTitre2"><a name="Ann3bTituAMM">Titulaire de l’autorisation de mise sur le marché</a>&nbsp;&nbsp;<a href='#HautDePage'><img src='img/BackToTop.jpg' width='15px' height='15px' alt='Retour en haut de la page' title='Retour en haut de la page' /></a></p>
+<p class=AmmCorpsTexteGras style='margin-bottom:0cm;margin-bottom:.0001pt'><a name="_Toc142279031">LABORATOIRES EXPANSCIENCE</a></p>
+<p class=AmmCorpsTexte style='margin-bottom:0cm;margin-bottom:.0001pt'>1 PLACE DES SAISONS</p>
+<p class=AmmCorpsTexte>92048 PARIS LA DEFENSE CEDEX</p>
+<p class="AmmAnnexeTitre2"><a name="Ann3bExploitAMM">Exploitant de l’autorisation de mise sur le marché</a>&nbsp;&nbsp;<a href='#HautDePage'><img src='img/BackToTop.jpg' width='15px' height='15px' alt='Retour en haut de la page' title='Retour en haut de la page' /></a></p>
+<p class=AmmCorpsTexteGras style='margin-bottom:0cm;margin-bottom:.0001pt'><a name="_Toc142279032">LABORATOIRES EXPANSCIENCE</a></p>
+<p class=AmmCorpsTexte style='margin-bottom:0cm;margin-bottom:.0001pt'>1 PLACE DES SAISONS</p>
+<p class=AmmCorpsTexte>92048 PARIS LA DEFENSE CEDEX</p>
+<p class="AmmAnnexeTitre2"><a name="Ann3bFab">Fabricant</a>&nbsp;&nbsp;<a href='#HautDePage'><img src='img/BackToTop.jpg' width='15px' height='15px' alt='Retour en haut de la page' title='Retour en haut de la page' /></a></p>
+<p class=AmmCorpsTexteGras style='margin-bottom:0cm;margin-bottom:.0001pt; page-break-after:avoid'><a name="_Toc142279033">LABORATOIRES EXPANSCIENCE</a></p>
+<p class=AmmCorpsTexte style='margin-bottom:0cm;margin-bottom:.0001pt; page-break-after:avoid'>RUE DES QUATRE FILLES </p>
+<p class=AmmCorpsTexte>28230 EPERNON</p>
+<p class="AmmAnnexeTitre2"><a name="Ann3bNomsMediEEE">Noms du médicament dans les Etats membres de l'Espace Economique Européen</a>&nbsp;&nbsp;<a href='#HautDePage'><img src='img/BackToTop.jpg' width='15px' height='15px' alt='Retour en haut de la page' title='Retour en haut de la page' /></a></p>
+<p class=AmmCorpsTexte>[à compléter ultérieurement par le titulaire]</p>
+<p class="AmmAnnexeTitre2"><a name="Ann3bContenu">La dernière date à laquelle cette notice a été révisée est :</a>&nbsp;&nbsp;<a href='#HautDePage'><img src='img/BackToTop.jpg' width='15px' height='15px' alt='Retour en haut de la page' title='Retour en haut de la page' /></a></p>
+<p class=AmmCorpsTexte>[à compléter ultérieurement par le titulaire]</p>
+<p class="AmmAnnexeTitre2"><a name="Ann3bAutres">Autres</a>&nbsp;&nbsp;<a href='#HautDePage'><img src='img/BackToTop.jpg' width='15px' height='15px' alt='Retour en haut de la page' title='Retour en haut de la page' /></a></p>
+<p class=AmmCorpsTexte>Des informations détaillées sur ce médicament sont disponibles sur le site Internet de l’ANSM (France).</p>
+</div>					
+					<p class="alignright"><a href="#HautDePage">Retour en haut de la page <img src="img/BackToTop.jpg" width="20px" height="20px" alt="Retour en haut de la page" title="Retour en haut de la page" /></a></p>
+				</div>
+			</div>
+		</div>
+	</div>
+
+<table summary="" class="content" width="1000">
+	<tr>
+		<td height="100px">&nbsp;</td>
+	</tr>
+</table>
+<table summary="Pied de page" class="footer" width="1000">
+	<tr>
+		<td>
+			<table summary="" class="tablealigncenter" border="0">
+				<tr>
+					<td width="100px" class="aligncenter"><a id="lien_ansm" href="http://ansm.sante.fr/" target="_blank"><img src="img/Logo_ANSM.png" width="150" height="60" alt="ANSM - Agence nationale de sécurité du médicament et des produits de santé" title="L'ANSM met à disposition les principales informations issues de l'Autorisation de mise sur le marché, l'appartenance à un groupe générique, les liens vers les informations de sécurité qu'elle publie, l'identification des médicaments sous surveillance renforcée - nouvelle fenêtre" /></a></td>
+					          <td>&nbsp;</td>
+					<td width="100px" class="aligncenter"><img src="img/Logo_HAS.png" width="150" height="60" alt="HAS - Haute autorité de santé" title="La HAS met à disposition les informations relatives au service médical rendu, à l'amélioration du service médical rendu ainsi que les liens vers les avis de la Commission de la Transparence correspondants - nouvelle fenêtre" /></td>
+					<td>&nbsp;</td>
+					<td width="100px" class="aligncenter"><img src="img/Logo_CNAM.png" width="150" height="60" alt="UNCAM - Unin nationale des caisses d'assurance maladie" title="L'UNCAM met à disposition le taux de remboursement, le prix et les indications remboursables le cas échéant, ainsi que l'agrément aux collectivités - nouvelle fenêtre" /></td>
+          				</tr>
+			</table> 
+		</td>
+	</tr>
+</table>
+<table summary="" class="finpage" width="1000">
+	<tr>
+		<td height="100px" class="aligncenter">
+			<a class="navigation" href="plan.php">Plan du site</a>&nbsp;|&nbsp;
+			<a class="navigation" href="accessibilite.php">Accessibilité</a>&nbsp;|&nbsp;
+			<a class="navigation" href="contact.php">Contact</a>&nbsp;|&nbsp;
+			<a class="navigation" href="telechargement.php">Téléchargement</a>&nbsp;|&nbsp;
+			<a class="navigation" href="DeclarationConfidentialite.php">Declaration de confidentialité</a>&nbsp;|&nbsp;
+			<a class="navigation" href="http://www.service-public.fr/" title="Service Public - Nouvelle fenêtre" target="_blank">Service-Public.fr</a>&nbsp;|&nbsp;
+			<a class="navigation" href="http://www.legifrance.gouv.fr/" title="Legifrance - Nouvelle fenêtre" target="_blank">Legifrance</a>&nbsp;|&nbsp;
+			<a class="navigation" href="http://www.gouvernement.fr/" title="Gouvernement - Nouvelle fenêtre" target="_blank" >Gouvernement.fr</a>
+		</td>
+	</tr>
+</table>
+
+
+
+<!-- Matomo -->
+<script type="text/javascript">
+  var _paq = window._paq = window._paq || [];
+  /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
+  _paq.push(['trackPageView']);
+  _paq.push(['enableLinkTracking']);
+  (function() {
+    var u="https://stats.integra.fr/";
+    _paq.push(['setTrackerUrl', u+'matomo.php']);
+    _paq.push(['setSiteId', '79']);
+    var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+    g.type='text/javascript'; g.async=true; g.src=u+'matomo.js'; s.parentNode.insertBefore(g,s);
+  })();
+</script>
+<!-- End Matomo Code -->
+
+
+
+</body>
+</html>

@@ -1,0 +1,483 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="fr" lang="fr">
+<head>
+	<title>Résumé des caractéristiques du produit - ZYMAD 10 000 UI/ml, solution buvable en gouttes  - Base de données publique des médicaments</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=windows-1252"/>
+	<meta name="robots" content="index, follow"/>
+	<meta name="Description" content="Base de données publique des médicaments"/>
+	<meta name="Keywords" content="base, données, publique, médicaments, Résumé des caractéristiques du produit, ZYMAD 10 000 UI/ml, solution buvable en gouttes "/>
+	<meta name="Subject" content="medicament"/>
+	<link href='https://fonts.googleapis.com/css?family=Noticia+Text' rel='stylesheet' type='text/css' />
+	<link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro' rel='stylesheet' type='text/css' />
+	<link href="style/style_bdm.css?v=2.2.3" type="text/css" rel="stylesheet"/>
+	<link href="style/style_RCP_Notice.css" type="text/css" rel="stylesheet"/>
+  <link rel="alternate" href="http://m.base-donnees-publique.medicaments.gouv.fr/#!info-63902334">
+    <script type="text/javascript" src="scripts/autocomplete.js?v=2.2.3"></script>
+	<script type="text/javascript" src="scripts/jquery.js"></script>
+    <script type="text/javascript" src="scripts/jquery-ui.min.js"></script>
+	<script type="text/javascript" src="scripts/common.js"></script>
+	<link rel="icon" type="image/x-icon" href="favicon.ico" />
+</head>
+
+<body>
+
+<a name="HautDePage" />
+<div id="bandeauhaut">
+	<a id="lien_ministere" class="lienmenu" href="http://www.sante.gouv.fr" target="_blank" title="Site du ministère des affaires sociales et de la santé - nouvelle fenêtre"><img id="logoministere" src="img/Logo_Ministere.jpg"  alt="Logo du ministère des affaires sociales et de la santé"/></a>
+	<h1 class="texteTitreSite">
+		Base <span class="texteBleu">de</span> données <span class="texteBleu">publique</span><br/><span class="texteBleu">des</span> médicaments
+	</h1>
+		<a id="lien_medicament_gouv" class="lienEspaceMedic" target="_blank" href="http://medicaments.gouv.fr" title="Visiter [medicaments.gouv.fr] - nouvelle fenêtre">Visiter [medicaments.gouv.fr] <img src="/img/icone_lien.png" alt="Visiter [medicaments.gouv.fr]"  title="Visiter [medicaments.gouv.fr] - nouvelle fenetre" /></a>
+</div>
+<!--div align="center">
+	<a id="banniere" target="_blank" href="http://social-sante.gouv.fr/soins-et-maladies/medicaments/medicaments-generiques/" title="Visiter [medicaments.gouv.fr] - M?dicaments g?n?riques">
+		<img width="1000"   src ="/img/carrouselbannieres.gif" alt="Visiter [medicaments.gouv.fr] - M?dicaments g?n?riques" title="Visiter [medicaments.gouv.fr] - M?dicaments g?n?riques" />
+	</a>
+</div-->
+
+<div id="menuhaut">
+	<span id="menuhaut_gauche">
+		<a id="lien_accueil" class="navigation" href="index.php">Accueil</a>&nbsp;|&nbsp;
+		<a id="lien_glossaire" class="navigation" href="glossaire.php">Glossaire</a>&nbsp;|&nbsp;
+		<a id="lien_aide" class="navigation" href="aide.php">Aide</a>		
+	</span>
+	
+		
+	<span id="menuhaut_dernmaj">
+        <br>Dernière <span title=" 2.4.4
+">mise à jour</span> le 03/03/2025	</span>
+</div>
+
+	<script language="javascript" type="text/javascript">
+		//<![CDATA[ 
+		function Aff(men) {
+			document.write("<ul class=\"menuDoc\">");
+			for(var no_rub=0;no_rub<men.num_rub;no_rub++) {
+				document.write("<li><a class='leftMenu' href='"+menu[no_rub].page+"'>");
+				document.write(men[no_rub].txt);
+				document.write("</a></li>");
+				if (men[no_rub].nb_lien != 0){
+					document.write("<ul class=\"sousMenuDoc\">");
+				}
+				for(var no_lien=0;no_lien<men[no_rub].nb_lien;no_lien++) {
+					document.write("<li><a class='leftMenu' href='"+men[no_rub][no_lien].page+"'>");
+					document.write(men[no_rub][no_lien].txt);
+					document.write("</a></li>");
+				}
+				if (men[no_rub].nb_lien != 0){
+					document.write("</ul>");
+				}
+			}
+			document.write("</ul>");
+		}
+		
+		function CreerMenu(police,imgRub,imgOption,imgOptionFin,hauteur) {
+			this.num_rub=0;
+			this.police=police;
+			this.imgRub=imgRub;
+			this.imgOpt=imgOption;
+			this.imgOptFin=imgOptionFin;
+			this.hauteur=hauteur;
+			this.AddRub=AddRub;
+			this.AddLien=AddLien;
+		}
+		
+		function AddRub(txt,aff,page) {
+			var rub = new Object;
+				rub.txt=txt;
+				rub.aff=aff;
+				rub.page=page;
+				rub.nb_lien=0;
+			this[this.num_rub]=rub;
+			this.num_rub++;
+		}
+
+		function AddLien(txt,page) {
+			var no_rub = this.num_rub-1;
+			var no_lien= this[no_rub].nb_lien;
+			var lien = new Object;
+				lien.txt=txt;
+				lien.page=page;
+			this[no_rub][no_lien]=lien;
+			this[no_rub].nb_lien++;
+		}
+		var menu=new CreerMenu("arial","img/dyn04.gif","img/dyn22.gif","img/dyn55.gif",18);
+		//]]> 
+		menu.AddRub("Composition","O","#RcpCompoQualiQuanti");
+			menu.AddRub("Forme pharma.","O","#RcpFormePharm");
+			menu.AddRub("Clinique","O","#RcpDonneesCliniques");
+			menu.AddLien("Indic. thérapeutiques","#RcpIndicTherap");
+				menu.AddLien("Posologie","#RcpPosoAdmin");
+				menu.AddLien("Contre-indications","#RcpContreindications");
+				menu.AddLien("Mise en garde","#RcpMisesEnGarde");
+				menu.AddLien("Interactions","#RcpInteractionsMed");
+				menu.AddLien("Grossesse, allait.","#RcpFertGrossAllait");
+				menu.AddLien("Conduite véhicules","#RcpConduite");
+				menu.AddLien("Effets indésirables","#RcpEffetsIndesirables");
+				menu.AddLien("Surdosage","#RcpSurdosage");
+				menu.AddRub("Pharmacologie","O","#RcpPropPharmacologiques");
+			menu.AddLien("Pharmacodynamie","#RcpPropPharmacodynamiques");
+				menu.AddLien("Pharmacocinétique","#RcpPropPharmacocinetiques");
+				menu.AddLien("Sécurité préclinique","#RcpSecuritePreclinique");
+				menu.AddRub("Pharmaceutique","O","#RcpDonneesPharmaceutiques");
+			menu.AddLien("Liste excipients","#RcpListeExcipients");
+				menu.AddLien("Incompatibilités","#RcpIncompatibilites");
+				menu.AddLien("Durée conservation","#RcpDureeConservation");
+				menu.AddLien("Conservation","#RcpPrecConservation");
+				menu.AddLien("Emballage","#RcpEmballage");
+				menu.AddLien("Utilisation/manipulation","#RcpPrecEmpl");
+				menu.AddRub("Titulaire AMM","O","#RcpTitulaireAmm");
+			menu.AddRub("Présentations","O","#RcpNumAutor");
+			menu.AddRub("Autorisation, renouv.","O","#RcpPremiereAutorisation");
+			menu.AddRub("Date de révision","O","#RcpDateRevision");
+			menu.AddRub("Dosimétrie","O","#RcpDosimetrie");
+			menu.AddRub("Préparation radiopharma.","O","#RcpInstPrepRadioph");
+				</script>
+
+	<div id="container">
+		<div id="leftnav">
+			<div id="cadreMenuGauche">
+				<h2 class="sommaireMenu">Sommaire</h2>
+				<div id="menuGauche">
+					<script language="JavaScript" type="text/javascript">Aff(menu);</script>
+				</div>
+			</div>
+		</div>
+		<div id="contentPrincipal">
+			<div id="boutonsliens">
+				<a id='lien_fiche_info' href='extrait.php?specid=63902334' ><img id="ongletficheinfo" alt="Onglet fiche information" src="img/onglet_fiche_info_vert.png" /></a><a id='lien_rcp' href='affichageDoc.php?specid=63902334&amp;typedoc=R'><img class="onglet" alt="Onglet résumé des caractéristiques du produit" src="img/onglet_rcp_gris.png" /></a><a id='lien_notice' href='affichageDoc.php?specid=63902334&amp;typedoc=N'><img class="onglet" alt="Onglet notice patient" src="img/onglet_notice_vert.png" /></a>			</div>
+			<div class="titredeno">
+				<table summary="" border="0" cellspacing="0">
+					<tr><td colspan="3" height="10px"></td></tr>
+					<tr>
+						<td width="15px">&nbsp;</td>
+						<td width="685px"><h1 class="textedeno">ZYMAD 10 000 UI/ml, solution buvable en gouttes  - Résumé des caractéristiques du produit</h1></td>
+						<td width="43px" class="tdcenter"><a href="Javascript:void(null)" onclick="print();"><img src="img/imprimante.png" height="20px" width="20px" alt="Imprimer le document" title="Imprimer le document" border="0" /></a></td>
+					</tr>
+					<tr><td colspan="3" height="10px"></td></tr>
+				</table>
+			</div>
+			
+			<div id="contentDocument">
+				<div id="textDocument">
+					<p class="DateNotif">ANSM - Mis à jour le : 28/11/2024</p>
+<p class=AmmNoticeTitre1><a name="_Toc142278913"></a><a name="_Toc142278912">1. DENOMINATION DU MEDICAMENT</a></p>
+<p class=AmmCorpsTexteGras>ZYMAD 10 000 UI/ml, solution buvable en gouttes </p>
+<p class="AmmAnnexeTitre1"><a name="RcpCompoQualiQuanti">2. COMPOSITION QUALITATIVE ET QUANTITATIVE</a>&nbsp;&nbsp;<a href='#HautDePage'><img src='img/BackToTop.jpg' width='15px' height='15px' alt='Retour en haut de la page' title='Retour en haut de la page' /></a></p>
+<p class=AmmComposition>Cholécalciférol (vitamine D3).............................................................................................. 10 000 UI</p>
+<p class=AmmCorpsTexte align=center style='text-align:center'>Pour 1 ml.</p>
+<p class=AmmCorpsTexte>Une goutte contient 300 UI de vitamine D3.</p>
+<p class=AmmCorpsTexte>Pour la liste complète des excipients, voir rubrique 6.1.</p>
+<p class="AmmAnnexeTitre1"><a name="RcpFormePharm">3. FORME PHARMACEUTIQUE</a>&nbsp;&nbsp;<a href='#HautDePage'><img src='img/BackToTop.jpg' width='15px' height='15px' alt='Retour en haut de la page' title='Retour en haut de la page' /></a></p>
+<p class=AmmCorpsTexte><a name="_Hlk57297857">Solution buvable en gouttes.</a></p>
+<p class="AmmAnnexeTitre1"><a name="RcpDonneesCliniques">4. DONNEES CLINIQUES</a>&nbsp;&nbsp;<a href='#HautDePage'><img src='img/BackToTop.jpg' width='15px' height='15px' alt='Retour en haut de la page' title='Retour en haut de la page' /></a></p>
+<p class="AmmAnnexeTitre2"><a name="RcpIndicTherap">4.1. Indications thérapeutiques</a>&nbsp;&nbsp;<a href='#HautDePage'><img src='img/BackToTop.jpg' width='15px' height='15px' alt='Retour en haut de la page' title='Retour en haut de la page' /></a></p>
+<p class=AmmCorpsTexte><a name="_Toc142278917">Traitement et/ou prophylaxie de la carence en vitamine D.</a></p>
+<p class="AmmAnnexeTitre2"><a name="RcpPosoAdmin">4.2. Posologie et mode d'administration</a>&nbsp;&nbsp;<a href='#HautDePage'><img src='img/BackToTop.jpg' width='15px' height='15px' alt='Retour en haut de la page' title='Retour en haut de la page' /></a></p>
+<p class=AmmAnnexeTitre3>Posologie</p>
+<p class=AmmAnnexeTitre4 style='margin-left:36.0pt;text-indent:-18.0pt'><span style='font-family:Wingdings;font-style:normal;text-decoration:none'>Ø<span style='font:7.0pt "Times New Roman"'>  </span></span>Population pédiatrique</p>
+<p class=AmmCorpsTexte><span class='italique'>Prophylaxie</span></p>
+<p class=AmmCorpsTexte style='margin-top:12.0pt;text-autospace:none'><span class='italique'><span class='souligne'><span style='font-size:10.0pt;font-family:"Arial",sans-serif'>Prématuré </span></span></span><span class='italique'><span style='font-size:10.0pt;font-family:"Arial",sans-serif'>:</span></span><span style='font-size:10.0pt;font-family:"Arial",sans-serif'> 2 à 3 gouttes par jour pendant le séjour en unités de soins intensifs néonatals, en prenant en compte la teneur en vitamine D dans le lait et la nutrition parentérale, la supplémentation en vitamine D pendant la grossesse et le poids à la naissance.</span></p>
+<p class=AmmCorpsTexte style='margin-bottom:12.0pt;text-autospace:none'><span style='font-size:10.0pt;font-family:"Arial",sans-serif'>Chez les prématurés nés avant 32 SA ou pesant moins de 1500 g à l’âge d’un mois, un dosage de la vitamine D est recommandé. Le dosage cible dans cette population est de 50 à 120 nmol/L.</span></p>
+<p class=AmmCorpsTexte style='text-autospace:none'><span class='italique'><span class='souligne'><span style='font-size: 10.0pt;font-family:"Arial",sans-serif'>Enfant de 0 à 18 ans</span></span></span><span style='font-size:10.0pt;font-family:"Arial",sans-serif'> : 1 à 2 gouttes par jour chez les enfants en bonne santé.</span></p>
+<p class=AmmCorpsTexte style='margin-bottom:12.0pt;text-autospace:none'><span style='font-size:10.0pt;font-family:"Arial",sans-serif'>3 à 4 gouttes par jour chez les enfants âgés de 2 à 18 ans en cas de disponibilité réduite de la vitamine D (obésité, peau pigmentée, absence d'exposition au soleil) ou d’un apport réduit (régime végétalien).</span></p>
+<p class=AmmCorpsTexte style='text-autospace:none'><span class='italique'><span class='souligne'><span style='font-size: 10.0pt;font-family:"Arial",sans-serif'>Enfant et adolescent avec une pathologie digestive</span></span></span><span style='font-size:10.0pt;font-family:"Arial",sans-serif'> : 2 à 6 gouttes par jour</span></p>
+<p class=AmmCorpsTexte style='margin-top:12.0pt;text-autospace:none'><span class='italique'><span class='souligne'><span style='font-size:10.0pt;font-family:"Arial",sans-serif'>Enfant et adolescent recevant des anti-convulsivants</span></span></span><span style='font-size:10.0pt; font-family:"Arial",sans-serif'> : 5 à 6 gouttes par jour</span></p>
+<p class=AmmCorpsTexte style='text-autospace:none'><span class='italique'><span style='font-size:10.0pt; font-family:"Arial",sans-serif'> </span></span></p>
+<p class=AmmCorpsTexte style='text-autospace:none'><span class='italique'><span style='font-size:10.0pt; font-family:"Arial",sans-serif'>Traitement de la carence</span></span><span style='font-size:10.0pt;font-family:"Arial",sans-serif'> : 7 à 13 gouttes par jour pendant 4-6 mois ou 14 à 26 gouttes par jour pendant 1-2 mois, jusqu'au retour à la normale de la calcémie et de la phosphorémie, en surveillant la calciurie pour éviter un surdosage. Ne pas dépasser une dose totale de 600 000 UI par an.</span></p>
+<p class=AmmCorpsTexteGras style='margin-top:6.0pt;margin-right:0cm;margin-bottom: 6.0pt;margin-left:36.0pt;text-indent:-18.0pt'><span style='font-family:Wingdings; font-weight:normal'>Ø<span style='font:7.0pt "Times New Roman"'>  </span></span><span class='italique'><span class='souligne'><span style='font-weight:normal'>Femme enceinte ou allaitante</span></span></span></p>
+<p class=AmmCorpsTexte style='text-autospace:none'><span class='italique'><span style='font-size:10.0pt; font-family:"Arial",sans-serif'>Traitement de la carence :</span></span><span style='font-size:10.0pt;font-family:"Arial",sans-serif'> la dose recommandée peut aller jusqu’à 7 gouttes voire 13 gouttes par jour.</span></p>
+<p class=AmmCorpsTexteGras style='margin-top:6.0pt;margin-right:0cm;margin-bottom: 6.0pt;margin-left:36.0pt;text-indent:-18.0pt'><span style='font-family:Wingdings; font-weight:normal'>Ø<span style='font:7.0pt "Times New Roman"'>  </span></span><span class='italique'><span class='souligne'><span style='font-weight:normal'>Adulte et sujet âgé</span></span></span></p>
+<p class=AmmCorpsTexteGras style='margin-top:6.0pt'><span class='italique'><span style='font-weight: normal'>Prophylaxie : </span></span><span style='font-weight:normal'>2 à 3 gouttes par jour.</span></p>
+<p class=AmmCorpsTexte style='margin-top:6.0pt;page-break-after:avoid'><span class='italique'>Traitement de la carence : </span>7 à 66 gouttes par jour jusqu'au retour à la normale de la calcémie et de la phosphorémie, en surveillant la calciurie pour éviter un surdosage. Ne pas dépasser une dose totale de 600 000 UI par an.</p>
+<p class=AmmAnnexeTitre3>Mode d’administration</p>
+<p class=AmmCorpsTexte>Voie orale.</p>
+<p class=AmmCorpsTexte>Le contenu des gouttes en flacon peut être pris pur dans une petite cuillère ou mélangé dans un aliment liquide ou semi-liquide.</p>
+<p class="AmmAnnexeTitre2"><a name="RcpContreindications">4.3. Contre-indications</a>&nbsp;&nbsp;<a href='#HautDePage'><img src='img/BackToTop.jpg' width='15px' height='15px' alt='Retour en haut de la page' title='Retour en haut de la page' /></a></p>
+<p class=AmmListePuces1><a name="_Toc142278919"><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>Hypersensibilité à la substance active ou à l’un des excipients mentionnés à la rubrique 6.1,</a></p>
+<p class=AmmListePuces1><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>Hypercalcémie, hypercalciurie, lithiase calcique,</p>
+<p class=AmmListePuces1><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>Hypervitaminose D,</p>
+<p class=AmmListePuces1><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>Néphrocalcinose,</p>
+<p class=AmmListePuces1><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>Pathologie et/ou conditions entraînant une hypercalcémie et/ou une hypercalciurie.</p>
+<p class="AmmAnnexeTitre2"><a name="RcpMisesEnGarde">4.4. Mises en garde spéciales et précautions d'emploi</a>&nbsp;&nbsp;<a href='#HautDePage'><img src='img/BackToTop.jpg' width='15px' height='15px' alt='Retour en haut de la page' title='Retour en haut de la page' /></a></p>
+<p class=AmmCorpsTexte><span class='gras'><span class='souligne'>Surveillance</span></span></p>
+<p class=AmmCorpsTexte>Pour éviter tout surdosage, tenir compte de l’apport total en vitamine D toutes sources confondues, qu’il s’agisse de sources nutritionnelles, d’autres supplémentations contenant déjà cette vitamine, ou en cas d'utilisation de lait supplémenté en vitamine D, ainsi que des médicaments susceptibles d’interagir avec ZYMAD 10 000 UI/ml, solution buvable en gouttes (voir rubrique 4.5).</p>
+<p class=AmmCorpsTexte>Dans des indications nécessitant des doses fortes et répétées, surveiller la calciurie et la calcémie et arrêter les apports de vitamine D si la calcémie dépasse 106 mg/l (2,65 mmol/l) ou si la calciurie dépasse 300 mg/24 h chez l'adulte ou 4-6 mg/kg/j chez l'enfant.</p>
+<p class=AmmCorpsTexte><a name="_Hlk112314853"><span class='gras'><span class='souligne'>Sarcoïdose</span></span></a></p>
+<p class=AmmCorpsTexte>Lorsque la prescription de ce médicament est envisagée chez des patients atteints de sarcoïdose, une évaluation attentive du bénéfice du traitement au regard des risques pour ces patients est nécessaire en raison du risque d’augmentation du métabolisme de la vitamine D en sa forme active (1,25-dihydroxyvitamine D). Lorsque sa prescription est justifiée chez des patients présentant une sarcoïdose stable (y compris en rémission) en l’absence d’insuffisance rénale et d’hypercalcémie, l’utilisation de ce médicament doit être réalisée avec prudence. Chez ces patients, il convient de surveiller étroitement la calcémie et la calciurie.</p>
+<p class=AmmCorpsTexte><span class='gras'><span class='souligne'>Insuffisance rénale </span></span></p>
+<p class=AmmCorpsTexte>Ce médicament doit être utilisé avec prudence chez les patients présentant une insuffisance rénale et l'effet sur les taux de calcium et de phosphate doit être surveillé.</p>
+<p class=AmmCorpsTexte>Le risque de calcification des tissus mous doit être pris en compte.</p>
+<p class=AmmCorpsTexte><span class='gras'><span class='souligne'>Patients sous digoxine</span></span></p>
+<p class=AmmCorpsTexte>L’effet de la vitamine D sur la calcémie devra inciter à une surveillance accrue des patients sous digoxine vis-à-vis du risque d'arythmies cardiaques.</p>
+<p class=AmmCorpsTexte><span class='gras'><span class='souligne'>Patients sous diurétiques thiazidiques</span></span></p>
+<p class=AmmCorpsTexte>Il existe un risque accru d'hypercalcémie lors de l'utilisation concomitante de diurétiques thiazidiques car ils réduisent l'excrétion urinaire du calcium.</p>
+<p class=AmmCorpsTexte><span class='gras'><span class='souligne'>Toxicité de la vitamine D en situation d’hypervitaminose D </span></span></p>
+<p class=AmmCorpsTexte>Le risque de toxicité de la vitamine D est augmenté chez les patients présentant une pathologie et/ou des troubles entraînant une hypercalcémie et/ou une hypercalciurie, et chez les patients ayant une sensibilité accrue à la vitamine D, d’origine génétique, donnant lieu à une hypervitaminose D (voir rubrique 4.9).</p>
+<p class="AmmAnnexeTitre2"><a name="RcpInteractionsMed">4.5. Interactions avec d'autres médicaments et autres formes d'interactions</a>&nbsp;&nbsp;<a href='#HautDePage'><img src='img/BackToTop.jpg' width='15px' height='15px' alt='Retour en haut de la page' title='Retour en haut de la page' /></a></p>
+<p class=AmmAnnexeTitre3><a name="_Toc142278924">Précaution d’emploi</a></p>
+<p class=AmmCorpsTexteGras>+ ANTICONVULSIVANTS INDUCTEURS ENZYMATIQUES (carbamazépine, fosphénytoïne, phénobarbital, phénytoïne, primidone ou barbituriques)</p>
+<p class=AmmCorpsTexteGras><span style='font-weight:normal'>Diminution des concentrations de vitamine D plus marquée qu’en l’absence d'inducteur enzymatique. </span></p>
+<p class=AmmCorpsTexteGras><span style='font-weight:normal'>Dosage des concentrations de vitamine D et supplémentation si nécessaire.</span></p>
+<p class=AmmCorpsTexteGras>+ GLUCOCORTICOÏDES</p>
+<p class=AmmCorpsTexteGras><span style='font-weight:normal'>Les glucocorticoïdes réduisent l'effet de la vitamine D en raison d'un métabolisme accru</span>. <span style='font-weight:normal'>Dosage des concentrations de vitamine D et supplémentation vitaminocalcique si nécessaire. </span></p>
+<p class=AmmCorpsTexte style='margin-top:6.0pt'><span class='gras'>+ RESINES CHELATRICES</span></p>
+<p class=AmmCorpsTexteGras><span style='font-weight:normal'>La prise de résine chélatrice peut diminuer l’absorption intestinale et, potentiellement, l’efficacité d’autres médicaments pris simultanément. D’une façon générale, la prise de la résine doit se faire à distance de celle des autres médicaments, en respectant un intervalle de plus de 2 heures, si possible. </span></p>
+<p class=AmmCorpsTexteGras>+ RIFAMPICINE</p>
+<p class=AmmCorpsTexteGras><span style='font-weight:normal'>Diminution des concentrations plasmatiques de vitamine D plus marquée qu’en l’absence de traitement par la rifampicine. </span></p>
+<p class=AmmCorpsTexteGras><span style='font-weight:normal'>Dosage des concentrations plasmatiques de vitamine D et supplémentation si nécessaire. </span></p>
+<p class=AmmAnnexeTitre3>A prendre en compte</p>
+<p class=AmmCorpsTexte style='margin-bottom:0cm;margin-bottom:.0001pt'><span class=AmmCorpsTexteGrasCar>+ ORLISTAT</span></p>
+<p class=AmmCorpsTexte style='margin-top:6.0pt;margin-right:0cm;margin-bottom: 0cm;margin-left:0cm;margin-bottom:.0001pt'>Diminution de l'absorption de la vitamine D.</p>
+<p class=AmmCorpsTexte style='margin-top:6.0pt'><span class='gras'>+ LAXATIFS</span></p>
+<p class=AmmCorpsTexte>Avec les laxatifs, notamment en vue d’explorations endoscopiques: risque de diminution de l’efficacité du médicament administré avec le laxatif. Eviter la prise d’autres médicaments pendant et après l’ingestion dans un délai d’au moins 2 h après la prise du laxatif, voire jusqu’à la réalisation de l’examen.</p>
+<p class="AmmAnnexeTitre2"><a name="RcpFertGrossAllait">4.6. Fertilité, grossesse et allaitement</a>&nbsp;&nbsp;<a href='#HautDePage'><img src='img/BackToTop.jpg' width='15px' height='15px' alt='Retour en haut de la page' title='Retour en haut de la page' /></a></p>
+<p class=AmmCorpsTexte style='margin-bottom:12.0pt;text-autospace:none'><span class='gras'><span class='souligne'><span style='font-size:10.0pt;font-family:"Arial",sans-serif'>Grossesse</span></span></span></p>
+<p class=AmmCorpsTexte>Les données sont limitées sur l’utilisation du cholécalciférol chez la femme enceinte.</p>
+<p class=AmmCorpsTexte>Les études sur l'animal ont mis en évidence des effets tératogènes à des doses très élevées.</p>
+<p class=AmmCorpsTexte>Un surdosage en cholécalciférol doit être évité pendant la grossesse, en raison du risque d’hypercalcémie prolongée pouvant entraîner un retard de développement physique et mental, une sténose aortique supravalvulaire et une rétinopathie chez l'enfant.</p>
+<p class=AmmCorpsTexte>Le cholécalciférol n’est pas recommandé dans la prophylaxie de la carence chez les femmes enceintes. </p>
+<p class=AmmCorpsTexte style='margin-bottom:12.0pt;text-autospace:none'><span class='gras'><span class='souligne'><span style='font-size:10.0pt;font-family:"Arial",sans-serif'>Allaitement</span></span></span></p>
+<p class=AmmCorpsTexte>Le cholécalciférol et ses métabolites sont excrétés dans le lait maternel. Aucun surdosage induit par une mère allaitante n'a été observé chez le nouveau-né ; cependant, lors de prescription d'un supplément de cholécalciférol à un nouveau-né allaité, le médecin doit tenir compte de toute dose supplémentaire de cholécalciférol prise par la mère. </p>
+<p class=AmmCorpsTexte style='margin-bottom:12.0pt;text-autospace:none'><span class='gras'><span class='souligne'><span style='font-size:10.0pt;font-family:"Arial",sans-serif'>Fertilité</span></span></span></p>
+<p class=AmmCorpsTexte>Il n’y a pas de donnée concernant l’effet de la vitamine D sur la fertilité.</p>
+<p class="AmmAnnexeTitre2"><a name="RcpConduite">4.7. Effets sur l'aptitude à conduire des véhicules et à utiliser des machines</a>&nbsp;&nbsp;<a href='#HautDePage'><img src='img/BackToTop.jpg' width='15px' height='15px' alt='Retour en haut de la page' title='Retour en haut de la page' /></a></p>
+<p class=AmmCorpsTexte><a name="_Toc142278929"></a><a name="_Hlk112314906"><span lang=FR-BE>La vitamine D n'a aucun effet ou un effet négligeable sur l'aptitude à conduire des véhicules et à utiliser des machines.</span></a></p>
+<p class="AmmAnnexeTitre2"><a name="RcpEffetsIndesirables">4.8. Effets indésirables</a>&nbsp;&nbsp;<a href='#HautDePage'><img src='img/BackToTop.jpg' width='15px' height='15px' alt='Retour en haut de la page' title='Retour en haut de la page' /></a></p>
+<p class=AmmCorpsTexte>Les effets indésirables de ZYMAD sont listés selon la classification MedDRA par système classe-organe. Au sein de chaque système classe-organe, les événements indésirables sont présentés par ordre décroissant de fréquence selon la convention suivante : très fréquent (&#8805;1/10), fréquent (&gt;1/100, &lt;1/10), peu fréquent (&gt;1/1 000, &lt;1/100), rare (&gt;1/10 000, &lt;1/1 000), très rare (&lt;1/10 000), fréquence indéterminée (ne peut être estimée sur la base des données disponibles).</p>
+<table class=AmmCorpsTexteTable border=1 cellspacing=0 cellpadding=0
+style='margin-left:5.4pt;border-collapse:collapse;border:none'>
+<tr>
+<td width=208 valign=top style='width:155.95pt;border:solid windowtext 1.0pt;
+padding:0cm 5.4pt 0cm 5.4pt'>
+<p class=AmmCorpsTexte><a name="_Hlk112314917"><span class='gras'><span style='font-size:10.0pt; font-family:"Arial",sans-serif'>Classification des systèmes d’organes</span></span></a></p>
+</td>
+<td width=161 valign=top style='width:120.5pt;border:solid windowtext 1.0pt;
+border-left:none;padding:0cm 5.4pt 0cm 5.4pt'>
+<p class=AmmCorpsTexte><span class='gras'><span style='font-size:10.0pt;font-family:"Arial",sans-serif'>Fréquence</span></span></p>
+</td>
+<td width=236 valign=top style='width:177.15pt;border:solid windowtext 1.0pt;
+border-left:none;padding:0cm 5.4pt 0cm 5.4pt'>
+<p class=AmmCorpsTexte><span class='gras'><span style='font-size:10.0pt;font-family:"Arial",sans-serif'>Effet indésirable</span></span></p>
+</td>
+</tr>
+<tr>
+<td width=208 valign=top style='width:155.95pt;border:solid windowtext 1.0pt;
+border-top:none;padding:0cm 5.4pt 0cm 5.4pt'>
+<p class=AmmCorpsTexte align=left style='text-align:left'><span style='font-size: 10.0pt;font-family:"Arial",sans-serif'>Troubles du système immunitaire</span></p>
+</td>
+<td width=161 valign=top style='width:120.5pt;border-top:none;border-left:
+none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+padding:0cm 5.4pt 0cm 5.4pt'>
+<p class=AmmCorpsTexte align=left style='text-align:left'><span style='font-size: 10.0pt;font-family:"Arial",sans-serif'>Indéterminée</span></p>
+</td>
+<td width=236 valign=top style='width:177.15pt;border-top:none;border-left:
+none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+padding:0cm 5.4pt 0cm 5.4pt'>
+<p class=AmmCorpsTexte align=left style='text-align:left'><span style='font-size: 10.0pt;font-family:"Arial",sans-serif'>Réactions d’hypersensibilité</span></p>
+</td>
+</tr>
+<tr>
+<td width=208 valign=top style='width:155.95pt;border:solid windowtext 1.0pt;
+border-top:none;padding:0cm 5.4pt 0cm 5.4pt'>
+<p class=AmmCorpsTexte align=left style='text-align:left'><span style='font-size: 10.0pt;font-family:"Arial",sans-serif'>Affections de la peau et du tissu sous-cutané</span></p>
+</td>
+<td width=161 valign=top style='width:120.5pt;border-top:none;border-left:
+none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+padding:0cm 5.4pt 0cm 5.4pt'>
+<p class=AmmCorpsTexte align=left style='text-align:left'><span style='font-size: 10.0pt;font-family:"Arial",sans-serif'>Indéterminée</span></p>
+</td>
+<td width=236 valign=top style='width:177.15pt;border-top:none;border-left:
+none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+padding:0cm 5.4pt 0cm 5.4pt'>
+<p class=AmmCorpsTexte align=left style='text-align:left'><span style='font-size: 10.0pt;font-family:"Arial",sans-serif'>Prurit, rash, érythème, angiœdème </span></p>
+</td>
+</tr>
+<tr>
+<td width=208 valign=top style='width:155.95pt;border:solid windowtext 1.0pt;
+border-top:none;padding:0cm 5.4pt 0cm 5.4pt'>
+<p class=AmmCorpsTexte align=left style='text-align:left'><span style='font-size: 10.0pt;font-family:"Arial",sans-serif'>Troubles généraux et anomalies au site d’administration</span></p>
+</td>
+<td width=161 valign=top style='width:120.5pt;border-top:none;border-left:
+none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+padding:0cm 5.4pt 0cm 5.4pt'>
+<p class=AmmCorpsTexte align=left style='text-align:left'><span style='font-size: 10.0pt;font-family:"Arial",sans-serif'>Indéterminée</span></p>
+</td>
+<td width=236 valign=top style='width:177.15pt;border-top:none;border-left:
+none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+padding:0cm 5.4pt 0cm 5.4pt'>
+<p class=AmmCorpsTexte><span style='font-size:10.0pt;font-family:"Arial",sans-serif'>Œdème, lithiase calcique</span></p>
+</td>
+</tr>
+<tr>
+<td width=208 valign=top style='width:155.95pt;border:solid windowtext 1.0pt;
+border-top:none;padding:0cm 5.4pt 0cm 5.4pt'>
+<p class=AmmCorpsTexte align=left style='text-align:left'><span style='font-size: 10.0pt;font-family:"Arial",sans-serif'>Troubles du métabolisme et de la nutrition</span></p>
+</td>
+<td width=161 valign=top style='width:120.5pt;border-top:none;border-left:
+none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+padding:0cm 5.4pt 0cm 5.4pt'>
+<p class=AmmCorpsTexte align=left style='text-align:left'><span style='font-size: 10.0pt;font-family:"Arial",sans-serif'>Indéterminée</span></p>
+</td>
+<td width=236 valign=top style='width:177.15pt;border-top:none;border-left:
+none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+padding:0cm 5.4pt 0cm 5.4pt'>
+<p class=AmmCorpsTexte align=left style='text-align:left'><span style='font-size: 10.0pt;font-family:"Arial",sans-serif'>Hypercalcémie</span></p>
+</td>
+</tr>
+<tr>
+<td width=208 valign=top style='width:155.95pt;border:solid windowtext 1.0pt;
+border-top:none;padding:0cm 5.4pt 0cm 5.4pt'>
+<p class=AmmCorpsTexte><span style='font-size:10.0pt;font-family:"Arial",sans-serif'>Affections du rein et des voies urinaires</span></p>
+</td>
+<td width=161 valign=top style='width:120.5pt;border-top:none;border-left:
+none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+padding:0cm 5.4pt 0cm 5.4pt'>
+<p class=AmmCorpsTexte align=left style='text-align:left'><span style='font-size: 10.0pt;font-family:"Arial",sans-serif'>Indéterminée</span></p>
+</td>
+<td width=236 valign=top style='width:177.15pt;border-top:none;border-left:
+none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+padding:0cm 5.4pt 0cm 5.4pt'>
+<p class=AmmCorpsTexte align=left style='text-align:left'><span style='font-size: 10.0pt;font-family:"Arial",sans-serif'>Hypercalciurie, néphrolithiase, néphrocalcinose</span></p>
+</td>
+</tr>
+</table>
+<p class=AmmCorpsTexte style='margin-top:6.0pt'><span class='gras'><span class='souligne'>Déclaration des effets indésirables suspectés </span></span></p>
+<p class=AmmCorpsTexte>La déclaration des effets indésirables suspectés après autorisation du médicament est importante. Elle permet une surveillance continue du rapport bénéfice/risque du médicament. Les professionnels de santé déclarent tout effet indésirable suspecté via le système national de déclaration : Agence nationale de sécurité du médicament et des produits de santé (ANSM) et réseau des Centres Régionaux de Pharmacovigilance - Site internet : <a href="https://signalement.social-sante.gouv.fr/">https://signalement.social-sante.gouv.fr/</a>.</p>
+<p class="AmmAnnexeTitre2"><a name="RcpSurdosage">4.9. Surdosage</a>&nbsp;&nbsp;<a href='#HautDePage'><img src='img/BackToTop.jpg' width='15px' height='15px' alt='Retour en haut de la page' title='Retour en haut de la page' /></a></p>
+<p class=AmmCorpsTexte><a name="_Toc142278931"></a><a name="_Hlk112314928">Un surdosage aigu ou chronique en vitamine D peut entraîner une hypervitaminose D. L’intoxication médicamenteuse par la vitamine D peut provoquer des taux anormalement élevés de calcium dans le sang, ce qui peut finir par endommager gravement les tissus mous et les reins.</a></p>
+<p class=AmmCorpsTexte>Le risque de surdosage est particulièrement élevé si le patient reçoit plusieurs sources de vitamine D et que la supplémentation globale en vitamine D ne correspond pas aux besoins individuels du patient ; ainsi que chez les patients ayant une sensibilité accrue à la vitamine D, donnant lieu à une hypervitaminose D (voir rubrique 4.4).</p>
+<p class=AmmAnnexeTitre3><span style='font-weight:normal'>Signes cliniques</span><span style='font-weight:normal;text-decoration:none'> :</span></p>
+<p class=AmmCorpsTexte><span style='color:black;background:white'>Ce sont les signes associés à l’hypercalcémie</span></p>
+<p class=AmmListePuces1><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>céphalées, asthénie, anorexie, amaigrissement, arrêt de croissance,</p>
+<p class=AmmListePuces1><a name="_Hlk112317699"><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>état confusionnel,</a></p>
+<p class=AmmListePuces1><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>douleurs osseuses,</p>
+<p class=AmmListePuces1><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>faiblesse musculaire,</p>
+<p class=AmmListePuces1><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>nausées, vomissements,</p>
+<p class=AmmListePuces1><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>constipation, douleurs abdominales, </p>
+<p class=AmmListePuces1><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>polyurie, polydipsie, déshydratation, soif,</p>
+<p class=AmmListePuces1><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>hypertension artérielle,</p>
+<p class=AmmListePuces1><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>lithiase calcique, calcifications tissulaires, en particulier rénales <a name="_Hlk112314964">(néphrocalcinose) </a>et vasculaires,</p>
+<p class=AmmListePuces1><a name="_Hlk112314973"><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>la persistance de taux de calcium élevés peut entraîner des lésions irréversibles et une calcification des tissus mous,</a></p>
+<p class=AmmListePuces1><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>insuffisance rénale,</p>
+<p class=AmmListePuces1><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>calculs rénaux,<a name="_Hlk112317755"></a><a name="_Hlk112314990"></a></p>
+<p class=AmmListePuces1><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>arythmie cardiaque dans les cas graves, </p>
+<p class=AmmListePuces1><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>une hypercalcémie extrême peut entraîner le coma et la mort.</p>
+<p class=AmmAnnexeTitre3><span style='font-weight:normal'>Signes biologiques</span><span style='font-weight:normal;text-decoration:none'> :</span></p>
+<p class=AmmListePuces1><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>hypercalcémie, hypercalciurie, hyperphosphatémie, concentration basse en hormone parathyroïdienne et élevée en 25-hydroxyvitamine D.</p>
+<p class=AmmAnnexeTitre3><span style='text-decoration:none'>Conduite à tenir</span><span style='font-weight:normal;text-decoration:none'> :</span></p>
+<p class=AmmListePuces1 style='margin-left:0cm;text-indent:0cm'>Cesser l'administration de vitamine D, réduire les apports calciques, augmenter la diurèse, boissons abondantes.</p>
+<p class=AmmCorpsTexte style='margin-top:6.0pt'><a name="_Hlk112315000">Dans les cas d’hypercalcémie sévères, une hyperhydratation, un traitement isolé ou combiné avec des diurétiques de l'anse, des bisphosphonates, de la calcitonine et des glucocorticoïdes doivent être envisagés. Les électrolytes sériques, la fonction rénale et la diurèse doivent être surveillés.</a></p>
+<p class="AmmAnnexeTitre1"><a name="RcpPropPharmacologiques">5. PROPRIETES PHARMACOLOGIQUES</a>&nbsp;&nbsp;<a href='#HautDePage'><img src='img/BackToTop.jpg' width='15px' height='15px' alt='Retour en haut de la page' title='Retour en haut de la page' /></a></p>
+<p class="AmmAnnexeTitre2"><a name="RcpPropPharmacodynamiques">5.1. Propriétés pharmacodynamiques</a>&nbsp;&nbsp;<a href='#HautDePage'><img src='img/BackToTop.jpg' width='15px' height='15px' alt='Retour en haut de la page' title='Retour en haut de la page' /></a></p>
+<p class=AmmCorpsTexteGras><a name="_Toc142278933">Classe pharmacothérapeutique : VITAMINE D ET ANALOGUES, code ATC : A11CC05 </a><span style='color:black'>(A: Appareil digestif et métabolisme)</span></p>
+<p class=AmmCorpsTexte>Le rôle essentiel de la vitamine D s'exerce sur l'intestin, dont elle augmente la capacité à absorber le calcium et les phosphates, et sur le squelette, dont elle favorise la minéralisation.</p>
+<p class="AmmAnnexeTitre2"><a name="RcpPropPharmacocinetiques">5.2. Propriétés pharmacocinétiques</a>&nbsp;&nbsp;<a href='#HautDePage'><img src='img/BackToTop.jpg' width='15px' height='15px' alt='Retour en haut de la page' title='Retour en haut de la page' /></a></p>
+<p class=AmmCorpsTexte><a name="_Toc142278934">La vitamine D est absorbée dans l'intestin grêle de façon passive, puis rejoint la circulation générale par voie lymphatique, incorporée aux chylomicrons.</a></p>
+<p class=AmmCorpsTexte>Après absorption, elle se lie à une protéine porteuse spécifique et est transportée jusqu'au foie pour y être convertie en 25-hydroxyvitamine D. Cette dernière se lie à son tour à la même protéine porteuse et est transportée jusqu'aux reins où elle est transformée en sa forme active, la 1,25-dihydroxyvitamine D.</p>
+<p class=AmmCorpsTexte>Ses sites de stockage essentiels sont le tissu adipeux, les muscles, mais aussi le sang. La 25-hydroxyvitamine D liée à sa protéine porteuse est la forme majeure de réserve circulante de la vitamine D. Sa demi-vie dans le sang est de 15 à 40 jours.</p>
+<p class=AmmCorpsTexte>L'élimination de la vitamine D et de ses métabolites se fait par voie fécale, sous forme non transformée ou sous forme hydrosoluble (acide calcitroïque, dérivés glycuroconjugués).</p>
+<p class="AmmAnnexeTitre2"><a name="RcpSecuritePreclinique">5.3. Données de sécurité préclinique</a>&nbsp;&nbsp;<a href='#HautDePage'><img src='img/BackToTop.jpg' width='15px' height='15px' alt='Retour en haut de la page' title='Retour en haut de la page' /></a></p>
+<p class=AmmCorpsTexte><a name="_Toc142278935">Sans objet.</a></p>
+<p class="AmmAnnexeTitre1"><a name="RcpDonneesPharmaceutiques">6. DONNEES PHARMACEUTIQUES</a>&nbsp;&nbsp;<a href='#HautDePage'><img src='img/BackToTop.jpg' width='15px' height='15px' alt='Retour en haut de la page' title='Retour en haut de la page' /></a></p>
+<p class="AmmAnnexeTitre2"><a name="RcpListeExcipients">6.1. Liste des excipients</a>&nbsp;&nbsp;<a href='#HautDePage'><img src='img/BackToTop.jpg' width='15px' height='15px' alt='Retour en haut de la page' title='Retour en haut de la page' /></a></p>
+<p class=AmmCorpsTexte><a name="_Toc142278937"></a><a name="_Hlk57295356">Huile essentielle d'orange douce, huile d'olive raffinée pour préparations injectables, mélange de tocophérols naturels de forme alpha, bêta, gamma et delta (COVI-OX T70).</a></p>
+<p class="AmmAnnexeTitre2"><a name="RcpIncompatibilites">6.2. Incompatibilités</a>&nbsp;&nbsp;<a href='#HautDePage'><img src='img/BackToTop.jpg' width='15px' height='15px' alt='Retour en haut de la page' title='Retour en haut de la page' /></a></p>
+<p class=AmmCorpsTexte><a name="_Toc142278938">Sans objet.</a></p>
+<p class="AmmAnnexeTitre2"><a name="RcpDureeConservation">6.3. Durée de conservation</a>&nbsp;&nbsp;<a href='#HautDePage'><img src='img/BackToTop.jpg' width='15px' height='15px' alt='Retour en haut de la page' title='Retour en haut de la page' /></a></p>
+<p class=AmmCorpsTexte>3 ans.</p>
+<p class=AmmCorpsTexte>A utiliser dans les 3 mois après la première ouverture du flacon.</p>
+<p class="AmmAnnexeTitre2"><a name="RcpPrecConservation">6.4. Précautions particulières de conservation</a>&nbsp;&nbsp;<a href='#HautDePage'><img src='img/BackToTop.jpg' width='15px' height='15px' alt='Retour en haut de la page' title='Retour en haut de la page' /></a></p>
+<p class=AmmCorpsTexte><a name="_Toc142278940">A conserver à une température ne dépassant pas 25°C.</a></p>
+<p class=AmmCorpsTexte>Conserver le flacon dans l'emballage extérieur, à l'abri de la lumière.</p>
+<p class=AmmCorpsTexte>Pour les conditions de conservation du médicament après première ouverture, voir la rubrique 6.3.</p>
+<p class="AmmAnnexeTitre2"><a name="RcpEmballage">6.5. Nature et contenu de l'emballage extérieur </a>&nbsp;&nbsp;<a href='#HautDePage'><img src='img/BackToTop.jpg' width='15px' height='15px' alt='Retour en haut de la page' title='Retour en haut de la page' /></a></p>
+<p class=AmmCorpsTexte><a name="_Toc142278942"></a><a name="_Toc142278941">10 ml en flacon (verre brun de type III) muni d'un compte-goutte (PE) et d’un bouchon sécurité-enfant.</a></p>
+<p class="AmmAnnexeTitre2"><a name="RcpPrecEmpl">6.6. Précautions particulières d’élimination et de manipulation</a>&nbsp;&nbsp;<a href='#HautDePage'><img src='img/BackToTop.jpg' width='15px' height='15px' alt='Retour en haut de la page' title='Retour en haut de la page' /></a></p>
+<p class=AmmCorpsTexte>Pas d’exigences particulières. </p>
+<p class=AmmCorpsTexte>Tout médicament non utilisé ou déchet doit être éliminé conformément à la réglementation en vigueur.</p>
+<p class="AmmAnnexeTitre1"><a name="RcpTitulaireAmm">7. TITULAIRE DE L’AUTORISATION DE MISE SUR LE MARCHE</a>&nbsp;&nbsp;<a href='#HautDePage'><img src='img/BackToTop.jpg' width='15px' height='15px' alt='Retour en haut de la page' title='Retour en haut de la page' /></a></p>
+<p class=AmmCorpsTexteGras style='margin-bottom:0cm;margin-bottom:.0001pt; page-break-after:avoid'><a name="_Toc142278943">VIATRIS MEDICAL </a></p>
+<p class=AmmCorpsTexte style='margin-bottom:0cm;margin-bottom:.0001pt; page-break-after:avoid'>1 BIS PLACE DE LA DEFENSE – TOUR TRINITY</p>
+<p class=AmmCorpsTexte style='margin-bottom:0cm;margin-bottom:.0001pt; page-break-after:avoid'>92400 COURBEVOIE</p>
+<p class="AmmAnnexeTitre1"><a name="RcpNumAutor">8. NUMERO(S) D’AUTORISATION DE MISE SUR LE MARCHE</a>&nbsp;&nbsp;<a href='#HautDePage'><img src='img/BackToTop.jpg' width='15px' height='15px' alt='Retour en haut de la page' title='Retour en haut de la page' /></a></p>
+<p class=AmmListePuces1><a name="_Toc142278944"><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>34009 353 583 6 3 : 10 ml en flacon (verre brun).</a></p>
+<p class="AmmAnnexeTitre1"><a name="RcpPremiereAutorisation">9. DATE DE PREMIERE AUTORISATION/DE RENOUVELLEMENT DE L’AUTORISATION</a>&nbsp;&nbsp;<a href='#HautDePage'><img src='img/BackToTop.jpg' width='15px' height='15px' alt='Retour en haut de la page' title='Retour en haut de la page' /></a></p>
+<p class=AmmCorpsTexte><a name="_Toc142278945"><span style='color:#538135'>[à compléter ultérieurement par le titulaire]</span></a></p>
+<p class="AmmAnnexeTitre1"><a name="RcpDateRevision">10. DATE DE MISE A JOUR DU TEXTE</a>&nbsp;&nbsp;<a href='#HautDePage'><img src='img/BackToTop.jpg' width='15px' height='15px' alt='Retour en haut de la page' title='Retour en haut de la page' /></a></p>
+<p class=AmmCorpsTexte><a name="_Toc142278946"><span style='color:#538135'>[à compléter ultérieurement par le titulaire]</span></a></p>
+<p class="AmmAnnexeTitre1"><a name="RcpDosimetrie">11. DOSIMETRIE</a>&nbsp;&nbsp;<a href='#HautDePage'><img src='img/BackToTop.jpg' width='15px' height='15px' alt='Retour en haut de la page' title='Retour en haut de la page' /></a></p>
+<p class=AmmCorpsTexte>Sans objet.</p>
+<p class="AmmAnnexeTitre1"><a name="RcpInstPrepRadioph">12. INSTRUCTIONS POUR LA PREPARATION DES RADIOPHARMACEUTIQUES</a>&nbsp;&nbsp;<a href='#HautDePage'><img src='img/BackToTop.jpg' width='15px' height='15px' alt='Retour en haut de la page' title='Retour en haut de la page' /></a></p>
+<p class=AmmCorpsTexte><a name="_Toc142278948">Sans objet.</a></p>
+<div style='border:none;border-top:solid windowtext 1.0pt;padding:1.0pt 0cm 0cm 0cm'>
+<p class="AmmAnnexeTitre"><a name="RcpCondPrescription">CONDITIONS DE PRESCRIPTION ET DE DELIVRANCE</a></p>
+</div>
+<p class=AmmCorpsTexte><a name="_Hlk57284761">Médicament non soumis à prescription médicale.</a></p>
+<span class='gras'><span style='font-size:12.0pt;font-family:"Arial",sans-serif;color:#0B3D92;
+text-transform:uppercase'><br clear=all>
+</span></span>					
+					<p class="alignright"><a href="#HautDePage">Retour en haut de la page <img src="img/BackToTop.jpg" width="20px" height="20px" alt="Retour en haut de la page" title="Retour en haut de la page" /></a></p>
+				</div>
+			</div>
+		</div>
+	</div>
+
+<table summary="" class="content" width="1000">
+	<tr>
+		<td height="100px">&nbsp;</td>
+	</tr>
+</table>
+<table summary="Pied de page" class="footer" width="1000">
+	<tr>
+		<td>
+			<table summary="" class="tablealigncenter" border="0">
+				<tr>
+					<td width="100px" class="aligncenter"><a id="lien_ansm" href="http://ansm.sante.fr/" target="_blank"><img src="img/Logo_ANSM.png" width="150" height="60" alt="ANSM - Agence nationale de sécurité du médicament et des produits de santé" title="L'ANSM met à disposition les principales informations issues de l'Autorisation de mise sur le marché, l'appartenance à un groupe générique, les liens vers les informations de sécurité qu'elle publie, l'identification des médicaments sous surveillance renforcée - nouvelle fenêtre" /></a></td>
+					          <td>&nbsp;</td>
+					<td width="100px" class="aligncenter"><img src="img/Logo_HAS.png" width="150" height="60" alt="HAS - Haute autorité de santé" title="La HAS met à disposition les informations relatives au service médical rendu, à l'amélioration du service médical rendu ainsi que les liens vers les avis de la Commission de la Transparence correspondants - nouvelle fenêtre" /></td>
+					<td>&nbsp;</td>
+					<td width="100px" class="aligncenter"><img src="img/Logo_CNAM.png" width="150" height="60" alt="UNCAM - Unin nationale des caisses d'assurance maladie" title="L'UNCAM met à disposition le taux de remboursement, le prix et les indications remboursables le cas échéant, ainsi que l'agrément aux collectivités - nouvelle fenêtre" /></td>
+          				</tr>
+			</table> 
+		</td>
+	</tr>
+</table>
+<table summary="" class="finpage" width="1000">
+	<tr>
+		<td height="100px" class="aligncenter">
+			<a class="navigation" href="plan.php">Plan du site</a>&nbsp;|&nbsp;
+			<a class="navigation" href="accessibilite.php">Accessibilité</a>&nbsp;|&nbsp;
+			<a class="navigation" href="contact.php">Contact</a>&nbsp;|&nbsp;
+			<a class="navigation" href="telechargement.php">Téléchargement</a>&nbsp;|&nbsp;
+			<a class="navigation" href="DeclarationConfidentialite.php">Declaration de confidentialité</a>&nbsp;|&nbsp;
+			<a class="navigation" href="http://www.service-public.fr/" title="Service Public - Nouvelle fenêtre" target="_blank">Service-Public.fr</a>&nbsp;|&nbsp;
+			<a class="navigation" href="http://www.legifrance.gouv.fr/" title="Legifrance - Nouvelle fenêtre" target="_blank">Legifrance</a>&nbsp;|&nbsp;
+			<a class="navigation" href="http://www.gouvernement.fr/" title="Gouvernement - Nouvelle fenêtre" target="_blank" >Gouvernement.fr</a>
+		</td>
+	</tr>
+</table>
+
+
+
+<!-- Matomo -->
+<script type="text/javascript">
+  var _paq = window._paq = window._paq || [];
+  /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
+  _paq.push(['trackPageView']);
+  _paq.push(['enableLinkTracking']);
+  (function() {
+    var u="https://stats.integra.fr/";
+    _paq.push(['setTrackerUrl', u+'matomo.php']);
+    _paq.push(['setSiteId', '79']);
+    var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+    g.type='text/javascript'; g.async=true; g.src=u+'matomo.js'; s.parentNode.insertBefore(g,s);
+  })();
+</script>
+<!-- End Matomo Code -->
+
+
+
+</body>
+</html>

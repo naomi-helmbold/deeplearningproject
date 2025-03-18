@@ -1,0 +1,512 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="fr" lang="fr">
+<head>
+	<title>Résumé des caractéristiques du produit - BISOPROLOL VIATRIS 5 mg, comprimé pelliculé sécable  - Base de données publique des médicaments</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=windows-1252"/>
+	<meta name="robots" content="index, follow"/>
+	<meta name="Description" content="Base de données publique des médicaments"/>
+	<meta name="Keywords" content="base, données, publique, médicaments, Résumé des caractéristiques du produit, BISOPROLOL VIATRIS 5 mg, comprimé pelliculé sécable "/>
+	<meta name="Subject" content="medicament"/>
+	<link href='https://fonts.googleapis.com/css?family=Noticia+Text' rel='stylesheet' type='text/css' />
+	<link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro' rel='stylesheet' type='text/css' />
+	<link href="style/style_bdm.css?v=2.2.3" type="text/css" rel="stylesheet"/>
+	<link href="style/style_RCP_Notice.css" type="text/css" rel="stylesheet"/>
+  <link rel="alternate" href="http://m.base-donnees-publique.medicaments.gouv.fr/#!info-64791577">
+    <script type="text/javascript" src="scripts/autocomplete.js?v=2.2.3"></script>
+	<script type="text/javascript" src="scripts/jquery.js"></script>
+    <script type="text/javascript" src="scripts/jquery-ui.min.js"></script>
+	<script type="text/javascript" src="scripts/common.js"></script>
+	<link rel="icon" type="image/x-icon" href="favicon.ico" />
+</head>
+
+<body>
+
+<a name="HautDePage" />
+<div id="bandeauhaut">
+	<a id="lien_ministere" class="lienmenu" href="http://www.sante.gouv.fr" target="_blank" title="Site du ministère des affaires sociales et de la santé - nouvelle fenêtre"><img id="logoministere" src="img/Logo_Ministere.jpg"  alt="Logo du ministère des affaires sociales et de la santé"/></a>
+	<h1 class="texteTitreSite">
+		Base <span class="texteBleu">de</span> données <span class="texteBleu">publique</span><br/><span class="texteBleu">des</span> médicaments
+	</h1>
+		<a id="lien_medicament_gouv" class="lienEspaceMedic" target="_blank" href="http://medicaments.gouv.fr" title="Visiter [medicaments.gouv.fr] - nouvelle fenêtre">Visiter [medicaments.gouv.fr] <img src="/img/icone_lien.png" alt="Visiter [medicaments.gouv.fr]"  title="Visiter [medicaments.gouv.fr] - nouvelle fenetre" /></a>
+</div>
+<!--div align="center">
+	<a id="banniere" target="_blank" href="http://social-sante.gouv.fr/soins-et-maladies/medicaments/medicaments-generiques/" title="Visiter [medicaments.gouv.fr] - M?dicaments g?n?riques">
+		<img width="1000"   src ="/img/carrouselbannieres.gif" alt="Visiter [medicaments.gouv.fr] - M?dicaments g?n?riques" title="Visiter [medicaments.gouv.fr] - M?dicaments g?n?riques" />
+	</a>
+</div-->
+
+<div id="menuhaut">
+	<span id="menuhaut_gauche">
+		<a id="lien_accueil" class="navigation" href="index.php">Accueil</a>&nbsp;|&nbsp;
+		<a id="lien_glossaire" class="navigation" href="glossaire.php">Glossaire</a>&nbsp;|&nbsp;
+		<a id="lien_aide" class="navigation" href="aide.php">Aide</a>		
+	</span>
+	
+		
+	<span id="menuhaut_dernmaj">
+        <br>Dernière <span title=" 2.4.4
+">mise à jour</span> le 03/03/2025	</span>
+</div>
+
+	<script language="javascript" type="text/javascript">
+		//<![CDATA[ 
+		function Aff(men) {
+			document.write("<ul class=\"menuDoc\">");
+			for(var no_rub=0;no_rub<men.num_rub;no_rub++) {
+				document.write("<li><a class='leftMenu' href='"+menu[no_rub].page+"'>");
+				document.write(men[no_rub].txt);
+				document.write("</a></li>");
+				if (men[no_rub].nb_lien != 0){
+					document.write("<ul class=\"sousMenuDoc\">");
+				}
+				for(var no_lien=0;no_lien<men[no_rub].nb_lien;no_lien++) {
+					document.write("<li><a class='leftMenu' href='"+men[no_rub][no_lien].page+"'>");
+					document.write(men[no_rub][no_lien].txt);
+					document.write("</a></li>");
+				}
+				if (men[no_rub].nb_lien != 0){
+					document.write("</ul>");
+				}
+			}
+			document.write("</ul>");
+		}
+		
+		function CreerMenu(police,imgRub,imgOption,imgOptionFin,hauteur) {
+			this.num_rub=0;
+			this.police=police;
+			this.imgRub=imgRub;
+			this.imgOpt=imgOption;
+			this.imgOptFin=imgOptionFin;
+			this.hauteur=hauteur;
+			this.AddRub=AddRub;
+			this.AddLien=AddLien;
+		}
+		
+		function AddRub(txt,aff,page) {
+			var rub = new Object;
+				rub.txt=txt;
+				rub.aff=aff;
+				rub.page=page;
+				rub.nb_lien=0;
+			this[this.num_rub]=rub;
+			this.num_rub++;
+		}
+
+		function AddLien(txt,page) {
+			var no_rub = this.num_rub-1;
+			var no_lien= this[no_rub].nb_lien;
+			var lien = new Object;
+				lien.txt=txt;
+				lien.page=page;
+			this[no_rub][no_lien]=lien;
+			this[no_rub].nb_lien++;
+		}
+		var menu=new CreerMenu("arial","img/dyn04.gif","img/dyn22.gif","img/dyn55.gif",18);
+		//]]> 
+		menu.AddRub("Dénomination","O","#RcpDenomination");
+			menu.AddRub("Composition","O","#RcpCompoQualiQuanti");
+			menu.AddRub("Forme pharma.","O","#RcpFormePharm");
+			menu.AddRub("Clinique","O","#RcpDonneesCliniques");
+			menu.AddLien("Indic. thérapeutiques","#RcpIndicTherap");
+				menu.AddLien("Posologie","#RcpPosoAdmin");
+				menu.AddLien("Contre-indications","#RcpContreindications");
+				menu.AddLien("Mise en garde","#RcpMisesEnGarde");
+				menu.AddLien("Interactions","#RcpInteractionsMed");
+				menu.AddLien("Grossesse, allait.","#RcpFertGrossAllait");
+				menu.AddLien("Conduite véhicules","#RcpConduite");
+				menu.AddLien("Effets indésirables","#RcpEffetsIndesirables");
+				menu.AddLien("Surdosage","#RcpSurdosage");
+				menu.AddRub("Pharmacologie","O","#RcpPropPharmacologiques");
+			menu.AddLien("Pharmacodynamie","#RcpPropPharmacodynamiques");
+				menu.AddLien("Pharmacocinétique","#RcpPropPharmacocinetiques");
+				menu.AddLien("Sécurité préclinique","#RcpSecuritePreclinique");
+				menu.AddRub("Pharmaceutique","O","#RcpDonneesPharmaceutiques");
+			menu.AddLien("Liste excipients","#RcpListeExcipients");
+				menu.AddLien("Incompatibilités","#RcpIncompatibilites");
+				menu.AddLien("Durée conservation","#RcpDureeConservation");
+				menu.AddLien("Conservation","#RcpPrecConservation");
+				menu.AddLien("Emballage","#RcpEmballage");
+				menu.AddLien("Utilisation/manipulation","#RcpPrecEmpl");
+				menu.AddRub("Titulaire AMM","O","#RcpTitulaireAmm");
+			menu.AddRub("Présentations","O","#RcpNumAutor");
+			menu.AddRub("Autorisation, renouv.","O","#RcpPremiereAutorisation");
+			menu.AddRub("Date de révision","O","#RcpDateRevision");
+			menu.AddRub("Dosimétrie","O","#RcpDosimetrie");
+			menu.AddRub("Préparation radiopharma.","O","#RcpInstPrepRadioph");
+				</script>
+
+	<div id="container">
+		<div id="leftnav">
+			<div id="cadreMenuGauche">
+				<h2 class="sommaireMenu">Sommaire</h2>
+				<div id="menuGauche">
+					<script language="JavaScript" type="text/javascript">Aff(menu);</script>
+				</div>
+			</div>
+		</div>
+		<div id="contentPrincipal">
+			<div id="boutonsliens">
+				<a id='lien_fiche_info' href='extrait.php?specid=64791577' ><img id="ongletficheinfo" alt="Onglet fiche information" src="img/onglet_fiche_info_vert.png" /></a><a id='lien_rcp' href='affichageDoc.php?specid=64791577&amp;typedoc=R'><img class="onglet" alt="Onglet résumé des caractéristiques du produit" src="img/onglet_rcp_gris.png" /></a><a id='lien_notice' href='affichageDoc.php?specid=64791577&amp;typedoc=N'><img class="onglet" alt="Onglet notice patient" src="img/onglet_notice_vert.png" /></a>			</div>
+			<div class="titredeno">
+				<table summary="" border="0" cellspacing="0">
+					<tr><td colspan="3" height="10px"></td></tr>
+					<tr>
+						<td width="15px">&nbsp;</td>
+						<td width="685px"><h1 class="textedeno">BISOPROLOL VIATRIS 5 mg, comprimé pelliculé sécable  - Résumé des caractéristiques du produit</h1></td>
+						<td width="43px" class="tdcenter"><a href="Javascript:void(null)" onclick="print();"><img src="img/imprimante.png" height="20px" width="20px" alt="Imprimer le document" title="Imprimer le document" border="0" /></a></td>
+					</tr>
+					<tr><td colspan="3" height="10px"></td></tr>
+				</table>
+			</div>
+			
+			<div id="contentDocument">
+				<div id="textDocument">
+					<p class="DateNotif">ANSM - Mis à jour le : 11/12/2023</p>
+<p class="AmmAnnexeTitre1"><a name="RcpDenomination">1. DENOMINATION DU MEDICAMENT</a>&nbsp;&nbsp;<a href='#HautDePage'><img src='img/BackToTop.jpg' width='15px' height='15px' alt='Retour en haut de la page' title='Retour en haut de la page' /></a></p>
+<p class=AmmCorpsTexteGras>BISOPROLOL VIATRIS 5 mg, comprimé pelliculé sécable</p>
+<p class="AmmAnnexeTitre1"><a name="RcpCompoQualiQuanti">2. COMPOSITION QUALITATIVE ET QUANTITATIVE</a>&nbsp;&nbsp;<a href='#HautDePage'><img src='img/BackToTop.jpg' width='15px' height='15px' alt='Retour en haut de la page' title='Retour en haut de la page' /></a></p>
+<p class=AmmComposition>Hémifumarate de bisoprolol ..................................................................................................... 5 mg</p>
+<p class=AmmCorpsTexte align=center style='text-align:center'>Pour un comprimé pelliculé sécable.</p>
+<p class=AmmCorpsTexte>Excipient(s) à effet notoire :</p>
+<p class=AmmCorpsTexte>Chaque comprimé contient du jaune orangé S (E110) (0,007 mg) et du sodium.</p>
+<p class=AmmCorpsTexte>Ce médicament contient moins de 1 mmol (23 mg) de sodium par comprimé, c.-à-d. qu’il est essentiellement « sans sodium ».</p>
+<p class=AmmCorpsTexte>Pour la liste complète des excipients, voir rubrique 6.1.</p>
+<p class="AmmAnnexeTitre1"><a name="RcpFormePharm">3. FORME PHARMACEUTIQUE</a>&nbsp;&nbsp;<a href='#HautDePage'><img src='img/BackToTop.jpg' width='15px' height='15px' alt='Retour en haut de la page' title='Retour en haut de la page' /></a></p>
+<p class=AmmCorpsTexte><a name="_Toc142278915">Comprimé pelliculé sécable.</a></p>
+<p class=AmmCorpsTexte>Comprimé pelliculé jaune pâle, en forme de cœur, biconvexe à bords biseautés portant une barre de cassure sur une face du comprimé, et uni sur l’autre face.</p>
+<p class=AmmCorpsTexte>Le comprimé peut être divisé en doses égales.</p>
+<p class="AmmAnnexeTitre1"><a name="RcpDonneesCliniques">4. DONNEES CLINIQUES</a>&nbsp;&nbsp;<a href='#HautDePage'><img src='img/BackToTop.jpg' width='15px' height='15px' alt='Retour en haut de la page' title='Retour en haut de la page' /></a></p>
+<p class="AmmAnnexeTitre2"><a name="RcpIndicTherap">4.1. Indications thérapeutiques</a>&nbsp;&nbsp;<a href='#HautDePage'><img src='img/BackToTop.jpg' width='15px' height='15px' alt='Retour en haut de la page' title='Retour en haut de la page' /></a></p>
+<p class=AmmCorpsTexte><a name="_Toc142278917">Traitement de l’insuffisance cardiaque chronique stable avec réduction de la fonction ventriculaire systolique gauche en complément des inhibiteurs de l’enzyme de conversion (IEC) et des diurétiques, et éventuellement, des digitaliques (pour de plus amples informations, voir rubrique 5.1).</a></p>
+<p class="AmmAnnexeTitre2"><a name="RcpPosoAdmin">4.2. Posologie et mode d'administration</a>&nbsp;&nbsp;<a href='#HautDePage'><img src='img/BackToTop.jpg' width='15px' height='15px' alt='Retour en haut de la page' title='Retour en haut de la page' /></a></p>
+<p class=AmmCorpsTexte><a name="_Toc142278918">Le traitement standard de l’insuffisance cardiaque chronique est composé d’un inhibiteur de l’enzyme de conversion (ou un inhibiteur du récepteur de l’angiotensine en cas d’intolérance aux IEC), d’un bêta-bloquant, de diurétiques et le cas échéant de glucosides cardiaques. Les patients doivent être stables (sans épisode aigu) à l’instauration du traitement par le bisoprolol. </a></p>
+<p class=AmmCorpsTexte>Il est recommandé que le traitement soit assuré par un médecin ayant une expérience de la prise en charge des patients atteints d’insuffisance cardiaque chronique.</p>
+<p class=AmmCorpsTexte>Une aggravation transitoire de l’insuffisance cardiaque, de l’hypotension ou de la bradycardie peut se produire pendant la période de titration et par la suite.</p>
+<p class=AmmAnnexeTitre3 style='page-break-after:auto'>Posologie</p>
+<p class=AmmAnnexeTitre4>Période de titration</p>
+<p class=AmmCorpsTexte>Le traitement de l’insuffisance cardiaque chronique stable par le bisoprolol nécessite une période de titration.</p>
+<p class=AmmCorpsTexte>La posologie doit être augmentée progressivement, comme suit :</p>
+<p class=AmmListePuces1 style='text-align:justify'><span style='font-family: Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>1,25 mg une fois par jour pendant 1 semaine ; si le médicament est bien toléré, augmenter à ;</p>
+<p class=AmmListePuces1 style='text-align:justify'><span style='font-family: Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>2,5 mg une fois par jour pendant une autre semaine ; si le médicament est bien toléré, augmenter à ;</p>
+<p class=AmmListePuces1 style='text-align:justify'><span style='font-family: Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>3,75 mg une fois par jour pendant une autre semaine ; si le médicament est bien toléré, augmenter à ;</p>
+<p class=AmmListePuces1 style='text-align:justify'><span style='font-family: Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>5 mg une fois par jour pendant les 4 semaines suivantes ; si le médicament est bien toléré, augmenter à ;</p>
+<p class=AmmListePuces1 style='text-align:justify'><span style='font-family: Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>7,5 mg une fois par jour pendant les 4 semaines suivantes ; si le médicament est bien toléré, augmenter à ;</p>
+<p class=AmmListePuces1 style='margin-top:0cm;margin-right:0cm;margin-bottom: 6.0pt;margin-left:17.85pt;text-align:justify;text-indent:-17.85pt'><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>10 mg une fois par jour en traitement d’entretien.</p>
+<p class=AmmCorpsTexte>La posologie maximale recommandée est de 10 mg une fois par jour.</p>
+<p class=AmmCorpsTexte>Une surveillance des constantes vitales (fréquence cardiaque, pression artérielle) et des symptômes d’aggravation de l’insuffisance cardiaque est recommandée pendant la période de titration. Des symptômes peuvent déjà apparaître dès le premier jour après initiation du traitement.</p>
+<p class=AmmAnnexeTitre4>Modification du traitement</p>
+<p class=AmmCorpsTexte>Si la dose maximale recommandée est mal tolérée, une diminution progressive de la dose pourra être envisagée.</p>
+<p class=AmmCorpsTexte>En cas d’aggravation transitoire de l’insuffisance cardiaque, de l’hypotension ou de la bradycardie, il est recommandé de revoir la posologie des traitements concomitants. Il peut également être nécessaire de réduire provisoirement la dose de bisoprolol ou d’envisager l’arrêt du traitement.</p>
+<p class=AmmCorpsTexte>La reprise du traitement et/ou l’augmentation de la dose de bisoprolol doivent être systématiquement envisagées dès lors que le patient est de nouveau stable.</p>
+<p class=AmmCorpsTexte>Si l’arrêt du traitement est envisagé, une réduction progressive de la dose est recommandée car une interruption soudaine pourrait entraîner une dégradation aiguë de l’état du patient. </p>
+<p class=AmmCorpsTexte>Le traitement de l’insuffisance cardiaque chronique stable par le bisoprolol est habituellement un traitement au long cours.</p>
+<p class=AmmAnnexeTitre4>Atteinte rénale ou hépatique</p>
+<p class=AmmCorpsTexte>On ne dispose d’aucune donnée concernant la pharmacocinétique du bisoprolol chez les patients insuffisants hépatiques ou rénaux présentant une insuffisance cardiaque chronique. Il faut donc augmenter la posologie avec la plus grande prudence chez ces patients.</p>
+<p class=AmmAnnexeTitre4>Sujets âgés</p>
+<p class=AmmCorpsTexte>Il n’est pas nécessaire d’adapter la posologie.</p>
+<p class=AmmAnnexeTitre4>Population pédiatrique</p>
+<p class=AmmCorpsTexte>Aucune donnée n’étant disponible avec le bisoprolol en pédiatrie, son utilisation ne peut donc être recommandée chez les patients pédiatriques.</p>
+<p class=AmmAnnexeTitre3 style='page-break-after:auto'>Mode d’administration</p>
+<p class=AmmCorpsTexte>Les comprimés de bisoprolol doivent être pris le matin, avant, pendant ou après le petit déjeuner.</p>
+<p class=AmmCorpsTexte>Ils doivent être avalés avec un peu de liquide, et ne doivent pas être mâchés.</p>
+<p class="AmmAnnexeTitre2"><a name="RcpContreindications">4.3. Contre-indications</a>&nbsp;&nbsp;<a href='#HautDePage'><img src='img/BackToTop.jpg' width='15px' height='15px' alt='Retour en haut de la page' title='Retour en haut de la page' /></a></p>
+<p class=AmmCorpsTexte><a name="_Toc142278919">Le bisoprolol est contre-indiqué chez les patients souffrant d’insuffisance cardiaque chronique dans les cas suivants :</a></p>
+<p class=AmmListePuces1 style='text-align:justify'><span style='font-family: Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>insuffisance cardiaque aiguë ou pendant les épisodes de décompensation de l’insuffisance cardiaque, nécessitant un traitement inotrope intraveineux ;</p>
+<p class=AmmListePuces1 style='text-align:justify'><span style='font-family: Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>choc cardiogénique ;</p>
+<p class=AmmListePuces1 style='text-align:justify'><span style='font-family: Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>blocs auriculo-ventriculaires des 2ème et 3ème degrés ;</p>
+<p class=AmmListePuces1 style='text-align:justify'><span style='font-family: Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>maladie du sinus ;</p>
+<p class=AmmListePuces1 style='text-align:justify'><span style='font-family: Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>bloc sino-auriculaire ;</p>
+<p class=AmmListePuces1 style='text-align:justify'><span style='font-family: Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>bradycardie symptomatique ;</p>
+<p class=AmmListePuces1 style='text-align:justify'><span style='font-family: Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>hypotension symptomatique ;</p>
+<p class=AmmListePuces1 style='text-align:justify'><span style='font-family: Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>asthme sévère ;</p>
+<p class=AmmListePuces1 style='text-align:justify'><span style='font-family: Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>formes sévères de troubles artériels périphériques occlusifs ou formes sévères du phénomène de Raynaud ;</p>
+<p class=AmmListePuces1 style='text-align:justify'><span style='font-family: Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>phéochromocytome non traité (voir rubrique 4.4) ;</p>
+<p class=AmmListePuces1 style='text-align:justify'><span style='font-family: Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>acidose métabolique ;</p>
+<p class=AmmListePuces1 style='text-align:justify'><span style='font-family: Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>hypersensibilité à la substance active ou à l’un des excipients mentionnés à la rubrique 6.1.</p>
+<p class="AmmAnnexeTitre2"><a name="RcpMisesEnGarde">4.4. Mises en garde spéciales et précautions d'emploi</a>&nbsp;&nbsp;<a href='#HautDePage'><img src='img/BackToTop.jpg' width='15px' height='15px' alt='Retour en haut de la page' title='Retour en haut de la page' /></a></p>
+<p class=AmmCorpsTexte>Le traitement de l’insuffisance cardiaque chronique stable par le bisoprolol doit être initié par une période de titration spécifique.</p>
+<p class=AmmCorpsTexte>En particulier chez les patients présentant une cardiopathie ischémique, le traitement par le bisoprolol ne doit pas être interrompu brutalement, sauf indication formelle, car cela pourrait conduire à une aggravation transitoire de la pathologie cardiaque.</p>
+<p class=AmmCorpsTexte>L’initiation et l’arrêt du traitement par le bisoprolol nécessitent une surveillance régulière. </p>
+<p class=AmmCorpsTexte>Aucune donnée n’est actuellement disponible sur le traitement de l’insuffisance cardiaque par le bisoprolol chez les patients présentant les pathologies et états suivants :</p>
+<p class=AmmListePuces1 style='text-align:justify'><span style='font-family: Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>diabète insulino-dépendant (type I) ;</p>
+<p class=AmmListePuces1 style='text-align:justify'><span style='font-family: Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>insuffisance rénale sévère ;</p>
+<p class=AmmListePuces1 style='text-align:justify'><span style='font-family: Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>insuffisance hépatique sévère ;</p>
+<p class=AmmListePuces1 style='text-align:justify'><span style='font-family: Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>cardiomyopathie restrictive ;</p>
+<p class=AmmListePuces1 style='text-align:justify'><span style='font-family: Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>cardiopathie congénitale ;</p>
+<p class=AmmListePuces1 style='text-align:justify'><span style='font-family: Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>pathologie valvulaire organique ayant un retentissement significatif au plan hémodynamique ;</p>
+<p class=AmmListePuces1 style='margin-top:0cm;margin-right:0cm;margin-bottom: 6.0pt;margin-left:17.85pt;text-align:justify;text-indent:-17.85pt'><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>infarctus du myocarde de moins de 3 mois.</p>
+<p class=AmmCorpsTexte>Le bisoprolol doit être utilisé avec précaution dans les cas suivants :</p>
+<p class=AmmListePuces1 style='text-align:justify'><span style='font-family: Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>bronchospasme (asthme, maladies obstructives des voies aériennes) ;</p>
+<p class=AmmListePuces1 style='text-align:justify'><span style='font-family: Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>diabète avec fluctuations importantes de la glycémie, les symptômes d’hypoglycémie pouvant être masqués ;</p>
+<p class=AmmListePuces1 style='text-align:justify'><span style='font-family: Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>jeûne strict ;</p>
+<p class=AmmListePuces1 style='text-align:justify'><span style='font-family: Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>traitement de désensibilisation en cours. Comme les autres bêta-bloquants, le bisoprolol peut augmenter la sensibilité aux allergènes et l’intensité des réactions anaphylactiques. Le traitement par l’adrénaline ne produit pas toujours l’effet thérapeutique attendu.</p>
+<p class=AmmListePuces1 style='text-align:justify'><span style='font-family: Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>bloc auriculo-ventriculaire du 1er degré ;</p>
+<p class=AmmListePuces1 style='text-align:justify'><span style='font-family: Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>angor de Prinzmetal ;</p>
+<p class=AmmListePuces1 style='text-align:justify'><span style='font-family: Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>troubles artériels périphériques occlusifs. Une aggravation des symptômes peut survenir, notamment en début de traitement.</p>
+<p class=AmmListePuces1 style='margin-top:0cm;margin-right:0cm;margin-bottom: 6.0pt;margin-left:17.85pt;text-align:justify;text-indent:-17.85pt'><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>anesthésie générale : chez les patients sous anesthésie générale, le béta-bloquant diminue l’incidence des arythmies et des ischémies myocardiques pendant l’induction de l’anesthésie, l’intubation et la période post-opératoire. Il est actuellement recommandé de poursuivre le traitement bêta-bloquant pendant la période de l’intervention chirurgicale. L’anesthésiste doit être prévenu de la prise du traitement bêta-bloquant du fait de son potentiel d’interactions avec d’autres médicaments, entraînant des brady-arythmies, une diminution de la tachycardie réflexe et de la capacité réflexe de compensation en cas de perte sanguine. Si l’arrêt du traitement par bêta-bloquant paraît nécessaire avant l’intervention, l’arrêt devra être progressif, et terminé 48 heures avant l’anesthésie. </p>
+<p class=AmmCorpsTexte>L’association du bisoprolol avec les antagonistes calciques du type verapamil ou diltiazem, avec les anti-arythmiques de classe I, et avec les anti-hypertenseurs d’action centrale n’est en général pas recommandée (pour plus d’information, se référer à la rubrique 4.5).</p>
+<p class=AmmCorpsTexte>Même si les bêta-bloquants cardiosélectifs (bêta 1) peuvent agir moins sur la fonction pulmonaire que les bêta-bloquants non sélectifs, comme avec tous les bêta-bloquants, ils devraient être évités chez les patients présentant une maladie obstructive des voies aériennes excepté si un motif clinique justifie leur utilisation. Quand de telles raisons existent, bisoprolol peut être utilisé avec précaution. Chez les patients atteints d’une maladie obstructive des voies aériennes, le traitement par bisoprolol doit être instauré à la plus faible dose possible et les patients doivent être surveillés étroitement pour déceler l’apparition de nouveaux symptômes (ex. : dyspnée, intolérance à l’effort, toux). Dans l’asthme ou les autres broncho-pneumopathies chroniques obstructives, qui pourraient devenir symptomatiques, un traitement broncho-dilatateur peut être administré de manière concomitante. Chez les patients asthmatiques, une augmentation de la résistance des voies aériennes peut se produire nécessitant une augmentation de la dose de bêta-2 stimulants.</p>
+<p class=AmmCorpsTexte>Les patients ayant un psoriasis ou des antécédents de psoriasis ne doivent être traités par bêta-bloquants (dont le bisoprolol) qu’après une évaluation minutieuse des bénéfices et des risques.</p>
+<p class=AmmCorpsTexte>Chez les patients présentant un phéochromocytome, le bisoprolol ne doit pas être administré avant le traitement alpha-bloquant.</p>
+<p class=AmmCorpsTexte>Les symptômes de thyrotoxicose peuvent être masqués lors du traitement par le bisoprolol.</p>
+<p class=AmmCorpsTexte>Ce médicament contient un agent colorant azoïque, jaune orangé S (E110) et peut provoquer des réactions allergiques.</p>
+<p class=AmmAnnexeTitre3 style='page-break-after:auto'>Sportifs</p>
+<p class=AmmCorpsTexte>L’attention des sportifs est attirée sur le fait que cette spécialité contient un principe actif pouvant induire une réaction positive des tests pratiqués lors des contrôles antidopage.</p>
+<p class=AmmAnnexeTitre3 style='page-break-after:auto'>Sodium </p>
+<p class=AmmCorpsTexte>Ce médicament contient moins de 1 mmol (23 mg) de sodium par comprimé, c.-à-d. qu’il est essentiellement « sans sodium ».</p>
+<p class="AmmAnnexeTitre2"><a name="RcpInteractionsMed">4.5. Interactions avec d'autres médicaments et autres formes d'interactions</a>&nbsp;&nbsp;<a href='#HautDePage'><img src='img/BackToTop.jpg' width='15px' height='15px' alt='Retour en haut de la page' title='Retour en haut de la page' /></a></p>
+<p class=AmmAnnexeTitre3 style='page-break-after:auto'><a name="_Toc142278922">Associations déconseillées</a></p>
+<p class=AmmCorpsTexteGras style='margin-left:21.3pt;text-indent:-21.3pt'>+ Antagonistes calciques de type vérapamil, ou, dans une moindre mesure, de type diltiazem</p>
+<p class=AmmCorpsTexte>Effet négatif sur la contractilité et la conduction auriculo-ventriculaire. L’administration intra-veineuse de verapamil chez les patients sous bêta-bloquants peut induire une hypotension sévère et un bloc auriculo-ventriculaire.</p>
+<p class=AmmCorpsTexteGras style='margin-left:21.3pt;text-indent:-21.3pt'>+ Anti-arythmiques de classe I (par exemple quinidine, disopyramide, lidocaïne, phénytoïne, flécaïnide, propafénone)</p>
+<p class=AmmCorpsTexte>L’effet sur le temps de conduction auriculo-ventriculaire peut-être potentialisé et l’effet inotropique négatif augmenté.</p>
+<p class=AmmCorpsTexteGras style='margin-left:21.3pt;text-indent:-21.3pt'>+ Anti-hypertenseurs d’action centrale comme la clonidine et d’autres médicaments (par exemple méthyldopa, moxonidine, rilménidine)</p>
+<p class=AmmCorpsTexte>Aggravation de l’insuffisance cardiaque par diminution du tonus central sympathique (diminution de la fréquence et du débit cardiaque, vasodilatation). L’arrêt brutal du traitement, en particulier s’il a lieu avant l’arrêt du bêta-bloquant, peut augmenter le risque « d’hypertension rebond ».</p>
+<p class=AmmAnnexeTitre3 style='page-break-after:auto'><a name="_Toc142278923">Associations </a>faisant l'objet de précautions d’emploi</p>
+<p class=AmmCorpsTexteGras style='margin-left:21.3pt;text-indent:-21.3pt'>+ Antagonistes calciques de type dihydropyridine, comme la félodipine et l’amlodipine</p>
+<p class=AmmCorpsTexte>Une majoration du risque d’hypotension et du risque de détérioration de la fonction ventriculaire chez les patients souffrant d’insuffisance cardiaque ne peut être exclue.</p>
+<p class=AmmCorpsTexteGras style='margin-left:21.3pt;text-indent:-21.3pt'>+ Anti-arythmiques de classe III (par exemple amiodarone)</p>
+<p class=AmmCorpsTexte>L’effet sur la conduction auriculo-ventriculaire peut être majoré.</p>
+<p class=AmmCorpsTexteGras style='margin-left:21.3pt;text-indent:-21.3pt'>+ Bêta-bloquants d’usage local (par exemple, collyre pour le traitement des glaucomes)</p>
+<p class=AmmCorpsTexte>Les effets généraux du bisoprolol peuvent être potentialisés.</p>
+<p class=AmmCorpsTexteGras style='margin-left:21.3pt;text-indent:-21.3pt'>+ Médicaments parasympathomimétiques</p>
+<p class=AmmCorpsTexte>Le temps de conduction auriculo-ventriculaire et le risque de bradycardie peuvent être augmentés.</p>
+<p class=AmmCorpsTexteGras style='margin-left:21.3pt;text-indent:-21.3pt'>+ Insuline et hypoglycémiants oraux</p>
+<p class=AmmCorpsTexte>Augmentation de l’effet hypoglycémiant. Le blocage des bêta-adrénorécepteurs est susceptible de masquer les signes d’hypoglycémie.</p>
+<p class=AmmCorpsTexteGras style='margin-left:21.3pt;text-indent:-21.3pt'>+ Anesthésiques</p>
+<p class=AmmCorpsTexte>Diminution de la tachycardie réflexe et augmentation du risque d’hypotension (pour plus d’information sur l’anesthésie générale se référer également à la rubrique 4.4).</p>
+<p class=AmmCorpsTexteGras style='margin-left:21.3pt;text-indent:-21.3pt'>+ Digitaliques</p>
+<p class=AmmCorpsTexte>Diminution de la fréquence cardiaque, augmentation du temps de conduction auriculo-ventriculaire.</p>
+<p class=AmmCorpsTexteGras style='margin-left:21.3pt;text-indent:-21.3pt'>+ Anti-inflammatoires non stéroïdiens (AINS)</p>
+<p class=AmmCorpsTexte>L’action hypotensive du bisoprolol peut être diminuée.</p>
+<p class=AmmCorpsTexteGras style='margin-left:21.25pt;text-indent:-21.25pt'>+ Médicaments <span style='font-family:Symbol'>b</span>-sympathomimétiques (par exemple isoprénaline, dobutamine)</p>
+<p class=AmmCorpsTexte>L’association avec le bisoprolol peut diminuer l’effet des deux médicaments.</p>
+<p class=AmmCorpsTexteGras>+ Médicaments sympathomimétiques qui activent les récepteurs &#945; et &#946;-adrénergiques (par exemple noradrénaline, adrénaline)</p>
+<p class=AmmCorpsTexte>L’association avec le bisoprolol peut démasquer l’effet vasoconstricteur &#945;-adrénergique de ces médicaments, conduisant à une hypertension et une aggravation d’une claudication intermittente.</p>
+<p class=AmmCorpsTexte>Ces interactions sont considérées comme plus probables avec les bêta-bloquants non sélectifs.</p>
+<p class=AmmCorpsTexteGras style='margin-left:21.3pt;text-indent:-21.3pt'>+ Anti-hypertenseurs, ou médicaments pouvant induire une hypotension (par exemple antidépresseurs tricycliques, barbituriques, phénothiazines)</p>
+<p class=AmmCorpsTexte>Le risque d’hypotension peut être majoré.</p>
+<p class=AmmAnnexeTitre3 style='page-break-after:auto'><a name="_Toc142278924">Associations à prendre en compte</a></p>
+<p class=AmmCorpsTexteGras style='margin-left:21.3pt;text-indent:-21.3pt'>+ Méfloquine</p>
+<p class=AmmCorpsTexte>Majoration du risque de bradycardie.</p>
+<p class=AmmCorpsTexteGras style='margin-left:21.3pt;text-indent:-21.3pt'>+ Inhibiteurs de la monoamine-oxydase (sauf les IMAO-B)</p>
+<p class=AmmCorpsTexte>Majoration de l’effet hypotenseur des bêta-bloquants, mais aussi risque de crise hypertensive.</p>
+<p class="AmmAnnexeTitre2"><a name="RcpFertGrossAllait">4.6. Fertilité, grossesse et allaitement</a>&nbsp;&nbsp;<a href='#HautDePage'><img src='img/BackToTop.jpg' width='15px' height='15px' alt='Retour en haut de la page' title='Retour en haut de la page' /></a></p>
+<p class=AmmAnnexeTitre3 style='page-break-after:auto'>Grossesse</p>
+<p class=AmmCorpsTexte>Le bisoprolol possède des propriétés pharmacologiques susceptibles d’entraîner des effets nocifs sur la grossesse et/ou le fœtus/nouveau-né. D’une manière générale, les bêta-bloquants diminuent la perfusion placentaire ; cet effet a été associé à des retards de croissance, des morts intra-utérines, des avortements ou un travail précoce. Des effets indésirables (par exemple hypoglycémie et bradycardie) peuvent survenir chez le fœtus et le nouveau-né. Si le traitement par bêta-bloquants est nécessaire, il faut préférer les agents bêta-1 sélectifs.</p>
+<p class=AmmCorpsTexte>Le bisoprolol ne doit pas être utilisé pendant la grossesse sauf en cas de nécessité. Si le traitement par le bisoprolol s’avère nécessaire, le flux sanguin utéro-placentaire et la croissance fœtale doivent être surveillés. En cas d’effets nocifs sur la grossesse ou sur le fœtus, il faut envisager de mettre en route un autre traitement.</p>
+<p class=AmmCorpsTexte>Le nouveau-né doit faire l’objet d’une surveillance étroite. Les symptômes d’hypoglycémie et de bradycardie apparaissent généralement dans les 3 premiers jours de la vie.</p>
+<p class=AmmAnnexeTitre3 style='page-break-after:auto'><a name="_Toc142278927">Allaitement</a></p>
+<p class=AmmCorpsTexte>On ne sait pas si ce médicament est excrété dans le lait maternel. Par conséquent, l’allaitement n’est pas recommandé pendant l’administration du bisoprolol</p>
+<p class="AmmAnnexeTitre2"><a name="RcpConduite">4.7. Effets sur l'aptitude à conduire des véhicules et à utiliser des machines</a>&nbsp;&nbsp;<a href='#HautDePage'><img src='img/BackToTop.jpg' width='15px' height='15px' alt='Retour en haut de la page' title='Retour en haut de la page' /></a></p>
+<p class=AmmCorpsTexte><a name="_Toc142278929"><span lang=FR-BE>Dans une étude réalisée chez des patients atteints de cardiopathie ischémique, le bisoprolol n’a pas altéré les capacités de conduite. Cependant en raison de la variabilité inter-individuelle des réactions au médicament, l’aptitude à conduire des véhicules et à utiliser des machines peut être modifiée. Cet effet doit être pris en compte notamment au début du traitement, en cas de modification du traitement ainsi qu’en cas d’association à l’alcool.</span></a></p>
+<p class="AmmAnnexeTitre2"><a name="RcpEffetsIndesirables">4.8. Effets indésirables</a>&nbsp;&nbsp;<a href='#HautDePage'><img src='img/BackToTop.jpg' width='15px' height='15px' alt='Retour en haut de la page' title='Retour en haut de la page' /></a></p>
+<p class=AmmCorpsTexte>Les termes de fréquence utilisés ci-après répondent aux définitions suivantes :</p>
+<p class=AmmCorpsTexte>Très fréquent (&#8805; 1/10)</p>
+<p class=AmmCorpsTexte>Fréquent (&#8805; 1/100 à &lt; 1/10)</p>
+<p class=AmmCorpsTexte>Peu fréquent (&#8805; 1/1 000 à &lt; 1/100)</p>
+<p class=AmmCorpsTexte>Rare (&#8805; 1/10 000 à &lt; 1/1 000)</p>
+<p class=AmmCorpsTexte>Très rare (&lt; 1/10 000)</p>
+<p class=AmmCorpsTexte>Fréquence inconnue (ne peut être estimée sur la base des données disponibles)</p>
+<p class=AmmAnnexeTitre3 style='page-break-after:auto'>Affections cardiaques :</p>
+<p class=AmmCorpsTexte>Très fréquent : bradycardie.</p>
+<p class=AmmCorpsTexte>Fréquent : aggravation de l’insuffisance cardiaque.</p>
+<p class=AmmCorpsTexte>Peu fréquent : troubles de la conduction auriculo-ventriculaire.</p>
+<p class=AmmAnnexeTitre3 style='page-break-after:auto'>Investigations :</p>
+<p class=AmmCorpsTexte>Rare : élévation des triglycérides, élévation des enzymes hépatiques (ALAT, ASAT).</p>
+<p class=AmmAnnexeTitre3 style='page-break-after:auto'>Affections du système nerveux :</p>
+<p class=AmmCorpsTexte>Fréquent : vertiges, céphalées.</p>
+<p class=AmmCorpsTexte>Rare : syncope.</p>
+<p class=AmmAnnexeTitre3 style='page-break-after:auto'>Affections oculaires :</p>
+<p class=AmmCorpsTexte>Rare : sécheresse lacrymale (à prendre en compte si le patient porte des lentilles).</p>
+<p class=AmmCorpsTexte>Très rare : conjonctivite.</p>
+<p class=AmmAnnexeTitre3 style='page-break-after:auto'>Affections de l’oreille et du labyrinthe :</p>
+<p class=AmmCorpsTexte>Rare : troubles de l’audition.</p>
+<p class=AmmAnnexeTitre3 style='page-break-after:auto'>Affections respiratoires, thoraciques et médiastinales :</p>
+<p class=AmmCorpsTexte>Peu fréquent : bronchospasme chez les patients souffrant d’asthme ou ayant des antécédents de troubles obstructifs des voies aériennes.</p>
+<p class=AmmCorpsTexte>Rare : rhinite allergique.</p>
+<p class=AmmAnnexeTitre3 style='page-break-after:auto'>Affections gastro-intestinales :</p>
+<p class=AmmCorpsTexte>Fréquent : troubles gastro-intestinaux de type nausées, vomissements, diarrhée, constipation.</p>
+<p class=AmmAnnexeTitre3 style='page-break-after:auto'>Affections de la peau et du tissu sous-cutané :</p>
+<p class=AmmCorpsTexte>Rare : réactions d’hypersensibilité (prurit, flush, rash).</p>
+<p class=AmmCorpsTexte>Très rare : alopécie. Les bêta-bloquants peuvent provoquer ou aggraver un psoriasis ou induire un rash psoriasiforme. </p>
+<p class=AmmAnnexeTitre3 style='page-break-after:auto'>Affections musculo-squelettiques et des tissus conjonctifs :</p>
+<p class=AmmCorpsTexte>Peu fréquent : faiblesse musculaire et crampes.</p>
+<p class=AmmAnnexeTitre3 style='page-break-after:auto'>Affections vasculaires :</p>
+<p class=AmmCorpsTexte>Fréquent : sensation de froid ou d’engourdissement dans les extrémités, hypotension.</p>
+<p class=AmmCorpsTexte>Peu fréquent : hypotension orthostatique.</p>
+<p class=AmmAnnexeTitre3 style='page-break-after:auto'>Troubles généraux :</p>
+<p class=AmmCorpsTexte>Fréquent : asthénie, fatigue.</p>
+<p class=AmmAnnexeTitre3 style='page-break-after:auto'>Affections hépatobiliaires :</p>
+<p class=AmmCorpsTexte>Rare : hépatite.</p>
+<p class=AmmAnnexeTitre3 style='page-break-after:auto'>Affections des organes de reproduction et du sein :</p>
+<p class=AmmCorpsTexte>Rare : impuissance.</p>
+<p class=AmmAnnexeTitre3 style='page-break-after:auto'>Affections psychiatriques :</p>
+<p class=AmmCorpsTexte>Peu fréquent : troubles du sommeil, dépression.</p>
+<p class=AmmCorpsTexte>Rare : cauchemars, hallucinations.</p>
+<p class=AmmAnnexeTitre3 style='page-break-after:auto'>Déclaration des effets indésirables suspectés </p>
+<p class=AmmCorpsTexte>La déclaration des effets indésirables suspectés après autorisation du médicament est importante. Elle permet une surveillance continue du rapport bénéfice/risque du médicament. Les professionnels de santé déclarent tout effet indésirable suspecté via le système national de déclaration : Agence nationale de sécurité du médicament et des produits de santé (ANSM) et réseau des Centres Régionaux de Pharmacovigilance - Site internet :<span style='color:red'> <a href="http://www.signalement-sante.gouv.fr">https://signalement.social-sante.gouv.fr/ </a></span>.</p>
+<p class="AmmAnnexeTitre2"><a name="RcpSurdosage">4.9. Surdosage</a>&nbsp;&nbsp;<a href='#HautDePage'><img src='img/BackToTop.jpg' width='15px' height='15px' alt='Retour en haut de la page' title='Retour en haut de la page' /></a></p>
+<p class=AmmAnnexeTitre3 style='page-break-after:auto'>Symptômes</p>
+<p class=AmmCorpsTexte>Suite à un surdosage (par exemple un dosage quotidien de 15 mg au lieu de 7,5 mg), un bloc auriculo-ventriculaire du 3ème degré, une bradycardie et des vertiges ont été signalés.</p>
+<p class=AmmCorpsTexte>En général, les signes les plus couramment rencontrés en cas de surdosage d’un bêta-bloquant sont la bradycardie, l’hypotension, le bronchospasme, l’insuffisance cardiaque aiguë, et l’hypoglycémie. A ce jour, quelques cas de surdosage (maximum 2000 mg) avec le bisoprolol ont été rapportés chez les patients souffrant d’hypertension et/ou de cardiopathie ischémique, et se sont traduits par une bradycardie et/ou une hypotension. Tous les patients se sont rétablis. On observe de larges variations inter-individuelles de la sensibilité à une seule dose élevée de bisoprolol et les patients insuffisants cardiaques sont probablement très sensibles.</p>
+<p class=AmmCorpsTexte>Il est donc obligatoire, chez ces patients, de débuter le traitement en augmentant progressivement la dose, selon le schéma posologique indiqué dans la rubrique 4.2.</p>
+<p class=AmmAnnexeTitre3 style='page-break-after:auto'>Prise en charge</p>
+<p class=AmmCorpsTexte>En cas de surdosage, le traitement par le bisoprolol doit être arrêté et un traitement symptomatique doit être administré. Des données limitées suggèrent que le bisoprolol est peu dialysable. Compte-tenu des actions pharmacologiques prévues et des recommandations pour les autres bêta-bloquants, les mesures générales suivantes doivent être envisagées lorsqu’elles sont justifiées au plan clinique.</p>
+<p class=AmmCorpsTexte>Bradycardie : administration d’atropine, par voie I.V. Si la réponse est inadaptée, on peut donner, avec précaution, de l’isoprénaline ou un autre médicament ayant des propriétés chronotropes positives. Dans certaines circonstances, la pose d’un pacemaker peut s’avérer nécessaire.</p>
+<p class=AmmCorpsTexte>Hypotension : des solutés intraveineux et des vasopresseurs doivent être administrés. Le glucagon par voie intraveineuse peut être utile.</p>
+<p class=AmmCorpsTexte>Bloc auriculo-ventriculaire (du 2ème ou 3ème degré) : les patients doivent être surveillés attentivement et traités par perfusion d’isoprénaline ou pose d’un pacemaker, s’il y a lieu.</p>
+<p class=AmmCorpsTexte>Aggravation aiguë de l’insuffisance cardiaque : administration, par I.V., de diurétiques, d’agents inotropes, de vasodilatateurs.</p>
+<p class=AmmCorpsTexte>Bronchospasme : administration d’un traitement broncho-dilatateur, tel que isoprénaline, médicaments bêta-2 sympathomimétiques et/ou aminophylline.</p>
+<p class=AmmCorpsTexte>Hypoglycémie : administration I.V. de glucose.</p>
+<p class="AmmAnnexeTitre1"><a name="RcpPropPharmacologiques">5. PROPRIETES PHARMACOLOGIQUES</a>&nbsp;&nbsp;<a href='#HautDePage'><img src='img/BackToTop.jpg' width='15px' height='15px' alt='Retour en haut de la page' title='Retour en haut de la page' /></a></p>
+<p class="AmmAnnexeTitre2"><a name="RcpPropPharmacodynamiques">5.1. Propriétés pharmacodynamiques</a>&nbsp;&nbsp;<a href='#HautDePage'><img src='img/BackToTop.jpg' width='15px' height='15px' alt='Retour en haut de la page' title='Retour en haut de la page' /></a></p>
+<p class=AmmCorpsTexteGras><a name="_Toc142278933">Classe pharmacothérapeutique : BETA-BLOQUANT SELECTIF, code ATC : C07AB07</a><span style='font-size:8.0pt'>.</span></p>
+<p class=AmmAnnexeTitre3 style='page-break-after:auto'>Mécanisme d’action</p>
+<p class=AmmCorpsTexte>Le bisoprolol est un bêta-bloquant ayant une forte affinité pour les récepteurs *-1, sans activité sympathomimétique intrinsèque, ni effet stabilisant de membrane. Il ne présente qu’une affinité faible pour les récepteurs bêta-2 des muscles lisses des bronches et des vaisseaux et pour les récepteurs bêta-2 intervenant dans la régulation métabolique. En conséquence, le bisoprolol ne modifie généralement pas la résistance des voies aériennes et n’a pas d’effets métaboliques liés à l’action sur les récepteurs bêta-2. La sélectivité bêta-1 du bisoprolol s’étend au-delà des doses thérapeutiques.</p>
+<p class=AmmAnnexeTitre3 style='page-break-after:auto'>Efficacité et sécurité clinique</p>
+<p class=AmmCorpsTexte>2 647 patients au total ont été inclus dans l’étude CIBIS II. 83 % (n = 2 202) étaient en classe III de la NYHA et 17 % (n = 445) en classe IV de la NYHA. Ils présentaient une insuffisance cardiaque systolique symptomatique stable (fraction d’éjection * 35 %, sur la base de l’échocardiographie). La mortalité totale a diminué de 17,3 % à 11,8 % (diminution relative de 34 %).</p>
+<p class=AmmCorpsTexte>Une baisse de la fréquence des morts subites (3,6 % par rapport à 6,3 %, diminution relative de 44 %) et une réduction des épisodes d’insuffisance cardiaque nécessitant une hospitalisation (12 % par rapport à 17,6 %, diminution relative de 36 %) ont été observées.</p>
+<p class=AmmCorpsTexte>Enfin, une amélioration significative de l’état fonctionnel selon la classification NYHA a été observée.</p>
+<p class=AmmCorpsTexte>Pendant la mise en route et la titration des doses de bisoprolol, des hospitalisations pour bradycardie (0,53 %), hypotension (0,23 %) ou décompensation aiguë (4,97 %) ont été observées, mais elles n’étaient pas plus fréquentes que dans le groupe placebo (0 %, 0,3 % et 6,74 % respectivement). Le nombre d’accidents vasculaires cérébraux fatals ou invalidants pendant la durée totale de l’étude a été de 20 dans le groupe bisoprolol et de 15 dans le groupe placebo.</p>
+<p class=AmmCorpsTexte>L’étude CIBIS III a porté sur 1 010 patients âgés de 65 ans ou plus, atteints d’insuffisance cardiaque chronique légère à modérée (ICC de classe II ou III de la NYHA) et présentant une fraction d’éjection ventriculaire gauche &#8804; 35 %, n’ayant reçu antérieurement aucun inhibiteur de l’enzyme de conversion, de bêta-bloquants ou d’antagonistes de l’angiotensine. Les patients ont été traités par l’association de bisoprolol et d’énalapril pendant 6 à 24 mois après un traitement initial de 6 mois par soit du bisoprolol, soit de l’énalapril.</p>
+<p class=AmmCorpsTexte>On a observé une fréquence d’aggravation de l’insuffisance cardiaque chronique plus élevée lorsque le bisoprolol était utilisé lors du traitement initial de 6 mois. La non-infériorité entre le traitement initial par le bisoprolol et le traitement initial par l’énalapril n’a pas été prouvée dans l’analyse per-protocole, bien que les deux stratégies d’initiation du traitement de l’insuffisance cardiaque ont montré un taux similaire dans la fréquence du critère primaire composite des décès et hospitalisations à la fin de l’étude (32,4 % dans le groupe d’abord traité par le bisoprolol <span class='italique'>versus</span> 33,1 % dans le groupe d’abord traité par l’énalapril, pour la population en per-protocole). L’étude montre que le bisoprolol peut aussi être utilisé chez les personnes âgées ayant une insuffisance cardiaque chronique dans ses formes faibles à modérées.</p>
+<p class=AmmCorpsTexte>Le bisoprolol est également utilisé dans le traitement de l’hypertension artérielle et de l’angor.</p>
+<p class=AmmCorpsTexte style='margin-top:6.0pt'>Lors d’une administration aiguë chez les patients ayant une cardiopathie ischémique sans insuffisance cardiaque chronique, le bisoprolol diminue la fréquence cardiaque et le volume d’éjection systolique, et donc le débit cardiaque et la consommation d’oxygène. En administration chronique, les résistances périphériques, initialement élevées, diminuent.</p>
+<p class="AmmAnnexeTitre2"><a name="RcpPropPharmacocinetiques">5.2. Propriétés pharmacocinétiques</a>&nbsp;&nbsp;<a href='#HautDePage'><img src='img/BackToTop.jpg' width='15px' height='15px' alt='Retour en haut de la page' title='Retour en haut de la page' /></a></p>
+<p class=AmmAnnexeTitre3 style='page-break-after:auto'>Absorption</p>
+<p class=AmmCorpsTexte>La biodisponibilité du bisoprolol est de 90 % environ après administration orale.</p>
+<p class=AmmAnnexeTitre3 style='page-break-after:auto'>Distribution</p>
+<p class=AmmCorpsTexte>Le volume de distribution est de 3,5 l/kg. La fixation du bisoprolol aux protéines plasmatiques est de 30 % environ.</p>
+<p class=AmmAnnexeTitre3 style='page-break-after:auto'>Biotransformation et élimination</p>
+<p class=AmmCorpsTexte>Le bisoprolol est éliminé par deux voies : 50 % sont transformés en métabolites inactifs dans le foie, puis excrétés par les reins. Les 50 % restants sont excrétés sous forme inchangée par voie rénale. La clairance totale est de 15 l/h environ. La demi-vie d’élimination plasmatique de 10 – 12 heures permet d’obtenir un effet durant 24 heures, après une seule prise quotidienne. </p>
+<p class=AmmAnnexeTitre3 style='page-break-after:auto'>Linéarité</p>
+<p class=AmmCorpsTexte>La cinétique du bisoprolol est linéaire et indépendante de l’âge.</p>
+<p class=AmmCorpsTexte>Populations spéciales</p>
+<p class=AmmCorpsTexte>Du fait de cette élimination équilibrée entre la voie rénale et la voie hépatique, il n’est pas nécessaire d’adapter la posologie chez les insuffisants hépatiques ou rénaux. La pharmacocinétique chez les patients présentant une insuffisance cardiaque chronique stable et des troubles de la fonction rénale ou hépatique n’a pas été étudiée. Chez les patients présentant une insuffisance cardiaque chronique (classe III de la NYHA), les taux plasmatiques de bisoprolol sont plus élevés, et la demi-vie est prolongée par rapport aux volontaires sains. La concentration plasmatique maximale à l’état d’équilibre est de 64 ± 21 ng/ml pour une dose quotidienne de 10 mg et la demi-vie est de 17 ± 5 heures.</p>
+<p class="AmmAnnexeTitre2"><a name="RcpSecuritePreclinique">5.3. Données de sécurité préclinique</a>&nbsp;&nbsp;<a href='#HautDePage'><img src='img/BackToTop.jpg' width='15px' height='15px' alt='Retour en haut de la page' title='Retour en haut de la page' /></a></p>
+<p class=AmmCorpsTexte>Les données précliniques ne révèlent aucun risque particulier pour les êtres humains, sur la base des études classiques de pharmacologie, toxicité à doses répétées, génotoxicité ou carcinogénicité.</p>
+<p class=AmmCorpsTexte>Comme les autres bêta-bloquants, le bisoprolol a provoqué une toxicité maternelle (diminution de la prise alimentaire et perte de poids) et embryofœtale (fréquence accrue des avortements spontanés, poids de naissance réduit, retard de développement intra-utérin) à des doses élevées, mais il n’a pas entraîné d’effets tératogènes.</p>
+<p class="AmmAnnexeTitre1"><a name="RcpDonneesPharmaceutiques">6. DONNEES PHARMACEUTIQUES</a>&nbsp;&nbsp;<a href='#HautDePage'><img src='img/BackToTop.jpg' width='15px' height='15px' alt='Retour en haut de la page' title='Retour en haut de la page' /></a></p>
+<p class="AmmAnnexeTitre2"><a name="RcpListeExcipients">6.1. Liste des excipients</a>&nbsp;&nbsp;<a href='#HautDePage'><img src='img/BackToTop.jpg' width='15px' height='15px' alt='Retour en haut de la page' title='Retour en haut de la page' /></a></p>
+<p class=AmmCorpsTexte><a name="_Toc142278937"><span class='souligne'>Noyau du comprimé</span> : cellulose microcristalline, butylhydroxyanisole, silice colloïdale anhydre, stéarate de magnésium, laurilsulfate de sodium, oxyde de fer jaune (E172), croscarmellose sodique.</a></p>
+<p class=AmmCorpsTexte><span class='souligne'>Pelliculage </span>: Opadry Jaune 06A520153 [dioxyde de titane (E171), hypromellose (E464), talc, laque aluminique de jaune de quinoléine (E104), laque aluminique de jaune orangé S (E110), laque aluminique d'indigotine (E132)].</p>
+<p class="AmmAnnexeTitre2"><a name="RcpIncompatibilites">6.2. Incompatibilités</a>&nbsp;&nbsp;<a href='#HautDePage'><img src='img/BackToTop.jpg' width='15px' height='15px' alt='Retour en haut de la page' title='Retour en haut de la page' /></a></p>
+<p class=AmmCorpsTexte><a name="_Toc142278938">Sans objet.</a></p>
+<p class="AmmAnnexeTitre2"><a name="RcpDureeConservation">6.3. Durée de conservation</a>&nbsp;&nbsp;<a href='#HautDePage'><img src='img/BackToTop.jpg' width='15px' height='15px' alt='Retour en haut de la page' title='Retour en haut de la page' /></a></p>
+<p class=AmmCorpsTexte>2 ans.</p>
+<p class="AmmAnnexeTitre2"><a name="RcpPrecConservation">6.4. Précautions particulières de conservation</a>&nbsp;&nbsp;<a href='#HautDePage'><img src='img/BackToTop.jpg' width='15px' height='15px' alt='Retour en haut de la page' title='Retour en haut de la page' /></a></p>
+<p class=AmmCorpsTexte><a name="_Toc142278940">Plaquettes : A conserver à une température ne dépassant pas 30°C.</a></p>
+<p class=AmmCorpsTexte>Flacons : ce médicament ne nécessite pas de précautions particulières de conservation.</p>
+<p class="AmmAnnexeTitre2"><a name="RcpEmballage">6.5. Nature et contenu de l'emballage extérieur </a>&nbsp;&nbsp;<a href='#HautDePage'><img src='img/BackToTop.jpg' width='15px' height='15px' alt='Retour en haut de la page' title='Retour en haut de la page' /></a></p>
+<p class=AmmCorpsTexte>28, 30, ou 90 comprimés pelliculés sécables sous plaquettes PVC/Aluminium.</p>
+<p class=AmmCorpsTexte>28x1, 30x1 ou 90x1 comprimés pelliculés sécables sous plaquettes unitaires PVC/Aluminium.</p>
+<p class=AmmCorpsTexte>28, 30 ou 90 comprimés pelliculés sécables sous plaquettes PVC/PVdC/Aluminium.</p>
+<p class=AmmCorpsTexte>28x1, 30x1 ou 90x1 comprimés pelliculés sécables sous plaquettes unitaires PVC/PVdC/Aluminium.</p>
+<p class=AmmCorpsTexte>28, 30, 90, 100 ou 1000 comprimés pelliculés sécables en flacons PEHD blanc avec bouchon polypropylène blanc opaque et cartouche contenant un dessiccant.</p>
+<p class=AmmCorpsTexte>Toutes les présentations peuvent ne pas être commercialisées.</p>
+<p class="AmmAnnexeTitre2"><a name="RcpPrecEmpl">6.6. Précautions particulières d’élimination et de manipulation</a>&nbsp;&nbsp;<a href='#HautDePage'><img src='img/BackToTop.jpg' width='15px' height='15px' alt='Retour en haut de la page' title='Retour en haut de la page' /></a></p>
+<p class=AmmCorpsTexte><span lang=FR-BE>Tout médicament non utilisé ou déchet doit être éliminé conformément à la réglementation en vigueur.</span></p>
+<p class="AmmAnnexeTitre1"><a name="RcpTitulaireAmm">7. TITULAIRE DE L’AUTORISATION DE MISE SUR LE MARCHE</a>&nbsp;&nbsp;<a href='#HautDePage'><img src='img/BackToTop.jpg' width='15px' height='15px' alt='Retour en haut de la page' title='Retour en haut de la page' /></a></p>
+<p class=AmmTitulaireNom><a name="_Toc142278943">VIATRIS SANTE</a></p>
+<p class=AmmTitulaireAdresse>1 Rue de Turin </p>
+<p class=AmmTitulaireAdresse>69007 Lyon</p>
+<p class="AmmAnnexeTitre1"><a name="RcpNumAutor">8. NUMERO(S) D’AUTORISATION DE MISE SUR LE MARCHE</a>&nbsp;&nbsp;<a href='#HautDePage'><img src='img/BackToTop.jpg' width='15px' height='15px' alt='Retour en haut de la page' title='Retour en haut de la page' /></a></p>
+<p class=AmmListePuces1><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>34009 301 840 1 1 : 28 comprimés sous plaquettes (PVC/PVDC/Aluminium).</p>
+<p class=AmmListePuces1><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>34009 301 840 2 8 : 30 comprimés sous plaquettes (PVC/PVDC/Aluminium).</p>
+<p class=AmmListePuces1><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>34009 301 840 3 5 : 90 comprimés sous plaquettes (PVC/PVDC/Aluminium).</p>
+<p class=AmmListePuces1><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>34009 301 840 4 2 : 28 comprimés sous plaquettes unitaires (PVC/PVDC/Aluminium).</p>
+<p class=AmmListePuces1><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>34009 301 840 5 9 : 30 comprimés sous plaquettes unitaires (PVC/PVDC/Aluminium).</p>
+<p class=AmmListePuces1><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>34009 301 840 6 6 : 90 comprimés sous plaquettes unitaires (PVC/PVDC/Aluminium).</p>
+<p class=AmmListePuces1><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>34009 301 840 7 3 : 28 comprimés sous plaquettes (PVC/Aluminium).</p>
+<p class=AmmListePuces1><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>34009 301 840 9 7 : 30 comprimés sous plaquettes (PVC/Aluminium).</p>
+<p class=AmmListePuces1><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>34009 301 841 0 3 : 90 comprimés sous plaquettes (PVC/Aluminium).</p>
+<p class=AmmListePuces1><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>34009 301 841 1 0 : 28 comprimés sous plaquettes unitaires (PVC/Aluminium).</p>
+<p class=AmmListePuces1><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>34009 301 841 2 7 : 30 comprimés sous plaquettes unitaires (PVC/Aluminium).</p>
+<p class=AmmListePuces1><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>34009 301 841 3 4 : 90 comprimés sous plaquettes unitaires (PVC/Aluminium).</p>
+<p class=AmmListePuces1><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>34009 301 841 5 8 : Flacon (PEHD) de 28 comprimés.</p>
+<p class=AmmListePuces1><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>34009 301 841 6 5 : Flacon (PEHD) de 30 comprimés.</p>
+<p class=AmmListePuces1><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>34009 301 841 7 2 : Flacon (PEHD) de 90 comprimés.</p>
+<p class=AmmListePuces1><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>34009 301 841 8 9 : Flacon (PEHD) de 100 comprimés.</p>
+<p class=AmmListePuces1><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>34009 550 671 4 6 : Flacon (PEHD) de 1000 comprimés.</p>
+<p class="AmmAnnexeTitre1"><a name="RcpPremiereAutorisation">9. DATE DE PREMIERE AUTORISATION/DE RENOUVELLEMENT DE L’AUTORISATION</a>&nbsp;&nbsp;<a href='#HautDePage'><img src='img/BackToTop.jpg' width='15px' height='15px' alt='Retour en haut de la page' title='Retour en haut de la page' /></a></p>
+<p class=AmmCorpsTexte><a name="_Toc142278945"><span style='color:#538135'>[à compléter ultérieurement par le titulaire]</span></a></p>
+<p class="AmmAnnexeTitre1"><a name="RcpDateRevision">10. DATE DE MISE A JOUR DU TEXTE</a>&nbsp;&nbsp;<a href='#HautDePage'><img src='img/BackToTop.jpg' width='15px' height='15px' alt='Retour en haut de la page' title='Retour en haut de la page' /></a></p>
+<p class=AmmCorpsTexte><a name="_Toc142278946"><span style='color:#538135'>[à compléter ultérieurement par le titulaire]</span></a></p>
+<p class="AmmAnnexeTitre1"><a name="RcpDosimetrie">11. DOSIMETRIE</a>&nbsp;&nbsp;<a href='#HautDePage'><img src='img/BackToTop.jpg' width='15px' height='15px' alt='Retour en haut de la page' title='Retour en haut de la page' /></a></p>
+<p class=AmmCorpsTexte>Sans objet.</p>
+<p class="AmmAnnexeTitre1"><a name="RcpInstPrepRadioph">12. INSTRUCTIONS POUR LA PREPARATION DES RADIOPHARMACEUTIQUES</a>&nbsp;&nbsp;<a href='#HautDePage'><img src='img/BackToTop.jpg' width='15px' height='15px' alt='Retour en haut de la page' title='Retour en haut de la page' /></a></p>
+<p class=AmmCorpsTexte><a name="_Toc142278948">Sans objet.</a></p>
+<div style='border:none;border-top:solid windowtext 1.0pt;padding:1.0pt 0cm 0cm 0cm'>
+<p class="AmmAnnexeTitre"><a name="RcpCondPrescription">CONDITIONS DE PRESCRIPTION ET DE DELIVRANCE</a></p>
+</div>
+<p class=AmmCorpsTexte>Liste I</p>
+<p class=AmmCorpsTexte>Médicament soumis à une surveillance particulière pendant le traitement.</p>
+<p class=AmmCorpsTexte>Médicament soumis à prescription initiale réservée aux spécialistes en cardiologie et en médecine interne.</p>
+<span class='gras'><span style='font-size:12.0pt;font-family:"Arial",sans-serif;color:#0B3D92;
+text-transform:uppercase'><br clear=all>
+</span></span>					
+					<p class="alignright"><a href="#HautDePage">Retour en haut de la page <img src="img/BackToTop.jpg" width="20px" height="20px" alt="Retour en haut de la page" title="Retour en haut de la page" /></a></p>
+				</div>
+			</div>
+		</div>
+	</div>
+
+<table summary="" class="content" width="1000">
+	<tr>
+		<td height="100px">&nbsp;</td>
+	</tr>
+</table>
+<table summary="Pied de page" class="footer" width="1000">
+	<tr>
+		<td>
+			<table summary="" class="tablealigncenter" border="0">
+				<tr>
+					<td width="100px" class="aligncenter"><a id="lien_ansm" href="http://ansm.sante.fr/" target="_blank"><img src="img/Logo_ANSM.png" width="150" height="60" alt="ANSM - Agence nationale de sécurité du médicament et des produits de santé" title="L'ANSM met à disposition les principales informations issues de l'Autorisation de mise sur le marché, l'appartenance à un groupe générique, les liens vers les informations de sécurité qu'elle publie, l'identification des médicaments sous surveillance renforcée - nouvelle fenêtre" /></a></td>
+					          <td>&nbsp;</td>
+					<td width="100px" class="aligncenter"><img src="img/Logo_HAS.png" width="150" height="60" alt="HAS - Haute autorité de santé" title="La HAS met à disposition les informations relatives au service médical rendu, à l'amélioration du service médical rendu ainsi que les liens vers les avis de la Commission de la Transparence correspondants - nouvelle fenêtre" /></td>
+					<td>&nbsp;</td>
+					<td width="100px" class="aligncenter"><img src="img/Logo_CNAM.png" width="150" height="60" alt="UNCAM - Unin nationale des caisses d'assurance maladie" title="L'UNCAM met à disposition le taux de remboursement, le prix et les indications remboursables le cas échéant, ainsi que l'agrément aux collectivités - nouvelle fenêtre" /></td>
+          				</tr>
+			</table> 
+		</td>
+	</tr>
+</table>
+<table summary="" class="finpage" width="1000">
+	<tr>
+		<td height="100px" class="aligncenter">
+			<a class="navigation" href="plan.php">Plan du site</a>&nbsp;|&nbsp;
+			<a class="navigation" href="accessibilite.php">Accessibilité</a>&nbsp;|&nbsp;
+			<a class="navigation" href="contact.php">Contact</a>&nbsp;|&nbsp;
+			<a class="navigation" href="telechargement.php">Téléchargement</a>&nbsp;|&nbsp;
+			<a class="navigation" href="DeclarationConfidentialite.php">Declaration de confidentialité</a>&nbsp;|&nbsp;
+			<a class="navigation" href="http://www.service-public.fr/" title="Service Public - Nouvelle fenêtre" target="_blank">Service-Public.fr</a>&nbsp;|&nbsp;
+			<a class="navigation" href="http://www.legifrance.gouv.fr/" title="Legifrance - Nouvelle fenêtre" target="_blank">Legifrance</a>&nbsp;|&nbsp;
+			<a class="navigation" href="http://www.gouvernement.fr/" title="Gouvernement - Nouvelle fenêtre" target="_blank" >Gouvernement.fr</a>
+		</td>
+	</tr>
+</table>
+
+
+
+<!-- Matomo -->
+<script type="text/javascript">
+  var _paq = window._paq = window._paq || [];
+  /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
+  _paq.push(['trackPageView']);
+  _paq.push(['enableLinkTracking']);
+  (function() {
+    var u="https://stats.integra.fr/";
+    _paq.push(['setTrackerUrl', u+'matomo.php']);
+    _paq.push(['setSiteId', '79']);
+    var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+    g.type='text/javascript'; g.async=true; g.src=u+'matomo.js'; s.parentNode.insertBefore(g,s);
+  })();
+</script>
+<!-- End Matomo Code -->
+
+
+
+</body>
+</html>

@@ -1,0 +1,403 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="fr" lang="fr">
+<head>
+	<title>Notice patient - BISOPROLOL VIATRIS 5 mg, comprimé pelliculé sécable  - Base de données publique des médicaments</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=windows-1252"/>
+	<meta name="robots" content="index, follow"/>
+	<meta name="Description" content="Base de données publique des médicaments"/>
+	<meta name="Keywords" content="base, données, publique, médicaments, Notice patient, BISOPROLOL VIATRIS 5 mg, comprimé pelliculé sécable "/>
+	<meta name="Subject" content="medicament"/>
+	<link href='https://fonts.googleapis.com/css?family=Noticia+Text' rel='stylesheet' type='text/css' />
+	<link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro' rel='stylesheet' type='text/css' />
+	<link href="style/style_bdm.css?v=2.2.3" type="text/css" rel="stylesheet"/>
+	<link href="style/style_RCP_Notice.css" type="text/css" rel="stylesheet"/>
+  <link rel="alternate" href="http://m.base-donnees-publique.medicaments.gouv.fr/#!info-64791577">
+    <script type="text/javascript" src="scripts/autocomplete.js?v=2.2.3"></script>
+	<script type="text/javascript" src="scripts/jquery.js"></script>
+    <script type="text/javascript" src="scripts/jquery-ui.min.js"></script>
+	<script type="text/javascript" src="scripts/common.js"></script>
+	<link rel="icon" type="image/x-icon" href="favicon.ico" />
+</head>
+
+<body>
+
+<a name="HautDePage" />
+<div id="bandeauhaut">
+	<a id="lien_ministere" class="lienmenu" href="http://www.sante.gouv.fr" target="_blank" title="Site du ministère des affaires sociales et de la santé - nouvelle fenêtre"><img id="logoministere" src="img/Logo_Ministere.jpg"  alt="Logo du ministère des affaires sociales et de la santé"/></a>
+	<h1 class="texteTitreSite">
+		Base <span class="texteBleu">de</span> données <span class="texteBleu">publique</span><br/><span class="texteBleu">des</span> médicaments
+	</h1>
+		<a id="lien_medicament_gouv" class="lienEspaceMedic" target="_blank" href="http://medicaments.gouv.fr" title="Visiter [medicaments.gouv.fr] - nouvelle fenêtre">Visiter [medicaments.gouv.fr] <img src="/img/icone_lien.png" alt="Visiter [medicaments.gouv.fr]"  title="Visiter [medicaments.gouv.fr] - nouvelle fenetre" /></a>
+</div>
+<!--div align="center">
+	<a id="banniere" target="_blank" href="http://social-sante.gouv.fr/soins-et-maladies/medicaments/medicaments-generiques/" title="Visiter [medicaments.gouv.fr] - M?dicaments g?n?riques">
+		<img width="1000"   src ="/img/carrouselbannieres.gif" alt="Visiter [medicaments.gouv.fr] - M?dicaments g?n?riques" title="Visiter [medicaments.gouv.fr] - M?dicaments g?n?riques" />
+	</a>
+</div-->
+
+<div id="menuhaut">
+	<span id="menuhaut_gauche">
+		<a id="lien_accueil" class="navigation" href="index.php">Accueil</a>&nbsp;|&nbsp;
+		<a id="lien_glossaire" class="navigation" href="glossaire.php">Glossaire</a>&nbsp;|&nbsp;
+		<a id="lien_aide" class="navigation" href="aide.php">Aide</a>		
+	</span>
+	
+		
+	<span id="menuhaut_dernmaj">
+        <br>Dernière <span title=" 2.4.4
+">mise à jour</span> le 03/03/2025	</span>
+</div>
+
+	<script language="javascript" type="text/javascript">
+		//<![CDATA[ 
+		function Aff(men) {
+			document.write("<ul class=\"menuDoc\">");
+			for(var no_rub=0;no_rub<men.num_rub;no_rub++) {
+				document.write("<li><a class='leftMenu' href='"+menu[no_rub].page+"'>");
+				document.write(men[no_rub].txt);
+				document.write("</a></li>");
+				if (men[no_rub].nb_lien != 0){
+					document.write("<ul class=\"sousMenuDoc\">");
+				}
+				for(var no_lien=0;no_lien<men[no_rub].nb_lien;no_lien++) {
+					document.write("<li><a class='leftMenu' href='"+men[no_rub][no_lien].page+"'>");
+					document.write(men[no_rub][no_lien].txt);
+					document.write("</a></li>");
+				}
+				if (men[no_rub].nb_lien != 0){
+					document.write("</ul>");
+				}
+			}
+			document.write("</ul>");
+		}
+		
+		function CreerMenu(police,imgRub,imgOption,imgOptionFin,hauteur) {
+			this.num_rub=0;
+			this.police=police;
+			this.imgRub=imgRub;
+			this.imgOpt=imgOption;
+			this.imgOptFin=imgOptionFin;
+			this.hauteur=hauteur;
+			this.AddRub=AddRub;
+			this.AddLien=AddLien;
+		}
+		
+		function AddRub(txt,aff,page) {
+			var rub = new Object;
+				rub.txt=txt;
+				rub.aff=aff;
+				rub.page=page;
+				rub.nb_lien=0;
+			this[this.num_rub]=rub;
+			this.num_rub++;
+		}
+
+		function AddLien(txt,page) {
+			var no_rub = this.num_rub-1;
+			var no_lien= this[no_rub].nb_lien;
+			var lien = new Object;
+				lien.txt=txt;
+				lien.page=page;
+			this[no_rub][no_lien]=lien;
+			this[no_rub].nb_lien++;
+		}
+		var menu=new CreerMenu("arial","img/dyn04.gif","img/dyn22.gif","img/dyn55.gif",18);
+		//]]> 
+		menu.AddRub("Description médicament","O","#Ann3bQuestceque");
+			menu.AddRub("Informations","O","#Ann3bInfoNecessaires");
+			menu.AddRub("Utilisation","O","#Ann3bCommentPrendre");
+			menu.AddRub("Effets indésirables","O","#Ann3bEffetsIndesirables");
+			menu.AddRub("Conservation","O","#Ann3bConservation");
+			menu.AddRub("Info. supplémentaires","O","#Ann3bEmballage");
+				</script>
+
+	<div id="container">
+		<div id="leftnav">
+			<div id="cadreMenuGauche">
+				<h2 class="sommaireMenu">Sommaire</h2>
+				<div id="menuGauche">
+					<script language="JavaScript" type="text/javascript">Aff(menu);</script>
+				</div>
+			</div>
+		</div>
+		<div id="contentPrincipal">
+			<div id="boutonsliens">
+				<a id='lien_fiche_info' href='extrait.php?specid=64791577' ><img id="ongletficheinfo" alt="Onglet fiche information" src="img/onglet_fiche_info_vert.png" /></a><a id='lien_rcp' href='affichageDoc.php?specid=64791577&amp;typedoc=R'><img class="onglet" alt="Onglet résumé des caractéristiques du produit" src="img/onglet_rcp_vert.png" /></a><a id='lien_notice' href='affichageDoc.php?specid=64791577&amp;typedoc=N'><img class="onglet" alt="Onglet notice patient" src="img/onglet_notice_gris.png" /></a>			</div>
+			<div class="titredeno">
+				<table summary="" border="0" cellspacing="0">
+					<tr><td colspan="3" height="10px"></td></tr>
+					<tr>
+						<td width="15px">&nbsp;</td>
+						<td width="685px"><h1 class="textedeno">BISOPROLOL VIATRIS 5 mg, comprimé pelliculé sécable  - Notice patient</h1></td>
+						<td width="43px" class="tdcenter"><a href="Javascript:void(null)" onclick="print();"><img src="img/imprimante.png" height="20px" width="20px" alt="Imprimer le document" title="Imprimer le document" border="0" /></a></td>
+					</tr>
+					<tr><td colspan="3" height="10px"></td></tr>
+				</table>
+			</div>
+			
+			<div id="contentDocument">
+				<div id="textDocument">
+					<p class="DateNotif">ANSM - Mis à jour le : 11/12/2023</p>
+<p class="AmmNoticeTitre1"><a name="Ann3bDenomination">Dénomination du médicament</a></p>
+<p class=AmmCorpsTexteGras align=center style='text-align:center'><a name="_Toc142278999">BISOPROLOL VIATRIS 5 mg, comprimé pelliculé sécable</a></p>
+<p class=AmmCorpsTexteGras align=center style='text-align:center'>Hémifumarate de bisoprolol</p>
+<p class="AmmNoticeTitre1"><a name="Ann3bEncadre">Encadré</a></p>
+<p class=AmmCorpsTexte><a name="_Toc142279000"><span class='gras'>Veuillez lire attentivement cette notice avant de prendre ce médicament</span> <span class='gras'>car elle contient des informations importantes pour vous.</span></a></p>
+<p class=AmmListePuces1 style='text-align:justify'><span style='font-family: Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>Gardez cette notice. Vous pourriez avoir besoin de la relire.</p>
+<p class=AmmListePuces1 style='text-align:justify'><span style='font-family: Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>Si vous avez d’autres questions, interrogez votre médecin ou votre pharmacien.</p>
+<p class=AmmListePuces1 style='text-align:justify'><span style='font-family: Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>Ce médicament vous a été personnellement prescrit. Ne le donnez pas à d’autres personnes. Il pourrait leur être nocif, même si les signes de leur maladie sont identiques aux vôtres.</p>
+<p class=AmmListePuces1 style='text-align:justify'><span style='font-family: Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>Si vous ressentez un quelconque effet indésirable, parlez-en à votre médecin ou votre pharmacien. Ceci s’applique aussi à tout effet indésirable qui ne serait pas mentionné dans cette notice. Voir rubrique 4.</p>
+<p class="AmmNoticeTitre1"><a name="Ann3bSomm">Que contient cette notice ?</a></p>
+<p class=AmmCorpsTexte style='margin-top:0cm;margin-right:0cm;margin-bottom: 0cm;margin-left:14.2pt;margin-bottom:.0001pt;text-indent:-14.2pt'>1. Qu'est-ce que BISOPROLOL VIATRIS 5 mg, comprimé pelliculé sécable et dans quels cas est-il utilisé ?</p>
+<p class=AmmCorpsTexte style='margin-top:0cm;margin-right:0cm;margin-bottom: 0cm;margin-left:14.2pt;margin-bottom:.0001pt;text-indent:-14.2pt'>2. Quelles sont les informations à connaître avant de prendre BISOPROLOL VIATRIS 5 mg, comprimé pelliculé sécable ?</p>
+<p class=AmmCorpsTexte style='margin-top:0cm;margin-right:0cm;margin-bottom: 0cm;margin-left:14.2pt;margin-bottom:.0001pt;text-indent:-14.2pt'>3. Comment prendre BISOPROLOL VIATRIS 5 mg, comprimé pelliculé sécable ?</p>
+<p class=AmmCorpsTexte style='margin-top:0cm;margin-right:0cm;margin-bottom: 0cm;margin-left:14.2pt;margin-bottom:.0001pt;text-indent:-14.2pt'>4. Quels sont les effets indésirables éventuels ?</p>
+<p class=AmmCorpsTexte style='margin-top:0cm;margin-right:0cm;margin-bottom: 0cm;margin-left:14.2pt;margin-bottom:.0001pt;text-indent:-14.2pt'>5. Comment conserver BISOPROLOL VIATRIS 5 mg, comprimé pelliculé sécable ?</p>
+<p class=AmmCorpsTexte style='margin-top:0cm;margin-right:0cm;margin-bottom: 0cm;margin-left:14.2pt;margin-bottom:.0001pt;text-indent:-14.2pt'><span style='color:black'>6. Contenu de l’emballage et autres informations.</span></p>
+<h2><a name="Ann3bQuestceque">1. QU’EST-CE QUE BISOPROLOL VIATRIS 5 mg, comprimé pelliculé sécable ET DANS QUELS CAS EST-IL UTILISE ?</a>&nbsp;&nbsp;<a href='#HautDePage'><img src='img/BackToTop.jpg' width='15px' height='15px' alt='Retour en haut de la page' title='Retour en haut de la page' /></a></h2>
+<p class=AmmCorpsTexteGras><a name="_Toc142279004"></a><a name="_Toc142279003">Classe pharmacothérapeutique : BETA-BLOQUANT SELECTIF,code ATC : C07AB07</a></p>
+<p class=AmmCorpsTexte>La substance active de BISOPROLOL VIATRIS 5 mg, comprimé pelliculé sécable est le bisoprolol. Le bisoprolol appartient à la classe de médicaments appelés bêtabloquants.</p>
+<p class=AmmCorpsTexte>Les bêtabloquants agissent en modifiant la réponse de l’organisme à certaines impulsions nerveuses, en particulier au niveau du cœur. Le bisoprolol ralentit ainsi le rythme cardiaque et permet au cœur de pomper plus efficacement le sang dans l’ensemble du corps.</p>
+<p class=AmmCorpsTexte>L’insuffisance cardiaque se produit lorsque le muscle cardiaque est faible et incapable de pomper suffisamment de sang pour répondre aux besoins de l’organisme. BISOPROLOL VIATRIS 5 mg, comprimé pelliculé sécable est utilisé pour traiter les patients présentant une insuffisance cardiaque chronique stable. Ce produit est utilisé en association avec d’autres médicaments adaptés à cette affection (tels que les inhibiteurs de l’enzyme de conversion ou IEC, les diurétiques et les glycosides cardiaques).</p>
+<h2><a name="Ann3bInfoNecessaires">2. QUELLES SONT LES INFORMATIONS A CONNAITRE AVANT DE PRENDRE BISOPROLOL VIATRIS 5 mg, comprimé pelliculé sécable ?</a>&nbsp;&nbsp;<a href='#HautDePage'><img src='img/BackToTop.jpg' width='15px' height='15px' alt='Retour en haut de la page' title='Retour en haut de la page' /></a></h2>
+<p class=AmmCorpsTexteGras><a name="_Toc142279015">Ne prenez jamais BISOPROLOL VIATRIS 5 mg, comprimé pelliculé sécable en cas de :</a></p>
+<p class=AmmListePuces1 style='text-align:justify'><span style='font-family: Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>allergie (hypersensibilité) au bisoprolol ou à l’un des autres composants contenus dans ce médicament, mentionnés dans la rubrique 6,</p>
+<p class=AmmListePuces1 style='text-align:justify'><span style='font-family: Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>asthme,</p>
+<p class=AmmListePuces1 style='text-align:justify'><span style='font-family: Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>troubles sévères de la circulation sanguine périphérique (de type phénomène de Raynaud), pouvant entraîner des picotements dans les doigts et les orteils ou les faire pâlir ou virer au bleu,</p>
+<p class=AmmListePuces1 style='text-align:justify'><span style='font-family: Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>phéochromocytome non traité, tumeur rare de la glande surrénale,</p>
+<p class=AmmListePuces1 style='margin-top:0cm;margin-right:0cm;margin-bottom: 6.0pt;margin-left:17.85pt;text-align:justify;text-indent:-17.85pt'><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>acidose métabolique, c’est-à-dire présence d’acide en excès dans le sang.</p>
+<p class=AmmCorpsTexteGras>Ne prenez jamais BISOPROLOL VIATRIS 5 mg, comprimé pelliculé sécable si vous présentez l’un des problèmes cardiaques suivants :</p>
+<p class=AmmListePuces1 style='text-align:justify'><span style='font-family: Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>insuffisance cardiaque aiguë,</p>
+<p class=AmmListePuces1 style='text-align:justify'><span style='font-family: Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>aggravation de l’insuffisance cardiaque nécessitant l’injection dans vos veines de médicaments amplifiant la force de contraction de votre cœur,</p>
+<p class=AmmListePuces1 style='text-align:justify'><span style='font-family: Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>rythme cardiaque lent,</p>
+<p class=AmmListePuces1 style='text-align:justify'><span style='font-family: Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>pression artérielle basse,</p>
+<p class=AmmListePuces1 style='text-align:justify'><span style='font-family: Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>certaines affections cardiaques engendrant un rythme cardiaque lent ou irrégulier,</p>
+<p class=AmmListePuces1 style='margin-top:0cm;margin-right:0cm;margin-bottom: 6.0pt;margin-left:17.85pt;text-align:justify;text-indent:-17.85pt'><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>choc cardiogénique, grave trouble cardiaque aigu aboutissant à une chute de la pression artérielle et une insuffisance de la circulation sanguine.</p>
+<p class=AmmCorpsTexteGras>Avertissements et précautions</p>
+<p class=AmmCorpsTexte><span lang=FR-BE>Si vous présentez l’une des affections suivantes, indiquez-le à votre médecin avant de prendre </span>BISOPROLOL VIATRIS <span lang=FR-BE>5 mg, comprimé pelliculé sécable ; il/elle pourra décider des mesures de précaution particulières (par exemple, vous prescrire un traitement complémentaire ou réaliser des contrôles plus fréquents) :</span></p>
+<p class=AmmListePuces1 style='text-align:justify'><span lang=FR-BE style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span><span lang=FR-BE>diabète,</span></p>
+<p class=AmmListePuces1 style='text-align:justify'><span lang=FR-BE style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span><span lang=FR-BE>jeûne strict,</span></p>
+<p class=AmmListePuces1 style='text-align:justify'><span lang=FR-BE style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span><span lang=FR-BE>certaines maladies du cœur, comme les troubles du rythme cardiaque, ou les douleurs thoraciques sévères au repos (angor de Prinzmetal),</span></p>
+<p class=AmmListePuces1 style='text-align:justify'><span lang=FR-BE style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span><span lang=FR-BE>problèmes rénaux ou hépatiques,</span></p>
+<p class=AmmListePuces1 style='text-align:justify'><span lang=FR-BE style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span><span lang=FR-BE>troubles moins sévères de la circulation sanguine périphérique,</span></p>
+<p class=AmmListePuces1 style='text-align:justify'><span lang=FR-BE style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span><span lang=FR-BE>problèmes respiratoires chroniques ou asthme moins sévères,</span></p>
+<p class=AmmListePuces1 style='text-align:justify'><span lang=FR-BE style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span><span lang=FR-BE>antécédents d’affection cutanée squameuse (psoriasis),</span></p>
+<p class=AmmListePuces1 style='text-align:justify'><span lang=FR-BE style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span><span lang=FR-BE>tumeur de la glande surrénale (phéochromocytome)</span></p>
+<p class=AmmListePuces1 style='margin-top:0cm;margin-right:0cm;margin-bottom: 6.0pt;margin-left:17.85pt;text-align:justify;text-indent:-17.85pt'><span lang=FR-BE style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span><span lang=FR-BE>troubles thyroïdiens.</span></p>
+<p class=AmmCorpsTexte><span lang=FR-BE>Par ailleurs, prévenez votre médecin si vous devez subir :</span></p>
+<p class=AmmListePuces1 style='text-align:justify'><span lang=FR-BE style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span><span lang=FR-BE>un traitement de désensibilisation (en prévention du rhume des foins, par exemple) car </span>BISOPROLOL VIATRIS <span lang=FR-BE>5 mg, comprimé pelliculé sécable peut augmenter les risques de réaction allergique ou amplifier la sévérité de ces réactions ;</span></p>
+<p class=AmmListePuces1 style='margin-top:0cm;margin-right:0cm;margin-bottom: 6.0pt;margin-left:17.85pt;text-align:justify;text-indent:-17.85pt'><span lang=FR-BE style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span><span lang=FR-BE>une anesthésie (dans le cadre d’une intervention chirurgicale, par exemple) car </span>BISOPROLOL VIATRIS <span lang=FR-BE>5 mg, comprimé pelliculé sécable peut avoir des effets sur la façon dont votre organisme réagit dans une telle situation.</span></p>
+<p class=AmmCorpsTexte><span lang=FR-BE>Si vous souffrez d’une maladie pulmonaire chronique ou d’asthme moins sévère, vous devez informer immédiatement votre médecin si vous commencez à éprouver de nouvelles difficultés respiratoires, une toux, une respiration sifflante après l’exercice, etc. pendant la prise de</span><span lang=FR-BE> </span>BISOPROLOL VIATRIS <span lang=FR-BE>5 mg, comprimé pelliculé sécable.</span></p>
+<p class=AmmCorpsTexteGras>Enfants et adolescents</p>
+<p class=AmmCorpsTexte>BISOPROLOL VIATRIS 5 mg comprimé pelliculé sécable n’est pas recommandé chez les enfants ou les adolescents.</p>
+<p class=AmmCorpsTexteGras>Autres médicaments et BISOPROLOL VIATRIS 5 mg, comprimé pelliculé sécable</p>
+<p class=AmmCorpsTexte>Informez votre médecin ou pharmacien si vous prenez, avez récemment pris ou pourriez prendre tout autre médicament.</p>
+<p class=AmmCorpsTexte>Ne prenez pas les médicaments suivants en même temps que BISOPROLOL VIATRIS 5 mg, comprimé pelliculé sécable sans avoir consulté spécifiquement votre médecin à ce sujet :</p>
+<p class=AmmListePuces1 style='text-align:justify'><span style='font-family: Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>certains médicaments utilisés pour traiter les irrégularités ou anomalies du rythme cardiaque (anti-arythmiques de classe I de type quinidine, disopyramide, lidocaïne, phénytoïne, flécaïnide, propafénone) ;</p>
+<p class=AmmListePuces1 style='text-align:justify'><span style='font-family: Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>certains médicaments utilisés pour traiter l’hypertension, l’angine de poitrine ou les irrégularités du rythme cardiaque (inhibiteurs calciques de type vérapamil et diltiazem) ;</p>
+<p class=AmmListePuces1 style='margin-top:0cm;margin-right:0cm;margin-bottom: 6.0pt;margin-left:17.85pt;text-align:justify;text-indent:-17.85pt'><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>certains médicaments utilisés pour traiter l’hypertension de type clonidine, méthyldopa, moxonidine, rilménidine. Cependant, <span class=AmmCorpsTexteGrasCar>n’interrompez pas ces traitements</span> sans avoir d’abord pris l’avis de votre médecin.</p>
+<p class=AmmCorpsTexte>Demandez l’avis de votre médecin avant de prendre les médicaments suivants en même temps que BISOPROLOL VIATRIS 5 mg, comprimé pelliculé sécable ; votre médecin pourra juger nécessaire de contrôler votre état plus fréquemment :</p>
+<p class=AmmListePuces1 style='text-align:justify'><span style='font-family: Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>certains médicaments utilisés pour traiter l’hypertension ou l’angine de poitrine (inhibiteurs calciques de la famille des dihydropyridines, de type félodipine et amlodipine) ;</p>
+<p class=AmmListePuces1 style='text-align:justify'><span style='font-family: Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>certains médicaments utilisés pour traiter les irrégularités ou anomalies du rythme cardiaque (anti-arythmiques de classe III de type amiodarone) ;</p>
+<p class=AmmListePuces1 style='text-align:justify'><span style='font-family: Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>les bêtabloquants en application locale (comme le timolol en goutte ophtalmique pour le traitement du glaucome) ;</p>
+<p class=AmmListePuces1 style='text-align:justify'><span style='font-family: Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>certains médicaments utilisés par exemple pour traiter la maladie d’Alzheimer ou pour traiter le glaucome (parasympathomimétiques de type tacrine ou carbachol) ou certains médicaments utilisés dans le traitement des problèmes cardiaques aigus (sympathomimétiques de type isoprénaline et dobutamine) ;</p>
+<p class=AmmListePuces1 style='text-align:justify'><span style='font-family: Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>les antidiabétiques, notamment l’insuline ;</p>
+<p class=AmmListePuces1 style='text-align:justify'><span style='font-family: Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>les anesthésiques (lors d’interventions chirurgicales, par exemple) ;</p>
+<p class=AmmListePuces1 style='text-align:justify'><span style='font-family: Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>la digitaline, utilisée pour traiter l’insuffisance cardiaque ;</p>
+<p class=AmmListePuces1 style='text-align:justify'><span style='font-family: Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>les anti-inflammatoires non stéroïdiens (AINS) utilisés pour traiter l’arthrite, les douleurs ou les inflammations (ibuprofène ou diclofénac par exemple) ;</p>
+<p class=AmmListePuces1 style='text-align:justify'><span style='font-family: Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>tout médicament susceptible de faire baisser la pression artérielle, qu’il s’agisse d’un effet recherché ou indésirable, comme les antihypertenseurs, certains médicaments contre la dépression (antidépresseurs tricycliques tels l’imipramine ou amitriptyline), certains médicaments utilisés pour traiter l’épilepsie ou employés au cours de l’anesthésie (barbituriques tels que phénobarbital) ou certains médicaments contre la maladie mentale caractérisée par une perte de contact avec la réalité (phénothiazines tels que la lévomépromazine) ;</p>
+<p class=AmmListePuces1 style='text-align:justify'><span style='font-family: Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>la méfloquine, utilisée pour la prévention ou le traitement du paludisme ;</p>
+<p class=AmmListePuces1 style='margin-top:0cm;margin-right:0cm;margin-bottom: 6.0pt;margin-left:17.85pt;text-align:justify;text-indent:-17.85pt'><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>les traitements contre la dépression appelés inhibiteurs de la monoamine-oxydase (sauf les IMAO-B) tels que la moclobémide.</p>
+<p class=AmmCorpsTexteGras>BISOPROLOL VIATRIS 5 mg, comprimé pelliculé sécable avec des aliments et boissons</p>
+<p class=AmmCorpsTexte>Sans objet.</p>
+<p class=AmmCorpsTexteGras><a name="_Toc142279012">Grossesse et allaitement</a></p>
+<p class=AmmCorpsTexte><span lang=FR-BE>Demandez conseil à votre médecin ou à votre pharmacien avant de prendre tout médicament.</span></p>
+<p class=AmmAnnexeTitre4><span lang=FR-BE>Grossesse</span></p>
+<p class=AmmCorpsTexte><span lang=FR-BE>L’utilisation de </span>BISOPROLOL VIATRIS <span lang=FR-BE>5 mg, comprimé pelliculé sécable pendant la grossesse pourrait nuire à l’enfant à naître. Prévenez votre médecin si vous êtes enceinte ou prévoyez de l’être. Il/elle avisera si vous pouvez prendre </span>BISOPROLOL VIATRIS <span lang=FR-BE>5 mg, comprimé pelliculé sécable pendant votre grossesse.</span></p>
+<p class=AmmAnnexeTitre4><span lang=FR-BE>Allaitement</span></p>
+<p class=AmmCorpsTexte><span lang=FR-BE>On ignore si le bisoprolol passe dans le lait maternel humain. Par conséquent, l’allaitement n’est pas recommandé pendant le traitement par </span>BISOPROLOL VIATRIS <span lang=FR-BE>5 mg, comprimé pelliculé sécable.</span></p>
+<p class=AmmCorpsTexteGras>Sportifs</p>
+<p class=AmmCorpsTexte>L’attention des sportifs est attirée sur le fait que cette spécialité contient un principe actif pouvant induire une réaction positive des tests pratiqués lors des contrôles antidopage.</p>
+<p class=AmmCorpsTexteGras>Conduite de véhicules et utilisation de machines</p>
+<p class=AmmCorpsTexte>La capacité à conduire un véhicule ou à utiliser des machines peut être altérée sous traitement par bisoprolol. Il convient d’être particulièrement attentif en début de traitement, en cas de modification de posologie ainsi qu’en cas de consommation d’alcool.</p>
+<p class=AmmCorpsTexteGras>BISOPROLOL VIATRIS 5 mg, comprimé pelliculé sécable contient un agent colorant azoïque, jaune orangé S (E110) et du sodium.</p>
+<p class=AmmCorpsTexte>Ce médicament peut provoquer des réactions allergiques.</p>
+<p class=AmmCorpsTexte>Ce médicament contient moins de 1 mmol (23 mg) de sodium par comprimé, c.-à-d. qu’il est essentiellement « sans sodium ».</p>
+<h2><a name="Ann3bCommentPrendre">3. COMMENT PRENDRE BISOPROLOL VIATRIS 5 mg, comprimé pelliculé sécable ?</a>&nbsp;&nbsp;<a href='#HautDePage'><img src='img/BackToTop.jpg' width='15px' height='15px' alt='Retour en haut de la page' title='Retour en haut de la page' /></a></h2>
+<p class=AmmCorpsTexte><a name="_Toc142279021">Veillez à toujours prendre ce médicament en suivant exactement les indications de votre médecin. Vérifiez auprès de votre médecin ou pharmacien en cas de doute.</a></p>
+<p class=AmmCorpsTexte>Une surveillance régulière par le médecin est requise lors du traitement par BISOPROLOL VIATRIS 5 mg, comprimé pelliculé sécable. Elle est tout particulièrement nécessaire en début de traitement, en cas d’augmentation de la dose, et lorsque vous arrêtez le traitement.</p>
+<p class=AmmCorpsTexte>Prenez le comprimé avec un peu d’eau, le matin, avant, pendant ou après le petit-déjeuner. Les comprimés ne doivent pas être mâchés ou écrasés.</p>
+<p class=AmmCorpsTexte>Les comprimés sécables peuvent être divisés en deux demi-doses égales.</p>
+<p class=AmmCorpsTexte>BISOPROLOL VIATRIS 5 mg, comprimé pelliculé sécable est habituellement utilisé dans le cadre d’un traitement au long cours.</p>
+<p class=AmmAnnexeTitre4>Chez l’adulte, y compris les personnes âgées :</p>
+<p class=AmmCorpsTexte>Le traitement par bisoprolol doit être instauré à faible dose et augmenté progressivement.</p>
+<p class=AmmCorpsTexte>Votre médecin décidera de l’augmentation de la dose à appliquer, en général selon le schéma suivant :</p>
+<p class=AmmListePuces1 style='text-align:justify'><span style='font-family: Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>1,25 mg de bisoprolol une fois par jour pendant une semaine</p>
+<p class=AmmListePuces1 style='text-align:justify'><span style='font-family: Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>2,5 mg de bisoprolol une fois par jour pendant une semaine</p>
+<p class=AmmListePuces1 style='text-align:justify'><span style='font-family: Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>3,75 mg de bisoprolol une fois par jour pendant une semaine</p>
+<p class=AmmListePuces1 style='text-align:justify'><span style='font-family: Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>5 mg de bisoprolol une fois par jour pendant quatre semaines</p>
+<p class=AmmListePuces1 style='text-align:justify'><span style='font-family: Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>7,5 mg de bisoprolol une fois par jour pendant quatre semaines</p>
+<p class=AmmListePuces1 style='margin-top:0cm;margin-right:0cm;margin-bottom: 6.0pt;margin-left:17.85pt;text-align:justify;text-indent:-17.85pt'><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>10 mg de bisoprolol une fois par jour en traitement d’entretien (en continu)</p>
+<p class=AmmCorpsTexte>La dose quotidienne maximale recommandée est de 10 mg de bisoprolol.</p>
+<p class=AmmCorpsTexte>Selon votre tolérance au médicament, votre médecin pourra également décider de prolonger l’intervalle entre les augmentations de la dose. Si votre état s’aggrave ou si vous ne tolérez plus le médicament, il pourra être nécessaire de réduire à nouveau la dose ou d’interrompre le traitement. Chez certains patients, une dose d’entretien inférieure à 10 mg de bisoprolol peut être suffisante. Votre médecin vous indiquera la marche à suivre.</p>
+<p class=AmmCorpsTexte>Si vous devez arrêter totalement le traitement, votre médecin vous conseillera généralement de réduire progressivement la dose, faute de quoi votre état de santé pourrait se détériorer.</p>
+<p class=AmmCorpsTexteGras>Si vous avez pris plus de BISOPROLOL VIATRIS 5 mg, comprimé pelliculé sécable que vous n’auriez dû :</p>
+<p class=AmmCorpsTexte>Prévenez immédiatement votre médecin qui décidera des mesures à prendre.</p>
+<p class=AmmCorpsTexte>Les symptômes de surdosage peuvent être un ralentissement du rythme cardiaque, des difficultés respiratoires sévères, des vertiges ou des tremblements (dus à la baisse du taux de sucre dans le sang).</p>
+<p class=AmmCorpsTexteGras>Si vous oubliez de prendre BISOPROLOL VIATRIS 5 mg, comprimé pelliculé sécable :</p>
+<p class=AmmCorpsTexte><a name="_Toc142279020">Ne prenez pas de dose double pour compenser la dose que vous avez oublié de prendre. Prenez la dose habituelle le matin suivant.</a></p>
+<p class=AmmCorpsTexteGras>Si vous arrêtez de prendre BISOPROLOL VIATRIS 5 mg, comprimé pelliculé sécable :</p>
+<p class=AmmCorpsTexte>N’interrompez en aucun cas le traitement par BISOPROLOL VIATRIS <span lang=FR-BE>5 </span>mg, comprimé pelliculé sécable si votre médecin ne vous a pas conseillé de le faire. Dans le cas contraire, votre état de santé pourrait se détériorer fortement.</p>
+<p class=AmmCorpsTexte>Si vous avez d’autres questions sur l’utilisation de ce médicament, demandez plus d’informations à votre médecin ou à votre pharmacien.</p>
+<h2><a name="Ann3bEffetsIndesirables">4. QUELS SONT LES EFFETS INDESIRABLES EVENTUELS ?</a>&nbsp;&nbsp;<a href='#HautDePage'><img src='img/BackToTop.jpg' width='15px' height='15px' alt='Retour en haut de la page' title='Retour en haut de la page' /></a></h2>
+<p class=AmmCorpsTexte><a name="_Toc142279023">Comme tous les médicaments, ce médicament peut provoquer des effets indésirables, mais ils ne surviennent pas systématiquement chez tout le monde.</a></p>
+<p class=AmmCorpsTexte>Afin d’éviter les réactions graves, consultez un médecin immédiatement si un effet indésirable devient sévère, survient brusquement ou s’aggrave rapidement.</p>
+<p class=AmmCorpsTexteGras>Les effets indésirables les plus graves sont ceux touchant les fonctions cardiaques :</p>
+<p class=AmmListePuces1 style='text-align:justify'><span style='font-family: Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>ralentissement du rythme cardiaque (peut concerner plus de 1 personne sur 10) ;</p>
+<p class=AmmListePuces1 style='text-align:justify'><span style='font-family: Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>aggravation de l’insuffisance cardiaque (peut concerner jusqu’à 1 personne sur 10) ;</p>
+<p class=AmmListePuces1 style='margin-top:0cm;margin-right:0cm;margin-bottom: 6.0pt;margin-left:17.85pt;text-align:justify;text-indent:-17.85pt'><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>rythme cardiaque lent ou irrégulier (peut concerner jusqu’à 1 personne sur 100) ;</p>
+<p class=AmmCorpsTexteGras>Si vous avez des vertiges ou si vous vous sentez faible, ou encore si vous avez des difficultés à respirer, contactez votre médecin dès que possible.</p>
+<p class=AmmCorpsTexte>Les autres effets indésirables sont répertoriés ci-dessous en fonction de leur fréquence :</p>
+<p class=AmmCorpsTexte><span class=AmmCorpsTexteGrasCar>Fréquent</span> (peut concerner jusqu’à 1 personne sur 10) :</p>
+<p class=AmmListePuces1 style='text-align:justify'><span style='font-family: Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>fatigue, épuisement, vertiges, maux de tête ;</p>
+<p class=AmmListePuces1 style='text-align:justify'><span style='font-family: Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>sensation de refroidissement ou d’engourdissement dans les mains et les pieds ;</p>
+<p class=AmmListePuces1 style='text-align:justify'><span style='font-family: Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>pression artérielle basse ;</p>
+<p class=AmmListePuces1 style='margin-top:0cm;margin-right:0cm;margin-bottom: 6.0pt;margin-left:17.85pt;text-align:justify;text-indent:-17.85pt'><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>troubles gastro-intestinaux tels que nausées, vomissements, diarrhée ou constipation.</p>
+<p class=AmmCorpsTexte><span class=AmmCorpsTexteGrasCar>Peu fréquent</span> (peut concerner jusqu’à 1 personne sur 100) :</p>
+<p class=AmmListePuces1 style='text-align:justify'><span style='font-family: Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>troubles du sommeil ;</p>
+<p class=AmmListePuces1 style='text-align:justify'><span style='font-family: Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>dépression ;</p>
+<p class=AmmListePuces1 style='text-align:justify'><span style='font-family: Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>vertiges lors du passage à la position debout ;</p>
+<p class=AmmListePuces1 style='text-align:justify'><span style='font-family: Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>gêne respiratoire chez les personnes ayant un asthme ou des problèmes respiratoires chroniques ;</p>
+<p class=AmmListePuces1 style='margin-top:0cm;margin-right:0cm;margin-bottom: 6.0pt;margin-left:17.85pt;text-align:justify;text-indent:-17.85pt'><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>faiblesse musculaire, crampes.</p>
+<p class=AmmCorpsTexte><span class=AmmCorpsTexteGrasCar>Rare</span> (peut concerner jusqu’à 1 personne sur 1 000) :</p>
+<p class=AmmListePuces1 style='text-align:justify'><span style='font-family: Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>troubles de l’audition ;</p>
+<p class=AmmListePuces1 style='text-align:justify'><span style='font-family: Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>rhinite allergique ;</p>
+<p class=AmmListePuces1 style='text-align:justify'><span style='font-family: Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>diminution de la sécrétion de larmes ;</p>
+<p class=AmmListePuces1 style='text-align:justify'><span style='font-family: Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>inflammation du foie pouvant causer un jaunissement de la peau ou du blanc des yeux ;</p>
+<p class=AmmListePuces1 style='text-align:justify'><span style='font-family: Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>résultats d’analyses anormaux ;</p>
+<p class=AmmListePuces1 style='text-align:justify'><span style='font-family: Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>réactions allergiques à type de démangeaisons, bouffées de chaleur, éruptions cutanées ;</p>
+<p class=AmmListePuces1 style='text-align:justify'><span style='font-family: Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>troubles de l’érection ;</p>
+<p class=AmmListePuces1 style='text-align:justify'><span style='font-family: Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>cauchemars, hallucinations ;</p>
+<p class=AmmListePuces1 style='margin-top:0cm;margin-right:0cm;margin-bottom: 6.0pt;margin-left:17.85pt;text-align:justify;text-indent:-17.85pt'><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>perte de connaissance.</p>
+<p class=AmmCorpsTexte><span class=AmmCorpsTexteGrasCar>Très rare</span> (peut concerner jusqu’à 1 personne sur 10 000) :</p>
+<p class=AmmListePuces1 style='text-align:justify'><span style='font-family: Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>irritation et rougeur de l’œil (conjonctivite) ;</p>
+<p class=AmmListePuces1 style='text-align:justify'><span style='font-family: Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>chute des cheveux ;</p>
+<p class=AmmListePuces1 style='text-align:justify'><span lang=FR-BE style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>apparition ou aggravation d’une affection cutanée squameuse (psoriasis) ; éruption psoriasiforme<span lang=FR-BE>.</span></p>
+<p class=AmmCorpsTexteGras style='margin-top:6.0pt'>Déclaration des effets secondaires</p>
+<p class=AmmCorpsTexte>Si vous ressentez un quelconque effet indésirable, parlez-en à votre médecin, votre pharmacien ou à votre infirmier/ère. Ceci s’applique aussi à tout effet indésirable qui ne serait pas mentionné dans cette notice. Vous pouvez également déclarer les effets indésirables directement via le système national de déclaration : Agence Nationale de Sécurité du Médicament et des produits de santé (ANSM) et réseau des Centres Régionaux de Pharmacovigilance - Site internet:<span style='color:red'> </span><a href="http://www.signalement-sante.gouv.fr">https://signalement.social-sante.gouv.fr/ </a></p>
+<p class=AmmCorpsTexte>En signalant les effets indésirables, vous contribuez à fournir davantage d’informations sur la sécurité du médicament.</p>
+<h2><a name="Ann3bConservation">5. COMMENT CONSERVER BISOPROLOL VIATRIS 5 mg, comprimé pelliculé sécable?</a>&nbsp;&nbsp;<a href='#HautDePage'><img src='img/BackToTop.jpg' width='15px' height='15px' alt='Retour en haut de la page' title='Retour en haut de la page' /></a></h2>
+<p class=AmmCorpsTexte><a name="_Toc142279026"></a><a name="_Toc142279024">Tenir ce médicament hors de la vue et de la portée des enfants.</a></p>
+<p class=AmmCorpsTexte>N’utilisez pas ce médicament après la date de péremption indiquée sur l’emballage et le flacon ou la plaquette après EXP. La date de péremption fait référence au dernier jour de ce mois.</p>
+<p class=AmmCorpsTexte>Plaquettes : A conserver à une température ne dépassant pas 30°C.</p>
+<p class=AmmCorpsTexte>Flacons : ce médicament ne nécessite pas de précautions particulières de conservation. </p>
+<p class=AmmCorpsTexte>Ne jetez aucun médicament au tout-à-l’égout ou avec les ordures ménagères. Demandez à votre pharmacien d<span style='font-family:ArialMT'>’</span>éliminer les médicaments que vous n’utilisez plus. Ces mesures contribueront à protéger l’environnement.</p>
+<h2><a name="Ann3bEmballage">6. CONTENU DE L’EMBALLAGE ET AUTRES INFORMATIONS</a>&nbsp;&nbsp;<a href='#HautDePage'><img src='img/BackToTop.jpg' width='15px' height='15px' alt='Retour en haut de la page' title='Retour en haut de la page' /></a></h2>
+<p class="AmmAnnexeTitre2"><a name="Ann3bContenu">Ce que contient BISOPROLOL VIATRIS 5 mg, comprimé pelliculé sécable</a>&nbsp;&nbsp;<a href='#HautDePage'><img src='img/BackToTop.jpg' width='15px' height='15px' alt='Retour en haut de la page' title='Retour en haut de la page' /></a></p>
+<p class=AmmListePuces1><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>La substance active est :</p>
+<p class=AmmComposition>Hémifumarate de bisoprolol ..................................................................................................... 5 mg</p>
+<p class=AmmListePuces1><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>Les autres composants sont :</p>
+<p class=AmmCorpsTexte><span class='souligne'>Noyau du comprimé</span> : cellulose microcristalline, butylhydroxyanisole, silice colloïdale anhydre, stéarate de magnésium, laurilsulfate de sodium, oxyde de fer jaune (E172), croscarmellose sodique.</p>
+<p class=AmmCorpsTexte><span class='souligne'>Pelliculage</span> : Opadry Jaune 06A520153 [dioxyde de titane (E171), hypromellose (E464), talc, laque aluminique de jaune de quinoléine (E104), laque aluminique de jaune orangé S (E110), laque aluminique d'indigotine (E132)].</p>
+<p class="AmmAnnexeTitre2"><a name="RcpEmballage">Qu’est-ce que BISOPROLOL VIATRIS 5 mg, comprimé pelliculé sécable et contenu de l’emballage extérieur</a>&nbsp;&nbsp;<a href='#HautDePage'><img src='img/BackToTop.jpg' width='15px' height='15px' alt='Retour en haut de la page' title='Retour en haut de la page' /></a></p>
+<p class=AmmCorpsTexte>Ce médicament se présente sous forme de comprimé pelliculé jaune pâle, en forme de cœur, biconvexe à bords biseautés portant une barre de cassure sur une face du comprimé, et uni sur l’autre face.</p>
+<p class=AmmCorpsTexte>Le comprimé peut être divisé en doses égales.</p>
+<p class=AmmCorpsTexte>28, 30, ou 90 comprimés pelliculés sécables sous plaquettes PVC/Aluminium.</p>
+<p class=AmmCorpsTexte>28x1, 30x1 ou 90x1 comprimés pelliculés sécables sous plaquettes unitaires PVC/Aluminium.</p>
+<p class=AmmCorpsTexte>28, 30 ou 90 comprimés pelliculés sécables sous plaquettes PVC/PVdC/Aluminium.</p>
+<p class=AmmCorpsTexte>28x1, 30x1 ou 90x1 comprimés pelliculés sécables sous plaquettes unitaires PVC/PVdC/Aluminium.</p>
+<p class=AmmCorpsTexte>Flacons de 28, 30, 90, 100 ou 1000 comprimés pelliculés sécables.</p>
+<p class=AmmCorpsTexte>Toutes les présentations peuvent ne pas être commercialisées.</p>
+<p class="AmmAnnexeTitre2"><a name="Ann3bTituAMM">Titulaire de l’autorisation de mise sur le marché</a>&nbsp;&nbsp;<a href='#HautDePage'><img src='img/BackToTop.jpg' width='15px' height='15px' alt='Retour en haut de la page' title='Retour en haut de la page' /></a></p>
+<p class=AmmTitulaireNom><a name="_Toc142279031">VIATRIS SANTE</a></p>
+<p class=AmmTitulaireAdresse>1 Rue de Turin </p>
+<p class=AmmTitulaireAdresse>69007 Lyon</p>
+<p class="AmmAnnexeTitre2"><a name="Ann3bExploitAMM">Exploitant de l’autorisation de mise sur le marché</a>&nbsp;&nbsp;<a href='#HautDePage'><img src='img/BackToTop.jpg' width='15px' height='15px' alt='Retour en haut de la page' title='Retour en haut de la page' /></a></p>
+<p class=AmmTitulaireNom>VIATRIS SANTE</p>
+<p class=AmmTitulaireAdresse>1 Rue de Turin </p>
+<p class=AmmTitulaireAdresse>69007 Lyon</p>
+<p class="AmmAnnexeTitre2"><a name="Ann3bFab">Fabricant</a>&nbsp;&nbsp;<a href='#HautDePage'><img src='img/BackToTop.jpg' width='15px' height='15px' alt='Retour en haut de la page' title='Retour en haut de la page' /></a></p>
+<p class=AmmTitulaireNom><a name="_Toc142279033"><span lang=EN-US>McDermott Laboratories Ltd trading as Gerard Laboratories</span></a></p>
+<p class=AmmTitulaireAdresse><span lang=EN-US>35/36 Baldoyle Industrial Estate</span></p>
+<p class=AmmTitulaireAdresse><span lang=EN-US>Grange Road, Dublin 13</span></p>
+<p class=AmmTitulaireAdresse>Irlande</p>
+<p class=AmmCorpsTexte style='margin-top:6.0pt'>ou</p>
+<p class=AmmTitulaireNom>Mylan Hungary Kft.</p>
+<p class=AmmTitulaireAdresse>Mylan utca 1, Komárom, 2900</p>
+<p class=AmmTitulaireAdresse>Hongrie</p>
+<p class=AmmCorpsTexte>ou</p>
+<p class=AmmTitulaireNom>VIATRIS SANTE</p>
+<p class=AmmTitulaireAdresse>360 Avenue Henri Schneider</p>
+<p class=AmmTitulaireAdresse>69330 Meyzieu</p>
+<p class=AmmTitulaireAdresse>FRANCE</p>
+<p class="AmmAnnexeTitre2"><a name="Ann3bNomsMediEEE">Noms du médicament dans les Etats membres de l'Espace Economique Européen</a>&nbsp;&nbsp;<a href='#HautDePage'><img src='img/BackToTop.jpg' width='15px' height='15px' alt='Retour en haut de la page' title='Retour en haut de la page' /></a></p>
+<p class=AmmCorpsTexte>Sans objet.</p>
+<p class="AmmAnnexeTitre2"><a name="Ann3bContenu">La dernière date à laquelle cette notice a été révisée est :</a>&nbsp;&nbsp;<a href='#HautDePage'><img src='img/BackToTop.jpg' width='15px' height='15px' alt='Retour en haut de la page' title='Retour en haut de la page' /></a></p>
+<p class=AmmCorpsTexte><span style='color:#385623'>[à compléter ultérieurement par le titulaire]</span></p>
+<p class="AmmAnnexeTitre2"><a name="Ann3bAutres">Autres</a>&nbsp;&nbsp;<a href='#HautDePage'><img src='img/BackToTop.jpg' width='15px' height='15px' alt='Retour en haut de la page' title='Retour en haut de la page' /></a></p>
+<p class=AmmCorpsTexte>Des informations détaillées sur ce médicament sont disponibles sur le site Internet de l’ANSM (France).</p>
+</div>					
+					<p class="alignright"><a href="#HautDePage">Retour en haut de la page <img src="img/BackToTop.jpg" width="20px" height="20px" alt="Retour en haut de la page" title="Retour en haut de la page" /></a></p>
+				</div>
+			</div>
+		</div>
+	</div>
+
+<table summary="" class="content" width="1000">
+	<tr>
+		<td height="100px">&nbsp;</td>
+	</tr>
+</table>
+<table summary="Pied de page" class="footer" width="1000">
+	<tr>
+		<td>
+			<table summary="" class="tablealigncenter" border="0">
+				<tr>
+					<td width="100px" class="aligncenter"><a id="lien_ansm" href="http://ansm.sante.fr/" target="_blank"><img src="img/Logo_ANSM.png" width="150" height="60" alt="ANSM - Agence nationale de sécurité du médicament et des produits de santé" title="L'ANSM met à disposition les principales informations issues de l'Autorisation de mise sur le marché, l'appartenance à un groupe générique, les liens vers les informations de sécurité qu'elle publie, l'identification des médicaments sous surveillance renforcée - nouvelle fenêtre" /></a></td>
+					          <td>&nbsp;</td>
+					<td width="100px" class="aligncenter"><img src="img/Logo_HAS.png" width="150" height="60" alt="HAS - Haute autorité de santé" title="La HAS met à disposition les informations relatives au service médical rendu, à l'amélioration du service médical rendu ainsi que les liens vers les avis de la Commission de la Transparence correspondants - nouvelle fenêtre" /></td>
+					<td>&nbsp;</td>
+					<td width="100px" class="aligncenter"><img src="img/Logo_CNAM.png" width="150" height="60" alt="UNCAM - Unin nationale des caisses d'assurance maladie" title="L'UNCAM met à disposition le taux de remboursement, le prix et les indications remboursables le cas échéant, ainsi que l'agrément aux collectivités - nouvelle fenêtre" /></td>
+          				</tr>
+			</table> 
+		</td>
+	</tr>
+</table>
+<table summary="" class="finpage" width="1000">
+	<tr>
+		<td height="100px" class="aligncenter">
+			<a class="navigation" href="plan.php">Plan du site</a>&nbsp;|&nbsp;
+			<a class="navigation" href="accessibilite.php">Accessibilité</a>&nbsp;|&nbsp;
+			<a class="navigation" href="contact.php">Contact</a>&nbsp;|&nbsp;
+			<a class="navigation" href="telechargement.php">Téléchargement</a>&nbsp;|&nbsp;
+			<a class="navigation" href="DeclarationConfidentialite.php">Declaration de confidentialité</a>&nbsp;|&nbsp;
+			<a class="navigation" href="http://www.service-public.fr/" title="Service Public - Nouvelle fenêtre" target="_blank">Service-Public.fr</a>&nbsp;|&nbsp;
+			<a class="navigation" href="http://www.legifrance.gouv.fr/" title="Legifrance - Nouvelle fenêtre" target="_blank">Legifrance</a>&nbsp;|&nbsp;
+			<a class="navigation" href="http://www.gouvernement.fr/" title="Gouvernement - Nouvelle fenêtre" target="_blank" >Gouvernement.fr</a>
+		</td>
+	</tr>
+</table>
+
+
+
+<!-- Matomo -->
+<script type="text/javascript">
+  var _paq = window._paq = window._paq || [];
+  /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
+  _paq.push(['trackPageView']);
+  _paq.push(['enableLinkTracking']);
+  (function() {
+    var u="https://stats.integra.fr/";
+    _paq.push(['setTrackerUrl', u+'matomo.php']);
+    _paq.push(['setSiteId', '79']);
+    var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+    g.type='text/javascript'; g.async=true; g.src=u+'matomo.js'; s.parentNode.insertBefore(g,s);
+  })();
+</script>
+<!-- End Matomo Code -->
+
+
+
+</body>
+</html>

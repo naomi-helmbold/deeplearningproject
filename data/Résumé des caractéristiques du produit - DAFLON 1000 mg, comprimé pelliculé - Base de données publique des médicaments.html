@@ -1,0 +1,345 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="fr" lang="fr">
+<head>
+	<title>Résumé des caractéristiques du produit - DAFLON 1000 mg, comprimé pelliculé  - Base de données publique des médicaments</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=windows-1252"/>
+	<meta name="robots" content="index, follow"/>
+	<meta name="Description" content="Base de données publique des médicaments"/>
+	<meta name="Keywords" content="base, données, publique, médicaments, Résumé des caractéristiques du produit, DAFLON 1000 mg, comprimé pelliculé "/>
+	<meta name="Subject" content="medicament"/>
+	<link href='https://fonts.googleapis.com/css?family=Noticia+Text' rel='stylesheet' type='text/css' />
+	<link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro' rel='stylesheet' type='text/css' />
+	<link href="style/style_bdm.css?v=2.2.3" type="text/css" rel="stylesheet"/>
+	<link href="style/style_RCP_Notice.css" type="text/css" rel="stylesheet"/>
+  <link rel="alternate" href="http://m.base-donnees-publique.medicaments.gouv.fr/#!info-66617130">
+    <script type="text/javascript" src="scripts/autocomplete.js?v=2.2.3"></script>
+	<script type="text/javascript" src="scripts/jquery.js"></script>
+    <script type="text/javascript" src="scripts/jquery-ui.min.js"></script>
+	<script type="text/javascript" src="scripts/common.js"></script>
+	<link rel="icon" type="image/x-icon" href="favicon.ico" />
+</head>
+
+<body>
+
+<a name="HautDePage" />
+<div id="bandeauhaut">
+	<a id="lien_ministere" class="lienmenu" href="http://www.sante.gouv.fr" target="_blank" title="Site du ministère des affaires sociales et de la santé - nouvelle fenêtre"><img id="logoministere" src="img/Logo_Ministere.jpg"  alt="Logo du ministère des affaires sociales et de la santé"/></a>
+	<h1 class="texteTitreSite">
+		Base <span class="texteBleu">de</span> données <span class="texteBleu">publique</span><br/><span class="texteBleu">des</span> médicaments
+	</h1>
+		<a id="lien_medicament_gouv" class="lienEspaceMedic" target="_blank" href="http://medicaments.gouv.fr" title="Visiter [medicaments.gouv.fr] - nouvelle fenêtre">Visiter [medicaments.gouv.fr] <img src="/img/icone_lien.png" alt="Visiter [medicaments.gouv.fr]"  title="Visiter [medicaments.gouv.fr] - nouvelle fenetre" /></a>
+</div>
+<!--div align="center">
+	<a id="banniere" target="_blank" href="http://social-sante.gouv.fr/soins-et-maladies/medicaments/medicaments-generiques/" title="Visiter [medicaments.gouv.fr] - M?dicaments g?n?riques">
+		<img width="1000"   src ="/img/carrouselbannieres.gif" alt="Visiter [medicaments.gouv.fr] - M?dicaments g?n?riques" title="Visiter [medicaments.gouv.fr] - M?dicaments g?n?riques" />
+	</a>
+</div-->
+
+<div id="menuhaut">
+	<span id="menuhaut_gauche">
+		<a id="lien_accueil" class="navigation" href="index.php">Accueil</a>&nbsp;|&nbsp;
+		<a id="lien_glossaire" class="navigation" href="glossaire.php">Glossaire</a>&nbsp;|&nbsp;
+		<a id="lien_aide" class="navigation" href="aide.php">Aide</a>		
+	</span>
+	
+		
+	<span id="menuhaut_dernmaj">
+        <br>Dernière <span title=" 2.4.4
+">mise à jour</span> le 03/03/2025	</span>
+</div>
+
+	<script language="javascript" type="text/javascript">
+		//<![CDATA[ 
+		function Aff(men) {
+			document.write("<ul class=\"menuDoc\">");
+			for(var no_rub=0;no_rub<men.num_rub;no_rub++) {
+				document.write("<li><a class='leftMenu' href='"+menu[no_rub].page+"'>");
+				document.write(men[no_rub].txt);
+				document.write("</a></li>");
+				if (men[no_rub].nb_lien != 0){
+					document.write("<ul class=\"sousMenuDoc\">");
+				}
+				for(var no_lien=0;no_lien<men[no_rub].nb_lien;no_lien++) {
+					document.write("<li><a class='leftMenu' href='"+men[no_rub][no_lien].page+"'>");
+					document.write(men[no_rub][no_lien].txt);
+					document.write("</a></li>");
+				}
+				if (men[no_rub].nb_lien != 0){
+					document.write("</ul>");
+				}
+			}
+			document.write("</ul>");
+		}
+		
+		function CreerMenu(police,imgRub,imgOption,imgOptionFin,hauteur) {
+			this.num_rub=0;
+			this.police=police;
+			this.imgRub=imgRub;
+			this.imgOpt=imgOption;
+			this.imgOptFin=imgOptionFin;
+			this.hauteur=hauteur;
+			this.AddRub=AddRub;
+			this.AddLien=AddLien;
+		}
+		
+		function AddRub(txt,aff,page) {
+			var rub = new Object;
+				rub.txt=txt;
+				rub.aff=aff;
+				rub.page=page;
+				rub.nb_lien=0;
+			this[this.num_rub]=rub;
+			this.num_rub++;
+		}
+
+		function AddLien(txt,page) {
+			var no_rub = this.num_rub-1;
+			var no_lien= this[no_rub].nb_lien;
+			var lien = new Object;
+				lien.txt=txt;
+				lien.page=page;
+			this[no_rub][no_lien]=lien;
+			this[no_rub].nb_lien++;
+		}
+		var menu=new CreerMenu("arial","img/dyn04.gif","img/dyn22.gif","img/dyn55.gif",18);
+		//]]> 
+		menu.AddRub("Dénomination","O","#RcpDenomination");
+			menu.AddRub("Composition","O","#RcpCompoQualiQuanti");
+			menu.AddRub("Forme pharma.","O","#RcpFormePharm");
+			menu.AddRub("Clinique","O","#RcpDonneesCliniques");
+			menu.AddLien("Indic. thérapeutiques","#RcpIndicTherap");
+				menu.AddLien("Posologie","#RcpPosoAdmin");
+				menu.AddLien("Contre-indications","#RcpContreindications");
+				menu.AddLien("Mise en garde","#RcpMisesEnGarde");
+				menu.AddLien("Interactions","#RcpInteractionsMed");
+				menu.AddLien("Grossesse, allait.","#RcpFertGrossAllait");
+				menu.AddLien("Conduite véhicules","#RcpConduite");
+				menu.AddLien("Effets indésirables","#RcpEffetsIndesirables");
+				menu.AddLien("Surdosage","#RcpSurdosage");
+				menu.AddRub("Pharmacologie","O","#RcpPropPharmacologiques");
+			menu.AddLien("Pharmacodynamie","#RcpPropPharmacodynamiques");
+				menu.AddLien("Pharmacocinétique","#RcpPropPharmacocinetiques");
+				menu.AddLien("Sécurité préclinique","#RcpSecuritePreclinique");
+				menu.AddRub("Pharmaceutique","O","#RcpDonneesPharmaceutiques");
+			menu.AddLien("Liste excipients","#RcpListeExcipients");
+				menu.AddLien("Incompatibilités","#RcpIncompatibilites");
+				menu.AddLien("Durée conservation","#RcpDureeConservation");
+				menu.AddLien("Conservation","#RcpPrecConservation");
+				menu.AddLien("Emballage","#RcpEmballage");
+				menu.AddLien("Utilisation/manipulation","#RcpPrecEmpl");
+				menu.AddRub("Titulaire AMM","O","#RcpTitulaireAmm");
+			menu.AddRub("Présentations","O","#RcpNumAutor");
+			menu.AddRub("Autorisation, renouv.","O","#RcpPremiereAutorisation");
+			menu.AddRub("Date de révision","O","#RcpDateRevision");
+			menu.AddRub("Dosimétrie","O","#RcpDosimetrie");
+			menu.AddRub("Préparation radiopharma.","O","#RcpInstPrepRadioph");
+				</script>
+
+	<div id="container">
+		<div id="leftnav">
+			<div id="cadreMenuGauche">
+				<h2 class="sommaireMenu">Sommaire</h2>
+				<div id="menuGauche">
+					<script language="JavaScript" type="text/javascript">Aff(menu);</script>
+				</div>
+			</div>
+		</div>
+		<div id="contentPrincipal">
+			<div id="boutonsliens">
+				<a id='lien_fiche_info' href='extrait.php?specid=66617130' ><img id="ongletficheinfo" alt="Onglet fiche information" src="img/onglet_fiche_info_vert.png" /></a><a id='lien_rcp' href='affichageDoc.php?specid=66617130&amp;typedoc=R'><img class="onglet" alt="Onglet résumé des caractéristiques du produit" src="img/onglet_rcp_gris.png" /></a><a id='lien_notice' href='affichageDoc.php?specid=66617130&amp;typedoc=N'><img class="onglet" alt="Onglet notice patient" src="img/onglet_notice_vert.png" /></a>			</div>
+			<div class="titredeno">
+				<table summary="" border="0" cellspacing="0">
+					<tr><td colspan="3" height="10px"></td></tr>
+					<tr>
+						<td width="15px">&nbsp;</td>
+						<td width="685px"><h1 class="textedeno">DAFLON 1000 mg, comprimé pelliculé  - Résumé des caractéristiques du produit</h1></td>
+						<td width="43px" class="tdcenter"><a href="Javascript:void(null)" onclick="print();"><img src="img/imprimante.png" height="20px" width="20px" alt="Imprimer le document" title="Imprimer le document" border="0" /></a></td>
+					</tr>
+					<tr><td colspan="3" height="10px"></td></tr>
+				</table>
+			</div>
+			
+			<div id="contentDocument">
+				<div id="textDocument">
+					<p class="DateNotif">ANSM - Mis à jour le : 12/02/2025</p>
+<p class="AmmAnnexeTitre1"><a name="RcpDenomination">1. DENOMINATION DU MEDICAMENT</a>&nbsp;&nbsp;<a href='#HautDePage'><img src='img/BackToTop.jpg' width='15px' height='15px' alt='Retour en haut de la page' title='Retour en haut de la page' /></a></p>
+<p class=AmmCorpsTexteGras>DAFLON 1000 mg, comprimé pelliculé</p>
+<p class="AmmAnnexeTitre1"><a name="RcpCompoQualiQuanti">2. COMPOSITION QUALITATIVE ET QUANTITATIVE</a>&nbsp;&nbsp;<a href='#HautDePage'><img src='img/BackToTop.jpg' width='15px' height='15px' alt='Retour en haut de la page' title='Retour en haut de la page' /></a></p>
+<p class=AmmComposition>Fraction flavonoïque purifiée micronisée.............................................................................. 1000 mg</p>
+<p class=AmmComposition>Correspondant à :</p>
+<p class=AmmComposition>Diosmine 90 pour cent.......................................................................................................... 900 mg</p>
+<p class=AmmComposition>Flavonoïdes exprimés en hespéridine 10 pour cent................................................................. 100 mg</p>
+<p class=AmmComposition>Humidité moyenne.................................................................................................................. 40 mg</p>
+<p class=AmmComposition align=center style='text-align:center'>Pour un comprimé pelliculé.</p>
+<p class=AmmCorpsTexte>Pour la liste complète des excipients, voir rubrique 6.1.</p>
+<p class="AmmAnnexeTitre1"><a name="RcpFormePharm">3. FORME PHARMACEUTIQUE</a>&nbsp;&nbsp;<a href='#HautDePage'><img src='img/BackToTop.jpg' width='15px' height='15px' alt='Retour en haut de la page' title='Retour en haut de la page' /></a></p>
+<p class=AmmCorpsTexte><a name="_Toc142278915">Comprimé pelliculé.</a></p>
+<p class=AmmCorpsTexte>La barre de cassure n’est là que pour faciliter la prise du comprimé, elle ne le divise pas en doses égales.</p>
+<p class="AmmAnnexeTitre1"><a name="RcpDonneesCliniques">4. DONNEES CLINIQUES</a>&nbsp;&nbsp;<a href='#HautDePage'><img src='img/BackToTop.jpg' width='15px' height='15px' alt='Retour en haut de la page' title='Retour en haut de la page' /></a></p>
+<p class="AmmAnnexeTitre2"><a name="RcpIndicTherap">4.1. Indications thérapeutiques</a>&nbsp;&nbsp;<a href='#HautDePage'><img src='img/BackToTop.jpg' width='15px' height='15px' alt='Retour en haut de la page' title='Retour en haut de la page' /></a></p>
+<p class=AmmCorpsTexte><a name="_Toc142278917">Traitement des signes fonctionnels liés à la crise hémorroïdaire.</a></p>
+<p class="AmmAnnexeTitre2"><a name="RcpPosoAdmin">4.2. Posologie et mode d'administration</a>&nbsp;&nbsp;<a href='#HautDePage'><img src='img/BackToTop.jpg' width='15px' height='15px' alt='Retour en haut de la page' title='Retour en haut de la page' /></a></p>
+<p class=AmmAnnexeTitre3><a name="_Toc142278918">Posologie</a></p>
+<p class=AmmCorpsTexte>3 comprimés par jour les 4 premiers jours, puis 2 comprimés par jour pendant 3 jours.</p>
+<p class=AmmAnnexeTitre3>Population pédiatrique</p>
+<p class=AmmCorpsTexte>La sécurité et l’efficacité de DAFLON 1000 mg chez les enfants et adolescents âgés de moins de 18 ans n’ont pas été établies.</p>
+<p class=AmmAnnexeTitre3>Mode d’administration</p>
+<p class=AmmCorpsTexte>Voie orale.</p>
+<p class="AmmAnnexeTitre2"><a name="RcpContreindications">4.3. Contre-indications</a>&nbsp;&nbsp;<a href='#HautDePage'><img src='img/BackToTop.jpg' width='15px' height='15px' alt='Retour en haut de la page' title='Retour en haut de la page' /></a></p>
+<p class=AmmCorpsTexte><a name="_Toc142278919">Hypersensibilité à la substance active ou à l’un des excipients mentionnés à la rubrique 6.1 </a></p>
+<p class="AmmAnnexeTitre2"><a name="RcpMisesEnGarde">4.4. Mises en garde spéciales et précautions d'emploi</a>&nbsp;&nbsp;<a href='#HautDePage'><img src='img/BackToTop.jpg' width='15px' height='15px' alt='Retour en haut de la page' title='Retour en haut de la page' /></a></p>
+<p class=AmmCorpsTexte><a name="_Toc142278920">L'administration de ce produit ne dispense pas du traitement spécifique des autres maladies anales. Le traitement doit être de courte durée. Si les symptômes ne cèdent pas rapidement, un examen proctologique doit être pratiqué et le traitement doit être revu.</a></p>
+<p class=AmmAnnexeTitre3>Excipients</p>
+<p class=AmmCorpsTexte>DAFLON 1000 mg contient moins de 1 mmol (23 mg) de sodium par comprimé, c’est-à-dire qu’il est essentiellement « sans sodium ».</p>
+<p class="AmmAnnexeTitre2"><a name="RcpInteractionsMed">4.5. Interactions avec d'autres médicaments et autres formes d'interactions</a>&nbsp;&nbsp;<a href='#HautDePage'><img src='img/BackToTop.jpg' width='15px' height='15px' alt='Retour en haut de la page' title='Retour en haut de la page' /></a></p>
+<p class=AmmCorpsTexte><a name="_Toc142278921">Aucune étude d’interaction n’a été réalisée. Aucune interaction médicamenteuse cliniquement pertinente n’a été rapportée à ce jour depuis la commercialisation du produit.</a></p>
+<p class="AmmAnnexeTitre2"><a name="RcpFertGrossAllait">4.6. Fertilité, grossesse et allaitement</a>&nbsp;&nbsp;<a href='#HautDePage'><img src='img/BackToTop.jpg' width='15px' height='15px' alt='Retour en haut de la page' title='Retour en haut de la page' /></a></p>
+<p class=AmmAnnexeTitre3>Grossesse</p>
+<p class=AmmCorpsTexte style='margin-bottom:0cm;margin-bottom:.0001pt'><a name="_Toc142278927">Il n’existe pas de données ou il existe des données limitées sur l'utilisation de la fraction flavonoïque purifiée micronisée chez la femme enceinte. </a></p>
+<p class=AmmCorpsTexte style='margin-bottom:0cm;margin-bottom:.0001pt'>Les études effectuées chez l’animal n’ont pas mis en évidence de toxicité sur la reproduction (voir rubrique 5.3). </p>
+<p class=AmmCorpsTexte>Par mesure de précaution, il est préférable d’éviter l’utilisation de DAFLON pendant la grossesse.</p>
+<p class=AmmAnnexeTitre3>Allaitement</p>
+<p class=AmmCorpsTexte style='margin-bottom:0cm;margin-bottom:.0001pt'>On ne sait pas si la fraction flavonoïque purifiée micronisée/métabolites sont excrétés dans le lait maternel. </p>
+<p class=AmmCorpsTexte style='margin-bottom:0cm;margin-bottom:.0001pt'>Un risque pour les nouveaux-nés/nourrissons ne peut être exclu. </p>
+<p class=AmmCorpsTexte>Une décision doit être prise soit d’interrompre l’allaitement soit d’interrompre/de s’abstenir du traitement avec DAFLON en prenant en compte le bénéfice de l’allaitement pour l’enfant au regard du bénéfice du traitement pour la femme.</p>
+<p class=AmmAnnexeTitre3>Fertilité</p>
+<p class=AmmCorpsTexte>Les études de toxicité sur la reproduction n’ont pas montré d’effet sur la fertilité des rats mâles et femelles (voir rubrique 5.3).</p>
+<p class="AmmAnnexeTitre2"><a name="RcpConduite">4.7. Effets sur l'aptitude à conduire des véhicules et à utiliser des machines</a>&nbsp;&nbsp;<a href='#HautDePage'><img src='img/BackToTop.jpg' width='15px' height='15px' alt='Retour en haut de la page' title='Retour en haut de la page' /></a></p>
+<p class=AmmCorpsTexte><a name="_Toc142278929"><span lang=FR-BE>Aucune étude spécifique des effets de la fraction flavonoïque sur l’aptitude à conduire des véhicules et à utiliser des machines n’a été réalisée. Cependant, compte tenu du profil global de sécurité de la fraction flavonoïque, DAFLON n’a aucun effet ou un effet négligeable sur l’aptitude à conduire des véhicules et à utiliser des machines.</span></a></p>
+<p class="AmmAnnexeTitre2"><a name="RcpEffetsIndesirables">4.8. Effets indésirables</a>&nbsp;&nbsp;<a href='#HautDePage'><img src='img/BackToTop.jpg' width='15px' height='15px' alt='Retour en haut de la page' title='Retour en haut de la page' /></a></p>
+<p class=AmmCorpsTexte>Les effets indésirables suivants ont été rapportés et sont classés en fonction de leur fréquence.</p>
+<p class=AmmCorpsTexte>Très fréquent (&#8805; 1/10); fréquent (&#8805; 1/100, &lt;1/10); peu fréquent (&#8805; 1/1000, &lt;1/100); rare (&#8805; 1/10000, &lt;1/1000); très rare (&lt;1/10000); inconnu (ne pouvant être estimé à partir des données disponibles).</p>
+<p class=AmmAnnexeTitre3>Troubles du système nerveux</p>
+<p class=AmmCorpsTexte>Rare : sensations vertigineuses, céphalées, malaise.</p>
+<p class=AmmAnnexeTitre3>Troubles gastro-intestinaux</p>
+<p class=AmmCorpsTexte>Fréquent : diarrhée, dyspepsie, nausée, vomissement.</p>
+<p class=AmmCorpsTexte>Peu fréquent : colite.</p>
+<p class=AmmCorpsTexte>Fréquence inconnue : douleur abdominale.</p>
+<p class=AmmAnnexeTitre3>Affections de la peau et du tissu sous-cutané</p>
+<p class=AmmCorpsTexte>Rare : rash, prurit, urticaire</p>
+<p class=AmmCorpsTexte>Fréquence inconnue: œdème isolé du visage, des paupières, des lèvres. Exceptionnellement, œdème de Quincke.</p>
+<p class=AmmAnnexeTitre3>Déclaration des effets indésirables suspectés </p>
+<p class=AmmCorpsTexte>La déclaration des effets indésirables suspectés après autorisation du médicament est importante. Elle permet une surveillance continue du rapport bénéfice/risque du médicament. Les professionnels de santé déclarent tout effet indésirable suspecté via le système national de déclaration : Agence nationale de sécurité du médicament et des produits de santé (ANSM) et réseau des Centres Régionaux de Pharmacovigilance - Site internet :<span style='color:red'> </span><a href="https://signalement.social-sante.gouv.fr/">https://signalement.social-sante.gouv.fr/</a></p>
+<p class="AmmAnnexeTitre2"><a name="RcpSurdosage">4.9. Surdosage</a>&nbsp;&nbsp;<a href='#HautDePage'><img src='img/BackToTop.jpg' width='15px' height='15px' alt='Retour en haut de la page' title='Retour en haut de la page' /></a></p>
+<p class=AmmAnnexeTitre3><a name="_Toc142278931">Symptômes</a></p>
+<p class=AmmCorpsTexte>Les données concernant le surdosage avec DAFLON sont limitées. Les effets indésirables les plus fréquemment rapportés, en cas de surdosage, étaient des effets gastro-intestinaux (tels que diarrhée, nausée, douleur abdominale) et des effets cutanés (tels que prurit, rash).</p>
+<p class=AmmAnnexeTitre3>Conduite à tenir</p>
+<p class=AmmCorpsTexte>En cas de surdosage, un traitement symptomatique doit être mis en place. </p>
+<p class="AmmAnnexeTitre1"><a name="RcpPropPharmacologiques">5. PROPRIETES PHARMACOLOGIQUES</a>&nbsp;&nbsp;<a href='#HautDePage'><img src='img/BackToTop.jpg' width='15px' height='15px' alt='Retour en haut de la page' title='Retour en haut de la page' /></a></p>
+<p class="AmmAnnexeTitre2"><a name="RcpPropPharmacodynamiques">5.1. Propriétés pharmacodynamiques</a>&nbsp;&nbsp;<a href='#HautDePage'><img src='img/BackToTop.jpg' width='15px' height='15px' alt='Retour en haut de la page' title='Retour en haut de la page' /></a></p>
+<p class=AmmCorpsTexteGras><a name="_Toc142278933">Classe pharmacothérapeutique  : VASCULOPROTECTEURS / MEDICAMENTS AGISSANT SUR LES CAPILLAIRES / BIOFLAVONOIDES, code ATC : C05CA53.</a></p>
+<p class=AmmAnnexeTitre3>Effets pharmacodynamiques</p>
+<p class=AmmCorpsTexte>DAFLON exerce une double action sur le système veineux de retour :</p>
+<p class=AmmListePuces1 style='margin-bottom:6.0pt;text-align:justify'><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>au niveau des veines et des veinules, il augmente la tonicité pariétale et exerce une action antistase,</p>
+<p class=AmmListePuces1 style='margin-bottom:6.0pt;text-align:justify'><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>au niveau de la microcirculation, il augmente la résistance capillaire et normalise la perméabilité capillaire.</p>
+<p class="AmmAnnexeTitre2"><a name="RcpPropPharmacocinetiques">5.2. Propriétés pharmacocinétiques</a>&nbsp;&nbsp;<a href='#HautDePage'><img src='img/BackToTop.jpg' width='15px' height='15px' alt='Retour en haut de la page' title='Retour en haut de la page' /></a></p>
+<p class=AmmCorpsTexte><a name="_Toc142278934">Chez l'homme, après administration par voie orale du médicament avec diosmine marquée au carbone 14 :</a></p>
+<p class=AmmListePuces1><span style='font-family: Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>l'excrétion est essentiellement fécale et l'excrétion urinaire est en moyenne de 14 pour cent de la quantité administrée,</p>
+<p class=AmmListePuces1><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>la demi-vie d'élimination est de 11 heures,</p>
+<p class=AmmListePuces1><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>le produit est fortement métabolisé, ce métabolisme est objectivé par la présence de différents acides phénols dans les urines.</p>
+<p class="AmmAnnexeTitre2"><a name="RcpSecuritePreclinique">5.3. Données de sécurité préclinique</a>&nbsp;&nbsp;<a href='#HautDePage'><img src='img/BackToTop.jpg' width='15px' height='15px' alt='Retour en haut de la page' title='Retour en haut de la page' /></a></p>
+<p class=AmmCorpsTexte>Les données non cliniques issues des études conventionnelles de toxicologie en administration répétée, génotoxicité et des fonctions de reproduction n’ont pas révélé de risque particulier pour l’Homme.</p>
+<p class="AmmAnnexeTitre1"><a name="RcpDonneesPharmaceutiques">6. DONNEES PHARMACEUTIQUES</a>&nbsp;&nbsp;<a href='#HautDePage'><img src='img/BackToTop.jpg' width='15px' height='15px' alt='Retour en haut de la page' title='Retour en haut de la page' /></a></p>
+<p class="AmmAnnexeTitre2"><a name="RcpListeExcipients">6.1. Liste des excipients</a>&nbsp;&nbsp;<a href='#HautDePage'><img src='img/BackToTop.jpg' width='15px' height='15px' alt='Retour en haut de la page' title='Retour en haut de la page' /></a></p>
+<p class=AmmCorpsTexte><a name="_Toc142278937">Carboxyméthylamidon sodique, cellulose microcristalline, gélatine, stéarate de magnésium, talc, eau purifiée.</a></p>
+<p class=AmmCorpsTexte><span class='souligne'>Pelliculage</span> : dioxyde de titane (E 171), glycérol, laurylsulfate de sodium, macrogol 6000, hypromellose, oxyde de fer jaune (E 172), oxyde de fer rouge (E 172), stéarate de magnésium.</p>
+<p class="AmmAnnexeTitre2"><a name="RcpIncompatibilites">6.2. Incompatibilités</a>&nbsp;&nbsp;<a href='#HautDePage'><img src='img/BackToTop.jpg' width='15px' height='15px' alt='Retour en haut de la page' title='Retour en haut de la page' /></a></p>
+<p class=AmmCorpsTexte><a name="_Toc142278938">Sans objet.</a></p>
+<p class="AmmAnnexeTitre2"><a name="RcpDureeConservation">6.3. Durée de conservation</a>&nbsp;&nbsp;<a href='#HautDePage'><img src='img/BackToTop.jpg' width='15px' height='15px' alt='Retour en haut de la page' title='Retour en haut de la page' /></a></p>
+<p class=AmmCorpsTexte>4 ans.</p>
+<p class="AmmAnnexeTitre2"><a name="RcpPrecConservation">6.4. Précautions particulières de conservation</a>&nbsp;&nbsp;<a href='#HautDePage'><img src='img/BackToTop.jpg' width='15px' height='15px' alt='Retour en haut de la page' title='Retour en haut de la page' /></a></p>
+<p class=AmmCorpsTexte><a name="_Toc142278940">Ce médicament ne nécessite pas de précautions particulières de conservation.</a></p>
+<p class="AmmAnnexeTitre2"><a name="RcpEmballage">6.5. Nature et contenu de l'emballage extérieur </a>&nbsp;&nbsp;<a href='#HautDePage'><img src='img/BackToTop.jpg' width='15px' height='15px' alt='Retour en haut de la page' title='Retour en haut de la page' /></a></p>
+<p class=AmmCorpsTexte>18, 30, 36 ou 40 comprimés pelliculés sous plaquettes (PVC/Aluminium).</p>
+<p class=AmmCorpsTexte>Toutes les présentations peuvent ne pas être commercialisées.</p>
+<p class="AmmAnnexeTitre2"><a name="RcpPrecEmpl">6.6. Précautions particulières d’élimination et de manipulation</a>&nbsp;&nbsp;<a href='#HautDePage'><img src='img/BackToTop.jpg' width='15px' height='15px' alt='Retour en haut de la page' title='Retour en haut de la page' /></a></p>
+<p class=AmmCorpsTexte><span lang=FR-BE>Pas d’exigences particulières pour l’élimination.</span></p>
+<p class="AmmAnnexeTitre1"><a name="RcpTitulaireAmm">7. TITULAIRE DE L’AUTORISATION DE MISE SUR LE MARCHE</a>&nbsp;&nbsp;<a href='#HautDePage'><img src='img/BackToTop.jpg' width='15px' height='15px' alt='Retour en haut de la page' title='Retour en haut de la page' /></a></p>
+<p class=AmmCorpsTexteGras style='margin-bottom:0cm;margin-bottom:.0001pt; page-break-after:avoid'><a name="_Toc142278943">LES LABORATOIRES SERVIER</a></p>
+<p class=AmmCorpsTexte style='margin-bottom:0cm;margin-bottom:.0001pt; page-break-after:avoid'>50 RUE CARNOT</p>
+<p class=AmmCorpsTexte style='margin-bottom:0cm;margin-bottom:.0001pt; page-break-after:avoid'>92284 SURESNES CEDEX</p>
+<p class=AmmCorpsTexte>FRANCE</p>
+<p class="AmmAnnexeTitre1"><a name="RcpNumAutor">8. NUMERO(S) D’AUTORISATION DE MISE SUR LE MARCHE</a>&nbsp;&nbsp;<a href='#HautDePage'><img src='img/BackToTop.jpg' width='15px' height='15px' alt='Retour en haut de la page' title='Retour en haut de la page' /></a></p>
+<p class=AmmListePuces1><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>CIP 34009 300 745 6 5 : 18 comprimés pelliculés sous plaquettes (PVC/Aluminium).</p>
+<p class=AmmListePuces1><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>CIP 34009 550 265 6 3 : 30 comprimés pelliculés sous plaquettes (PVC/Aluminium).</p>
+<p class=AmmListePuces1><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>CIP 34009 550 265 8 7 : 36 comprimés pelliculés sous plaquettes (PVC/Aluminium).</p>
+<p class=AmmListePuces1><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>CIP 34009 550 265 9 4 : 40 comprimés pelliculés sous plaquettes (PVC/Aluminium).</p>
+<p class="AmmAnnexeTitre1"><a name="RcpPremiereAutorisation">9. DATE DE PREMIERE AUTORISATION/DE RENOUVELLEMENT DE L’AUTORISATION</a>&nbsp;&nbsp;<a href='#HautDePage'><img src='img/BackToTop.jpg' width='15px' height='15px' alt='Retour en haut de la page' title='Retour en haut de la page' /></a></p>
+<p class=AmmCorpsTexte><a name="_Toc142278945">[à compléter ultérieurement par le titulaire]</a></p>
+<p class="AmmAnnexeTitre1"><a name="RcpDateRevision">10. DATE DE MISE A JOUR DU TEXTE</a>&nbsp;&nbsp;<a href='#HautDePage'><img src='img/BackToTop.jpg' width='15px' height='15px' alt='Retour en haut de la page' title='Retour en haut de la page' /></a></p>
+<p class=AmmCorpsTexte><a name="_Toc142278946">[à compléter ultérieurement par le titulaire]</a></p>
+<p class="AmmAnnexeTitre1"><a name="RcpDosimetrie">11. DOSIMETRIE</a>&nbsp;&nbsp;<a href='#HautDePage'><img src='img/BackToTop.jpg' width='15px' height='15px' alt='Retour en haut de la page' title='Retour en haut de la page' /></a></p>
+<p class=AmmCorpsTexte>Sans objet.</p>
+<p class="AmmAnnexeTitre1"><a name="RcpInstPrepRadioph">12. INSTRUCTIONS POUR LA PREPARATION DES RADIOPHARMACEUTIQUES</a>&nbsp;&nbsp;<a href='#HautDePage'><img src='img/BackToTop.jpg' width='15px' height='15px' alt='Retour en haut de la page' title='Retour en haut de la page' /></a></p>
+<p class=AmmCorpsTexte><a name="_Toc142278948">Sans objet.</a></p>
+<div style='border:none;border-top:solid windowtext 1.0pt;padding:1.0pt 0cm 0cm 0cm'>
+<p class="AmmAnnexeTitre"><a name="RcpCondPrescription">CONDITIONS DE PRESCRIPTION ET DE DELIVRANCE</a></p>
+</div>
+<p class=AmmCorpsTexte style='margin-top:6.0pt'>Médicament non soumis à prescription médicale.</p>
+<span class='gras'><span style='font-size:12.0pt;font-family:"Arial",sans-serif;color:#0B3D92;
+text-transform:uppercase'><br clear=all>
+</span></span>					
+					<p class="alignright"><a href="#HautDePage">Retour en haut de la page <img src="img/BackToTop.jpg" width="20px" height="20px" alt="Retour en haut de la page" title="Retour en haut de la page" /></a></p>
+				</div>
+			</div>
+		</div>
+	</div>
+
+<table summary="" class="content" width="1000">
+	<tr>
+		<td height="100px">&nbsp;</td>
+	</tr>
+</table>
+<table summary="Pied de page" class="footer" width="1000">
+	<tr>
+		<td>
+			<table summary="" class="tablealigncenter" border="0">
+				<tr>
+					<td width="100px" class="aligncenter"><a id="lien_ansm" href="http://ansm.sante.fr/" target="_blank"><img src="img/Logo_ANSM.png" width="150" height="60" alt="ANSM - Agence nationale de sécurité du médicament et des produits de santé" title="L'ANSM met à disposition les principales informations issues de l'Autorisation de mise sur le marché, l'appartenance à un groupe générique, les liens vers les informations de sécurité qu'elle publie, l'identification des médicaments sous surveillance renforcée - nouvelle fenêtre" /></a></td>
+					          <td>&nbsp;</td>
+					<td width="100px" class="aligncenter"><img src="img/Logo_HAS.png" width="150" height="60" alt="HAS - Haute autorité de santé" title="La HAS met à disposition les informations relatives au service médical rendu, à l'amélioration du service médical rendu ainsi que les liens vers les avis de la Commission de la Transparence correspondants - nouvelle fenêtre" /></td>
+					<td>&nbsp;</td>
+					<td width="100px" class="aligncenter"><img src="img/Logo_CNAM.png" width="150" height="60" alt="UNCAM - Unin nationale des caisses d'assurance maladie" title="L'UNCAM met à disposition le taux de remboursement, le prix et les indications remboursables le cas échéant, ainsi que l'agrément aux collectivités - nouvelle fenêtre" /></td>
+          				</tr>
+			</table> 
+		</td>
+	</tr>
+</table>
+<table summary="" class="finpage" width="1000">
+	<tr>
+		<td height="100px" class="aligncenter">
+			<a class="navigation" href="plan.php">Plan du site</a>&nbsp;|&nbsp;
+			<a class="navigation" href="accessibilite.php">Accessibilité</a>&nbsp;|&nbsp;
+			<a class="navigation" href="contact.php">Contact</a>&nbsp;|&nbsp;
+			<a class="navigation" href="telechargement.php">Téléchargement</a>&nbsp;|&nbsp;
+			<a class="navigation" href="DeclarationConfidentialite.php">Declaration de confidentialité</a>&nbsp;|&nbsp;
+			<a class="navigation" href="http://www.service-public.fr/" title="Service Public - Nouvelle fenêtre" target="_blank">Service-Public.fr</a>&nbsp;|&nbsp;
+			<a class="navigation" href="http://www.legifrance.gouv.fr/" title="Legifrance - Nouvelle fenêtre" target="_blank">Legifrance</a>&nbsp;|&nbsp;
+			<a class="navigation" href="http://www.gouvernement.fr/" title="Gouvernement - Nouvelle fenêtre" target="_blank" >Gouvernement.fr</a>
+		</td>
+	</tr>
+</table>
+
+
+
+<!-- Matomo -->
+<script type="text/javascript">
+  var _paq = window._paq = window._paq || [];
+  /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
+  _paq.push(['trackPageView']);
+  _paq.push(['enableLinkTracking']);
+  (function() {
+    var u="https://stats.integra.fr/";
+    _paq.push(['setTrackerUrl', u+'matomo.php']);
+    _paq.push(['setSiteId', '79']);
+    var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+    g.type='text/javascript'; g.async=true; g.src=u+'matomo.js'; s.parentNode.insertBefore(g,s);
+  })();
+</script>
+<!-- End Matomo Code -->
+
+
+
+</body>
+</html>

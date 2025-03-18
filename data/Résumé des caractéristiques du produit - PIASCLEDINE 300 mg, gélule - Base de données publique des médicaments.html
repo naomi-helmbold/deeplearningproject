@@ -1,0 +1,570 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="fr" lang="fr">
+<head>
+	<title>Résumé des caractéristiques du produit - PIASCLEDINE 300 mg, gélule  - Base de données publique des médicaments</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=windows-1252"/>
+	<meta name="robots" content="index, follow"/>
+	<meta name="Description" content="Base de données publique des médicaments"/>
+	<meta name="Keywords" content="base, données, publique, médicaments, Résumé des caractéristiques du produit, PIASCLEDINE 300 mg, gélule "/>
+	<meta name="Subject" content="medicament"/>
+	<link href='https://fonts.googleapis.com/css?family=Noticia+Text' rel='stylesheet' type='text/css' />
+	<link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro' rel='stylesheet' type='text/css' />
+	<link href="style/style_bdm.css?v=2.2.3" type="text/css" rel="stylesheet"/>
+	<link href="style/style_RCP_Notice.css" type="text/css" rel="stylesheet"/>
+  <link rel="alternate" href="http://m.base-donnees-publique.medicaments.gouv.fr/#!info-65125261">
+    <script type="text/javascript" src="scripts/autocomplete.js?v=2.2.3"></script>
+	<script type="text/javascript" src="scripts/jquery.js"></script>
+    <script type="text/javascript" src="scripts/jquery-ui.min.js"></script>
+	<script type="text/javascript" src="scripts/common.js"></script>
+	<link rel="icon" type="image/x-icon" href="favicon.ico" />
+</head>
+
+<body>
+
+<a name="HautDePage" />
+<div id="bandeauhaut">
+	<a id="lien_ministere" class="lienmenu" href="http://www.sante.gouv.fr" target="_blank" title="Site du ministère des affaires sociales et de la santé - nouvelle fenêtre"><img id="logoministere" src="img/Logo_Ministere.jpg"  alt="Logo du ministère des affaires sociales et de la santé"/></a>
+	<h1 class="texteTitreSite">
+		Base <span class="texteBleu">de</span> données <span class="texteBleu">publique</span><br/><span class="texteBleu">des</span> médicaments
+	</h1>
+		<a id="lien_medicament_gouv" class="lienEspaceMedic" target="_blank" href="http://medicaments.gouv.fr" title="Visiter [medicaments.gouv.fr] - nouvelle fenêtre">Visiter [medicaments.gouv.fr] <img src="/img/icone_lien.png" alt="Visiter [medicaments.gouv.fr]"  title="Visiter [medicaments.gouv.fr] - nouvelle fenetre" /></a>
+</div>
+<!--div align="center">
+	<a id="banniere" target="_blank" href="http://social-sante.gouv.fr/soins-et-maladies/medicaments/medicaments-generiques/" title="Visiter [medicaments.gouv.fr] - M?dicaments g?n?riques">
+		<img width="1000"   src ="/img/carrouselbannieres.gif" alt="Visiter [medicaments.gouv.fr] - M?dicaments g?n?riques" title="Visiter [medicaments.gouv.fr] - M?dicaments g?n?riques" />
+	</a>
+</div-->
+
+<div id="menuhaut">
+	<span id="menuhaut_gauche">
+		<a id="lien_accueil" class="navigation" href="index.php">Accueil</a>&nbsp;|&nbsp;
+		<a id="lien_glossaire" class="navigation" href="glossaire.php">Glossaire</a>&nbsp;|&nbsp;
+		<a id="lien_aide" class="navigation" href="aide.php">Aide</a>		
+	</span>
+	
+		
+	<span id="menuhaut_dernmaj">
+        <br>Dernière <span title=" 2.4.4
+">mise à jour</span> le 03/03/2025	</span>
+</div>
+
+	<script language="javascript" type="text/javascript">
+		//<![CDATA[ 
+		function Aff(men) {
+			document.write("<ul class=\"menuDoc\">");
+			for(var no_rub=0;no_rub<men.num_rub;no_rub++) {
+				document.write("<li><a class='leftMenu' href='"+menu[no_rub].page+"'>");
+				document.write(men[no_rub].txt);
+				document.write("</a></li>");
+				if (men[no_rub].nb_lien != 0){
+					document.write("<ul class=\"sousMenuDoc\">");
+				}
+				for(var no_lien=0;no_lien<men[no_rub].nb_lien;no_lien++) {
+					document.write("<li><a class='leftMenu' href='"+men[no_rub][no_lien].page+"'>");
+					document.write(men[no_rub][no_lien].txt);
+					document.write("</a></li>");
+				}
+				if (men[no_rub].nb_lien != 0){
+					document.write("</ul>");
+				}
+			}
+			document.write("</ul>");
+		}
+		
+		function CreerMenu(police,imgRub,imgOption,imgOptionFin,hauteur) {
+			this.num_rub=0;
+			this.police=police;
+			this.imgRub=imgRub;
+			this.imgOpt=imgOption;
+			this.imgOptFin=imgOptionFin;
+			this.hauteur=hauteur;
+			this.AddRub=AddRub;
+			this.AddLien=AddLien;
+		}
+		
+		function AddRub(txt,aff,page) {
+			var rub = new Object;
+				rub.txt=txt;
+				rub.aff=aff;
+				rub.page=page;
+				rub.nb_lien=0;
+			this[this.num_rub]=rub;
+			this.num_rub++;
+		}
+
+		function AddLien(txt,page) {
+			var no_rub = this.num_rub-1;
+			var no_lien= this[no_rub].nb_lien;
+			var lien = new Object;
+				lien.txt=txt;
+				lien.page=page;
+			this[no_rub][no_lien]=lien;
+			this[no_rub].nb_lien++;
+		}
+		var menu=new CreerMenu("arial","img/dyn04.gif","img/dyn22.gif","img/dyn55.gif",18);
+		//]]> 
+		menu.AddRub("Dénomination","O","#RcpDenomination");
+			menu.AddRub("Composition","O","#RcpCompoQualiQuanti");
+			menu.AddRub("Forme pharma.","O","#RcpFormePharm");
+			menu.AddRub("Clinique","O","#RcpDonneesCliniques");
+			menu.AddLien("Indic. thérapeutiques","#RcpIndicTherap");
+				menu.AddLien("Posologie","#RcpPosoAdmin");
+				menu.AddLien("Contre-indications","#RcpContreindications");
+				menu.AddLien("Mise en garde","#RcpMisesEnGarde");
+				menu.AddLien("Interactions","#RcpInteractionsMed");
+				menu.AddLien("Grossesse, allait.","#RcpFertGrossAllait");
+				menu.AddLien("Conduite véhicules","#RcpConduite");
+				menu.AddLien("Effets indésirables","#RcpEffetsIndesirables");
+				menu.AddLien("Surdosage","#RcpSurdosage");
+				menu.AddRub("Pharmacologie","O","#RcpPropPharmacologiques");
+			menu.AddLien("Pharmacodynamie","#RcpPropPharmacodynamiques");
+				menu.AddLien("Pharmacocinétique","#RcpPropPharmacocinetiques");
+				menu.AddLien("Sécurité préclinique","#RcpSecuritePreclinique");
+				menu.AddRub("Pharmaceutique","O","#RcpDonneesPharmaceutiques");
+			menu.AddLien("Liste excipients","#RcpListeExcipients");
+				menu.AddLien("Incompatibilités","#RcpIncompatibilites");
+				menu.AddLien("Durée conservation","#RcpDureeConservation");
+				menu.AddLien("Conservation","#RcpPrecConservation");
+				menu.AddLien("Emballage","#RcpEmballage");
+				menu.AddLien("Utilisation/manipulation","#RcpPrecEmpl");
+				menu.AddRub("Titulaire AMM","O","#RcpTitulaireAmm");
+			menu.AddRub("Présentations","O","#RcpNumAutor");
+			menu.AddRub("Autorisation, renouv.","O","#RcpPremiereAutorisation");
+			menu.AddRub("Date de révision","O","#RcpDateRevision");
+			menu.AddRub("Dosimétrie","O","#RcpDosimetrie");
+			menu.AddRub("Préparation radiopharma.","O","#RcpInstPrepRadioph");
+				</script>
+
+	<div id="container">
+		<div id="leftnav">
+			<div id="cadreMenuGauche">
+				<h2 class="sommaireMenu">Sommaire</h2>
+				<div id="menuGauche">
+					<script language="JavaScript" type="text/javascript">Aff(menu);</script>
+				</div>
+			</div>
+		</div>
+		<div id="contentPrincipal">
+			<div id="boutonsliens">
+				<a id='lien_fiche_info' href='extrait.php?specid=65125261' ><img id="ongletficheinfo" alt="Onglet fiche information" src="img/onglet_fiche_info_vert.png" /></a><a id='lien_rcp' href='affichageDoc.php?specid=65125261&amp;typedoc=R'><img class="onglet" alt="Onglet résumé des caractéristiques du produit" src="img/onglet_rcp_gris.png" /></a><a id='lien_notice' href='affichageDoc.php?specid=65125261&amp;typedoc=N'><img class="onglet" alt="Onglet notice patient" src="img/onglet_notice_vert.png" /></a>			</div>
+			<div class="titredeno">
+				<table summary="" border="0" cellspacing="0">
+					<tr><td colspan="3" height="10px"></td></tr>
+					<tr>
+						<td width="15px">&nbsp;</td>
+						<td width="685px"><h1 class="textedeno">PIASCLEDINE 300 mg, gélule  - Résumé des caractéristiques du produit</h1></td>
+						<td width="43px" class="tdcenter"><a href="Javascript:void(null)" onclick="print();"><img src="img/imprimante.png" height="20px" width="20px" alt="Imprimer le document" title="Imprimer le document" border="0" /></a></td>
+					</tr>
+					<tr><td colspan="3" height="10px"></td></tr>
+				</table>
+			</div>
+			
+			<div id="contentDocument">
+				<div id="textDocument">
+					<p class="DateNotif">ANSM - Mis à jour le : 10/11/2020</p>
+<p class="AmmAnnexeTitre1"><a name="RcpDenomination">1. DENOMINATION DU MEDICAMENT</a>&nbsp;&nbsp;<a href='#HautDePage'><img src='img/BackToTop.jpg' width='15px' height='15px' alt='Retour en haut de la page' title='Retour en haut de la page' /></a></p>
+<p class=AmmCorpsTexteGras>PIASCLEDINE 300 mg, gélule</p>
+<p class="AmmAnnexeTitre1"><a name="RcpCompoQualiQuanti">2. COMPOSITION QUALITATIVE ET QUANTITATIVE</a>&nbsp;&nbsp;<a href='#HautDePage'><img src='img/BackToTop.jpg' width='15px' height='15px' alt='Retour en haut de la page' title='Retour en haut de la page' /></a></p>
+<p class=AmmComposition>Extrait total d'insaponifiables avocat-soja........................................................................ 300,00 mg</p>
+<p class=AmmComposition>Correspondant à :</p>
+<p class=AmmComposition>Insaponifiable d'huile d'avocat ........................................................................................ 100,00 mg</p>
+<p class=AmmComposition>Insaponifiable d'huile de soja .......................................................................................... 200,00 mg</p>
+<p class=AmmComposition align=center style='text-align:center'>Pour une gélule.</p>
+<p class=AmmCorpsTexte>Pour la liste complète des excipients, voir rubrique 6.1.</p>
+<p class="AmmAnnexeTitre1"><a name="RcpFormePharm">3. FORME PHARMACEUTIQUE</a>&nbsp;&nbsp;<a href='#HautDePage'><img src='img/BackToTop.jpg' width='15px' height='15px' alt='Retour en haut de la page' title='Retour en haut de la page' /></a></p>
+<p class=AmmCorpsTexte><a name="_Toc142278915">Gélule de couleur orange et beige-gris.</a></p>
+<p class="AmmAnnexeTitre1"><a name="RcpDonneesCliniques">4. DONNEES CLINIQUES</a>&nbsp;&nbsp;<a href='#HautDePage'><img src='img/BackToTop.jpg' width='15px' height='15px' alt='Retour en haut de la page' title='Retour en haut de la page' /></a></p>
+<p class="AmmAnnexeTitre2"><a name="RcpIndicTherap">4.1. Indications thérapeutiques</a>&nbsp;&nbsp;<a href='#HautDePage'><img src='img/BackToTop.jpg' width='15px' height='15px' alt='Retour en haut de la page' title='Retour en haut de la page' /></a></p>
+<p class=AmmCorpsTexte><a name="_Toc142278917">PIASCLEDINE est indiqué comme traitement symptomatique à effet différé de l’arthrose du genou.</a></p>
+<p class=AmmCorpsTexte>PIASCLEDINE est indiqué chez l’adulte.</p>
+<p class="AmmAnnexeTitre2"><a name="RcpPosoAdmin">4.2. Posologie et mode d'administration</a>&nbsp;&nbsp;<a href='#HautDePage'><img src='img/BackToTop.jpg' width='15px' height='15px' alt='Retour en haut de la page' title='Retour en haut de la page' /></a></p>
+<p class=AmmAnnexeTitre3><a name="_Toc142278918">Posologie</a></p>
+<p class=AmmAnnexeTitre4>Patients adultes</p>
+<p class=AmmCorpsTexte>Une gélule par jour.</p>
+<p class=AmmCorpsTexte>La durée du traitement sera modulée en fonction des résultats cliniques en sachant que l'effet est retardé de 2 mois environ et qu'il peut persister après l'arrêt du traitement. </p>
+<p class=AmmAnnexeTitre4>Population pédiatrique</p>
+<p class=AmmCorpsTexte>En l’absence de données relatives à l’efficacité et à la sécurité d’emploi chez l’enfant de moins de 18 ans, l’utilisation de PIASCLEDINE n’est pas recommandée dans cette population.</p>
+<p class=AmmCorpsTexte><span class='italique'>Insuffisance hépatique</span></p>
+<p class=AmmCorpsTexte>Aucune donnée n’est disponible chez les patients atteints d’insuffisance hépatique sévère, par conséquent, aucune recommandation ne peut être faite.</p>
+<p class=AmmAnnexeTitre4>Patients âgés</p>
+<p class=AmmCorpsTexte>Aucune adaptation posologique n’est nécessaire chez les patients âgés. Dans les études cliniques menées avec PIASCLEDINE, l’âge moyen de la population était supérieur à 60 ans et une proportion importante des patients avait plus de 65 ans.</p>
+<p class=AmmAnnexeTitre3>Mode d’administration</p>
+<p class=AmmCorpsTexte>Voie orale.</p>
+<p class=AmmCorpsTexte>La gélule doit être avalée entière, sans être croquée, avec un grand verre d'eau, au milieu d’un repas.</p>
+<p class="AmmAnnexeTitre2"><a name="RcpContreindications">4.3. Contre-indications</a>&nbsp;&nbsp;<a href='#HautDePage'><img src='img/BackToTop.jpg' width='15px' height='15px' alt='Retour en haut de la page' title='Retour en haut de la page' /></a></p>
+<p class=AmmCorpsTexte><a name="_Toc142278919">Hypersensibilité à la substance active ou à l’un des excipients mentionnés à la rubrique 6.1.</a></p>
+<p class="AmmAnnexeTitre2"><a name="RcpMisesEnGarde">4.4. Mises en garde spéciales et précautions d'emploi</a>&nbsp;&nbsp;<a href='#HautDePage'><img src='img/BackToTop.jpg' width='15px' height='15px' alt='Retour en haut de la page' title='Retour en haut de la page' /></a></p>
+<p class=AmmCorpsTexte><a name="_Toc142278920">Pendant la période post-commercialisation, des réactions indésirables, comme une cytolyse hépatique, une cholestase, un ictère et des élévations des transaminases, ont été rapportées de manière peu fréquente. Il convient donc de porter une attention particulière aux patients ayant un antécédent médical ou souffrant de troubles hépatiques ou biliaires, ou présentant une maladie susceptible d’augmenter le risque de cholélithiase ou de lésions hépatiques. Le traitement par PIASCLEDINE doit être arrêté en cas de signes biologiques ou symptômes cliniques de lésions hépatiques ou biliaires. </a></p>
+<p class=AmmCorpsTexte>Des réactions d’hypersensibilité, ainsi que des éruptions cutanées, de l’urticaire, des dermatites, ont été rapportés peu fréquemment pendant le développement clinique du produit. Les patients doivent être informés des signes et/ou des symptômes évoquant une réaction allergique et ils doivent arrêter le traitement et consulter leur médecin à la première apparition d’une réaction cutanée ou de signes d’hypersensibilité (voir rubrique 4.8).</p>
+<p class=AmmCorpsTexte>Quelques cas de thrombocytopénie ont été rapportés avec PIASCLEDINE, dont un pendant le développement clinique. Le traitement par PIASCLEDINE doit être arrêté en cas de survenue de symptômes évocateurs de troubles de la coagulation (par exemple, pétéchie, purpura).</p>
+<p class="AmmAnnexeTitre2"><a name="RcpInteractionsMed">4.5. Interactions avec d'autres médicaments et autres formes d'interactions</a>&nbsp;&nbsp;<a href='#HautDePage'><img src='img/BackToTop.jpg' width='15px' height='15px' alt='Retour en haut de la page' title='Retour en haut de la page' /></a></p>
+<p class=AmmCorpsTexte><a name="_Toc142278921">PIASCLEDINE doit être utilisé avec précaution chez les patients ayant un traitement anticoagulant concomitant (voir rubrique 4.4).</a></p>
+<p class="AmmAnnexeTitre2"><a name="RcpFertGrossAllait">4.6. Fertilité, grossesse et allaitement</a>&nbsp;&nbsp;<a href='#HautDePage'><img src='img/BackToTop.jpg' width='15px' height='15px' alt='Retour en haut de la page' title='Retour en haut de la page' /></a></p>
+<p class=AmmAnnexeTitre3>Grossesse</p>
+<p class=AmmCorpsTexte><a name="_Toc142278927">Les données chez l'animal ont mis en évidence une toxicité sur la reproduction à des niveaux d’exposition systémique très supérieurs aux doses thérapeutiques humaines (voir rubrique 5.3).</a></p>
+<p class=AmmCorpsTexte>En clinique, il n'existe pas actuellement de données suffisamment pertinentes pour évaluer un éventuel effet malformatif ou fœtotoxique de PIASCLEDINE 300 mg, lorsque ce médicament est administré pendant la grossesse.</p>
+<p class=AmmCorpsTexte>En conséquence, l’utilisation de ce médicament n’est pas recommandée pendant la grossesse et chez les femmes en âge de procréer n’utilisant pas de contraception.</p>
+<p class=AmmAnnexeTitre3>Allaitement</p>
+<p class=AmmCorpsTexte>En l’absence de données concernant l’excrétion de PIASCLEDINE 300 mg ou de ses métabolites dans le lait maternel, un risque pour les nouveau-nés/nourrissons ne peut être exclu.</p>
+<p class=AmmCorpsTexte>Ce médicament ne devrait pas être utilisé pendant l’allaitement.</p>
+<p class=AmmAnnexeTitre3>Fertilité</p>
+<p class=AmmCorpsTexte>Les données chez l'animal ont mis en évidence, à forte dose, des pertes pré-implantatoires et post-implantatoires précoces (voir rubrique 5.3). Chez l’Homme, la pertinence de ces données n'est pas connue.</p>
+<p class="AmmAnnexeTitre2"><a name="RcpConduite">4.7. Effets sur l'aptitude à conduire des véhicules et à utiliser des machines</a>&nbsp;&nbsp;<a href='#HautDePage'><img src='img/BackToTop.jpg' width='15px' height='15px' alt='Retour en haut de la page' title='Retour en haut de la page' /></a></p>
+<p class=AmmCorpsTexte><a name="_Toc142278929"><span lang=FR-BE>PIASCLEDINE n’a aucun effet ou un effet négligeable sur l’aptitude à conduire des véhicules et à utiliser des machines.</span></a></p>
+<p class="AmmAnnexeTitre2"><a name="RcpEffetsIndesirables">4.8. Effets indésirables</a>&nbsp;&nbsp;<a href='#HautDePage'><img src='img/BackToTop.jpg' width='15px' height='15px' alt='Retour en haut de la page' title='Retour en haut de la page' /></a></p>
+<p class=AmmAnnexeTitre3>Résumé du profil de sécurité :</p>
+<p class=AmmCorpsTexte><span lang=FR-BE>Les effets indésirables les plus fréquemment rapportés lors du traitement par PIASCLEDINE sont de nature gastro-intestinale et sont survenus chez environ 3 % des patients. Des diarrhées, des douleurs abdominales, une dyspepsie, une distension abdominale et des nausées peuvent survenir, chez 0,4 à 1,1 % des patients. Ces effets indésirables non graves ont été d’intensité légère ou modérée.</span></p>
+<p class=AmmAnnexeTitre3>Tableau des effets indésirables :</p>
+<p class=AmmCorpsTexte><span lang=FR-BE>Les effets indésirables rapportés au cours des essais cliniques et essais contrôlés versus placebo/comparateur actif incluant <a name="_Hlk46350421">1 310 </a>patients traités par PIASCLEDINE dont 1 174 patients traités par PIASCLEDINE 300 mg une fois par jour et/ou les effets indésirables rapportés depuis la commercialisation sont listés dans le tableau ci-dessous. </span></p>
+<p class=AmmCorpsTexte><span lang=FR-BE>Tableau résumé des effets indésirables par système d’organe, fréquence [très fréquent (&#8805; 1/10) ; fréquent (&#8805; 1/100 à &lt; 1/10) ; peu fréquent (&#8805; 1/1 000 à &lt; 1/100) ; rare (&#8805; 1/10 000 à &lt; 1/1 000) ; très rare (&lt; 1/10 000)]. Pour chaque catégorie de fréquence, les effets indésirables graves sont présentés en premier :</span></p>
+<table class=AmmCorpsTexteTable border=1 cellspacing=0 cellpadding=0 width="97%"
+style='width:97.34%;border-collapse:collapse;border:none'>
+<tr>
+<td width="45%" valign=top style='width:45.84%;border:solid windowtext 1.0pt;
+padding:0cm 5.4pt 0cm 5.4pt'>
+<p class=AmmCorpsTexte align=left style='text-align:left'><span style='font-size: 10.0pt;font-family:"Arial",sans-serif'>Classe de systèmes d’organes</span></p>
+</td>
+<td width="17%" valign=top style='width:17.72%;border:solid windowtext 1.0pt;
+border-left:none;padding:0cm 5.4pt 0cm 5.4pt'>
+<p class=AmmCorpsTexte align=left style='text-align:left'><span style='font-size: 10.0pt;font-family:"Arial",sans-serif'>Fréquence</span></p>
+</td>
+<td width="36%" valign=top style='width:36.46%;border:solid windowtext 1.0pt;
+border-left:none;padding:0cm 5.4pt 0cm 5.4pt'>
+<p class=AmmCorpsTexte align=left style='text-align:left'><span style='font-size: 10.0pt;font-family:"Arial",sans-serif'>Effets indésirables</span></p>
+</td>
+</tr>
+<tr style='height:16.95pt'>
+<td width="45%" valign=top style='width:45.84%;border:solid windowtext 1.0pt;
+border-top:none;padding:0cm 5.4pt 0cm 5.4pt;height:16.95pt'>
+<p class=AmmCorpsTexte align=left style='text-align:left;text-autospace:none'><span style='font-size:10.0pt;font-family:"Arial",sans-serif'>Affections hématologiques et du système lymphatique</span></p>
+</td>
+<td width="17%" valign=top style='width:17.72%;border-top:none;border-left:
+none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+padding:0cm 5.4pt 0cm 5.4pt;height:16.95pt'>
+<p class=AmmCorpsTexte align=left style='text-align:left'><span style='font-size: 10.0pt;font-family:"Arial",sans-serif'>Rare</span></p>
+</td>
+<td width="36%" valign=top style='width:36.46%;border-top:none;border-left:
+none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+padding:0cm 5.4pt 0cm 5.4pt;height:16.95pt'>
+<p class=AmmCorpsTexte align=left style='text-align:left'><span style='font-size: 10.0pt;font-family:"Arial",sans-serif'>Thrombocytopénie</span></p>
+</td>
+</tr>
+<tr>
+<td width="45%" valign=top style='width:45.84%;border:solid windowtext 1.0pt;
+border-top:none;padding:0cm 5.4pt 0cm 5.4pt'>
+<p class=AmmCorpsTexte align=left style='text-align:left'><span style='font-size: 10.0pt;font-family:"Arial",sans-serif'>Affections du système immunitaire</span></p>
+</td>
+<td width="17%" valign=top style='width:17.72%;border-top:none;border-left:
+none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+padding:0cm 5.4pt 0cm 5.4pt'>
+<p class=AmmCorpsTexte align=left style='text-align:left'><span style='font-size: 10.0pt;font-family:"Arial",sans-serif'>Peu fréquent</span></p>
+</td>
+<td width="36%" valign=top style='width:36.46%;border-top:none;border-left:
+none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+padding:0cm 5.4pt 0cm 5.4pt'>
+<p class=AmmCorpsTexte align=left style='text-align:left'><span style='font-size: 10.0pt;font-family:"Arial",sans-serif'>Hypersensibilité (*)</span></p>
+</td>
+</tr>
+<tr style='height:31.25pt'>
+<td width="45%" valign=top style='width:45.84%;border:solid windowtext 1.0pt;
+border-top:none;padding:0cm 5.4pt 0cm 5.4pt;height:31.25pt'>
+<p class=AmmCorpsTexte align=left style='text-align:left'><span style='font-size: 10.0pt;font-family:"Arial",sans-serif'>Affections du système nerveux</span></p>
+</td>
+<td width="17%" valign=top style='width:17.72%;border-top:none;border-left:
+none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+padding:0cm 5.4pt 0cm 5.4pt;height:31.25pt'>
+<p class=AmmCorpsTexte align=left style='text-align:left'><span style='font-size: 10.0pt;font-family:"Arial",sans-serif'>Peu fréquent</span></p>
+<p class=AmmCorpsTexte align=left style='text-align:left'><span lang=EN-US style='font-size:10.0pt;font-family:"Arial",sans-serif'> </span></p>
+</td>
+<td width="36%" valign=top style='width:36.46%;border-top:none;border-left:
+none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+padding:0cm 5.4pt 0cm 5.4pt;height:31.25pt'>
+<p class=AmmCorpsTexte align=left style='text-align:left'><a name="_Hlk496014620"><span style='font-size:10.0pt;font-family:"Arial",sans-serif'>Céphalées</span></a></p>
+<p class=AmmCorpsTexte align=left style='text-align:left'><span lang=EN-US style='font-size:10.0pt;font-family:"Arial",sans-serif'> </span></p>
+<p class=AmmCorpsTexte align=left style='text-align:left'><span lang=EN-US style='font-size:10.0pt;font-family:"Arial",sans-serif'> </span></p>
+</td>
+</tr>
+<tr>
+<td width="45%" valign=top style='width:45.84%;border:solid windowtext 1.0pt;
+border-top:none;padding:0cm 5.4pt 0cm 5.4pt'>
+<p class=AmmCorpsTexte align=left style='text-align:left'><span style='font-size: 10.0pt;font-family:"Arial",sans-serif'>Affections gastro-intestinales</span></p>
+</td>
+<td width="17%" valign=top style='width:17.72%;border-top:none;border-left:
+none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+padding:0cm 5.4pt 0cm 5.4pt'>
+<p class=AmmCorpsTexte align=left style='text-align:left'><span style='font-size: 10.0pt;font-family:"Arial",sans-serif'>Fréquent</span></p>
+<p class=AmmCorpsTexte align=left style='text-align:left'><span lang=EN-US style='font-size:10.0pt;font-family:"Arial",sans-serif'> </span></p>
+<div style='border-top:solid windowtext 1.0pt;border-left:none;border-bottom:
+solid windowtext 1.0pt;border-right:none;padding:1.0pt 0cm 1.0pt 0cm'>
+<p class=AmmCorpsTexte align=left style='text-align:left;border:none;padding: 0cm'><span style='font-size:10.0pt;font-family:"Arial",sans-serif'>Peu fréquent</span></p>
+<p class=AmmCorpsTexte align=left style='text-align:left;border:none;padding: 0cm'><span lang=EN-US style='font-size:10.0pt;font-family:"Arial",sans-serif'> </span></p>
+<p class=AmmCorpsTexte align=left style='text-align:left;border:none;padding: 0cm'><span lang=EN-US style='font-size:10.0pt;font-family:"Arial",sans-serif'> </span></p>
+</div>
+<p class=AmmCorpsTexte align=left style='text-align:left'><span lang=EN-US style='font-size:10.0pt;font-family:"Arial",sans-serif'> </span></p>
+<p class=AmmCorpsTexte align=left style='text-align:left'><span style='font-size: 10.0pt;font-family:"Arial",sans-serif'>Rare</span></p>
+</td>
+<td width="36%" valign=top style='width:36.46%;border-top:none;border-left:
+none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+padding:0cm 5.4pt 0cm 5.4pt'>
+<p class=AmmCorpsTexte align=left style='text-align:left'><span style='font-size: 10.0pt;font-family:"Arial",sans-serif'>Diarrhées</span></p>
+<p class=AmmCorpsTexte align=left style='text-align:left'><span style='font-size: 10.0pt;font-family:"Arial",sans-serif'> </span></p>
+<div style='border-top:solid windowtext 1.0pt;border-left:none;border-bottom:
+solid windowtext 1.0pt;border-right:none;padding:1.0pt 0cm 1.0pt 0cm'>
+<p class=AmmCorpsTexte align=left style='text-align:left;border:none;padding: 0cm'><span style='font-size:10.0pt;font-family:"Arial",sans-serif'>Dyspepsie ; dysgueusie (</span><span style='font-size:10.0pt;font-family:"Arial",sans-serif; color:black'>§</span><span style='font-size:8.5pt;font-family:"Arial",sans-serif; color:black'>)</span><span style='font-size:10.0pt;font-family:"Arial",sans-serif'> ;</span></p>
+<p class=AmmCorpsTexte align=left style='text-align:left;border:none;padding: 0cm'><span style='font-size:10.0pt;font-family:"Arial",sans-serif'>nausées ; douleurs abdominales ; décoloration des selles (**)</span></p>
+</div>
+<p class=AmmCorpsTexte align=left style='text-align:left'><span style='font-size: 10.0pt;font-family:"Arial",sans-serif'> </span></p>
+<p class=AmmCorpsTexte align=left style='text-align:left'><span style='font-size: 10.0pt;font-family:"Arial",sans-serif'>Entérite ; vomissements ; éructation ; sécheresse buccale</span></p>
+</td>
+</tr>
+<tr>
+<td width="45%" valign=top style='width:45.84%;border:solid windowtext 1.0pt;
+border-top:none;padding:0cm 5.4pt 0cm 5.4pt'>
+<p class=AmmCorpsTexte align=left style='text-align:left'><span style='font-size: 10.0pt;font-family:"Arial",sans-serif'>Affections hépatobiliaires (#) (**)</span></p>
+</td>
+<td width="17%" valign=top style='width:17.72%;border-top:none;border-left:
+none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+padding:0cm 5.4pt 0cm 5.4pt'>
+<p class=AmmCorpsTexte align=left style='text-align:left'><span style='font-size: 10.0pt;font-family:"Arial",sans-serif'>Peu fréquent</span></p>
+</td>
+<td width="36%" valign=top style='width:36.46%;border-top:none;border-left:
+none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+padding:0cm 5.4pt 0cm 5.4pt'>
+<p class=AmmCorpsTexte align=left style='text-align:left'><span style='font-size: 10.0pt;font-family:"Arial",sans-serif'>Cytolyse hépatique ; cholestase ; ictère ; augmentation des transaminases, de la phosphatase alcaline, de la bilirubine et de la gamma-glutamyl transpeptidase</span></p>
+</td>
+</tr>
+<tr>
+<td width="45%" valign=top style='width:45.84%;border:solid windowtext 1.0pt;
+border-top:none;padding:0cm 5.4pt 0cm 5.4pt'>
+<p class=AmmCorpsTexte align=left style='text-align:left'><span style='font-size: 10.0pt;font-family:"Arial",sans-serif'>Affections de la peau et du tissu sous-cutané</span></p>
+</td>
+<td width="17%" valign=top style='width:17.72%;border-top:none;border-left:
+none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+padding:0cm 5.4pt 0cm 5.4pt'>
+<p class=AmmCorpsTexte align=left style='text-align:left'><span style='font-size: 10.0pt;font-family:"Arial",sans-serif'>Rare</span></p>
+</td>
+<td width="36%" valign=top style='width:36.46%;border-top:none;border-left:
+none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+padding:0cm 5.4pt 0cm 5.4pt'>
+<p class=AmmCorpsTexte align=left style='text-align:left'><span style='font-size: 10.0pt;font-family:"Arial",sans-serif'>Éruption cutanée toxique (*) ; eczéma (*) </span></p>
+</td>
+</tr>
+<tr>
+<td width="45%" valign=top style='width:45.84%;border:solid windowtext 1.0pt;
+border-top:none;padding:0cm 5.4pt 0cm 5.4pt'>
+<p class=AmmCorpsTexte align=left style='text-align:left'><span style='font-size: 10.0pt;font-family:"Arial",sans-serif'>Affections du rein et des voies urinaires</span></p>
+</td>
+<td width="17%" valign=top style='width:17.72%;border-top:none;border-left:
+none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+padding:0cm 5.4pt 0cm 5.4pt'>
+<p class=AmmCorpsTexte align=left style='text-align:left'><span style='font-size: 10.0pt;font-family:"Arial",sans-serif'>Peu fréquent</span></p>
+<div style='border:none;border-top:solid windowtext 1.0pt;padding:1.0pt 0cm 0cm 0cm'>
+<p class=AmmCorpsTexte align=left style='text-align:left;border:none;padding: 0cm'><span lang=EN-US style='font-size:10.0pt;font-family:"Arial",sans-serif'> </span></p>
+<p class=AmmCorpsTexte align=left style='text-align:left;border:none;padding: 0cm'><span style='font-size:10.0pt;font-family:"Arial",sans-serif'>Rare</span></p>
+</div>
+</td>
+<td width="36%" valign=top style='width:36.46%;border-top:none;border-left:
+none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+padding:0cm 5.4pt 0cm 5.4pt'>
+<p class=AmmCorpsTexte align=left style='text-align:left'><span style='font-size: 10.0pt;font-family:"Arial",sans-serif'>Chromaturie (**)</span></p>
+<div style='border:none;border-top:solid windowtext 1.0pt;padding:1.0pt 0cm 0cm 0cm'>
+<p class=AmmCorpsTexte align=left style='text-align:left;border:none;padding: 0cm'><span lang=EN-US style='font-size:10.0pt;font-family:"Arial",sans-serif'> </span></p>
+<p class=AmmCorpsTexte align=left style='text-align:left;border:none;padding: 0cm'><span style='font-size:10.0pt;font-family:"Arial",sans-serif'>Néphrolithiase</span></p>
+</div>
+</td>
+</tr>
+<tr>
+<td width="45%" valign=top style='width:45.84%;border:solid windowtext 1.0pt;
+border-top:none;padding:0cm 5.4pt 0cm 5.4pt'>
+<p class=AmmCorpsTexte align=left style='text-align:left'><span style='font-size: 10.0pt;font-family:"Arial",sans-serif'>Affections des organes de reproduction et du sein (#)</span></p>
+</td>
+<td width="17%" valign=top style='width:17.72%;border-top:none;border-left:
+none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+padding:0cm 5.4pt 0cm 5.4pt'>
+<p class=AmmCorpsTexte align=left style='text-align:left'><span style='font-size: 10.0pt;font-family:"Arial",sans-serif'>Peu fréquent</span></p>
+</td>
+<td width="36%" valign=top style='width:36.46%;border-top:none;border-left:
+none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+padding:0cm 5.4pt 0cm 5.4pt'>
+<p class=AmmCorpsTexte align=left style='text-align:left'><span style='font-size: 10.0pt;font-family:"Arial",sans-serif'>Douleurs mammaires ; gonflement des seins ; métrorragie</span></p>
+</td>
+</tr>
+<tr>
+<td width="45%" valign=top style='width:45.84%;border:solid windowtext 1.0pt;
+border-top:none;padding:0cm 5.4pt 0cm 5.4pt'>
+<p class=AmmCorpsTexte align=left style='text-align:left'><span style='font-size: 10.0pt;font-family:"Arial",sans-serif'>Troubles généraux et anomalies au site d’administration</span></p>
+</td>
+<td width="17%" valign=top style='width:17.72%;border-top:none;border-left:
+none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+padding:0cm 5.4pt 0cm 5.4pt'>
+<p class=AmmCorpsTexte align=left style='text-align:left'><span style='font-size: 10.0pt;font-family:"Arial",sans-serif'>Peu fréquent</span></p>
+<p class=AmmCorpsTexte align=left style='text-align:left'><span style='font-size: 10.0pt;font-family:"Arial",sans-serif'> </span></p>
+</td>
+<td width="36%" valign=top style='width:36.46%;border-top:none;border-left:
+none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+padding:0cm 5.4pt 0cm 5.4pt'>
+<p class=AmmCorpsTexte align=left style='text-align:left'><span style='font-size: 10.0pt;font-family:"Arial",sans-serif'>États d’asthénie</span></p>
+<p class=AmmCorpsTexte align=left style='text-align:left'><span style='font-size: 10.0pt;font-family:"Arial",sans-serif'> </span></p>
+</td>
+</tr>
+<tr>
+<td width="45%" valign=top style='width:45.84%;border:solid windowtext 1.0pt;
+border-top:none;padding:0cm 5.4pt 0cm 5.4pt'>
+<p class=AmmCorpsTexte align=left style='text-align:left'><span style='font-size: 10.0pt;font-family:"Arial",sans-serif'>Investigations</span></p>
+</td>
+<td width="17%" valign=top style='width:17.72%;border-top:none;border-left:
+none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+padding:0cm 5.4pt 0cm 5.4pt'>
+<p class=AmmCorpsTexte align=left style='text-align:left'><span style='font-size: 10.0pt;font-family:"Arial",sans-serif'>Rare</span></p>
+</td>
+<td width="36%" valign=top style='width:36.46%;border-top:none;border-left:
+none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+padding:0cm 5.4pt 0cm 5.4pt'>
+<p class=AmmCorpsTexte align=left style='text-align:left'><span style='font-size: 10.0pt;font-family:"Arial",sans-serif'>Augmentation de la pression artérielle (***)</span></p>
+</td>
+</tr>
+</table>
+<p class=AmmAnnexeTitre3 style='page-break-after:auto'><span style='font-weight: normal;text-decoration:none'>(</span><span style='color:black;font-weight:normal; text-decoration:none'>§</span><span style='font-size:8.5pt;color:black; font-weight:normal;text-decoration:none'>) </span><span style='font-weight: normal;text-decoration:none'>La gélule doit être prise au milieu d’un repas pour éviter les troubles du goût. Voir rubrique 4.2.</span></p>
+<p class=AmmAnnexeTitre3 style='page-break-after:auto'><span style='font-weight: normal;text-decoration:none'>(</span><span style='font-weight:normal; text-decoration:none'>#</span><span style='font-weight:normal;text-decoration: none'>) Ces effets indésirables ont été rapportés après la commercialisation. Ces effets n’ayant pas été rapportés au cours des essais cliniques incluant 1 310 patients exposés à PIASCLEDINE, ils sont estimés comme étant peu fréquents.</span></p>
+<p class=AmmAnnexeTitre3 style='page-break-after:auto'>Description de certains effets indésirables</p>
+<p class=AmmCorpsTexte><span lang=FR-BE>(*) La prise de PIASCLEDINE peut dans certains cas provoquer une hypersensibilité, comme des réactions allergiques systémiques, c’est-à-dire l’apparition soudaine d’une affection avec atteinte cutanée (prurit, urticaire, érythème, rash), atteinte des muqueuses ou des deux, d’une toux, de symptômes gastro-intestinaux persistants ou d’une diminution de la pression artérielle et/ou de symptômes associés. Voir rubrique 4.4.</span></p>
+<p class=AmmCorpsTexte>(**) <span lang=FR-BE>Des signes de troubles hépatiques, comme une douleur abdominale associée à des nausées, une décoloration des selles, une chromaturie et/ou un ictère, peuvent survenir lors du traitement par PIASCLEDINE. Voir rubrique 4.4.</span></p>
+<p class=AmmCorpsTexte><span lang=FR-BE>(***) Des signes et symptômes évocateurs d’une augmentation de la pression artérielle (à savoir céphalées, troubles de l’audition, bouffées vasomotrices) peuvent survenir avec le traitement par PIASCLEDINE.</span></p>
+<p class=AmmAnnexeTitre3>Déclaration des effets indésirables suspectés </p>
+<p class=AmmCorpsTexte>La déclaration des effets indésirables suspectés après autorisation du médicament est importante. Elle permet une surveillance continue du rapport bénéfice/risque du médicament. Les professionnels de santé déclarent tout effet indésirable suspecté via le système national de déclaration : Agence nationale de sécurité du médicament et des produits de santé (ANSM) et réseau des Centres Régionaux de Pharmacovigilance - Site internet :<span style='color:red'> </span><a href="http://www.signalement-sante.gouv.fr">www.signalement-sante.gouv.fr</a>.</p>
+<p class="AmmAnnexeTitre2"><a name="RcpSurdosage">4.9. Surdosage</a>&nbsp;&nbsp;<a href='#HautDePage'><img src='img/BackToTop.jpg' width='15px' height='15px' alt='Retour en haut de la page' title='Retour en haut de la page' /></a></p>
+<p class=AmmCorpsTexte><span lang=FR-BE>Au cours des essais cliniques, l’administration de doses allant jusqu’à 900 mg/jour pendant plusieurs mois a été associée à des troubles gastro-intestinaux dose-dépendants.</span></p>
+<p class=AmmCorpsTexte><span lang=FR-BE>Les surdosages peuvent induire ou exacerber des troubles gastro-intestinaux et/ou des troubles hépatiques.</span></p>
+<p class="AmmAnnexeTitre1"><a name="RcpPropPharmacologiques">5. PROPRIETES PHARMACOLOGIQUES</a>&nbsp;&nbsp;<a href='#HautDePage'><img src='img/BackToTop.jpg' width='15px' height='15px' alt='Retour en haut de la page' title='Retour en haut de la page' /></a></p>
+<p class="AmmAnnexeTitre2"><a name="RcpPropPharmacodynamiques">5.1. Propriétés pharmacodynamiques</a>&nbsp;&nbsp;<a href='#HautDePage'><img src='img/BackToTop.jpg' width='15px' height='15px' alt='Retour en haut de la page' title='Retour en haut de la page' /></a></p>
+<p class=AmmCorpsTexte><a name="_Toc142278933"><span class='gras'>Classe pharmacothérapeutique</span> : Autres agents anti-inflammatoires et antirhumatismaux, non stéroïdiens, code ATC : M01AX26.</a></p>
+<p class=AmmAnnexeTitre3>Effets pharmacodynamiques</p>
+<p class=AmmCorpsTexte>A visée trophique.</p>
+<p class=AmmAnnexeTitre3>Efficacité et sécurité clinique</p>
+<p class=AmmCorpsTexte>Les effets de Piascledine 300 mg dans l’arthrose ont été évalués au cours d’études cliniques et ont montré des résultats positifs sur la survenue des symptômes. Les résultats de cinq études contrôlées randomisées (trois études versus placebo et deux études versus comparateur actifs) sont présentés ci-dessous.</p>
+<p class=AmmCorpsTexte>Dans une étude clinique, multicentrique, randomisée, en double aveugle versus placebo sur 86 patients présentant une arthrose du genou, la consommation d’AINS a été significativement réduite de 70% comparée à 33% pour le placebo (p&lt;0,01) après 3 mois. La douleur au repos et la gêne fonctionnelle ont également été significativement améliorées avec Piascledine 300 mg, par rapport au placebo.</p>
+<p class=AmmCorpsTexte>Dans une autre étude clinique, multicentrique, randomisée, en double aveugle versus placebo, dans le sous-groupe de 101 patients ayant une arthrose du genou, le critère principal était la reprise d’AINS après arrêt. Le nombre de patients ayant repris un AINS après 3 mois de traitement était de 54,2% avec Piascledine 300 mg, par rapport à 73% avec le placebo (p=0,05). Une réduction significative de la gêne fonctionnelle a été observée, alors que la diminution de la douleur au repos n’était pas significative.</p>
+<p class=AmmCorpsTexte>Dans une étude clinique, multicentrique, randomisée, en double aveugle sur 6 mois versus placebo. Piascledine 300 mg n’a pas amélioré significativement le critère principal (indice de Lequesne, p=0,07) ou la douleur au repos dans le sous-groupe de patients présentant une arthrose de genou (N=55) possiblement en raison du faible nombre de patients, mais a réduit significativement la consommation d’AINS.</p>
+<p class=AmmCorpsTexte>Deux études de non-infériorité ont comparé Piascledine 300 mg à la chondroïtine sulfate 400 mg, trois fois par jour pendant 6 mois et diacéréine 50 mg, deux fois par jour pendant 3 mois chez 184 et 64 patients respectivement. Ces études ont montré la non-infériorité de Piascledine 300 mg versus les deux comparateurs sur le score WOMAC total et sur la consommation d’AINS qui était le critère principal respectivement de chaque étude. Aucune différence n’a été observée entre ces comparateurs et Piascledine 300 mg sur les critères secondaires (indice de Lequesne et douleur au repos). </p>
+<p class=AmmCorpsTexte>De plus, Piascledine 300 mg a une action lente, retardée d'environ 2 mois et son effet peut persister après l'arrêt du traitement.</p>
+<p class="AmmAnnexeTitre2"><a name="RcpPropPharmacocinetiques">5.2. Propriétés pharmacocinétiques</a>&nbsp;&nbsp;<a href='#HautDePage'><img src='img/BackToTop.jpg' width='15px' height='15px' alt='Retour en haut de la page' title='Retour en haut de la page' /></a></p>
+<p class=AmmCorpsTexte><a name="_Toc142278934"><span lang=FR-BE>PIASCLEDINE est un extrait composé d’une multitude d’entités provenant du soja et de l’avocat, pour lesquels aucune méthode analytique validée n’est disponible. Aucune étude pharmacocinétique n’a donc été menée.</span></a></p>
+<p class="AmmAnnexeTitre2"><a name="RcpSecuritePreclinique">5.3. Données de sécurité préclinique</a>&nbsp;&nbsp;<a href='#HautDePage'><img src='img/BackToTop.jpg' width='15px' height='15px' alt='Retour en haut de la page' title='Retour en haut de la page' /></a></p>
+<p class=AmmCorpsTexte><a name="_Toc142278935">Les propriétés toxicologiques générales de PIASCLEDINE ont été étudiées dans différentes espèces animales, comportant rongeurs, lapins et chiens, dans des conditions de dose unique et doses répétées.</a></p>
+<p class=AmmCorpsTexte>Les études de toxicité à dose unique ont montré une faible toxicité de PIASCLEDINE, aucune DL<sub>50</sub> n'ayant pu être calculée en raison de l'absence de mortalité pour des doses jusqu'à 8 000 mg/kg chez la souris. </p>
+<p class=AmmCorpsTexte>Dans les études de toxicité à dose répétée (6 mois) chez le rat et le chien, la tolérance générale de PIASCLEDINE a été satisfaisante; cependant, le foie et la thyroïde ont été considérés comme des organes-cible.</p>
+<p class=AmmAnnexeTitre4>Foie</p>
+<p class=AmmCorpsTexte>Dans des traitements à long terme (6 mois) chez le chien avec des doses de 30, 125 et 500 mg/kg/jour, des troubles hépatiques mineurs ont été observés à la dose la plus faible, tandis que des lésions anatomiques et des anomalies microscopiques ont été décelées à la dose la plus forte. Des résultats similaires ont été observés chez le rat, mais de moindre ampleur et uniquement à la dose élevée de 750 mg/kg/jour.</p>
+<p class=AmmCorpsTexte>PIASCLEDINE 300 mg n'est pas un inducteur enzymatique chez le rat.</p>
+<p class=AmmAnnexeTitre4>Thyroïde</p>
+<p class=AmmCorpsTexte>Lors d’une étude de toxicité chez le rat (28 jours), à l’autopsie, le poids de la thyroïde était supérieur chez les animaux traités à la dose élevée de 750 mg/kg/jour par comparaison aux animaux contrôles.</p>
+<p class=AmmCorpsTexte>L’histopathologie a révélé des anomalies mineures (hypertrophie des cellules épithéliales) chez le mâle.</p>
+<p class=AmmCorpsTexte>Dans une étude à dose répétée de 26 semaines chez le rat, PIASCLEDINE 300 mg a induit une hypertrophie folliculaire thyroïdienne réversible à la dose élevée de 750 mg/kg/jour. </p>
+<p class=AmmCorpsTexteGras>Toxicologie de la reproduction</p>
+<p class=AmmCorpsTexte>Une étude de fertilité chez le rat a démontré que PIASCLEDINE 300 mg à forte dose (750 mg/kg/jour) pourrait diminuer très légèrement l’implantation utérine et la survie précoce des embryons. Aucun effet n’a été rapporté chez le rat mâle.</p>
+<p class=AmmCorpsTexte>Aucun effet tératogène ou embryotoxique n’a été mis en évidence jusqu’aux doses de 200 mg/kg/jour chez le rat et 150 mg/kg/jour chez le lapin (correspondant à 7 fois et 10 fois la dose recommandée chez l’Homme). Une augmentation des pertes post-implantatoires, des modifications squelettiques minimes (rat), et des modifications de la paroi abdominale (lapin) étaient rapportées aux doses maternotoxiques de 750 mg/kg/jour chez le rat et 500 mg/kg/jour chez le lapin (correspondant à 24 et 32 fois la dose recommandée chez l’Homme).</p>
+<p class=AmmCorpsTexte>Aucun effet sur le développement péri- et postnatal de la génération F1 n’a été mis en évidence dans une étude dédiée conduite chez le rat.</p>
+<p class=AmmCorpsTexte>Les études réalisées avec PIASCLEDINE n'ont montré aucun effet mutagène ou génotoxique.</p>
+<p class="AmmAnnexeTitre1"><a name="RcpDonneesPharmaceutiques">6. DONNEES PHARMACEUTIQUES</a>&nbsp;&nbsp;<a href='#HautDePage'><img src='img/BackToTop.jpg' width='15px' height='15px' alt='Retour en haut de la page' title='Retour en haut de la page' /></a></p>
+<p class="AmmAnnexeTitre2"><a name="RcpListeExcipients">6.1. Liste des excipients</a>&nbsp;&nbsp;<a href='#HautDePage'><img src='img/BackToTop.jpg' width='15px' height='15px' alt='Retour en haut de la page' title='Retour en haut de la page' /></a></p>
+<p class=AmmCorpsTexte align=left style='text-align:left'><a name="_Toc142278937">Silice colloïdale anhydre, butylhydroxytoluène</a></p>
+<p class=AmmCorpsTexte><span class='souligne'>Enveloppe de la gélule</span> : gélatine, polysorbate 80, dioxyde de titane, érythrosine, oxyde de fer jaune.</p>
+<p class="AmmAnnexeTitre2"><a name="RcpIncompatibilites">6.2. Incompatibilités</a>&nbsp;&nbsp;<a href='#HautDePage'><img src='img/BackToTop.jpg' width='15px' height='15px' alt='Retour en haut de la page' title='Retour en haut de la page' /></a></p>
+<p class=AmmCorpsTexte align=left style='text-align:left'><a name="_Toc142278938">Sans objet.</a></p>
+<p class="AmmAnnexeTitre2"><a name="RcpDureeConservation">6.3. Durée de conservation</a>&nbsp;&nbsp;<a href='#HautDePage'><img src='img/BackToTop.jpg' width='15px' height='15px' alt='Retour en haut de la page' title='Retour en haut de la page' /></a></p>
+<p class=AmmCorpsTexte align=left style='text-align:left'><a name="_Toc142278939">3 ans.</a></p>
+<p class="AmmAnnexeTitre2"><a name="RcpPrecConservation">6.4. Précautions particulières de conservation</a>&nbsp;&nbsp;<a href='#HautDePage'><img src='img/BackToTop.jpg' width='15px' height='15px' alt='Retour en haut de la page' title='Retour en haut de la page' /></a></p>
+<p class=AmmCorpsTexte><a name="_Toc142278940"><span lang=FR-BE>Pas de précautions particulières de conservation.</span></a></p>
+<p class="AmmAnnexeTitre2"><a name="RcpEmballage">6.5. Nature et contenu de l'emballage extérieur </a>&nbsp;&nbsp;<a href='#HautDePage'><img src='img/BackToTop.jpg' width='15px' height='15px' alt='Retour en haut de la page' title='Retour en haut de la page' /></a></p>
+<p class=AmmCorpsTexte>15, 30, 60 ou 90 gélules sous plaquettes (PVC/Aluminium)</p>
+<p class="AmmAnnexeTitre2"><a name="RcpPrecEmpl">6.6. Précautions particulières d’élimination et de manipulation</a>&nbsp;&nbsp;<a href='#HautDePage'><img src='img/BackToTop.jpg' width='15px' height='15px' alt='Retour en haut de la page' title='Retour en haut de la page' /></a></p>
+<p class=AmmCorpsTexte><span lang=FR-BE>Pas d'exigences particulières.</span></p>
+<p class=AmmCorpsTexte><span lang=FR-BE>Tout médicament non utilisé ou déchet doit être éliminé conformément à la réglementation en vigueur.</span></p>
+<p class="AmmAnnexeTitre1"><a name="RcpTitulaireAmm">7. TITULAIRE DE L’AUTORISATION DE MISE SUR LE MARCHE</a>&nbsp;&nbsp;<a href='#HautDePage'><img src='img/BackToTop.jpg' width='15px' height='15px' alt='Retour en haut de la page' title='Retour en haut de la page' /></a></p>
+<p class=AmmCorpsTexteGras style='margin-bottom:0cm;margin-bottom:.0001pt'><a name="_Toc142278943">LABORATOIRES EXPANSCIENCE</a></p>
+<p class=AmmCorpsTexte style='margin-bottom:0cm;margin-bottom:.0001pt'>1 PLACE DES SAISONS</p>
+<p class=AmmCorpsTexte>92048 PARIS LA DEFENSE CEDEX</p>
+<p class="AmmAnnexeTitre1"><a name="RcpNumAutor">8. NUMERO(S) D’AUTORISATION DE MISE SUR LE MARCHE</a>&nbsp;&nbsp;<a href='#HautDePage'><img src='img/BackToTop.jpg' width='15px' height='15px' alt='Retour en haut de la page' title='Retour en haut de la page' /></a></p>
+<p class=AmmListePuces1><span style='font-family: Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>34009 321 495 4 4 : 15 gélules sous plaquettes (PVC/Aluminium)</p>
+<p class=AmmListePuces1><span style='font-family: Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>34009 359 413 5 0 : 30 gélules sous plaquettes (PVC/Aluminium)</p>
+<p class=AmmListePuces1><span style='font-family: Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>34009 300 729 2 9 : 60 gélules sous plaquettes (PVC/Aluminium).</p>
+<p class=AmmListePuces1><span style='font-family: Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>34009 300 729 3 6 : 90 gélules sous plaquettes (PVC/Aluminium).</p>
+<p class="AmmAnnexeTitre1"><a name="RcpPremiereAutorisation">9. DATE DE PREMIERE AUTORISATION/DE RENOUVELLEMENT DE L’AUTORISATION</a>&nbsp;&nbsp;<a href='#HautDePage'><img src='img/BackToTop.jpg' width='15px' height='15px' alt='Retour en haut de la page' title='Retour en haut de la page' /></a></p>
+<p class=AmmCorpsTexte><a name="_Toc142278945">[à compléter ultérieurement par le titulaire]</a></p>
+<p class="AmmAnnexeTitre1"><a name="RcpDateRevision">10. DATE DE MISE A JOUR DU TEXTE</a>&nbsp;&nbsp;<a href='#HautDePage'><img src='img/BackToTop.jpg' width='15px' height='15px' alt='Retour en haut de la page' title='Retour en haut de la page' /></a></p>
+<p class=AmmCorpsTexte><a name="_Toc142278946">[à compléter ultérieurement par le titulaire]</a></p>
+<p class="AmmAnnexeTitre1"><a name="RcpDosimetrie">11. DOSIMETRIE</a>&nbsp;&nbsp;<a href='#HautDePage'><img src='img/BackToTop.jpg' width='15px' height='15px' alt='Retour en haut de la page' title='Retour en haut de la page' /></a></p>
+<p class=AmmCorpsTexte>Sans objet.</p>
+<p class="AmmAnnexeTitre1"><a name="RcpInstPrepRadioph">12. INSTRUCTIONS POUR LA PREPARATION DES RADIOPHARMACEUTIQUES</a>&nbsp;&nbsp;<a href='#HautDePage'><img src='img/BackToTop.jpg' width='15px' height='15px' alt='Retour en haut de la page' title='Retour en haut de la page' /></a></p>
+<p class=AmmCorpsTexte><a name="_Toc142278948">Sans objet.</a></p>
+<div style='border:none;border-top:solid windowtext 1.0pt;padding:1.0pt 0cm 0cm 0cm'>
+<p class="AmmAnnexeTitre"><a name="RcpCondPrescription">CONDITIONS DE PRESCRIPTION ET DE DELIVRANCE</a></p>
+</div>
+<p class=AmmCorpsTexte style='margin-top:6.0pt'>Médicament non soumis à prescription médicale.</p>
+<span class='gras'><span style='font-size:12.0pt;font-family:"Arial",sans-serif;color:#0B3D92;
+text-transform:uppercase'><br clear=all>
+</span></span>					
+					<p class="alignright"><a href="#HautDePage">Retour en haut de la page <img src="img/BackToTop.jpg" width="20px" height="20px" alt="Retour en haut de la page" title="Retour en haut de la page" /></a></p>
+				</div>
+			</div>
+		</div>
+	</div>
+
+<table summary="" class="content" width="1000">
+	<tr>
+		<td height="100px">&nbsp;</td>
+	</tr>
+</table>
+<table summary="Pied de page" class="footer" width="1000">
+	<tr>
+		<td>
+			<table summary="" class="tablealigncenter" border="0">
+				<tr>
+					<td width="100px" class="aligncenter"><a id="lien_ansm" href="http://ansm.sante.fr/" target="_blank"><img src="img/Logo_ANSM.png" width="150" height="60" alt="ANSM - Agence nationale de sécurité du médicament et des produits de santé" title="L'ANSM met à disposition les principales informations issues de l'Autorisation de mise sur le marché, l'appartenance à un groupe générique, les liens vers les informations de sécurité qu'elle publie, l'identification des médicaments sous surveillance renforcée - nouvelle fenêtre" /></a></td>
+					          <td>&nbsp;</td>
+					<td width="100px" class="aligncenter"><img src="img/Logo_HAS.png" width="150" height="60" alt="HAS - Haute autorité de santé" title="La HAS met à disposition les informations relatives au service médical rendu, à l'amélioration du service médical rendu ainsi que les liens vers les avis de la Commission de la Transparence correspondants - nouvelle fenêtre" /></td>
+					<td>&nbsp;</td>
+					<td width="100px" class="aligncenter"><img src="img/Logo_CNAM.png" width="150" height="60" alt="UNCAM - Unin nationale des caisses d'assurance maladie" title="L'UNCAM met à disposition le taux de remboursement, le prix et les indications remboursables le cas échéant, ainsi que l'agrément aux collectivités - nouvelle fenêtre" /></td>
+          				</tr>
+			</table> 
+		</td>
+	</tr>
+</table>
+<table summary="" class="finpage" width="1000">
+	<tr>
+		<td height="100px" class="aligncenter">
+			<a class="navigation" href="plan.php">Plan du site</a>&nbsp;|&nbsp;
+			<a class="navigation" href="accessibilite.php">Accessibilité</a>&nbsp;|&nbsp;
+			<a class="navigation" href="contact.php">Contact</a>&nbsp;|&nbsp;
+			<a class="navigation" href="telechargement.php">Téléchargement</a>&nbsp;|&nbsp;
+			<a class="navigation" href="DeclarationConfidentialite.php">Declaration de confidentialité</a>&nbsp;|&nbsp;
+			<a class="navigation" href="http://www.service-public.fr/" title="Service Public - Nouvelle fenêtre" target="_blank">Service-Public.fr</a>&nbsp;|&nbsp;
+			<a class="navigation" href="http://www.legifrance.gouv.fr/" title="Legifrance - Nouvelle fenêtre" target="_blank">Legifrance</a>&nbsp;|&nbsp;
+			<a class="navigation" href="http://www.gouvernement.fr/" title="Gouvernement - Nouvelle fenêtre" target="_blank" >Gouvernement.fr</a>
+		</td>
+	</tr>
+</table>
+
+
+
+<!-- Matomo -->
+<script type="text/javascript">
+  var _paq = window._paq = window._paq || [];
+  /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
+  _paq.push(['trackPageView']);
+  _paq.push(['enableLinkTracking']);
+  (function() {
+    var u="https://stats.integra.fr/";
+    _paq.push(['setTrackerUrl', u+'matomo.php']);
+    _paq.push(['setSiteId', '79']);
+    var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+    g.type='text/javascript'; g.async=true; g.src=u+'matomo.js'; s.parentNode.insertBefore(g,s);
+  })();
+</script>
+<!-- End Matomo Code -->
+
+
+
+</body>
+</html>

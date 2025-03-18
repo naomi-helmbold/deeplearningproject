@@ -1,0 +1,391 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="fr" lang="fr">
+<head>
+	<title>Notice patient - IZALGI 500 mg/25 mg, gélule  - Base de données publique des médicaments</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=windows-1252"/>
+	<meta name="robots" content="index, follow"/>
+	<meta name="Description" content="Base de données publique des médicaments"/>
+	<meta name="Keywords" content="base, données, publique, médicaments, Notice patient, IZALGI 500 mg/25 mg, gélule "/>
+	<meta name="Subject" content="medicament"/>
+	<link href='https://fonts.googleapis.com/css?family=Noticia+Text' rel='stylesheet' type='text/css' />
+	<link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro' rel='stylesheet' type='text/css' />
+	<link href="style/style_bdm.css?v=2.2.3" type="text/css" rel="stylesheet"/>
+	<link href="style/style_RCP_Notice.css" type="text/css" rel="stylesheet"/>
+  <link rel="alternate" href="http://m.base-donnees-publique.medicaments.gouv.fr/#!info-67613291">
+    <script type="text/javascript" src="scripts/autocomplete.js?v=2.2.3"></script>
+	<script type="text/javascript" src="scripts/jquery.js"></script>
+    <script type="text/javascript" src="scripts/jquery-ui.min.js"></script>
+	<script type="text/javascript" src="scripts/common.js"></script>
+	<link rel="icon" type="image/x-icon" href="favicon.ico" />
+</head>
+
+<body>
+
+<a name="HautDePage" />
+<div id="bandeauhaut">
+	<a id="lien_ministere" class="lienmenu" href="http://www.sante.gouv.fr" target="_blank" title="Site du ministère des affaires sociales et de la santé - nouvelle fenêtre"><img id="logoministere" src="img/Logo_Ministere.jpg"  alt="Logo du ministère des affaires sociales et de la santé"/></a>
+	<h1 class="texteTitreSite">
+		Base <span class="texteBleu">de</span> données <span class="texteBleu">publique</span><br/><span class="texteBleu">des</span> médicaments
+	</h1>
+		<a id="lien_medicament_gouv" class="lienEspaceMedic" target="_blank" href="http://medicaments.gouv.fr" title="Visiter [medicaments.gouv.fr] - nouvelle fenêtre">Visiter [medicaments.gouv.fr] <img src="/img/icone_lien.png" alt="Visiter [medicaments.gouv.fr]"  title="Visiter [medicaments.gouv.fr] - nouvelle fenetre" /></a>
+</div>
+<!--div align="center">
+	<a id="banniere" target="_blank" href="http://social-sante.gouv.fr/soins-et-maladies/medicaments/medicaments-generiques/" title="Visiter [medicaments.gouv.fr] - M?dicaments g?n?riques">
+		<img width="1000"   src ="/img/carrouselbannieres.gif" alt="Visiter [medicaments.gouv.fr] - M?dicaments g?n?riques" title="Visiter [medicaments.gouv.fr] - M?dicaments g?n?riques" />
+	</a>
+</div-->
+
+<div id="menuhaut">
+	<span id="menuhaut_gauche">
+		<a id="lien_accueil" class="navigation" href="index.php">Accueil</a>&nbsp;|&nbsp;
+		<a id="lien_glossaire" class="navigation" href="glossaire.php">Glossaire</a>&nbsp;|&nbsp;
+		<a id="lien_aide" class="navigation" href="aide.php">Aide</a>		
+	</span>
+	
+		
+	<span id="menuhaut_dernmaj">
+        <br>Dernière <span title=" 2.4.4
+">mise à jour</span> le 03/03/2025	</span>
+</div>
+
+	<script language="javascript" type="text/javascript">
+		//<![CDATA[ 
+		function Aff(men) {
+			document.write("<ul class=\"menuDoc\">");
+			for(var no_rub=0;no_rub<men.num_rub;no_rub++) {
+				document.write("<li><a class='leftMenu' href='"+menu[no_rub].page+"'>");
+				document.write(men[no_rub].txt);
+				document.write("</a></li>");
+				if (men[no_rub].nb_lien != 0){
+					document.write("<ul class=\"sousMenuDoc\">");
+				}
+				for(var no_lien=0;no_lien<men[no_rub].nb_lien;no_lien++) {
+					document.write("<li><a class='leftMenu' href='"+men[no_rub][no_lien].page+"'>");
+					document.write(men[no_rub][no_lien].txt);
+					document.write("</a></li>");
+				}
+				if (men[no_rub].nb_lien != 0){
+					document.write("</ul>");
+				}
+			}
+			document.write("</ul>");
+		}
+		
+		function CreerMenu(police,imgRub,imgOption,imgOptionFin,hauteur) {
+			this.num_rub=0;
+			this.police=police;
+			this.imgRub=imgRub;
+			this.imgOpt=imgOption;
+			this.imgOptFin=imgOptionFin;
+			this.hauteur=hauteur;
+			this.AddRub=AddRub;
+			this.AddLien=AddLien;
+		}
+		
+		function AddRub(txt,aff,page) {
+			var rub = new Object;
+				rub.txt=txt;
+				rub.aff=aff;
+				rub.page=page;
+				rub.nb_lien=0;
+			this[this.num_rub]=rub;
+			this.num_rub++;
+		}
+
+		function AddLien(txt,page) {
+			var no_rub = this.num_rub-1;
+			var no_lien= this[no_rub].nb_lien;
+			var lien = new Object;
+				lien.txt=txt;
+				lien.page=page;
+			this[no_rub][no_lien]=lien;
+			this[no_rub].nb_lien++;
+		}
+		var menu=new CreerMenu("arial","img/dyn04.gif","img/dyn22.gif","img/dyn55.gif",18);
+		//]]> 
+		menu.AddRub("Description médicament","O","#Ann3bQuestceque");
+			menu.AddRub("Informations","O","#Ann3bInfoNecessaires");
+			menu.AddRub("Utilisation","O","#Ann3bCommentPrendre");
+			menu.AddRub("Effets indésirables","O","#Ann3bEffetsIndesirables");
+			menu.AddRub("Conservation","O","#Ann3bConservation");
+			menu.AddRub("Info. supplémentaires","O","#Ann3bEmballage");
+				</script>
+
+	<div id="container">
+		<div id="leftnav">
+			<div id="cadreMenuGauche">
+				<h2 class="sommaireMenu">Sommaire</h2>
+				<div id="menuGauche">
+					<script language="JavaScript" type="text/javascript">Aff(menu);</script>
+				</div>
+			</div>
+		</div>
+		<div id="contentPrincipal">
+			<div id="boutonsliens">
+				<a id='lien_fiche_info' href='extrait.php?specid=67613291' ><img id="ongletficheinfo" alt="Onglet fiche information" src="img/onglet_fiche_info_vert.png" /></a><a id='lien_rcp' href='affichageDoc.php?specid=67613291&amp;typedoc=R'><img class="onglet" alt="Onglet résumé des caractéristiques du produit" src="img/onglet_rcp_vert.png" /></a><a id='lien_notice' href='affichageDoc.php?specid=67613291&amp;typedoc=N'><img class="onglet" alt="Onglet notice patient" src="img/onglet_notice_gris.png" /></a>			</div>
+			<div class="titredeno">
+				<table summary="" border="0" cellspacing="0">
+					<tr><td colspan="3" height="10px"></td></tr>
+					<tr>
+						<td width="15px">&nbsp;</td>
+						<td width="685px"><h1 class="textedeno">IZALGI 500 mg/25 mg, gélule  - Notice patient</h1></td>
+						<td width="43px" class="tdcenter"><a href="Javascript:void(null)" onclick="print();"><img src="img/imprimante.png" height="20px" width="20px" alt="Imprimer le document" title="Imprimer le document" border="0" /></a></td>
+					</tr>
+					<tr><td colspan="3" height="10px"></td></tr>
+				</table>
+			</div>
+			
+			<div id="contentDocument">
+				<div id="textDocument">
+					<p class="DateNotif">ANSM - Mis à jour le : 02/01/2025</p>
+<p class="AmmNoticeTitre1"><a name="Ann3bDenomination">Dénomination du médicament</a></p>
+<p class=AmmCorpsTexteGras align=center style='text-align:center'><a name="_Toc142278999">IZALGI 500 mg/25 mg, gélule</a></p>
+<p class=AmmCorpsTexteGras align=center style='text-align:center'>Paracétamol, poudre d’opium</p>
+<p class="AmmNoticeTitre1"><a name="Ann3bEncadre">Encadré</a></p>
+<p class=AmmCorpsTexteGras><a name="_Toc142279000"><span lang=FR-BE>Veuillez lire attentivement cette notice avant de prendre ce médicament car elle contient des informations importantes pour vous.</span></a></p>
+<p class=AmmListePuces1><span lang=FR-BE style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span><span lang=FR-BE>Gardez cette notice. Vous pourriez avoir besoin de la relire.</span></p>
+<p class=AmmListePuces1><span lang=FR-BE style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span><span lang=FR-BE>Si vous avez d’autres questions, interrogez votre médecin ou votre pharmacien.</span></p>
+<p class=AmmListePuces1><span lang=FR-BE style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span><span lang=FR-BE>Ce médicament vous a été personnellement prescrit. Ne le donnez pas à d’autres personnes. Il pourrait leur être nocif, même si les signes de leur maladie sont identiques aux vôtres.</span></p>
+<p class=AmmListePuces1><span lang=FR-BE style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span><span lang=FR-BE>Si vous ressentez un quelconque effet indésirable, parlez-en à votre médecin ou votre pharmacien. Ceci s’applique aussi à tout effet indésirable qui ne serait pas mentionné dans cette notice. </span>Voir rubrique 4.</p>
+<p class="AmmNoticeTitre1"><a name="Ann3bSomm">Que contient cette notice ?</a></p>
+<p class=AmmCorpsTexte style='margin-top:0cm;margin-right:0cm;margin-bottom: 0cm;margin-left:14.2pt;margin-bottom:.0001pt;text-indent:-14.2pt'>1. Qu'est-ce que IZALGI 500 mg/25 mg, gélule et dans quels cas est-il utilisé ?</p>
+<p class=AmmCorpsTexte style='margin-top:0cm;margin-right:0cm;margin-bottom: 0cm;margin-left:14.2pt;margin-bottom:.0001pt;text-indent:-14.2pt'>2. Quelles sont les informations à connaître avant de prendre IZALGI 500 mg/25 mg, gélule ?</p>
+<p class=AmmCorpsTexte style='margin-top:0cm;margin-right:0cm;margin-bottom: 0cm;margin-left:14.2pt;margin-bottom:.0001pt;text-indent:-14.2pt'>3. Comment prendre IZALGI 500 mg/25 mg, gélule ?</p>
+<p class=AmmCorpsTexte style='margin-top:0cm;margin-right:0cm;margin-bottom: 0cm;margin-left:14.2pt;margin-bottom:.0001pt;text-indent:-14.2pt'>4. Quels sont les effets indésirables éventuels ?</p>
+<p class=AmmCorpsTexte style='margin-top:0cm;margin-right:0cm;margin-bottom: 0cm;margin-left:14.2pt;margin-bottom:.0001pt;text-indent:-14.2pt'>5. Comment conserver IZALGI 500 mg/25 mg, gélule ?</p>
+<p class=AmmCorpsTexte style='margin-top:0cm;margin-right:0cm;margin-bottom: 0cm;margin-left:14.2pt;margin-bottom:.0001pt;text-indent:-14.2pt'><span style='color:black'>6. Contenu de l’emballage et autres informations.</span></p>
+<h2><a name="Ann3bQuestceque">1. QU’EST-CE QUE IZALGI 500 mg/25 mg, gélule ET DANS QUELS CAS EST-IL UTILISE ?</a>&nbsp;&nbsp;<a href='#HautDePage'><img src='img/BackToTop.jpg' width='15px' height='15px' alt='Retour en haut de la page' title='Retour en haut de la page' /></a></h2>
+<p class=AmmCorpsTexte><a name="_Toc142279003">Classe pharmacothérapeutique :</a></p>
+<p class=AmmCorpsTexte><a name="_Toc142279004">Antalgique périphérique et central.</a></p>
+<p class=AmmCorpsTexte>Antalgique opiacé.</p>
+<p class=AmmCorpsTexte>IZALGI 500 mg/25 mg, gélule est une association de 2 antalgiques (substances calmant la douleur), le paracétamol et la poudre d’opium, qui agissent ensemble pour soulager votre douleur.</p>
+<p class=AmmCorpsTexte>Ce médicament est préconisé dans les douleurs aiguës modérées ou fortes, ou qui ne sont pas soulagées par l’aspirine, le paracétamol ou l’ibuprofène utilisé seul.</p>
+<h2><a name="Ann3bInfoNecessaires">2. QUELLES SONT LES INFORMATIONS A CONNAITRE AVANT DE PRENDRE IZALGI 500 mg/25 mg, gélule ?</a>&nbsp;&nbsp;<a href='#HautDePage'><img src='img/BackToTop.jpg' width='15px' height='15px' alt='Retour en haut de la page' title='Retour en haut de la page' /></a></h2>
+<p class=AmmCorpsTexteGras><a name="_Toc142279015">Ne prenez jamais IZALGI 500 mg/25 mg, gélule :</a></p>
+<p class=AmmListePuces1 style='text-align:justify'><span style='font-family: Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>Si vous êtes un enfant de moins de 15 ans ;</p>
+<p class=AmmListePuces1 style='text-align:justify'><span style='font-family: Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>Si vous êtes allergique (hypersensible) au paracétamol, à la poudre d’opium ou à l’un des autres composants contenus dans IZALGI 500 mg/25 mg, gélule (voir rubrique 6. Contenu de l’emballage et autres informations) ;</p>
+<p class=AmmListePuces1 style='text-align:justify'><span style='font-family: Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>Si vous êtes atteint d'une maladie grave du foie ;</p>
+<p class=AmmListePuces1 style='text-align:justify'><span style='font-family: Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>Si vous êtes asthmatique ou atteint d’insuffisance respiratoire ;</p>
+<p class=AmmListePuces1 style='text-align:justify'><span style='font-family: Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>Si vous allaitez ;</p>
+<p class=AmmListePuces1 style='margin-top:0cm;margin-right:0cm;margin-bottom: 6.0pt;margin-left:17.85pt;text-align:justify;text-indent:-17.85pt'><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>Si vous prenez des médicaments dérivés de la morphine contenant de la buprénorphine, de la nalbuphine, de la pentazocine, du naltrexone ou du nalméfène (voir rubrique Autres médicaments et IZALGI 500 mg/25 mg).</p>
+<p class=AmmCorpsTexte>Ne prenez jamais IZALGI 500 mg/25 mg, gélule si l’un des cas ci-dessus s’applique à vous. En cas de doute, il est indispensable de demander l'avis de votre médecin ou de votre pharmacien.</p>
+<p class=AmmCorpsTexteGras>Avertissements et précautions</p>
+<p class=AmmCorpsTexte>Adressez-vous à votre médecin ou pharmacien avant de prendre IZALGI 500 mg/25 mg, gélule. </p>
+<p class=AmmAnnexeTitre3>Mises en garde</p>
+<p class=AmmCorpsTexte>Ce médicament contient du paracétamol. En cas de surdosage ou de prise par erreur d'une dose trop élevée, consultez immédiatement votre médecin.</p>
+<table class=AmmCorpsTexteTable border=0 cellspacing=0 cellpadding=0
+style='border-collapse:collapse'>
+<tr>
+<td width=667 valign=top style='width:500.2pt;border:solid windowtext 1.5pt;
+padding:0cm 3.5pt 0cm 3.5pt'>
+<p class=AmmCorpsTexte>Ce médicament contient du paracétamol et de la poudre d’opium. D'autres médicaments en contiennent. Ne les associez pas afin de ne pas dépasser les doses maximales conseillées (voir rubrique Posologie).</p>
+</td>
+</tr>
+</table>
+<p class=AmmCorpsTexte>L'utilisation prolongée et à de fortes doses de ce médicament peut conduire à un état de dépendance.</p>
+<p class=AmmCorpsTexte>Ne pas dépasser les posologies indiquées.</p>
+<p class=AmmCorpsTexte>Ne pas utiliser de façon prolongée sans avis du médecin, en particulier si les troubles persistent au bout de 5 jours et/ou en cas de survenue de tout autre signe après la prise du médicament.</p>
+<p class=AmmCorpsTexte><a name="_Hlk185336916">Pendant le traitement par IZALGI, informez immédiatement votre médecin si vous avez des maladies graves, y compris une insuffisance rénale grave ou un sepsis (lorsque des bactéries et leurs toxines circulent dans le sang, entraînant des lésions au niveau des organes), ou si vous êtes atteint de malnutrition, d’alcoolisme chronique ou si vous prenez également de la flucloxacilline (un antibiotique). Une affection grave appelée acidose métabolique (une anomalie du sang et des fluides) a été signalée chez les patients qui prennent régulièrement du paracétamol pendant une période prolongée ou qui prennent du paracétamol en association avec de la flucloxacilline. Les symptômes de l’acidose métabolique peuvent inclure : de graves difficultés respiratoires avec une respiration rapide et profonde, une somnolence, une envie de vomir (nausée) et des vomissements.</a></p>
+<p class=AmmAnnexeTitre3>Précautions d'emploi</p>
+<p class=AmmCorpsTexte>L'absorption d'alcool pendant le traitement est déconseillée.</p>
+<p class=AmmCorpsTexte>Prévenez votre médecin si vous souffrez :</p>
+<p class=AmmListePuces1><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>d’une maladie du foie ou des reins,</p>
+<p class=AmmListePuces1><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>de maladie respiratoire (dont asthme, insuffisance respiratoire chronique),</p>
+<p class=AmmListePuces1><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>d’encombrement bronchique,</p>
+<p class=AmmListePuces1><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>de constipation,</p>
+<p class=AmmListePuces1><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>d’opération de la vésicule biliaire,</p>
+<p class=AmmListePuces1><a name="_Hlk100218847"><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span><span style='color:black'>d’une affection du pancréas</span></a><span style='color:black'>,</span></p>
+<p class=AmmListePuces1><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>de difficultés à uriner,</p>
+<p class=AmmListePuces1><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>de pression élevée dans le crâne,</p>
+<p class=AmmListePuces1><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>de troubles convulsifs,</p>
+<p class=AmmListePuces1 style='margin-top:0cm;margin-right:0cm;margin-bottom: 6.0pt;margin-left:17.85pt;text-indent:-17.85pt'><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>si vous buvez fréquemment de l’alcool.</p>
+<p class=AmmCorpsTexte>En cas d’hépatite virale, arrêtez de prendre ce traitement et consultez un médecin.</p>
+<p class=AmmCorpsTexte>Prévenez votre médecin si l’un des cas ci-dessus s’applique à vous. En cas de doute, il est indispensable de demander l'avis de votre médecin ou de votre pharmacien.</p>
+<p class=AmmCorpsTexteGras>Enfants </p>
+<p class=AmmCorpsTexte>Sans objet.</p>
+<p class=AmmCorpsTexteGras><a name="_Hlk50018464">Autres médicaments et IZALGI 500 mg/25 mg, gélule</a></p>
+<p class=AmmCorpsTexte>Informez votre médecin ou pharmacien si vous prenez, avez récemment pris ou pourriez prendre tout autre médicament.</p>
+<p class=AmmCorpsTexte>IMPORTANT : Ce médicament contient du paracétamol et de la poudre d’opium. <span class='gras'>Informez votre médecin si vous prenez tout autre médicament contenant du paracétamol ou de la poudre d’opium</span>. Ceci afin de ne pas dépasser les doses quotidiennes maximales.</p>
+<p class=AmmCorpsTexte>Vous <span class='gras'>ne devez pas</span> prendre IZALGI 500 mg/25 mg, gélule avec la buprénorphine, la nalbuphine, la pentazocine, le naltrexone ou le nalméfène. Ces médicaments dérivés de la morphine peuvent réduire l’effet antalgique.</p>
+<p class=AmmCorpsTexte><a name="_Hlk185336965">Veuillez informer votre médecin ou votre pharmacien si vous prenez de la flucloxacilline (antibiotique), en raison d'un risque grave d'anomalie du sang et des fluides (appelée acidose métabolique), qui doit faire l'objet d'un traitement d’urgence (voir rubrique 2).</a></p>
+<p class=AmmCorpsTexte>L'utilisation concomitante d’IZALGI et de médicaments sédatifs tels que les benzodiazépines ou les médicaments apparentés augmente le risque de somnolence, de difficultés respiratoires (dépression respiratoire), de coma et peut être mortelle. Pour cette raison, l'utilisation concomitante ne doit être envisagée que lorsque d'autres options de traitement ne sont pas possibles.</p>
+<p class=AmmCorpsTexte>Toutefois, si votre médecin vous prescrit IZALGI en association avec des médicaments sédatifs, la posologie et la durée du traitement concomitant doivent être limitées par votre médecin.</p>
+<p class=AmmCorpsTexte>Veuillez informer votre médecin de tous les médicaments sédatifs que vous prenez et respectez strictement les doses recommandées par votre médecin. Il pourrait être utile d'informer des amis ou des proches afin qu’ils aient connaissance des signes et des symptômes mentionnés ci-dessus. Contactez votre médecin si vous ressentez de tels symptômes.</p>
+<p class=AmmCorpsTexte><a name="_Toc142279012">Certains médicaments utilisés pour traiter les caillots sanguins (par exemple le clopidogrel, le prasugrel, le ticagrélor) peuvent avoir un effet retardé et diminué lorsqu'ils sont pris avec l'opium.</a></p>
+<p class=AmmCorpsTexteGras>Bilans sanguins</p>
+<p class=AmmCorpsTexte>Signalez à votre médecin que vous prenez ce médicament s’il vous prescrit un bilan sanguin comprenant un dosage du taux d'acide urique ou de sucre dans le sang.</p>
+<p class=AmmCorpsTexteGras>IZALGI 500 mg/25 mg, gélule avec des aliments, boissons et de l’alcool</p>
+<p class=AmmCorpsTexte>IZALGI 500 mg/25 mg, gélule peut provoquer une somnolence. La prise d’alcool pouvant aggraver la somnolence, il est préférable de ne pas boire d’alcool pendant le traitement par IZALGI 500 mg/25 mg, gélule.</p>
+<p class=AmmCorpsTexteGras>Grossesse et allaitement</p>
+<p class=AmmCorpsTexteGras>Grossesse</p>
+<p class=AmmCorpsTexte>Ne prenez pas IZALGI 500 mg/25 mg, gélule pendant la grossesse sauf avis contraire de votre médecin, en raison de la présence de poudre d’opium.</p>
+<p class=AmmCorpsTexte>En fin de grossesse, la prise d’IZALGI 500 mg/25 mg, gélule peut avoir des répercussions sur le nouveau-né, il faut donc la signaler à votre médecin.</p>
+<p class=AmmCorpsTexte>Si vous découvrez que vous êtes enceinte pendant le traitement, consultez votre médecin.</p>
+<p class=AmmCorpsTexteGras>Allaitement</p>
+<p class=AmmCorpsTexte>En raison de la présence de morphine et de dérivés morphinomimétiques (ayant une action analogue à la morphine) dans l’opium, qui peuvent passer dans le lait maternel, ne prenez pas ce médicament pendant l’allaitement.</p>
+<p class=AmmCorpsTexte>Si vous êtes enceinte ou que vous allaitez, si vous pensez être enceinte ou planifiez une grossesse, demandez conseil à votre médecin ou pharmacien avant de prendre ce médicament.</p>
+<p class=AmmCorpsTexteGras>Sportifs</p>
+<p class=AmmCorpsTexte>Ce médicament contient une substance opiacée qui est inscrite sur la liste des substances dopantes.</p>
+<p class=AmmCorpsTexteGras>Conduite de véhicules et utilisation de machines</p>
+<p class=AmmCorpsTexte>Il est déconseillé de conduire des véhicules ou d’utiliser des machines en raison du risque de somnolence lié à la prise d’IZALGI 500 mg/25 mg, gélule.</p>
+<p class=AmmCorpsTexteGras>IZALGI 500 mg/25 mg, gélule contient</p>
+<p class=AmmCorpsTexte>Sans objet.</p>
+<h2><a name="Ann3bCommentPrendre">3. COMMENT PRENDRE IZALGI 500 mg/25 mg, gélule ?</a>&nbsp;&nbsp;<a href='#HautDePage'><img src='img/BackToTop.jpg' width='15px' height='15px' alt='Retour en haut de la page' title='Retour en haut de la page' /></a></h2>
+<p class=AmmCorpsTexte><a name="_Toc142279021">Veillez à toujours prendre ce médicament en suivant exactement les indications de votre médecin ou pharmacien. Vérifiez auprès de votre médecin ou pharmacien en cas de doute.</a></p>
+<p class=AmmAnnexeTitre3>Posologie</p>
+<p class=AmmCorpsTexte>La posologie usuelle est de 1 gélule, à renouveler si besoin au bout de 4 à 6 heures, sans dépasser 4 gélules par jour.</p>
+<p class=AmmAnnexeTitre3>Fréquence d’administration</p>
+<p class=AmmCorpsTexte>Les prises doivent toujours être espacées d’au moins 4 heures. En cas de douleur persistante, les prises systématiques permettent d'éviter les pics de douleur.</p>
+<p class=AmmCorpsTexte>En cas de maladie grave des reins (insuffisance rénale sévère), les prises seront espacées de 8 heures minimum.</p>
+<p class=AmmCorpsTexte><span class='gras'>NE JAMAIS PRENDRE PLUS DE 4 GRAMMES DE PARACETAMOL PAR JOUR</span> (en tenant compte de <span class='souligne'>tous les médicaments</span> contenant du paracétamol). Il faut toujours respecter un intervalle de 4 heures minimum entre les prises. Les dosages supérieurs à 3 grammes de paracétamol <span class='gras'>par jour</span> nécessitent un avis médical.</p>
+<p class=AmmCorpsTexte>Si vous avez l’impression que l’effet d’IZALGI 500 mg/25 mg, gélule est trop fort ou trop faible, consultez votre médecin ou votre pharmacien.</p>
+<p class=AmmCorpsTexte>IZALGI 500 mg/25 mg, gélule est contre-indiqué chez l’enfant et l’adolescent de moins de 15 ans.</p>
+<p class=AmmAnnexeTitre3>Mode et voie d'administration</p>
+<p class=AmmCorpsTexte>Voie orale.</p>
+<p class=AmmCorpsTexte>Avaler la ou les gélule(s) telles quelles à l’aide d’un grand verre d’eau.</p>
+<p class=AmmAnnexeTitre3>Durée du traitement</p>
+<p class=AmmCorpsTexte>Si la douleur persiste plus de 4 à 5 jours, ne pas continuer le traitement sans l'avis de votre médecin.</p>
+<p class=AmmCorpsTexte>Dans tous les cas, se conformer strictement à la prescription médicale.</p>
+<p class=AmmCorpsTexteGras>Si vous avez pris plus d’IZALGI 500 mg/25 mg, gélule que vous n’auriez dû :</p>
+<p class=AmmCorpsTexte>Consultez immédiatement votre médecin ou votre pharmacien même si vous vous sentez bien. Il peut y avoir un risque d’atteinte du foie dont les symptômes apparaîtront ultérieurement.</p>
+<p class=AmmCorpsTexteGras>Si vous oubliez de prendre IZALGI 500 mg/25 mg, gélule :</p>
+<p class=AmmCorpsTexte>Si vous avez oublié de prendre les gélules, la douleur peut réapparaître. Ne prenez pas de dose double pour compenser la dose que vous avez oublié de prendre. Continuez votre traitement comme avant.</p>
+<p class=AmmCorpsTexteGras>Si vous arrêtez de prendre IZALGI 500 mg/25 mg, gélule :</p>
+<p class=AmmCorpsTexte>L’arrêt du traitement peut entraîner un syndrome de sevrage lors d’une utilisation prolongée à dose élevée.</p>
+<p class=AmmCorpsTexte>Si vous avez d’autres questions sur l’utilisation de ce médicament, demandez plus d’informations à votre médecin ou à votre pharmacien.</p>
+<h2><a name="Ann3bEffetsIndesirables">4. QUELS SONT LES EFFETS INDESIRABLES EVENTUELS ?</a>&nbsp;&nbsp;<a href='#HautDePage'><img src='img/BackToTop.jpg' width='15px' height='15px' alt='Retour en haut de la page' title='Retour en haut de la page' /></a></h2>
+<p class=AmmCorpsTexte><a name="_Toc142279023">Comme tous les médicaments, ce médicament peut provoquer des effets indésirables, mais ils ne surviennent pas systématiquement chez tout le monde.</a></p>
+<p class=AmmAnnexeTitre4>Peu fréquents (chez moins de 1 patient traité sur 100)</p>
+<p class=AmmListePuces1 style='margin-top:0cm;margin-right:0cm;margin-bottom: 6.0pt;margin-left:17.85pt;text-indent:-17.85pt'><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>Troubles du système nerveux : insomnie, somnolence.</p>
+<p class=AmmAnnexeTitre4>Rares (chez moins de 1 patient traité sur 1000)</p>
+<p class=AmmListePuces1><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>Troubles gastro-intestinaux : constipation, nausées, vomissements, douleurs abdominales.</p>
+<p class=AmmListePuces1><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>Troubles cutanés : rougeur, urticaire, démangeaisons.</p>
+<p class=AmmListePuces1 style='margin-top:0cm;margin-right:0cm;margin-bottom: 6.0pt;margin-left:17.85pt;text-indent:-17.85pt'><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>Troubles du système immunitaire : réactions allergiques telles que malaise, œdèmes.</p>
+<p class=AmmAnnexeTitre4>Très rare (chez moins de 1 patient traité sur 10000)</p>
+<p class=AmmListePuces1 style='margin-top:0cm;margin-right:0cm;margin-bottom: 6.0pt;margin-left:17.85pt;text-indent:-17.85pt'><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>Troubles gastro-intestinaux : saignements gastro-intestinaux.</p>
+<p class=AmmAnnexeTitre3>LIES A LA PRESENCE DE PARACETAMOL</p>
+<p class=AmmCorpsTexte>Les effets indésirables suivants ont été observés avec le paracétamol utilisé seul :</p>
+<p class=AmmCorpsTexte><span class='gras'>Réactions allergiques. </span>Dans certains cas rares, il est possible que survienne une éruption ou une rougeur cutanée ou une réaction allergique. Celle-ci peut se manifester par un brusque gonflement du visage et/ou du cou ou par un malaise brutal avec chute de la pression artérielle ou par des troubles sévères de la peau ou des muqueuses avec rougeur, cloques, brûlures, décollement de la peau pouvant rapidement s’étendre de façon très grave à tout le corps. Si cela vous arrive il faut :</p>
+<p class=AmmListePuces1><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>immédiatement arrêter le traitement,</p>
+<p class=AmmListePuces1><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>avertir votre médecin,</p>
+<p class=AmmListePuces1 style='margin-top:0cm;margin-right:0cm;margin-bottom: 6.0pt;margin-left:17.85pt;text-indent:-17.85pt'><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>ne plus jamais reprendre de médicaments contenant du paracétamol.</p>
+<p class=AmmCorpsTexte>Exceptionnellement, des modifications biologiques nécessitant un contrôle du bilan sanguin ont pu être observées : taux anormalement bas de certains globules blancs ou de certaines cellules du sang comme les plaquettes pouvant se traduire par des saignements de nez ou des gencives. Dans ce cas, consultez un médecin.</p>
+<p class=AmmCorpsTexte><a name="_Hlk185337158">Fréquence indéterminée (ne peut être estimée à partir des données disponibles) : Une affection grave qui peut rendre le sang plus acide (appelée acidose métabolique), chez les patients atteints d'une maladie grave et utilisant du paracétamol (voir rubrique 2).</a></p>
+<p class=AmmAnnexeTitre3>LIES A LA PRESENCE DE POUDRE D’OPIUM</p>
+<p class=AmmCorpsTexte>Possibilité de :</p>
+<p class=AmmListePuces1 style='text-align:justify'><span style='font-family: Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>sensation d’endormissement, euphorie, trouble de l’humeur,</p>
+<p class=AmmListePuces1 style='text-align:justify'><span style='font-family: Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>rétrécissement de la pupille, difficulté à uriner,</p>
+<p class=AmmListePuces1 style='text-align:justify'><span style='font-family: Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>réaction d’hypersensibilité (démangeaisons, urticaire, éruption cutanée étendue),</p>
+<p class=AmmListePuces1 style='text-align:justify'><span style='font-family: Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>constipation, nausées, vomissements,</p>
+<p class=AmmListePuces1 style='text-align:justify'><span style='font-family: Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>somnolence, états vertigineux, confusion, cauchemars, hallucinations,</p>
+<p class=AmmListePuces1 style='text-align:justify'><span style='font-family: Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>convulsions (peu fréquents),</p>
+<p class=AmmListePuces1 style='text-align:justify'><span style='font-family: Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>gênes respiratoires,</p>
+<p class=AmmListePuces1 style='text-align:justify'><span style='font-family: Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>augmentation de la pression intracrânienne se traduisant par des maux de tête voire des vomissements,</p>
+<p class=AmmListePuces1 style='text-align:justify'><span style='font-family: Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>douleurs abdominales en particulier chez les patients cholécystectomisés (sans vésicule biliaire),</p>
+<p class=AmmListePuces1 style='text-align:justify'><span style='font-family: Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>pancréatite,</p>
+<p class=AmmListePuces1 style='margin-top:0cm;margin-right:0cm;margin-bottom: 6.0pt;margin-left:17.85pt;text-align:justify;text-indent:-17.85pt'><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>augmentation de la sensibilité à la douleur : en cas d’augmentation de la sensibilité à la douleur ou d’aggravation de la douleur initiale après une augmentation de la dose du traitement ou en cas d’apparition d’une douleur anormale, de qualité et de localisation différente de la douleur initiale, le traitement doit être arrêté.</p>
+<p class=AmmCorpsTexteGras>Déclaration des effets secondaires</p>
+<p class=AmmCorpsTexte>Si vous ressentez un quelconque effet indésirable, parlez-en à votre médecin ou votre pharmacien. Ceci s’applique aussi à tout effet indésirable qui ne serait pas mentionné dans cette notice. Vous pouvez également déclarer les effets indésirables directement via le système national de déclaration : Agence nationale de sécurité du médicament et des produits de santé (ANSM) et réseau des Centres Régionaux de Pharmacovigilance - Site internet :<span style='color:red'> </span>https://signalement.social-sante.gouv.fr</p>
+<p class=AmmCorpsTexte>En signalant les effets indésirables, vous contribuez à fournir davantage d’informations sur la sécurité du médicament.</p>
+<h2><a name="Ann3bConservation">5. COMMENT CONSERVER IZALGI 500 mg/25 mg, gélule ?</a>&nbsp;&nbsp;<a href='#HautDePage'><img src='img/BackToTop.jpg' width='15px' height='15px' alt='Retour en haut de la page' title='Retour en haut de la page' /></a></h2>
+<p class=AmmCorpsTexte><a name="_Toc142279026"></a><a name="_Toc142279024">Tenir ce médicament hors de la vue et de la portée des enfants.</a></p>
+<p class=AmmCorpsTexte>N’utilisez pas ce médicament après la date de péremption indiquée sur l’emballage après EXP. La date de péremption fait référence au dernier jour de ce mois.</p>
+<p class=AmmCorpsTexte>A conserver à une température ne dépassant pas 30°C.</p>
+<p class=AmmCorpsTexte>Pour les flacons : après ouverture du flacon, les gélules doivent être utilisées dans les 2 mois.</p>
+<p class=AmmCorpsTexte>N’utilisez pas ce médicament si vous remarquez des signes de détérioration.</p>
+<p class=AmmCorpsTexte>Ne jetez aucun médicament au tout à l’égout ou avec les ordures ménagères. Demandez à votre pharmacien d’éliminer les médicaments que vous n’utilisez plus. Ces mesures contribueront à protéger l’environnement.</p>
+<h2><a name="Ann3bEmballage">6. CONTENU DE L’EMBALLAGE ET AUTRES INFORMATIONS</a>&nbsp;&nbsp;<a href='#HautDePage'><img src='img/BackToTop.jpg' width='15px' height='15px' alt='Retour en haut de la page' title='Retour en haut de la page' /></a></h2>
+<p class="AmmAnnexeTitre2"><a name="Ann3bContenu">Ce que contient IZALGI 500 mg/25 mg, gélule</a>&nbsp;&nbsp;<a href='#HautDePage'><img src='img/BackToTop.jpg' width='15px' height='15px' alt='Retour en haut de la page' title='Retour en haut de la page' /></a></p>
+<p class=AmmListePuces1><a name="_Toc142279030"><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>Les substances actives sont :</a></p>
+<p class=AmmComposition>Paracétamol.................................................................................................................... 500,00 mg</p>
+<p class=AmmComposition>Poudre d’opium (titrée à 10% m/m en morphine base anhydre)............................................. 25,00 mg</p>
+<p class=AmmCorpsTexte align=center style='text-align:center'>Pour une gélule</p>
+<p class=AmmListePuces1><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>Les autres composants sont : stéarate de magnésium.</p>
+<p class=AmmCorpsTexte>Composition de l’enveloppe de la gélule : gélatine, dioxyde de titane (E 171), oxyde de fer noir (E 172), oxyde de fer jaune (E 172), bleu patente V.</p>
+<p class="AmmAnnexeTitre2"><a name="RcpEmballage">Qu’est-ce que IZALGI 500 mg/25 mg, gélule et contenu de l’emballage extérieur</a>&nbsp;&nbsp;<a href='#HautDePage'><img src='img/BackToTop.jpg' width='15px' height='15px' alt='Retour en haut de la page' title='Retour en haut de la page' /></a></p>
+<p class=AmmCorpsTexte>Ce médicament se présente sous forme de gélule sous plaquettes thermoformées (boîte de 8, 16 ou 100) ou en flacon (boîte de 16 ou 90).</p>
+<p class=AmmCorpsTexte>Toutes les présentations peuvent ne pas être commercialisées.</p>
+<p class="AmmAnnexeTitre2"><a name="Ann3bTituAMM">Titulaire de l’autorisation de mise sur le marché</a>&nbsp;&nbsp;<a href='#HautDePage'><img src='img/BackToTop.jpg' width='15px' height='15px' alt='Retour en haut de la page' title='Retour en haut de la page' /></a></p>
+<p class=AmmCorpsTexteGras style='margin-bottom:0cm;margin-bottom:.0001pt; page-break-after:avoid'><a name="_Toc142279031">VIATRIS MEDICAL</a></p>
+<p class=AmmCorpsTexte style='margin-bottom:0cm;margin-bottom:.0001pt'>1 BIS PLACE DE LA DEFENSE – TOUR TRINITY</p>
+<p class=AmmCorpsTexte>92400 COURBEVOIE</p>
+<p class="AmmAnnexeTitre2"><a name="Ann3bExploitAMM">Exploitant de l’autorisation de mise sur le marché</a>&nbsp;&nbsp;<a href='#HautDePage'><img src='img/BackToTop.jpg' width='15px' height='15px' alt='Retour en haut de la page' title='Retour en haut de la page' /></a></p>
+<p class=AmmCorpsTexteGras style='margin-bottom:0cm;margin-bottom:.0001pt'><a name="_Toc142279032">VIATRIS SANTE</a></p>
+<p class=AmmCorpsTexte style='margin-bottom:0cm;margin-bottom:.0001pt'>1 BIS PLACE DE LA DEFENSE – TOUR TRINITY</p>
+<p class=AmmCorpsTexte>92400 COURBEVOIE </p>
+<p class="AmmAnnexeTitre2"><a name="Ann3bFab">Fabricant</a>&nbsp;&nbsp;<a href='#HautDePage'><img src='img/BackToTop.jpg' width='15px' height='15px' alt='Retour en haut de la page' title='Retour en haut de la page' /></a></p>
+<p class=AmmCorpsTexteGras style='margin-bottom:0cm;margin-bottom:.0001pt'><a name="_Toc142279033">MYLAN LABORATORIES SAS</a></p>
+<p class=AmmCorpsTexte style='margin-bottom:0cm;margin-bottom:.0001pt'>ROUTE DE BELLEVILLE</p>
+<p class=AmmCorpsTexte style='margin-bottom:0cm;margin-bottom:.0001pt'>LIEU-DIT MAILLARD</p>
+<p class=AmmCorpsTexte>01400 CHATILLON SUR CHALARONNE</p>
+<p class="AmmAnnexeTitre2"><a name="Ann3bNomsMediEEE">Noms du médicament dans les Etats membres de l'Espace Economique Européen</a>&nbsp;&nbsp;<a href='#HautDePage'><img src='img/BackToTop.jpg' width='15px' height='15px' alt='Retour en haut de la page' title='Retour en haut de la page' /></a></p>
+<p class=AmmCorpsTexte>Sans objet.</p>
+<p class="AmmAnnexeTitre2"><a name="Ann3bContenu">La dernière date à laquelle cette notice a été révisée est :</a>&nbsp;&nbsp;<a href='#HautDePage'><img src='img/BackToTop.jpg' width='15px' height='15px' alt='Retour en haut de la page' title='Retour en haut de la page' /></a></p>
+<p class=AmmCorpsTexte>[à compléter ultérieurement par le titulaire]</p>
+<p class="AmmAnnexeTitre2"><a name="Ann3bAutres">Autres</a>&nbsp;&nbsp;<a href='#HautDePage'><img src='img/BackToTop.jpg' width='15px' height='15px' alt='Retour en haut de la page' title='Retour en haut de la page' /></a></p>
+<p class=AmmCorpsTexte>Des informations détaillées sur ce médicament sont disponibles sur le site Internet de l’ANSM (France).</p>
+</div>					
+					<p class="alignright"><a href="#HautDePage">Retour en haut de la page <img src="img/BackToTop.jpg" width="20px" height="20px" alt="Retour en haut de la page" title="Retour en haut de la page" /></a></p>
+				</div>
+			</div>
+		</div>
+	</div>
+
+<table summary="" class="content" width="1000">
+	<tr>
+		<td height="100px">&nbsp;</td>
+	</tr>
+</table>
+<table summary="Pied de page" class="footer" width="1000">
+	<tr>
+		<td>
+			<table summary="" class="tablealigncenter" border="0">
+				<tr>
+					<td width="100px" class="aligncenter"><a id="lien_ansm" href="http://ansm.sante.fr/" target="_blank"><img src="img/Logo_ANSM.png" width="150" height="60" alt="ANSM - Agence nationale de sécurité du médicament et des produits de santé" title="L'ANSM met à disposition les principales informations issues de l'Autorisation de mise sur le marché, l'appartenance à un groupe générique, les liens vers les informations de sécurité qu'elle publie, l'identification des médicaments sous surveillance renforcée - nouvelle fenêtre" /></a></td>
+					          <td>&nbsp;</td>
+					<td width="100px" class="aligncenter"><img src="img/Logo_HAS.png" width="150" height="60" alt="HAS - Haute autorité de santé" title="La HAS met à disposition les informations relatives au service médical rendu, à l'amélioration du service médical rendu ainsi que les liens vers les avis de la Commission de la Transparence correspondants - nouvelle fenêtre" /></td>
+					<td>&nbsp;</td>
+					<td width="100px" class="aligncenter"><img src="img/Logo_CNAM.png" width="150" height="60" alt="UNCAM - Unin nationale des caisses d'assurance maladie" title="L'UNCAM met à disposition le taux de remboursement, le prix et les indications remboursables le cas échéant, ainsi que l'agrément aux collectivités - nouvelle fenêtre" /></td>
+          				</tr>
+			</table> 
+		</td>
+	</tr>
+</table>
+<table summary="" class="finpage" width="1000">
+	<tr>
+		<td height="100px" class="aligncenter">
+			<a class="navigation" href="plan.php">Plan du site</a>&nbsp;|&nbsp;
+			<a class="navigation" href="accessibilite.php">Accessibilité</a>&nbsp;|&nbsp;
+			<a class="navigation" href="contact.php">Contact</a>&nbsp;|&nbsp;
+			<a class="navigation" href="telechargement.php">Téléchargement</a>&nbsp;|&nbsp;
+			<a class="navigation" href="DeclarationConfidentialite.php">Declaration de confidentialité</a>&nbsp;|&nbsp;
+			<a class="navigation" href="http://www.service-public.fr/" title="Service Public - Nouvelle fenêtre" target="_blank">Service-Public.fr</a>&nbsp;|&nbsp;
+			<a class="navigation" href="http://www.legifrance.gouv.fr/" title="Legifrance - Nouvelle fenêtre" target="_blank">Legifrance</a>&nbsp;|&nbsp;
+			<a class="navigation" href="http://www.gouvernement.fr/" title="Gouvernement - Nouvelle fenêtre" target="_blank" >Gouvernement.fr</a>
+		</td>
+	</tr>
+</table>
+
+
+
+<!-- Matomo -->
+<script type="text/javascript">
+  var _paq = window._paq = window._paq || [];
+  /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
+  _paq.push(['trackPageView']);
+  _paq.push(['enableLinkTracking']);
+  (function() {
+    var u="https://stats.integra.fr/";
+    _paq.push(['setTrackerUrl', u+'matomo.php']);
+    _paq.push(['setSiteId', '79']);
+    var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+    g.type='text/javascript'; g.async=true; g.src=u+'matomo.js'; s.parentNode.insertBefore(g,s);
+  })();
+</script>
+<!-- End Matomo Code -->
+
+
+
+</body>
+</html>

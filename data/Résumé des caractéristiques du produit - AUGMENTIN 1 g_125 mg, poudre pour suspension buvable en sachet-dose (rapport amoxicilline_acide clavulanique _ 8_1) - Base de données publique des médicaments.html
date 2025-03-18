@@ -1,0 +1,1201 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="fr" lang="fr">
+<head>
+	<title>Résumé des caractéristiques du produit - AUGMENTIN 1 g/125 mg, poudre pour suspension buvable en sachet-dose (rapport amoxicilline/acide clavulanique : 8/1)  - Base de données publique des médicaments</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=windows-1252"/>
+	<meta name="robots" content="index, follow"/>
+	<meta name="Description" content="Base de données publique des médicaments"/>
+	<meta name="Keywords" content="base, données, publique, médicaments, Résumé des caractéristiques du produit, AUGMENTIN 1 g/125 mg, poudre pour suspension buvable en sachet-dose (rapport amoxicilline/acide clavulanique : 8/1) "/>
+	<meta name="Subject" content="medicament"/>
+	<link href='https://fonts.googleapis.com/css?family=Noticia+Text' rel='stylesheet' type='text/css' />
+	<link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro' rel='stylesheet' type='text/css' />
+	<link href="style/style_bdm.css?v=2.2.3" type="text/css" rel="stylesheet"/>
+	<link href="style/style_RCP_Notice.css" type="text/css" rel="stylesheet"/>
+  <link rel="alternate" href="http://m.base-donnees-publique.medicaments.gouv.fr/#!info-66053338">
+    <script type="text/javascript" src="scripts/autocomplete.js?v=2.2.3"></script>
+	<script type="text/javascript" src="scripts/jquery.js"></script>
+    <script type="text/javascript" src="scripts/jquery-ui.min.js"></script>
+	<script type="text/javascript" src="scripts/common.js"></script>
+	<link rel="icon" type="image/x-icon" href="favicon.ico" />
+</head>
+
+<body>
+
+<a name="HautDePage" />
+<div id="bandeauhaut">
+	<a id="lien_ministere" class="lienmenu" href="http://www.sante.gouv.fr" target="_blank" title="Site du ministère des affaires sociales et de la santé - nouvelle fenêtre"><img id="logoministere" src="img/Logo_Ministere.jpg"  alt="Logo du ministère des affaires sociales et de la santé"/></a>
+	<h1 class="texteTitreSite">
+		Base <span class="texteBleu">de</span> données <span class="texteBleu">publique</span><br/><span class="texteBleu">des</span> médicaments
+	</h1>
+		<a id="lien_medicament_gouv" class="lienEspaceMedic" target="_blank" href="http://medicaments.gouv.fr" title="Visiter [medicaments.gouv.fr] - nouvelle fenêtre">Visiter [medicaments.gouv.fr] <img src="/img/icone_lien.png" alt="Visiter [medicaments.gouv.fr]"  title="Visiter [medicaments.gouv.fr] - nouvelle fenetre" /></a>
+</div>
+<!--div align="center">
+	<a id="banniere" target="_blank" href="http://social-sante.gouv.fr/soins-et-maladies/medicaments/medicaments-generiques/" title="Visiter [medicaments.gouv.fr] - M?dicaments g?n?riques">
+		<img width="1000"   src ="/img/carrouselbannieres.gif" alt="Visiter [medicaments.gouv.fr] - M?dicaments g?n?riques" title="Visiter [medicaments.gouv.fr] - M?dicaments g?n?riques" />
+	</a>
+</div-->
+
+<div id="menuhaut">
+	<span id="menuhaut_gauche">
+		<a id="lien_accueil" class="navigation" href="index.php">Accueil</a>&nbsp;|&nbsp;
+		<a id="lien_glossaire" class="navigation" href="glossaire.php">Glossaire</a>&nbsp;|&nbsp;
+		<a id="lien_aide" class="navigation" href="aide.php">Aide</a>		
+	</span>
+	
+		
+	<span id="menuhaut_dernmaj">
+        <br>Dernière <span title=" 2.4.4
+">mise à jour</span> le 03/03/2025	</span>
+</div>
+
+	<script language="javascript" type="text/javascript">
+		//<![CDATA[ 
+		function Aff(men) {
+			document.write("<ul class=\"menuDoc\">");
+			for(var no_rub=0;no_rub<men.num_rub;no_rub++) {
+				document.write("<li><a class='leftMenu' href='"+menu[no_rub].page+"'>");
+				document.write(men[no_rub].txt);
+				document.write("</a></li>");
+				if (men[no_rub].nb_lien != 0){
+					document.write("<ul class=\"sousMenuDoc\">");
+				}
+				for(var no_lien=0;no_lien<men[no_rub].nb_lien;no_lien++) {
+					document.write("<li><a class='leftMenu' href='"+men[no_rub][no_lien].page+"'>");
+					document.write(men[no_rub][no_lien].txt);
+					document.write("</a></li>");
+				}
+				if (men[no_rub].nb_lien != 0){
+					document.write("</ul>");
+				}
+			}
+			document.write("</ul>");
+		}
+		
+		function CreerMenu(police,imgRub,imgOption,imgOptionFin,hauteur) {
+			this.num_rub=0;
+			this.police=police;
+			this.imgRub=imgRub;
+			this.imgOpt=imgOption;
+			this.imgOptFin=imgOptionFin;
+			this.hauteur=hauteur;
+			this.AddRub=AddRub;
+			this.AddLien=AddLien;
+		}
+		
+		function AddRub(txt,aff,page) {
+			var rub = new Object;
+				rub.txt=txt;
+				rub.aff=aff;
+				rub.page=page;
+				rub.nb_lien=0;
+			this[this.num_rub]=rub;
+			this.num_rub++;
+		}
+
+		function AddLien(txt,page) {
+			var no_rub = this.num_rub-1;
+			var no_lien= this[no_rub].nb_lien;
+			var lien = new Object;
+				lien.txt=txt;
+				lien.page=page;
+			this[no_rub][no_lien]=lien;
+			this[no_rub].nb_lien++;
+		}
+		var menu=new CreerMenu("arial","img/dyn04.gif","img/dyn22.gif","img/dyn55.gif",18);
+		//]]> 
+		menu.AddRub("Dénomination","O","#RcpDenomination");
+			menu.AddRub("Composition","O","#RcpCompoQualiQuanti");
+			menu.AddRub("Forme pharma.","O","#RcpFormePharm");
+			menu.AddRub("Clinique","O","#RcpDonneesCliniques");
+			menu.AddLien("Indic. thérapeutiques","#RcpIndicTherap");
+				menu.AddLien("Posologie","#RcpPosoAdmin");
+				menu.AddLien("Contre-indications","#RcpContreindications");
+				menu.AddLien("Mise en garde","#RcpMisesEnGarde");
+				menu.AddLien("Interactions","#RcpInteractionsMed");
+				menu.AddLien("Grossesse, allait.","#RcpFertGrossAllait");
+				menu.AddLien("Conduite véhicules","#RcpConduite");
+				menu.AddLien("Effets indésirables","#RcpEffetsIndesirables");
+				menu.AddLien("Surdosage","#RcpSurdosage");
+				menu.AddRub("Pharmacologie","O","#RcpPropPharmacologiques");
+			menu.AddLien("Pharmacodynamie","#RcpPropPharmacodynamiques");
+				menu.AddLien("Pharmacocinétique","#RcpPropPharmacocinetiques");
+				menu.AddLien("Sécurité préclinique","#RcpSecuritePreclinique");
+				menu.AddRub("Pharmaceutique","O","#RcpDonneesPharmaceutiques");
+			menu.AddLien("Liste excipients","#RcpListeExcipients");
+				menu.AddLien("Incompatibilités","#RcpIncompatibilites");
+				menu.AddLien("Durée conservation","#RcpDureeConservation");
+				menu.AddLien("Conservation","#RcpPrecConservation");
+				menu.AddLien("Emballage","#RcpEmballage");
+				menu.AddLien("Utilisation/manipulation","#RcpPrecEmpl");
+				menu.AddRub("Titulaire AMM","O","#RcpTitulaireAmm");
+			menu.AddRub("Présentations","O","#RcpNumAutor");
+			menu.AddRub("Autorisation, renouv.","O","#RcpPremiereAutorisation");
+			menu.AddRub("Date de révision","O","#RcpDateRevision");
+			menu.AddRub("Dosimétrie","O","#RcpDosimetrie");
+			menu.AddRub("Préparation radiopharma.","O","#RcpInstPrepRadioph");
+				</script>
+
+	<div id="container">
+		<div id="leftnav">
+			<div id="cadreMenuGauche">
+				<h2 class="sommaireMenu">Sommaire</h2>
+				<div id="menuGauche">
+					<script language="JavaScript" type="text/javascript">Aff(menu);</script>
+				</div>
+			</div>
+		</div>
+		<div id="contentPrincipal">
+			<div id="boutonsliens">
+				<a id='lien_fiche_info' href='extrait.php?specid=66053338' ><img id="ongletficheinfo" alt="Onglet fiche information" src="img/onglet_fiche_info_vert.png" /></a><a id='lien_rcp' href='affichageDoc.php?specid=66053338&amp;typedoc=R'><img class="onglet" alt="Onglet résumé des caractéristiques du produit" src="img/onglet_rcp_gris.png" /></a><a id='lien_notice' href='affichageDoc.php?specid=66053338&amp;typedoc=N'><img class="onglet" alt="Onglet notice patient" src="img/onglet_notice_vert.png" /></a>			</div>
+			<div class="titredeno">
+				<table summary="" border="0" cellspacing="0">
+					<tr><td colspan="3" height="10px"></td></tr>
+					<tr>
+						<td width="15px">&nbsp;</td>
+						<td width="685px"><h1 class="textedeno">AUGMENTIN 1 g/125 mg, poudre pour suspension buvable en sachet-dose (rapport amoxicilline/acide clavulanique : 8/1)  - Résumé des caractéristiques du produit</h1></td>
+						<td width="43px" class="tdcenter"><a href="Javascript:void(null)" onclick="print();"><img src="img/imprimante.png" height="20px" width="20px" alt="Imprimer le document" title="Imprimer le document" border="0" /></a></td>
+					</tr>
+					<tr><td colspan="3" height="10px"></td></tr>
+				</table>
+			</div>
+			
+			<div id="contentDocument">
+				<div id="textDocument">
+					<p class="DateNotif">ANSM - Mis à jour le : 07/01/2025</p>
+<p class="AmmAnnexeTitre1"><a name="RcpDenomination">1. DENOMINATION DU MEDICAMENT</a>&nbsp;&nbsp;<a href='#HautDePage'><img src='img/BackToTop.jpg' width='15px' height='15px' alt='Retour en haut de la page' title='Retour en haut de la page' /></a></p>
+<p class=AmmCorpsTexteGras><a name="_Toc142278913">AUGMENTIN 1 g/125 mg, poudre pour suspension buvable en sachet-dose (rapport amoxicilline/acide clavulanique : 8/1)</a></p>
+<p class="AmmAnnexeTitre1"><a name="RcpCompoQualiQuanti">2. COMPOSITION QUALITATIVE ET QUANTITATIVE</a>&nbsp;&nbsp;<a href='#HautDePage'><img src='img/BackToTop.jpg' width='15px' height='15px' alt='Retour en haut de la page' title='Retour en haut de la page' /></a></p>
+<p class=AmmComposition><a name="_Toc142278914">Amoxicilline........................................................................................................................ 1000 mg</a></p>
+<p class=AmmComposition>Sous forme d'amoxicilline trihydratée</p>
+<p class=AmmComposition>Acide clavulanique................................................................................................................ 125 mg</p>
+<p class=AmmComposition align=center style='text-align:center'>sous forme de clavulanate de potassium</p>
+<p class=AmmCorpsTexte>Pour un sachet-dose.</p>
+<p class=AmmCorpsTexte>Excipients à effet notoire : </p>
+<p class=AmmComposition><a name="_Hlk51658816">Chaque sachet-dose contient 30 mg d’aspartam (E951). L’arôme présent dans Augmentin contient de la maltodextrine (glucose) et des traces d’alcool benzylique (voir rubrique 4.4).</a></p>
+<p class=AmmCorpsTexte>Pour la liste complète des excipients, voir rubrique 6.1.</p>
+<p class="AmmAnnexeTitre1"><a name="RcpFormePharm">3. FORME PHARMACEUTIQUE</a>&nbsp;&nbsp;<a href='#HautDePage'><img src='img/BackToTop.jpg' width='15px' height='15px' alt='Retour en haut de la page' title='Retour en haut de la page' /></a></p>
+<p class=AmmCorpsTexte><a name="_Toc142278915">Poudre pour suspension buvable.</a></p>
+<p class="AmmAnnexeTitre1"><a name="RcpDonneesCliniques">4. DONNEES CLINIQUES</a>&nbsp;&nbsp;<a href='#HautDePage'><img src='img/BackToTop.jpg' width='15px' height='15px' alt='Retour en haut de la page' title='Retour en haut de la page' /></a></p>
+<p class="AmmAnnexeTitre2"><a name="RcpIndicTherap">4.1. Indications thérapeutiques</a>&nbsp;&nbsp;<a href='#HautDePage'><img src='img/BackToTop.jpg' width='15px' height='15px' alt='Retour en haut de la page' title='Retour en haut de la page' /></a></p>
+<p class=AmmCorpsTexte><a name="_Toc142278917">AUGMENTIN est indiqué pour le traitement des infections suivantes chez l’adulte et l’enfant (voir rubriques 4.2, 4.4 et 5.1) :</a></p>
+<p class=AmmListePuces1><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>sinusite bactérienne aiguë (diagnostiquée de façon appropriée),</p>
+<p class=AmmListePuces1><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>otite moyenne aiguë,</p>
+<p class=AmmListePuces1><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>exacerbation de bronchite chronique (diagnostiquée de façon appropriée),</p>
+<p class=AmmListePuces1><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>pneumonie aiguë communautaire,</p>
+<p class=AmmListePuces1><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>cystite,</p>
+<p class=AmmListePuces1><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>pyélonéphrite,</p>
+<p class=AmmListePuces1><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>infections de la peau et des tissus mous, en particulier cellulite, morsures animales, abcès dentaire sévère avec propagation de cellulite,</p>
+<p class=AmmListePuces1><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>infections des os et des articulations, en particulier ostéomyélite.</p>
+<p class=AmmCorpsTexte style='margin-top:6.0pt'>Il convient de tenir compte des recommandations officielles concernant l’utilisation appropriée des antibactériens.</p>
+<p class="AmmAnnexeTitre2"><a name="RcpPosoAdmin">4.2. Posologie et mode d'administration</a>&nbsp;&nbsp;<a href='#HautDePage'><img src='img/BackToTop.jpg' width='15px' height='15px' alt='Retour en haut de la page' title='Retour en haut de la page' /></a></p>
+<p class=AmmAnnexeTitre3><a name="_Toc142278918">Posologie</a></p>
+<p class=AmmCorpsTexte>Les doses sont exprimées en quantité d’amoxicilline/acide clavulanique, sauf lorsqu’elles sont indiquées par référence à un constituant individuel.</p>
+<p class=AmmCorpsTexte>La dose d’AUGMENTIN choisie pour traiter une infection particulière doit prendre en compte :</p>
+<p class=AmmListePuces1><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>les pathogènes escomptés et leur sensibilité probable aux agents antibactériens (voir rubrique 4.4),</p>
+<p class=AmmListePuces1><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>la sévérité et le foyer de l’infection, </p>
+<p class=AmmListePuces1 style='margin-top:0cm;margin-right:0cm;margin-bottom: 6.0pt;margin-left:17.85pt;text-indent:-17.85pt'><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>l’âge, le poids et la fonction rénale du patient (voir ci-dessous). </p>
+<p class=AmmCorpsTexte>L’utilisation d’autres formulations d’AUGMENTIN (par ex., fournissant des doses supérieures d’amoxicilline et - ou des rapports amoxicilline/acide clavulanique différents) doit être envisagée, si nécessaire (voir rubriques 4.4 et 5.1).</p>
+<p class=AmmCorpsTexte>Pour l’adulte et l’enfant <span style='font-family:Symbol'>³</span> 40 kg, cette formulation d’AUGMENTIN fournit une dose quotidienne totale de 2000 mg d’amoxicilline/250 mg d’acide clavulanique, en deux prises quotidiennes, et 3000 mg d’amoxicilline/375 mg d’acide clavulanique, en trois prises quotidiennes, lorsqu’elle est administrée conformément aux recommandations ci-dessous. Pour l’enfant &lt; 40 kg, cette formulation d’AUGMENTIN fournit une dose quotidienne maximale de 1600-3000 mg d’amoxicilline/200-400 mg d’acide clavulanique, lorsqu’elle est administrée conformément aux recommandations ci-dessous. Si une dose quotidienne supérieure d’amoxicilline est jugée nécessaire, il est recommandé de choisir une autre formulation d’AUGMENTIN afin d’éviter l’administration inutile de fortes doses quotidiennes d’acide clavulanique (voir rubriques 4.4 et 5.1). </p>
+<p class=AmmCorpsTexte>La durée du traitement dépendra de la réponse du patient au traitement. Certaines infections (par ex., ostéomyélite) imposent un traitement prolongé. Le traitement ne doit pas être prolongé au-delà de 14 jours sans avis médical (voir rubrique 4.4 sur le traitement prolongé).</p>
+<p class=AmmAnnexeTitre4>Adultes et enfants <span style='font-family:Symbol'>³</span> 40 kg</p>
+<p class=AmmCorpsTexte>Doses recommandées :</p>
+<p class=AmmListePuces1><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>dose standard (pour toutes les indications) : 1000 mg/125 mg trois fois par jour ;</p>
+<p class=AmmListePuces1 style='margin-top:0cm;margin-right:0cm;margin-bottom: 6.0pt;margin-left:17.85pt;text-indent:-17.85pt'><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>dose plus faible - (en particulier pour les infections de la peau et des tissus mous, et les sinusites non sévères) : 1000 mg/125 mg deux fois par jour.</p>
+<p class=AmmAnnexeTitre4>Enfants &lt; 40 kg</p>
+<p class=AmmCorpsTexte>Chez l’enfant, utiliser AUGMENTIN en comprimé, suspension ou sachet pédiatrique.</p>
+<p class=AmmCorpsTexte>Dose recommandée :</p>
+<p class=AmmListePuces1><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>de 40 mg/5 mg/kg/jour à 80 mg/10 mg/kg/jour (sans dépasser 3000 mg/375 mg par jour) en trois prises, selon la sévérité de l’infection.</p>
+<p class=AmmCorpsTexte><a name="_Hlk51658875"><span style='font-size:10.0pt; font-family:"Arial",sans-serif'>Il n'y a pas de données cliniques pour la formulation 8/1 chez les patients âgés de moins de 1 mois.</span></a></p>
+<p class=AmmAnnexeTitre4 style='margin-top:6.0pt'>Patients âgés</p>
+<p class=AmmCorpsTexte>Aucune adaptation posologique n’est considérée nécessaire.</p>
+<p class=AmmAnnexeTitre4>Patients insuffisants rénaux </p>
+<p class=AmmCorpsTexte>Aucune adaptation posologique n’est nécessaire chez les patients présentant une clairance de la créatinine (ClCr) supérieure à 30 ml/min.</p>
+<p class=AmmCorpsTexte>Chez les patients dont la clairance de la créatinine est inférieure à 30 ml/min, l’utilisation de formulations d’AUGMENTIN ayant un rapport entre amoxicilline et acide clavulanique de 8/1 n’est pas recommandée, car aucune recommandation d’adaptation posologique n’est disponible.</p>
+<p class=AmmAnnexeTitre4>Patients insuffisants hépatiques</p>
+<p class=AmmCorpsTexte>Utiliser avec prudence et surveiller la fonction hépatique régulièrement (voir rubriques 4.3 et 4.4).</p>
+<p class=AmmAnnexeTitre3>Mode d’administration</p>
+<p class=AmmCorpsTexte>AUGMENTIN est destiné à une administration orale.</p>
+<p class=AmmCorpsTexte>Prendre le médicament en début de repas, afin de réduire au maximum le risque d’intolérance gastro-intestinale et d’améliorer l’absorption de l’amoxicilline/acide clavulanique. </p>
+<p class=AmmCorpsTexte>Le traitement peut être débuté par voie parentérale selon le RCP de la formulation IV et poursuivi avec une formulation pour administration orale.</p>
+<p class=AmmCorpsTexte>Le contenu du sachet-dose est à disperser dans un demi-verre d’eau avant ingestion.</p>
+<p class="AmmAnnexeTitre2"><a name="RcpContreindications">4.3. Contre-indications</a>&nbsp;&nbsp;<a href='#HautDePage'><img src='img/BackToTop.jpg' width='15px' height='15px' alt='Retour en haut de la page' title='Retour en haut de la page' /></a></p>
+<p class=AmmListePuces1><a name="_Toc142278919"><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>Hypersensibilité aux substances actives, aux pénicillines ou à l’un des excipients </a><a name="_Hlk43298260">mentionnés à la rubrique 6.1.</a></p>
+<p class=AmmListePuces1><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>Antécédents de réaction d’hypersensibilité immédiate sévère (par ex., anaphylaxie) à une autre bêta-lactamine (par ex., une céphalosporine, un carbapénème ou un monobactame).</p>
+<p class=AmmListePuces1><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>Antécédent d’ictère/atteinte hépatique lié à l’amoxicilline/acide clavulanique (voir rubrique 4.8).</p>
+<p class="AmmAnnexeTitre2"><a name="RcpMisesEnGarde">4.4. Mises en garde spéciales et précautions d'emploi</a>&nbsp;&nbsp;<a href='#HautDePage'><img src='img/BackToTop.jpg' width='15px' height='15px' alt='Retour en haut de la page' title='Retour en haut de la page' /></a></p>
+<p class=AmmCorpsTexte><a name="_Toc142278920">Avant de débuter un traitement par l’amoxicilline/acide clavulanique, un interrogatoire approfondi est nécessaire afin de rechercher les antécédents de réactions d’hypersensibilité aux pénicillines, aux céphalosporines ou à d’autres bêta-lactamines (voir rubriques 4.3 et 4.8).</a></p>
+<p class=AmmCorpsTexte>Des réactions d’hypersensibilité graves et parfois fatales (dont des réactions anaphylactoïdes et des réactions indésirables cutanées sévères) ont été observées chez des patients traités par pénicillines. Les réactions d'hypersensibilité peuvent également évoluer vers un syndrome de Kounis, une réaction allergique grave pouvant entraîner un infarctus du myocarde (voir rubrique 4.8). La survenue de telles réactions est plus probable chez les patients ayant des antécédents d’hypersensibilité à la pénicilline et chez les personnes atteintes d’atopie. Le syndrome d'entérocolite induite par les médicaments (SEIM) a été rapporté principalement chez des enfants recevant de l'amoxicilline/acide clavulanique (voir rubrique 4.8). Le SEIM est une réaction allergique dont le principal symptôme est un vomissement prolongé (1 à 4 heures après l’administration du médicament) en l'absence de symptômes allergiques cutanés ou respiratoires. Les autres symptômes peuvent inclure des douleurs abdominales, des diarrhées, une hypotension ou une leucocytose avec neutrophilie. Des cas sévères ont été rapportés incluant une évolution vers un choc. La survenue de toute manifestation allergique impose l’arrêt du traitement par l’amoxicilline/acide clavulanique et la mise en œuvre d’un autre traitement adapté. </p>
+<p class=AmmCorpsTexte>En cas d’infection avérée par des organismes sensibles à l’amoxicilline, il conviendra d’envisager de remplacer l’association amoxicilline/acide clavulanique par l’amoxicilline, selon les recommandations officielles.</p>
+<p class=AmmCorpsTexte>Cette formulation d’AUGMENTIN peut ne pas convenir lorsqu’il existe un risque important que les pathogènes escomptés soient résistants aux bêta-lactamines, sans médiation par les bêta-lactamases sensibles à l’inhibition par l’acide clavulanique. Cette formulation peut ne pas convenir pour traiter <span class='italique'>S. pneumoniae</span> résistant à la pénicilline. </p>
+<p class=AmmCorpsTexte>Des convulsions sont possibles chez les patients insuffisants rénaux ou chez les patients recevant des doses élevées (voir rubrique 4.8).</p>
+<p class=AmmCorpsTexte>L’association amoxicilline/acide clavulanique doit être évitée en cas de suspicion de mononucléose infectieuse, car la survenue d’une éruption morbilliforme a été associée à cette pathologie après l’utilisation d’amoxicilline.</p>
+<p class=AmmCorpsTexte>L’utilisation concomitante d’allopurinol pendant le traitement par amoxicilline peut augmenter la probabilité de survenue de réactions cutanées allergiques. </p>
+<p class=AmmCorpsTexte>L’utilisation prolongée d’AUGMENTIN peut dans certains cas entraîner un développement excessif d’organismes non sensibles.</p>
+<p class=AmmCorpsTexte>La survenue au début du traitement d’un érythème généralisé fébrile associé à des pustules, peut être le symptôme d’une pustulose exanthématique aiguë généralisée (PEAG) (voir rubrique 4.8). Cette réaction nécessite l’arrêt du traitement par AUGMENTIN, et contre-indique toute future utilisation d’amoxicilline chez le patient.</p>
+<p class=AmmCorpsTexte>L’association amoxicilline/acide clavulanique doit être utilisée avec prudence chez les patients présentant des signes d’insuffisance hépatique (voir rubriques 4.2, 4.3 et 4.8).</p>
+<p class=AmmCorpsTexte>Des effets hépatiques ont été signalés essentiellement chez les hommes et les patients âgés et pourraient être associés à un traitement prolongé. Ces effets ont très rarement été rapportés chez l’enfant. Dans toutes les populations, les signes et symptômes apparaissent généralement pendant ou peu de temps après le traitement mais, dans certains cas, ils peuvent ne survenir que plusieurs semaines après l’arrêt du traitement. Ils sont généralement réversibles. Les effets hépatiques peuvent être sévères et des décès ont été signalés dans des circonstances extrêmement rares. Ils ont presque toujours concerné des patients présentant une pathologie sous-jacente grave ou prenant des médicaments concomitants connus pour leur potentiel à induire des effets hépatiques (voir rubrique 4.8).</p>
+<p class=AmmCorpsTexte>Une colite associée aux antibiotiques a été observée avec pratiquement tous les agents antibactériens ; sa sévérité est variable, de légère à menaçant le pronostic vital (voir rubrique 4.8). Par conséquent, il est important d’envisager ce diagnostic en cas de survenue de diarrhée pendant ou après l’administration de tout antibiotique. En cas de survenue de colite associée aux antibiotiques, l’association amoxicilline/acide clavulanique doit immédiatement être arrêtée ; un médecin devra être consulté et un traitement approprié devra être instauré. Les médicaments inhibant le péristaltisme sont contre-indiqués dans cette situation.</p>
+<p class=AmmCorpsTexte>En cas de traitement prolongé, il est recommandé de surveiller régulièrement les fonctions organiques, en particulier les fonctions rénales, hépatiques et hématopoïétiques.</p>
+<p class=AmmCorpsTexte>De rares cas de prolongation du temps de Quick ont été signalés chez des patients recevant de l’amoxicilline/acide clavulanique. Une surveillance appropriée doit être mise en place lorsque des anticoagulants sont prescrits simultanément. Une adaptation posologique des anticoagulants oraux peut être nécessaire pour maintenir le niveau souhaité d’anticoagulation (voir rubriques 4.5 et 4.8). Chez les patients avec une insuffisance rénale, la posologie doit être adaptée à la sévérité de celle-ci (voir rubrique 4.2).</p>
+<p class=AmmCorpsTexte>De très rares cas de cristallurie (incluant des lésions rénales aiguës) ont été observés chez des patients ayant un faible débit urinaire, principalement lors d’une administration parentérale. En cas d’administration de doses élevées d’amoxicilline, il est conseillé de maintenir un apport hydrique et une émission d’urine adéquats pour réduire le risque de cristallurie. Chez les patients porteurs de sondes vésicales, il convient de contrôler régulièrement la perméabilité (voir rubriques 4.8 et 4.9).</p>
+<p class=AmmCorpsTexte>Lors d’un traitement par l’amoxicilline, il convient d’utiliser la méthode enzymatique avec la glucose oxydase lors de la recherche de la présence de glucose dans les urines car les méthodes non enzymatiques peuvent conduire à des résultats faussement positifs.</p>
+<p class=AmmCorpsTexte>La présence d’acide clavulanique dans AUGMENTIN peut être à l’origine d’une liaison non spécifique des IgG et de l’albumine sur les membranes des globules rouges, conduisant à un test de Coombs faussement positif. </p>
+<p class=AmmCorpsTexte>Il a été rapporté une positivité du test d’épreuve immuno-enzymatique <span class='italique'>Aspergillus Platelia</span> du laboratoire Bio-Rad chez des patients sous amoxicilline/acide clavulanique. Or ces patients n’étaient pas infectés par <span class='italique'>Aspergillus</span>. Des réactions croisées avec des polysaccharides et polyfuranoses non-<span class='italique'>Aspergillus</span> ont été signalés lors du test de dosage immuno-enzymatique <span class='italique'>Aspergillus Platelia</span> du laboratoire Bio-Rad. Par conséquent, les résultats d’analyse positifs chez les patients sous amoxicilline/acide clavulanique doivent être interprétés avec prudence et confirmés par d’autres méthodes diagnostiques.</p>
+<p class=AmmCorpsTexte>La poudre pour suspension buvable en sachet AUGMENTIN 1 g/125 mg contient 30 mg d’aspartam (E951) par sachet, qui est une source de phénylalanine. Ce médicament doit être utilisé avec prudence chez les patients atteints de phénylcétonurie. Il n’existe aucune donnée clinique ou non clinique concernant l’utilisation de l’aspartam chez les enfants âgés de moins de 12 semaines.</p>
+<p class=AmmCorpsTexte><a name="_Hlk51658909">L’arôme présent dans Augmentin contient des traces d’alcool benzylique. L’alcool benzylique peut provoquer des réactions allergiques.</a></p>
+<p class=AmmCorpsTexte>Ce médicament contient de la maltodextrine (glucose). Les patients atteints du syndrome de malabsorption du glucose-galactose (rare) ne doivent pas prendre ce médicament.</p>
+<p class=AmmCorpsTexte><a name="_Hlk51658917">Ce médicament contient moins de 1 mmol (23 mg) de sodium par sachet, c’est-à-dire qu’il est essentiellement « sans sodium ».</a></p>
+<p class="AmmAnnexeTitre2"><a name="RcpInteractionsMed">4.5. Interactions avec d'autres médicaments et autres formes d'interactions</a>&nbsp;&nbsp;<a href='#HautDePage'><img src='img/BackToTop.jpg' width='15px' height='15px' alt='Retour en haut de la page' title='Retour en haut de la page' /></a></p>
+<p class=AmmAnnexeTitre3><a name="_Toc142278928"></a><a name="_Toc142278926"></a><a name="_Toc142278925">Anticoagulants oraux</a></p>
+<p class=AmmCorpsTexte>Les anticoagulants oraux sont souvent administrés simultanément avec des antibiotiques de la famille des pénicillines et aucune interaction n’a été signalée. Toutefois, des cas d’augmentation de l’INR ont été rapportés chez des patients maintenus sous acénocoumarol ou warfarine pendant l’administration d’amoxicilline. Si une coadministration est nécessaire, il convient de surveiller avec attention le temps de Quick ou l’INR lors de l’ajout ou de l’arrêt de l’amoxicilline. En outre, une adaptation posologique des anticoagulants oraux peut être nécessaire (voir rubriques 4.4 et 4.8). </p>
+<p class=AmmAnnexeTitre3>Méthotrexate</p>
+<p class=AmmCorpsTexte>Les pénicillines peuvent réduire l’excrétion de méthotrexate et augmenter ainsi sa toxicité.</p>
+<p class=AmmAnnexeTitre3>Probénécide</p>
+<p class=AmmCorpsTexte>L’utilisation concomitante de probénécide n’est pas recommandée. Le probénécide diminue la sécrétion tubulaire rénale de l’amoxicilline. L’utilisation concomitante de probénécide peut conduire à une augmentation prolongée de la concentration sanguine d’amoxicilline, mais pas de l’acide clavulanique.</p>
+<p class=AmmAnnexeTitre3>Mycophénolate mofétil</p>
+<p class=AmmCorpsTexte>Chez des patients traités par du mycophénolate mofétil, une diminution d'environ 50 % des concentrations résiduelles du métabolite actif, l’acide mycophénolique (MPA), a été rapportée dans les jours qui suivent le début du traitement oral associant amoxicilline et acide clavulanique. Le changement de concentration résiduelle n'implique pas forcément de modification dans l'exposition globale au MPA. Par conséquent, une modification de la dose de mycophénolate mofétil ne devrait normalement pas s’avérer nécessaire en l’absence de signe clinique de dysfonctionnement du greffon. Toutefois, une étroite surveillance clinique s’impose pendant l’administration de l’association, ainsi que peu de temps après la fin du traitement antibiotique.</p>
+<p class="AmmAnnexeTitre2"><a name="RcpFertGrossAllait">4.6. Fertilité, grossesse et allaitement</a>&nbsp;&nbsp;<a href='#HautDePage'><img src='img/BackToTop.jpg' width='15px' height='15px' alt='Retour en haut de la page' title='Retour en haut de la page' /></a></p>
+<p class=AmmAnnexeTitre3>Grossesse</p>
+<p class=AmmCorpsTexte>Les études chez l’animal n’ont pas montré d’effets délétères directs ou indirects sur la gestation et/ou le développement embryonnaire/fœtal et/ou l’accouchement et/ou le développement post-natal (voir rubrique 5.3). Les données limitées sur l’utilisation de l’association amoxicilline/acide clavulanique chez la femme enceinte n’indiquent pas d’augmentation du risque de malformations congénitales. Une seule étude menée chez des femmes présentant une rupture prématurée des membranes fœtales avant terme a indiqué que le traitement prophylactique par amoxicilline/acide clavulanique pourrait être associé à une augmentation du risque d’entérocolite nécrosante chez les nouveau-nés. L’utilisation doit être évitée pendant la grossesse, à moins que le médecin la considère nécessaire.</p>
+<p class=AmmAnnexeTitre3><a name="_Toc142278927">Allaitement</a></p>
+<p class=AmmCorpsTexte>Les deux substances sont excrétées dans le lait maternel (les effets de l’acide clavulanique sur le nourrisson allaité ne sont pas connus). Par conséquent, une diarrhée et une infection fongique des muqueuses sont possibles chez le nourrisson allaité et pourraient nécessiter l’arrêt de l’allaitement. </p>
+<p class=AmmCorpsTexte>L’association amoxicilline-acide clavulanique ne peut être utilisée pendant l’allaitement qu’après évaluation du rapport bénéfice/risque par le médecin traitant.</p>
+<p class="AmmAnnexeTitre2"><a name="RcpConduite">4.7. Effets sur l'aptitude à conduire des véhicules et à utiliser des machines</a>&nbsp;&nbsp;<a href='#HautDePage'><img src='img/BackToTop.jpg' width='15px' height='15px' alt='Retour en haut de la page' title='Retour en haut de la page' /></a></p>
+<p class=AmmCorpsTexte><a name="_Toc142278929">Les effets sur l’aptitude à conduire des véhicules ou à utiliser des machines n’ont pas été étudiés. </a></p>
+<p class=AmmCorpsTexte>Toutefois, la survenue d’effets indésirables (par ex., réactions allergiques, vertiges, convulsions) pouvant avoir une incidence sur l’aptitude à conduire des véhicules ou à utiliser des machines est possible (voir rubrique 4.8).</p>
+<p class="AmmAnnexeTitre2"><a name="RcpEffetsIndesirables">4.8. Effets indésirables</a>&nbsp;&nbsp;<a href='#HautDePage'><img src='img/BackToTop.jpg' width='15px' height='15px' alt='Retour en haut de la page' title='Retour en haut de la page' /></a></p>
+<p class=AmmCorpsTexte>Les effets indésirables les plus fréquents sont les diarrhées, les nausées et les vomissements.</p>
+<p class=AmmCorpsTexte>Les effets indésirables identifiés dans les études cliniques et depuis la commercialisation d’AUGMENTIN sont mentionnés ci-dessous selon la classification MedDRA par système-organe.</p>
+<p class=AmmCorpsTexte>La terminologie suivante est utilisée pour classer les effets indésirables en fonction de leur fréquence :</p>
+<p class=AmmCorpsTexte>Très fréquent (<span style='font-family:Symbol'>³</span> 1/10)</p>
+<p class=AmmCorpsTexte>Fréquent (<span style='font-family:Symbol'>³</span> 1/100 à &lt; 1/10)</p>
+<p class=AmmCorpsTexte>Peu fréquent (<span style='font-family:Symbol'>³</span> 1/1 000 à &lt; 1/100)</p>
+<p class=AmmCorpsTexte>Rare (<span style='font-family:Symbol'>³</span> 1/10 000 à &lt; 1/1 000)</p>
+<p class=AmmCorpsTexte>Très rare (&lt; 1/10 000)</p>
+<p class=AmmCorpsTexte>Fréquence indéterminée (ne peut être estimée sur la base des données disponibles) </p>
+<table class=AmmCorpsTexteTable border=1 cellspacing=0 cellpadding=0 width=0
+style='width:496.15pt;margin-left:-8.8pt;border-collapse:collapse;border:none'>
+<tr>
+<td width=662 colspan=2 valign=top style='width:496.15pt;border:solid windowtext 1.0pt;
+padding:0cm 5.4pt 0cm 5.4pt'>
+<p class=AmmCorpsTexteGras>Infections et infestations</p>
+</td>
+</tr>
+<tr>
+<td width=369 valign=top style='width:276.45pt;border:solid windowtext 1.0pt;
+border-top:none;padding:0cm 5.4pt 0cm 5.4pt'>
+<p class=AmmCorpsTexte>Candidose cutanéo-muqueuse</p>
+</td>
+<td width=293 valign=top style='width:219.7pt;border-top:none;border-left:
+none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+padding:0cm 5.4pt 0cm 5.4pt'>
+<p class=AmmCorpsTexte>Fréquent</p>
+</td>
+</tr>
+<tr>
+<td width=369 valign=top style='width:276.45pt;border:solid windowtext 1.0pt;
+border-top:none;padding:0cm 5.4pt 0cm 5.4pt'>
+<p class=AmmCorpsTexte>Développement excessif d’organismes non sensibles</p>
+</td>
+<td width=293 valign=top style='width:219.7pt;border-top:none;border-left:
+none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+padding:0cm 5.4pt 0cm 5.4pt'>
+<p class=AmmCorpsTexte>Fréquence indéterminée</p>
+</td>
+</tr>
+<tr>
+<td width=662 colspan=2 valign=top style='width:496.15pt;border:solid windowtext 1.0pt;
+border-top:none;padding:0cm 5.4pt 0cm 5.4pt'>
+<p class=AmmCorpsTexteGras>Affections hématologiques et du système lymphatique</p>
+</td>
+</tr>
+<tr>
+<td width=369 valign=top style='width:276.45pt;border:solid windowtext 1.0pt;
+border-top:none;padding:0cm 5.4pt 0cm 5.4pt'>
+<p class=AmmCorpsTexte>Leucopénie réversible (y compris neutropénie)</p>
+</td>
+<td width=293 valign=top style='width:219.7pt;border-top:none;border-left:
+none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+padding:0cm 5.4pt 0cm 5.4pt'>
+<p class=AmmCorpsTexte>Rare</p>
+</td>
+</tr>
+<tr>
+<td width=369 valign=top style='width:276.45pt;border:solid windowtext 1.0pt;
+border-top:none;padding:0cm 5.4pt 0cm 5.4pt'>
+<p class=AmmCorpsTexte>Thrombocytopénie</p>
+</td>
+<td width=293 valign=top style='width:219.7pt;border-top:none;border-left:
+none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+padding:0cm 5.4pt 0cm 5.4pt'>
+<p class=AmmCorpsTexte>Rare</p>
+</td>
+</tr>
+<tr>
+<td width=369 valign=top style='width:276.45pt;border:solid windowtext 1.0pt;
+border-top:none;padding:0cm 5.4pt 0cm 5.4pt'>
+<p class=AmmCorpsTexte>Agranulocytose réversible</p>
+</td>
+<td width=293 valign=top style='width:219.7pt;border-top:none;border-left:
+none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+padding:0cm 5.4pt 0cm 5.4pt'>
+<p class=AmmCorpsTexte>Fréquence indéterminée</p>
+</td>
+</tr>
+<tr>
+<td width=369 valign=top style='width:276.45pt;border:solid windowtext 1.0pt;
+border-top:none;padding:0cm 5.4pt 0cm 5.4pt'>
+<p class=AmmCorpsTexte>Anémie hémolytique</p>
+</td>
+<td width=293 valign=top style='width:219.7pt;border-top:none;border-left:
+none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+padding:0cm 5.4pt 0cm 5.4pt'>
+<p class=AmmCorpsTexte>Fréquence indéterminée</p>
+</td>
+</tr>
+<tr style='height:11.8pt'>
+<td width=369 valign=top style='width:276.45pt;border:solid windowtext 1.0pt;
+border-top:none;padding:0cm 5.4pt 0cm 5.4pt;height:11.8pt'>
+<p class=AmmCorpsTexte>Prolongation du temps de saignement et du temps de Quick<sup>1</sup></p>
+</td>
+<td width=293 valign=top style='width:219.7pt;border-top:none;border-left:
+none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+padding:0cm 5.4pt 0cm 5.4pt;height:11.8pt'>
+<p class=AmmCorpsTexte>Fréquence indéterminée</p>
+</td>
+</tr>
+<tr>
+<td width=662 colspan=2 valign=top style='width:496.15pt;border:solid windowtext 1.0pt;
+border-top:none;padding:0cm 5.4pt 0cm 5.4pt'>
+<p class=AmmCorpsTexteGras>Affections du système immunitaire<sup>8</sup></p>
+</td>
+</tr>
+<tr>
+<td width=369 valign=top style='width:276.45pt;border:solid windowtext 1.0pt;
+border-top:none;padding:0cm 5.4pt 0cm 5.4pt'>
+<p class=AmmCorpsTexte>Œdème de Quincke</p>
+</td>
+<td width=293 valign=top style='width:219.7pt;border-top:none;border-left:
+none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+padding:0cm 5.4pt 0cm 5.4pt'>
+<p class=AmmCorpsTexte>Fréquence indéterminée</p>
+</td>
+</tr>
+<tr>
+<td width=369 valign=top style='width:276.45pt;border:solid windowtext 1.0pt;
+border-top:none;padding:0cm 5.4pt 0cm 5.4pt'>
+<p class=AmmCorpsTexte>Anaphylaxie</p>
+</td>
+<td width=293 valign=top style='width:219.7pt;border-top:none;border-left:
+none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+padding:0cm 5.4pt 0cm 5.4pt'>
+<p class=AmmCorpsTexte>Fréquence indéterminée</p>
+</td>
+</tr>
+<tr>
+<td width=369 valign=top style='width:276.45pt;border:solid windowtext 1.0pt;
+border-top:none;padding:0cm 5.4pt 0cm 5.4pt'>
+<p class=AmmCorpsTexte>Maladie sérique</p>
+</td>
+<td width=293 valign=top style='width:219.7pt;border-top:none;border-left:
+none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+padding:0cm 5.4pt 0cm 5.4pt'>
+<p class=AmmCorpsTexte>Fréquence indéterminée</p>
+</td>
+</tr>
+<tr>
+<td width=369 valign=top style='width:276.45pt;border:solid windowtext 1.0pt;
+border-top:none;padding:0cm 5.4pt 0cm 5.4pt'>
+<p class=AmmCorpsTexte>Vascularite d’hypersensibilité</p>
+</td>
+<td width=293 valign=top style='width:219.7pt;border-top:none;border-left:
+none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+padding:0cm 5.4pt 0cm 5.4pt'>
+<p class=AmmCorpsTexte>Fréquence indéterminée</p>
+</td>
+</tr>
+<tr>
+<td width=662 colspan=2 valign=top style='width:496.15pt;border:solid windowtext 1.0pt;
+border-top:none;padding:0cm 5.4pt 0cm 5.4pt'>
+<p class=AmmCorpsTexteGras>Affections du système nerveux</p>
+</td>
+</tr>
+<tr>
+<td width=369 valign=top style='width:276.45pt;border:solid windowtext 1.0pt;
+border-top:none;padding:0cm 5.4pt 0cm 5.4pt'>
+<p class=AmmCorpsTexte>Étourdissements</p>
+</td>
+<td width=293 valign=top style='width:219.7pt;border-top:none;border-left:
+none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+padding:0cm 5.4pt 0cm 5.4pt'>
+<p class=AmmCorpsTexte>Peu fréquent</p>
+</td>
+</tr>
+<tr>
+<td width=369 valign=top style='width:276.45pt;border:solid windowtext 1.0pt;
+border-top:none;padding:0cm 5.4pt 0cm 5.4pt'>
+<p class=AmmCorpsTexte>Céphalées</p>
+</td>
+<td width=293 valign=top style='width:219.7pt;border-top:none;border-left:
+none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+padding:0cm 5.4pt 0cm 5.4pt'>
+<p class=AmmCorpsTexte>Peu fréquent</p>
+</td>
+</tr>
+<tr>
+<td width=369 valign=top style='width:276.45pt;border:solid windowtext 1.0pt;
+border-top:none;padding:0cm 5.4pt 0cm 5.4pt'>
+<p class=AmmCorpsTexte>Hyperactivité réversible</p>
+</td>
+<td width=293 valign=top style='width:219.7pt;border-top:none;border-left:
+none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+padding:0cm 5.4pt 0cm 5.4pt'>
+<p class=AmmCorpsTexte>Fréquence indéterminée</p>
+</td>
+</tr>
+<tr>
+<td width=369 valign=top style='width:276.45pt;border:solid windowtext 1.0pt;
+border-top:none;padding:0cm 5.4pt 0cm 5.4pt'>
+<p class=AmmCorpsTexte>Convulsions<sup>1</sup></p>
+</td>
+<td width=293 valign=top style='width:219.7pt;border-top:none;border-left:
+none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+padding:0cm 5.4pt 0cm 5.4pt'>
+<p class=AmmCorpsTexte>Fréquence indéterminée</p>
+</td>
+</tr>
+<tr>
+<td width=369 valign=top style='width:276.45pt;border:solid windowtext 1.0pt;
+border-top:none;padding:0cm 5.4pt 0cm 5.4pt'>
+<p class=AmmCorpsTexte>Méningite aseptique</p>
+</td>
+<td width=293 valign=top style='width:219.7pt;border-top:none;border-left:
+none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+padding:0cm 5.4pt 0cm 5.4pt'>
+<p class=AmmCorpsTexte>Fréquence indéterminée</p>
+</td>
+</tr>
+<tr>
+<td width=369 valign=top style='width:276.45pt;border:solid windowtext 1.0pt;
+border-top:none;padding:0cm 5.4pt 0cm 5.4pt'>
+<p class=AmmCorpsTexteGras>Affections cardiaques</p>
+</td>
+<td width=293 valign=top style='width:219.7pt;border-top:none;border-left:
+none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+padding:0cm 5.4pt 0cm 5.4pt'>
+<p class=AmmCorpsTexte> </p>
+</td>
+</tr>
+<tr>
+<td width=369 valign=top style='width:276.45pt;border:solid windowtext 1.0pt;
+border-top:none;padding:0cm 5.4pt 0cm 5.4pt'>
+<p class=AmmCorpsTexte>Syndrome de Kounis</p>
+</td>
+<td width=293 valign=top style='width:219.7pt;border-top:none;border-left:
+none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+padding:0cm 5.4pt 0cm 5.4pt'>
+<p class=AmmCorpsTexte>Fréquence indéterminée</p>
+</td>
+</tr>
+<tr>
+<td width=662 colspan=2 valign=top style='width:496.15pt;border:solid windowtext 1.0pt;
+border-top:none;padding:0cm 5.4pt 0cm 5.4pt'>
+<p class=AmmCorpsTexteGras>Affections gastro-intestinales</p>
+</td>
+</tr>
+<tr>
+<td width=369 valign=top style='width:276.45pt;border:solid windowtext 1.0pt;
+border-top:none;padding:0cm 5.4pt 0cm 5.4pt'>
+<p class=AmmCorpsTexte>Diarrhée</p>
+</td>
+<td width=293 valign=top style='width:219.7pt;border-top:none;border-left:
+none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+padding:0cm 5.4pt 0cm 5.4pt'>
+<p class=AmmCorpsTexte>Très fréquent</p>
+</td>
+</tr>
+<tr>
+<td width=369 valign=top style='width:276.45pt;border:solid windowtext 1.0pt;
+border-top:none;padding:0cm 5.4pt 0cm 5.4pt'>
+<p class=AmmCorpsTexte>Nausée<sup>2</sup></p>
+</td>
+<td width=293 valign=top style='width:219.7pt;border-top:none;border-left:
+none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+padding:0cm 5.4pt 0cm 5.4pt'>
+<p class=AmmCorpsTexte>Fréquent</p>
+</td>
+</tr>
+<tr>
+<td width=369 valign=top style='width:276.45pt;border:solid windowtext 1.0pt;
+border-top:none;padding:0cm 5.4pt 0cm 5.4pt'>
+<p class=AmmCorpsTexte>Vomissements</p>
+</td>
+<td width=293 valign=top style='width:219.7pt;border-top:none;border-left:
+none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+padding:0cm 5.4pt 0cm 5.4pt'>
+<p class=AmmCorpsTexte>Fréquent</p>
+</td>
+</tr>
+<tr>
+<td width=369 valign=top style='width:276.45pt;border:solid windowtext 1.0pt;
+border-top:none;padding:0cm 5.4pt 0cm 5.4pt'>
+<p class=AmmCorpsTexte>Indigestion</p>
+</td>
+<td width=293 valign=top style='width:219.7pt;border-top:none;border-left:
+none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+padding:0cm 5.4pt 0cm 5.4pt'>
+<p class=AmmCorpsTexte>Peu fréquent</p>
+</td>
+</tr>
+<tr>
+<td width=369 valign=top style='width:276.45pt;border:solid windowtext 1.0pt;
+border-top:none;padding:0cm 5.4pt 0cm 5.4pt'>
+<p class=AmmCorpsTexte>Colite associée aux antibiotiques<sup>3</sup></p>
+</td>
+<td width=293 valign=top style='width:219.7pt;border-top:none;border-left:
+none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+padding:0cm 5.4pt 0cm 5.4pt'>
+<p class=AmmCorpsTexte>Fréquence indéterminée</p>
+</td>
+</tr>
+<tr>
+<td width=369 valign=top style='width:276.45pt;border:solid windowtext 1.0pt;
+border-top:none;padding:0cm 5.4pt 0cm 5.4pt'>
+<p class=AmmCorpsTexte>Syndrome d'entérocolite induite par les médicaments</p>
+</td>
+<td width=293 valign=top style='width:219.7pt;border-top:none;border-left:
+none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+padding:0cm 5.4pt 0cm 5.4pt'>
+<p class=AmmCorpsTexte>Fréquence indéterminée</p>
+</td>
+</tr>
+<tr>
+<td width=369 valign=top style='width:276.45pt;border:solid windowtext 1.0pt;
+border-top:none;padding:0cm 5.4pt 0cm 5.4pt'>
+<p class=AmmCorpsTexte>Pancréatite aiguë</p>
+</td>
+<td width=293 valign=top style='width:219.7pt;border-top:none;border-left:
+none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+padding:0cm 5.4pt 0cm 5.4pt'>
+<p class=AmmCorpsTexte>Fréquence indéterminée</p>
+</td>
+</tr>
+<tr>
+<td width=369 valign=top style='width:276.45pt;border:solid windowtext 1.0pt;
+border-top:none;padding:0cm 5.4pt 0cm 5.4pt'>
+<p class=AmmCorpsTexte>Glossophytie</p>
+</td>
+<td width=293 valign=top style='width:219.7pt;border-top:none;border-left:
+none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+padding:0cm 5.4pt 0cm 5.4pt'>
+<p class=AmmCorpsTexte>Fréquence indéterminée</p>
+</td>
+</tr>
+<tr>
+<td width=369 valign=top style='width:276.45pt;border:solid windowtext 1.0pt;
+border-top:none;padding:0cm 5.4pt 0cm 5.4pt'>
+<p class=AmmCorpsTexte>Colorations dentaires<sup>9</sup></p>
+</td>
+<td width=293 valign=top style='width:219.7pt;border-top:none;border-left:
+none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+padding:0cm 5.4pt 0cm 5.4pt'>
+<p class=AmmCorpsTexte>Fréquence indéterminée</p>
+</td>
+</tr>
+<tr>
+<td width=662 colspan=2 valign=top style='width:496.15pt;border:solid windowtext 1.0pt;
+border-top:none;padding:0cm 5.4pt 0cm 5.4pt'>
+<p class=AmmCorpsTexteGras>Affections hépatobiliaires</p>
+</td>
+</tr>
+<tr>
+<td width=369 valign=top style='width:276.45pt;border:solid windowtext 1.0pt;
+border-top:none;padding:0cm 5.4pt 0cm 5.4pt'>
+<p class=AmmCorpsTexte>Élévations des taux d’ASAT et/ou d’ALAT<sup>4</sup></p>
+</td>
+<td width=293 valign=top style='width:219.7pt;border-top:none;border-left:
+none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+padding:0cm 5.4pt 0cm 5.4pt'>
+<p class=AmmCorpsTexte>Peu fréquent</p>
+</td>
+</tr>
+<tr>
+<td width=369 valign=top style='width:276.45pt;border:solid windowtext 1.0pt;
+border-top:none;padding:0cm 5.4pt 0cm 5.4pt'>
+<p class=AmmCorpsTexte>Hépatite<sup>5</sup></p>
+</td>
+<td width=293 valign=top style='width:219.7pt;border-top:none;border-left:
+none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+padding:0cm 5.4pt 0cm 5.4pt'>
+<p class=AmmCorpsTexte>Fréquence indéterminée</p>
+</td>
+</tr>
+<tr>
+<td width=369 valign=top style='width:276.45pt;border:solid windowtext 1.0pt;
+border-top:none;padding:0cm 5.4pt 0cm 5.4pt'>
+<p class=AmmCorpsTexte>Ictère cholestatique<sup>5</sup></p>
+</td>
+<td width=293 valign=top style='width:219.7pt;border-top:none;border-left:
+none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+padding:0cm 5.4pt 0cm 5.4pt'>
+<p class=AmmCorpsTexte>Fréquence indéterminée</p>
+</td>
+</tr>
+<tr>
+<td width=662 colspan=2 valign=top style='width:496.15pt;border:solid windowtext 1.0pt;
+border-top:none;padding:0cm 5.4pt 0cm 5.4pt'>
+<p class=AmmCorpsTexteGras>Affections de la peau et du tissu sous-cutané<sup>6</sup></p>
+</td>
+</tr>
+<tr>
+<td width=369 valign=top style='width:276.45pt;border:solid windowtext 1.0pt;
+border-top:none;padding:0cm 5.4pt 0cm 5.4pt'>
+<p class=AmmCorpsTexte>Éruption cutanée</p>
+</td>
+<td width=293 valign=top style='width:219.7pt;border-top:none;border-left:
+none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+padding:0cm 5.4pt 0cm 5.4pt'>
+<p class=AmmCorpsTexte>Peu fréquent</p>
+</td>
+</tr>
+<tr>
+<td width=369 valign=top style='width:276.45pt;border:solid windowtext 1.0pt;
+border-top:none;padding:0cm 5.4pt 0cm 5.4pt'>
+<p class=AmmCorpsTexte>Prurit</p>
+</td>
+<td width=293 valign=top style='width:219.7pt;border-top:none;border-left:
+none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+padding:0cm 5.4pt 0cm 5.4pt'>
+<p class=AmmCorpsTexte>Peu fréquent</p>
+</td>
+</tr>
+<tr>
+<td width=369 valign=top style='width:276.45pt;border:solid windowtext 1.0pt;
+border-top:none;padding:0cm 5.4pt 0cm 5.4pt'>
+<p class=AmmCorpsTexte>Urticaire</p>
+</td>
+<td width=293 valign=top style='width:219.7pt;border-top:none;border-left:
+none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+padding:0cm 5.4pt 0cm 5.4pt'>
+<p class=AmmCorpsTexte>Peu fréquent</p>
+</td>
+</tr>
+<tr>
+<td width=369 valign=top style='width:276.45pt;border:solid windowtext 1.0pt;
+border-top:none;padding:0cm 5.4pt 0cm 5.4pt'>
+<p class=AmmCorpsTexte>Érythème polymorphe</p>
+</td>
+<td width=293 valign=top style='width:219.7pt;border-top:none;border-left:
+none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+padding:0cm 5.4pt 0cm 5.4pt'>
+<p class=AmmCorpsTexte>Rare</p>
+</td>
+</tr>
+<tr>
+<td width=369 valign=top style='width:276.45pt;border:solid windowtext 1.0pt;
+border-top:none;padding:0cm 5.4pt 0cm 5.4pt'>
+<p class=AmmCorpsTexte>Syndrome de Stevens-Johnson</p>
+</td>
+<td width=293 valign=top style='width:219.7pt;border-top:none;border-left:
+none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+padding:0cm 5.4pt 0cm 5.4pt'>
+<p class=AmmCorpsTexte>Fréquence indéterminée</p>
+</td>
+</tr>
+<tr>
+<td width=369 valign=top style='width:276.45pt;border:solid windowtext 1.0pt;
+border-top:none;padding:0cm 5.4pt 0cm 5.4pt'>
+<p class=AmmCorpsTexte>Épidermolyse nécrosante suraiguë</p>
+</td>
+<td width=293 valign=top style='width:219.7pt;border-top:none;border-left:
+none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+padding:0cm 5.4pt 0cm 5.4pt'>
+<p class=AmmCorpsTexte>Fréquence indéterminée</p>
+</td>
+</tr>
+<tr>
+<td width=369 valign=top style='width:276.45pt;border:solid windowtext 1.0pt;
+border-top:none;padding:0cm 5.4pt 0cm 5.4pt'>
+<p class=AmmCorpsTexte>Dermatite bulleuse ou exfoliatrice </p>
+</td>
+<td width=293 valign=top style='width:219.7pt;border-top:none;border-left:
+none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+padding:0cm 5.4pt 0cm 5.4pt'>
+<p class=AmmCorpsTexte>Fréquence indéterminée</p>
+</td>
+</tr>
+<tr>
+<td width=369 valign=top style='width:276.45pt;border:solid windowtext 1.0pt;
+border-top:none;padding:0cm 5.4pt 0cm 5.4pt'>
+<p class=AmmCorpsTexte>Pustulose exanthématique aiguë généralisée (PEAG)<sup>1</sup></p>
+</td>
+<td width=293 valign=top style='width:219.7pt;border-top:none;border-left:
+none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+padding:0cm 5.4pt 0cm 5.4pt'>
+<p class=AmmCorpsTexte>Fréquence indéterminée</p>
+</td>
+</tr>
+<tr>
+<td width=369 valign=top style='width:276.45pt;border:solid windowtext 1.0pt;
+border-top:none;padding:0cm 5.4pt 0cm 5.4pt'>
+<p class=AmmCorpsTexte>Syndrome d’hypersensibilité médicamenteuse (DRESS)</p>
+</td>
+<td width=293 valign=top style='width:219.7pt;border-top:none;border-left:
+none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+padding:0cm 5.4pt 0cm 5.4pt'>
+<p class=AmmCorpsTexte>Fréquence indéterminée</p>
+</td>
+</tr>
+<tr>
+<td width=369 valign=top style='width:276.45pt;border:solid windowtext 1.0pt;
+border-top:none;padding:0cm 5.4pt 0cm 5.4pt'>
+<p class=AmmCorpsTexte>Exanthème intertrigineux et de flexion symétrique lié au médicament (SDRIFE) (syndrome du babouin)</p>
+</td>
+<td width=293 valign=top style='width:219.7pt;border-top:none;border-left:
+none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+padding:0cm 5.4pt 0cm 5.4pt'>
+<p class=AmmCorpsTexte>Fréquence indéterminée</p>
+</td>
+</tr>
+<tr>
+<td width=369 valign=top style='width:276.45pt;border:solid windowtext 1.0pt;
+border-top:none;padding:0cm 5.4pt 0cm 5.4pt'>
+<p class=AmmCorpsTexte>Dermatose à IgA linéaire</p>
+</td>
+<td width=293 valign=top style='width:219.7pt;border-top:none;border-left:
+none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+padding:0cm 5.4pt 0cm 5.4pt'>
+<p class=AmmCorpsTexte>Fréquence indéterminée</p>
+</td>
+</tr>
+<tr>
+<td width=662 colspan=2 valign=top style='width:496.15pt;border:solid windowtext 1.0pt;
+border-top:none;padding:0cm 5.4pt 0cm 5.4pt'>
+<p class=AmmCorpsTexteGras>Affections du rein et des voies urinaires</p>
+</td>
+</tr>
+<tr>
+<td width=369 valign=top style='width:276.45pt;border:solid windowtext 1.0pt;
+border-top:none;padding:0cm 5.4pt 0cm 5.4pt'>
+<p class=AmmCorpsTexte>Néphrite interstitielle</p>
+</td>
+<td width=293 valign=top style='width:219.7pt;border-top:none;border-left:
+none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+padding:0cm 5.4pt 0cm 5.4pt'>
+<p class=AmmCorpsTexte>Fréquence indéterminée</p>
+</td>
+</tr>
+<tr>
+<td width=369 valign=top style='width:276.45pt;border:solid windowtext 1.0pt;
+border-top:none;padding:0cm 5.4pt 0cm 5.4pt'>
+<p class=AmmCorpsTexte>Cristallurie (incluant des lésions rénales aiguës)<sup>7</sup></p>
+</td>
+<td width=293 valign=top style='width:219.7pt;border-top:none;border-left:
+none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+padding:0cm 5.4pt 0cm 5.4pt'>
+<p class=AmmCorpsTexte>Fréquence indéterminée</p>
+</td>
+</tr>
+<tr>
+<td width=662 colspan=2 valign=top style='width:496.15pt;border:solid windowtext 1.0pt;
+border-top:none;padding:0cm 5.4pt 0cm 5.4pt'>
+<p class=AmmCorpsTexte><sup>1</sup> Voir rubrique 4.4</p>
+<p class=AmmCorpsTexte><sup>2</sup> Les nausées sont plus souvent associées aux doses orales élevées. Les manifestations gastro-intestinales peuvent être atténuées en prenant AUGMENTIN au début d’un repas.</p>
+<p class=AmmCorpsTexte><sup>3 </sup>Y compris colite pseudo-membraneuse et colite hémorragique (voir rubrique 4.4)</p>
+<p class=AmmCorpsTexte><sup>4 </sup>Une élévation modérée des taux d’ASAT et/ou d’ALAT a été notée chez des patients traités par des antibiotiques de la famille des bêta-lactamines, mais la signification de ces augmentations est inconnue.</p>
+<p class=AmmCorpsTexte><sup>5 </sup>Ces effets ont été observés avec d’autres pénicillines et céphalosporines (voir rubrique 4.4). </p>
+<p class=AmmCorpsTexte><sup>6</sup> En cas de survenue de dermatite d’hypersensibilité, le traitement doit être interrompu (voir rubrique 4.4).</p>
+<p class=AmmCorpsTexte><sup>7</sup> Voir rubrique 4.9</p>
+<p class=AmmCorpsTexte><sup>8</sup> Voir rubriques 4.3 et 4.4</p>
+<p class=AmmCorpsTexte><sup>9 </sup>Les colorations dentaires superficielles ont été très rarement constatées chez des enfants. Une bonne hygiène buccale aide à prévenir les colorations dentaires, car celles-ci peuvent généralement être éliminées au brossage.</p>
+</td>
+</tr>
+</table>
+<p class=AmmAnnexeTitre3>Déclaration des effets indésirables suspectés </p>
+<p class=AmmCorpsTexte>La déclaration des effets indésirables suspectés après autorisation du médicament est importante. Elle permet une surveillance continue du rapport bénéfice/risque du médicament. Les professionnels de santé déclarent tout effet indésirable suspecté via le système national de déclaration : Agence nationale de sécurité du médicament et des produits de santé (ANSM) et réseau des Centres Régionaux de Pharmacovigilance - Site internet :<span style='color:red'> </span><a name="_Hlk126920907"></a><a href="https://signalement.social-sante.gouv.fr">https://signalement.social-sante.gouv.fr</a><span class=MsoHyperlink>/</span>.</p>
+<p class="AmmAnnexeTitre2"><a name="RcpSurdosage">4.9. Surdosage</a>&nbsp;&nbsp;<a href='#HautDePage'><img src='img/BackToTop.jpg' width='15px' height='15px' alt='Retour en haut de la page' title='Retour en haut de la page' /></a></p>
+<p class=AmmAnnexeTitre3><a name="_Toc142278931">Signes et symptômes de surdosage</a></p>
+<p class=AmmCorpsTexte>Des symptômes gastro-intestinaux et des troubles de l’équilibre hydro-électrolytique sont possibles. </p>
+<p class=AmmCorpsTexte>Des cas de cristallurie conduisant dans certains cas à une insuffisance rénale ont été observés sous amoxicilline (voir rubrique 4.4).</p>
+<p class=AmmCorpsTexte>Des convulsions sont possibles chez les patients insuffisants rénaux ou ceux recevant des doses élevées.</p>
+<p class=AmmCorpsTexte>Une précipitation de l’amoxicilline a été constatée dans les sondes vésicales, en particulier après administration intraveineuse de doses importantes. Il convient de contrôler régulièrement la perméabilité de la sonde (voir rubrique 4.4).</p>
+<p class=AmmAnnexeTitre3>Traitement de l’intoxication</p>
+<p class=AmmCorpsTexte>Le traitement des signes gastro-intestinaux est symptomatique et fait intervenir une surveillance particulière de l’équilibre hydro-électrolytique.</p>
+<p class=AmmCorpsTexte>L’amoxicilline et l’acide clavulanique peuvent être éliminés de la circulation sanguine par hémodialyse.</p>
+<p class="AmmAnnexeTitre1"><a name="RcpPropPharmacologiques">5. PROPRIETES PHARMACOLOGIQUES</a>&nbsp;&nbsp;<a href='#HautDePage'><img src='img/BackToTop.jpg' width='15px' height='15px' alt='Retour en haut de la page' title='Retour en haut de la page' /></a></p>
+<p class="AmmAnnexeTitre2"><a name="RcpPropPharmacodynamiques">5.1. Propriétés pharmacodynamiques</a>&nbsp;&nbsp;<a href='#HautDePage'><img src='img/BackToTop.jpg' width='15px' height='15px' alt='Retour en haut de la page' title='Retour en haut de la page' /></a></p>
+<p class=AmmCorpsTexteGras><a name="_Toc142278933">Classe pharmacothérapeutique : Association de pénicillines, y compris inhibiteurs de la bêta-lactamase, code ATC : J01CR02</a><span style='font-size:8.0pt'>.</span></p>
+<p class=AmmAnnexeTitre3>Mécanisme d’action</p>
+<p class=AmmCorpsTexte>L’amoxicilline est une pénicilline semi-synthétique (antibiotique de la famille des bêta-lactamines), qui inhibe une ou plusieurs enzymes (souvent désignées par protéines liant la pénicilline ou PLP) de la voie de biosynthèse des peptidoglycanes bactériens, composants structurels de la paroi cellulaire bactérienne. L’inhibition de la synthèse des peptidoglycanes conduit à un affaiblissement de la paroi cellulaire, souvent suivi par la lyse et la mort cellulaires. </p>
+<p class=AmmCorpsTexte>L’amoxicilline étant sujette à la dégradation par les bêta-lactamases produites par les bactéries résistantes, son spectre d’activité lorsqu’elle est administrée seule n’inclut pas les organismes produisant ces enzymes.</p>
+<p class=AmmCorpsTexte>L’acide clavulanique est une bêta-lactamine structurellement liée aux pénicillines. Il inhibe certaines enzymes bêta-lactamases et évite ainsi l’inactivation de l’amoxicilline. L’acide clavulanique n’a pas, à lui seul, un effet antibactérien cliniquement pertinent. </p>
+<p class=AmmAnnexeTitre3>Relation pharmacocinétique/pharmacodynamique</p>
+<p class=AmmCorpsTexte>Le temps au-dessus de la concentration minimale inhibitrice (T &gt; CMI) est considéré comme étant le paramètre majeur de l’efficacité de l’amoxicilline. </p>
+<p class=AmmCorpsTexteGras><span class='souligne'>Mécanismes de résistance</span></p>
+<p class=AmmCorpsTexte>Les deux principaux mécanismes de résistance à l’amoxicilline/acide clavulanique sont :</p>
+<p class=AmmCorpsTexte style='margin-left:18.0pt;text-indent:-18.0pt'><span style='font-size:10.0pt;font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span><span style='font-size:10.0pt;font-family:"Arial",sans-serif'>Inactivation par les bêta-lactamases bactériennes non inhibées par l’acide clavulanique, y compris de classes B, C et D</span></p>
+<p class=AmmCorpsTexte style='margin-left:18.0pt;text-indent:-18.0pt'><span style='font-size:10.0pt;font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span><span style='font-size:10.0pt;font-family:"Arial",sans-serif'>Modification des PLP, qui réduit l’affinité de l’agent antibactérien pour la cible</span></p>
+<p class=AmmCorpsTexte style='margin-top:6.0pt'>L’imperméabilité des bactéries ou les mécanismes de pompe à efflux peuvent entraîner une résistance bactérienne, en particulier chez les bactéries à Gram négatif. </p>
+<p class=AmmAnnexeTitre3>Valeurs critiques pour les tests de sensibilité</p>
+<p class=AmmCorpsTexte style='margin-bottom:0cm;margin-bottom:.0001pt'>Les critères d'interprétation de la CMI (concentration minimale inhibitrice) pour les tests de sensibilité ont été établis par le Comité Européen sur les Tests de Sensibilité aux Antimicrobiens (EUCAST) pour l'amoxicilline/acide clavulanique et sont listés ici : </p>
+<p class=AmmAnnexeTitre3 style='margin-top:0cm'><a href="https://www.ema.europa.eu/documents/other/minimum-inhibitory-concentration-mic-breakpoints_en.xlsx"><span style='font-weight:normal'>https://www.ema.europa.eu/documents/other/minimum-inhibitory-concentration-mic-breakpoints_en.xlsx</span></a></p>
+<p class=AmmCorpsTexte>La prévalence de la résistance peut varier en fonction de la géographie et du temps pour certaines espèces et il est souhaitable de disposer d’informations sur la prévalence de la résistance locale, en particulier pour le traitement des infections sévères. Si nécessaire, il est souhaitable d’obtenir un avis spécialisé lorsque l’intérêt du médicament dans certains types d’infections peut être mis en cause du fait du niveau de la prévalence de la résistance locale. </p>
+<div align=center>
+<table class=AmmCorpsTexteTable border=1 cellspacing=0 cellpadding=0
+style='border-collapse:collapse;border:none'>
+<tr>
+<td width=605 valign=top style='width:454.0pt;border:solid windowtext 1.0pt;
+padding:0cm 5.4pt 0cm 5.4pt'>
+<p class=AmmCorpsTexteGras>Classes</p>
+</td>
+</tr>
+<tr>
+<td width=605 valign=top style='width:454.0pt;border:solid windowtext 1.0pt;
+border-top:none;padding:0cm 5.4pt 0cm 5.4pt'>
+<p class=AmmCorpsTexteGras>Espèces habituellement sensibles</p>
+<p class=AmmCorpsTexteGras>Aérobies à Gram positif </p>
+<p class=AmmCorpsTexte>Enterococcus faecalis </p>
+<p class=AmmCorpsTexte>Gardnerella vaginalis</p>
+<p class=AmmCorpsTexte><span class='italique'>Staphylococcus aureus</span> (sensible à la méticilline)<sup>£</sup></p>
+<p class=AmmCorpsTexte>Staphylocoques à coagulase négative (sensibles à la méticilline)</p>
+<p class=AmmCorpsTexte>Streptococcus agalactiae</p>
+<p class=AmmCorpsTexte>Streptococcus pneumoniae<sup>1</sup> </p>
+<p class=AmmCorpsTexte><span class='italique'>Streptococcus pyogenes</span> et autres streptocoques bêta-hémolytiques</p>
+<p class=AmmCorpsTexte>Groupe des Streptococcus viridans</p>
+<p class=AmmCorpsTexteGras>Aérobies à Gram négatif</p>
+<p class=AmmCorpsTexte>Capnocytophaga spp.</p>
+<p class=AmmCorpsTexte>Eikenella corrodens</p>
+<p class=AmmCorpsTexte>Haemophilus influenzae<sup>2</sup></p>
+<p class=AmmCorpsTexte>Moraxella catarrhalis</p>
+<p class=AmmCorpsTexte>Pasteurella multocida</p>
+<p class=AmmCorpsTexteGras>Anaérobies</p>
+<p class=AmmCorpsTexte>Bacteroides fragilis</p>
+<p class=AmmCorpsTexte>Fusobacterium nucleatum</p>
+<p class=AmmCorpsTexte>Prevotella spp.</p>
+</td>
+</tr>
+<tr>
+<td width=605 valign=top style='width:454.0pt;border:solid windowtext 1.0pt;
+border-top:none;padding:0cm 5.4pt 0cm 5.4pt'>
+<p class=AmmCorpsTexte><span class='gras'>Espèces ayant acquis une résistance potentiellement problématique </span></p>
+<p class=AmmCorpsTexteGras>Aérobies à Gram positif</p>
+<p class=AmmCorpsTexte>Enterococcus faecium<sup>$</sup></p>
+<p class=AmmCorpsTexteGras>Aérobies à Gram négatif</p>
+<p class=AmmCorpsTexte>Escherichia coli</p>
+<p class=AmmCorpsTexte>Klebsiella oxytoca </p>
+<p class=AmmCorpsTexte>Klebsiella pneumoniae</p>
+<p class=AmmCorpsTexte>Proteus mirabilis</p>
+<p class=AmmCorpsTexte>Proteus vulgaris </p>
+</td>
+</tr>
+<tr>
+<td width=605 valign=top style='width:454.0pt;border:solid windowtext 1.0pt;
+border-top:none;padding:0cm 5.4pt 0cm 5.4pt'>
+<p class=AmmCorpsTexteGras>Espèces naturellement résistantes</p>
+<p class=AmmCorpsTexteGras>Aérobies à Gram négatif</p>
+<p class=AmmCorpsTexte>Acinetobacter sp.</p>
+<p class=AmmCorpsTexte>Citrobacter freundii</p>
+<p class=AmmCorpsTexte>Enterobacter sp.</p>
+<p class=AmmCorpsTexte>Legionella pneumophila </p>
+<p class=AmmCorpsTexte>Morganella morganii</p>
+<p class=AmmCorpsTexte>Providencia spp.</p>
+<p class=AmmCorpsTexte>Pseudomonas sp.</p>
+<p class=AmmCorpsTexte>Serratia sp.</p>
+<p class=AmmCorpsTexte>Stenotrophomonas maltophilia</p>
+<p class=AmmCorpsTexteGras>Autres micro-organismes</p>
+<p class=AmmCorpsTexte>Chlamydophila pneumoniae</p>
+<p class=AmmCorpsTexte>Chlamydophila psittaci</p>
+<p class=AmmCorpsTexte>Coxiella burnetti </p>
+<p class=AmmCorpsTexte>Mycoplasma pneumoniae</p>
+</td>
+</tr>
+<tr>
+<td width=605 valign=top style='width:454.0pt;border:solid windowtext 1.0pt;
+border-top:none;padding:0cm 5.4pt 0cm 5.4pt'>
+<p class=AmmCorpsTexte><sup>$</sup> Sensibilité modérée naturelle en l’absence de mécanisme acquis de résistance.</p>
+<p class=AmmCorpsTexte><sup>£ </sup>Tous les staphylocoques résistants à la méticilline sont résistants à l’association amoxicilline/acide clavulanique.</p>
+<p class=AmmCorpsTexte><sup>1</sup> Il est possible que cette formulation de l’association amoxicilline/acide clavulanique ne convienne pas au traitement de <span class='italique'>Streptococcus pneumoniae</span> résistant à la pénicilline (voir rubriques 4.2 et 4.4).</p>
+<p class=AmmCorpsTexte><sup>2 </sup>L’existence de certaines souches de sensibilité diminuée a été rapportée dans certains pays de l’Union Européenne avec une fréquence supérieure à 10%.</p>
+</td>
+</tr>
+</table>
+</div>
+<p class="AmmAnnexeTitre2"><a name="RcpPropPharmacocinetiques">5.2. Propriétés pharmacocinétiques</a>&nbsp;&nbsp;<a href='#HautDePage'><img src='img/BackToTop.jpg' width='15px' height='15px' alt='Retour en haut de la page' title='Retour en haut de la page' /></a></p>
+<p class=AmmAnnexeTitre3><a name="_Toc142278934">Absorption</a></p>
+<p class=AmmCorpsTexte>L’amoxicilline et l’acide clavulanique sont totalement dissociés en solution aqueuse à pH physiologique. Ces deux composants sont rapidement absorbés après administration orale. </p>
+<p class=AmmCorpsTexte>L’absorption de l’amoxicilline/acide clavulanique est améliorée lorsque le médicament est pris en début de repas. </p>
+<p class=AmmCorpsTexte>Après administration orale, l’amoxicilline et l’acide clavulanique présentent une biodisponibilité d’environ 70 %. Les profils plasmatiques de ces deux composants sont similaires et le délai d’obtention de la concentration plasmatique maximale (Tmax) est d’environ une heure dans chaque cas. </p>
+<p class=AmmCorpsTexte>Les résultats pharmacocinétiques d’une étude, dans laquelle l’association amoxicilline/acide clavulanique (poudre pour suspension buvable en sachet 1000 mg/125 mg, trois fois par jour) était administrée à jeun à des groupes de volontaires sains sont présentés ci-dessous. </p>
+<div align=center>
+<table class=AmmCorpsTexteTable border=0 cellspacing=0 cellpadding=0
+style='border-collapse:collapse'>
+<tr style='page-break-inside:avoid'>
+<td width=576 colspan=6 style='width:431.8pt;border:solid windowtext 1.0pt;
+padding:0cm 5.4pt 0cm 5.4pt'>
+<p class=AmmCorpsTexte>Paramètres pharmacocinétiques moyens (<span style='font-family:Symbol'>±</span> DS)</p>
+</td>
+</tr>
+<tr style='page-break-inside:avoid'>
+<td width=136 rowspan=2 style='width:102.0pt;border:solid windowtext 1.0pt;
+border-top:none;padding:0cm 5.4pt 0cm 5.4pt'>
+<p class=AmmCorpsTexte>Substances actives administrées</p>
+</td>
+<td width=77 style='width:57.95pt;border-top:none;border-left:none;
+border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+padding:0cm 5.4pt 0cm 5.4pt'>
+<p class=AmmCorpsTexte>Dose</p>
+</td>
+<td width=94 style='width:70.8pt;border-top:none;border-left:none;border-bottom:
+solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;padding:0cm 5.4pt 0cm 5.4pt'>
+<p class=AmmCorpsTexte>C<sub>max</sub></p>
+</td>
+<td width=96 style='width:72.35pt;border-top:none;border-left:none;
+border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+padding:0cm 5.4pt 0cm 5.4pt'>
+<p class=AmmCorpsTexte>T<sub>max</sub> *</p>
+</td>
+<td width=82 style='width:61.7pt;border-top:none;border-left:none;border-bottom:
+solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;padding:0cm 5.4pt 0cm 5.4pt'>
+<p class=AmmCorpsTexte>ASC <sub>(0-</sub><sub><span style='font-family:Symbol'>¥</span>)</sub></p>
+</td>
+<td width=89 style='width:67.0pt;border-top:none;border-left:none;border-bottom:
+solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;padding:0cm 5.4pt 0cm 5.4pt'>
+<p class=AmmCorpsTexte>T 1/2</p>
+</td>
+</tr>
+<tr style='page-break-inside:avoid'>
+<td width=77 style='width:57.95pt;border-top:none;border-left:none;
+border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+padding:0cm 5.4pt 0cm 5.4pt'>
+<p class=AmmCorpsTexte>(mg)</p>
+</td>
+<td width=94 style='width:70.8pt;border-top:none;border-left:none;border-bottom:
+solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;padding:0cm 5.4pt 0cm 5.4pt'>
+<p class=AmmCorpsTexte>(µg/ml)</p>
+</td>
+<td width=96 style='width:72.35pt;border-top:none;border-left:none;
+border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+padding:0cm 5.4pt 0cm 5.4pt'>
+<p class=AmmCorpsTexte>(h)</p>
+</td>
+<td width=82 style='width:61.7pt;border-top:none;border-left:none;border-bottom:
+solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;padding:0cm 5.4pt 0cm 5.4pt'>
+<p class=AmmCorpsTexte>(µg.h/ml)</p>
+</td>
+<td width=89 style='width:67.0pt;border-top:none;border-left:none;border-bottom:
+solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;padding:0cm 5.4pt 0cm 5.4pt'>
+<p class=AmmCorpsTexte>(h)</p>
+</td>
+</tr>
+<tr style='page-break-inside:avoid'>
+<td width=576 colspan=6 style='width:431.8pt;border:solid windowtext 1.0pt;
+border-top:none;padding:0cm 5.4pt 0cm 5.4pt'>
+<p class=AmmCorpsTexte>Amoxicilline</p>
+</td>
+</tr>
+<tr style='page-break-inside:avoid'>
+<td width=136 style='width:102.0pt;border:solid windowtext 1.0pt;border-top:
+none;padding:0cm 5.4pt 0cm 5.4pt'>
+<p class=AmmCorpsTexte>AMX/AC</p>
+<p class=AmmCorpsTexte>1000 mg/125 mg</p>
+</td>
+<td width=77 style='width:57.95pt;border-top:none;border-left:none;
+border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+padding:0cm 5.4pt 0cm 5.4pt'>
+<p class=AmmCorpsTexte>1000</p>
+</td>
+<td width=94 style='width:70.8pt;border-top:none;border-left:none;border-bottom:
+solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;padding:0cm 5.4pt 0cm 5.4pt'>
+<p class=AmmCorpsTexte>14,4</p>
+<p class=AmmCorpsTexte><span style='font-family:Symbol'>±</span>3,1</p>
+</td>
+<td width=96 style='width:72.35pt;border-top:none;border-left:none;
+border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+padding:0cm 5.4pt 0cm 5.4pt'>
+<p class=AmmCorpsTexte>1,5</p>
+<p class=AmmCorpsTexte>(0,75-2,0)</p>
+</td>
+<td width=82 style='width:61.7pt;border-top:none;border-left:none;border-bottom:
+solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;padding:0cm 5.4pt 0cm 5.4pt'>
+<p class=AmmCorpsTexte>38,2<br> <span style='font-family:Symbol'>±</span> 8,0</p>
+</td>
+<td width=89 style='width:67.0pt;border-top:none;border-left:none;border-bottom:
+solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;padding:0cm 5.4pt 0cm 5.4pt'>
+<p class=AmmCorpsTexte>1,1</p>
+<p class=AmmCorpsTexte><span style='font-family:Symbol'>±</span>0,2</p>
+</td>
+</tr>
+<tr style='page-break-inside:avoid'>
+<td width=576 colspan=6 style='width:431.8pt;border:solid windowtext 1.0pt;
+border-top:none;padding:0cm 5.4pt 0cm 5.4pt'>
+<p class=AmmCorpsTexte>Acide clavulanique</p>
+</td>
+</tr>
+<tr style='page-break-inside:avoid'>
+<td width=136 style='width:102.0pt;border:solid windowtext 1.0pt;border-top:
+none;padding:0cm 5.4pt 0cm 5.4pt'>
+<p class=AmmCorpsTexte>AMX/AC</p>
+<p class=AmmCorpsTexte>1000 mg/125 mg</p>
+</td>
+<td width=77 style='width:57.95pt;border-top:none;border-left:none;
+border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+padding:0cm 5.4pt 0cm 5.4pt'>
+<p class=AmmCorpsTexte>125</p>
+</td>
+<td width=94 style='width:70.8pt;border-top:none;border-left:none;border-bottom:
+solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;padding:0cm 5.4pt 0cm 5.4pt'>
+<p class=AmmCorpsTexte>3,2</p>
+<p class=AmmCorpsTexte><span style='font-family:Symbol'>±</span>0,85</p>
+</td>
+<td width=96 style='width:72.35pt;border-top:none;border-left:none;
+border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+padding:0cm 5.4pt 0cm 5.4pt'>
+<p class=AmmCorpsTexte>1,0<br> (0,75-1,0)</p>
+</td>
+<td width=82 style='width:61.7pt;border-top:none;border-left:none;border-bottom:
+solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;padding:0cm 5.4pt 0cm 5.4pt'>
+<p class=AmmCorpsTexte>6,3</p>
+<p class=AmmCorpsTexte><span style='font-family:Symbol'>±</span>1,8</p>
+</td>
+<td width=89 style='width:67.0pt;border-top:none;border-left:none;border-bottom:
+solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;padding:0cm 5.4pt 0cm 5.4pt'>
+<p class=AmmCorpsTexte>0,91</p>
+<p class=AmmCorpsTexte><span style='font-family:Symbol'>±</span>0,09</p>
+</td>
+</tr>
+<tr>
+<td width=576 colspan=6 style='width:431.8pt;border:solid windowtext 1.0pt;
+border-top:none;padding:0cm 5.4pt 0cm 5.4pt'>
+<p class=AmmCorpsTexte>AMX – amoxicilline, AC – acide clavulanique</p>
+<p class=AmmCorpsTexte>* Médiane (intervalle)</p>
+</td>
+</tr>
+</table>
+</div>
+<p class=AmmCorpsTexte>Les concentrations sériques d’amoxicilline et d’acide clavulanique obtenues avec l’association amoxicilline/acide clavulanique sont similaires à celles obtenues après administration orale de doses équivalentes d’amoxicilline ou d’acide clavulanique seuls.</p>
+<p class=AmmAnnexeTitre3>Distribution</p>
+<p class=AmmCorpsTexte>Environ 25 % de l’acide clavulanique plasmatique total et 18 % de l’amoxicilline plasmatique totale sont liés aux protéines.</p>
+<p class=AmmCorpsTexte>Le volume apparent de distribution est d’environ 0,3 à 0,4 l/kg pour l’amoxicilline et d’environ 0,2 l/kg pour l’acide clavulanique.</p>
+<p class=AmmCorpsTexte>Après administration intraveineuse, l’amoxicilline et l’acide clavulanique ont été détectés dans la vésicule biliaire, le tissu abdominal, la peau, la graisse, les tissus musculaires, les liquides synovial et péritonéal, la bile et le pus. L’amoxicilline ne se distribue pas dans le liquide céphalorachidien de manière adéquate.</p>
+<p class=AmmCorpsTexte>Les études animales n’ont pas montré d’accumulation tissulaire significative de substance dérivée du médicament, pour l’un ou l’autre constituant. L’amoxicilline, comme la majorité des pénicillines, peut être détectée dans le lait maternel. Des traces d’acide clavulanique sont également trouvées dans le lait maternel (voir rubrique 4.6).</p>
+<p class=AmmCorpsTexte>Il a été montré que l’amoxicilline et l’acide clavulanique traversent la barrière placentaire (voir rubrique 4.6).</p>
+<p class=AmmAnnexeTitre3>Biotransformation</p>
+<p class=AmmCorpsTexte>L’amoxicilline est partiellement excrétée dans l’urine sous forme d’acide pénicilloïque inactif, dans une proportion pouvant atteindre 10 à 25 % de la dose initiale. L’acide clavulanique est largement métabolisé chez l’homme et éliminé dans les urines et les selles, et sous forme de dioxyde de carbone dans l’air expiré.</p>
+<p class=AmmAnnexeTitre3>Élimination</p>
+<p class=AmmCorpsTexte>La principale voie d’élimination de l’amoxicilline est rénale, tandis que l’acide clavulanique est éliminé à la fois par des mécanismes rénaux et non rénaux.</p>
+<p class=AmmCorpsTexte>L’association amoxicilline/acide clavulanique possède une demi-vie d’élimination moyenne d’environ une heure et une clairance totale moyenne d’environ 25 l/h chez les sujets sains. Environ 60 à 70 % de l’amoxicilline et environ 40 à 65 % de l’acide clavulanique sont excrétés sous forme inchangée dans l’urine au cours des 6 heures suivant l’administration de comprimés uniques d’AUGMENTIN 250 mg/125 mg ou 500 mg/125 mg. </p>
+<p class=AmmCorpsTexte>Diverses études ont montré que l’excrétion urinaire est de 50 à 85 % pour l’amoxicilline et de 27 à 60 % pour l’acide clavulanique sur une période de 24 heures. Dans le cas de l’acide clavulanique, la majeure partie du médicament est excrétée au cours des 2 premières heures suivant l’administration.</p>
+<p class=AmmCorpsTexte>L’utilisation concomitante de probénécide retarde l’excrétion de l’amoxicilline, mais ne retarde pas l’excrétion rénale de l’acide clavulanique (voir rubrique 4.5).</p>
+<p class=AmmAnnexeTitre3>Age</p>
+<p class=AmmCorpsTexte>La demi-vie d'élimination de l'amoxicilline chez les jeunes enfants âgés d'environ 3 mois à 2 ans est semblable à celle des enfants plus âgés et des adultes. Chez les très jeunes enfants (y compris les nouveau-nés prématurés), pendant la première semaine de vie, l’administration doit se limiter à deux fois par jour en raison de l’immaturité de la voie d’élimination rénale. En raison d’une probabilité accrue de détérioration de la fonction rénale chez les patients âgés, il convient de sélectionner la dose avec soin et il peut être utile de surveiller la fonction rénale.</p>
+<p class=AmmAnnexeTitre3>Sexe</p>
+<p class=AmmCorpsTexte>Après administration orale d’amoxicilline/acide clavulanique à des hommes et des femmes sains, le sexe n’a pas d’incidence significative sur les caractéristiques pharmacocinétiques de l’amoxicilline ni de l’acide clavulanique.</p>
+<p class=AmmAnnexeTitre3>Patients insuffisants rénaux</p>
+<p class=AmmCorpsTexte>La clairance sérique totale de l’association amoxicilline/acide clavulanique diminue proportionnellement à la baisse de la fonction rénale. Une réduction plus prononcée de la clairance du médicament est observée pour l’amoxicilline par rapport à l’acide clavulanique, car une proportion supérieure d’amoxicilline est excrétée par voie rénale. En cas d’insuffisance rénale, la dose doit donc être sélectionnée de manière à éviter une accumulation inutile d’amoxicilline tout en maintenant une concentration adéquate d’acide clavulanique (voir rubrique 4.2).</p>
+<p class=AmmAnnexeTitre3>Patients insuffisants hépatiques</p>
+<p class=AmmCorpsTexte>L’association amoxicilline/acide clavulanique doit être utilisée avec prudence chez les patients insuffisants hépatiques et la fonction hépatique doit être surveillée régulièrement.</p>
+<p class="AmmAnnexeTitre2"><a name="RcpSecuritePreclinique">5.3. Données de sécurité préclinique</a>&nbsp;&nbsp;<a href='#HautDePage'><img src='img/BackToTop.jpg' width='15px' height='15px' alt='Retour en haut de la page' title='Retour en haut de la page' /></a></p>
+<p class=AmmCorpsTexte><a name="_Toc142278935">Les données non cliniques issues des études conventionnelles de pharmacologie de sécurité, génotoxicité, et des fonctions de reproduction n’ont pas révélé de risque particulier pour l’homme.</a></p>
+<p class=AmmCorpsTexte>Les études de toxicologie en administration répétée conduites chez le chien avec l’association amoxicilline/acide clavulanique montrent un potentiel d’irritation gastrique, des vomissements et une décoloration de la langue.</p>
+<p class=AmmCorpsTexte>Il n’a pas été conduit d’études de cancérogenèse avec AUGMENTIN ou ses constituants.</p>
+<p class="AmmAnnexeTitre1"><a name="RcpDonneesPharmaceutiques">6. DONNEES PHARMACEUTIQUES</a>&nbsp;&nbsp;<a href='#HautDePage'><img src='img/BackToTop.jpg' width='15px' height='15px' alt='Retour en haut de la page' title='Retour en haut de la page' /></a></p>
+<p class="AmmAnnexeTitre2"><a name="RcpListeExcipients">6.1. Liste des excipients</a>&nbsp;&nbsp;<a href='#HautDePage'><img src='img/BackToTop.jpg' width='15px' height='15px' alt='Retour en haut de la page' title='Retour en haut de la page' /></a></p>
+<p class=AmmCorpsTexte><a name="_Toc142278937">Crospovidone, dioxyde de silice, arôme pêche-citron-fraise (contenant de la maltodextrine et des traces d’alcool benzylique), aspartam (E951).</a></p>
+<p class="AmmAnnexeTitre2"><a name="RcpIncompatibilites">6.2. Incompatibilités</a>&nbsp;&nbsp;<a href='#HautDePage'><img src='img/BackToTop.jpg' width='15px' height='15px' alt='Retour en haut de la page' title='Retour en haut de la page' /></a></p>
+<p class=AmmCorpsTexte><a name="_Toc142278938">Sans objet.</a></p>
+<p class="AmmAnnexeTitre2"><a name="RcpDureeConservation">6.3. Durée de conservation</a>&nbsp;&nbsp;<a href='#HautDePage'><img src='img/BackToTop.jpg' width='15px' height='15px' alt='Retour en haut de la page' title='Retour en haut de la page' /></a></p>
+<p class=AmmCorpsTexte><a name="_Toc142278939">2 ans.</a></p>
+<p class="AmmAnnexeTitre2"><a name="RcpPrecConservation">6.4. Précautions particulières de conservation</a>&nbsp;&nbsp;<a href='#HautDePage'><img src='img/BackToTop.jpg' width='15px' height='15px' alt='Retour en haut de la page' title='Retour en haut de la page' /></a></p>
+<p class=AmmCorpsTexte><a name="_Toc142278940">A conserver à une température ne dépassant pas 25°C<span class='gras'>.</span></a></p>
+<p class="AmmAnnexeTitre2"><a name="RcpEmballage">6.5. Nature et contenu de l'emballage extérieur </a>&nbsp;&nbsp;<a href='#HautDePage'><img src='img/BackToTop.jpg' width='15px' height='15px' alt='Retour en haut de la page' title='Retour en haut de la page' /></a></p>
+<p class=AmmCorpsTexte><a name="_Toc142278942"></a><a name="_Toc142278941">1,566 g de poudre en sachet-dose (Papier/Aluminium/PE). Boîtes de 8 ou 12 sachets-doses.</a></p>
+<p class=AmmCorpsTexte>Toutes les présentations peuvent ne pas être commercialisées.</p>
+<p class="AmmAnnexeTitre2"><a name="RcpPrecEmpl">6.6. Précautions particulières d’élimination et de manipulation</a>&nbsp;&nbsp;<a href='#HautDePage'><img src='img/BackToTop.jpg' width='15px' height='15px' alt='Retour en haut de la page' title='Retour en haut de la page' /></a></p>
+<p class=AmmCorpsTexte><span lang=FR-BE>Pas d’exigences particulières.</span></p>
+<p class=AmmCorpsTexte><span lang=FR-BE>Tout médicament non utilisé ou déchet doit être éliminé conformément à la réglementation en vigueur.</span></p>
+<p class="AmmAnnexeTitre1"><a name="RcpTitulaireAmm">7. TITULAIRE DE L’AUTORISATION DE MISE SUR LE MARCHE</a>&nbsp;&nbsp;<a href='#HautDePage'><img src='img/BackToTop.jpg' width='15px' height='15px' alt='Retour en haut de la page' title='Retour en haut de la page' /></a></p>
+<p class=AmmCorpsTexteGras style='margin-bottom:0cm;margin-bottom:.0001pt'><a name="_Toc142278943">LABORATOIRE GLAXOSMITHKLINE</a></p>
+<p class=AmmCorpsTexte style='margin-bottom:0cm;margin-bottom:.0001pt'>23, RUE FRANCOIS JACOB</p>
+<p class=AmmCorpsTexte>92500 RUEIL MALMAISON</p>
+<p class="AmmAnnexeTitre1"><a name="RcpNumAutor">8. NUMERO(S) D’AUTORISATION DE MISE SUR LE MARCHE</a>&nbsp;&nbsp;<a href='#HautDePage'><img src='img/BackToTop.jpg' width='15px' height='15px' alt='Retour en haut de la page' title='Retour en haut de la page' /></a></p>
+<p class=AmmListePuces1><a name="_Toc142278944"><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>34009 344 508 5 3 : 1,566 g de poudre en sachet-dose (Papier/Aluminium/PE). Boîte de 8.</a></p>
+<p class=AmmListePuces1><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>34009 344 511 6 4 : 1,566 g de poudre en sachet-dose (Papier/Aluminium/PE). Boîte de 12.</p>
+<p class="AmmAnnexeTitre1"><a name="RcpPremiereAutorisation">9. DATE DE PREMIERE AUTORISATION/DE RENOUVELLEMENT DE L’AUTORISATION</a>&nbsp;&nbsp;<a href='#HautDePage'><img src='img/BackToTop.jpg' width='15px' height='15px' alt='Retour en haut de la page' title='Retour en haut de la page' /></a></p>
+<p class=AmmCorpsTexte><a name="_Toc142278945">[à compléter ultérieurement par le titulaire]</a></p>
+<p class="AmmAnnexeTitre1"><a name="RcpDateRevision">10. DATE DE MISE A JOUR DU TEXTE</a>&nbsp;&nbsp;<a href='#HautDePage'><img src='img/BackToTop.jpg' width='15px' height='15px' alt='Retour en haut de la page' title='Retour en haut de la page' /></a></p>
+<p class=AmmCorpsTexte><a name="_Toc142278946">[à compléter ultérieurement par le titulaire]</a></p>
+<p class="AmmAnnexeTitre1"><a name="RcpDosimetrie">11. DOSIMETRIE</a>&nbsp;&nbsp;<a href='#HautDePage'><img src='img/BackToTop.jpg' width='15px' height='15px' alt='Retour en haut de la page' title='Retour en haut de la page' /></a></p>
+<p class=AmmCorpsTexte>Sans objet.</p>
+<p class="AmmAnnexeTitre1"><a name="RcpInstPrepRadioph">12. INSTRUCTIONS POUR LA PREPARATION DES RADIOPHARMACEUTIQUES</a>&nbsp;&nbsp;<a href='#HautDePage'><img src='img/BackToTop.jpg' width='15px' height='15px' alt='Retour en haut de la page' title='Retour en haut de la page' /></a></p>
+<p class=AmmCorpsTexte><a name="_Toc142278948">Sans objet.</a></p>
+<div style='border:none;border-top:solid windowtext 1.0pt;padding:1.0pt 0cm 0cm 0cm'>
+<p class="AmmAnnexeTitre"><a name="RcpCondPrescription">CONDITIONS DE PRESCRIPTION ET DE DELIVRANCE</a></p>
+</div>
+<p class=AmmCorpsTexte>Liste I</p>
+<span style='font-size:12.0pt;font-family:"Arial",sans-serif;color:#0B3D92'><br
+clear=all>
+</span>					
+					<p class="alignright"><a href="#HautDePage">Retour en haut de la page <img src="img/BackToTop.jpg" width="20px" height="20px" alt="Retour en haut de la page" title="Retour en haut de la page" /></a></p>
+				</div>
+			</div>
+		</div>
+	</div>
+
+<table summary="" class="content" width="1000">
+	<tr>
+		<td height="100px">&nbsp;</td>
+	</tr>
+</table>
+<table summary="Pied de page" class="footer" width="1000">
+	<tr>
+		<td>
+			<table summary="" class="tablealigncenter" border="0">
+				<tr>
+					<td width="100px" class="aligncenter"><a id="lien_ansm" href="http://ansm.sante.fr/" target="_blank"><img src="img/Logo_ANSM.png" width="150" height="60" alt="ANSM - Agence nationale de sécurité du médicament et des produits de santé" title="L'ANSM met à disposition les principales informations issues de l'Autorisation de mise sur le marché, l'appartenance à un groupe générique, les liens vers les informations de sécurité qu'elle publie, l'identification des médicaments sous surveillance renforcée - nouvelle fenêtre" /></a></td>
+					          <td>&nbsp;</td>
+					<td width="100px" class="aligncenter"><img src="img/Logo_HAS.png" width="150" height="60" alt="HAS - Haute autorité de santé" title="La HAS met à disposition les informations relatives au service médical rendu, à l'amélioration du service médical rendu ainsi que les liens vers les avis de la Commission de la Transparence correspondants - nouvelle fenêtre" /></td>
+					<td>&nbsp;</td>
+					<td width="100px" class="aligncenter"><img src="img/Logo_CNAM.png" width="150" height="60" alt="UNCAM - Unin nationale des caisses d'assurance maladie" title="L'UNCAM met à disposition le taux de remboursement, le prix et les indications remboursables le cas échéant, ainsi que l'agrément aux collectivités - nouvelle fenêtre" /></td>
+          				</tr>
+			</table> 
+		</td>
+	</tr>
+</table>
+<table summary="" class="finpage" width="1000">
+	<tr>
+		<td height="100px" class="aligncenter">
+			<a class="navigation" href="plan.php">Plan du site</a>&nbsp;|&nbsp;
+			<a class="navigation" href="accessibilite.php">Accessibilité</a>&nbsp;|&nbsp;
+			<a class="navigation" href="contact.php">Contact</a>&nbsp;|&nbsp;
+			<a class="navigation" href="telechargement.php">Téléchargement</a>&nbsp;|&nbsp;
+			<a class="navigation" href="DeclarationConfidentialite.php">Declaration de confidentialité</a>&nbsp;|&nbsp;
+			<a class="navigation" href="http://www.service-public.fr/" title="Service Public - Nouvelle fenêtre" target="_blank">Service-Public.fr</a>&nbsp;|&nbsp;
+			<a class="navigation" href="http://www.legifrance.gouv.fr/" title="Legifrance - Nouvelle fenêtre" target="_blank">Legifrance</a>&nbsp;|&nbsp;
+			<a class="navigation" href="http://www.gouvernement.fr/" title="Gouvernement - Nouvelle fenêtre" target="_blank" >Gouvernement.fr</a>
+		</td>
+	</tr>
+</table>
+
+
+
+<!-- Matomo -->
+<script type="text/javascript">
+  var _paq = window._paq = window._paq || [];
+  /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
+  _paq.push(['trackPageView']);
+  _paq.push(['enableLinkTracking']);
+  (function() {
+    var u="https://stats.integra.fr/";
+    _paq.push(['setTrackerUrl', u+'matomo.php']);
+    _paq.push(['setSiteId', '79']);
+    var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+    g.type='text/javascript'; g.async=true; g.src=u+'matomo.js'; s.parentNode.insertBefore(g,s);
+  })();
+</script>
+<!-- End Matomo Code -->
+
+
+
+</body>
+</html>

@@ -1,0 +1,447 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="fr" lang="fr">
+<head>
+	<title>Notice patient - ANTARENE 100 mg, comprimé pelliculé  - Base de données publique des médicaments</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=windows-1252"/>
+	<meta name="robots" content="index, follow"/>
+	<meta name="Description" content="Base de données publique des médicaments"/>
+	<meta name="Keywords" content="base, données, publique, médicaments, Notice patient, ANTARENE 100 mg, comprimé pelliculé "/>
+	<meta name="Subject" content="medicament"/>
+	<link href='https://fonts.googleapis.com/css?family=Noticia+Text' rel='stylesheet' type='text/css' />
+	<link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro' rel='stylesheet' type='text/css' />
+	<link href="style/style_bdm.css?v=2.2.3" type="text/css" rel="stylesheet"/>
+	<link href="style/style_RCP_Notice.css" type="text/css" rel="stylesheet"/>
+  <link rel="alternate" href="http://m.base-donnees-publique.medicaments.gouv.fr/#!info-66303681">
+    <script type="text/javascript" src="scripts/autocomplete.js?v=2.2.3"></script>
+	<script type="text/javascript" src="scripts/jquery.js"></script>
+    <script type="text/javascript" src="scripts/jquery-ui.min.js"></script>
+	<script type="text/javascript" src="scripts/common.js"></script>
+	<link rel="icon" type="image/x-icon" href="favicon.ico" />
+</head>
+
+<body>
+
+<a name="HautDePage" />
+<div id="bandeauhaut">
+	<a id="lien_ministere" class="lienmenu" href="http://www.sante.gouv.fr" target="_blank" title="Site du ministère des affaires sociales et de la santé - nouvelle fenêtre"><img id="logoministere" src="img/Logo_Ministere.jpg"  alt="Logo du ministère des affaires sociales et de la santé"/></a>
+	<h1 class="texteTitreSite">
+		Base <span class="texteBleu">de</span> données <span class="texteBleu">publique</span><br/><span class="texteBleu">des</span> médicaments
+	</h1>
+		<a id="lien_medicament_gouv" class="lienEspaceMedic" target="_blank" href="http://medicaments.gouv.fr" title="Visiter [medicaments.gouv.fr] - nouvelle fenêtre">Visiter [medicaments.gouv.fr] <img src="/img/icone_lien.png" alt="Visiter [medicaments.gouv.fr]"  title="Visiter [medicaments.gouv.fr] - nouvelle fenetre" /></a>
+</div>
+<!--div align="center">
+	<a id="banniere" target="_blank" href="http://social-sante.gouv.fr/soins-et-maladies/medicaments/medicaments-generiques/" title="Visiter [medicaments.gouv.fr] - M?dicaments g?n?riques">
+		<img width="1000"   src ="/img/carrouselbannieres.gif" alt="Visiter [medicaments.gouv.fr] - M?dicaments g?n?riques" title="Visiter [medicaments.gouv.fr] - M?dicaments g?n?riques" />
+	</a>
+</div-->
+
+<div id="menuhaut">
+	<span id="menuhaut_gauche">
+		<a id="lien_accueil" class="navigation" href="index.php">Accueil</a>&nbsp;|&nbsp;
+		<a id="lien_glossaire" class="navigation" href="glossaire.php">Glossaire</a>&nbsp;|&nbsp;
+		<a id="lien_aide" class="navigation" href="aide.php">Aide</a>		
+	</span>
+	
+		
+	<span id="menuhaut_dernmaj">
+        <br>Dernière <span title=" 2.4.4
+">mise à jour</span> le 03/03/2025	</span>
+</div>
+
+	<script language="javascript" type="text/javascript">
+		//<![CDATA[ 
+		function Aff(men) {
+			document.write("<ul class=\"menuDoc\">");
+			for(var no_rub=0;no_rub<men.num_rub;no_rub++) {
+				document.write("<li><a class='leftMenu' href='"+menu[no_rub].page+"'>");
+				document.write(men[no_rub].txt);
+				document.write("</a></li>");
+				if (men[no_rub].nb_lien != 0){
+					document.write("<ul class=\"sousMenuDoc\">");
+				}
+				for(var no_lien=0;no_lien<men[no_rub].nb_lien;no_lien++) {
+					document.write("<li><a class='leftMenu' href='"+men[no_rub][no_lien].page+"'>");
+					document.write(men[no_rub][no_lien].txt);
+					document.write("</a></li>");
+				}
+				if (men[no_rub].nb_lien != 0){
+					document.write("</ul>");
+				}
+			}
+			document.write("</ul>");
+		}
+		
+		function CreerMenu(police,imgRub,imgOption,imgOptionFin,hauteur) {
+			this.num_rub=0;
+			this.police=police;
+			this.imgRub=imgRub;
+			this.imgOpt=imgOption;
+			this.imgOptFin=imgOptionFin;
+			this.hauteur=hauteur;
+			this.AddRub=AddRub;
+			this.AddLien=AddLien;
+		}
+		
+		function AddRub(txt,aff,page) {
+			var rub = new Object;
+				rub.txt=txt;
+				rub.aff=aff;
+				rub.page=page;
+				rub.nb_lien=0;
+			this[this.num_rub]=rub;
+			this.num_rub++;
+		}
+
+		function AddLien(txt,page) {
+			var no_rub = this.num_rub-1;
+			var no_lien= this[no_rub].nb_lien;
+			var lien = new Object;
+				lien.txt=txt;
+				lien.page=page;
+			this[no_rub][no_lien]=lien;
+			this[no_rub].nb_lien++;
+		}
+		var menu=new CreerMenu("arial","img/dyn04.gif","img/dyn22.gif","img/dyn55.gif",18);
+		//]]> 
+		menu.AddRub("Description médicament","O","#Ann3bQuestceque");
+			menu.AddRub("Informations","O","#Ann3bInfoNecessaires");
+			menu.AddRub("Utilisation","O","#Ann3bCommentPrendre");
+			menu.AddRub("Effets indésirables","O","#Ann3bEffetsIndesirables");
+			menu.AddRub("Conservation","O","#Ann3bConservation");
+			menu.AddRub("Info. supplémentaires","O","#Ann3bEmballage");
+				</script>
+
+	<div id="container">
+		<div id="leftnav">
+			<div id="cadreMenuGauche">
+				<h2 class="sommaireMenu">Sommaire</h2>
+				<div id="menuGauche">
+					<script language="JavaScript" type="text/javascript">Aff(menu);</script>
+				</div>
+			</div>
+		</div>
+		<div id="contentPrincipal">
+			<div id="boutonsliens">
+				<a id='lien_fiche_info' href='extrait.php?specid=66303681' ><img id="ongletficheinfo" alt="Onglet fiche information" src="img/onglet_fiche_info_vert.png" /></a><a id='lien_rcp' href='affichageDoc.php?specid=66303681&amp;typedoc=R'><img class="onglet" alt="Onglet résumé des caractéristiques du produit" src="img/onglet_rcp_vert.png" /></a><a id='lien_notice' href='affichageDoc.php?specid=66303681&amp;typedoc=N'><img class="onglet" alt="Onglet notice patient" src="img/onglet_notice_gris.png" /></a>			</div>
+			<div class="titredeno">
+				<table summary="" border="0" cellspacing="0">
+					<tr><td colspan="3" height="10px"></td></tr>
+					<tr>
+						<td width="15px">&nbsp;</td>
+						<td width="685px"><h1 class="textedeno">ANTARENE 100 mg, comprimé pelliculé  - Notice patient</h1></td>
+						<td width="43px" class="tdcenter"><a href="Javascript:void(null)" onclick="print();"><img src="img/imprimante.png" height="20px" width="20px" alt="Imprimer le document" title="Imprimer le document" border="0" /></a></td>
+					</tr>
+					<tr><td colspan="3" height="10px"></td></tr>
+				</table>
+			</div>
+			
+			<div id="contentDocument">
+				<div id="textDocument">
+					<p class="DateNotif">ANSM - Mis à jour le : 18/09/2024</p>
+<div style='border:solid windowtext 1.0pt;padding:1.0pt 4.0pt 1.0pt 4.0pt'>
+<p class=AmmCorpsTexteGras align=center style='margin-top:12.0pt;text-align: center;border:none;padding:0cm'>ATTENTION</p>
+<p class=AmmCorpsTexteGras style='border:none;padding:0cm'>ANTARENE 100 mg, comprimé pelliculé QUI EST UN ANTI-INFLAMMATOIRE NON STEROIDIEN (AINS) PEUT ENTRAINER UNE MORT FŒTALE S’IL EST PRIS A PARTIR DU 6<sup>EME</sup> MOIS DE GROSSESSE (24 semaines d’aménorrhée) MEME APRES UNE SEULE PRISE. </p>
+<p class=AmmCorpsTexteGras style='border:none;padding:0cm'>N’utilisez pas ce médicament si vous êtes enceinte de 6 mois et plus (24 semaines d’aménorrhée et plus).</p>
+<p class=AmmCorpsTexteGras style='border:none;padding:0cm'>Avant le 6<sup>ème</sup> mois ou si vous envisagez une grossesse, vous ne devez pas prendre ce médicament, sauf en cas d’absolue nécessité déterminée par votre médecin.</p>
+</div>
+<p class="AmmNoticeTitre1"><a name="Ann3bDenomination">Dénomination du médicament</a></p>
+<p class=AmmCorpsTexte align=center style='margin-bottom:6.0pt;text-align:center'><a name="_Toc142278999"><span class='gras'><span style='font-size:10.0pt;font-family:"Arial",sans-serif'>ANTARENE 100 mg, comprimé pelliculé</span></span></a></p>
+<p class=AmmCorpsTexteGras align=center style='text-align:center'>Ibuprofène</p>
+<p class="AmmNoticeTitre1"><a name="Ann3bEncadre">Encadré</a></p>
+<p class=AmmCorpsTexteGras style='margin-top:6.0pt'><a name="_Toc142279000"><span lang=FR-BE>Veuillez lire attentivement cette notice avant de prendre ce médicament car elle contient des informations importantes pour vous.</span></a></p>
+<p class=AmmCorpsTexte><span lang=FR-BE>Vous devez toujours prendre ce médicament en suivant scrupuleusement les informations fournies dans cette notice ou par votre médecin, votre pharmacien ou votre infirmier/ère.</span></p>
+<p class=AmmListePuces1 style='text-align:justify'><span lang=FR-BE style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span><span lang=FR-BE>Gardez cette notice. Vous pourriez avoir besoin de la relire.</span></p>
+<p class=AmmListePuces1 style='text-align:justify'><span lang=FR-BE style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span><span lang=FR-BE>Adressez-vous à votre pharmacien pour tout conseil ou information.</span></p>
+<p class=AmmListePuces1 style='text-align:justify'><span lang=FR-BE style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span><span lang=FR-BE>Si vous ressentez un quelconque effet indésirable, parlez-en à votre médecin, votre pharmacien ou votre infirmier/ère. Ceci s’applique aussi à tout effet indésirable qui ne serait pas mentionné dans cette notice. </span>Voir rubrique 4.</p>
+<p class=AmmListePuces1 style='text-align:justify'><span style='font-family: Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>Vous devez vous adresser à votre médecin si vous ne ressentez aucune amélioration ou si vous vous sentez moins bien {3 jours}. </p>
+<p class="AmmNoticeTitre1"><a name="Ann3bSomm">Que contient cette notice ?</a></p>
+<p class=AmmCorpsTexte style='margin-top:0cm;margin-right:0cm;margin-bottom: 0cm;margin-left:14.2pt;margin-bottom:.0001pt;text-indent:-14.2pt'>1. Qu'est-ce que ANTARENE 100 mg, comprimé pelliculé et dans quels cas est-il utilisé ?</p>
+<p class=AmmCorpsTexte style='margin-top:0cm;margin-right:0cm;margin-bottom: 0cm;margin-left:14.2pt;margin-bottom:.0001pt;text-indent:-14.2pt'>2. Quelles sont les informations à connaître avant de prendre ANTARENE 100 mg, comprimé pelliculé ?</p>
+<p class=AmmCorpsTexte style='margin-top:0cm;margin-right:0cm;margin-bottom: 0cm;margin-left:14.2pt;margin-bottom:.0001pt;text-indent:-14.2pt'>3. Comment prendre ANTARENE 100 mg, comprimé pelliculé ?</p>
+<p class=AmmCorpsTexte style='margin-top:0cm;margin-right:0cm;margin-bottom: 0cm;margin-left:14.2pt;margin-bottom:.0001pt;text-indent:-14.2pt'>4. Quels sont les effets indésirables éventuels ?</p>
+<p class=AmmCorpsTexte style='margin-top:0cm;margin-right:0cm;margin-bottom: 0cm;margin-left:14.2pt;margin-bottom:.0001pt;text-indent:-14.2pt'>5. Comment conserver ANTARENE 100 mg, comprimé pelliculé ?</p>
+<p class=AmmCorpsTexte style='margin-top:0cm;margin-right:0cm;margin-bottom: 0cm;margin-left:14.2pt;margin-bottom:.0001pt;text-indent:-14.2pt'><span style='color:black'>6. Contenu de l’emballage et autres informations.</span></p>
+<h2><a name="Ann3bQuestceque">1. QU’EST-CE QUE ANTARENE 100 mg, comprimé pelliculé ET DANS QUELS CAS EST-IL UTILISE ?</a>&nbsp;&nbsp;<a href='#HautDePage'><img src='img/BackToTop.jpg' width='15px' height='15px' alt='Retour en haut de la page' title='Retour en haut de la page' /></a></h2>
+<p class=AmmCorpsTexte><a name="_Toc142279003">Classe pharmacothérapeutique - code ATC : AUTRE ANALGESIQUE ET ANTIPYRETIQUE, Code ATC: N02B.</a></p>
+<p class=AmmCorpsTexte><a name="_Toc142279004">Ce médicament contient un anti-inflammatoire non stéroïdien: l'ibuprofène. Il est indiqué, chez l'enfant de 20 kg à 30 kg (soit environ 6 ans à 11-12 ans), dans:</a></p>
+<p class=AmmListePuces1 style='text-align:justify'><span style='font-family: Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>le traitement de courte durée de la fièvre et/ou des douleurs telles que maux de tête, états grippaux, douleurs dentaires, courbatures et règles douloureuses;</p>
+<p class=AmmListePuces1 style='text-align:justify'><span style='font-family: Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>l'arthrite chronique juvénile.</p>
+<h2><a name="Ann3bInfoNecessaires">2. QUELLES SONT LES INFORMATIONS A CONNAITRE AVANT DE PRENDRE ANTARENE 100 mg, comprimé pelliculé ?</a>&nbsp;&nbsp;<a href='#HautDePage'><img src='img/BackToTop.jpg' width='15px' height='15px' alt='Retour en haut de la page' title='Retour en haut de la page' /></a></h2>
+<div style='border:solid windowtext 1.0pt;padding:1.0pt 4.0pt 1.0pt 4.0pt'>
+<p class=AmmCorpsTexteGras style='border:none; padding:0cm'>Ne prenez jamais ANTARENE 100 mg, comprimé pelliculé si vous êtes enceinte de 24 semaines d’aménorrhée et plus (6 mois et plus de grossesse) (voir ci-dessous « Grossesse, allaitement et fertilité »).</p>
+<p class=AmmCorpsTexteGras style='border:none; padding:0cm'>Au cours des 5 premiers mois de grossesse, vous ne devez pas prendre ANTARENE 100 mg, comprimé pelliculé, sauf en cas d’absolue nécessité qui est déterminée par votre médecin.</p>
+<p class=AmmCorpsTexteGras style='border:none; padding:0cm'>Si vous envisagez une grossesse et que vous prenez un AINS, parlez-en à un professionnel de la santé.</p>
+</div>
+<p class=AmmCorpsTexteGras><a name="_Toc142279015">Ne prenez jamais ANTARENE 100 mg, comprimé pelliculé :</a></p>
+<p class=AmmListePuces1 style='text-align:justify'><span style='font-family: Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>si vous êtes allergique à la substance active ou à l’un des autres composants contenus dans ce médicament, mentionnés dans la rubrique 6,</p>
+<p class=AmmListePuces1 style='text-align:justify'><span style='font-family: Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>antécédents d'allergie ou d'asthme déclenchés par la prise de ce médicament ou d'un médicament apparenté, notamment autres anti-inflammatoires non stéroïdiens, acide acétylsalicylique (aspirine),</p>
+<p class=AmmListePuces1 style='text-align:justify'><span style='font-family: Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>si vous êtes enceinte, à partir du début du 6ème mois de grossesse (au-delà de 24 semaines d’aménorrhée),</p>
+<p class=AmmListePuces1 style='text-align:justify'><span style='font-family: Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>antécédents de saignements gastro-intestinaux ou d'ulcères liés à des traitements antérieurs par AINS,</p>
+<p class=AmmListePuces1 style='text-align:justify'><span style='font-family: Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>ulcère ou saignement de l'estomac ou de l'intestin en évolution ou récidivant,</p>
+<p class=AmmListePuces1 style='text-align:justify'><span style='font-family: Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>hémorragie gastro-intestinale, hémorragie cérébrale ou autre hémorragie en cours,</p>
+<p class=AmmListePuces1 style='text-align:justify'><span style='font-family: Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>maladie grave du foie,</p>
+<p class=AmmListePuces1 style='text-align:justify'><span style='font-family: Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>maladie grave des reins,</p>
+<p class=AmmListePuces1 style='text-align:justify'><span style='font-family: Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>maladie grave du cœur,</p>
+<p class=AmmListePuces1 style='text-align:justify'><span style='font-family: Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>lupus érythémateux disséminé,</p>
+<p class=AmmListePuces1 style='text-align:justify'><span style='font-family: Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>enfant de moins de 6 ans car il peut avaler de travers et s'étouffer.</p>
+<p class=AmmCorpsTexteGras style='margin-top:6.0pt'>Avertissements et précautions</p>
+<p class=AmmCorpsTexte>A forte dose, supérieure à 1200 mg/jour, ce médicament possède des propriétés anti-inflammatoires et peut provoquer des inconvénients parfois graves qui sont ceux observés avec les médicaments anti-inflammatoires non-stéroïdiens.</p>
+<p class=AmmCorpsTexte>Les médicaments tels qu'ANTARENE 100 mg, comprimé pelliculé pourraient augmenter le risque de crise cardiaque (&quot;infarctus du myocarde») ou d'accident vasculaire cérébral. Le risque est d'autant plus important que les doses utilisées sont élevées et la durée de traitement prolongée.</p>
+<p class=AmmCorpsTexte>Ne pas dépasser les doses recommandées ni la durée de traitement.</p>
+<p class=AmmCorpsTexte>Si vous avez des problèmes cardiaques, si vous avez eu un accident vasculaire cérébral ou si vous pensez avoir des facteurs de risque pour ce type de pathologie (par exemple en cas de pression artérielle élevée, de diabète, de taux de cholestérol élevé ou si vous fumez), veuillez en parler avec votre médecin ou à votre pharmacien.</p>
+<p class=AmmCorpsTexte>Des signes de réaction allergique à ce médicament, y compris des problèmes respiratoires, un gonflement du visage et du cou (oedème de Quincke), des douleurs thoraciques ont été rapportés avec l’ibuprofène. Arrêtez immédiatement d’utiliser ANTARENE et contactez immédiatement votre médecin ou allez au service des urgences de l’hôpital le plus proche si vous remarquez l’un de ces signes.</p>
+<p class=AmmCorpsTexte>Des réactions cutanées graves, y compris la dermatite exfoliative, l’érythème polymorphe, le syndrome de Stevens-Johnson, la nécrolyse épidermique toxique, la réaction d’hypersensibilité médicamenteuse avec éosinophilie et symptômes systémiques (DRESS ou syndrome d’hypersensibilité), la pustulose exanthématique aiguë généralisée (PEAG) ont été rapportées en association avec le traitement par l’ibuprofène. Arrêtez d'utiliser ANTARENE et consultez immédiatement un médecin si vous notez l’un des symptômes liés à ces réactions cutanées graves décrites dans la rubrique 4.</p>
+<p class=AmmAnnexeTitre3>Mises en garde spéciales</p>
+<p class=AmmCorpsTexte>Si vous êtes une femme, ANTARENE 100 mg, comprimé pelliculé peut altérer votre fertilité. Son utilisation n'est pas recommandée chez les femmes qui souhaitent concevoir un enfant. Chez les femmes qui présentent des difficultés pour procréer ou chez lesquelles des examens sur la fonction de reproduction sont en cours, veuillez en parler à votre médecin ou votre pharmacien avant de prendre ANTARENE 100 mg, comprimé pelliculé.</p>
+<p class=AmmCorpsTexte>Les sujets âgés présentent un risque plus élevé d'effets indésirables, en particulier pour les hémorragies gastro-intestinales, ulcères et perforations. Les fonctions rénales, hépatiques et cardiaques doivent être étroitement surveillées. La posologie doit être la plus faible possible pendant la durée la plus courte nécessaire au soulagement des symptômes.</p>
+<p class=AmmCorpsTexte>L'utilisation de ce médicament est déconseillée chez les patients présentant une intolérance au galactose, un déficit en lactase de Lapp ou un syndrome de malabsorption du glucose ou du galactose (maladies héréditaires rares).</p>
+<p class=AmmCorpsTexte>AVANT D'UTILISER CE MEDICAMENT, CONSULTEZ VOTRE MEDECIN EN CAS:</p>
+<p class=AmmListePuces1 style='text-align:justify'><span style='font-family: Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>d'antécédent d'asthme associé à une rhinite chronique, une sinusite chronique ou des polypes dans le nez. L'administration de cette spécialité peut entraîner une crise d'asthme, notamment chez certains sujets allergiques à l'acide acétylsalicylique (aspirine) ou à un anti-inflammatoire non stéroïdien (<a href="file:///\\DFSSRV\DFSVOL\LNK\AMM\66303681\02-Modifications\2024011600021\4-Correspondance\Antarene%20100%2022-11-21_tracked.doc#Ann3b_ContreIndic_8">voir rubrique &quot;Ne prenez jamais ANTARENE 100 mg, comprimé pelliculé dans les cas suivants&quot;</a>),</p>
+<p class=AmmListePuces1 style='text-align:justify'><span style='font-family: Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>de troubles de la coagulation, de prise d'un traitement anticoagulant. Ce médicament peut entraîner des manifestations gastro-intestinales graves,</p>
+<p class=AmmListePuces1 style='text-align:justify'><span style='font-family: Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>d'antécédents digestifs (hernie hiatale, hémorragie digestive, ulcère de l'estomac ou du duodénum anciens),</p>
+<p class=AmmListePuces1 style='text-align:justify'><span style='font-family: Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>de maladie du cœur, du foie ou du rein,</p>
+<p class=AmmListePuces1 style='text-align:justify'><span style='font-family: Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>de varicelle. Ce médicament est déconseillé en raison d'exceptionnelles infections graves de la peau,</p>
+<p class=AmmListePuces1 style='text-align:justify'><span style='font-family: Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>de traitement concomitant avec d'autres médicaments qui augmentent le risque d'ulcère gastroduodénal ou hémorragie, par exemple des corticoïdes oraux, des antidépresseurs (ceux de type ISRS, c'est-à-dire Inhibiteurs Sélectifs de la Recapture de la Sérotonine), des médicaments prévenant la formation de caillots sanguins tels que l'aspirine ou les anticoagulants tels que la warfarine. Si vous êtes dans un de ces cas, consultez votre médecin avant de prendre ANTARENE 100 mg, comprimé pelliculé (<a href="file:///\\DFSSRV\DFSVOL\LNK\AMM\66303681\02-Modifications\2024011600021\4-Correspondance\Antarene%20100%2022-11-21_tracked.doc#Ann3b_Interactions_10">voir rubrique &quot;Prise ou utilisation d'autres médicaments&quot;</a>),</p>
+<p class=AmmListePuces1 style='text-align:justify'><span style='font-family: Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>de traitement concomitant avec du méthotrexate à des doses supérieures à 20 mg par semaine ou avec du pemetrexed (<a href="file:///\\DFSSRV\DFSVOL\LNK\AMM\66303681\02-Modifications\2024011600021\4-Correspondance\Antarene%20100%2022-11-21_tracked.doc#Ann3b_Interactions_10">voir rubrique &quot;Prise ou utilisation d'autres médicaments&quot;</a>).</p>
+<p class=AmmListePuces1><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>d'infections</p>
+<p class=AmmCorpsTexte style='margin-left:17.85pt'>ANTARENE 100 mg peut masquer des signes d'infections tels que fièvre et douleur. Il est donc possible qu'ANTARENE 100 mg retarde la mise en place d'un traitement adéquat de l'infection, ce qui peut accroître les risques de complications. C'est ce que l'on a observé dans le cas de pneumonies d'origine bactérienne et d'infections cutanées bactériennes liées à la varicelle. Si vous prenez ce médicament alors que vous avez une infection et que les symptômes de cette infection persistent ou qu'ils s'aggravent, consultez immédiatement un médecin.</p>
+<p class=AmmCorpsTexte style='margin-top:6.0pt'>AU COURS DU TRAITEMENT, EN CAS:</p>
+<p class=AmmListePuces1 style='text-align:justify'><span style='font-family: Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>de troubles de la vue, PREVENEZ VOTRE MEDECIN,</p>
+<p class=AmmListePuces1 style='text-align:justify'><span style='font-family: Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>d'hémorragie gastro-intestinale (rejet de sang par la bouche ou dans les selles, coloration des selles en noir), ARRETEZ LE TRAITEMENT ET CONTACTEZ IMMEDIATEMENT UN MEDECIN OU UN SERVICE MEDICAL D'URGENCE,</p>
+<p class=AmmListePuces1><span style='font-family: Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>de réactions cutanées</p>
+<p class=AmmCorpsTexte style='margin-left:17.85pt;page-break-after:avoid'>Des réactions cutanées graves ont été rapportées en association avec un traitement à base d'ANTARENE 100 mg, comprimé pelliculé. Arrêtez de prendre ANTARENE 100 mg et consulter immédiatement un médecin si vous développez une éruption cutanée, des lésions des muqueuses, des cloques, des signes cutanés ou muqueux qui ressemblent à une brûlure (rougeurs avec bulles ou cloques, ulcérations), rougeur de la peau, rash ou tout autre signe d’allergie, car il peut s’agir des premiers signes d’une réaction cutanée très grave. Voir rubrique 4. </p>
+<p class=AmmListePuces1 style='text-align:justify'><span style='font-family: Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>de signes évocateurs d'allergie à ce médicament, notamment une crise d'asthme ou brusque gonflement du visage et du cou (<a href="file:///\\DFSSRV\DFSVOL\LNK\AMM\66303681\02-Modifications\2024011600021\4-Correspondance\Antarene%20100%2022-11-21_tracked.doc#Ann3b_4_EffetsIndesirables_11">voir rubrique «Quels sont les effets indésirables éventuels?»</a>), ARRETEZ LE TRAITEMENT ET CONTACTEZ IMMEDIATEMENT UN MEDECIN OU UN SERVICE MEDICAL D'URGENCE.</p>
+<table class=AmmCorpsTexteTable border=1 cellspacing=0 cellpadding=0
+style='border-collapse:collapse;border:none'>
+<tr>
+<td width=667 valign=top style='width:500.2pt;border:solid windowtext 1.5pt;
+padding:0cm 3.5pt 0cm 3.5pt'>
+<p class=AmmCorpsTexte>Ce médicament contient un anti-inflammatoire non stéro<span class='souligne'><span style='color:blue'>ïdien: l'<span class='gras'>ibuprofène</span>. </span></span></p>
+<p class=AmmCorpsTexte><span class='souligne'><span style='color:blue'>Vous ne devez pas prendre en même temps</span></span> que ce médicament d'autres médicaments contenant des anti-inflammatoires non stéroïdiens (y compris les inhibiteurs sélectifs de la cyclooxygénase 2) et/ou de l'acide acétylsalicylique (aspirine). Lisez attentivement les notices des autres médicaments que vous prenez afin de vous assurer de l'absence d'anti-inflammatoires non stéroïdiens et/ou de l'acide acétylsalicylique (aspirine).</p>
+</td>
+</tr>
+</table>
+<p class=AmmCorpsTexteGras style='margin-top:6.0pt'>Autres médicaments et ANTARENE 100 mg, comprimé pelliculé</p>
+<p class=AmmCorpsTexte>VEUILLEZ INDIQUER A VOTRE MEDECIN OU A VOTRE PHARMACIEN SI VOUS PRENEZ OU AVEZ PRIS RECEMMENT UN AUTRE MEDICAMENT, MEME S'IL S'AGIT D'UN MEDICAMENT OBTENU SANS ORDONNANCE.</p>
+<p class=AmmCorpsTexte>CERTAINS MEDICAMENTS NE PEUVENT PAS ETRE UTILISES EN MEME TEMPS, ALORS QUE D'AUTRES MEDICAMENTS REQUIERENT DES CHANGEMENTS SPECIFIQUES (DE DOSE, PAR EXEMPLE).</p>
+<p class=AmmCorpsTexte>Toujours informer votre médecin, dentiste ou pharmacien, si vous prenez un des médicaments suivants en plus d'ANTARENE 100 mg, comprimé pelliculé:</p>
+<p class=AmmListePuces1 style='text-align:justify'><span style='font-family: Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>aspirine (acide acétylsalicylique) ou d'autres anti-inflammatoires non stéroïdiens</p>
+<p class=AmmListePuces1 style='text-align:justify'><span style='font-family: Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>corticostéroïdes</p>
+<p class=AmmListePuces1 style='text-align:justify'><span style='font-family: Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>anticoagulants oraux comme la warfarine, héparine injectable, antiagrégants plaquettaires ou autres thrombolytiques comme la ticlopidine</p>
+<p class=AmmListePuces1 style='text-align:justify'><span style='font-family: Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>lithium</p>
+<p class=AmmListePuces1 style='text-align:justify'><span style='font-family: Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>méthotrexate</p>
+<p class=AmmListePuces1 style='text-align:justify'><span style='font-family: Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>inhibiteurs de l'enzyme de conversion de l'angiotensine, diurétiques, bêta-bloquants et antagonistes de l'angiotensine II</p>
+<p class=AmmListePuces1 style='text-align:justify'><span style='font-family: Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>certains antidépresseurs (inhibiteurs sélectifs de la recapture de la sérotonine)</p>
+<p class=AmmListePuces1 style='text-align:justify'><span style='font-family: Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>pemetrexed</p>
+<p class=AmmListePuces1 style='text-align:justify'><span style='font-family: Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>ciclosporine, tacrolimus.</p>
+<p class=AmmCorpsTexteGras style='margin-top:6.0pt'>ANTARENE 100 mg, comprimé pelliculé avec des aliments, boissons et de l’alcool</p>
+<p class=AmmCorpsTexte>Sans objet.</p>
+<p class=AmmCorpsTexteGras><a name="_Toc142279012">Grossesse, allaitement et fertilité</a></p>
+<p class=AmmCorpsTexteGras><span lang=FR-BE>Si vous êtes enceinte ou que vous allaitez, si vous pensez être enceinte ou planifiez une grossesse, demandez conseil à votre médecin ou pharmacien avant de prendre tout médicament.</span></p>
+<p class=AmmAnnexeTitre3>Grossesse</p>
+<p class=AmmCorpsTexte><span class='gras'>A partir du début du 6ème mois </span>(24<sup>ème</sup> semaine d’aménorrhée)<span class='gras'> jusqu’à la fin de la grossesse</span>, ANTARENE 100 mg, comprimé pelliculé<span style='color:red'> </span>est <span class='gras'>contre-indiqué. </span>Au cours de cette période, vous ne devez <span class='gras'>EN AUCUN CAS</span> prendre ce médicament, car ses effets sur votre enfant à naître peuvent avoir des conséquences graves voire fatales. Notamment, il a été observé une toxicité pour le cœur, les poumons et/ou les reins, et cela <span class='gras'>même avec une seule prise</span>. Cela peut également avoir des répercussions sur vous et votre bébé en favorisant les saignements et entraîner un accouchement plus tardif ou plus long que prévu. </p>
+<p class=AmmCorpsTexte><span class='gras'>Avant le début du 6<sup>ème</sup> mois </span>(jusqu’à la 24<sup>ème</sup> semaine d’aménorrhée) <span class='gras'>ou si vous envisagez une grossesse</span>, vous ne devez pas prendre ce médicament, sauf en cas d’absolue nécessité. Celle-ci sera déterminée par votre médecin. Le cas échéant, la dose devra être la plus faible possible et la durée du traitement la plus courte possible. </p>
+<p class=AmmCorpsTexte>En effet, les AINS, dont fait partie ANTARENE 100 mg, comprimé pelliculé,<span class='gras'> </span>peuvent causer des fausses couches et pour certains, des malformations après une exposition en début de grossesse. </p>
+<p class=AmmCorpsTexte>À partir de 2 mois et demi de grossesse (12 semaines d’aménorrhée), ANTARENE 100 mg, comprimé pelliculé<span style='color:red'> </span>peut provoquer des problèmes rénaux chez votre bébé, s’il est pris pendant plusieurs jours, ce qui peut entraîner un faible niveau du liquide amniotique dans lequel il se trouve (oligoamnios). </p>
+<p class=AmmCorpsTexte>Dès le début du 5<sup>ème</sup> mois de grossesse (20 semaines d’aménorrhée), un rétrécissement des vaisseaux sanguins au niveau du cœur de votre bébé (constriction du canal artériel) peut s’observer. Si un traitement de plusieurs jours est nécessaire pendant le 5<sup>ème</sup> mois de grossesse (entre 20 et 24 semaines d’aménorrhée), votre médecin peut recommander une surveillance supplémentaire.</p>
+<p class=AmmCorpsTexteGras>Si vous avez pris ce médicament alors que vous étiez enceinte, parlez-en immédiatement à votre médecin, afin qu’une surveillance adaptée vous soit proposée si nécessaire.<a name=Bodyblank></a></p>
+<p class=AmmAnnexeTitre3><span lang=FR-BE>Allaitement</span></p>
+<p class=AmmCorpsTexte>Ce médicament passant dans le lait maternel, il est déconseillé de l'utiliser pendant l'allaitement.</p>
+<p class=AmmAnnexeTitre3><span lang=FR-BE>Fertilité</span></p>
+<p class=AmmCorpsTexte><span lang=FR-BE>Ce médicament, comme tous les anti-inflammatoires non stéroïdiens (AINS), peut altérer la fertilité des femmes et entraîner des difficultés pour devenir enceinte, de façon réversible à l’arrêt du traitement. Informez votre médecin si vous planifiez une grossesse ou si vous avez des difficultés à concevoir.</span></p>
+<p class=AmmCorpsTexteGras>Conduite de véhicules et utilisation de machines</p>
+<p class=AmmCorpsTexte>Dans de rares cas, la prise de ce médicament peut entraîner des vertiges et des troubles de la vue.</p>
+<p class=AmmCorpsTexteGras>ANTARENE 100 mg, comprimé pelliculé contient du lactose.</p>
+<h2><a name="Ann3bCommentPrendre">3. COMMENT PRENDRE ANTARENE 100 mg, comprimé pelliculé ?</a>&nbsp;&nbsp;<a href='#HautDePage'><img src='img/BackToTop.jpg' width='15px' height='15px' alt='Retour en haut de la page' title='Retour en haut de la page' /></a></h2>
+<p class=AmmCorpsTexte><a name="_Toc142279021">Veillez à toujours prendre ce médicament en suivant exactement les indications de votre médecin ou pharmacien. Vérifiez auprès de votre médecin ou pharmacien en cas de doute.</a></p>
+<p class=AmmCorpsTexte style='margin-bottom:6.0pt'><span class='gras'><span class='souligne'><span style='font-size: 10.0pt;font-family:"Arial",sans-serif'>Posologie</span></span></span></p>
+<p class=AmmCorpsTexte style='margin-bottom:6.0pt'><span style='font-size:10.0pt; font-family:"Arial",sans-serif'>ADAPTE A L'ENFANT DE 20 KG A 30 KG (soit environ 6 ans à 11-12 ans).</span></p>
+<p class=AmmCorpsTexte><span lang=X-NONE>Pour atténuer les symp</span>tôme<span lang=X-NONE>s, la dose efficace la plus faible devra être utilisée pendant la durée la plus courte possible. Si vous avez une infection et que les symp</span>tôme<span lang=X-NONE>s (tels que fièvre et douleur) persistent ou s'ils s'aggravent, consultez immédiatement un médecin (voir rubrique 2).</span></p>
+<p class=AmmAnnexeTitre4>Affections douloureuses et/ou fébriles</p>
+<p class=AmmCorpsTexte>Chez l'enfant, la posologie usuelle est de 20 à 30 mg/kg/jour en 3 prises par jour (sans dépasser 30 mg/kg/jour).</p>
+<p class=AmmCorpsTexte><span class='souligne'>Chez l'enfant de 20 à 30 kg</span> (environ 6 à 11 ans): 2 comprimés (200 mg), à renouveler si besoin au bout de 6 heures. Dans tous les cas, ne pas dépasser 6 comprimés par jour (600 mg).</p>
+<p class=AmmCorpsTexte><span class='souligne'>Chez l'enfant de plus de 30 kg</span> (environ 11-12 ans): il existe des dosages plus adaptés.</p>
+<p class=AmmCorpsTexte>Le sujet âgé présentant un risque accru d'effets indésirables, utilisez la dose la plus faible possible pendant la durée la plus courte nécessaire au soulagement des symptômes.</p>
+<p class=AmmCorpsTexte>Ne pas dépasser les doses recommandées ni la durée de traitement (3 jours en cas de fièvre, 5 jours en cas de douleur).</p>
+<p class=AmmAnnexeTitre4>Arthrite chronique juvénile</p>
+<p class=AmmCorpsTexte>La posologie usuelle est de 30 à 40 mg/kg/jour en 4 prises par jour.</p>
+<p class=AmmAnnexeTitre3>Mode et voie d'administration</p>
+<p class=AmmCorpsTexte>Voie orale.</p>
+<p class=AmmCorpsTexte>Avaler le comprimé, sans le croquer, avec un grand verre d'eau.</p>
+<p class=AmmCorpsTexte>Les comprimés sont à prendre de préférence au cours d'un repas.</p>
+<p class=AmmAnnexeTitre3>Fréquence d'administration</p>
+<p class=AmmCorpsTexte>Les prises systématiques permettent d'éviter les oscillations de douleur ou de fièvre.</p>
+<p class=AmmCorpsTexte>Elles doivent être espacées d'au moins 6 heures.</p>
+<p class=AmmAnnexeTitre3>Durée du traitement</p>
+<table class=AmmCorpsTexteTable border=1 cellspacing=0 cellpadding=0
+style='border-collapse:collapse;border:none'>
+<tr>
+<td width=667 valign=top style='width:500.2pt;border:solid windowtext 1.5pt;
+padding:0cm 3.5pt 0cm 3.5pt'>
+<p class=AmmCorpsTexte>La durée d'utilisation est limitée à:</p>
+<p class=AmmListePuces1><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>3 jours en cas de fièvre,</p>
+<p class=AmmListePuces1><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>5 jours en cas de douleurs.</p>
+</td>
+</tr>
+</table>
+<p class=AmmCorpsTexte>Si la douleur persiste plus de 5 jours ou la fièvre plus de 3 jours, ou si elles s'aggravent ou en cas de survenue d'un autre trouble, en informer votre médecin.</p>
+<p class=AmmCorpsTexte>Si vous avez l'impression que l'effet d'ANTARENE 100 mg, comprimé pelliculé, est trop fort ou trop faible: consultez votre médecin ou votre pharmacien.</p>
+<p class=AmmCorpsTexteGras>Si vous avez pris plus de ANTARENE 100 mg, comprimé pelliculé que vous n’auriez dû</p>
+<p class=AmmCorpsTexte>En cas de surdosage accidentel ou d'intoxication, <span class='souligne'>ARRETEZ LE TRAITEMENT ET CONSULTEZ RAPIDEMENT UN MEDECIN</span>.</p>
+<p class=AmmCorpsTexteGras>Si vous oubliez de prendre ANTARENE 100 mg, comprimé pelliculé</p>
+<p class=AmmCorpsTexte>Ne prenez pas de dose double pour compenser le comprimé que vous avez oublié de prendre.</p>
+<p class=AmmCorpsTexteGras>Si vous arrêtez de prendre ANTARENE 100 mg, comprimé pelliculé </p>
+<p class=AmmCorpsTexte>Sans objet.</p>
+<h2><a name="Ann3bEffetsIndesirables">4. QUELS SONT LES EFFETS INDESIRABLES EVENTUELS ?</a>&nbsp;&nbsp;<a href='#HautDePage'><img src='img/BackToTop.jpg' width='15px' height='15px' alt='Retour en haut de la page' title='Retour en haut de la page' /></a></h2>
+<p class=AmmCorpsTexte><a name="_Toc142279023">Comme tous les médicaments, ce médicament peut provoquer des effets indésirables, mais ils ne surviennent pas systématiquement chez tout le monde.</a></p>
+<p class=AmmCorpsTexte style='margin-bottom:6.0pt'><span style='font-size:10.0pt; font-family:"Arial",sans-serif'>Les médicaments tels qu'ANTARENE 100 mg, comprimé pelliculé pourraient augmenter le risque de crise cardiaque (infarctus du myocarde) ou d'accident vasculaire cérébral.</span></p>
+<p class=AmmCorpsTexte>Peuvent survenir des réactions allergiques:</p>
+<p class=AmmListePuces1 style='text-align:justify'><span style='font-family: Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>cutanées: éruption sur la peau, démangeaisons, œdème, aggravation d'urticaire chronique,</p>
+<p class=AmmListePuces1 style='text-align:justify'><span style='font-family: Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>respiratoires, de type crise d'asthme,</p>
+<p class=AmmListePuces1 style='text-align:justify'><span style='font-family: Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>généralisées: brusque gonflement du visage et du cou avec gêne respiratoire (œdème de Quincke).</p>
+<p class=AmmCorpsTexte>Dans certains cas rares, il est possible que survienne une hémorragie gastro-intestinale (<a href="file:///\\DFSSRV\DFSVOL\LNK\AMM\66303681\02-Modifications\2024011600021\4-Correspondance\Antarene%20100%2022-11-21_tracked.doc#Ann3b_MisesEnGarde_9">voir rubrique &quot;Prendre des précautions particulières avec ANTARENE 100 mg, comprimé pelliculé&quot;</a>). Celle-ci est d'autant plus fréquente que la posologie utilisée est élevée.</p>
+<p class=AmmCorpsTexte>Exceptionnellement maux de tête accompagnés de nausées, de vomissements et de raideur de la nuque.</p>
+<p class=AmmCorpsTexte>Douleur thoracique, qui peut être le signe d’une réaction allergique potentiellement grave appelée syndrome de Kounis.</p>
+<p class=AmmCorpsTexte><span lang=FR-BE>Tâches rougeâtres non surélevées, en forme de cibles ou de cercles, sur le tronc, souvent accompagnées de cloques centrales, d’une desquamation de la peau, d’ulcères de la bouche, de la gorge, du nez, des organes génitaux et des yeux. Ces graves rashs cutanés peuvent être précédés par de la fièvre et des symptômes grippaux [dermatite exfoliative, érythème polymorphe, syndrome de Stevens-Johnson, nécrolyse épidermique toxique].</span></p>
+<p class=AmmCorpsTexte>Eruption cutanée généralisée, température corporelle élevée et gonflement des ganglions lymphatiques (DRESS ou syndrome d’hypersensibilité).</p>
+<p class=AmmCorpsTexte>Eruption cutanée généralisée rouge et squameuse avec des bosses sous la peau et des vésicules s’accompagnant de fièvre. Les symptômes apparaissent généralement dès l’instauration du traitement (pustulose exanthématique aiguë généralisée).</p>
+<p class=AmmCorpsTexte>Si vous développez ces symptômes, arrêtez d’utiliser ANTARENE 100 mg et consultez immédiatement un médecin. Voir également rubrique 2. </p>
+<p class=AmmCorpsTexte>Sensibilité de la peau à la lumière - fréquence inconnue</p>
+<p class=AmmCorpsTexte>Exceptionnellement, des infections graves de la peau ont été observées en cas de varicelle.</p>
+<p class=AmmCorpsTexteGras>Dans tous ces cas, il faut immédiatement arrêter le traitement et avertir votre médecin.</p>
+<p class=AmmCorpsTexte>Au cours du traitement, il est possible que surviennent:</p>
+<p class=AmmListePuces1 style='text-align:justify'><span style='font-family: Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>des troubles digestifs: maux d'estomac, vomissements, nausées, diarrhée, constipation,</p>
+<p class=AmmListePuces1 style='text-align:justify'><span style='font-family: Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>exceptionnellement, vertiges, maux de tête, rares troubles de la vue, diminution importante des urines, insuffisance rénale.</p>
+<p class=AmmCorpsTexteGras style='margin-top:6.0pt'>Dans tous ces cas, il faut en <span class='souligne'>avertir votre médecin.</span></p>
+<p class=AmmCorpsTexte>Exceptionnellement, ont été observées des modifications du bilan hépatique ou de la formule sanguine (baisse des globules blancs ou des globules rouges) pouvant être graves.</p>
+<p class=AmmCorpsTexteGras>Déclaration des effets secondaires</p>
+<p class=AmmCorpsTexte>Si vous ressentez un quelconque effet indésirable, parlez-en à votre médecin, votre pharmacien ou à votre infirmier/ère. Ceci s’applique aussi à tout effet indésirable qui ne serait pas mentionné dans cette notice. Vous pouvez également déclarer les effets indésirables directement via le système national de déclaration : Agence nationale de sécurité du médicament et des produits de santé (ANSM) et réseau des Centres Régionaux de Pharmacovigilance - Site internet:<span style='color:red'> </span><a href="https://signalement.social-sante.gouv.fr/">https://signalement.social-sante.gouv.fr/</a></p>
+<p class=AmmCorpsTexte>En signalant les effets indésirables, vous contribuez à fournir davantage d’informations sur la sécurité du médicament.</p>
+<h2><a name="Ann3bConservation">5. COMMENT CONSERVER ANTARENE 100 mg, comprimé pelliculé ?</a>&nbsp;&nbsp;<a href='#HautDePage'><img src='img/BackToTop.jpg' width='15px' height='15px' alt='Retour en haut de la page' title='Retour en haut de la page' /></a></h2>
+<p class=AmmCorpsTexte><a name="_Toc142279026"></a><a name="_Toc142279024">Tenir ce médicament hors de la vue et de la portée des enfants.</a></p>
+<p class=AmmCorpsTexte><span lang=FR-BE>N’utilisez pas ce médicament après la date de péremption indiquée sur l’emballage après {abréviation utilisée pour la date d’expiration}. La date de péremption fait référence au dernier jour de ce mois.</span></p>
+<p class=AmmCorpsTexte><span lang=FR-BE>Ne jetez aucun médicament au tout-à-l’égout &lt;<span style='color:black'>ou avec </span>les ordures ménagères. Demandez à votre pharmacien d’éliminer les médicaments que vous n’utilisez plus. Ces mesures contribueront à protéger l’environnement.</span></p>
+<h2><a name="Ann3bEmballage">6. CONTENU DE L’EMBALLAGE ET AUTRES INFORMATIONS</a>&nbsp;&nbsp;<a href='#HautDePage'><img src='img/BackToTop.jpg' width='15px' height='15px' alt='Retour en haut de la page' title='Retour en haut de la page' /></a></h2>
+<p class="AmmAnnexeTitre2"><a name="Ann3bContenu">Ce que contient ANTARENE 100 mg, comprimé pelliculé</a>&nbsp;&nbsp;<a href='#HautDePage'><img src='img/BackToTop.jpg' width='15px' height='15px' alt='Retour en haut de la page' title='Retour en haut de la page' /></a></p>
+<p class=AmmListePuces1 style='text-align:justify;page-break-after:avoid'><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>La substance active est :</p>
+<p class=AmmComposition>Ibuprofène .......................................................................................................................... 100 mg</p>
+<p class=AmmComposition align=center style='text-align:center'>Pour un comprimé pelliculé.</p>
+<p class=AmmListePuces1 style='text-align:justify'><span style='font-family: Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>Les autres composant sont : l'amidon de maïs, la silice colloïdale anhydre, l'amidon prégélatinisé, l'acide stéarique, l'OPADRY blanc OYL 28900 (dioxyde de titane, hypromellose, lactose monohydraté, macrogol 4000) et la cire de carnauba.</p>
+<p class="AmmAnnexeTitre2"><a name="RcpEmballage">Qu’est-ce que ANTARENE 100 mg, comprimé pelliculé et contenu de l’emballage extérieur</a>&nbsp;&nbsp;<a href='#HautDePage'><img src='img/BackToTop.jpg' width='15px' height='15px' alt='Retour en haut de la page' title='Retour en haut de la page' /></a></p>
+<p class=AmmCorpsTexte>Ce médicament se présente sous forme de comprimé pelliculé.</p>
+<p class=AmmCorpsTexte>Boîte de 30 ou 40.</p>
+<p class="AmmAnnexeTitre2"><a name="Ann3bTituAMM">Titulaire de l’autorisation de mise sur le marché</a>&nbsp;&nbsp;<a href='#HautDePage'><img src='img/BackToTop.jpg' width='15px' height='15px' alt='Retour en haut de la page' title='Retour en haut de la page' /></a></p>
+<p class=AmmTitulaireNom><a name="_Toc142279031">LABORATOIRE DES REALISATIONS THERAPEUTIQUES ELERTE</a></p>
+<p class=AmmTitulaireCpVillePays><span style='font-size:10.0pt'>181 - 183, RUE ANDRE KARMAN</span></p>
+<p class=AmmTitulaireCpVillePays><span style='font-size:10.0pt'>BP 101</span></p>
+<p class=AmmTitulaireCpVillePays><span style='font-size:10.0pt'>93303 AUBERVILLIERS CEDEX</span></p>
+<p class="AmmAnnexeTitre2"><a name="Ann3bExploitAMM">Exploitant de l’autorisation de mise sur le marché</a>&nbsp;&nbsp;<a href='#HautDePage'><img src='img/BackToTop.jpg' width='15px' height='15px' alt='Retour en haut de la page' title='Retour en haut de la page' /></a></p>
+<p class=AmmTitulaireNom>LABORATOIRE DES REALISATIONS THERAPEUTIQUES ELERTE</p>
+<p class=AmmTitulaireCpVillePays><span style='font-size:10.0pt'>181 - 183, RUE ANDRE KARMAN</span></p>
+<p class=AmmTitulaireCpVillePays><span style='font-size:10.0pt'>BP 101</span></p>
+<p class=AmmTitulaireCpVillePays><span style='font-size:10.0pt'>93303 AUBERVILLIERS CEDEX</span></p>
+<p class="AmmAnnexeTitre2"><a name="Ann3bFab">Fabricant</a>&nbsp;&nbsp;<a href='#HautDePage'><img src='img/BackToTop.jpg' width='15px' height='15px' alt='Retour en haut de la page' title='Retour en haut de la page' /></a></p>
+<p class=AmmTitulaireNom><a name="_Toc142279033">LABORATOIRES SOPHARTEX</a></p>
+<p class=AmmTitulaireCpVillePays><span style='font-size:10.0pt'>21, RUE DU PRESSOIR</span></p>
+<p class=AmmTitulaireCpVillePays><span style='font-size:10.0pt'>28500 VERNOUILLET</span></p>
+<p class="AmmAnnexeTitre2"><a name="Ann3bNomsMediEEE">Noms du médicament dans les Etats membres de l'Espace Economique Européen</a>&nbsp;&nbsp;<a href='#HautDePage'><img src='img/BackToTop.jpg' width='15px' height='15px' alt='Retour en haut de la page' title='Retour en haut de la page' /></a></p>
+<p class=AmmCorpsTexte>Sans objet.</p>
+<p class="AmmAnnexeTitre2"><a name="Ann3bContenu">La dernière date à laquelle cette notice a été révisée est :</a>&nbsp;&nbsp;<a href='#HautDePage'><img src='img/BackToTop.jpg' width='15px' height='15px' alt='Retour en haut de la page' title='Retour en haut de la page' /></a></p>
+<p class=AmmCorpsTexte><span style='color:#385623'>[à compléter ultérieurement par le titulaire]</span></p>
+<p class="AmmAnnexeTitre2"><a name="Ann3bAutres">Autres</a>&nbsp;&nbsp;<a href='#HautDePage'><img src='img/BackToTop.jpg' width='15px' height='15px' alt='Retour en haut de la page' title='Retour en haut de la page' /></a></p>
+<p class=AmmCorpsTexte align=center style='margin-bottom:6.0pt;text-align:center'><span class='gras'><span class='souligne'><span style='font-size:10.0pt;font-family:"Arial",sans-serif'>CONSEILS / EDUCATION SANITAIRE</span></span></span></p>
+<p class=AmmCorpsTexte style='margin-bottom:6.0pt'><span class='gras'><span style='font-size:10.0pt; font-family:"Arial",sans-serif'>&quot;QUE FAIRE EN CAS DE FIEVRE&quot;:</span></span></p>
+<p class=AmmCorpsTexte>La température normale du corps est variable d'un individu à l'autre et comprise entre 36,5°C et 37,5°C. Une élévation de plus de 0,8°C est considérée comme une fièvre.</p>
+<p class=AmmCorpsTexte><span class='gras'>Chez l'enfant de 20 à 30 kg (soit environ 6 ans à 11-12 ans)</span>: si les troubles qu'elle entraîne sont trop gênants, vous pouvez prendre un médicament qui contient de l'ibuprofène en respectant les posologies indiquées.</p>
+<p class=AmmCorpsTexte>Avec ce médicament, la fièvre doit baisser rapidement. <span class='souligne'>Néanmoins</span>:</p>
+<p class=AmmListePuces1 style='text-align:justify'><span style='font-family: Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>si d'autres signes apparaissent (comme une éruption cutanée),</p>
+<p class=AmmListePuces1 style='text-align:justify'><span style='font-family: Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>si la fièvre persiste plus de 3 jours ou si elle s'aggrave,</p>
+<p class=AmmListePuces1 style='text-align:justify'><span style='font-family: Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>si les maux de tête deviennent violents, ou en cas de vomissements,</p>
+<p class=AmmAnnexeTitre3>CONSULTEZ IMMEDIATEMENT VOTRE MEDECIN.</p>
+<p class=AmmCorpsTexteGras>&quot;QUE FAIRE EN CAS DE DOULEUR&quot;:</p>
+<p class=AmmListePuces1 style='text-align:justify'><span style='font-family: Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>En l'absence d'amélioration au bout de 5 jours de traitement,</p>
+<p class=AmmListePuces1 style='text-align:justify'><span style='font-family: Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>Si la douleur revient régulièrement,</p>
+<p class=AmmListePuces1 style='text-align:justify'><span style='font-family: Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>Si elle s'accompagne de fièvre,</p>
+<p class=AmmListePuces1 style='text-align:justify'><span style='font-family: Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>Si elle vous réveille la nuit,</p>
+<p class=AmmAnnexeTitre3>CONSULTEZ IMMEDIATEMENT VOTRE MEDECIN.</p>
+<p class=AmmCorpsTexte align=left style='text-align:left'><span style='font-size: 10.0pt;font-family:"Arial",sans-serif'> </span></p>
+<p class=AmmCorpsTexte><span style='font-size:10.0pt;font-family:"Arial",sans-serif'> </span></p>
+<p class=AmmCorpsTexte><span style='font-size:10.0pt;font-family:"Arial",sans-serif'> </span></p>
+<p class=AmmCorpsTexte> </p>
+</div>
+<div><br clear=all>
+<hr align=left size=1 width="33%">
+<div id=ftn1>
+<p class=MsoFootnoteText><a href="#_ftnref1" name="_ftn1" title=""><span class=MsoFootnoteReference><span lang=EN-GB><span class=MsoFootnoteReference><span lang=EN-GB style='font-size:10.0pt;font-family:"Verdana",sans-serif'>[1]</span></span></span></span></a><span lang=EN-GB> </span><span lang=EN-GB style='font-size:8.0pt'>Shastri AT, Abdulkarim D, Clarke P. Maternal diclofenac medication in pregnancy causing in utero closure of the fetal ductus arteriosus and hydrops. Pediatr Cardiol. 2013;34(8):1925-7. doi: 10.1007/s00246-012-0461-y. Epub 2012 Aug 8. PMID: 22872018.</span></p>
+</div>
+<div id=ftn2>
+<p class=MsoFootnoteText><a href="#_ftnref2" name="_ftn2" title=""><span class=MsoFootnoteReference><span lang=EN-GB><span class=MsoFootnoteReference><span lang=EN-GB style='font-size:10.0pt;font-family:"Verdana",sans-serif'>[2]</span></span></span></span></a><span lang=EN-GB> </span><span lang=EN-GB style='font-size:8.0pt'>Zenker M, Klinge J, Krüger C, Singer H, Scharf J. Severe pulmonary hypertension in a neonate caused by premature closure of the ductus arteriosus following maternal treatment with diclofenac: a case report. </span><span style='font-size:8.0pt'>J Perinat Med. 1998;26(3):231-4. PMID: 9773385.</span></p>
+</div>
+<div id=ftn3>
+<p class=MsoFootnoteText><a href="#_ftnref3" name="_ftn3" title=""><span class=MsoFootnoteReference><span lang=EN-GB><span class=MsoFootnoteReference><span lang=EN-GB style='font-size:10.0pt;font-family:"Verdana",sans-serif'>[3]</span></span></span></span></a><span lang=EN-GB> </span><span style='font-size:8.0pt'>CRPV Nord-Pas de Calais « Vos observations : prise unique d’AINS pendant la grossesse : des conséquences pour le foetis » Brèces en pharmacovigilance 2017 ; 56 ; 2</span></p>
+</div>
+</div>					
+					<p class="alignright"><a href="#HautDePage">Retour en haut de la page <img src="img/BackToTop.jpg" width="20px" height="20px" alt="Retour en haut de la page" title="Retour en haut de la page" /></a></p>
+				</div>
+			</div>
+		</div>
+	</div>
+
+<table summary="" class="content" width="1000">
+	<tr>
+		<td height="100px">&nbsp;</td>
+	</tr>
+</table>
+<table summary="Pied de page" class="footer" width="1000">
+	<tr>
+		<td>
+			<table summary="" class="tablealigncenter" border="0">
+				<tr>
+					<td width="100px" class="aligncenter"><a id="lien_ansm" href="http://ansm.sante.fr/" target="_blank"><img src="img/Logo_ANSM.png" width="150" height="60" alt="ANSM - Agence nationale de sécurité du médicament et des produits de santé" title="L'ANSM met à disposition les principales informations issues de l'Autorisation de mise sur le marché, l'appartenance à un groupe générique, les liens vers les informations de sécurité qu'elle publie, l'identification des médicaments sous surveillance renforcée - nouvelle fenêtre" /></a></td>
+					          <td>&nbsp;</td>
+					<td width="100px" class="aligncenter"><img src="img/Logo_HAS.png" width="150" height="60" alt="HAS - Haute autorité de santé" title="La HAS met à disposition les informations relatives au service médical rendu, à l'amélioration du service médical rendu ainsi que les liens vers les avis de la Commission de la Transparence correspondants - nouvelle fenêtre" /></td>
+					<td>&nbsp;</td>
+					<td width="100px" class="aligncenter"><img src="img/Logo_CNAM.png" width="150" height="60" alt="UNCAM - Unin nationale des caisses d'assurance maladie" title="L'UNCAM met à disposition le taux de remboursement, le prix et les indications remboursables le cas échéant, ainsi que l'agrément aux collectivités - nouvelle fenêtre" /></td>
+          				</tr>
+			</table> 
+		</td>
+	</tr>
+</table>
+<table summary="" class="finpage" width="1000">
+	<tr>
+		<td height="100px" class="aligncenter">
+			<a class="navigation" href="plan.php">Plan du site</a>&nbsp;|&nbsp;
+			<a class="navigation" href="accessibilite.php">Accessibilité</a>&nbsp;|&nbsp;
+			<a class="navigation" href="contact.php">Contact</a>&nbsp;|&nbsp;
+			<a class="navigation" href="telechargement.php">Téléchargement</a>&nbsp;|&nbsp;
+			<a class="navigation" href="DeclarationConfidentialite.php">Declaration de confidentialité</a>&nbsp;|&nbsp;
+			<a class="navigation" href="http://www.service-public.fr/" title="Service Public - Nouvelle fenêtre" target="_blank">Service-Public.fr</a>&nbsp;|&nbsp;
+			<a class="navigation" href="http://www.legifrance.gouv.fr/" title="Legifrance - Nouvelle fenêtre" target="_blank">Legifrance</a>&nbsp;|&nbsp;
+			<a class="navigation" href="http://www.gouvernement.fr/" title="Gouvernement - Nouvelle fenêtre" target="_blank" >Gouvernement.fr</a>
+		</td>
+	</tr>
+</table>
+
+
+
+<!-- Matomo -->
+<script type="text/javascript">
+  var _paq = window._paq = window._paq || [];
+  /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
+  _paq.push(['trackPageView']);
+  _paq.push(['enableLinkTracking']);
+  (function() {
+    var u="https://stats.integra.fr/";
+    _paq.push(['setTrackerUrl', u+'matomo.php']);
+    _paq.push(['setSiteId', '79']);
+    var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+    g.type='text/javascript'; g.async=true; g.src=u+'matomo.js'; s.parentNode.insertBefore(g,s);
+  })();
+</script>
+<!-- End Matomo Code -->
+
+
+
+</body>
+</html>

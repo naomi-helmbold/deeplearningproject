@@ -1,0 +1,372 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="fr" lang="fr">
+<head>
+	<title>Notice patient - TOPLEXIL 0,33 mg/ml, sirop  - Base de données publique des médicaments</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=windows-1252"/>
+	<meta name="robots" content="index, follow"/>
+	<meta name="Description" content="Base de données publique des médicaments"/>
+	<meta name="Keywords" content="base, données, publique, médicaments, Notice patient, TOPLEXIL 0,33 mg/ml, sirop "/>
+	<meta name="Subject" content="medicament"/>
+	<link href='https://fonts.googleapis.com/css?family=Noticia+Text' rel='stylesheet' type='text/css' />
+	<link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro' rel='stylesheet' type='text/css' />
+	<link href="style/style_bdm.css?v=2.2.3" type="text/css" rel="stylesheet"/>
+	<link href="style/style_RCP_Notice.css" type="text/css" rel="stylesheet"/>
+  <link rel="alternate" href="http://m.base-donnees-publique.medicaments.gouv.fr/#!info-62982231">
+    <script type="text/javascript" src="scripts/autocomplete.js?v=2.2.3"></script>
+	<script type="text/javascript" src="scripts/jquery.js"></script>
+    <script type="text/javascript" src="scripts/jquery-ui.min.js"></script>
+	<script type="text/javascript" src="scripts/common.js"></script>
+	<link rel="icon" type="image/x-icon" href="favicon.ico" />
+</head>
+
+<body>
+
+<a name="HautDePage" />
+<div id="bandeauhaut">
+	<a id="lien_ministere" class="lienmenu" href="http://www.sante.gouv.fr" target="_blank" title="Site du ministère des affaires sociales et de la santé - nouvelle fenêtre"><img id="logoministere" src="img/Logo_Ministere.jpg"  alt="Logo du ministère des affaires sociales et de la santé"/></a>
+	<h1 class="texteTitreSite">
+		Base <span class="texteBleu">de</span> données <span class="texteBleu">publique</span><br/><span class="texteBleu">des</span> médicaments
+	</h1>
+		<a id="lien_medicament_gouv" class="lienEspaceMedic" target="_blank" href="http://medicaments.gouv.fr" title="Visiter [medicaments.gouv.fr] - nouvelle fenêtre">Visiter [medicaments.gouv.fr] <img src="/img/icone_lien.png" alt="Visiter [medicaments.gouv.fr]"  title="Visiter [medicaments.gouv.fr] - nouvelle fenetre" /></a>
+</div>
+<!--div align="center">
+	<a id="banniere" target="_blank" href="http://social-sante.gouv.fr/soins-et-maladies/medicaments/medicaments-generiques/" title="Visiter [medicaments.gouv.fr] - M?dicaments g?n?riques">
+		<img width="1000"   src ="/img/carrouselbannieres.gif" alt="Visiter [medicaments.gouv.fr] - M?dicaments g?n?riques" title="Visiter [medicaments.gouv.fr] - M?dicaments g?n?riques" />
+	</a>
+</div-->
+
+<div id="menuhaut">
+	<span id="menuhaut_gauche">
+		<a id="lien_accueil" class="navigation" href="index.php">Accueil</a>&nbsp;|&nbsp;
+		<a id="lien_glossaire" class="navigation" href="glossaire.php">Glossaire</a>&nbsp;|&nbsp;
+		<a id="lien_aide" class="navigation" href="aide.php">Aide</a>		
+	</span>
+	
+		
+	<span id="menuhaut_dernmaj">
+        <br>Dernière <span title=" 2.4.4
+">mise à jour</span> le 03/03/2025	</span>
+</div>
+
+	<script language="javascript" type="text/javascript">
+		//<![CDATA[ 
+		function Aff(men) {
+			document.write("<ul class=\"menuDoc\">");
+			for(var no_rub=0;no_rub<men.num_rub;no_rub++) {
+				document.write("<li><a class='leftMenu' href='"+menu[no_rub].page+"'>");
+				document.write(men[no_rub].txt);
+				document.write("</a></li>");
+				if (men[no_rub].nb_lien != 0){
+					document.write("<ul class=\"sousMenuDoc\">");
+				}
+				for(var no_lien=0;no_lien<men[no_rub].nb_lien;no_lien++) {
+					document.write("<li><a class='leftMenu' href='"+men[no_rub][no_lien].page+"'>");
+					document.write(men[no_rub][no_lien].txt);
+					document.write("</a></li>");
+				}
+				if (men[no_rub].nb_lien != 0){
+					document.write("</ul>");
+				}
+			}
+			document.write("</ul>");
+		}
+		
+		function CreerMenu(police,imgRub,imgOption,imgOptionFin,hauteur) {
+			this.num_rub=0;
+			this.police=police;
+			this.imgRub=imgRub;
+			this.imgOpt=imgOption;
+			this.imgOptFin=imgOptionFin;
+			this.hauteur=hauteur;
+			this.AddRub=AddRub;
+			this.AddLien=AddLien;
+		}
+		
+		function AddRub(txt,aff,page) {
+			var rub = new Object;
+				rub.txt=txt;
+				rub.aff=aff;
+				rub.page=page;
+				rub.nb_lien=0;
+			this[this.num_rub]=rub;
+			this.num_rub++;
+		}
+
+		function AddLien(txt,page) {
+			var no_rub = this.num_rub-1;
+			var no_lien= this[no_rub].nb_lien;
+			var lien = new Object;
+				lien.txt=txt;
+				lien.page=page;
+			this[no_rub][no_lien]=lien;
+			this[no_rub].nb_lien++;
+		}
+		var menu=new CreerMenu("arial","img/dyn04.gif","img/dyn22.gif","img/dyn55.gif",18);
+		//]]> 
+		menu.AddRub("Description médicament","O","#Ann3bQuestceque");
+			menu.AddRub("Informations","O","#Ann3bInfoNecessaires");
+			menu.AddRub("Utilisation","O","#Ann3bCommentPrendre");
+			menu.AddRub("Effets indésirables","O","#Ann3bEffetsIndesirables");
+			menu.AddRub("Conservation","O","#Ann3bConservation");
+			menu.AddRub("Info. supplémentaires","O","#Ann3bEmballage");
+				</script>
+
+	<div id="container">
+		<div id="leftnav">
+			<div id="cadreMenuGauche">
+				<h2 class="sommaireMenu">Sommaire</h2>
+				<div id="menuGauche">
+					<script language="JavaScript" type="text/javascript">Aff(menu);</script>
+				</div>
+			</div>
+		</div>
+		<div id="contentPrincipal">
+			<div id="boutonsliens">
+				<a id='lien_fiche_info' href='extrait.php?specid=62982231' ><img id="ongletficheinfo" alt="Onglet fiche information" src="img/onglet_fiche_info_vert.png" /></a><a id='lien_rcp' href='affichageDoc.php?specid=62982231&amp;typedoc=R'><img class="onglet" alt="Onglet résumé des caractéristiques du produit" src="img/onglet_rcp_vert.png" /></a><a id='lien_notice' href='affichageDoc.php?specid=62982231&amp;typedoc=N'><img class="onglet" alt="Onglet notice patient" src="img/onglet_notice_gris.png" /></a>			</div>
+			<div class="titredeno">
+				<table summary="" border="0" cellspacing="0">
+					<tr><td colspan="3" height="10px"></td></tr>
+					<tr>
+						<td width="15px">&nbsp;</td>
+						<td width="685px"><h1 class="textedeno">TOPLEXIL 0,33 mg/ml, sirop  - Notice patient</h1></td>
+						<td width="43px" class="tdcenter"><a href="Javascript:void(null)" onclick="print();"><img src="img/imprimante.png" height="20px" width="20px" alt="Imprimer le document" title="Imprimer le document" border="0" /></a></td>
+					</tr>
+					<tr><td colspan="3" height="10px"></td></tr>
+				</table>
+			</div>
+			
+			<div id="contentDocument">
+				<div id="textDocument">
+					<p class="DateNotif">ANSM - Mis à jour le : 26/07/2024</p>
+<p class="AmmNoticeTitre1"><a name="Ann3bDenomination">Dénomination du médicament</a></p>
+<p class=AmmCorpsTexteGras align=center style='text-align:center'><a name="_Toc142278999">TOPLEXIL 0,33 mg/ml, sirop</a></p>
+<p class=AmmCorpsTexteGras align=center style='text-align:center'>Oxomémazine</p>
+<p class="AmmNoticeTitre1"><a name="Ann3bEncadre">Encadré</a></p>
+<p class=AmmCorpsTexteGras><a name="_Toc142279000"><span lang=FR-BE>Veuillez l</span></a><span class=AmmCorpsTexteGrasCar><span style='font-weight:normal'>i</span></span><span lang=FR-BE>re attentivement cette notice avant de prendre ce médicament car elle contient des informations importantes pour vous.</span></p>
+<p class=AmmCorpsTexte><span lang=FR-BE>Vous devez toujours prendre ce médicament en suivant scrupuleusement les informations fournies dans cette notice ou par votre médecin ou votre pharmacien.</span></p>
+<p class=AmmListePuces1 style='text-align:justify'><span style='font-family: Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span><span lang=FR-BE>Gardez cette notice. Vous pourriez avoir besoin de la relire.</span></p>
+<p class=AmmListePuces1 style='text-align:justify'><span style='font-family: Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span><span lang=FR-BE>Adressez&#8209;vous à votre pharmacien pour tout conseil ou information.</span></p>
+<p class=AmmListePuces1 style='text-align:justify'><span style='font-family: Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span><span lang=FR-BE>Si vous ressentez un quelconque effet indésirable, parlez&#8209;en à votre médecin, ou votre pharmacien. Ceci s’applique aussi à tout effet indésirable qui ne serait pas mentionné dans cette notice. </span>Voir rubrique 4.</p>
+<p class=AmmListePuces1 style='text-align:justify'><span style='font-family: Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span><span lang=FR-BE>Vous devez vous adresser à votre médecin si vous ne ressentez aucune amélioration ou si vous vous sentez moins bien après quelques jours.</span></p>
+<p class="AmmNoticeTitre1"><a name="Ann3bSomm">Que contient cette notice ?</a></p>
+<p class=AmmCorpsTexte style='margin-bottom:0cm;margin-bottom:.0001pt'>1. Qu'est&#8209;ce que TOPLEXIL 0,33 mg/ml, sirop et dans quels cas est&#8209;il utilisé ?</p>
+<p class=AmmCorpsTexte style='margin-bottom:0cm;margin-bottom:.0001pt'>2. Quelles sont les informations à connaître avant de prendre TOPLEXIL 0,33 mg/ml, sirop ?</p>
+<p class=AmmCorpsTexte style='margin-bottom:0cm;margin-bottom:.0001pt'>3. Comment prendre TOPLEXIL 0,33 mg/ml, sirop ? </p>
+<p class=AmmCorpsTexte style='margin-bottom:0cm;margin-bottom:.0001pt'>4. Quels sont les effets indésirables éventuels ?</p>
+<p class=AmmCorpsTexte style='margin-bottom:0cm;margin-bottom:.0001pt'>5. Comment conserver TOPLEXIL 0,33 mg/ml, sirop ?</p>
+<p class=AmmCorpsTexte>6. Contenu de l’emballage et autres informations.</p>
+<h2><a name="Ann3bQuestceque">1. QU’EST-CE QUE TOPLEXIL 0,33 mg/ml, sirop ET DANS QUELS CAS EST-IL UTILISE ?</a>&nbsp;&nbsp;<a href='#HautDePage'><img src='img/BackToTop.jpg' width='15px' height='15px' alt='Retour en haut de la page' title='Retour en haut de la page' /></a></h2>
+<p class=AmmCorpsTexte><a name="_Toc142279003">Classe pharmacothérapeutique &#8209; code ATC : R06AD08. </a></p>
+<p class=AmmCorpsTexte>TOPLEXIL 0,33 mg/ml, sirop est un antitussif appartenant à la famille des antihistaminiques de type neuroleptique phénothiazinique. Il s'oppose aux effets de l'histamine notamment sur les bronches. Il est préconisé pour calmer les toux sèches et les toux d’irritation chez l’adulte et l’enfant de plus de 2 ans, en particulier lorsqu’elles surviennent le soir ou pendant la nuit.</p>
+<h2><a name="Ann3bInfoNecessaires">2. QUELLES SONT LES INFORMATIONS A CONNAITRE AVANT DE PRENDRE TOPLEXIL 0,33 mg/ml, sirop ?</a>&nbsp;&nbsp;<a href='#HautDePage'><img src='img/BackToTop.jpg' width='15px' height='15px' alt='Retour en haut de la page' title='Retour en haut de la page' /></a></h2>
+<p class=AmmCorpsTexte><a name="_Toc142279015">Si votre médecin vous a informé(e) d’une intolérance à certains sucres, contactez-le avant de prendre ce médicament.</a></p>
+<p class=AmmCorpsTexteGras>Ne prenez jamais TOPLEXIL 0,33 mg/ml, sirop :</p>
+<p class=AmmListePuces1 style='text-align:justify'><span style='font-family: Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>si vous êtes allergique à l’oxomémazine ou à l’un des autres composants contenus dans ce médicament, mentionnés dans la rubrique 6.</p>
+<p class=AmmListePuces1 style='text-align:justify'><span style='font-family: Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>si vous êtes allergique à un médicament de la même famille que TOPLEXIL 0,33 mg/ml sirop (les antihistaminiques) utilisé pour traiter les allergies,</p>
+<p class=AmmListePuces1 style='text-align:justify'><span style='font-family: Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>ne donnez pas TOPLEXIL 0,33 mg/ml, sirop à un enfant de moins de 2 ans,</p>
+<p class=AmmListePuces1 style='text-align:justify'><span style='font-family: Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>si vous avez déjà eu une diminution importante du taux de certains globules blancs (granulocytes) dans le sang (agranulocytose),</p>
+<p class=AmmListePuces1 style='text-align:justify'><span style='font-family: Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>si vous avez des difficultés pour uriner (troubles d’origine prostatique ou autre),</p>
+<p class=AmmListePuces1 style='text-align:justify'><span style='font-family: Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>si vous avez un risque de glaucome à angle fermé (pression élevée à l'intérieur de l'œil pouvant retentir sur la vue),</p>
+<p class=AmmListePuces1 style='text-align:justify'><span style='font-family: Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>si vous prenez un médicament contenant de la cabergoline ou du quinagolide (utilisé pour freiner la production excessive de prolactine) (voir rubrique « Autres médicaments et TOPLEXIL 0,33 mg/ml, sirop »).</p>
+<p class=AmmCorpsTexte style='margin-top:6.0pt'>EN CAS DE DOUTE, IL EST INDISPENSABLE DE DEMANDER L’AVIS DE VOTRE MÉDECIN OU DE VOTRE PHARMACIEN.</p>
+<p class=AmmCorpsTexteGras>Avertissements et précautions</p>
+<p class=AmmListePuces1 style='margin-left:17.85pt;text-align:justify; text-indent:-17.85pt'><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span><span lang=FR-BE>Si la toux persiste malgré l'utilisation de TOPLEXIL 0,33 mg/ml, sirop, n'augmentez pas les doses. Consultez votre médecin. En effet, la toux est un symptôme qui peut avoir des origines diverses : infections respiratoires, bronchites, grippe, allergie, asthme, coqueluche, irritation, etc... </span></p>
+<p class=AmmListePuces1 style='margin-left:17.85pt;text-align:justify; text-indent:0cm'><span lang=FR-BE>De plus, la consommation de tabac aggrave ou entretient la toux.</span></p>
+<p class=AmmListePuces1 style='text-align:justify'><span style='font-family: Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span><span lang=FR-BE>Il existe 2 types de toux : les toux sèches et les toux grasses. Vous ne devez pas traiter une toux grasse en utilisant ce médicament. En effet, la toux grasse est un moyen de défense naturelle nécessaire à l'évacuation des sécrétions bronchiques (mucosités).</span></p>
+<p class=AmmListePuces1 style='text-align:justify'><span style='font-family: Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span><span lang=FR-BE>Si la toux devient grasse avec un encombrement, des expectorations ou de la fièvre, demandez l’avis de votre médecin.</span></p>
+<p class=AmmListePuces1 style='text-align:justify'><span style='font-family: Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span><span lang=FR-BE>N'essayez pas de traiter une toux grasse en associant ce médicament à un médicament contre les toux grasses.</span></p>
+<p class=AmmListePuces1 style='text-align:justify'><span style='font-family: Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>Des cas d’abus et de dépendance ont été rapportés avec l’oxomémazine, soyez attentif à tout signe évoquant un usage abusif ou une dépendance à ce traitement.</p>
+<p class=AmmListePuces1 style='text-align:justify'><span style='font-family: Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span><span lang=FR-BE>Vous ne devez pas vous exposer au soleil, ni aux rayons ultra&#8209;violet (UVA) pendant le traitement.</span></p>
+<p class=AmmListePuces1 style='text-align:justify'><span style='font-family: Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span><span lang=FR-BE>Ce médicament doit être utilisé avec prudence en raison du risque de somnolence.</span></p>
+<p class=AmmListePuces1 style='text-align:justify;text-indent:0cm'><span lang=FR-BE>L'association avec d'autres médicaments sédatifs est déconseillée (voir rubrique « Autres médicaments et </span>TOPLEXIL 0,33 mg/ml, sirop <span lang=FR-BE>»).</span></p>
+<p class=AmmCorpsTexteGras style='margin-top:6.0pt'><span lang=FR-BE>Avant de prendre ce médicament, prévenez votre médecin :</span></p>
+<p class=AmmListePuces1 style='text-align:justify'><span style='font-family: Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span><span lang=FR-BE>Si vous avez une maladie chronique des bronches ou des poumons avec de la toux et des expectorations.</span></p>
+<p class=AmmListePuces1 style='text-align:justify'><span style='font-family: Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span><span lang=FR-BE>Si vous avez une maladie chronique du foie (insuffisance hépatique sévère) ou des reins (insuffisance rénale sévère), votre médecin devra adapter la dose à votre état.</span></p>
+<p class=AmmListePuces1 style='text-align:justify'><span style='font-family: Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span><span lang=FR-BE>Si vous avez une maladie cardiovasculaire.</span></p>
+<p class=AmmListePuces1 style='text-align:justify'><span style='font-family: Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span><span lang=FR-BE>Si vous souffrez d’épilepsie.</span></p>
+<p class=AmmListePuces1 style='text-align:justify'><span style='font-family: Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span><span lang=FR-BE>Si vous avez plus de 65 ans (notamment en cas de constipation chronique, de difficulté pour uriner due à une augmentation du volume de la prostate, d'hypotension, de vertiges, ou de somnolence).</span></p>
+<p class=AmmListePuces1 style='text-align:justify'><span style='font-family: Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span><span lang=FR-BE>Si votre enfant souffre d’asthme, de reflux gastro&#8209;œsophagien.</span></p>
+<p class=AmmCorpsTexteGras style='margin-top:6.0pt'><span lang=FR-BE>Pendant le traitement, consultez votre médecin :</span></p>
+<p class=AmmCorpsTexte><span lang=FR-BE>Si vous avez de la fièvre accompagnée ou non de signe d’infection (angine…), de pâleur ou de transpiration.</span></p>
+<p class=AmmCorpsTexte><span lang=FR-BE>En cas de doute, n’hésitez pas à demander l’avis de votre médecin ou de votre pharmacien.</span></p>
+<p class=AmmCorpsTexteGras>Autres médicaments et TOPLEXIL 0,33 mg/ml, sirop</p>
+<div style='border:solid windowtext 1.0pt;padding:1.0pt 4.0pt 1.0pt 4.0pt'>
+<p class=AmmCorpsTexte style='margin-bottom:0cm;margin-bottom:.0001pt; border:none;padding:0cm'>Ce médicament contient un antitussif de la famille des antihistaminiques, l’oxomémazine.</p>
+<p class=AmmCorpsTexte style='border:none;padding:0cm'>D’autres médicaments en contiennent. Ne les associez pas, afin de ne pas dépasser la dose quotidienne recommandée (voir rubrique « Posologie »).</p>
+</div>
+<p class=AmmCorpsTexte>Vous ne devez jamais prendre TOPLEXIL 0,33 mg/ml, sirop avec des médicaments contenant de la cabergoline ou du quinagolide (utilisés pour freiner la production excessive de prolactine) (voir rubrique « Ne prenez jamais TOPLEXIL 0,33 mg/ml, sirop »).</p>
+<p class=AmmCorpsTexte>Vous devez éviter de prendre des médicaments contenant de l’alcool pendant toute la durée du traitement.</p>
+<p class=AmmCorpsTexte>Vous devez attendre au moins 2 heures entre la prise de TOPLEXIL 0,33 mg/ml, sirop et la prise de pansements gastro&#8209;intestinaux, antiacides ou charbon (utilisés pour soulager les troubles digestifs).</p>
+<p class=AmmCorpsTexte>De nombreux autres médicaments peuvent diminuer la vigilance et entraîner une somnolence. Leur association avec TOPLEXIL 0,33 mg/ml, sirop peut augmenter cet effet. Il s’agit des dérivés de la morphine (utilisés contre la douleur, comme antitussifs ou dans le cadre du sevrage d’une toxicomanie), des neuroleptiques, des benzodiazépines (anxiolytiques), des barbituriques, des hypnotiques (somnifères), des antidépresseurs, des antihistaminiques sédatifs, de certains antihypertenseurs et des médicaments contenant du baclofène et de la thalidomide.</p>
+<p class=AmmCorpsTexte>Informez votre médecin ou pharmacien si vous prenez, avez récemment pris ou pourriez prendre tout autre médicament.</p>
+<p class=AmmCorpsTexteGras>TOPLEXIL 0,33 mg/ml, sirop avec des aliments, boissons et de l’alcool</p>
+<p class=AmmCorpsTexte>Vous devez éviter de consommer des boissons alcoolisées ou de prendre un médicament contenant de l’alcool pendant votre traitement.</p>
+<p class=AmmCorpsTexteGras><a name="_Toc142279012">Grossesse et allaitement</a></p>
+<p class=AmmCorpsTexteGras>Grossesse</p>
+<p class=AmmCorpsTexte>Ce médicament NE DOIT GÉNÉRALEMENT PAS ÊTRE UTILISÉ, sauf avis contraire de votre médecin, pendant le premier trimestre de la grossesse.</p>
+<p class=AmmCorpsTexte>Si vous découvrez que vous êtes enceinte pendant le traitement, consultez rapidement votre médecin : lui seul pourra adapter le traitement à votre état.</p>
+<p class=AmmCorpsTexte>En fin de grossesse, la prise abusive de ce médicament peut entraîner des effets néfastes chez le nouveau&#8209;né. Par conséquent, il convient de toujours demander l’avis de votre médecin avant de l’utiliser et de ne jamais dépasser la dose et la durée de traitement préconisées.</p>
+<p class=AmmCorpsTexteGras>Allaitement</p>
+<p class=AmmCorpsTexte>Ce médicament passe dans le lait maternel. En raison de ses propriétés sédatives prononcées, sa prise est à éviter en cas d’allaitement.</p>
+<p class=AmmCorpsTexte><span lang=FR-BE>Si vous êtes enceinte ou que vous allaitez, si vous pensez être enceinte ou planifiez une grossesse, demandez conseil à votre médecin ou pharmacien avant de prendre ce médicament.</span></p>
+<p class=AmmCorpsTexteGras>Conduite de véhicules et utilisation de machines</p>
+<p class=AmmCorpsTexte>Ce médicament peut provoquer une somnolence, surtout en début de traitement. Il est déconseillé de conduire un véhicule ou d’utiliser une machine si vous ressentez cet effet. Le risque de somnolence est augmenté si vous consommez des boissons alcoolisées, des médicaments contenant de l’alcool ou d’autres médicaments sédatifs (voir rubrique « Autres médicaments et TOPLEXIL 0,33 mg/ml, sirop »).</p>
+<p class=AmmCorpsTexteGras>TOPLEXIL 0,33 mg/ml, sirop contient du sodium et du saccharose.</p>
+<p class=AmmCorpsTexte>L'utilisation de ce médicament est déconseillée chez les patients présentant une intolérance au fructose, un syndrome de malabsorption du glucose et du galactose ou un déficit en sucrase/isomaltase (maladies héréditaires rares).</p>
+<p class=AmmCorpsTexte>Ce médicament contient 3,7 g de saccharose par prise de 5 ml et 7,3 g par prise de 10 ml dont il faut tenir compte en cas de régime pauvre en sucre ou de diabète.</p>
+<p class=AmmCorpsTexte>Ce médicament contient moins de 1 mmol (23 mg) de sodium par dose de 10 ml, c’est-à-dire qu’il est essentiellement « sans sodium ».</p>
+<h2><a name="Ann3bCommentPrendre">3. COMMENT PRENDRE TOPLEXIL 0,33 mg/ml, sirop ?</a>&nbsp;&nbsp;<a href='#HautDePage'><img src='img/BackToTop.jpg' width='15px' height='15px' alt='Retour en haut de la page' title='Retour en haut de la page' /></a></h2>
+<p class=AmmCorpsTexteGras><a name="_Toc142279021">Posologie</a></p>
+<p class=AmmCorpsTexteGras>Ce médicament est réservé à l’adulte et à l’enfant de plus de 2 ans.</p>
+<p class=AmmCorpsTexte>Veillez à toujours prendre ce médicament en suivant exactement les instructions de cette notice ou les indications de votre médecin ou pharmacien. Vérifiez auprès de votre médecin ou pharmacien en cas de doute.</p>
+<p class=AmmCorpsTexte><span class=AmmCorpsTexteGrasCar>Chez l'adulte et l'enfant de plus de 40 kg (soit 12 ans</span>) : la dose habituelle est de 10 ml de sirop par prise, 4 fois par jour.</p>
+<p class=AmmCorpsTexte><span class=AmmCorpsTexteGrasCar>Chez les enfants âgés de 2 ans à 12 ans</span> : la dose quotidienne dépend du poids de votre enfant :</p>
+<p class=AmmListePuces1 style='text-align:justify'><span style='font-family: Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span><span class=ammcorpstextecar1>Enfants de 13 à 20 kg (soit 2 à 6 ans) : la dose est de 5 ml de sirop par prise, 2 à 3 fois par jour.</span></p>
+<p class=AmmListePuces1 style='text-align:justify'><span style='font-family: Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span><span class=ammcorpstextecar1>Enfants de 20 à 30 kg (soit 6 à 10 ans) : la dose est de 10 ml de sirop par prise, 2 à 3 fois par jour.</span></p>
+<p class=AmmListePuces1 style='text-align:justify'><span style='font-family: Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span><span class=ammcorpstextecar1>Enfants de 30 à 40 kg (soit 10 à 12 ans) : la dose est de 10 ml de sirop par prise, 3 à 4 fois par jour.</span></p>
+<p class=AmmCorpsTexteGras style='margin-top:6.0pt'><span class=ammcorpstextecar1>Fréquence d’administration</span></p>
+<p class=AmmCorpsTexte><span class=ammcorpstextecar1>Les prises ne doivent être renouvelées qu’en cas de besoin, et espacées de 4 heures minimum.</span></p>
+<p class=AmmCorpsTexte><span class=ammcorpstextecar1>Ce médicament peut provoquer une somnolence. Il est préférable de prendre TOPLEXIL 0,33 mg/ml, sirop le soir.</span></p>
+<p class=AmmCorpsTexteGras><span class=ammcorpstextecar1>Mode d’administration</span></p>
+<p class=AmmCorpsTexte><span class=ammcorpstextecar1>Ce médicament est à prendre par voie orale. Utilisez le gobelet doseur fourni dans la boîte.</span></p>
+<p class=AmmCorpsTexteGras><span class=ammcorpstextecar1>Durée du traitement</span></p>
+<p class=AmmCorpsTexte style='margin-bottom:6.0pt'><a name="_Hlk81468531"><span style='font-size:10.0pt;font-family:"Arial",sans-serif'>Sans prescription médicale, la durée de traitement ne doit pas dépasser 5 jours. Si votre toux persiste après 5 jours, s’il n’y a pas d’amélioration ou si d’autres symptômes apparaissent, demandez conseil à votre médecin.</span></a></p>
+<p class=AmmCorpsTexte><span class=ammcorpstextecar1>Le traitement doit être limité aux moments où survient la toux.</span></p>
+<p class=AmmCorpsTexteGras>Si vous avez pris plus de TOPLEXIL 0,33 mg/ml, sirop que vous n’auriez dû </p>
+<p class=AmmCorpsTexte>Consultez immédiatement votre médecin ou les urgences médicales.</p>
+<p class=AmmCorpsTexte>Le surdosage en TOPLEXIL 0,33 mg/ml, sirop peut entraîner des convulsions (surtout chez l'enfant), <span class='souligne'>une somnolence</span>, des troubles de la vigilance, un coma.</p>
+<p class=AmmCorpsTexteGras>Si vous oubliez de prendre TOPLEXIL 0,33 mg/ml, sirop</p>
+<p class=AmmCorpsTexte>Ne prenez pas de dose double pour compenser la dose simple que vous avez oublié de prendre.</p>
+<p class=AmmCorpsTexteGras>Si vous arrêtez de prendre TOPLEXIL 0,33 mg/ml, sirop</p>
+<p class=AmmCorpsTexte>Sans objet.</p>
+<p class=AmmCorpsTexte>Si vous avez d’autres questions sur l’utilisation de ce médicament, demandez plus d’informations à votre médecin, ou à votre pharmacien.</p>
+<h2><a name="Ann3bEffetsIndesirables">4. QUELS SONT LES EFFETS INDESIRABLES EVENTUELS ?</a>&nbsp;&nbsp;<a href='#HautDePage'><img src='img/BackToTop.jpg' width='15px' height='15px' alt='Retour en haut de la page' title='Retour en haut de la page' /></a></h2>
+<p class=AmmCorpsTexte><a name="_Toc142279023">Comme tous les médicaments, ce médicament peut provoquer des effets indésirables, mais ils ne surviennent pas systématiquement chez tout le monde.</a></p>
+<p class=AmmCorpsTexteGras><span lang=FR-BE>ARRETEZ LE TRAITEMENT ET CONSULTEZ IMMÉDIATEMENT UN MÉDECIN</span></p>
+<p class=AmmListePuces1><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span><span lang=FR-BE>Si vous présentez des signes d’allergie au médicament tels que :</span></p>
+<p class=AmmListePuces2><span style='font-family:"Courier New"'>o<span style='font:7.0pt "Times New Roman"'>   </span></span><span lang=FR-BE>rougeurs sur la peau, eczéma, taches pourpres sur la peau (purpura),</span></p>
+<p class=AmmListePuces2 style='text-align:justify'><span style='font-family: "Courier New"'>o<span style='font:7.0pt "Times New Roman"'>   </span></span><span lang=FR-BE>urticaire,</span></p>
+<p class=AmmListePuces2 style='text-align:justify'><span style='font-family: "Courier New"'>o<span style='font:7.0pt "Times New Roman"'>   </span></span><span lang=FR-BE>œdèmes, brusque gonflement du visage et/ou du cou pouvant entraîner une difficulté à respirer et vous mettre en danger (œdème de Quincke),</span></p>
+<p class=AmmListePuces2 style='text-align:justify'><span style='font-family: "Courier New"'>o<span style='font:7.0pt "Times New Roman"'>   </span></span><span lang=FR-BE>malaise brutal avec baisse importante de la pression artérielle (choc anaphylactique).</span></p>
+<p class=AmmListePuces1 style='text-align:justify'><span style='font-family: Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span><span lang=FR-BE>Si vous présentez une réaction exagérée de la peau après exposition au soleil ou aux UV.</span></p>
+<p class=AmmListePuces1 style='text-align:justify'><span style='font-family: Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span><span lang=FR-BE>Si vous présentez une diminution du nombre de certaines cellules du sang : globules blancs (neutropénie, agranulocytose), plaquettes (thrombopénie) ou globules rouges (anémie hémolytique).</span></p>
+<p class=AmmCorpsTexteGras style='margin-top:6.0pt'><span lang=FR-BE>Les effets suivants peuvent également survenir</span> <span lang=FR-BE>:</span></p>
+<p class=AmmListePuces1 style='text-align:justify'><span style='font-family: Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span><span lang=FR-BE>somnolence, baisse de vigilance surtout en début de traitement,</span></p>
+<p class=AmmListePuces1 style='text-align:justify'><span style='font-family: Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span><span lang=FR-BE>troubles de la mémoire ou de la concentration, vertiges,</span></p>
+<p class=AmmListePuces1 style='text-align:justify'><span style='font-family: Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span><span lang=FR-BE>difficulté à coordonner ses mouvements, tremblements,</span></p>
+<p class=AmmListePuces1 style='text-align:justify'><span style='font-family: Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span><span lang=FR-BE>confusion, hallucinations,</span></p>
+<p class=AmmListePuces1 style='text-align:justify'><span style='font-family: Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span><span lang=FR-BE>sécheresse de la bouche, troubles visuels, difficulté pour uriner (rétention d'urine), constipation, palpitations du cœur, baisse importante de la pression artérielle lors du passage à la position debout parfois responsable de vertige et/ou malaise (hypotension orthostatique).</span></p>
+<p class=AmmCorpsTexteGras style='margin-top:6.0pt'><span lang=FR-BE>Plus rarement, </span><span class=ammcorpstextecar1><span lang=FR-BE style='font-weight:normal'>des signes d'excitation (agitation, nervosité, insomnie) peuvent survenir.</span></span></p>
+<p class=AmmCorpsTexte><a name="_Hlk135217713"><span class='gras'><span lang=FR-BE>Et à fréquence indéterminée :</span></span></a></p>
+<p class=AmmCorpsTexte style='margin-top:0cm;margin-right:0cm;margin-bottom: 0cm;margin-left:17.85pt;margin-bottom:.0001pt;text-indent:-17.85pt'><span lang=FR-BE style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>Abus, dépendance (voir rubrique 2 « Quelles sont les informations à connaitre avant de prendre TOPLEXIL 0,33 mg/ml, sirop ? »).</p>
+<p class=AmmCorpsTexte style='margin-top:0cm;margin-right:0cm;margin-bottom: 0cm;margin-left:17.85pt;margin-bottom:.0001pt;text-indent:-17.85pt'><span lang=FR-BE style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>Eosinophilie, qui est une augmentation du nombre d’éosinophiles (un type de globules blancs), constatée lors des analyses de sang.</p>
+<p class=AmmCorpsTexte style='margin-left:18.0pt;text-indent:-18.0pt'><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>Thrombocytopénie, qui est une diminution du nombre de plaquettes (les cellules sanguines qui aident à la coagulation), constatée lors des analyses de sang et pouvant conduire à des saignements et à des bleus sur la peau (purpura thrombocytopénique).</p>
+<p class=AmmAnnexeTitre3>Déclaration des effets secondaires</p>
+<p class=AmmCorpsTexte>Si vous ressentez un quelconque effet indésirable, parlez-en à votre médecin ou votre pharmacien. Ceci s’applique aussi à tout effet indésirable qui ne serait pas mentionné dans cette notice. Vous pouvez également déclarer les effets indésirables directement via le système national de déclaration : Agence nationale de sécurité du médicament et des produits de santé (ANSM) et réseau des Centres Régionaux de Pharmacovigilance - Site internet :<span style='color:red'> </span><a href="https://signalement.social-sante.gouv.fr/">https://signalement.social-sante.gouv.fr/</a><span style='color:red'> </span></p>
+<p class=AmmCorpsTexte>En signalant les effets indésirables, vous contribuez à fournir davantage d’informations sur la sécurité du médicament.</p>
+<h2><a name="Ann3bConservation">5. COMMENT CONSERVER TOPLEXIL 0,33 mg/ml, sirop ?</a>&nbsp;&nbsp;<a href='#HautDePage'><img src='img/BackToTop.jpg' width='15px' height='15px' alt='Retour en haut de la page' title='Retour en haut de la page' /></a></h2>
+<p class=AmmCorpsTexte><a name="_Toc142279026"></a><a name="_Toc142279024">Tenir ce médicament hors de la vue et de la portée des enfants.</a></p>
+<p class=AmmCorpsTexte>Ce médicament ne nécessite pas de précautions particulières de conservation.</p>
+<p class=AmmCorpsTexte><span lang=FR-BE>À conserver dans le conditionnement primaire d’origine, à l’abri de la lumière.</span></p>
+<p class=AmmCorpsTexte><span lang=FR-BE>À conserver maximum 6 mois après la première ouverture du flacon. </span></p>
+<p class=AmmCorpsTexte><span lang=FR-BE>N’utilisez pas ce médicament après la date de péremption indiquée sur l’emballage. La date de péremption fait référence au dernier jour de ce mois.</span></p>
+<p class=AmmCorpsTexte><span lang=FR-BE>Ne jetez aucun médicament au tout&#8209;à&#8209;l’égout ou avec les ordures ménagères. Demandez à votre pharmacien d’éliminer les médicaments que vous n’utilisez plus. Ces mesures contribueront à protéger l’environnement.</span></p>
+<h2><a name="Ann3bEmballage">6. CONTENU DE L’EMBALLAGE ET AUTRES INFORMATIONS</a>&nbsp;&nbsp;<a href='#HautDePage'><img src='img/BackToTop.jpg' width='15px' height='15px' alt='Retour en haut de la page' title='Retour en haut de la page' /></a></h2>
+<p class="AmmAnnexeTitre2"><a name="Ann3bContenu">Ce que contient TOPLEXIL 0,33 mg/ml, sirop</a>&nbsp;&nbsp;<a href='#HautDePage'><img src='img/BackToTop.jpg' width='15px' height='15px' alt='Retour en haut de la page' title='Retour en haut de la page' /></a></p>
+<p class=AmmListePuces1><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>La substance active est :</p>
+<p class=AmmComposition style='margin-top:6.0pt;margin-right:0cm;margin-bottom: 6.0pt;margin-left:17.85pt'>oxomémazine................................................................................................................. 0,033 g</p>
+<p class=AmmCorpsTexte align=center style='text-align:center'>Pour 100 ml de sirop</p>
+<p class=AmmListePuces1><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>Les autres composants sont : </p>
+<p class=AmmListePuces1 style='margin-top:6.0pt;margin-right:0cm;margin-bottom: 0cm;margin-left:17.85pt;margin-bottom:.0001pt;text-align:justify;text-indent: 0cm'>benzoate de sodium, glycérol, acide citrique monohydraté, citrate de sodium, arôme composé caramel, caramel (E150), saccharose liquide, eau purifiée </p>
+<p class="AmmAnnexeTitre2"><a name="RcpEmballage">Qu’est-ce que TOPLEXIL 0,33 mg/ml, sirop et contenu de l’emballage extérieur</a>&nbsp;&nbsp;<a href='#HautDePage'><img src='img/BackToTop.jpg' width='15px' height='15px' alt='Retour en haut de la page' title='Retour en haut de la page' /></a></p>
+<p class=AmmCorpsTexte>Ce médicament se présente sous forme de sirop en flacon de 150 ml, 200 ml ou 250 ml (verre brun) avec fermeture sécurité enfant et gobelet&#8209;doseur (polypropylène).</p>
+<p class=AmmCorpsTexte>Toutes les présentations peuvent ne pas être commercialisées.</p>
+<p class="AmmAnnexeTitre2"><a name="Ann3bTituAMM">Titulaire de l’autorisation de mise sur le marché</a>&nbsp;&nbsp;<a href='#HautDePage'><img src='img/BackToTop.jpg' width='15px' height='15px' alt='Retour en haut de la page' title='Retour en haut de la page' /></a></p>
+<p class=AmmCorpsTexteGras style='margin-bottom:0cm;margin-bottom:.0001pt'><a name="_Toc142279031">OPELLA HEALTHCARE FRANCE SAS</a></p>
+<p class=AmmCorpsTexte style='margin-bottom:0cm;margin-bottom:.0001pt'>157 AVENUE CHARLES DE GAULLE</p>
+<p class=AmmCorpsTexte style='margin-bottom:0cm;margin-bottom:.0001pt'>92200 NEUILLY-SUR-SEINE</p>
+<p class="AmmAnnexeTitre2"><a name="Ann3bExploitAMM">Exploitant de l’autorisation de mise sur le marché</a>&nbsp;&nbsp;<a href='#HautDePage'><img src='img/BackToTop.jpg' width='15px' height='15px' alt='Retour en haut de la page' title='Retour en haut de la page' /></a></p>
+<p class=AmmCorpsTexteGras style='margin-bottom:0cm;margin-bottom:.0001pt'>OPELLA HEALTHCARE FRANCE SAS</p>
+<p class=AmmCorpsTexte style='margin-bottom:0cm;margin-bottom:.0001pt'>157 AVENUE CHARLES DE GAULLE</p>
+<p class=AmmCorpsTexte style='margin-bottom:0cm;margin-bottom:.0001pt'>92200 NEUILLY-SUR-SEINE</p>
+<p class="AmmAnnexeTitre2"><a name="Ann3bFab">Fabricant</a>&nbsp;&nbsp;<a href='#HautDePage'><img src='img/BackToTop.jpg' width='15px' height='15px' alt='Retour en haut de la page' title='Retour en haut de la page' /></a></p>
+<p class=AmmCorpsTexteGras style='margin-bottom:0cm;margin-bottom:.0001pt'><a name="_Toc142279033">A. NATTERMANN &amp; CIE GMBH </a></p>
+<p class=AmmCorpsTexte style='margin-bottom:0cm;margin-bottom:.0001pt'>NATTERMANN ALLEE 1</p>
+<p class=AmmCorpsTexte style='margin-bottom:0cm;margin-bottom:.0001pt'>D&#8209;50829 COLOGNE</p>
+<p class=AmmCorpsTexte style='margin-bottom:0cm;margin-bottom:.0001pt'>ALLEMAGNE</p>
+<p class=AmmCorpsTexte style='margin-top:6.0pt'>OU</p>
+<p class=AmmCorpsTexteGras style='margin-bottom:0cm;margin-bottom:.0001pt; page-break-after:avoid'>BENTA LYON</p>
+<p class=AmmCorpsTexte style='margin-bottom:0cm;margin-bottom:.0001pt; page-break-after:avoid'>29 AVENUE CHARLES DE GAULLE </p>
+<p class=AmmCorpsTexte style='margin-bottom:0cm;margin-bottom:.0001pt'>69230 SAINT&#8209;GENIS LAVAL</p>
+<p class="AmmAnnexeTitre2"><a name="Ann3bNomsMediEEE">Noms du médicament dans les Etats membres de l'Espace Economique Européen</a>&nbsp;&nbsp;<a href='#HautDePage'><img src='img/BackToTop.jpg' width='15px' height='15px' alt='Retour en haut de la page' title='Retour en haut de la page' /></a></p>
+<p class=AmmCorpsTexte>Sans objet.</p>
+<p class="AmmAnnexeTitre2"><a name="Ann3bContenu">La dernière date à laquelle cette notice a été révisée est :</a>&nbsp;&nbsp;<a href='#HautDePage'><img src='img/BackToTop.jpg' width='15px' height='15px' alt='Retour en haut de la page' title='Retour en haut de la page' /></a></p>
+<p class=AmmCorpsTexte><a name="_Toc142279038">[à compléter ultérieurement par le titulaire]</a></p>
+<p class=AmmCorpsTexteGras>&lt; {MM/AAAA}&gt;&lt; {mois AAAA}.&gt;</p>
+<p class="AmmAnnexeTitre2"><a name="Ann3bAutres">Autres</a>&nbsp;&nbsp;<a href='#HautDePage'><img src='img/BackToTop.jpg' width='15px' height='15px' alt='Retour en haut de la page' title='Retour en haut de la page' /></a></p>
+<p class=AmmCorpsTexte>Des informations détaillées sur ce médicament sont disponibles sur le site Internet de l’ANSM (France).</p>
+</div>					
+					<p class="alignright"><a href="#HautDePage">Retour en haut de la page <img src="img/BackToTop.jpg" width="20px" height="20px" alt="Retour en haut de la page" title="Retour en haut de la page" /></a></p>
+				</div>
+			</div>
+		</div>
+	</div>
+
+<table summary="" class="content" width="1000">
+	<tr>
+		<td height="100px">&nbsp;</td>
+	</tr>
+</table>
+<table summary="Pied de page" class="footer" width="1000">
+	<tr>
+		<td>
+			<table summary="" class="tablealigncenter" border="0">
+				<tr>
+					<td width="100px" class="aligncenter"><a id="lien_ansm" href="http://ansm.sante.fr/" target="_blank"><img src="img/Logo_ANSM.png" width="150" height="60" alt="ANSM - Agence nationale de sécurité du médicament et des produits de santé" title="L'ANSM met à disposition les principales informations issues de l'Autorisation de mise sur le marché, l'appartenance à un groupe générique, les liens vers les informations de sécurité qu'elle publie, l'identification des médicaments sous surveillance renforcée - nouvelle fenêtre" /></a></td>
+					          <td>&nbsp;</td>
+					<td width="100px" class="aligncenter"><img src="img/Logo_HAS.png" width="150" height="60" alt="HAS - Haute autorité de santé" title="La HAS met à disposition les informations relatives au service médical rendu, à l'amélioration du service médical rendu ainsi que les liens vers les avis de la Commission de la Transparence correspondants - nouvelle fenêtre" /></td>
+					<td>&nbsp;</td>
+					<td width="100px" class="aligncenter"><img src="img/Logo_CNAM.png" width="150" height="60" alt="UNCAM - Unin nationale des caisses d'assurance maladie" title="L'UNCAM met à disposition le taux de remboursement, le prix et les indications remboursables le cas échéant, ainsi que l'agrément aux collectivités - nouvelle fenêtre" /></td>
+          				</tr>
+			</table> 
+		</td>
+	</tr>
+</table>
+<table summary="" class="finpage" width="1000">
+	<tr>
+		<td height="100px" class="aligncenter">
+			<a class="navigation" href="plan.php">Plan du site</a>&nbsp;|&nbsp;
+			<a class="navigation" href="accessibilite.php">Accessibilité</a>&nbsp;|&nbsp;
+			<a class="navigation" href="contact.php">Contact</a>&nbsp;|&nbsp;
+			<a class="navigation" href="telechargement.php">Téléchargement</a>&nbsp;|&nbsp;
+			<a class="navigation" href="DeclarationConfidentialite.php">Declaration de confidentialité</a>&nbsp;|&nbsp;
+			<a class="navigation" href="http://www.service-public.fr/" title="Service Public - Nouvelle fenêtre" target="_blank">Service-Public.fr</a>&nbsp;|&nbsp;
+			<a class="navigation" href="http://www.legifrance.gouv.fr/" title="Legifrance - Nouvelle fenêtre" target="_blank">Legifrance</a>&nbsp;|&nbsp;
+			<a class="navigation" href="http://www.gouvernement.fr/" title="Gouvernement - Nouvelle fenêtre" target="_blank" >Gouvernement.fr</a>
+		</td>
+	</tr>
+</table>
+
+
+
+<!-- Matomo -->
+<script type="text/javascript">
+  var _paq = window._paq = window._paq || [];
+  /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
+  _paq.push(['trackPageView']);
+  _paq.push(['enableLinkTracking']);
+  (function() {
+    var u="https://stats.integra.fr/";
+    _paq.push(['setTrackerUrl', u+'matomo.php']);
+    _paq.push(['setSiteId', '79']);
+    var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+    g.type='text/javascript'; g.async=true; g.src=u+'matomo.js'; s.parentNode.insertBefore(g,s);
+  })();
+</script>
+<!-- End Matomo Code -->
+
+
+
+</body>
+</html>

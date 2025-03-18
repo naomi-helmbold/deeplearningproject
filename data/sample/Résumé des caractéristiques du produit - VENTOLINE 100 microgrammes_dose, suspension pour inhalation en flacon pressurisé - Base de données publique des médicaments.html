@@ -1,0 +1,632 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="fr" lang="fr">
+<head>
+	<title>Résumé des caractéristiques du produit - VENTOLINE 100 microgrammes/dose, suspension pour inhalation en flacon pressurisé  - Base de données publique des médicaments</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=windows-1252"/>
+	<meta name="robots" content="index, follow"/>
+	<meta name="Description" content="Base de données publique des médicaments"/>
+	<meta name="Keywords" content="base, données, publique, médicaments, Résumé des caractéristiques du produit, VENTOLINE 100 microgrammes/dose, suspension pour inhalation en flacon pressurisé "/>
+	<meta name="Subject" content="medicament"/>
+	<link href='https://fonts.googleapis.com/css?family=Noticia+Text' rel='stylesheet' type='text/css' />
+	<link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro' rel='stylesheet' type='text/css' />
+	<link href="style/style_bdm.css?v=2.2.3" type="text/css" rel="stylesheet"/>
+	<link href="style/style_RCP_Notice.css" type="text/css" rel="stylesheet"/>
+  <link rel="alternate" href="http://m.base-donnees-publique.medicaments.gouv.fr/#!info-64720167">
+    <script type="text/javascript" src="scripts/autocomplete.js?v=2.2.3"></script>
+	<script type="text/javascript" src="scripts/jquery.js"></script>
+    <script type="text/javascript" src="scripts/jquery-ui.min.js"></script>
+	<script type="text/javascript" src="scripts/common.js"></script>
+	<link rel="icon" type="image/x-icon" href="favicon.ico" />
+</head>
+
+<body>
+
+<a name="HautDePage" />
+<div id="bandeauhaut">
+	<a id="lien_ministere" class="lienmenu" href="http://www.sante.gouv.fr" target="_blank" title="Site du ministère des affaires sociales et de la santé - nouvelle fenêtre"><img id="logoministere" src="img/Logo_Ministere.jpg"  alt="Logo du ministère des affaires sociales et de la santé"/></a>
+	<h1 class="texteTitreSite">
+		Base <span class="texteBleu">de</span> données <span class="texteBleu">publique</span><br/><span class="texteBleu">des</span> médicaments
+	</h1>
+		<a id="lien_medicament_gouv" class="lienEspaceMedic" target="_blank" href="http://medicaments.gouv.fr" title="Visiter [medicaments.gouv.fr] - nouvelle fenêtre">Visiter [medicaments.gouv.fr] <img src="/img/icone_lien.png" alt="Visiter [medicaments.gouv.fr]"  title="Visiter [medicaments.gouv.fr] - nouvelle fenetre" /></a>
+</div>
+<!--div align="center">
+	<a id="banniere" target="_blank" href="http://social-sante.gouv.fr/soins-et-maladies/medicaments/medicaments-generiques/" title="Visiter [medicaments.gouv.fr] - M?dicaments g?n?riques">
+		<img width="1000"   src ="/img/carrouselbannieres.gif" alt="Visiter [medicaments.gouv.fr] - M?dicaments g?n?riques" title="Visiter [medicaments.gouv.fr] - M?dicaments g?n?riques" />
+	</a>
+</div-->
+
+<div id="menuhaut">
+	<span id="menuhaut_gauche">
+		<a id="lien_accueil" class="navigation" href="index.php">Accueil</a>&nbsp;|&nbsp;
+		<a id="lien_glossaire" class="navigation" href="glossaire.php">Glossaire</a>&nbsp;|&nbsp;
+		<a id="lien_aide" class="navigation" href="aide.php">Aide</a>		
+	</span>
+	
+		
+	<span id="menuhaut_dernmaj">
+        <br>Dernière <span title=" 2.4.4
+">mise à jour</span> le 03/03/2025	</span>
+</div>
+
+	<script language="javascript" type="text/javascript">
+		//<![CDATA[ 
+		function Aff(men) {
+			document.write("<ul class=\"menuDoc\">");
+			for(var no_rub=0;no_rub<men.num_rub;no_rub++) {
+				document.write("<li><a class='leftMenu' href='"+menu[no_rub].page+"'>");
+				document.write(men[no_rub].txt);
+				document.write("</a></li>");
+				if (men[no_rub].nb_lien != 0){
+					document.write("<ul class=\"sousMenuDoc\">");
+				}
+				for(var no_lien=0;no_lien<men[no_rub].nb_lien;no_lien++) {
+					document.write("<li><a class='leftMenu' href='"+men[no_rub][no_lien].page+"'>");
+					document.write(men[no_rub][no_lien].txt);
+					document.write("</a></li>");
+				}
+				if (men[no_rub].nb_lien != 0){
+					document.write("</ul>");
+				}
+			}
+			document.write("</ul>");
+		}
+		
+		function CreerMenu(police,imgRub,imgOption,imgOptionFin,hauteur) {
+			this.num_rub=0;
+			this.police=police;
+			this.imgRub=imgRub;
+			this.imgOpt=imgOption;
+			this.imgOptFin=imgOptionFin;
+			this.hauteur=hauteur;
+			this.AddRub=AddRub;
+			this.AddLien=AddLien;
+		}
+		
+		function AddRub(txt,aff,page) {
+			var rub = new Object;
+				rub.txt=txt;
+				rub.aff=aff;
+				rub.page=page;
+				rub.nb_lien=0;
+			this[this.num_rub]=rub;
+			this.num_rub++;
+		}
+
+		function AddLien(txt,page) {
+			var no_rub = this.num_rub-1;
+			var no_lien= this[no_rub].nb_lien;
+			var lien = new Object;
+				lien.txt=txt;
+				lien.page=page;
+			this[no_rub][no_lien]=lien;
+			this[no_rub].nb_lien++;
+		}
+		var menu=new CreerMenu("arial","img/dyn04.gif","img/dyn22.gif","img/dyn55.gif",18);
+		//]]> 
+		menu.AddRub("Composition","O","#RcpCompoQualiQuanti");
+			menu.AddRub("Forme pharma.","O","#RcpFormePharm");
+			menu.AddRub("Clinique","O","#RcpDonneesCliniques");
+			menu.AddLien("Indic. thérapeutiques","#RcpIndicTherap");
+				menu.AddLien("Posologie","#RcpPosoAdmin");
+				menu.AddLien("Contre-indications","#RcpContreindications");
+				menu.AddLien("Mise en garde","#RcpMisesEnGarde");
+				menu.AddLien("Interactions","#RcpInteractionsMed");
+				menu.AddLien("Grossesse, allait.","#RcpFertGrossAllait");
+				menu.AddLien("Conduite véhicules","#RcpConduite");
+				menu.AddLien("Effets indésirables","#RcpEffetsIndesirables");
+				menu.AddLien("Surdosage","#RcpSurdosage");
+				menu.AddRub("Pharmacologie","O","#RcpPropPharmacologiques");
+			menu.AddLien("Pharmacodynamie","#RcpPropPharmacodynamiques");
+				menu.AddLien("Pharmacocinétique","#RcpPropPharmacocinetiques");
+				menu.AddLien("Sécurité préclinique","#RcpSecuritePreclinique");
+				menu.AddRub("Pharmaceutique","O","#RcpDonneesPharmaceutiques");
+			menu.AddLien("Liste excipients","#RcpListeExcipients");
+				menu.AddLien("Incompatibilités","#RcpIncompatibilites");
+				menu.AddLien("Durée conservation","#RcpDureeConservation");
+				menu.AddLien("Conservation","#RcpPrecConservation");
+				menu.AddLien("Emballage","#RcpEmballage");
+				menu.AddLien("Utilisation/manipulation","#RcpPrecEmpl");
+				menu.AddRub("Titulaire AMM","O","#RcpTitulaireAmm");
+			menu.AddRub("Présentations","O","#RcpNumAutor");
+			menu.AddRub("Autorisation, renouv.","O","#RcpPremiereAutorisation");
+			menu.AddRub("Date de révision","O","#RcpDateRevision");
+			menu.AddRub("Dosimétrie","O","#RcpDosimetrie");
+			menu.AddRub("Préparation radiopharma.","O","#RcpInstPrepRadioph");
+				</script>
+
+	<div id="container">
+		<div id="leftnav">
+			<div id="cadreMenuGauche">
+				<h2 class="sommaireMenu">Sommaire</h2>
+				<div id="menuGauche">
+					<script language="JavaScript" type="text/javascript">Aff(menu);</script>
+				</div>
+			</div>
+		</div>
+		<div id="contentPrincipal">
+			<div id="boutonsliens">
+				<a id='lien_fiche_info' href='extrait.php?specid=64720167' ><img id="ongletficheinfo" alt="Onglet fiche information" src="img/onglet_fiche_info_vert.png" /></a><a id='lien_rcp' href='affichageDoc.php?specid=64720167&amp;typedoc=R'><img class="onglet" alt="Onglet résumé des caractéristiques du produit" src="img/onglet_rcp_gris.png" /></a><a id='lien_notice' href='affichageDoc.php?specid=64720167&amp;typedoc=N'><img class="onglet" alt="Onglet notice patient" src="img/onglet_notice_vert.png" /></a>			</div>
+			<div class="titredeno">
+				<table summary="" border="0" cellspacing="0">
+					<tr><td colspan="3" height="10px"></td></tr>
+					<tr>
+						<td width="15px">&nbsp;</td>
+						<td width="685px"><h1 class="textedeno">VENTOLINE 100 microgrammes/dose, suspension pour inhalation en flacon pressurisé  - Résumé des caractéristiques du produit</h1></td>
+						<td width="43px" class="tdcenter"><a href="Javascript:void(null)" onclick="print();"><img src="img/imprimante.png" height="20px" width="20px" alt="Imprimer le document" title="Imprimer le document" border="0" /></a></td>
+					</tr>
+					<tr><td colspan="3" height="10px"></td></tr>
+				</table>
+			</div>
+			
+			<div id="contentDocument">
+				<div id="textDocument">
+					<p class="DateNotif">ANSM - Mis à jour le : 22/01/2025</p>
+<p class=AmmAnnexeTitre1><a name="_Toc142278912">1. DENOMINATION DU MEDICAMENT</a> </p>
+<p class=AmmCorpsTexteGras>VENTOLINE 100 microgrammes/dose, suspension pour inhalation en flacon pressurisé</p>
+<p class="AmmAnnexeTitre1"><a name="RcpCompoQualiQuanti">2. COMPOSITION QUALITATIVE ET QUANTITATIVE</a>&nbsp;&nbsp;<a href='#HautDePage'><img src='img/BackToTop.jpg' width='15px' height='15px' alt='Retour en haut de la page' title='Retour en haut de la page' /></a></p>
+<p class=AmmComposition>Sulfate de salbutamol …………………………………………………………120,50 microgrammes</p>
+<p class=AmmComposition>Quantité correspondant à salbutamol………………………..………………100,00 microgrammes</p>
+<p class=AmmComposition align=center style='text-align:center'>Pour une dose.</p>
+<p class=AmmCorpsTexte>Pour la liste complète des excipients, voir rubrique 6.1.</p>
+<p class="AmmAnnexeTitre1"><a name="RcpFormePharm">3. FORME PHARMACEUTIQUE</a>&nbsp;&nbsp;<a href='#HautDePage'><img src='img/BackToTop.jpg' width='15px' height='15px' alt='Retour en haut de la page' title='Retour en haut de la page' /></a></p>
+<p class=AmmCorpsTexte>Suspension pour inhalation </p>
+<p class="AmmAnnexeTitre1"><a name="RcpDonneesCliniques">4. DONNEES CLINIQUES</a>&nbsp;&nbsp;<a href='#HautDePage'><img src='img/BackToTop.jpg' width='15px' height='15px' alt='Retour en haut de la page' title='Retour en haut de la page' /></a></p>
+<p class="AmmAnnexeTitre2"><a name="RcpIndicTherap">4.1. Indications thérapeutiques</a>&nbsp;&nbsp;<a href='#HautDePage'><img src='img/BackToTop.jpg' width='15px' height='15px' alt='Retour en haut de la page' title='Retour en haut de la page' /></a></p>
+<p class=AmmListePuces1><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>Traitement symptomatique de la crise d’asthme.</p>
+<p class=AmmListePuces1><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>Traitement symptomatique des exacerbations d'asthme ou bronchite chronique obstructive.</p>
+<p class=AmmListePuces1><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>Prévention de l’asthme d’effort.</p>
+<p class=AmmListePuces1><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>Test de réversibilité de l’obstruction bronchique lors des explorations fonctionnelles respiratoires.</p>
+<p class=AmmCorpsTexte></p>
+<p class="AmmAnnexeTitre2"><a name="RcpPosoAdmin">4.2. Posologie et mode d'administration</a>&nbsp;&nbsp;<a href='#HautDePage'><img src='img/BackToTop.jpg' width='15px' height='15px' alt='Retour en haut de la page' title='Retour en haut de la page' /></a></p>
+<p class=AmmAnnexeTitre3>Posologie</p>
+<p class=AmmCorpsTexte>Quel que soit l’âge :</p>
+<p class=AmmListePuces1 style='margin-left:36.0pt'><span style='font-family: Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>Traitement de la crise d’asthme et des exacerbations : dès les premiers symptômes, inhaler 1 à 2 bouffées.</p>
+<p class=AmmListePuces1 style='margin-top:0cm;margin-right:0cm;margin-bottom: 6.0pt;margin-left:36.0pt'><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>Prévention de l’asthme d’effort : inhalation de 1 à 2 bouffées, 15 à 30 minutes avant l’exercice.</p>
+<p class=AmmCorpsTexte>La dose de 1 à 2 bouffées est généralement suffisante pour traiter une gêne respiratoire. </p>
+<p class=AmmCorpsTexte>En cas de persistance des symptômes, elle peut être renouvelée quelques minutes plus tard.</p>
+<p class=AmmCorpsTexte>La durée d'action bronchodilatatrice du salbutamol par voie inhalée est de 4 à 6 heures. </p>
+<p class=AmmCorpsTexte>En cas de réapparition des symptômes, les prises peuvent être renouvelées.</p>
+<p class=AmmCorpsTexte>La dose quotidienne ne doit habituellement pas dépasser<span style='color:black'> 8 </span>bouffées par 24 heures. Au-delà de cette dose, le patient doit être informé qu’une consultation médicale est nécessaire afin de réévaluer la conduite thérapeutique (voir rubrique 4.4).</p>
+<p class=AmmCorpsTexte>En cas de crise d’asthme aiguë grave ou d’exacerbation aiguë sévère de bronchopneumopathie chronique obstructive, il convient d’administrer 2 à 6 bouffées à renouveler toutes les 5 à 10 minutes en attendant la prise en charge par une structure d’urgence pré-hospitalière. Dans ces situations, l’utilisation d’une chambre d’inhalation est recommandée car elle contribue à améliorer la diffusion pulmonaire du salbutamol administré par voie inhalée. Néanmoins, le déclenchement de l’aérosol-doseur à plusieurs reprises dans la chambre d’inhalation pouvant diminuer la dose totale inhalée, le patient devra inhaler le produit immédiatement après chaque déclenchement (ou éventuellement chaque série de deux déclenchements successifs) de l’aérosol doseur dans la chambre d’inhalation. L’administration sera ensuite répétée par cycles successifs. L’asthme aigu grave nécessite une hospitalisation. Une oxygénothérapie et la mise en route d’une corticothérapie par voie systémique doivent être envisagées.</p>
+<p class=AmmAnnexeTitre3>Mode d’administration</p>
+<p class=AmmCorpsTexte>Voie inhalée par un dispositif en flacon pressurisé muni d’un embout buccal.</p>
+<p class=AmmCorpsTexte>Pour une utilisation correcte, il est souhaitable que le médecin s’assure du bon usage de l’appareil par le patient.</p>
+<p class=AmmCorpsTexte>En cas de mise en évidence chez le patient d’une mauvaise synchronisation main/poumon empêchant la coordination des mouvements inspiration/déclenchement de l’appareil, l’utilisation d’une chambre d’inhalation est indiquée. D’autres spécialités à base de salbutamol mieux adaptées à ces patients sont également disponibles.</p>
+<p class=AmmCorpsTexte>Les <span style='color:black'>nourrissons et</span> les jeunes enfants nécessitant un traitement par VENTOLINE en suspension pour inhalation en flacon pressurisé peuvent bénéficier de l’utilisation d’une chambre d’inhalation munie d’un masque facial. </p>
+<p class=AmmCorpsTexte><span class='italique'><span class='souligne'>Utilisation du dispositif d'inhalation :</span></span></p>
+<p class=AmmCorpsTexte>Lorsque l’inhalateur est utilisé pour la première fois ou s’il n’a pas été utilisé depuis plus de 5 jours, il convient de s'assurer de son bon fonctionnement. Pour cela, retirer le capuchon de l’embout buccal en pressant doucement de chaque côté, bien agiter l’inhalateur, et appuyer sur la cartouche pour libérer deux bouffées de produit dans l’air ambiant. </p>
+<p class=AmmCorpsTexte>Pour l'utilisation courante, après avoir<span style='color:blue'> </span>enlevé le capuchon <span style='color:black'>de l’embout buccal en exerçant une pression de chaque côté de celui-ci</span><span style='color:black'>, le patient devra :</span></p>
+<p class=AmmListePuces1 style='margin-left:35.45pt'><span style='font-family: Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>vérifier l’absence de corps étrangers à l’intérieur de l’inhalateur notamment au niveau de l’embout buccal,</p>
+<p class=AmmListePuces1 style='margin-left:35.45pt'><span style='font-family: Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>bien agiter l'inhalateur afin de s’assurer que les composants de la solution contenue dans la cartouche ont été correctement mélangés,</p>
+<p class=AmmListePuces1 style='margin-left:35.45pt'><span style='font-family: Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>expirer profondément en dehors de l'inhalateur, </p>
+<p class=AmmListePuces1 style='margin-left:35.45pt'><span style='font-family: Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>présenter l’embout buccal entre les lèvres à l’entrée de la bouche, le fond de la cartouche métallique dirigé vers le haut,</p>
+<p class=AmmListePuces1 style='margin-left:35.45pt'><span style='font-family: Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>commencer à inspirer en pressant sur la cartouche métallique tout en continuant à inspirer lentement et profondément,</p>
+<p class=AmmListePuces1 style='margin-left:35.45pt'><span style='font-family: Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>retirer l’embout buccal et retenir sa respiration pendant au moins 10 secondes,</p>
+<p class=AmmListePuces1 style='margin-left:35.45pt'><span style='font-family: Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>renouveler l'inhalation si besoin,</p>
+<p class=AmmListePuces1 style='margin-left:35.45pt'><span style='font-family: Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>repositionner le capuchon sur l’embout buccal et appuyer fermement pour le remettre en position,</p>
+<p class=AmmListePuces1 style='margin-top:0cm;margin-right:0cm;margin-bottom: 6.0pt;margin-left:35.45pt;text-indent:-17.85pt'><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>l’embout buccal de l’inhalateur doit, par mesure d’hygiène, être nettoyé après emploi.</p>
+<p class=AmmListePuces1>L'inhalateur n'est pas muni d'un compteur de doses. </p>
+<p class="AmmAnnexeTitre2"><a name="RcpContreindications">4.3. Contre-indications</a>&nbsp;&nbsp;<a href='#HautDePage'><img src='img/BackToTop.jpg' width='15px' height='15px' alt='Retour en haut de la page' title='Retour en haut de la page' /></a></p>
+<p class=AmmListePuces1><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>Allergie à l’un des constituants.</p>
+<p class=AmmListePuces1><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>Intolérance à ce médicament (survenue de toux ou de bronchospasme survenant immédiatement après inhalation du produit). Dans ce cas, il conviendra d’interrompre ce traitement et de prescrire d’autres thérapeutiques ou d’autres formes d’administration.</p>
+<p class="AmmAnnexeTitre2"><a name="RcpMisesEnGarde">4.4. Mises en garde spéciales et précautions d'emploi</a>&nbsp;&nbsp;<a href='#HautDePage'><img src='img/BackToTop.jpg' width='15px' height='15px' alt='Retour en haut de la page' title='Retour en haut de la page' /></a></p>
+<p class=AmmAnnexeTitre3><a name="_Toc142278920">Mises en garde </a></p>
+<p class=AmmCorpsTexte>Informer le patient qu’une consultation médicale immédiate est nécessaire si, en cas de crise d’asthme, le soulagement habituellement obtenu n’est pas rapidement observé.</p>
+<p class=AmmCorpsTexte><a name="_Hlk151049779">Il doit être conseillé aux patients chez qui un traitement anti-inflammatoire régulier est prescrit (ex : corticostéroïdes par voie inhalée), de continuer à prendre leur traitement anti-inflammatoire même si les symptômes s’améliorent et qu’ils n’ont pas besoin de VENTOLINE 100 microgrammes/dose, suspension pour inhalation en flacon pressurisé.</a></p>
+<p class=AmmCorpsTexte>Si un patient développe en quelques jours une augmentation rapide de sa consommation en bronchodilatateurs bêta-2 mimétiques d’action rapide et de courte durée par voie inhalée, on doit craindre (surtout si les valeurs du débit-mètre de pointe s’abaissent et/ou deviennent irrégulières) une décompensation de l'atteinte respiratoire et chez les asthmatiques, la possibilité d’une évolution vers un état de mal asthmatique. Les patients doivent être avertis qu’ils doivent dans ce cas consulter un médecin dès que possible. La conduite thérapeutique devra alors être réévaluée. </p>
+<p class=AmmCorpsTexte>La surutilisation de bronchodilatateurs bêta agonistes de courte durée d’action peut masquer la progression de la pathologie sous-jacente et contribuer à la détérioration du contrôle de l’asthme, entrainant une augmentation du risque d’exacerbations graves d’asthme et de la mortalité.</p>
+<p class=AmmCorpsTexte>Les patients qui prennent du salbutamol « à la demande » plus de deux fois par semaine (en plus des administrations en traitement préventif de l’asthme induit par l’effort) sont à risque de surutilisation de salbutamol et doivent donc être réexaminés (symptômes diurnes, réveils nocturnes, limitation des activités due à l’asthme) afin de réajuster leur traitement.</p>
+<p class=AmmCorpsTexte>Une détérioration soudaine et progressive du contrôle de l’asthme peut mettre en jeu le pronostic vital. L'instauration d'une corticothérapie ou l'augmentation d'une corticothérapie déjà en cours, doivent être envisagées. Chez l'adulte asthmatique, une corticothérapie inhalée doit être envisagée dès qu’il est nécessaire de recourir plus de 1 fois par semaine aux bêta-2 mimétiques par voie inhalée. Le patient doit dans ce cas être averti que l’amélioration de son état clinique ne doit pas conduire à une modification de son traitement, en particulier à l’arrêt de la corticothérapie par voie inhalée sans avis médical.</p>
+<p class=AmmCorpsTexte>Comme avec les autres traitements administrés par voie inhalée, un bronchospasme paradoxal peut survenir, se manifestant par une augmentation de la dyspnée et des sifflements bronchiques immédiatement après l'inhalation du produit. Le bronchospasme sera traité par une autre présentation ou un autre bronchodilatateur à action rapide par voie inhalée (si disponible). Le traitement par VENTOLINE 100 microgrammes/dose, suspension pour inhalation en flacon pressurisé doit être interrompu et, si nécessaire, être remplacé par un autre médicament bronchodilatateur à action rapide.</p>
+<p class=AmmCorpsTexte><span style='color:black'>Les médicaments ayant une activité sympathomimétique, dont fait partie le salbutamol, peuvent entraîner des effets cardiovasculaires. Des cas d'ischémies myocardiques associées au salbutamol ont été rapportés lors de notifications spontanées depuis la commercialisation ainsi que dans la littérature. Les patients présentant une cardiopathie sévère sous-jacente (par exemple, cardiopathie ischémique, troubles du rythme ou insuffisance cardiaque sévère) devront être informés de la nécessité de consulter leur médecin en cas de douleur thoracique ou autres symptômes évocateurs d’une aggravation de leur cardiopathie. L'origine cardiaque de symptômes respiratoires telle qu'une dyspnée doit également être évoquée. </span></p>
+<p class=AmmAnnexeTitre3>Précautions d’emploi</p>
+<p class=AmmCorpsTexte>En cas d’infection bronchique ou de bronchorrhée abondante, un traitement approprié est nécessaire afin de favoriser la diffusion optimale du produit dans les voies respiratoires.</p>
+<p class=AmmCorpsTexte><span style='color:black'>Le salbutamol doit être utilisé avec précaution chez les patients ayant reçu des doses importantes d’autres médicaments sympathomimétiques.</span></p>
+<p class=AmmCorpsTexte>Le salbutamol administré par voie inhalée avec ce dispositif en flacon pressurisé, peut-être, aux doses usuelles, normalement utilisé chez les malades atteints d’hyperthyroïdie, de troubles coronariens, de cardiomyopathie obstructive, de troubles du rythme ventriculaire, d’hypertension artérielle, de diabète sucré, contrairement au salbutamol administré en nébulisation ou par voie orale ou injectable qui ne doit être prescrit qu’avec prudence dans ces situations.</p>
+<p class=AmmCorpsTexte><span style='color:black'>Les bêta-2 mimétiques à forte dose (en particulier par voie parentérale ou par nébulisation), peuvent être à l’origine d’une hypokaliémie potentiellement grave, pouvant favoriser la survenue de troubles du rythme cardiaque. Une surveillance de la kaliémie est recommandée dans la mesure du possible, en particulier lors de l’administration simultanée de thérapeutiques hypokaliémiantes, en cas d’hypoxie ou chez les sujets chez qui le risque de survenue de torsades de pointes est majoré (QT long ou traitements susceptibles d’augmenter le QTc).</span></p>
+<p class=AmmCorpsTexte style='margin-bottom:0cm;margin-bottom:.0001pt'>Comme d'autres agonistes des récepteurs bêta adrénergiques, le salbutamol peut induire une augmentation de la glycémie. Des cas d’acidocétose ont été rapportés chez les patients diabétiques. L’administration concomitante de corticoïdes peut majorer ces effets. </p>
+<p class=AmmCorpsTexte style='margin-bottom:0cm;margin-bottom:.0001pt; page-break-after:avoid'>Des cas d'acidose lactique ont été très rarement rapportés en association à de fortes doses de bêta-2 agonistes de courte durée d’action par voie intraveineuse ou par voie inhalée par nébulisation, principalement chez des patients traités pour une exacerbation aiguë de leur asthme (voir 4.8 Effets indésirables). Une augmentation du taux d’acide lactique peut entraîner une dyspnée et une hyperventilation compensatoire, qui peut être interprétée à tort comme un signe d’échec au traitement de l’asthme conduisant à l'augmentation inapproprié du traitement par bêta-agoniste de courte durée d’action. Par conséquent, le risque d'acidose lactique doit faire l'objet d'une surveillance attentive en particulier dans les situations sévères. </p>
+<p class=AmmCorpsTexte style='margin-top:6.0pt'><span class='gras'>Sportifs :</span></p>
+<p class=AmmCorpsTexte style='margin-bottom:0cm;margin-bottom:.0001pt'>L’attention des sportifs sera attirée sur le fait que cette spécialité contient un principe actif pouvant induire une réaction positive des tests pratiqués lors des contrôles antidopage.</p>
+<p class="AmmAnnexeTitre2"><a name="RcpInteractionsMed">4.5. Interactions avec d'autres médicaments et autres formes d'interactions</a>&nbsp;&nbsp;<a href='#HautDePage'><img src='img/BackToTop.jpg' width='15px' height='15px' alt='Retour en haut de la page' title='Retour en haut de la page' /></a></p>
+<p class=AmmAnnexeTitre3><a name="_Toc142278921">Associations déconseillées</a></p>
+<p class=AmmCorpsTexte><span class='gras'>+ Bêta-bloquants non sélectifs</span></p>
+<p class=AmmCorpsTexte>Le salbutamol et les bêta-bloquants non sélectifs, tel que le propranolol, ne doivent généralement pas être prescrits de façon concomitante.</p>
+<p class=AmmCorpsTexte><span class='gras'>+ Anesthésiques halogénés (halothane)</span></p>
+<p class=AmmCorpsTexte>En cas d’intervention obstétricale, majoration de l’inertie utérine avec risque hémorragique ; par ailleurs, risque de survenue de troubles du rythme ventriculaire graves, par augmentation de la réactivité cardiaque.</p>
+<p class=AmmCorpsTexte><span class='gras'><span class='souligne'>Associations faisant l'objet de précautions d’emploi</span></span></p>
+<p class=AmmCorpsTexte><span class='gras'>+ Antidiabétiques </span></p>
+<p class=AmmCorpsTexte>L'administration de bêta-2 mimétiques est associée à une augmentation de la glycémie, ce qui peut être interprété comme une diminution de l'effet du traitement antidiabétique, par conséquent, il peut être nécessaire de réajuster le traitement antidiabétique (voir rubrique 4.4). Renforcer la surveillance sanguine et urinaire.</p>
+<p class="AmmAnnexeTitre2"><a name="RcpFertGrossAllait">4.6. Fertilité, grossesse et allaitement</a>&nbsp;&nbsp;<a href='#HautDePage'><img src='img/BackToTop.jpg' width='15px' height='15px' alt='Retour en haut de la page' title='Retour en haut de la page' /></a></p>
+<p class=AmmAnnexeTitre3><a name="_Toc142278926">Grossesse</a></p>
+<p class=AmmAnnexeTitre4>Salbutamol</p>
+<p class=AmmCorpsTexte>En clinique, il existe un recul important, avec un nombre suffisant de grossesses documentées, pour que l’on puisse conclure à l’innocuité du salbutamol pendant la grossesse. </p>
+<p class=AmmCorpsTexte>En conséquence, le salbutamol par voie inhalée peut être administré en cas de grossesse.</p>
+<p class=AmmCorpsTexte>Lors de l’administration pendant la grossesse : </p>
+<p class=AmmCorpsTexte>Une accélération du rythme cardiaque fœtal peut être observée parallèlement à la tachycardie maternelle. Il est exceptionnel de la voir persister à la naissance.</p>
+<p class=AmmCorpsTexte>De même, les valeurs de la glycémie post-natale ne sont qu’exceptionnellement perturbées. </p>
+<p class=AmmCorpsTexte>En cas d’administration avant l’accouchement, tenir compte de l’effet vasodilatateur périphérique des bêta-2 mimétiques.</p>
+<p class=AmmAnnexeTitre4>Norflurane (Tétrafluoroéthane ou HFA 134a) : gaz propulseur</p>
+<p class=AmmCorpsTexte>L’étude des fonctions de reproduction menée chez l’animal n’a pas mis en évidence d’effet néfaste de l’administration de HFA 134a ou tétrafluoroéthane contenu dans ce médicament. </p>
+<p class=AmmCorpsTexte>Néanmoins chez la femme enceinte le retentissement de l’administration de HFA 134a en cours de grossesse n’est pas connu.</p>
+<p class=AmmAnnexeTitre3><a name="_Toc142278927">Allaitement</a></p>
+<p class=AmmCorpsTexte>Les bêta-2 mimétiques passent dans le lait maternel. </p>
+<p class=AmmCorpsTexte>Le passage du gaz propulseur le Norflurane (Tétrafluoroéthane ou HFA 134a) et de ses métabolites dans le lait n’est pas connu.</p>
+<p class=AmmAnnexeTitre3>Fertilité </p>
+<p class=AmmCorpsTexte><span class=hps>Il n'existe aucune information</span> <span class=hps>sur les effets du</span> <span class=hps>salbutamol</span> <span class=hps>sur la fertilité</span> <span class=hps>humaine.</span> Il n'a pas été mis en évidence d'effet indésirable sur la fertilité chez l’animal (voir rubrique 5.3).</p>
+<p class="AmmAnnexeTitre2"><a name="RcpConduite">4.7. Effets sur l'aptitude à conduire des véhicules et à utiliser des machines</a>&nbsp;&nbsp;<a href='#HautDePage'><img src='img/BackToTop.jpg' width='15px' height='15px' alt='Retour en haut de la page' title='Retour en haut de la page' /></a></p>
+<p class=AmmCorpsTexte>Sans objet.</p>
+<p class="AmmAnnexeTitre2"><a name="RcpEffetsIndesirables">4.8. Effets indésirables</a>&nbsp;&nbsp;<a href='#HautDePage'><img src='img/BackToTop.jpg' width='15px' height='15px' alt='Retour en haut de la page' title='Retour en haut de la page' /></a></p>
+<p class=AmmCorpsTexte>Les effets secondaires sont cités ci-dessous, listés par classe organe et par fréquence. Les fréquences sont définies en très fréquent (&#8805;1/10), fréquent (<span style='font-family:Symbol'>³</span>1/100 et <span style='font-family:Symbol'>&lt;</span>1/10), peu fréquent (<span style='font-family:Symbol'>³</span>1/1000 et <span style='font-family:Symbol'>&lt;</span>1/100), rare (&#8805;1/10000 et &lt;1/1000) et très rare (<span style='font-family: Symbol'>&lt;</span>1/10000) y compris les cas isolés. Les effets très fréquents et fréquents ont généralement été décrits dans les essais cliniques. Les effets indésirables rares et très rares sont généralement issus des notifications spontanées depuis la commercialisation.</p>
+<table class=AmmCorpsTexteTable border=1 cellspacing=0 cellpadding=0 width=0
+style='margin-left:5.4pt;border-collapse:collapse;border:none'>
+<tr>
+<td width=180 style='width:135.0pt;border:solid windowtext 1.0pt;background:
+white;padding:0cm 5.4pt 0cm 5.4pt'>
+<p class=AmmCorpsTexte align=center style='text-align:center'><span class='gras'>Classe organe</span></p>
+<p class=AmmCorpsTexte align=center style='text-align:center'><span class='gras'> </span></p>
+</td>
+<td width=309 style='width:231.55pt;border:solid windowtext 1.0pt;border-left:
+none;background:white;padding:0cm 5.4pt 0cm 5.4pt'><span class='gras'><span style='font-size:
+10.0pt;font-family:"Arial",sans-serif'><br clear=all style='page-break-before:
+always'>
+</span></span>
+<p class=AmmCorpsTexte align=center style='text-align:center'><span class='gras'>Effets indésirables</span></p>
+<p class=AmmCorpsTexte align=center style='text-align:center'><span class='gras'> </span></p>
+</td>
+<td width=123 style='width:92.45pt;border:solid windowtext 1.0pt;border-left:
+none;background:white;padding:0cm 5.4pt 0cm 5.4pt'>
+<p class=AmmCorpsTexte align=center style='text-align:center'><span class='gras'>Fréquence</span></p>
+<p class=AmmCorpsTexte align=center style='text-align:center'><span class='gras'> </span></p>
+</td>
+</tr>
+<tr>
+<td width=180 valign=top style='width:135.0pt;border:solid windowtext 1.0pt;
+border-top:none;padding:0cm 5.4pt 0cm 5.4pt'>
+<p class=AmmCorpsTexte>Affections du système immunitaire</p>
+</td>
+<td width=309 valign=top style='width:231.55pt;border-top:none;border-left:
+none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+padding:0cm 5.4pt 0cm 5.4pt'>
+<p class=AmmCorpsTexte>Réactions d’hypersensibilité incluant : œdème angioneurotique, urticaire, prurit, bronchospasme, hypotension, collapsus.</p>
+</td>
+<td width=123 valign=top style='width:92.45pt;border-top:none;border-left:
+none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+padding:0cm 5.4pt 0cm 5.4pt'>
+<p class=AmmCorpsTexte>Très rare</p>
+</td>
+</tr>
+<tr style='height:27.05pt'>
+<td width=180 valign=top style='width:135.0pt;border-top:none;border-left:
+solid windowtext 1.0pt;border-bottom:none;border-right:solid windowtext 1.0pt;
+padding:0cm 5.4pt 0cm 5.4pt;height:27.05pt'>
+<p class=AmmCorpsTexte>Troubles du métabolisme et de la nutrition</p>
+</td>
+<td width=309 valign=top style='width:231.55pt;border:none;border-right:solid windowtext 1.0pt;
+padding:0cm 5.4pt 0cm 5.4pt;height:27.05pt'>
+<p class=AmmCorpsTexte>Hypokaliémie.*</p>
+<p class=AmmCorpsTexte> </p>
+</td>
+<td width=123 valign=top style='width:92.45pt;border:none;border-right:solid windowtext 1.0pt;
+padding:0cm 5.4pt 0cm 5.4pt;height:27.05pt'>
+<p class=AmmCorpsTexte>Très rare</p>
+</td>
+</tr>
+<tr style='height:26.75pt'>
+<td width=180 valign=top style='width:135.0pt;border:solid windowtext 1.0pt;
+padding:0cm 5.4pt 0cm 5.4pt;height:26.75pt'>
+<p class=AmmCorpsTexte>Affections du système nerveux</p>
+</td>
+<td width=309 valign=top style='width:231.55pt;border:solid windowtext 1.0pt;
+border-left:none;padding:0cm 5.4pt 0cm 5.4pt;height:26.75pt'>
+<p class=AmmCorpsTexte>Céphalées, tremblements.</p>
+</td>
+<td width=123 valign=top style='width:92.45pt;border:solid windowtext 1.0pt;
+border-left:none;padding:0cm 5.4pt 0cm 5.4pt;height:26.75pt'>
+<p class=AmmCorpsTexte>Fréquent</p>
+</td>
+</tr>
+<tr style='height:26.75pt'>
+<td width=180 valign=top style='width:135.0pt;border:solid windowtext 1.0pt;
+border-top:none;padding:0cm 5.4pt 0cm 5.4pt;height:26.75pt'>
+<p class=AmmCorpsTexte>Affections psychiatriques</p>
+</td>
+<td width=309 valign=top style='width:231.55pt;border-top:none;border-left:
+none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+padding:0cm 5.4pt 0cm 5.4pt;height:26.75pt'>
+<p class=AmmCorpsTexte>Troubles du comportement : nervosité, agitation.</p>
+</td>
+<td width=123 valign=top style='width:92.45pt;border-top:none;border-left:
+none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+padding:0cm 5.4pt 0cm 5.4pt;height:26.75pt'>
+<p class=AmmCorpsTexte>Très rare</p>
+</td>
+</tr>
+<tr style='height:39.45pt'>
+<td width=180 rowspan=4 valign=top style='width:135.0pt;border:solid windowtext 1.0pt;
+border-top:none;padding:0cm 5.4pt 0cm 5.4pt;height:39.45pt'>
+<p class=AmmCorpsTexte>Affections cardiaques</p>
+<p class=AmmCorpsTexte> </p>
+</td>
+<td width=309 valign=top style='width:231.55pt;border-top:none;border-left:
+none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+padding:0cm 5.4pt 0cm 5.4pt;height:39.45pt'>
+<p class=AmmCorpsTexte><span style='color:black'>Tachycardie.</span></p>
+</td>
+<td width=123 valign=top style='width:92.45pt;border-top:none;border-left:
+none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+padding:0cm 5.4pt 0cm 5.4pt;height:39.45pt'>
+<p class=AmmCorpsTexte><span style='color:black'>Fréquent</span></p>
+</td>
+</tr>
+<tr style='height:39.35pt'>
+<td width=309 valign=top style='width:231.55pt;border-top:none;border-left:
+none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+padding:0cm 5.4pt 0cm 5.4pt;height:39.35pt'>
+<p class=AmmCorpsTexte><span style='color:black'>Palpitations.</span></p>
+</td>
+<td width=123 valign=top style='width:92.45pt;border-top:none;border-left:
+none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+padding:0cm 5.4pt 0cm 5.4pt;height:39.35pt'>
+<p class=AmmCorpsTexte><span style='color:black'>Peu fréquent</span></p>
+</td>
+</tr>
+<tr style='height:39.35pt'>
+<td width=309 valign=top style='width:231.55pt;border-top:none;border-left:
+none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+padding:0cm 5.4pt 0cm 5.4pt;height:39.35pt'>
+<p class=AmmCorpsTexte><span style='color:black'>Arythmies cardiaques (incluant fibrillation auriculaire, tachycardie supraventriculaire et extrasystoles).</span></p>
+</td>
+<td width=123 valign=top style='width:92.45pt;border-top:none;border-left:
+none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+padding:0cm 5.4pt 0cm 5.4pt;height:39.35pt'>
+<p class=AmmCorpsTexte><span style='color:black'>Très rare</span></p>
+</td>
+</tr>
+<tr style='height:39.35pt'>
+<td width=309 valign=top style='width:231.55pt;border-top:none;border-left:
+none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+padding:0cm 5.4pt 0cm 5.4pt;height:39.35pt'>
+<p class=AmmCorpsTexte><span style='color:black'>Ischémies myocardiques (voir rubrique 4.4).</span></p>
+</td>
+<td width=123 valign=top style='width:92.45pt;border-top:none;border-left:
+none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+padding:0cm 5.4pt 0cm 5.4pt;height:39.35pt'>
+<p class=AmmCorpsTexte><span style='color:black'>Indéterminée**</span></p>
+</td>
+</tr>
+<tr>
+<td width=180 valign=top style='width:135.0pt;border:solid windowtext 1.0pt;
+border-top:none;padding:0cm 5.4pt 0cm 5.4pt'>
+<p class=AmmCorpsTexte>Affections vasculaires</p>
+</td>
+<td width=309 valign=top style='width:231.55pt;border-top:none;border-left:
+none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+padding:0cm 5.4pt 0cm 5.4pt'>
+<p class=AmmCorpsTexte><span style='color:black'>Vasodilatation périphérique.</span></p>
+</td>
+<td width=123 valign=top style='width:92.45pt;border-top:none;border-left:
+none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+padding:0cm 5.4pt 0cm 5.4pt'>
+<p class=AmmCorpsTexte><span style='color:black'>Très rare</span></p>
+</td>
+</tr>
+<tr style='height:40.55pt'>
+<td width=180 valign=top style='width:135.0pt;border-top:none;border-left:
+solid windowtext 1.0pt;border-bottom:none;border-right:solid windowtext 1.0pt;
+padding:0cm 5.4pt 0cm 5.4pt;height:40.55pt'>
+<p class=AmmCorpsTexte>Affections respiratoires, thoraciques et médiastinales</p>
+</td>
+<td width=309 valign=top style='width:231.55pt;border:none;border-right:solid windowtext 1.0pt;
+padding:0cm 5.4pt 0cm 5.4pt;height:40.55pt'>
+<p class=AmmCorpsTexte><span style='color:black'>Bronchospasme paradoxal.***</span></p>
+</td>
+<td width=123 valign=top style='width:92.45pt;border:none;border-right:solid windowtext 1.0pt;
+padding:0cm 5.4pt 0cm 5.4pt;height:40.55pt'>
+<p class=AmmCorpsTexte><span style='color:black'>Très rare</span></p>
+</td>
+</tr>
+<tr>
+<td width=180 valign=top style='width:135.0pt;border:solid windowtext 1.0pt;
+padding:0cm 5.4pt 0cm 5.4pt'>
+<p class=AmmCorpsTexte>Affections gastro-intestinales</p>
+</td>
+<td width=309 valign=top style='width:231.55pt;border:solid windowtext 1.0pt;
+border-left:none;padding:0cm 5.4pt 0cm 5.4pt'>
+<p class=AmmCorpsTexte><span style='color:black'>Irritation de la bouche et de la gorge. </span></p>
+</td>
+<td width=123 valign=top style='width:92.45pt;border:solid windowtext 1.0pt;
+border-left:none;padding:0cm 5.4pt 0cm 5.4pt'>
+<p class=AmmCorpsTexte><span style='color:black'>Peu fréquent</span></p>
+</td>
+</tr>
+<tr style='height:36.35pt'>
+<td width=180 valign=top style='width:135.0pt;border:solid windowtext 1.0pt;
+border-top:none;padding:0cm 5.4pt 0cm 5.4pt;height:36.35pt'>
+<p class=AmmCorpsTexte>Affections musculo-squelettiques et systémiques </p>
+</td>
+<td width=309 valign=top style='width:231.55pt;border-top:none;border-left:
+none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+padding:0cm 5.4pt 0cm 5.4pt;height:36.35pt'>
+<p class=AmmCorpsTexte>Crampes musculaires.</p>
+</td>
+<td width=123 valign=top style='width:92.45pt;border-top:none;border-left:
+none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+padding:0cm 5.4pt 0cm 5.4pt;height:36.35pt'>
+<p class=AmmCorpsTexte>Peu fréquent</p>
+</td>
+</tr>
+</table>
+<p class=AmmCorpsTexte>* Les bêta-2 mimétiques à fortes doses peuvent entraîner des hyperglycémies des hypokaliémies réversibles à l’arrêt du traitement.</p>
+<p class=AmmCorpsTexte><span style='color:black'>** La fréquence de survenue des ischémies myocardiques ne peut être déterminée car les cas rapportés sont issus de notifications spontanées depuis la commercialisation.</span></p>
+<p class=AmmCorpsTexte>*** Comme avec d’autres produits inhalés, possibilité de survenue de toux et rarement de bronchospasme paradoxal à la suite de l’inhalation. Ne pas renouveler l’administration de ce médicament et utiliser un autre médicament bronchodilatateur à action rapide pour soulager le bronchospasme. Le traitement devra alors être réév<span style='color:black'>alué pour envisager, le cas échéant, la prescription d’une alternative thérapeutique.</span></p>
+<p class=AmmCorpsTexte><span style='color:black'>Des cas d'acidose lactique ont été très rarement rapportés chez des patients recevant du salbutamol par voie intraveineuse ou par voie inhalée par nébulisation pour le traitement d’exacerbations aiguës d'asthme.</span></p>
+<p class=AmmCorpsTexte>Peuvent également être observés des troubles digestifs (nausées, vomissements).</p>
+<p class=AmmAnnexeTitre3>Déclaration des effets indésirables suspectés</p>
+<p class=AmmCorpsTexte>La déclaration des effets indésirables suspectés après autorisation du médicament est importante. Elle permet une surveillance continue du rapport bénéfice/risque du médicament. Les professionnels de santé déclarent tout effet indésirable suspecté via le système national de déclaration : Agence nationale de sécurité du médicament et des produits de santé (ANSM) et réseau des Centres Régionaux de Pharmacovigilance - site internet :<span style='color:red'> </span><a name="_Hlk151050091"></a><a href="https://signalement.social-sante.gouv.fr">https://signalement.social-sante.gouv.fr</a> </p>
+<p class="AmmAnnexeTitre2"><a name="RcpSurdosage">4.9. Surdosage</a>&nbsp;&nbsp;<a href='#HautDePage'><img src='img/BackToTop.jpg' width='15px' height='15px' alt='Retour en haut de la page' title='Retour en haut de la page' /></a></p>
+<p class=AmmCorpsTexte><a name="_Toc142278931">Les signes et symptômes d’un surdosage en salbutamol correspondent à l'exacerbation des effets pharmacodynamiques des bêta2-agonistes (voir rubriques 4.4 et 4.8).</a></p>
+<p class=AmmCorpsTexte>Une hypokaliémie peut survenir suite à un surdosage en salbutamol. La kaliémie doit donc être surveillée en cas de surdosage.</p>
+<p class=AmmCorpsTexte>Des nausées, vomissements et hyperglycémie ont été rapportées, en particulier chez les enfants et lorsque le surdosage est dû à une prise de salbutamol par voie orale.</p>
+<p class=AmmCorpsTexte><span class=hps>Des cas d’acidose lactique</span> ont été rapportés <span class=hps>avec</span> <span class=hps>des doses élevées</span> de bêta-2 agonistes d’action rapide. <span class=hps>En cas de surdosage, </span>il convient donc <span class=hps>de surveiller les taux sériques de lactate</span> <span class=hps>et le risque d’acidose</span> lactique, en particulier en cas de p<span class=hps>ersistance</span> <span class=hps>ou aggravation de</span> la <span class=hps>tachypnée</span> <span class=hps>malgré la disparition</span> des <span class=hps>symptômes de bronchospasme</span> <span class=hps>tels</span> <span class=hps>que les sibilants, qui peut être lié à l'acidose métabolique</span>.</p>
+<p class=AmmCorpsTexte>Conduite à tenir : surveillance et traitement symptomatique.</p>
+<p class="AmmAnnexeTitre1"><a name="RcpPropPharmacologiques">5. PROPRIETES PHARMACOLOGIQUES</a>&nbsp;&nbsp;<a href='#HautDePage'><img src='img/BackToTop.jpg' width='15px' height='15px' alt='Retour en haut de la page' title='Retour en haut de la page' /></a></p>
+<p class="AmmAnnexeTitre2"><a name="RcpPropPharmacodynamiques">5.1. Propriétés pharmacodynamiques</a>&nbsp;&nbsp;<a href='#HautDePage'><img src='img/BackToTop.jpg' width='15px' height='15px' alt='Retour en haut de la page' title='Retour en haut de la page' /></a></p>
+<p class=AmmCorpsTexteGras>Classe pharmacothérapeutique : Bronchodilatateur Bêta-2 mimétique à action rapide et de courte durée par voie inhalée (R : Système Respiratoire), <span style='color:black'>code ATC : <span class='italique'>R03AC02</span></span></p>
+<p class=AmmCorpsTexte>Le salbutamol est un agoniste sélective des récepteurs bêta-2 adrénergiques.</p>
+<p class=AmmCorpsTexte>Après inhalation, le salbutamol exerce une action stimulante sur les récepteurs bêta-2 du muscle lisse bronchique assurant ainsi une bronchodilatation rapide, significative en quelques minutes, et persistant pendant 4 à 6 heures.</p>
+<p class="AmmAnnexeTitre2"><a name="RcpPropPharmacocinetiques">5.2. Propriétés pharmacocinétiques</a>&nbsp;&nbsp;<a href='#HautDePage'><img src='img/BackToTop.jpg' width='15px' height='15px' alt='Retour en haut de la page' title='Retour en haut de la page' /></a></p>
+<p class=AmmAnnexeTitre4><a name="_Toc142278934">Salbutamol</a></p>
+<p class=AmmCorpsTexte>Après inhalation avec VENTOLINE 100 microgrammes/dose, suspension pour inhalation en flacon pressurisé, les concentrations plasmatiques observées aux doses usuelles sont négligeables (10 à 50 fois inférieures à celles observées après administration per os ou en injection).</p>
+<p class=AmmCorpsTexte>Il n’y a pas de corrélation entre les taux sanguins et l’efficacité. </p>
+<p class=AmmCorpsTexte>Après résorption pulmonaire l’élimination essentiellement urinaire se fait en partie sous forme active (mois de 2%) et en partie sous forme de métabolites inactifs (sulfoconjugués).</p>
+<p class=AmmAnnexeTitre4>Norflurane (ou tétrafluoroéthane ou HFA 134a) : gaz propulseur</p>
+<p class=AmmCorpsTexte>Après inhalation d’une bouffée, l’absorption de HFA 134a est très faible et rapide, la concentration maximale est atteinte en moins de 6 minutes.</p>
+<p class=AmmCorpsTexte>Un très faible métabolisme hépatique avec formation d’acide trifluoroacétique et trifluorocétaldéhyde a été mis en évidence chez l’animal (souris et rats).</p>
+<p class=AmmCorpsTexte>Néanmoins, les études cinétiques réalisées chez des patients après administration de HFA 134a en situation en pathologie, n’ont pas mis en évidence la formation d’acide trifluoroacétique.</p>
+<p class="AmmAnnexeTitre2"><a name="RcpSecuritePreclinique">5.3. Données de sécurité préclinique</a>&nbsp;&nbsp;<a href='#HautDePage'><img src='img/BackToTop.jpg' width='15px' height='15px' alt='Retour en haut de la page' title='Retour en haut de la page' /></a></p>
+<p class=AmmCorpsTexte>Dans une étude sur la reproduction et sur la fertilité conduite chez le rat avec des doses orales de 2 et 50 mg/kg/jour, aucun effet indésirable n’a été mis en évidence sur la fertilité, le développement embryonnaire, la taille, le poids de naissance ou la croissance de la progéniture, à l’exception d’une réduction du nombre de ratons survivant jusqu’au jour 21 après la naissance à la dose de 50 mg/kg/jour.</p>
+<p class="AmmAnnexeTitre1"><a name="RcpDonneesPharmaceutiques">6. DONNEES PHARMACEUTIQUES</a>&nbsp;&nbsp;<a href='#HautDePage'><img src='img/BackToTop.jpg' width='15px' height='15px' alt='Retour en haut de la page' title='Retour en haut de la page' /></a></p>
+<p class="AmmAnnexeTitre2"><a name="RcpListeExcipients">6.1. Liste des excipients</a>&nbsp;&nbsp;<a href='#HautDePage'><img src='img/BackToTop.jpg' width='15px' height='15px' alt='Retour en haut de la page' title='Retour en haut de la page' /></a></p>
+<p class=AmmAnnexeTitre4><a name="_Toc142278937">Gaz propulseur :</a></p>
+<p class=AmmCorpsTexte>Norflurane (tétrafluoroéthane ou HFA 134a)</p>
+<p class="AmmAnnexeTitre2"><a name="RcpIncompatibilites">6.2. Incompatibilités</a>&nbsp;&nbsp;<a href='#HautDePage'><img src='img/BackToTop.jpg' width='15px' height='15px' alt='Retour en haut de la page' title='Retour en haut de la page' /></a></p>
+<p class=AmmCorpsTexte>Sans objet.</p>
+<p class="AmmAnnexeTitre2"><a name="RcpDureeConservation">6.3. Durée de conservation</a>&nbsp;&nbsp;<a href='#HautDePage'><img src='img/BackToTop.jpg' width='15px' height='15px' alt='Retour en haut de la page' title='Retour en haut de la page' /></a></p>
+<p class=AmmCorpsTexte>2 ans.</p>
+<p class="AmmAnnexeTitre2"><a name="RcpPrecConservation">6.4. Précautions particulières de conservation</a>&nbsp;&nbsp;<a href='#HautDePage'><img src='img/BackToTop.jpg' width='15px' height='15px' alt='Retour en haut de la page' title='Retour en haut de la page' /></a></p>
+<p class=AmmCorpsTexte>Repositionner le capuchon sur l’embout buccal et appuyer fermement pour le remettre en position.</p>
+<p class=AmmCorpsTexte>Récipient sous pression :</p>
+<p class=AmmListePuces1><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>ne pas exposer à une chaleur supérieure à 30°C, ni au soleil</p>
+<p class=AmmListePuces1><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>ne pas percer,</p>
+<p class=AmmListePuces1><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>ne pas jeter au feu même vide.</p>
+<p class=AmmListePuces1 style='text-indent:0cm'> </p>
+<p class=AmmCorpsTexte>Ne pas congeler.</p>
+<p class="AmmAnnexeTitre2"><a name="RcpEmballage">6.5. Nature et contenu de l'emballage extérieur</a>&nbsp;&nbsp;<a href='#HautDePage'><img src='img/BackToTop.jpg' width='15px' height='15px' alt='Retour en haut de la page' title='Retour en haut de la page' /></a></p>
+<p class=AmmCorpsTexte><a name="_Toc142278941">200 doses en flacon pressurisé (Aluminium) muni d’une valve doseuse (aluminium, acier inoxydable, caoutchouc synthétique nitrile) et d’un embout buccal.</a></p>
+<p class="AmmAnnexeTitre2"><a name="RcpPrecEmpl">6.6. Précautions particulières d’élimination et de manipulation</a>&nbsp;&nbsp;<a href='#HautDePage'><img src='img/BackToTop.jpg' width='15px' height='15px' alt='Retour en haut de la page' title='Retour en haut de la page' /></a></p>
+<p class=AmmCorpsTexte>Le médecin devra informer le patient qu’il doit nettoyer son inhalateur au moins une fois par semaine.</p>
+<p class=AmmCorpsTexte>Les instructions de nettoyage sont :</p>
+<p class=AmmCorpsTexte style='margin-left:0cm;text-indent:0cm'>1.<span style='font:7.0pt "Times New Roman"'>            </span>Séparer la cartouche de l’applicateur en plastique et retirer le capuchon.</p>
+<p class=AmmCorpsTexte style='margin-left:0cm;text-indent:0cm'>2.<span style='font:7.0pt "Times New Roman"'>            </span>Rincer soigneusement l’applicateur en plastique sous l’eau tiède.</p>
+<p class=AmmCorpsTexte style='margin-left:0cm;text-indent:0cm'>3.<span style='font:7.0pt "Times New Roman"'>            </span>Sécher soigneusement l’applicateur à l'aide d'un tissu sec aussi bien à l’intérieur qu’à l’extérieur.</p>
+<p class=AmmCorpsTexte style='margin-left:0cm;text-indent:0cm'>4.<span style='font:7.0pt "Times New Roman"'>            </span>Une fois ces opérations effectuées, remettre en place la cartouche métallique et le capuchon.</p>
+<p class=AmmCorpsTexte>Ne pas plonger la cartouche métallique dans l’eau.</p>
+<p class="AmmAnnexeTitre1"><a name="RcpTitulaireAmm">7. TITULAIRE DE L’AUTORISATION DE MISE SUR LE MARCHE</a>&nbsp;&nbsp;<a href='#HautDePage'><img src='img/BackToTop.jpg' width='15px' height='15px' alt='Retour en haut de la page' title='Retour en haut de la page' /></a></p>
+<p class=AmmCorpsTexteGras style='margin-bottom:0cm;margin-bottom:.0001pt'><a name="_Toc142278943">LABORATOIRE GLAXOSMITHKLINE</a></p>
+<p class=AmmCorpsTexte style='margin-bottom:0cm;margin-bottom:.0001pt'>23 RUE FRANCOIS JACOB</p>
+<p class=AmmCorpsTexte style='margin-bottom:0cm;margin-bottom:.0001pt'>92500 RUEIL-MALMAISON</p>
+<p class="AmmAnnexeTitre1"><a name="RcpNumAutor">8. NUMERO(S) D’AUTORISATION DE MISE SUR LE MARCHE</a>&nbsp;&nbsp;<a href='#HautDePage'><img src='img/BackToTop.jpg' width='15px' height='15px' alt='Retour en haut de la page' title='Retour en haut de la page' /></a></p>
+<p class=AmmListePuces1><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>34009 344 387 3 8 : 200 doses en flacon pressurisé (Aluminium) avec valve doseuse et embout buccal </p>
+<p class="AmmAnnexeTitre1"><a name="RcpPremiereAutorisation">9. DATE DE PREMIERE AUTORISATION/DE RENOUVELLEMENT DE L’AUTORISATION</a>&nbsp;&nbsp;<a href='#HautDePage'><img src='img/BackToTop.jpg' width='15px' height='15px' alt='Retour en haut de la page' title='Retour en haut de la page' /></a></p>
+<p class=AmmCorpsTexte><span style='color:#538135'>[à compléter ultérieurement par le titulaire]</span></p>
+<p class=AmmCorpsTexte>&lt;Date de première autorisation : {JJ mois AAAA}&gt;</p>
+<p class=AmmCorpsTexte>&lt;Date de dernier renouvellement : {JJ mois AAAA}&gt;</p>
+<p class="AmmAnnexeTitre1"><a name="RcpDateRevision">10. DATE DE MISE A JOUR DU TEXTE</a>&nbsp;&nbsp;<a href='#HautDePage'><img src='img/BackToTop.jpg' width='15px' height='15px' alt='Retour en haut de la page' title='Retour en haut de la page' /></a></p>
+<p class=AmmCorpsTexte><a name="_Toc142278946"><span style='color:#538135'>[à compléter ultérieurement par le titulaire]</span></a></p>
+<p class=AmmCorpsTexte><span lang=FR-BE>&lt;{JJ mois AAAA}&gt;</span></p>
+<p class="AmmAnnexeTitre1"><a name="RcpDosimetrie">11. DOSIMETRIE</a>&nbsp;&nbsp;<a href='#HautDePage'><img src='img/BackToTop.jpg' width='15px' height='15px' alt='Retour en haut de la page' title='Retour en haut de la page' /></a></p>
+<p class=AmmCorpsTexte>Sans objet.</p>
+<p class="AmmAnnexeTitre1"><a name="RcpInstPrepRadioph">12. INSTRUCTIONS POUR LA PREPARATION DES RADIOPHARMACEUTIQUES</a>&nbsp;&nbsp;<a href='#HautDePage'><img src='img/BackToTop.jpg' width='15px' height='15px' alt='Retour en haut de la page' title='Retour en haut de la page' /></a></p>
+<p class=AmmCorpsTexte>Sans objet.</p>
+<div style='border:none;border-top:solid windowtext 1.0pt;padding:1.0pt 0cm 0cm 0cm'>
+<p class="AmmAnnexeTitre"><a name="RcpCondPrescription">CONDITIONS DE PRESCRIPTION ET DE DELIVRANCE</a></p>
+</div>
+<p class=AmmCorpsTexte>Liste I.</p>
+<span style='font-size:12.0pt;font-family:"Arial",sans-serif;color:#0B3D92'><br
+clear=all>
+</span>
+<p class=AmmAnnexeSousTitre><a name="_Toc142278949">ANNEXE II</a></p>
+<p class=AmmAnnexeTitre1><a name="_Toc142278950"><span style='text-transform: none'>A. FABRICANT(S) DE LA (DES) SUBSTANCE(S) ACTIVE(S) D’ORIGINE BIOLOGIQUE ET FABRICANT(S) RESPONSABLE(S) DE LA LIBERATION DES LOTS</span></a></p>
+<p class=AmmAnnexeTitre2><a name="_Toc142278951">A.1. Nom et adresse du (des) fabricant(s) de la (des) substances(s) active(s) d'origine biologique</a></p>
+<p class=AmmCorpsTexte>Sans objet.</p>
+<p class=AmmAnnexeTitre2><a name="_Toc142278952">A.2. Nom et adresse du (des) fabricant(s) responsable(s) de la libération des lots</a></p>
+<p class=AmmCorpsTexteGras style='margin-bottom:0cm;margin-bottom:.0001pt'><a name="_Toc142278953">GLAXO WELLCOME PRODUCTION</a></p>
+<p class=AmmCorpsTexte style='margin-bottom:0cm;margin-bottom:.0001pt'>ZONE INDUSTRIELLE N° 2</p>
+<p class=AmmCorpsTexte style='margin-bottom:0cm;margin-bottom:.0001pt'>23 RUE LAVOISIER</p>
+<p class=AmmCorpsTexte style='margin-bottom:0cm;margin-bottom:.0001pt'>27000 EVREUX</p>
+<p class=AmmCorpsTexte style='margin-top:6.0pt'>ou</p>
+<p class=AmmCorpsTexteGras style='margin-bottom:0cm;margin-bottom:.0001pt'>GLAXO WELLCOME, S.A.</p>
+<p class=AmmCorpsTexte style='margin-bottom:0cm;margin-bottom:.0001pt'>AVENIDA DE EXTREMADURA 3</p>
+<p class=AmmCorpsTexte style='margin-bottom:0cm;margin-bottom:.0001pt'>09400 ARANDA DE DUERO (BURGOS)</p>
+<p class=AmmCorpsTexte style='margin-bottom:0cm;margin-bottom:.0001pt'>ESPAGNE</p>
+<p class=AmmAnnexeTitre1>B. CONDITIONS OU RESTRICTIONS DE DELIVRANCE ET D’UTILISATION</p>
+<p class=AmmCorpsTexte><a name="_Toc142278955">Liste I.</a></p>
+<p class=AmmAnnexeTitre1><a name="_Toc142278957">C. </a>AUTRES CONDITIONS ET OBLIGATIONS DE L’AUTORISATION DE MISE SUR LE MARCHE </p>
+<p class=AmmListePuces1><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span><span class='gras'>Rapports périodiques actualisés de sécurité (PSUR)</span></p>
+<p class=AmmCorpsTexte>Les exigences relatives à la soumission des rapports périodiques actualisés de sécurité pour ce médicament sont définies dans la liste des dates de référence pour l’Union (liste EURD) prévue à l’article 107 quater, paragraphe 7, de la directive 2001/83/CE et ses actualisations publiées sur le portail web européen des médicaments.</p>
+<p class=AmmAnnexeTitre1>D. CONDITIONS OU RESTRICTIONS EN VUE D’UNE UTILISATION SURE ET EFFICACE DU MEDICAMENT</p>
+<p class=AmmCorpsTexte>Sans objet.</p>
+<p class=AmmAnnexeTitre1>E. OBLIGATION SPECIFIQUE RELATIVE AUX MESURES POST-AUTORISATION CONCERNANT L’AUTORISATION DE MISE SUR LE MARCHE « SOUS CIRCONSTANCES EXCEPTIONNELLES »</p>
+<p class=AmmCorpsTexte>Sans objet.</p>
+<p class=AmmAnnexeTitre1><a name="_Toc142278958">F. COMPOSITION QUALITATIVE ET QUANTITATIVE EN EXCIPIENTS</a></p>
+<p class=AmmComposition><span class='souligne'>Gaz propulseur :</span></p>
+<p class=AmmComposition>Norflurane (ou tétrafluoroéthane ou HFA 134a).................................................................... <span style='color:black'>75,00 mg</span> </p>
+<p class=AmmComposition align=center style='text-align:center'>Pour une dose.</p>
+<span style='font-size:12.0pt;font-family:"Arial",sans-serif;color:#0B3D92'><br
+clear=all>
+</span>					
+					<p class="alignright"><a href="#HautDePage">Retour en haut de la page <img src="img/BackToTop.jpg" width="20px" height="20px" alt="Retour en haut de la page" title="Retour en haut de la page" /></a></p>
+				</div>
+			</div>
+		</div>
+	</div>
+
+<table summary="" class="content" width="1000">
+	<tr>
+		<td height="100px">&nbsp;</td>
+	</tr>
+</table>
+<table summary="Pied de page" class="footer" width="1000">
+	<tr>
+		<td>
+			<table summary="" class="tablealigncenter" border="0">
+				<tr>
+					<td width="100px" class="aligncenter"><a id="lien_ansm" href="http://ansm.sante.fr/" target="_blank"><img src="img/Logo_ANSM.png" width="150" height="60" alt="ANSM - Agence nationale de sécurité du médicament et des produits de santé" title="L'ANSM met à disposition les principales informations issues de l'Autorisation de mise sur le marché, l'appartenance à un groupe générique, les liens vers les informations de sécurité qu'elle publie, l'identification des médicaments sous surveillance renforcée - nouvelle fenêtre" /></a></td>
+					          <td>&nbsp;</td>
+					<td width="100px" class="aligncenter"><img src="img/Logo_HAS.png" width="150" height="60" alt="HAS - Haute autorité de santé" title="La HAS met à disposition les informations relatives au service médical rendu, à l'amélioration du service médical rendu ainsi que les liens vers les avis de la Commission de la Transparence correspondants - nouvelle fenêtre" /></td>
+					<td>&nbsp;</td>
+					<td width="100px" class="aligncenter"><img src="img/Logo_CNAM.png" width="150" height="60" alt="UNCAM - Unin nationale des caisses d'assurance maladie" title="L'UNCAM met à disposition le taux de remboursement, le prix et les indications remboursables le cas échéant, ainsi que l'agrément aux collectivités - nouvelle fenêtre" /></td>
+          				</tr>
+			</table> 
+		</td>
+	</tr>
+</table>
+<table summary="" class="finpage" width="1000">
+	<tr>
+		<td height="100px" class="aligncenter">
+			<a class="navigation" href="plan.php">Plan du site</a>&nbsp;|&nbsp;
+			<a class="navigation" href="accessibilite.php">Accessibilité</a>&nbsp;|&nbsp;
+			<a class="navigation" href="contact.php">Contact</a>&nbsp;|&nbsp;
+			<a class="navigation" href="telechargement.php">Téléchargement</a>&nbsp;|&nbsp;
+			<a class="navigation" href="DeclarationConfidentialite.php">Declaration de confidentialité</a>&nbsp;|&nbsp;
+			<a class="navigation" href="http://www.service-public.fr/" title="Service Public - Nouvelle fenêtre" target="_blank">Service-Public.fr</a>&nbsp;|&nbsp;
+			<a class="navigation" href="http://www.legifrance.gouv.fr/" title="Legifrance - Nouvelle fenêtre" target="_blank">Legifrance</a>&nbsp;|&nbsp;
+			<a class="navigation" href="http://www.gouvernement.fr/" title="Gouvernement - Nouvelle fenêtre" target="_blank" >Gouvernement.fr</a>
+		</td>
+	</tr>
+</table>
+
+
+
+<!-- Matomo -->
+<script type="text/javascript">
+  var _paq = window._paq = window._paq || [];
+  /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
+  _paq.push(['trackPageView']);
+  _paq.push(['enableLinkTracking']);
+  (function() {
+    var u="https://stats.integra.fr/";
+    _paq.push(['setTrackerUrl', u+'matomo.php']);
+    _paq.push(['setSiteId', '79']);
+    var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+    g.type='text/javascript'; g.async=true; g.src=u+'matomo.js'; s.parentNode.insertBefore(g,s);
+  })();
+</script>
+<!-- End Matomo Code -->
+
+
+
+</body>
+</html>

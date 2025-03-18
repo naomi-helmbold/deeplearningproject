@@ -1,0 +1,460 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="fr" lang="fr">
+<head>
+	<title>Notice patient - DAFALGAN 500 mg, comprimé  - Base de données publique des médicaments</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=windows-1252"/>
+	<meta name="robots" content="index, follow"/>
+	<meta name="Description" content="Base de données publique des médicaments"/>
+	<meta name="Keywords" content="base, données, publique, médicaments, Notice patient, DAFALGAN 500 mg, comprimé "/>
+	<meta name="Subject" content="medicament"/>
+	<link href='https://fonts.googleapis.com/css?family=Noticia+Text' rel='stylesheet' type='text/css' />
+	<link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro' rel='stylesheet' type='text/css' />
+	<link href="style/style_bdm.css?v=2.2.3" type="text/css" rel="stylesheet"/>
+	<link href="style/style_RCP_Notice.css" type="text/css" rel="stylesheet"/>
+  <link rel="alternate" href="http://m.base-donnees-publique.medicaments.gouv.fr/#!info-67721153">
+    <script type="text/javascript" src="scripts/autocomplete.js?v=2.2.3"></script>
+	<script type="text/javascript" src="scripts/jquery.js"></script>
+    <script type="text/javascript" src="scripts/jquery-ui.min.js"></script>
+	<script type="text/javascript" src="scripts/common.js"></script>
+	<link rel="icon" type="image/x-icon" href="favicon.ico" />
+</head>
+
+<body>
+
+<a name="HautDePage" />
+<div id="bandeauhaut">
+	<a id="lien_ministere" class="lienmenu" href="http://www.sante.gouv.fr" target="_blank" title="Site du ministère des affaires sociales et de la santé - nouvelle fenêtre"><img id="logoministere" src="img/Logo_Ministere.jpg"  alt="Logo du ministère des affaires sociales et de la santé"/></a>
+	<h1 class="texteTitreSite">
+		Base <span class="texteBleu">de</span> données <span class="texteBleu">publique</span><br/><span class="texteBleu">des</span> médicaments
+	</h1>
+		<a id="lien_medicament_gouv" class="lienEspaceMedic" target="_blank" href="http://medicaments.gouv.fr" title="Visiter [medicaments.gouv.fr] - nouvelle fenêtre">Visiter [medicaments.gouv.fr] <img src="/img/icone_lien.png" alt="Visiter [medicaments.gouv.fr]"  title="Visiter [medicaments.gouv.fr] - nouvelle fenetre" /></a>
+</div>
+<!--div align="center">
+	<a id="banniere" target="_blank" href="http://social-sante.gouv.fr/soins-et-maladies/medicaments/medicaments-generiques/" title="Visiter [medicaments.gouv.fr] - M?dicaments g?n?riques">
+		<img width="1000"   src ="/img/carrouselbannieres.gif" alt="Visiter [medicaments.gouv.fr] - M?dicaments g?n?riques" title="Visiter [medicaments.gouv.fr] - M?dicaments g?n?riques" />
+	</a>
+</div-->
+
+<div id="menuhaut">
+	<span id="menuhaut_gauche">
+		<a id="lien_accueil" class="navigation" href="index.php">Accueil</a>&nbsp;|&nbsp;
+		<a id="lien_glossaire" class="navigation" href="glossaire.php">Glossaire</a>&nbsp;|&nbsp;
+		<a id="lien_aide" class="navigation" href="aide.php">Aide</a>		
+	</span>
+	
+		
+	<span id="menuhaut_dernmaj">
+        <br>Dernière <span title=" 2.4.4
+">mise à jour</span> le 03/03/2025	</span>
+</div>
+
+	<script language="javascript" type="text/javascript">
+		//<![CDATA[ 
+		function Aff(men) {
+			document.write("<ul class=\"menuDoc\">");
+			for(var no_rub=0;no_rub<men.num_rub;no_rub++) {
+				document.write("<li><a class='leftMenu' href='"+menu[no_rub].page+"'>");
+				document.write(men[no_rub].txt);
+				document.write("</a></li>");
+				if (men[no_rub].nb_lien != 0){
+					document.write("<ul class=\"sousMenuDoc\">");
+				}
+				for(var no_lien=0;no_lien<men[no_rub].nb_lien;no_lien++) {
+					document.write("<li><a class='leftMenu' href='"+men[no_rub][no_lien].page+"'>");
+					document.write(men[no_rub][no_lien].txt);
+					document.write("</a></li>");
+				}
+				if (men[no_rub].nb_lien != 0){
+					document.write("</ul>");
+				}
+			}
+			document.write("</ul>");
+		}
+		
+		function CreerMenu(police,imgRub,imgOption,imgOptionFin,hauteur) {
+			this.num_rub=0;
+			this.police=police;
+			this.imgRub=imgRub;
+			this.imgOpt=imgOption;
+			this.imgOptFin=imgOptionFin;
+			this.hauteur=hauteur;
+			this.AddRub=AddRub;
+			this.AddLien=AddLien;
+		}
+		
+		function AddRub(txt,aff,page) {
+			var rub = new Object;
+				rub.txt=txt;
+				rub.aff=aff;
+				rub.page=page;
+				rub.nb_lien=0;
+			this[this.num_rub]=rub;
+			this.num_rub++;
+		}
+
+		function AddLien(txt,page) {
+			var no_rub = this.num_rub-1;
+			var no_lien= this[no_rub].nb_lien;
+			var lien = new Object;
+				lien.txt=txt;
+				lien.page=page;
+			this[no_rub][no_lien]=lien;
+			this[no_rub].nb_lien++;
+		}
+		var menu=new CreerMenu("arial","img/dyn04.gif","img/dyn22.gif","img/dyn55.gif",18);
+		//]]> 
+		menu.AddRub("Description médicament","O","#Ann3bQuestceque");
+			menu.AddRub("Informations","O","#Ann3bInfoNecessaires");
+			menu.AddRub("Utilisation","O","#Ann3bCommentPrendre");
+			menu.AddRub("Effets indésirables","O","#Ann3bEffetsIndesirables");
+			menu.AddRub("Conservation","O","#Ann3bConservation");
+			menu.AddRub("Info. supplémentaires","O","#Ann3bEmballage");
+				</script>
+
+	<div id="container">
+		<div id="leftnav">
+			<div id="cadreMenuGauche">
+				<h2 class="sommaireMenu">Sommaire</h2>
+				<div id="menuGauche">
+					<script language="JavaScript" type="text/javascript">Aff(menu);</script>
+				</div>
+			</div>
+		</div>
+		<div id="contentPrincipal">
+			<div id="boutonsliens">
+				<a id='lien_fiche_info' href='extrait.php?specid=67721153' ><img id="ongletficheinfo" alt="Onglet fiche information" src="img/onglet_fiche_info_vert.png" /></a><a id='lien_rcp' href='affichageDoc.php?specid=67721153&amp;typedoc=R'><img class="onglet" alt="Onglet résumé des caractéristiques du produit" src="img/onglet_rcp_vert.png" /></a><a id='lien_notice' href='affichageDoc.php?specid=67721153&amp;typedoc=N'><img class="onglet" alt="Onglet notice patient" src="img/onglet_notice_gris.png" /></a>			</div>
+			<div class="titredeno">
+				<table summary="" border="0" cellspacing="0">
+					<tr><td colspan="3" height="10px"></td></tr>
+					<tr>
+						<td width="15px">&nbsp;</td>
+						<td width="685px"><h1 class="textedeno">DAFALGAN 500 mg, comprimé  - Notice patient</h1></td>
+						<td width="43px" class="tdcenter"><a href="Javascript:void(null)" onclick="print();"><img src="img/imprimante.png" height="20px" width="20px" alt="Imprimer le document" title="Imprimer le document" border="0" /></a></td>
+					</tr>
+					<tr><td colspan="3" height="10px"></td></tr>
+				</table>
+			</div>
+			
+			<div id="contentDocument">
+				<div id="textDocument">
+					<p class="DateNotif">ANSM - Mis à jour le : 31/12/2024</p>
+<p class="AmmNoticeTitre1"><a name="Ann3bDenomination">Dénomination du médicament</a></p>
+<p class=AmmDenomination align=center style='text-align:center'><a name="_Toc142278999">DAFALGAN 500 mg, comprimé</a></p>
+<p class=AmmCorpsTexteGras align=center style='text-align:center'>Paracétamol</p>
+<p class="AmmNoticeTitre1"><a name="Ann3bEncadre">Encadré</a></p>
+<p class=AmmCorpsTexteGras style='margin-top:6.0pt'><a name="_Toc142279000"><span lang=FR-BE>Veuillez lire attentivement cette notice avant de prendre ce médicament car elle contient des informations importantes pour vous.</span></a></p>
+<p class=AmmCorpsTexte><span lang=FR-BE>Vous devez toujours prendre ce médicament en suivant scrupuleusement les informations fournies dans cette notice ou par votre médecin ou votre pharmacien.</span></p>
+<p class=AmmListePuces1><span lang=FR-BE style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span><span lang=FR-BE>Gardez cette notice. Vous pourriez avoir besoin de la relire.</span></p>
+<p class=AmmListePuces1><span lang=FR-BE style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span><span lang=FR-BE>Adressez-vous à votre pharmacien pour tout conseil ou information.</span></p>
+<p class=AmmListePuces1><span lang=FR-BE style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span><span lang=FR-BE>Si vous ressentez un quelconque effet indésirable, parlez-en à votre médecin ou votre pharmacien. Ceci s’applique aussi à tout effet indésirable qui ne serait pas mentionné dans cette notice. </span>Voir rubrique 4.</p>
+<p class=AmmListePuces1><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>Vous devez vous adresser à votre médecin si la<span style='letter-spacing:-.05pt'> </span>douleur<span style='letter-spacing:-.1pt'> </span>persiste<span style='letter-spacing:-.05pt'> </span>plus de<span style='letter-spacing:-.2pt'> </span>5<span style='letter-spacing:-.15pt'> </span>jours,<span style='letter-spacing:-.15pt'> </span>ou<span style='letter-spacing:-.2pt'> </span>la<span style='letter-spacing:-.25pt'> </span>fièvre<span style='letter-spacing:-.25pt'> </span>plus de 3 jours, ou en cas d’efficacité insuffisante ou de survenue de tout autre signe.</p>
+<p class="AmmNoticeTitre1"><a name="Ann3bSomm">Que contient cette notice ?</a></p>
+<p class=AmmCorpsTexte style='margin-top:0cm;margin-right:0cm;margin-bottom: 0cm;margin-left:14.2pt;margin-bottom:.0001pt;text-indent:-14.2pt'>1. Qu'est-ce que <span style='text-transform:uppercase'>DAFALGAN 500 </span>mg, comprimé et dans quels cas est-il utilisé ?</p>
+<p class=AmmCorpsTexte style='margin-top:0cm;margin-right:0cm;margin-bottom: 0cm;margin-left:14.2pt;margin-bottom:.0001pt;text-indent:-14.2pt'>2. Quelles sont les informations à connaître avant de prendre <span style='text-transform: uppercase'>DAFALGAN 500 </span>mg, comprimé ?</p>
+<p class=AmmCorpsTexte style='margin-top:0cm;margin-right:0cm;margin-bottom: 0cm;margin-left:14.2pt;margin-bottom:.0001pt;text-indent:-14.2pt'>3. Comment prendre<span style='text-transform:uppercase'> DAFALGAN 500 </span>mg, comprimé ?</p>
+<p class=AmmCorpsTexte style='margin-top:0cm;margin-right:0cm;margin-bottom: 0cm;margin-left:14.2pt;margin-bottom:.0001pt;text-indent:-14.2pt'>4. Quels sont les effets indésirables éventuels ?</p>
+<p class=AmmCorpsTexte style='margin-top:0cm;margin-right:0cm;margin-bottom: 0cm;margin-left:14.2pt;margin-bottom:.0001pt;text-indent:-14.2pt'>5. Comment conserver <span style='text-transform:uppercase'>DAFALGAN 500 </span>mg, comprimé ?</p>
+<p class=AmmCorpsTexte style='margin-top:0cm;margin-right:0cm;margin-bottom: 0cm;margin-left:14.2pt;margin-bottom:.0001pt;text-indent:-14.2pt'><span style='color:black'>6. Contenu de l’emballage et autres informations.</span></p>
+<h2><a name="Ann3bQuestceque">1. QU’EST-CE QUE Dafalgan 500 mg, comprimé ET DANS QUELS CAS EST-IL UTILISE ?</a>&nbsp;&nbsp;<a href='#HautDePage'><img src='img/BackToTop.jpg' width='15px' height='15px' alt='Retour en haut de la page' title='Retour en haut de la page' /></a></h2>
+<p class=AmmCorpsTexte><a name="_Toc142279003">Classe pharmacothérapeutique : AUTRES ANALGESIQUES et ANTIPYRETIQUES-ANILIDES - code ATC : N02BE01.</a></p>
+<p class=AmmCorpsTexte><a name="_Toc142279004">DAFALGAN 500 mg, comprimé contient du paracétamol. <span style='color:black'>Le paracétamol est </span>un antalgique (calme la douleur) et un antipyrétique (fait baisser la fièvre).</a></p>
+<p class=AmmCorpsTexte>Ce médicament est indiqué chez l’adulte et l’enfant à partir de 27 kg (environ 8 ans) pour faire baisser la fièvre et/ou soulager les douleurs légères à modérées (par exemple : maux de tête, états grippaux, douleurs dentaires, courbatures, règles douloureuses, poussées douloureuses de l’arthrose).</p>
+<p class=AmmCorpsTexte>Lire attentivement le paragraphe « Posologie » de la rubrique 3.</p>
+<p class=AmmCorpsTexte>Pour les enfants de moins de 27 kg, il existe d'autres présentations de paracétamol : demandez conseil à votre médecin ou à votre pharmacien.</p>
+<h2><a name="Ann3bInfoNecessaires">2. QUELLES SONT LES INFORMATIONS A CONNAITRE AVANT DE PRENDRE Dafalgan 500 mg, comprimé ?</a>&nbsp;&nbsp;<a href='#HautDePage'><img src='img/BackToTop.jpg' width='15px' height='15px' alt='Retour en haut de la page' title='Retour en haut de la page' /></a></h2>
+<p class=AmmCorpsTexteGras align=left style='text-align:left'><a name="_Toc142279015">Ne prenez jamais <span style='text-transform:uppercase'>Dafalgan 500 </span></a><span style='font-family:"Arial Gras",serif'>mg, comprimé </span>:</p>
+<p class=AmmListePuces1 style='text-align:justify'><span style='font-family: Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>si vous êtes allergique au paracétamol ou à l’un des autres composants contenus dans ce médicament, mentionnés dans la rubrique 6.</p>
+<p class=AmmListePuces1 style='text-align:justify'><span style='font-family: Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>si vous avez une maladie grave du foie<a name="_Hlk81403976">.</a></p>
+<p class=AmmListePuces1 style='margin-top:6.0pt;margin-right:0cm;margin-bottom: 0cm;margin-left:0cm;margin-bottom:.0001pt;text-indent:0cm'>En<span style='letter-spacing:-.25pt'> </span>cas<span style='letter-spacing:-.2pt'> </span>de<span style='letter-spacing:-.3pt'> </span>doute,<span style='letter-spacing:-.1pt'> </span>demandez<span style='letter-spacing:-.3pt'> </span>l’avis<span style='letter-spacing:-.15pt'> </span>de<span style='letter-spacing:-.1pt'> </span>votre<span style='letter-spacing:-.3pt'> </span>médecin<span style='letter-spacing:-.25pt'> </span>ou<span style='letter-spacing:-.3pt'> </span>de<span style='letter-spacing: -.1pt'> </span>votre<span style='letter-spacing:-.25pt'> </span><span style='letter-spacing:-.1pt'>pharmacien</span>.</p>
+<p class=AmmCorpsTexteGras style='margin-top:6.0pt'>Avertissements et précautions</p>
+<p class=AmmCorpsTexte><span lang=FR-BE>Adressez-vous à votre médecin ou pharmacien avant de prendre DAFALGAN 500 mg, comprimé :</span></p>
+<p class=AmmListePuces1 style='text-align:justify'><span style='font-family: Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>si vous êtes un adulte de moins de 50 kg,</p>
+<p class=AmmListePuces1 style='text-align:justify'><span style='font-family: Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>si vous avez une maladie des reins ou du foie,</p>
+<p class=AmmListePuces1 style='text-align:justify'><span style='font-family: Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>si vous êtes une personne âgée,</p>
+<p class=AmmListePuces1 style='text-align:justify'><span style='font-family: Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>si vous consommez régulièrement de l’alcool ou que vous avez arrêté de boire de l’alcool récemment,</p>
+<p class=AmmListePuces1 style='text-align:justify'><span style='font-family: Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>en cas de malnutrition chronique, jeûne, amaigrissement, anorexie ou cachexie (faibles réserves ou déficit en glutathion hépatique),</p>
+<p class=AmmListePuces1 style='text-align:justify'><span style='font-family: Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>en cas de déshydratation,</p>
+<p class=AmmListePuces1 style='text-align:justify'><span style='font-family: Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>en cas de déficience en Glucose-6-Phosphate Déshydrogénase (G6PD) (pouvant conduire à une anémie hémolytique),</p>
+<p class=AmmListePuces1 style='text-align:justify'><span style='font-family: Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>en cas de syndrome de Gilbert (jaunisse familiale non hémolytique).</p>
+<p class=MsoListParagraph align=left style='margin-top:6.05pt;margin-right: 0cm;margin-bottom:0cm;margin-left:0cm;margin-bottom:.0001pt;text-align:left; text-autospace:none'>En cas d’hépatite virale aiguë, arrêtez le traitement et consultez votre médecin.</p>
+<p class=AmmCorpsTexte style='margin-top:6.0pt'>Au long cours, l’utilisation incorrecte et/ou à fortes doses de ce médicament chez des patients atteints de maux de tête chroniques peut entraîner ou aggraver des maux de tête. Vous ne devez pas augmenter votre dose d'antalgiques mais consultez votre médecin<span style='text-transform:uppercase'>.</span></p>
+<p class=AmmCorpsTexte style='margin-top:6.0pt'><a name="_Hlk184050833"><span class='gras'>Pendant le traitement par DAFALGAN 500 mg, comprimé, informez immédiatement votre médecin :</span></a></p>
+<p class=AmmListePuces1 style='margin-top:6.0pt;text-align:justify'><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>Si vous avez des maladies graves, y compris une insuffisance rénale grave ou un sepsis (lorsque des bactéries et leurs toxines circulent dans le sang, entraînant des lésions au niveau des organes), ou si vous êtes atteint de malnutrition, d’alcoolisme chronique ou si vous prenez également de la flucloxacilline (un antibiotique). Une affection grave appelée acidose métabolique (une anomalie du sang et des fluides) a été signalée chez les patients qui prennent régulièrement du paracétamol pendant une période prolongée ou qui prennent du paracétamol en association avec de la flucloxacilline. Les symptômes de l’acidose métabolique peuvent inclure : de graves difficultés respiratoires avec une respiration rapide et profonde, une somnolence, une envie de vomir (nausée) et des vomissements. </p>
+<p class=AmmCorpsTexteGras style='margin-top:6.0pt'>Enfants et adolescents</p>
+<p class=AmmCorpsTexte>Chez un enfant traité par du paracétamol, l’association d’un autre médicament utilisé pour faire baisser la fièvre (antipyrétique) n’est justifiée qu’en cas d’inefficacité. L’association ne doit être instaurée et surveillée que par un médecin.</p>
+<p class=AmmCorpsTexteGras>Autres médicaments et <span style='text-transform: uppercase'>Dafalgan 500 </span><span style='font-family:"Arial Gras",serif'>mg, comprimé</span></p>
+<p class=AmmCorpsTexte align=left style='margin-top:6.0pt;text-align:left; text-autospace:none'><span style='font-size:10.0pt;font-family:"Arial",sans-serif'>Informez votre médecin ou votre pharmacien si vous prenez, avez récemment pris ou pourriez prendre tout autre médicament, y compris un médicament obtenu sans ordonnance.</span></p>
+<p class=AmmCorpsTexte align=left style='margin-top:6.0pt;text-align:left; text-autospace:none'>  <table cellpadding=0 cellspacing=0> <tr> <td width=95 height=0></td> </tr> <tr> <td></td> <td><img alt='' width=605 height=71 src="https://base-donnees-publique.medicaments.gouv.fr/Rcp_Notices/images//N0428070/image004.png" alt="Ce médicament contient du paracétamol. D'autres médicaments en contiennent.&#13;&#10;Vérifiez que vous ne prenez pas d'autres médicaments contenant du paracétamol, y compris si ce sont des médicaments obtenus sans prescription.&#13;&#10;Ne les associez pas, afin de ne pas dépasser la dose quotidienne recommandée.&#13;&#10;"></td> </tr> </table>  <br clear=ALL> <span style='font-size:10.0pt;font-family:"Arial",sans-serif'>Consultez<span style='letter-spacing:-.4pt'> </span>votre<span style='letter-spacing:-.35pt'> </span>médecin<span style='letter-spacing:-.25pt'> </span>ou<span style='letter-spacing:-.3pt'> </span>votre<span style='letter-spacing:-.3pt'> </span>pharmacien<span style='letter-spacing: -.3pt'> </span><span style='letter-spacing:-.5pt'>:</span></span></p>
+<p class=AmmListePuces1 style='text-align:justify'><span style='font-family: Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>si vous prenez des médicaments potentiellement toxiques pour le foie. La toxicité du paracétamol pourrait être augmentée.</p>
+<p class=AmmListePuces1 style='text-align:justify'><span style='font-family: Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>si un dosage du taux d'acide urique ou de sucre dans le sang vous a été prescrit ou à votre enfant car ce médicament peut en fausser les résultats.</p>
+<p class=AmmListePuces1 style='text-align:justify'><span style='font-family: Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>si vous prenez un médicament qui ralentit la coagulation (anticoagulants oraux). A fortes doses, DAFALGAN 500 mg, comprimé peut augmenter l'action de votre anticoagulant. Si nécessaire, votre médecin adaptera la posologie de votre anticoagulant.</p>
+<p class=AmmListePuces1 style='text-align:justify'><span style='font-family: Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>si vous prenez de la flucloxacilline (antibiotique), en raison d'un risque grave d'anomalie du sang et des fluides (appelée acidose métabolique), qui doit faire l'objet d'un traitement d’urgence (voir rubrique 2).</p>
+<p class=AmmCorpsTexteGras style='margin-top:12.0pt'><span style='text-transform: uppercase'>Dafalgan 500 </span><span style='font-family:"Arial Gras",serif'>mg, comprimé</span> avec de l’alcool</p>
+<p class=AmmCorpsTexte><a name="_Hlk81295331">La<span style='letter-spacing: -.35pt'> </span>consommation<span style='letter-spacing:-.35pt'> </span>de<span style='letter-spacing:-.35pt'> </span>boissons<span style='letter-spacing:-.35pt'> </span>alcoolisées<span style='letter-spacing:-.25pt'> </span>pendant<span style='letter-spacing:-.2pt'> </span>le<span style='letter-spacing:-.3pt'> </span>traitement<span style='letter-spacing:-.35pt'> </span>est<span style='letter-spacing:-.4pt'> </span><span style='letter-spacing:-.1pt'>déconseillée</span></a>.</p>
+<p class=AmmCorpsTexteGras><a name="_Toc142279012">Grossesse, allaitement et fertilité</a></p>
+<p class=AmmCorpsTexte><span lang=FR-BE>Si vous êtes enceinte ou que vous allaitez, si vous pensez être enceinte ou planifiez une grossesse, demandez conseil à votre médecin ou pharmacien avant de prendre tout médicament.</span></p>
+<p class=AmmCorpsTexte><span class='souligne'>Grossesse et allaitement</span></p>
+<p class=AmmCorpsTexte>Au besoin, ce médicament peut être utilisé pendant la grossesse et l’allaitement.</p>
+<p class=AmmCorpsTexte>Vous devez utiliser la dose la plus faible possible qui permette de soulager la douleur et/ou la fièvre et la prendre pendant la durée la plus courte possible. Contactez votre médecin si la douleur et/ou la fièvre ne diminuent pas ou si vous devez prendre le médicament plus fréquemment.</p>
+<p class=AmmCorpsTexte><span class='souligne'>Fertilité</span></p>
+<p class=AmmCorpsTexteGras><span style='font-weight:normal'>Il est possible que le paracétamol puisse altérer la fertilité des femmes, de façon réversible à l’arrêt du traitement.</span></p>
+<p class=AmmCorpsTexteGras>Conduite de véhicules et utilisation de machines</p>
+<p class=AmmCorpsTexte><span style='font-size:10.0pt;font-family:"Arial",sans-serif; color:black;border:none windowtext 1.0pt;padding:0cm'>Le paracétamol n’a aucun effet ou qu’un effet négligeable sur l’aptitude à conduire des véhicules et à utiliser des machines.</span></p>
+<p class=AmmCorpsTexteGras style='margin-top:6.0pt'><span style='text-transform: uppercase'>Dafalgan 500 </span><span style='font-family:"Arial Gras",serif'>mg, comprimé</span> contient moins de 1 mmol (23 mg) de sodium par comprimé, c.-à-d. qu’il est essentiellement « sans sodium »<span style='font-size:8.5pt; font-family:"Verdana",sans-serif'>.</span></p>
+<h2><a name="Ann3bCommentPrendre">3. COMMENT PRENDRE Dafalgan 500 mg, comprimé ?</a>&nbsp;&nbsp;<a href='#HautDePage'><img src='img/BackToTop.jpg' width='15px' height='15px' alt='Retour en haut de la page' title='Retour en haut de la page' /></a></h2>
+<p class=AmmCorpsTexte><a name="_Toc142279021"><span lang=FR-BE>Veillez à toujours prendre ce médicament en suivant exactement les instructions de cette notice ou les indications de votre médecin ou pharmacien. Vérifiez auprès de votre médecin ou pharmacien en cas de doute.</span></a></p>
+<p class=AmmCorpsTexte><span class='gras'><span class='souligne'>Posologie </span></span></p>
+<p class=AmmCorpsTexte style='margin-top:6.15pt;text-autospace:none'><span style='font-size:10.0pt;font-family:"Arial",sans-serif'>Réservé<span style='letter-spacing:-.2pt'> </span>à<span style='letter-spacing:-.1pt'> </span>l'adulte<span style='letter-spacing:-.1pt'> </span>et<span style='letter-spacing:-.05pt'> </span>à<span style='letter-spacing:-.3pt'> </span>l'enfant<span style='letter-spacing:-.2pt'> </span>à<span style='letter-spacing:-.2pt'> </span>partir<span style='letter-spacing:-.2pt'> </span>de<span style='letter-spacing:-.1pt'> </span>27<span style='letter-spacing:-.3pt'> </span>kg<span style='letter-spacing:-.25pt'> </span>(environ<span style='letter-spacing:-.25pt'> </span>8<span style='letter-spacing:-.2pt'> </span><span style='letter-spacing:-.1pt'>ans).</span></span></p>
+<p class=AmmCorpsTexte style='margin-top:6.0pt;margin-right:38.55pt;margin-bottom: 6.0pt;margin-left:0cm;text-autospace:none'><span class='gras'><span style='font-size:10.0pt; font-family:"Arial",sans-serif'>Utiliser<span style='letter-spacing:-.35pt'> </span>la<span style='letter-spacing:-.3pt'> </span>dose<span style='letter-spacing:-.3pt'> </span>efficace<span style='letter-spacing:-.25pt'> </span>la<span style='letter-spacing:-.25pt'> </span>plus<span style='letter-spacing:-.3pt'> </span>faible,<span style='letter-spacing:-.35pt'> </span>pendant<span style='letter-spacing:-.3pt'> </span>la<span style='letter-spacing:-.35pt'> </span>durée<span style='letter-spacing:-.25pt'> </span>la<span style='letter-spacing:-.25pt'> </span>plus<span style='letter-spacing:-.3pt'> </span>courte<span style='letter-spacing:-.35pt'> </span>possible.<span style='letter-spacing:-.25pt'> </span></span></span><span style='font-size:10.0pt;font-family:"Arial",sans-serif'>Utiliser la dose de 1000 mg en cas de douleurs et/ou fièvre non soulagées par une dose de 500 mg de paracétamol.</span></p>
+<p class=AmmCorpsTexte>La posologie dépend du poids. Les âges sont mentionnés à titre d’information. Si vous ne connaissez pas le poids de l'enfant, il faut le peser afin de lui donner la présentation de paracétamol dont le dosage est le mieux adapté. La dose quotidienne de paracétamol recommandée est à répartir en plusieurs prises sans dépasser les doses maximales indiquées dans le tableau ci-dessous. </p>
+<div align=center>
+<table class=AmmCorpsTexteTable border=1 cellspacing=0 cellpadding=0 width="90%"
+style='border-collapse:collapse;border:none'>
+<tr style='height:24.75pt'>
+<td width=167 valign=top style='width:107.1pt;border:solid windowtext 1.0pt;
+background:#DFDFDF;padding:0cm 3.5pt 0cm 3.5pt;height:24.75pt'>
+<p class=AmmCorpsTexte align=center style='text-align:center'><span class='gras'><span style='font-size:10.0pt;font-family:"Arial",sans-serif'>Poids </span></span></p>
+<p class=AmmCorpsTexte align=center style='text-align:center'><span style='font-size:10.0pt;font-family:"Arial",sans-serif'>(âge approximatif) </span></p>
+<p class=AmmCorpsTexte align=center style='text-align:center'><span style='font-size:10.0pt;font-family:"Arial",sans-serif'> </span></p>
+</td>
+<td width=167 valign=top style='width:107.1pt;border:solid windowtext 1.0pt;
+border-left:none;background:#DFDFDF;padding:0cm 3.5pt 0cm 3.5pt;height:24.75pt'>
+<p class=AmmCorpsTexte align=center style='text-align:center'><span class='gras'><span style='font-size:10.0pt;font-family:"Arial",sans-serif'>Dose maximale</span></span></p>
+<p class=AmmCorpsTexte align=center style='text-align:center'><span style='font-size:10.0pt;font-family:"Arial",sans-serif'>par administration</span></p>
+</td>
+<td width=120 valign=top style='width:76.8pt;border:solid windowtext 1.0pt;
+border-left:none;background:#DFDFDF;padding:0cm 3.5pt 0cm 3.5pt;height:24.75pt'>
+<p class=AmmCorpsTexte align=center style='text-align:center'><span class='gras'><span style='font-size:10.0pt;font-family:"Arial",sans-serif'>Intervalle</span></span><span style='font-size:10.0pt;font-family:"Arial",sans-serif'> entre deux doses</span></p>
+</td>
+<td width=187 valign=top style='width:119.7pt;border:solid windowtext 1.0pt;
+border-left:none;background:#DFDFDF;padding:0cm 3.5pt 0cm 3.5pt;height:24.75pt'>
+<p class=AmmCorpsTexte align=center style='text-align:center'><span class='gras'><span style='font-size:10.0pt;font-family:"Arial",sans-serif'>Dose maximale par jour</span></span></p>
+</td>
+</tr>
+<tr style='height:24.75pt'>
+<td width=167 valign=top style='width:107.1pt;border:solid windowtext 1.0pt;
+border-top:none;padding:0cm 3.5pt 0cm 3.5pt;height:24.75pt'>
+<p class=AmmCorpsTexte align=center style='text-align:center'><span class='gras'><span style='font-size:10.0pt;font-family:"Arial",sans-serif'>Enfant 27 kg - 40 kg<br> </span></span><span style='font-size:10.0pt;font-family:"Arial",sans-serif'>(environ 8 à 12 ans)</span></p>
+</td>
+<td width=167 valign=top style='width:107.1pt;border-top:none;border-left:
+none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+padding:0cm 3.5pt 0cm 3.5pt;height:24.75pt'>
+<p class=AmmCorpsTexte align=center style='text-align:center'><span style='font-size:10.0pt;font-family:"Arial",sans-serif'>500 mg<br> (1 comprimé)</span></p>
+</td>
+<td width=120 valign=top style='width:76.8pt;border-top:none;border-left:
+none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+padding:0cm 3.5pt 0cm 3.5pt;height:24.75pt'>
+<p class=AmmCorpsTexte align=center style='text-align:center'><span style='font-size:10.0pt;font-family:"Arial",sans-serif'>6 heures minimum</span></p>
+</td>
+<td width=187 valign=top style='width:119.7pt;border-top:none;border-left:
+none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+padding:0cm 3.5pt 0cm 3.5pt;height:24.75pt'>
+<p class=AmmCorpsTexte align=center style='text-align:center'><span style='font-size:10.0pt;font-family:"Arial",sans-serif'>2000 mg par jour soit 2 g<br> (4 comprimés)</span></p>
+</td>
+</tr>
+<tr style='height:24.75pt'>
+<td width=167 valign=top style='width:107.1pt;border:solid windowtext 1.0pt;
+border-top:none;padding:0cm 3.5pt 0cm 3.5pt;height:24.75pt'>
+<p class=AmmCorpsTexte align=center style='text-align:center'><span class='gras'><span style='font-size:10.0pt;font-family:"Arial",sans-serif'>Enfant 41 kg - 49 kg</span></span><span style='font-size:10.0pt;font-family:"Arial",sans-serif'><br> </span><span style='font-size:10.0pt;font-family:"Arial",sans-serif'>(environ 13 à 15 ans)</span></p>
+</td>
+<td width=167 valign=top style='width:107.1pt;border-top:none;border-left:
+none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+padding:0cm 3.5pt 0cm 3.5pt;height:24.75pt'>
+<p class=AmmCorpsTexte align=center style='text-align:center'><span style='font-size:10.0pt;font-family:"Arial",sans-serif'>500 mg<br> (1 comprimé)</span></p>
+</td>
+<td width=120 valign=top style='width:76.8pt;border-top:none;border-left:
+none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+padding:0cm 3.5pt 0cm 3.5pt;height:24.75pt'>
+<p class=AmmCorpsTexte align=center style='text-align:center'><span style='font-size:10.0pt;font-family:"Arial",sans-serif'>4 heures minimum</span></p>
+</td>
+<td width=187 valign=top style='width:119.7pt;border-top:none;border-left:
+none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+padding:0cm 3.5pt 0cm 3.5pt;height:24.75pt'>
+<p class=AmmCorpsTexte align=center style='text-align:center'><span style='font-size:10.0pt;font-family:"Arial",sans-serif'>3000 mg par jour soit 3 g<br> (6 comprimés)</span></p>
+</td>
+</tr>
+<tr style='height:24.75pt'>
+<td width=167 valign=top style='width:107.1pt;border:solid windowtext 1.0pt;
+border-top:none;padding:0cm 3.5pt 0cm 3.5pt;height:24.75pt'>
+<p class=AmmCorpsTexte align=center style='text-align:center'><span class='gras'><span style='font-size:10.0pt;font-family:"Arial",sans-serif'>Adulte et enfant à partir de 50 kg</span></span><span style='font-size:10.0pt;font-family:"Arial",sans-serif'> </span></p>
+<p class=AmmCorpsTexte align=center style='text-align:center'><span style='font-size:10.0pt;font-family:"Arial",sans-serif'>(environ 15 ans)</span></p>
+</td>
+<td width=167 valign=top style='width:107.1pt;border-top:none;border-left:
+none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+padding:0cm 3.5pt 0cm 3.5pt;height:24.75pt'>
+<p class=AmmCorpsTexte align=center style='text-align:center'><span style='font-size:10.0pt;font-family:"Arial",sans-serif'>500 mg à 1000 mg soit 500 mg à 1 g<br> (1 à 2 comprimés)</span></p>
+</td>
+<td width=120 valign=top style='width:76.8pt;border-top:none;border-left:
+none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+padding:0cm 3.5pt 0cm 3.5pt;height:24.75pt'>
+<p class=AmmCorpsTexte align=center style='text-align:center'><span style='font-size:10.0pt;font-family:"Arial",sans-serif'>4 heures minimum</span></p>
+</td>
+<td width=187 valign=top style='width:119.7pt;border-top:none;border-left:
+none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+padding:0cm 3.5pt 0cm 3.5pt;height:24.75pt'>
+<p class=AmmCorpsTexte align=center style='text-align:center'><span style='font-size:10.0pt;font-family:"Arial",sans-serif'>3000 mg par jour soit 3 g<br> (6 comprimés)</span></p>
+</td>
+</tr>
+</table>
+</div>
+<p class=AmmCorpsTexte><span class='gras'>Attention : </span>Pour éviter un risque de surdosage, vérifiez l'absence de paracétamol dans la composition d'autres médicaments, y compris pour les médicaments obtenus sans ordonnance. <span class='gras'>Respectez les doses maximales recommandées ou la dose prescrite par votre médecin </span>: une dose plus élevée ne soulagera pas plus votre douleur, mais peut avoir des conséquences graves sur votre foie.</p>
+<p class=AmmCorpsTexte style='margin-top:6.0pt;margin-right:0cm;margin-bottom:6.0pt; margin-left:0cm'><span class='gras'><span style='font-size:10.0pt;font-family:"Arial",sans-serif'>Adulte pesant moins de 50 kg, malnutrition chronique, déshydratation, personnes âgées :</span></span></p>
+<p class=AmmCorpsTexte style='margin-top:6.0pt;margin-right:0cm;margin-bottom:6.0pt; margin-left:0cm'><span style='font-size:10.0pt;font-family:"Arial",sans-serif'>demandez conseil à votre médecin ou votre pharmacien.</span></p>
+<p class=AmmCorpsTexte style='margin-top:6.0pt;margin-right:0cm;margin-bottom:6.0pt; margin-left:0cm'><span class='gras'><span style='font-size:10.0pt;font-family:"Arial",sans-serif'>Insuffisance hépatique, alcoolisme chronique et syndrome de Gilbert : </span></span><span style='font-size:10.0pt;font-family:"Arial",sans-serif'>ne jamais dépasser 2000 mg (2 g) de paracétamol par jour.</span></p>
+<p class=AmmCorpsTexte style='margin-top:6.0pt;margin-right:0cm;margin-bottom:6.0pt; margin-left:0cm'><span class='gras'><span style='font-size:10.0pt;font-family:"Arial",sans-serif'>Insuffisance rénale : </span></span><span style='font-size:10.0pt;font-family:"Arial",sans-serif'>La posologie doit être adaptée en fonction du degré d’insuffisance rénale. Consultez votre médecin avant de prendre ce médicament<span class='gras'>.</span></span></p>
+<p class=AmmCorpsTexte style='margin-top:6.0pt'>Si vous avez l’impression que l’effet de ce médicament est trop fort ou trop faible, ne dépassez pas les doses, demandez conseil à votre médecin ou votre pharmacien.</p>
+<p class=AmmAnnexeTitre3>Mode d'administration </p>
+<p class=AmmCorpsTexte>Voie orale.</p>
+<p class=AmmCorpsTexte>Les comprimés sont à avaler tels quels avec un verre d’eau.</p>
+<p class=AmmAnnexeTitre3 style='margin-top:0cm'>Durée de traitement</p>
+<p class=AmmAnnexeTitre3 style='margin:0cm;margin-bottom:.0001pt'><a name="_Hlk81404249"><span style='font-weight:normal;text-decoration:none'>Une utilisation fréquente ou prolongée sans surveillance médicale est déconseillée.</span></a></p>
+<p class=AmmAnnexeTitre3 style='margin:0cm;margin-bottom:.0001pt'><span style='font-weight:normal;text-decoration:none'>Sauf avis médical, la durée du traitement est limitée à 5 jours en cas de douleurs et à 3 jours en cas de fièvre.</span></p>
+<p class=AmmCorpsTexte style='margin-top:6.0pt'>Si les symptômes persistent au-delà, s’ils s’aggravent, ou si de nouveaux symptômes apparaissent, arrêtez le traitement et consultez immédiatement votre médecin.</p>
+<p class=AmmCorpsTexteGras>Si vous avez pris plus de D<span style='font-family: "Arial Gras",serif;text-transform:uppercase'>afalgan</span> 500 mg, comprimé que vous n’auriez dû</p>
+<p class=AmmCorpsTexte><a name="_Hlk81295629">Arrêtez le traitement et consultez <span class='gras'><span class='souligne'>immédiatement</span></span> votre médecin ou les urgences médicales. </a></p>
+<p class=AmmCorpsTexteGras>Un surdosage peut être mortel.</p>
+<p class=AmmCorpsTexte>Le<span style='letter-spacing:-.05pt'> </span>surdosage<span style='letter-spacing:-.05pt'> </span>peut<span style='letter-spacing:-.05pt'> </span>être<span style='letter-spacing:-.1pt'> </span>à<span style='letter-spacing:-.05pt'> </span>l’origine de<span style='letter-spacing:-.1pt'> </span>lésions du<span style='letter-spacing: -.05pt'> </span>foie, d’inflammation<span style='letter-spacing:-.1pt'> </span>du<span style='letter-spacing:-.1pt'> </span>cerveau, d’un<span style='letter-spacing: -.05pt'> </span>coma,<span style='letter-spacing:-.05pt'> </span>voire<span style='letter-spacing:-.1pt'> </span>d’un décès,<span style='letter-spacing: -.7pt'> </span>notamment<span style='letter-spacing:-.7pt'> </span>chez<span style='letter-spacing:-.7pt'> </span>les<span style='letter-spacing:-.7pt'> </span>populations<span style='letter-spacing:-.7pt'> </span>plus<span style='letter-spacing:-.7pt'> </span>à<span style='letter-spacing:-.7pt'> </span>risque<span style='letter-spacing:-.7pt'> </span>telles<span style='letter-spacing:-.7pt'> </span>que<span style='letter-spacing:-.65pt'> </span>les<span style='letter-spacing:-.7pt'> </span>jeunes<span style='letter-spacing:-.5pt'> </span>enfants,<span style='letter-spacing:-.65pt'> </span>les<span style='letter-spacing:-.7pt'> </span>personnes<span style='letter-spacing:-.7pt'> </span>âgées et<span style='letter-spacing:-.6pt'> </span>dans<span style='letter-spacing:-.5pt'> </span>certaines<span style='letter-spacing:-.5pt'> </span>situations<span style='letter-spacing: -.4pt'> </span>(maladie<span style='letter-spacing:-.6pt'> </span>du<span style='letter-spacing:-.6pt'> </span>foie<span style='letter-spacing:-.45pt'> </span>ou<span style='letter-spacing:-.6pt'> </span>des<span style='letter-spacing:-.5pt'> </span>reins,<span style='letter-spacing:-.6pt'> </span>alcoolisme<span style='letter-spacing: -.6pt'> </span>chronique,<span style='letter-spacing:-.65pt'> </span>malnutrition<span style='letter-spacing:-.6pt'> </span>chronique, jeûne,<span style='letter-spacing: -.7pt'> </span>amaigrissement<span style='letter-spacing:-.7pt'> </span>récent,<span style='letter-spacing:-.65pt'> </span>syndrome<span style='letter-spacing:-.7pt'> </span>de<span style='letter-spacing:-.7pt'> </span>Gilbert<span style='letter-spacing:-.7pt'> </span>et<span style='letter-spacing:-.65pt'> </span>chez<span style='letter-spacing:-.7pt'> </span>les<span style='letter-spacing:-.65pt'> </span>patients<span style='letter-spacing:-.55pt'> </span>traités<span style='letter-spacing:-.55pt'> </span>de<span style='letter-spacing:-.65pt'> </span>manière<span style='letter-spacing:-.7pt'> </span>concomitante avec certains médicaments). Des cas d’inflammation du pancréas (provoquant de fortes douleurs dans le ventre et le dos), d'augmentation dans le sang du taux d’amylase, de défaillance des reins et d’une réduction simultanée dans le sang des globules rouges, des globules blancs et des plaquettes ont également été rapportés.</p>
+<p class=AmmCorpsTexte>Dans les 24 premières heures, les principaux symptômes d'intoxication sont : nausées, vomissements, pâleur, malaise, sudation, perte d’appétit, douleurs abdominales.</p>
+<p class=AmmCorpsTexteGras>Si vous oubliez de prendre D<span style='font-family: "Arial Gras",serif;text-transform:uppercase'>afalgan</span> 500 mg, comprimé</p>
+<p class=AmmCorpsTexte>Ne prenez pas de dose double pour compenser la dose simple que vous avez oublié de prendre.</p>
+<p class=AmmCorpsTexteGras>Si vous arrêtez de prendre D<span style='font-family: "Arial Gras",serif;text-transform:uppercase'>afalgan</span> 500 mg, comprimé</p>
+<p class=AmmCorpsTexte>Sans objet.</p>
+<p class=AmmCorpsTexte>Si vous avez d’autres questions sur l’utilisation de ce médicament, demandez plus d’informations à votre médecin ou à votre pharmacien.</p>
+<h2><a name="Ann3bEffetsIndesirables">4. QUELS SONT LES EFFETS INDESIRABLES EVENTUELS ?</a>&nbsp;&nbsp;<a href='#HautDePage'><img src='img/BackToTop.jpg' width='15px' height='15px' alt='Retour en haut de la page' title='Retour en haut de la page' /></a></h2>
+<p class=AmmCorpsTexte><a name="_Toc142279023">Comme tous les médicaments, ce médicament peut provoquer des effets indésirables, mais ils ne surviennent pas systématiquement chez tout le monde.</a></p>
+<p class=AmmCorpsTexte style='margin-bottom:0cm;margin-bottom:.0001pt'><a name="_Hlk104905552"><span class='gras'><span class='souligne'>Effets indésirables rares</span></span> : peuvent affecter jusqu'à 1 personne sur 1 000</a></p>
+<p class=AmmListePuces1 style='text-align:justify'><span style='font-family: Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span><span class=AmmCorpsTexteCar>rougeur de la peau, éruption cutanée, urticaire. Il faut <span class='souligne'>immédiatement arrêter le traitement</span>, avertir votre médecin et ne plus jamais reprendre de médicaments contenant du paracétamol</span>.</p>
+<p class=AmmListePuces1 style='text-align:justify'><span class=AmmCorpsTexteCar><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span></span><span class=AmmCorpsTexteCar>taches de sang sur la peau (purpura). Il faut <span class='souligne'>immédiatement arrêter le traitement</span> et avertir votre médecin. Le traitement pourra être réintroduit uniquement selon l’avis de votre médecin.</span></p>
+<p class=AmmListePuces1 style='text-align:justify'><span style='font-family: Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span><span class=AmmCorpsTexteCar>diarrhées, douleurs abdominales.</span></p>
+<p class=AmmListePuces1 style='margin-top:6.0pt;margin-right:0cm;margin-bottom: 0cm;margin-left:0cm;margin-bottom:.0001pt;text-indent:0cm'><a name="_Hlk104905563"><span class='gras'><span class='souligne'>Effets indésirables très rares</span></span> : peuvent affecter jusqu'à 1 personne sur 10 000</a></p>
+<p class=MsoListParagraphCxSpFirst style='margin-top:0cm;margin-right:0cm; margin-bottom:6.0pt;margin-left:21.3pt;text-indent:-21.3pt'><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>           </span></span>réactions cutanées graves. Il faut <span class='souligne'>immédiatement arrêter le traitement</span>, avertir votre médecin et ne plus jamais reprendre de médicaments contenant du paracétamol.</p>
+<p class=MsoListParagraphCxSpLast style='margin-left:21.3pt;text-indent:-21.3pt'><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>           </span></span>modifications biologiques nécessitant un contrôle du bilan sanguin : taux anormalement bas de certains globules blancs (leucopénie, neutropénie) ou de certaines cellules du sang comme les plaquettes (thrombopénie) pouvant se traduire par des saignements de nez ou des gencives. Dans ce cas, consultez un médecin.</p>
+<p class=AmmListePuces1 style='margin-top:6.0pt;margin-right:0cm;margin-bottom: 0cm;margin-left:0cm;margin-bottom:.0001pt;text-indent:0cm'><span class='gras'><span class='souligne'>Effets indésirables à fréquence indéterminée</span></span> : la fréquence ne peut pas être estimée à partir des données disponibles</p>
+<p class=MsoListParagraphCxSpFirst style='margin-left:21.3pt;text-indent:-21.3pt'><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>           </span></span>éruption ou rougeur cutanée ou réaction allergique pouvant se manifester par un brusque gonflement du visage et du cou pouvant entraîner une difficulté à respirer (œdème de Quincke) ou par un malaise brutal avec chute de la pression artérielle (choc anaphylactique). Il faut <span class='souligne'>immédiatement arrêter le traitement</span>, avertir votre médecin et ne plus jamais reprendre de médicaments contenant du paracétamol.</p>
+<p class=MsoListParagraphCxSpMiddle style='margin-left:21.3pt;text-indent:-21.3pt'><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>           </span></span>anomalie du bilan hépatique.</p>
+<p class=MsoListParagraphCxSpMiddle style='margin-left:21.25pt;text-indent: -21.25pt;page-break-after:avoid'><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>           </span></span>éruption cutanée en plaques rouges arrondies avec démangeaison et sensation de brûlure laissant des tâches colorées et pouvant apparaître aux mêmes endroits en cas de reprise du médicament (érythème pigmenté fixe), difficulté à respirer (bronchospasme), notamment si vous avez déjà présenté des difficultés à respirer avec d’autre médicaments tels que les anti-inflammatoires non stéroïdiens ou l’acide acétylsalicylique. Dans ce cas, consultez un médecin.</p>
+<p class=MsoListParagraphCxSpLast style='margin-left:21.3pt;text-indent:-21.3pt'><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>           </span></span>une affection grave qui peut rendre le sang plus acide (appelée acidose métabolique), chez les patients atteints d’une maladie grave et utilisant du paracétamol (voir rubrique 2).</p>
+<p class=AmmCorpsTexteGras style='margin-top:6.0pt'>Déclaration des effets secondaires</p>
+<p class=AmmCorpsTexte>Si vous ressentez un quelconque effet indésirable, parlez-en à votre médecin, votre pharmacien ou à votre infirmier/ère. Ceci s’applique aussi à tout effet indésirable qui ne serait pas mentionné dans cette notice. Vous pouvez également déclarer les effets indésirables directement via le système national de déclaration : Agence nationale de sécurité du médicament et des produits de santé (ANSM) et réseau des Centres Régionaux de Pharmacovigilance - Site internet : <a href="http://www.signalement.social-sante.gouv.fr">https://signalement.social-sante.gouv.fr</a><span class=MsoHyperlink>/.</span></p>
+<p class=AmmCorpsTexte>En signalant les effets indésirables, vous contribuez à fournir davantage d’informations sur la sécurité du médicament.</p>
+<h2><a name="Ann3bConservation">5. COMMENT CONSERVER Dafalgan 500 mg, comprimé ?</a>&nbsp;&nbsp;<a href='#HautDePage'><img src='img/BackToTop.jpg' width='15px' height='15px' alt='Retour en haut de la page' title='Retour en haut de la page' /></a></h2>
+<p class=AmmCorpsTexte><a name="_Toc142279026"></a><a name="_Toc142279024">Tenir ce médicament hors de la vue et de la portée des enfants.</a></p>
+<p class=AmmCorpsTexte><span lang=FR-BE>N’utilisez pas ce médicament après la date de péremption indiquée sur l’emballage. La date de péremption fait référence au dernier jour de ce mois.</span></p>
+<p class=AmmCorpsTexte>Pas de précautions particulières de conservation.</p>
+<p class=AmmCorpsTexte><span lang=FR-BE>Ne jetez aucun médicament au tout-à-l’égout <span style='color:black'>ou avec </span>les ordures ménagères. Demandez à votre pharmacien d’éliminer les médicaments que vous n’utilisez plus. Ces mesures contribueront à protéger l’environnement.</span></p>
+<h2><a name="Ann3bEmballage">6. CONTENU DE L’EMBALLAGE ET AUTRES INFORMATIONS</a>&nbsp;&nbsp;<a href='#HautDePage'><img src='img/BackToTop.jpg' width='15px' height='15px' alt='Retour en haut de la page' title='Retour en haut de la page' /></a></h2>
+<p class="AmmAnnexeTitre2"><a name="Ann3bContenu">Ce que contient DAFALGAN 500 mg, comprimé</a>&nbsp;&nbsp;<a href='#HautDePage'><img src='img/BackToTop.jpg' width='15px' height='15px' alt='Retour en haut de la page' title='Retour en haut de la page' /></a></p>
+<p class=AmmListePuces1><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>La substance active est :</p>
+<p class=AmmComposition style='margin-left:18.0pt'>Paracétamol................................................................................................................... 500 mg</p>
+<p class=AmmListePuces1 align=center style='text-align:center'>Pour un comprimé.</p>
+<p class=AmmListePuces1><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>Les autres composants sont : </p>
+<p class=AmmListePuces1 style='text-indent:0cm'>Croscarmellose sodique*, hypromellose (E464), cellulose microcristalline, povidone, béhénate de glycérol, stéarate de magnésium. *Voir rubrique 2.</p>
+<p class="AmmAnnexeTitre2"><a name="RcpEmballage">Qu’est-ce que Dafalgan 500 mg, comprimé et contenu de l’emballage extérieur</a>&nbsp;&nbsp;<a href='#HautDePage'><img src='img/BackToTop.jpg' width='15px' height='15px' alt='Retour en haut de la page' title='Retour en haut de la page' /></a></p>
+<p class=AmmCorpsTexte>Ce médicament se présente sous forme de comprimé.</p>
+<p class=AmmCorpsTexte>Boîte de 16 ou 100 comprimés.</p>
+<p class="AmmAnnexeTitre2"><a name="Ann3bTituAMM">Titulaire de l’autorisation de mise sur le marché</a>&nbsp;&nbsp;<a href='#HautDePage'><img src='img/BackToTop.jpg' width='15px' height='15px' alt='Retour en haut de la page' title='Retour en haut de la page' /></a></p>
+<p class=AmmTitulaireNom><a name="_Toc142279031">UPSA SAS</a></p>
+<p class=AmmTitulaireAdresse><span style='text-transform:none'>3, RUE JOSEPH MONIER</span></p>
+<p class=AmmTitulaireAdresse><span style='text-transform:none'>92500 RUEIL-MALMAISON</span></p>
+<p class="AmmAnnexeTitre2"><a name="Ann3bExploitAMM">Exploitant de l’autorisation de mise sur le marché</a>&nbsp;&nbsp;<a href='#HautDePage'><img src='img/BackToTop.jpg' width='15px' height='15px' alt='Retour en haut de la page' title='Retour en haut de la page' /></a></p>
+<p class=AmmTitulaireNom><a name="_Toc142279032">UPSA SAS</a></p>
+<p class=AmmTitulaireAdresse><span style='text-transform:none'>3, RUE JOSEPH MONIER</span></p>
+<p class=AmmTitulaireAdresse><span style='text-transform:none'>92500 RUEIL-MALMAISON</span></p>
+<p class="AmmAnnexeTitre2"><a name="Ann3bFab">Fabricant</a>&nbsp;&nbsp;<a href='#HautDePage'><img src='img/BackToTop.jpg' width='15px' height='15px' alt='Retour en haut de la page' title='Retour en haut de la page' /></a></p>
+<p class=AmmTitulaireAdresse><a name="_Toc142279033"><span class='gras'>UPSA</span> <span class='gras'>SAS</span></a></p>
+<p class=AmmTitulaireAdresse>304 avenue du docteur jeaN bru</p>
+<p class=AmmTitulaireAdresse>47000 agen</p>
+<p class=AmmTitulaireAdresse style='margin-top:6.0pt;margin-right:0cm; margin-bottom:6.0pt;margin-left:0cm'><span style='text-transform:none'>ou</span></p>
+<p class=AmmTitulaireAdresse><span class='gras'>UPSA</span> <span class='gras'>SAS</span></p>
+<p class=AmmTitulaireAdresse>979, AVENUE DES PYRENEES</p>
+<p class=AmmTitulaireAdresse>47520 LE PASSAGE</p>
+<p class="AmmAnnexeTitre2"><a name="Ann3bNomsMediEEE">Noms du médicament dans les Etats membres de l'Espace Economique Européen</a>&nbsp;&nbsp;<a href='#HautDePage'><img src='img/BackToTop.jpg' width='15px' height='15px' alt='Retour en haut de la page' title='Retour en haut de la page' /></a></p>
+<p class=AmmCorpsTexte>Sans objet.</p>
+<p class="AmmAnnexeTitre2"><a name="Ann3bContenu">La dernière date à laquelle cette notice a été révisée est :</a>&nbsp;&nbsp;<a href='#HautDePage'><img src='img/BackToTop.jpg' width='15px' height='15px' alt='Retour en haut de la page' title='Retour en haut de la page' /></a></p>
+<p class=AmmCorpsTexte><a name="_Toc142279038"><span style='color:#385623'>[à compléter ultérieurement par le titulaire]</span></a></p>
+<p class=AmmCorpsTexteGras>{mois AAAA}.</p>
+<p class="AmmAnnexeTitre2"><a name="Ann3bAutres">Autres</a>&nbsp;&nbsp;<a href='#HautDePage'><img src='img/BackToTop.jpg' width='15px' height='15px' alt='Retour en haut de la page' title='Retour en haut de la page' /></a></p>
+<p class=AmmCorpsTexte>Des informations détaillées sur ce médicament sont disponibles sur le site Internet de l’ANSM (France).</p>
+<p class=AmmCorpsTexteGras align=center style='text-align:center'>Conseil d’éducation sanitaire :</p>
+<p class=AmmCorpsTexte><span class='gras'><span class='souligne'>QUE FAIRE EN CAS DE FIEVRE :</span></span></p>
+<p class=AmmCorpsTexte>La température normale du corps est variable d'une personne à l'autre et comprise entre 36,5°C et 37,5°C. Une élévation de la température au-delà de 38°C peut être considérée comme une fièvre,<span style='letter-spacing:-.25pt'> </span>mais il est déconseillé de traiter la fièvre avec un médicament en dessous de 38,5°C.</p>
+<p class=AmmCorpsTexte>Ce médicament est réservé à l'adulte et à l'enfant à partir de 27 kg (environ 8 ans).</p>
+<p class=AmmCorpsTexte>Si les troubles que la fièvre entraîne sont trop gênants, vous pouvez prendre ce médicament qui contient du paracétamol en respectant les posologies indiquées.</p>
+<p class=AmmListePuces1 style='margin-bottom:6.0pt'>Pour<span style='letter-spacing: -.05pt'> </span>éviter<span style='letter-spacing:-.25pt'> </span>tout<span style='letter-spacing:-.25pt'> </span>risque<span style='letter-spacing:-.1pt'> </span>de<span style='letter-spacing:-.1pt'> </span>déshydratation,<span style='letter-spacing:-.3pt'> </span>pensez<span style='letter-spacing:-.25pt'> </span>à<span style='letter-spacing:-.25pt'> </span>boire<span style='letter-spacing:-.3pt'> </span>fréquemment<span style='letter-spacing: -.05pt'>.</span></p>
+<p class=AmmCorpsTexte>Avec ce médicament, la fièvre doit baisser rapidement. Néanmoins :</p>
+<p class=AmmListePuces1><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>si d'autres signes inhabituels apparaissent,</p>
+<p class=AmmListePuces1><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>si la fièvre persiste plus de 3 jours ou si elle s'aggrave,</p>
+<p class=AmmListePuces1><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>si les maux de tête deviennent violents, ou en cas de vomissements,</p>
+<p class=AmmCorpsTexte style='margin-top:6.0pt'><span class='gras'>CONSULTEZ IMMÉDIATEMENT VOTRE MÉDECIN. </span></p>
+<p class=AmmCorpsTexte><span class='gras'><span class='souligne'>QUE FAIRE EN CAS DE DOULEUR :</span></span></p>
+<p class=AmmCorpsTexte>L'intensité de la perception de la douleur et la capacité à lui résister varient d'une personne à l'autre.</p>
+<p class=AmmListePuces1 style='text-align:justify;page-break-after:avoid'><span class=CharacterStyle8><span style='font-family:Symbol;color:windowtext'>·<span style='font:7.0pt "Times New Roman"'>         </span></span></span><span class=CharacterStyle8><span style='font-family:"Arial",sans-serif; color:windowtext'>S'il n'y a pas d'amélioration au bout de 5 jours de traitement,</span></span></p>
+<p class=AmmListePuces1 style='text-align:justify;page-break-after:avoid'><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>si la douleur est violente, inattendue et survient de façon brutale (notamment une douleur forte dans la poitrine) et/ou au contraire revient régulièrement,</p>
+<p class=AmmListePuces1 style='text-align:justify'><span class=CharacterStyle8><span style='font-family:Symbol;color:windowtext'>·<span style='font:7.0pt "Times New Roman"'>         </span></span></span>si elle s'accompagne d'autres signes comme un état de malaise général, de la fièvre, un gonflement <span class=CharacterStyle8><span style='font-family:"Arial",sans-serif;color:windowtext'>inhabituel de la zone douloureuse, une diminution de la force dans un membre,</span></span></p>
+<p class=AmmListePuces1 style='text-align:justify'><span class=CharacterStyle8><span style='font-family:Symbol;color:windowtext'>·<span style='font:7.0pt "Times New Roman"'>         </span></span></span><span class=CharacterStyle8><span style='font-family:"Arial",sans-serif; color:windowtext'>si elle vous réveille la nuit,</span></span></p>
+<p class=AmmCorpsTexte align=left style='margin-top:6.0pt;text-align:left'><span class='gras'>CONSULTEZ IMMÉDIATEMENT VOTRE MÉDECIN.</span></p>
+</div>					
+					<p class="alignright"><a href="#HautDePage">Retour en haut de la page <img src="img/BackToTop.jpg" width="20px" height="20px" alt="Retour en haut de la page" title="Retour en haut de la page" /></a></p>
+				</div>
+			</div>
+		</div>
+	</div>
+
+<table summary="" class="content" width="1000">
+	<tr>
+		<td height="100px">&nbsp;</td>
+	</tr>
+</table>
+<table summary="Pied de page" class="footer" width="1000">
+	<tr>
+		<td>
+			<table summary="" class="tablealigncenter" border="0">
+				<tr>
+					<td width="100px" class="aligncenter"><a id="lien_ansm" href="http://ansm.sante.fr/" target="_blank"><img src="img/Logo_ANSM.png" width="150" height="60" alt="ANSM - Agence nationale de sécurité du médicament et des produits de santé" title="L'ANSM met à disposition les principales informations issues de l'Autorisation de mise sur le marché, l'appartenance à un groupe générique, les liens vers les informations de sécurité qu'elle publie, l'identification des médicaments sous surveillance renforcée - nouvelle fenêtre" /></a></td>
+					          <td>&nbsp;</td>
+					<td width="100px" class="aligncenter"><img src="img/Logo_HAS.png" width="150" height="60" alt="HAS - Haute autorité de santé" title="La HAS met à disposition les informations relatives au service médical rendu, à l'amélioration du service médical rendu ainsi que les liens vers les avis de la Commission de la Transparence correspondants - nouvelle fenêtre" /></td>
+					<td>&nbsp;</td>
+					<td width="100px" class="aligncenter"><img src="img/Logo_CNAM.png" width="150" height="60" alt="UNCAM - Unin nationale des caisses d'assurance maladie" title="L'UNCAM met à disposition le taux de remboursement, le prix et les indications remboursables le cas échéant, ainsi que l'agrément aux collectivités - nouvelle fenêtre" /></td>
+          				</tr>
+			</table> 
+		</td>
+	</tr>
+</table>
+<table summary="" class="finpage" width="1000">
+	<tr>
+		<td height="100px" class="aligncenter">
+			<a class="navigation" href="plan.php">Plan du site</a>&nbsp;|&nbsp;
+			<a class="navigation" href="accessibilite.php">Accessibilité</a>&nbsp;|&nbsp;
+			<a class="navigation" href="contact.php">Contact</a>&nbsp;|&nbsp;
+			<a class="navigation" href="telechargement.php">Téléchargement</a>&nbsp;|&nbsp;
+			<a class="navigation" href="DeclarationConfidentialite.php">Declaration de confidentialité</a>&nbsp;|&nbsp;
+			<a class="navigation" href="http://www.service-public.fr/" title="Service Public - Nouvelle fenêtre" target="_blank">Service-Public.fr</a>&nbsp;|&nbsp;
+			<a class="navigation" href="http://www.legifrance.gouv.fr/" title="Legifrance - Nouvelle fenêtre" target="_blank">Legifrance</a>&nbsp;|&nbsp;
+			<a class="navigation" href="http://www.gouvernement.fr/" title="Gouvernement - Nouvelle fenêtre" target="_blank" >Gouvernement.fr</a>
+		</td>
+	</tr>
+</table>
+
+
+
+<!-- Matomo -->
+<script type="text/javascript">
+  var _paq = window._paq = window._paq || [];
+  /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
+  _paq.push(['trackPageView']);
+  _paq.push(['enableLinkTracking']);
+  (function() {
+    var u="https://stats.integra.fr/";
+    _paq.push(['setTrackerUrl', u+'matomo.php']);
+    _paq.push(['setSiteId', '79']);
+    var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+    g.type='text/javascript'; g.async=true; g.src=u+'matomo.js'; s.parentNode.insertBefore(g,s);
+  })();
+</script>
+<!-- End Matomo Code -->
+
+
+
+</body>
+</html>

@@ -1,0 +1,357 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="fr" lang="fr">
+<head>
+	<title>Notice patient - LEVOTHYROX 50 microgrammes, comprimé sécable  - Base de données publique des médicaments</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=windows-1252"/>
+	<meta name="robots" content="index, follow"/>
+	<meta name="Description" content="Base de données publique des médicaments"/>
+	<meta name="Keywords" content="base, données, publique, médicaments, Notice patient, LEVOTHYROX 50 microgrammes, comprimé sécable "/>
+	<meta name="Subject" content="medicament"/>
+	<link href='https://fonts.googleapis.com/css?family=Noticia+Text' rel='stylesheet' type='text/css' />
+	<link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro' rel='stylesheet' type='text/css' />
+	<link href="style/style_bdm.css?v=2.2.3" type="text/css" rel="stylesheet"/>
+	<link href="style/style_RCP_Notice.css" type="text/css" rel="stylesheet"/>
+  <link rel="alternate" href="http://m.base-donnees-publique.medicaments.gouv.fr/#!info-65143010">
+    <script type="text/javascript" src="scripts/autocomplete.js?v=2.2.3"></script>
+	<script type="text/javascript" src="scripts/jquery.js"></script>
+    <script type="text/javascript" src="scripts/jquery-ui.min.js"></script>
+	<script type="text/javascript" src="scripts/common.js"></script>
+	<link rel="icon" type="image/x-icon" href="favicon.ico" />
+</head>
+
+<body>
+
+<a name="HautDePage" />
+<div id="bandeauhaut">
+	<a id="lien_ministere" class="lienmenu" href="http://www.sante.gouv.fr" target="_blank" title="Site du ministère des affaires sociales et de la santé - nouvelle fenêtre"><img id="logoministere" src="img/Logo_Ministere.jpg"  alt="Logo du ministère des affaires sociales et de la santé"/></a>
+	<h1 class="texteTitreSite">
+		Base <span class="texteBleu">de</span> données <span class="texteBleu">publique</span><br/><span class="texteBleu">des</span> médicaments
+	</h1>
+		<a id="lien_medicament_gouv" class="lienEspaceMedic" target="_blank" href="http://medicaments.gouv.fr" title="Visiter [medicaments.gouv.fr] - nouvelle fenêtre">Visiter [medicaments.gouv.fr] <img src="/img/icone_lien.png" alt="Visiter [medicaments.gouv.fr]"  title="Visiter [medicaments.gouv.fr] - nouvelle fenetre" /></a>
+</div>
+<!--div align="center">
+	<a id="banniere" target="_blank" href="http://social-sante.gouv.fr/soins-et-maladies/medicaments/medicaments-generiques/" title="Visiter [medicaments.gouv.fr] - M?dicaments g?n?riques">
+		<img width="1000"   src ="/img/carrouselbannieres.gif" alt="Visiter [medicaments.gouv.fr] - M?dicaments g?n?riques" title="Visiter [medicaments.gouv.fr] - M?dicaments g?n?riques" />
+	</a>
+</div-->
+
+<div id="menuhaut">
+	<span id="menuhaut_gauche">
+		<a id="lien_accueil" class="navigation" href="index.php">Accueil</a>&nbsp;|&nbsp;
+		<a id="lien_glossaire" class="navigation" href="glossaire.php">Glossaire</a>&nbsp;|&nbsp;
+		<a id="lien_aide" class="navigation" href="aide.php">Aide</a>		
+	</span>
+	
+		
+	<span id="menuhaut_dernmaj">
+        <br>Dernière <span title=" 2.4.4
+">mise à jour</span> le 03/03/2025	</span>
+</div>
+
+	<script language="javascript" type="text/javascript">
+		//<![CDATA[ 
+		function Aff(men) {
+			document.write("<ul class=\"menuDoc\">");
+			for(var no_rub=0;no_rub<men.num_rub;no_rub++) {
+				document.write("<li><a class='leftMenu' href='"+menu[no_rub].page+"'>");
+				document.write(men[no_rub].txt);
+				document.write("</a></li>");
+				if (men[no_rub].nb_lien != 0){
+					document.write("<ul class=\"sousMenuDoc\">");
+				}
+				for(var no_lien=0;no_lien<men[no_rub].nb_lien;no_lien++) {
+					document.write("<li><a class='leftMenu' href='"+men[no_rub][no_lien].page+"'>");
+					document.write(men[no_rub][no_lien].txt);
+					document.write("</a></li>");
+				}
+				if (men[no_rub].nb_lien != 0){
+					document.write("</ul>");
+				}
+			}
+			document.write("</ul>");
+		}
+		
+		function CreerMenu(police,imgRub,imgOption,imgOptionFin,hauteur) {
+			this.num_rub=0;
+			this.police=police;
+			this.imgRub=imgRub;
+			this.imgOpt=imgOption;
+			this.imgOptFin=imgOptionFin;
+			this.hauteur=hauteur;
+			this.AddRub=AddRub;
+			this.AddLien=AddLien;
+		}
+		
+		function AddRub(txt,aff,page) {
+			var rub = new Object;
+				rub.txt=txt;
+				rub.aff=aff;
+				rub.page=page;
+				rub.nb_lien=0;
+			this[this.num_rub]=rub;
+			this.num_rub++;
+		}
+
+		function AddLien(txt,page) {
+			var no_rub = this.num_rub-1;
+			var no_lien= this[no_rub].nb_lien;
+			var lien = new Object;
+				lien.txt=txt;
+				lien.page=page;
+			this[no_rub][no_lien]=lien;
+			this[no_rub].nb_lien++;
+		}
+		var menu=new CreerMenu("arial","img/dyn04.gif","img/dyn22.gif","img/dyn55.gif",18);
+		//]]> 
+		menu.AddRub("Description médicament","O","#Ann3bQuestceque");
+			menu.AddRub("Informations","O","#Ann3bInfoNecessaires");
+			menu.AddRub("Utilisation","O","#Ann3bCommentPrendre");
+			menu.AddRub("Effets indésirables","O","#Ann3bEffetsIndesirables");
+			menu.AddRub("Conservation","O","#Ann3bConservation");
+			menu.AddRub("Info. supplémentaires","O","#Ann3bEmballage");
+				</script>
+
+	<div id="container">
+		<div id="leftnav">
+			<div id="cadreMenuGauche">
+				<h2 class="sommaireMenu">Sommaire</h2>
+				<div id="menuGauche">
+					<script language="JavaScript" type="text/javascript">Aff(menu);</script>
+				</div>
+			</div>
+		</div>
+		<div id="contentPrincipal">
+			<div id="boutonsliens">
+				<a id='lien_fiche_info' href='extrait.php?specid=65143010' ><img id="ongletficheinfo" alt="Onglet fiche information" src="img/onglet_fiche_info_vert.png" /></a><a id='lien_rcp' href='affichageDoc.php?specid=65143010&amp;typedoc=R'><img class="onglet" alt="Onglet résumé des caractéristiques du produit" src="img/onglet_rcp_vert.png" /></a><a id='lien_notice' href='affichageDoc.php?specid=65143010&amp;typedoc=N'><img class="onglet" alt="Onglet notice patient" src="img/onglet_notice_gris.png" /></a>			</div>
+			<div class="titredeno">
+				<table summary="" border="0" cellspacing="0">
+					<tr><td colspan="3" height="10px"></td></tr>
+					<tr>
+						<td width="15px">&nbsp;</td>
+						<td width="685px"><h1 class="textedeno">LEVOTHYROX 50 microgrammes, comprimé sécable  - Notice patient</h1></td>
+						<td width="43px" class="tdcenter"><a href="Javascript:void(null)" onclick="print();"><img src="img/imprimante.png" height="20px" width="20px" alt="Imprimer le document" title="Imprimer le document" border="0" /></a></td>
+					</tr>
+					<tr><td colspan="3" height="10px"></td></tr>
+				</table>
+			</div>
+			
+			<div id="contentDocument">
+				<div id="textDocument">
+					<p class="DateNotif">ANSM - Mis à jour le : 04/03/2024</p>
+<p class="AmmNoticeTitre1"><a name="Ann3bDenomination">Dénomination du médicament</a></p>
+<p class=AmmCorpsTexteGras align=center style='text-align:center'><a name="_Toc142278999">LEVOTHYROX 50 microgrammes comprimé sécable</a></p>
+<p class=AmmCorpsTexteGras align=center style='text-align:center'>Lévothyroxine sodique</p>
+<p class="AmmNoticeTitre1"><a name="Ann3bEncadre">Encadré</a></p>
+<p class=AmmCorpsTexteGras><a name="_Toc142279000">Veuillez lire attentivement l'intégralité de cette notice avant de prendre ce médicament car elle contient des informations importantes pour vous.</a></p>
+<p class=AmmListePuces1 style='margin-left:18.0pt;text-indent:-18.0pt'><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>Gardez cette notice, vous pourriez avoir besoin de la relire.</p>
+<p class=AmmListePuces1 style='margin-left:18.0pt;text-indent:-18.0pt'><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>Si vous avez d’autres questions, interrogez votre médecin ou votre pharmacien.</p>
+<p class=AmmListePuces1 style='margin-left:18.0pt;text-indent:-18.0pt'><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>Ce médicament vous a été personnellement prescrit. Ne le donnez pas à d’autres personnes. Il pourrait leur être nocif, même si les signes de leur maladie sont identiques aux vôtres.</p>
+<p class=AmmListePuces1 style='margin-left:18.0pt;text-indent:-18.0pt'><span lang=FR-BE style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>Si vous ressentez un quelconque effet indésirable, parlez-en à votre médecin ou à votre pharmacien. Ceci s’applique aussi à tout effet indésirable qui ne serait pas mentionné dans cette notice. Voir rubrique 4.</p>
+<p class="AmmNoticeTitre1"><a name="Ann3bSomm">Que contient cette notice ?</a></p>
+<p class=AmmCorpsTexte style='margin-top:0cm;margin-right:0cm;margin-bottom: 0cm;margin-left:14.2pt;margin-bottom:.0001pt;text-indent:-14.2pt'>1. Qu'est-ce que LEVOTHYROX 50 microgrammes comprimé sécable et dans quels cas est-il utilisé ?</p>
+<p class=AmmCorpsTexte style='margin-top:0cm;margin-right:0cm;margin-bottom: 0cm;margin-left:14.2pt;margin-bottom:.0001pt;text-indent:-14.2pt'>2. Quelles sont les informations à connaître avant de prendre LEVOTHYROX 50 microgrammes comprimé sécable ?</p>
+<p class=AmmCorpsTexte style='margin-top:0cm;margin-right:0cm;margin-bottom: 0cm;margin-left:14.2pt;margin-bottom:.0001pt;text-indent:-14.2pt'>3. Comment prendre LEVOTHYROX 50 microgrammes comprimé sécable ?</p>
+<p class=AmmCorpsTexte style='margin-top:0cm;margin-right:0cm;margin-bottom: 0cm;margin-left:14.2pt;margin-bottom:.0001pt;text-indent:-14.2pt'>4. Quels sont les effets indésirables éventuels ?</p>
+<p class=AmmCorpsTexte style='margin-top:0cm;margin-right:0cm;margin-bottom: 0cm;margin-left:14.2pt;margin-bottom:.0001pt;text-indent:-14.2pt'>5. Comment conserver LEVOTHYROX 50 microgrammes comprimé sécable?</p>
+<p class=AmmCorpsTexte style='margin-top:0cm;margin-right:0cm;margin-bottom: 0cm;margin-left:14.2pt;margin-bottom:.0001pt;text-indent:-14.2pt'><span style='color:black'>6. </span>Contenu de l’emballage et autres informations.</p>
+<h2><a name="Ann3bQuestceque">1. QU’EST-CE QUE LEVOTHYROX 50 microgrammes comprimé sécable ET DANS QUELS CAS EST-IL UTILISE ?</a>&nbsp;&nbsp;<a href='#HautDePage'><img src='img/BackToTop.jpg' width='15px' height='15px' alt='Retour en haut de la page' title='Retour en haut de la page' /></a></h2>
+<p class=AmmCorpsTexte><a name="_Toc142279004">Classe pharmacothérapeutique : ce médicament est une hormone thyroïdienne.</a></p>
+<p class=AmmCorpsTexte>Il est préconisé dans les situations suivantes :</p>
+<p class=AmmListePuces1 style='margin-left:18.0pt;text-align:justify; text-indent:-18.0pt'><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>les hypothyroïdies (insuffisance de sécrétion de la glande thyroïde),</p>
+<p class=AmmListePuces1 style='margin-left:18.0pt;text-align:justify; text-indent:-18.0pt'><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>circonstances associées ou non à une hypothyroïdie où il est nécessaire de freiner la sécrétion de TSH (hormone qui stimule la glande thyroïde).</p>
+<h2><a name="Ann3bInfoNecessaires">2. QUELLES SONT LES INFORMATIONS A CONNAITRE AVANT DE PRENDRE LEVOTHYROX 50 microgrammes comprimé sécable ?</a>&nbsp;&nbsp;<a href='#HautDePage'><img src='img/BackToTop.jpg' width='15px' height='15px' alt='Retour en haut de la page' title='Retour en haut de la page' /></a></h2>
+<p class=AmmCorpsTexteGras><a name="_Toc142279015">Ne prenez jamais LEVOTHYROX 50 microgrammes comprimé sécable dans les cas suivants :</a></p>
+<p class=AmmListePuces1 style='margin-left:18.0pt;text-align:justify; text-indent:-18.0pt'><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>si vous êtes allergique (hypersensible) à la substance active ou à l’un des autres composants contenus dans ce médicament mentionnés dans la rubrique 6,</p>
+<p class=AmmListePuces1 style='margin-left:18.0pt;text-align:justify; text-indent:-18.0pt'><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>si vous souffrez d’hyperthyroïdie (ensemble des troubles provoqués par une activité exagérée de la glande thyroïde), en dehors des hyperthyroïdies traitées par des médicaments antithyroïdiens de synthèse, de l’iode 131 ou une chirurgie et nécessitant un traitement substitutif par hormones thyroïdiennes (par exemple dans le cas du traitement au long cours de la maladie de Basedow par l’association antithyroïdien de synthèse + lévothyroxine).</p>
+<p class=AmmListePuces1 style='margin-left:18.0pt;text-align:justify; text-indent:-18.0pt'><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>En cas de syndrome coronarien aigu ou de myocardite aigüe (inflammation du muscle cardiaque).</p>
+<p class=AmmListePuces1 style='margin-left:18.0pt;text-align:justify; text-indent:-18.0pt'><a name="_Hlk26255634"><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>Si vos glandes surrénales ne fonctionnent pas correctement (insuffisance surrénalienne) et que vous n’avez pas de traitement de substitution adéquat pour cela.</a></p>
+<p class=AmmListePuces1 style='margin-top:6.0pt;text-align:justify'>Ce médicament ne doit généralement pas être utilisé, sauf avis contraire de votre médecin, dans certaines maladies cardiaques lorsqu’elles ne sont pas stabilisées : coronaropathies (maladies des vaisseaux irriguant le cœur), troubles du rythme cardiaque.</p>
+<p class=AmmCorpsTexte style='margin-top:6.0pt'><a name="_Hlk26255654">Pendant la grossesse, LEVOTHYROX 50 microgrammes comprimé sécable ne doit pas être pris en même temps que des médicaments pour traiter une hyperthyroïdie (médicaments antithyroïdiens).</a></p>
+<p class=AmmCorpsTexteGras>Avertissements et précautions</p>
+<p class=AmmCorpsTexte>En règle générale, le traitement doit faire l’objet d’une surveillance clinique et biologique par votre médecin.</p>
+<p class=AmmCorpsTexte>Signalez lui toute maladie ancienne ou survenant en cours de traitement, notamment :</p>
+<p class=AmmListePuces1 style='margin-left:18.0pt;text-align:justify; text-indent:-18.0pt'><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>en cas de maladie cardio-vasculaire, en particulier coronarienne (infarctus du myocarde, angine de poitrine, troubles du rythme cardiaque), ou d’hypertension,</p>
+<p class=AmmListePuces1 style='margin-left:18.0pt;text-align:justify; text-indent:-18.0pt'><a name="_Hlk26255674"><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>si vos glandes surrénales ne fonctionnent pas correctement (insuffisance surrénalienne)</a>.</p>
+<p class=AmmCorpsTexte style='margin-top:6.0pt'>Dans toutes ces situations, la prescription du traitement par hormones thyroïdiennes se fera au cas par cas et la surveillance des sujets sera particulièrement attentive.</p>
+<p class=AmmCorpsTexte style='margin-top:6.0pt'>Si vous êtes enceinte ou envisagez de l’être, prévenez votre médecin le plus tôt possible, il mettra en place un suivi rapproché de votre grossesse afin d’adapter les doses si nécessaire (voir rubrique « Grossesse, allaitement et fertilité »).</p>
+<p class=AmmCorpsTexte style='margin-top:6.0pt'><a name="_Hlk26255690">La tension artérielle sera régulièrement surveillée lorsqu’un traitement par la lévothyroxine est débuté chez un nouveau-né prématuré ayant un très faible poids de naissance car une chute rapide de la tension artérielle (appelée « collapsus circulatoire ») pourrait se produire.</a></p>
+<p class=AmmCorpsTexte>Un déséquilibre thyroïdien peut survenir en cas de changement vers un autre médicament contenant de la lévothyroxine. Si vous avez des questions sur le changement de votre médicament, parlez-en à votre médecin. Une surveillance étroite (clinique et biologique) devra être mise en place pendant la période de transition. Si vous ressentez un quelconque effet indésirable, parlez-en à votre médecin car cela peut indiquer que la posologie de votre traitement doit être augmentée ou diminuée.</p>
+<p class=AmmCorpsTexte>Chez les femmes ménopausées présentant une hypothyroïdie associée à un risque accru d’ostéoporose (fragilisation des os), une surveillance étroite de la thyroïde est recommandée.</p>
+<p class=AmmCorpsTexte><a name="_Hlk26255703">Les hormones thyroïdiennes ne sont pas indiquées pour perdre du poids. La prise d’hormones thyroïdiennes ne vous fera pas maigrir si votre taux d’hormones thyroïdiennes est normal. Des effets indésirables graves voire potentiellement mortels peuvent survenir si vous augmentez la dose sans l’avis de votre médecin, en particulier en cas d’association avec d’autres médicaments pour maigrir (comme l’amfépramone, la cathine et la phénylpropanolamine).</a></p>
+<p class=AmmCorpsTexte>L’efficacité du traitement et les signes d’intolérance peuvent n’apparaitre qu’après un délai de 15 jours à un mois après le début du traitement. </p>
+<p class=AmmCorpsTexte>Adressez-vous à votre médecin ou pharmacien avant de prendre LEVOTHYROX 50 microgrammes comprimé sécable.</p>
+<p class=AmmCorpsTexte><a name="_Hlk122337894">Si vous vous apprêtez à réaliser des analyses de laboratoire pour contrôler vos taux d’hormones thyroïdiennes, vous devez informer votre médecin et/ou le personnel de laboratoire que vous prenez ou avez récemment pris de la biotine (également connue sous le nom de vitamine H, vitamine B7 ou vitamine B8). En effet, la biotine peut affecter les résultats de vos analyses de laboratoire. En fonction du type d’analyse, les résultats peuvent être faussement élevés ou faussement bas à cause de la biotine. Votre médecin peut vous demander d’arrêter de prendre de la biotine avant d’effectuer les analyses de laboratoire. Vous devez également savoir que d’autres produits que vous prenez, tels que des multivitamines ou des compléments pour les cheveux, la peau et les ongles, peuvent contenir de la biotine qui pourrait affecter les résultats des analyses de laboratoire. Veuillez informer votre médecin et/ou le personnel de laboratoire si vous prenez de tels produits, (veuillez consulter les informations figurant dans la rubrique Autres médicaments et LEVOTHYROX 50 microgrammes, comprimé sécable).</a></p>
+<p class=AmmCorpsTexteGras>Enfants et adolescents</p>
+<p class=AmmCorpsTexte>Sans objet.</p>
+<p class=AmmCorpsTexteGras>Autres médicaments et LEVOTHYROX 50 microgrammes, comprimé sécable</p>
+<p class=AmmCorpsTexte>Informez votre médecin, votre dentiste ou votre pharmacien si vous prenez, avez récemment pris ou pourriez prendre tout autre médicament. Certains médicaments peuvent modifier l’efficacité de LEVOTHYROX 50 microgrammes, comprimé sécable.</p>
+<p class=AmmCorpsTexte>II est recommandé de prendre à distance de LEVOTHYROX 50 microgrammes, comprimé sécable (plus de 2 heures si possible) les médicaments suivants :</p>
+<p class=AmmListePuces1 style='margin-left:18.0pt;text-indent:-18.0pt'><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>médicaments administrés par voie orale pouvant contenir des sels de fer ou de calcium,</p>
+<p class=AmmListePuces1 style='margin-left:18.0pt;text-indent:-18.0pt'><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>médicaments traitant les troubles gastro-intestinaux (résines échangeuses d'ions, Ie sucralfate, les topiques gastro-intestinaux, les antiacides et les adsorbants).</p>
+<p class=AmmListePuces1 style='margin-left:18.0pt;text-indent:-18.0pt'><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>le sevelamer, médicament utilisé afin de prévenir I'hyperphosphorémie chez I’hémodialysé.</p>
+<p class=AmmCorpsTexte style='margin-top:6.0pt'>Une surveillance clinique et biologique et une adaptation si besoin de la posologie de votre traitement, peuvent être nécessaires pendant le traitement par certains médicaments :</p>
+<p class=AmmListePuces1 style='margin-left:18.0pt;text-align:justify; text-indent:-18.0pt'><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>médicaments anticonvulsivants traitant l'épilepsie</p>
+<p class=AmmListePuces1 style='margin-left:18.0pt;text-align:justify; text-indent:-18.0pt'><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>médicaments traitant la tuberculose</p>
+<p class=AmmListePuces1 style='margin-left:18.0pt;text-align:justify; text-indent:-18.0pt'><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>médicaments traitant le paludisme (chloroquine/proguanil)</p>
+<p class=AmmListePuces1 style='margin-left:18.0pt;text-align:justify; text-indent:-18.0pt'><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>médicaments contenant des œstrogènes, utilisés dans un but non-contraceptif</p>
+<p class=AmmListePuces1 style='margin-left:18.0pt;text-align:justify; text-indent:-18.0pt'><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>médicaments traitant une infection par le virus du SIDA</p>
+<p class=AmmListePuces1 style='margin-left:18.0pt;text-align:justify; text-indent:-18.0pt'><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>D'autres substances telles qu’imatinib, sunitinib et orlistat</p>
+<p class=AmmListePuces1 style='margin-left:18.0pt;text-align:justify; text-indent:-18.0pt'><a name="_Hlk92196211"><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>Les inhibiteurs de la pompe à protons (tels que l’oméprazole, l’ésoméprazole, le pantoprazole, le rabéprazole et le lanzoprazole) sont utilisés pour réduire la quantité d’acide produite par l’estomac, ce qui peut réduire l’absorption de la lévothyroxine dans l’intestin et ainsi rendre la substance active moins efficace. Si vous prenez de la lévothyroxine pendant que vous suivez un traitement par inhibiteurs de la pompe à protons, votre médecin devra surveiller votre fonction thyroïdienne et pourrait avoir à ajuster la dose de LEVOTHYROX.</a></p>
+<p class=AmmListePuces1 style='margin-left:18.0pt;text-align:justify; text-indent:-18.0pt'><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>produits contenant du millepertuis (médicament à base de plantes).</p>
+<p class=AmmListePuces1 style='margin-top:6.0pt;text-align:justify'><a name="_Hlk122337959">Si vous prenez ou avez récemment pris de la biotine, vous devez informer votre médecin et/ou le personnel de laboratoire lorsque vous vous apprêtez à réaliser des analyses de laboratoire pour contrôler vos taux d’hormones thyroïdiennes. La biotine peut affecter les résultats de vos analyses (voir la rubrique «Avertissements et précautions»).</a></p>
+<p class=AmmCorpsTexte style='margin-top:6.0pt'>Informez votre médecin ou pharmacien si vous prenez, avez récemment pris ou pourriez prendre tout autre médicament.</p>
+<p class=AmmCorpsTexteGras>LEVOTHYROX 50 microgrammes comprimé sécable avec des aliments et boissons</p>
+<p class=AmmCorpsTexte>Le soja peut diminuer l’efficacité de ce médicament. Votre médecin pourra donc être amené à modifier la posologie de votre traitement au début ou à<span style='font-size:15.5pt'> </span>la fin d'une supplémentation en soja.</p>
+<p class=AmmCorpsTexteGras><a name="_Toc142279012">Grossesse, allaitement et fertilité</a></p>
+<p class=AmmCorpsTexte style='margin-top:6.0pt'>Si vous êtes enceinte ou que vous allaitez, si vous pensez être enceinte ou planifiez une grossesse, demandez conseil à votre médecin ou pharmacien avant de prendre ce médicament.</p>
+<p class=AmmCorpsTexteGras>Grossesse</p>
+<p class=AmmCorpsTexte style='margin-top:6.0pt'>Pour le bon déroulement de votre grossesse, il est nécessaire que vous soyez bien équilibrée tout au long de la grossesse. Ainsi, le traitement à base de lévothyroxine doit être poursuivi pendant toute votre grossesse et votre médecin pourra être amené à modifier les doses de votre médicament, au début ou au cours de votre grossesse. Pour cela, une surveillance médicale adaptée sera mise en place le plus tôt possible et tout particulièrement pendant la première moitié de votre grossesse. </p>
+<p class=AmmCorpsTexte style='margin-top:6.0pt'>Après l’accouchement, un bilan thyroïdien pour votre bébé et pour vous est recommandé. Votre médecin continuera à vous suivre afin d’adapter, si nécessaire, la dose de votre traitement.</p>
+<p class=AmmCorpsTexte style='margin-top:6.0pt'>L'association de LEVOTHYROX à des antithyroïdiens dans le traitement de l'hyperthyroïdie n'est pas indiquée au cours de la grossesse. En effet, LEVOTHYROX passe très peu la barrière placentaire, alors que les antithyroïdiens passent facilement celle-ci. II en résulterait un risque d'hypothyroïdie chez l’enfant à naître.</p>
+<p class=AmmCorpsTexteGras>Allaitement</p>
+<p class=AmmCorpsTexte style='margin-top:6.0pt'>Le traitement par substitution en lévothyroxine est possible pendant l’allaitement.</p>
+<p class=AmmCorpsTexteGras>Fertilité</p>
+<p class=AmmCorpsTexte style='margin-top:6.0pt'>Aucune étude n’a été menée sur la fertilité avec ce médicament. L'hypothyroïdie ou l'hyperthyroïdie sont susceptibles d'altérer la fertilité.</p>
+<p class=AmmCorpsTexteGras>Conduite de véhicules et utilisation de machines</p>
+<p class=AmmCorpsTexte>Sans objet.</p>
+<p class=AmmCorpsTexteGras>LEVOTHYROX 50 microgrammes comprimé sécable contient<a name="_Hlk26255718">moins de 1 mmol (23 mg) de sodium par comprimé, c’est-à-dire qu’il est essentiellement « sans sodium</a> ».</p>
+<h2><a name="Ann3bCommentPrendre">3. COMMENT PRENDRE LEVOTHYROX 50 microgrammes comprimé sécable ?</a>&nbsp;&nbsp;<a href='#HautDePage'><img src='img/BackToTop.jpg' width='15px' height='15px' alt='Retour en haut de la page' title='Retour en haut de la page' /></a></h2>
+<p class=AmmCorpsTexteGras><a name="_Toc142279021">Posologie</a></p>
+<p class=AmmCorpsTexte>Veillez à toujours prendre ce médicament en suivant exactement les indications de votre médecin ou pharmacien. Vérifiez auprès de votre médecin ou pharmacien en cas de doute.&gt;</p>
+<p class=AmmCorpsTexte>La dose recommandée varie suivant Ie degré de la maladie, l’âge et la tolérance de chaque individu au traitement.</p>
+<p class=AmmCorpsTexte>Les comprimés sont sécables : ils peuvent être divisés en deux doses égales si besoin pour adapter la dose à la prescription.</p>
+<p class=AmmCorpsTexteGras>Utilisation chez les enfants</p>
+<p class=AmmCorpsTexte>Les comprimés sont sécables : ils peuvent être divisés en deux doses égales si besoin pour adapter la dose à la prescription.</p>
+<p class=AmmCorpsTexte>Ce médicament doit être donné uniquement aux enfants pouvant avaler des comprimés.</p>
+<p class=AmmCorpsTexteGras>Mode et fréquence d’administration</p>
+<p class=AmmCorpsTexte>Ce médicament est à prendre, de préférence, le matin à jeun une demi-heure avant le petit-déjeuner, de préférence avec un peu de liquide (par exemple, un demi-verre d'eau).</p>
+<p class=AmmCorpsTexteGras>Durée du traitement</p>
+<p class=AmmCorpsTexte>L’hypothyroïdie étant dans la majorité des cas, une maladie définitive, le traitement doit être poursuivi indéfiniment.</p>
+<p class=AmmCorpsTexte>Dans tous les cas, conformez-vous strictement à l’ordonnance de votre médecin.</p>
+<p class=AmmCorpsTexteGras>Si  vous  avez pris plus de LEVOTHYROX 50 microgrammes comprimé sécable que vous n’auriez dû :</p>
+<p class=AmmCorpsTexte>En cas de surdosage ou d'intoxication accidentelle y compris chez l'enfant, iI est impératif de prévenir rapidement votre médecin qui pourra envisager un arrêt ou une suspension de traitement ou toute autre mesure qu'il jugera nécessaire. Les signes ou symptômes liés au surdosage, en particulier une augmentation du rythme cardiaque ou tout autre signe d'hyperthyroïdie (voir section 4), peuvent survenir en quelques heures ou être retardés de quelques jours.</p>
+<p class=AmmCorpsTexteGras>Si vous oubliez de prendre LEVOTHYROX 50 microgrammes comprimé sécable :</p>
+<p class=AmmCorpsTexte><a name="_Toc142279020">Si plusieurs doses ont été omises, contactez votre médecin.</a></p>
+<p class=AmmCorpsTexteGras>Si vous arrêtez de prendre LEVOTHYROX 50 microgrammes comprimé sécable :</p>
+<p class=AmmCorpsTexte>Sans objet.</p>
+<p class=AmmCorpsTexte>Si vous avez d’autres questions sur l’utilisation de ce médicament, demandez plus d’informations à votre médecin ou à votre pharmacien.</p>
+<h2><a name="Ann3bEffetsIndesirables">4. QUELS SONT LES EFFETS INDESIRABLES EVENTUELS ?</a>&nbsp;&nbsp;<a href='#HautDePage'><img src='img/BackToTop.jpg' width='15px' height='15px' alt='Retour en haut de la page' title='Retour en haut de la page' /></a></h2>
+<p class=AmmCorpsTexte><a name="_Toc142279023">Comme tous les médicaments, ce médicament peut provoquer des effets indésirables, mais ils ne surviennent pas systématiquement chez tout le monde.</a></p>
+<p class=AmmListePuces1 style='margin-left:18.0pt;text-align:justify; text-indent:-18.0pt'><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>aggravation d’une maladie cardiaque (angine de poitrine, insuffisance cardiaque, troubles du rythme cardiaque),</p>
+<p class=AmmListePuces1 style='margin-left:18.0pt;text-align:justify; text-indent:-18.0pt'><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>signes d’hyperthyroïdie (palpitations, insomnie, excitabilité, tremblements, élévation de la température, sueurs, amaigrissement rapide, diarrhée) : dans ce cas, consultez votre médecin,</p>
+<p class=AmmListePuces1 style='margin-left:18.0pt;text-align:justify; text-indent:-18.0pt'><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>chez l’enfant, possibilité d’hypercalciurie (taux de calcium trop élevé dans les urines),</p>
+<p class=AmmListePuces1 style='margin-top:0cm;margin-right:0cm;margin-bottom: 6.0pt;margin-left:21.3pt;text-align:justify;text-indent:-21.3pt'><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>           </span></span>possibles réactions allergiques (hypersensibilité). Les signes et symptômes les plus courants sont : éruption cutanée, urticaire, démangeaisons, gonflement du cou et du visage, gêne respiratoire et rougeurs.</p>
+<p class=AmmAnnexeTitre3>Déclaration des effets secondaires</p>
+<p class=AmmCorpsTexte>Si vous ressentez un quelconque effet indésirable, parlez-en à votre médecin ou votre pharmacien. Ceci s’applique aussi à tout effet indésirable qui ne serait pas mentionné dans cette notice. Vous pouvez également déclarer les effets indésirables directement via le système national de déclaration : Agence nationale de sécurité du médicament et des produits de santé (ANSM) et réseau des Centres Régionaux de Pharmacovigilance - <span style='color:#353838'>Site internet : </span><span class=MsoHyperlink>https://signalement.social-sante.gouv.fr/</span></p>
+<p class=AmmCorpsTexte>En signalant les effets indésirables, vous contribuez à fournir davantage d’informations sur la sécurité du médicament.</p>
+<h2><a name="Ann3bConservation">5. COMMENT CONSERVER LEVOTHYROX 50 microgrammes comprimé sécable ?</a>&nbsp;&nbsp;<a href='#HautDePage'><img src='img/BackToTop.jpg' width='15px' height='15px' alt='Retour en haut de la page' title='Retour en haut de la page' /></a></h2>
+<p class=AmmCorpsTexte><a name="_Toc142279026"></a><a name="_Toc142279024">Tenir ce médicament hors de la vue et de la portée des enfants.</a></p>
+<p class=AmmCorpsTexte><span lang=FR-BE>N’utilisez pas ce médicament après la date de péremption indiquée sur la boîte après EXP. La date de péremption fait référence au dernier jour de ce mois.</span></p>
+<p class=AmmCorpsTexteGras>Comprimés en plaquette Aluminium / Aluminium :</p>
+<p class=AmmCorpsTexte>A conserver à une température ne dépassant pas 30°C, dans I'emballage d'origine.</p>
+<p class=AmmCorpsTexteGras>Comprimés en plaquette Aluminium/ PVC :</p>
+<p class=AmmCorpsTexte>A conserver à une température ne dépassant pas 25°C, dans I'emballage d'origine.</p>
+<p class=AmmCorpsTexte>Ne jetez aucun médicament au tout-à-l’égout ou avec les ordures ménagères. Demandez à votre pharmacien d’éliminer les médicaments que vous n’utilisez plus. Ces mesures contribueront à protéger l’environnement.</p>
+<h2><a name="Ann3bEmballage">6. CONTENU DE L’EMBALLAGE ET AUTRES INFORMATIONS</a>&nbsp;&nbsp;<a href='#HautDePage'><img src='img/BackToTop.jpg' width='15px' height='15px' alt='Retour en haut de la page' title='Retour en haut de la page' /></a></h2>
+<p class="AmmAnnexeTitre2"><a name="Ann3bContenu">Ce que contient LEVOTHYROX 50 microgrammes comprimé sécable</a>&nbsp;&nbsp;<a href='#HautDePage'><img src='img/BackToTop.jpg' width='15px' height='15px' alt='Retour en haut de la page' title='Retour en haut de la page' /></a></p>
+<p class=AmmListePuces1 style='margin-left:18.0pt;text-indent:-18.0pt; page-break-after:avoid'><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>La substance active est :</p>
+<p class=AmmComposition style='margin-top:6.0pt;margin-right:0cm;margin-bottom: 6.0pt;margin-left:17.85pt;page-break-after:avoid'>Lévothyroxine sodique.................................................................................... 50 microgrammes</p>
+<p class=AmmCorpsTexte align=center style='text-align:center;text-indent:17.85pt; page-break-after:avoid'>Pour un comprimé</p>
+<p class=AmmListePuces1 style='margin-left:18.0pt;text-indent:-18.0pt; page-break-after:avoid'><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>Les autres composants sont : </p>
+<p class=AmmComposition style='margin-top:6.0pt;margin-right:0cm;margin-bottom: 6.0pt;margin-left:17.85pt;page-break-after:avoid'>Mannitol, amidon de maïs, gélatine, croscarmellose sodique, stéarate de magnésium, acide citrique anhydre.</p>
+<p class="AmmAnnexeTitre2"><a name="RcpEmballage">Qu’est-ce que LEVOTHYROX 50 microgrammes comprimé sécable et contenu de l’emballage extérieur ?</a>&nbsp;&nbsp;<a href='#HautDePage'><img src='img/BackToTop.jpg' width='15px' height='15px' alt='Retour en haut de la page' title='Retour en haut de la page' /></a></p>
+<p class=AmmCorpsTexte>Ce médicament se présente sous la forme d'un comprimé sécable blanc.</p>
+<p class=AmmCorpsTexte>Chaque boite contient 25, 28, 30, 50, 90 ou 100 comprimés.</p>
+<p class=AmmCorpsTexte>Toutes les présentations peuvent ne pas être commercialisées.</p>
+<p class="AmmAnnexeTitre2"><a name="Ann3bTituAMM">Titulaire de l’autorisation de mise sur le marché</a>&nbsp;&nbsp;<a href='#HautDePage'><img src='img/BackToTop.jpg' width='15px' height='15px' alt='Retour en haut de la page' title='Retour en haut de la page' /></a></p>
+<p class=AmmCorpsTexteGras style='margin-bottom:0cm;margin-bottom:.0001pt'><a name="_Toc142279031">MERCK SANTE</a></p>
+<p class=AmmCorpsTexte style='margin-bottom:0cm;margin-bottom:.0001pt'>37 RUE SAINT ROMAIN</p>
+<p class=AmmCorpsTexte style='margin-bottom:0cm;margin-bottom:.0001pt'>69379 LYON CEDEX 08</p>
+<p class=AmmCorpsTexte style='margin-bottom:0cm;margin-bottom:.0001pt'>FRANCE</p>
+<p class="AmmAnnexeTitre2"><a name="Ann3bExploitAMM">Exploitant de l’autorisation de mise sur le marché</a>&nbsp;&nbsp;<a href='#HautDePage'><img src='img/BackToTop.jpg' width='15px' height='15px' alt='Retour en haut de la page' title='Retour en haut de la page' /></a></p>
+<p class=AmmCorpsTexteGras style='margin-bottom:0cm;margin-bottom:.0001pt; page-break-after:avoid'>MERCK SERONO</p>
+<p class=AmmCorpsTexte style='margin-bottom:0cm;margin-bottom:.0001pt; page-break-after:avoid'>37 RUE SAINT ROMAIN</p>
+<p class=AmmCorpsTexte style='margin-bottom:0cm;margin-bottom:.0001pt; page-break-after:avoid'>69379 LYON CEDEX 08</p>
+<p class=AmmCorpsTexte><span lang=EN-US>FRANCE</span></p>
+<p class="AmmAnnexeTitre2"><a name="Ann3bFab">Fabricant</a>&nbsp;&nbsp;<a href='#HautDePage'><img src='img/BackToTop.jpg' width='15px' height='15px' alt='Retour en haut de la page' title='Retour en haut de la page' /></a></p>
+<p class=AmmCorpsTexteGras style='margin-bottom:0cm;margin-bottom:.0001pt; page-break-after:avoid'><a name="_Toc142279033"><span lang=EN-US>MERCK HEALTHCARE KGaA</span></a></p>
+<p class=AmmCorpsTexte style='margin-bottom:0cm;margin-bottom:.0001pt'><span lang=EN-US>FRANKFURTER STRASSE 250</span></p>
+<p class=AmmCorpsTexte style='margin-bottom:0cm;margin-bottom:.0001pt'><span lang=EN-US>64293 DARMSTADT</span></p>
+<p class=AmmCorpsTexte style='margin-bottom:0cm;margin-bottom:.0001pt'><span lang=EN-US>ALLEMAGNE</span></p>
+<p class=AmmCorpsTexte style='margin-top:6.0pt'><span lang=EN-US>ou</span></p>
+<p class=AmmCorpsTexteGras style='margin-bottom:0cm;margin-bottom:.0001pt'><span lang=EN-US>FAMAR HEALTH CARE SERVICES MADRID, S.A.U.</span></p>
+<p class=AmmCorpsTexte style='margin-bottom:0cm;margin-bottom:.0001pt'>AVDA, LEGANES, 62</p>
+<p class=AmmCorpsTexte style='margin-bottom:0cm;margin-bottom:.0001pt'>ALCORCON, 28923 MADRID</p>
+<p class=AmmCorpsTexte style='margin-bottom:0cm;margin-bottom:.0001pt'><span style='text-transform:uppercase'>Espagne</span></p>
+<p class=AmmCorpsTexte style='margin-bottom:0cm;margin-bottom:.0001pt'> </p>
+<p class="AmmAnnexeTitre2"><a name="Ann3bNomsMediEEE">Noms du médicament dans les Etats membres de l'Espace Economique Européen</a>&nbsp;&nbsp;<a href='#HautDePage'><img src='img/BackToTop.jpg' width='15px' height='15px' alt='Retour en haut de la page' title='Retour en haut de la page' /></a></p>
+<p class=AmmCorpsTexte>Sans objet.</p>
+<p class="AmmAnnexeTitre2"><a name="Ann3bContenu">La dernière date à laquelle cette notice a été révisée est :</a>&nbsp;&nbsp;<a href='#HautDePage'><img src='img/BackToTop.jpg' width='15px' height='15px' alt='Retour en haut de la page' title='Retour en haut de la page' /></a></p>
+<p class=AmmCorpsTexte>[à compléter ultérieurement par le titulaire]</p>
+<p class="AmmAnnexeTitre2"><a name="Ann3bAutres">Autres</a>&nbsp;&nbsp;<a href='#HautDePage'><img src='img/BackToTop.jpg' width='15px' height='15px' alt='Retour en haut de la page' title='Retour en haut de la page' /></a></p>
+<p class=AmmCorpsTexte>Des informations détaillées sur ce médicament sont disponibles sur le site Internet de l’ANSM (France).</p>
+</div>					
+					<p class="alignright"><a href="#HautDePage">Retour en haut de la page <img src="img/BackToTop.jpg" width="20px" height="20px" alt="Retour en haut de la page" title="Retour en haut de la page" /></a></p>
+				</div>
+			</div>
+		</div>
+	</div>
+
+<table summary="" class="content" width="1000">
+	<tr>
+		<td height="100px">&nbsp;</td>
+	</tr>
+</table>
+<table summary="Pied de page" class="footer" width="1000">
+	<tr>
+		<td>
+			<table summary="" class="tablealigncenter" border="0">
+				<tr>
+					<td width="100px" class="aligncenter"><a id="lien_ansm" href="http://ansm.sante.fr/" target="_blank"><img src="img/Logo_ANSM.png" width="150" height="60" alt="ANSM - Agence nationale de sécurité du médicament et des produits de santé" title="L'ANSM met à disposition les principales informations issues de l'Autorisation de mise sur le marché, l'appartenance à un groupe générique, les liens vers les informations de sécurité qu'elle publie, l'identification des médicaments sous surveillance renforcée - nouvelle fenêtre" /></a></td>
+					          <td>&nbsp;</td>
+					<td width="100px" class="aligncenter"><img src="img/Logo_HAS.png" width="150" height="60" alt="HAS - Haute autorité de santé" title="La HAS met à disposition les informations relatives au service médical rendu, à l'amélioration du service médical rendu ainsi que les liens vers les avis de la Commission de la Transparence correspondants - nouvelle fenêtre" /></td>
+					<td>&nbsp;</td>
+					<td width="100px" class="aligncenter"><img src="img/Logo_CNAM.png" width="150" height="60" alt="UNCAM - Unin nationale des caisses d'assurance maladie" title="L'UNCAM met à disposition le taux de remboursement, le prix et les indications remboursables le cas échéant, ainsi que l'agrément aux collectivités - nouvelle fenêtre" /></td>
+          				</tr>
+			</table> 
+		</td>
+	</tr>
+</table>
+<table summary="" class="finpage" width="1000">
+	<tr>
+		<td height="100px" class="aligncenter">
+			<a class="navigation" href="plan.php">Plan du site</a>&nbsp;|&nbsp;
+			<a class="navigation" href="accessibilite.php">Accessibilité</a>&nbsp;|&nbsp;
+			<a class="navigation" href="contact.php">Contact</a>&nbsp;|&nbsp;
+			<a class="navigation" href="telechargement.php">Téléchargement</a>&nbsp;|&nbsp;
+			<a class="navigation" href="DeclarationConfidentialite.php">Declaration de confidentialité</a>&nbsp;|&nbsp;
+			<a class="navigation" href="http://www.service-public.fr/" title="Service Public - Nouvelle fenêtre" target="_blank">Service-Public.fr</a>&nbsp;|&nbsp;
+			<a class="navigation" href="http://www.legifrance.gouv.fr/" title="Legifrance - Nouvelle fenêtre" target="_blank">Legifrance</a>&nbsp;|&nbsp;
+			<a class="navigation" href="http://www.gouvernement.fr/" title="Gouvernement - Nouvelle fenêtre" target="_blank" >Gouvernement.fr</a>
+		</td>
+	</tr>
+</table>
+
+
+
+<!-- Matomo -->
+<script type="text/javascript">
+  var _paq = window._paq = window._paq || [];
+  /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
+  _paq.push(['trackPageView']);
+  _paq.push(['enableLinkTracking']);
+  (function() {
+    var u="https://stats.integra.fr/";
+    _paq.push(['setTrackerUrl', u+'matomo.php']);
+    _paq.push(['setSiteId', '79']);
+    var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+    g.type='text/javascript'; g.async=true; g.src=u+'matomo.js'; s.parentNode.insertBefore(g,s);
+  })();
+</script>
+<!-- End Matomo Code -->
+
+
+
+</body>
+</html>

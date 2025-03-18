@@ -1,0 +1,427 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="fr" lang="fr">
+<head>
+	<title>Notice patient - METHADONE AP-HP 5 mg, gélule  - Base de données publique des médicaments</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=windows-1252"/>
+	<meta name="robots" content="index, follow"/>
+	<meta name="Description" content="Base de données publique des médicaments"/>
+	<meta name="Keywords" content="base, données, publique, médicaments, Notice patient, METHADONE AP-HP 5 mg, gélule "/>
+	<meta name="Subject" content="medicament"/>
+	<link href='https://fonts.googleapis.com/css?family=Noticia+Text' rel='stylesheet' type='text/css' />
+	<link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro' rel='stylesheet' type='text/css' />
+	<link href="style/style_bdm.css?v=2.2.3" type="text/css" rel="stylesheet"/>
+	<link href="style/style_RCP_Notice.css" type="text/css" rel="stylesheet"/>
+  <link rel="alternate" href="http://m.base-donnees-publique.medicaments.gouv.fr/#!info-68726979">
+    <script type="text/javascript" src="scripts/autocomplete.js?v=2.2.3"></script>
+	<script type="text/javascript" src="scripts/jquery.js"></script>
+    <script type="text/javascript" src="scripts/jquery-ui.min.js"></script>
+	<script type="text/javascript" src="scripts/common.js"></script>
+	<link rel="icon" type="image/x-icon" href="favicon.ico" />
+</head>
+
+<body>
+
+<a name="HautDePage" />
+<div id="bandeauhaut">
+	<a id="lien_ministere" class="lienmenu" href="http://www.sante.gouv.fr" target="_blank" title="Site du ministère des affaires sociales et de la santé - nouvelle fenêtre"><img id="logoministere" src="img/Logo_Ministere.jpg"  alt="Logo du ministère des affaires sociales et de la santé"/></a>
+	<h1 class="texteTitreSite">
+		Base <span class="texteBleu">de</span> données <span class="texteBleu">publique</span><br/><span class="texteBleu">des</span> médicaments
+	</h1>
+		<a id="lien_medicament_gouv" class="lienEspaceMedic" target="_blank" href="http://medicaments.gouv.fr" title="Visiter [medicaments.gouv.fr] - nouvelle fenêtre">Visiter [medicaments.gouv.fr] <img src="/img/icone_lien.png" alt="Visiter [medicaments.gouv.fr]"  title="Visiter [medicaments.gouv.fr] - nouvelle fenetre" /></a>
+</div>
+<!--div align="center">
+	<a id="banniere" target="_blank" href="http://social-sante.gouv.fr/soins-et-maladies/medicaments/medicaments-generiques/" title="Visiter [medicaments.gouv.fr] - M?dicaments g?n?riques">
+		<img width="1000"   src ="/img/carrouselbannieres.gif" alt="Visiter [medicaments.gouv.fr] - M?dicaments g?n?riques" title="Visiter [medicaments.gouv.fr] - M?dicaments g?n?riques" />
+	</a>
+</div-->
+
+<div id="menuhaut">
+	<span id="menuhaut_gauche">
+		<a id="lien_accueil" class="navigation" href="index.php">Accueil</a>&nbsp;|&nbsp;
+		<a id="lien_glossaire" class="navigation" href="glossaire.php">Glossaire</a>&nbsp;|&nbsp;
+		<a id="lien_aide" class="navigation" href="aide.php">Aide</a>		
+	</span>
+	
+		
+	<span id="menuhaut_dernmaj">
+        <br>Dernière <span title=" 2.4.4
+">mise à jour</span> le 03/03/2025	</span>
+</div>
+
+	<script language="javascript" type="text/javascript">
+		//<![CDATA[ 
+		function Aff(men) {
+			document.write("<ul class=\"menuDoc\">");
+			for(var no_rub=0;no_rub<men.num_rub;no_rub++) {
+				document.write("<li><a class='leftMenu' href='"+menu[no_rub].page+"'>");
+				document.write(men[no_rub].txt);
+				document.write("</a></li>");
+				if (men[no_rub].nb_lien != 0){
+					document.write("<ul class=\"sousMenuDoc\">");
+				}
+				for(var no_lien=0;no_lien<men[no_rub].nb_lien;no_lien++) {
+					document.write("<li><a class='leftMenu' href='"+men[no_rub][no_lien].page+"'>");
+					document.write(men[no_rub][no_lien].txt);
+					document.write("</a></li>");
+				}
+				if (men[no_rub].nb_lien != 0){
+					document.write("</ul>");
+				}
+			}
+			document.write("</ul>");
+		}
+		
+		function CreerMenu(police,imgRub,imgOption,imgOptionFin,hauteur) {
+			this.num_rub=0;
+			this.police=police;
+			this.imgRub=imgRub;
+			this.imgOpt=imgOption;
+			this.imgOptFin=imgOptionFin;
+			this.hauteur=hauteur;
+			this.AddRub=AddRub;
+			this.AddLien=AddLien;
+		}
+		
+		function AddRub(txt,aff,page) {
+			var rub = new Object;
+				rub.txt=txt;
+				rub.aff=aff;
+				rub.page=page;
+				rub.nb_lien=0;
+			this[this.num_rub]=rub;
+			this.num_rub++;
+		}
+
+		function AddLien(txt,page) {
+			var no_rub = this.num_rub-1;
+			var no_lien= this[no_rub].nb_lien;
+			var lien = new Object;
+				lien.txt=txt;
+				lien.page=page;
+			this[no_rub][no_lien]=lien;
+			this[no_rub].nb_lien++;
+		}
+		var menu=new CreerMenu("arial","img/dyn04.gif","img/dyn22.gif","img/dyn55.gif",18);
+		//]]> 
+		menu.AddRub("Description médicament","O","#Ann3bQuestceque");
+			menu.AddRub("Informations","O","#Ann3bInfoNecessaires");
+			menu.AddRub("Utilisation","O","#Ann3bCommentPrendre");
+			menu.AddRub("Effets indésirables","O","#Ann3bEffetsIndesirables");
+			menu.AddRub("Conservation","O","#Ann3bConservation");
+			menu.AddRub("Info. supplémentaires","O","#Ann3bEmballage");
+				</script>
+
+	<div id="container">
+		<div id="leftnav">
+			<div id="cadreMenuGauche">
+				<h2 class="sommaireMenu">Sommaire</h2>
+				<div id="menuGauche">
+					<script language="JavaScript" type="text/javascript">Aff(menu);</script>
+				</div>
+			</div>
+		</div>
+		<div id="contentPrincipal">
+			<div id="boutonsliens">
+				<a id='lien_fiche_info' href='extrait.php?specid=68726979' ><img id="ongletficheinfo" alt="Onglet fiche information" src="img/onglet_fiche_info_vert.png" /></a><a id='lien_rcp' href='affichageDoc.php?specid=68726979&amp;typedoc=R'><img class="onglet" alt="Onglet résumé des caractéristiques du produit" src="img/onglet_rcp_vert.png" /></a><a id='lien_notice' href='affichageDoc.php?specid=68726979&amp;typedoc=N'><img class="onglet" alt="Onglet notice patient" src="img/onglet_notice_gris.png" /></a>			</div>
+			<div class="titredeno">
+				<table summary="" border="0" cellspacing="0">
+					<tr><td colspan="3" height="10px"></td></tr>
+					<tr>
+						<td width="15px">&nbsp;</td>
+						<td width="685px"><h1 class="textedeno">METHADONE AP-HP 5 mg, gélule  - Notice patient</h1></td>
+						<td width="43px" class="tdcenter"><a href="Javascript:void(null)" onclick="print();"><img src="img/imprimante.png" height="20px" width="20px" alt="Imprimer le document" title="Imprimer le document" border="0" /></a></td>
+					</tr>
+					<tr><td colspan="3" height="10px"></td></tr>
+				</table>
+			</div>
+			
+			<div id="contentDocument">
+				<div id="textDocument">
+					<p class="DateNotif">ANSM - Mis à jour le : 09/10/2024</p>
+<p class="AmmNoticeTitre1"><a name="Ann3bDenomination">Dénomination du médicament</a></p>
+<p class=AmmCorpsTexteGras align=center style='text-align:center'>METHADONE AP-HP 5 mg, gélule</p>
+<p class=AmmCorpsTexteGras align=center style='text-align:center'>Chlorhydrate de méthadone</p>
+<p class="AmmNoticeTitre1"><a name="Ann3bEncadre">Encadré</a></p>
+<p class=AmmCorpsTexteGras><span lang=FR-BE>Veuillez lire attentivement cette notice avant de prendre ce médicament car elle contient des informations importantes pour vous.</span></p>
+<p class=AmmListePuces1><span lang=FR-BE style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span><span lang=FR-BE>Gardez cette notice. Vous pourriez avoir besoin de la relire.</span></p>
+<p class=AmmListePuces1><span lang=FR-BE style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span><span lang=FR-BE>Si vous avez d’autres questions, interrogez votre médecin ou votre pharmacien.</span></p>
+<div style='border:solid windowtext 1.0pt;padding:1.0pt 4.0pt 1.0pt 4.0pt'>
+<p class=AmmCorpsTexteGras align=center style='margin-top:12.0pt;text-align: center;border:none;padding:0cm'>ATTENTION</p>
+<p class=AmmCorpsTexteGras align=center style='margin-bottom:0cm;margin-bottom: .0001pt;text-align:center;border:none;padding:0cm'>Ce médicament vous a été personnellement prescrit.</p>
+<p class=AmmCorpsTexteGras align=center style='margin-top:12.0pt;margin-right: 0cm;margin-bottom:0cm;margin-left:0cm;margin-bottom:.0001pt;text-align:center; border:none;padding:0cm'>Ne dépassez pas la dose qui vous a été personnellement prescrite.</p>
+<p class=AmmCorpsTexteGras align=center style='margin-top:12.0pt;margin-right: 0cm;margin-bottom:0cm;margin-left:0cm;margin-bottom:.0001pt;text-align:center; border:none;padding:0cm'><span lang=FR-BE>Ne donnez ce médicament à aucune autre personne, même si elle présente les mêmes symptômes que vous. Cela pourrait être dangereux pour elle.</span></p>
+<p class=AmmCorpsTexteGras align=center style='margin-top:12.0pt;margin-right: 0cm;margin-bottom:0cm;margin-left:0cm;margin-bottom:.0001pt;text-align:center; border:none;padding:0cm'>NE LAISSEZ PAS CE MEDICAMENT A LA PORTEE DES ENFANTS.</p>
+<p class=AmmCorpsTexteGras align=center style='margin-top:12.0pt;margin-right: 0cm;margin-bottom:0cm;margin-left:0cm;margin-bottom:.0001pt;text-align:center; border:none;padding:0cm'>NE PRENEZ PAS CE MEDICAMENT DEVANT DES ENFANTS.</p>
+<p class=AmmCorpsTexteGras align=center style='margin-top:12.0pt;margin-right: 0cm;margin-bottom:0cm;margin-left:0cm;margin-bottom:.0001pt;text-align:center; border:none;padding:0cm'>NE SORTEZ JAMAIS LES GELULES A L’AVANCE DE LEUR PLAQUETTE THERMOFORMEE.</p>
+<p class=AmmCorpsTexteGras align=center style='margin-top:12.0pt;margin-right: 0cm;margin-bottom:0cm;margin-left:0cm;margin-bottom:.0001pt;text-align:center; border:none;padding:0cm'>CE TRAITEMENT NE DOIT PAS ETRE UTILISE PAR DES PERSONNES NON-DEPENDANTES AUX OPIACES.</p>
+</div>
+<p class=AmmListePuces1 style='margin-top:6.0pt;margin-right:0cm;margin-bottom: 0cm;margin-left:17.85pt;margin-bottom:.0001pt;text-indent:-17.85pt'><span lang=FR-BE style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span><span lang=FR-BE>Si vous ressentez un quelconque effet indésirable, parlez-en à votre médecin ou votre pharmacien. Ceci s’applique aussi à tout effet indésirable qui ne serait pas mentionné dans cette notice. </span>Voir rubrique 4.</p>
+<p class="AmmNoticeTitre1"><a name="Ann3bSomm">Que contient cette notice ?</a></p>
+<p class=AmmCorpsTexte style='margin-top:0cm;margin-right:0cm;margin-bottom: 0cm;margin-left:14.2pt;margin-bottom:.0001pt;text-indent:-14.2pt'>1. Qu'est-ce que METHADONE AP-HP 5 mg, gélule et dans quels cas est-il utilisé ?</p>
+<p class=AmmCorpsTexte style='margin-top:0cm;margin-right:0cm;margin-bottom: 0cm;margin-left:14.2pt;margin-bottom:.0001pt;text-indent:-14.2pt'>2. Quelles sont les informations à connaître avant de prendre METHADONE AP-HP 5 mg, gélule ?</p>
+<p class=AmmCorpsTexte style='margin-top:0cm;margin-right:0cm;margin-bottom: 0cm;margin-left:14.2pt;margin-bottom:.0001pt;text-indent:-14.2pt'>3. Comment prendre METHADONE AP-HP 5 mg, gélule ?</p>
+<p class=AmmCorpsTexte style='margin-top:0cm;margin-right:0cm;margin-bottom: 0cm;margin-left:14.2pt;margin-bottom:.0001pt;text-indent:-14.2pt'>4. Quels sont les effets indésirables éventuels ?</p>
+<p class=AmmCorpsTexte style='margin-top:0cm;margin-right:0cm;margin-bottom: 0cm;margin-left:14.2pt;margin-bottom:.0001pt;text-indent:-14.2pt'>5. Comment conserver METHADONE AP-HP 5 mg, gélule ?</p>
+<p class=AmmCorpsTexte style='margin-top:0cm;margin-right:0cm;margin-bottom: 0cm;margin-left:14.2pt;margin-bottom:.0001pt;text-indent:-14.2pt'><span style='color:black'>6. Contenu de l’emballage et autres informations.</span></p>
+<h2><a name="Ann3bQuestceque">1. QU’EST-CE QUE METHADONE AP-HP 5 mg, gélule ET DANS QUELS CAS EST-IL UTILISE ?</a>&nbsp;&nbsp;<a href='#HautDePage'><img src='img/BackToTop.jpg' width='15px' height='15px' alt='Retour en haut de la page' title='Retour en haut de la page' /></a></h2>
+<p class=AmmCorpsTexte><span class='gras'>Classe pharmacothérapeutique :</span> MEDICAMENT UTILISE DANS LA DEPENDANCE AUX OPIACES - code ATC : N07BC02.</p>
+<p class=AmmCorpsTexte>Ce produit est exclusivement réservé au traitement de substitution des pharmacodépendances aux opioïdes aux conditions suivantes : </p>
+<p class=AmmListePuces1 style='text-align:justify'><span style='font-family: Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>être adulte ou adolescent de plus de 15 ans,</p>
+<p class=AmmListePuces1 style='text-align:justify'><span style='font-family: Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>avoir donné son consentement pour le traitement,</p>
+<p class=AmmListePuces1 style='text-align:justify'><span style='font-family: Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>être suivi aux plans médical, social et psychologique pour un traitement de substitution par méthadone depuis au moins 1 an,</p>
+<p class=AmmListePuces1 style='text-align:justify'><span style='font-family: Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>avoir une consultation en centre de traitement habilité à délivrer la méthadone et accepter un examen d'urine pour le contrôle du traitement.</p>
+<h2><a name="Ann3bInfoNecessaires">2. QUELLES SONT LES INFORMATIONS A CONNAITRE AVANT DE PRENDRE METHADONE AP-HP 5 mg, gélule ?</a>&nbsp;&nbsp;<a href='#HautDePage'><img src='img/BackToTop.jpg' width='15px' height='15px' alt='Retour en haut de la page' title='Retour en haut de la page' /></a></h2>
+<p class=AmmCorpsTexteGras>Ne prenez jamais METHADONE AP-HP 5 mg, gélule :</p>
+<p class=AmmListePuces1 style='text-align:justify;page-break-after:avoid'><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>Si vous êtes allergique (hypersensible) à la substance active ou à l’un des autres composants contenus dans ce médicament, mentionnés dans la rubrique 6,</p>
+<p class=AmmListePuces1 style='text-align:justify;page-break-after:avoid'><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>Si vous avez moins de 15 ans,</p>
+<p class=AmmListePuces1 style='text-align:justify;page-break-after:avoid'><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>Si vous souffrez d’insuffisance respiratoire (dépression respiratoire) grave,</p>
+<p class=AmmListePuces1 style='text-align:justify;page-break-after:avoid'><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>Si vous présentez des dysfonctionnements intestinaux avec occlusion intestinale (iléus paralytique),</p>
+<p class=AmmListePuces1 style='text-align:justify'><span style='font-family: Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>Si vous prenez un traitement par la buprénorphine, le citalopram, la dompéridone, l’escitalopram, l’hydroxyzine, le millepertuis, la nalbuphine, le nalméfène, la naltrexone, l’oxybate de sodium ou la pipéraquine (voir rubrique Autres médicaments et METHADONE AP-HP 5 mg, gélule).</p>
+<p class=AmmCorpsTexte style='margin-top:6.0pt'>EN CAS DE DOUTE, IL EST INDISPENSABLE DE DEMANDER L’AVIS DE VOTRE MEDECIN OU DE VOTRE PHARMACIEN.</p>
+<p class=AmmCorpsTexteGras>Avertissements et précautions</p>
+<p class=AmmCorpsTexte>Adressez-vous à votre médecin ou pharmacien avant de prendre METHADONE AP-HP 5 mg, gélule.</p>
+<p class=AmmAnnexeTitre3>Mises en garde </p>
+<p class=AmmListePuces1><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>L'efficacité du traitement dépend :</p>
+<p class=AmmListePuces2><span style='font-family:"Courier New"'>o<span style='font:7.0pt "Times New Roman"'>   </span></span>de la posologie,</p>
+<p class=AmmListePuces2><span style='font-family:"Courier New"'>o<span style='font:7.0pt "Times New Roman"'>   </span></span>des mesures médico-psychologiques et socio-éducatives associées.</p>
+<p class=AmmListePuces1 style='margin-top:0cm;margin-right:0cm;margin-bottom: 6.0pt;margin-left:17.85pt;text-indent:-17.85pt'><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>Des troubles psychologiques nécessitant une prise en charge spécialisée peuvent se révéler en cours de traitement chez certains patients.</p>
+<p class=AmmCorpsTexte>Chez certains patients, la méthadone peut être à l’origine de problèmes du rythme cardiaque, qui peuvent, dans de rares cas, mettre en jeu le pronostic vital. Les symptômes comprennent des malaises, des palpitations (sentir un rythme cardiaque rapide, plus fort ou irrégulier) ou un évanouissement. Votre médecin devra vous prescrire un électrocardiogramme avant le début et pendant le traitement. Il sera répété régulièrement et en cas d’utilisations de fortes doses. Selon les résultats, le traitement peut être modifié ou arrêté.</p>
+<p class=AmmCorpsTexteGras>Dépression du SNC et respiratoire</p>
+<p class=AmmCorpsTexte>Des cas de décès par dépression respiratoire ont été rapportés avec la méthadone. Ce risque est plus important pendant la période d’initiation du traitement ou lors de la reprise du traitement après une période de sevrage (perte de tolérance).</p>
+<p class=AmmCorpsTexte style='margin-right:3.6pt;vertical-align:baseline'><span style='font-size:10.0pt;font-family:"Arial",sans-serif'> </span></p>
+<p class=AmmCorpsTexteGras>Accoutumance, dépendance et addiction</p>
+<p class=AmmCorpsTexte style='margin-right:3.6pt;vertical-align:baseline'><span style='font-size:10.0pt;font-family:"Arial",sans-serif'>Ce médicament contient une substance opioïde appelée méthadone. L’utilisation répétée d’opioïdes peut entraîner une perte d’efficacité du médicament (risque d’accoutumance, c.-à-d que votre organisme s’habitue au médicament). L’utilisation répétée de méthadone peut également conduire à une dépendance, à un usage abusif et à une addiction, qui peuvent provoquer un surdosage pouvant menacer le pronostic vital.</span></p>
+<p class=AmmCorpsTexte style='margin-right:28.8pt;vertical-align:baseline'><span style='font-size:10.0pt;font-family:"Arial",sans-serif'> </span></p>
+<p class=AmmCorpsTexte style='margin-right:28.8pt;vertical-align:baseline'><span style='font-size:10.0pt;font-family:"Arial",sans-serif'>La dépendance ou l’addiction peut entraîner une perte de contrôle de la quantité de médicament utilisée ou de la fréquence des prises. </span></p>
+<p class=AmmCorpsTexte style='vertical-align:baseline'><span style='font-size:10.0pt; font-family:"Arial",sans-serif'>Le risque de dépendance ou d’addiction varie d’une personne à l’autre. Le risque de développer une dépendance ou une addiction à </span><span style='font-size:10.0pt;font-family:"Arial",sans-serif'>MÉTHADONE AP-HP, gélule </span><span style='font-size:10.0pt;font-family:"Arial",sans-serif'>peut être plus élevé si :</span></p>
+<p class=AmmCorpsTexte style='vertical-align:baseline'><span style='font-size:10.0pt; font-family:"Arial",sans-serif'>- Vous ou un membre de votre famille présentez des antécédents d’abus d’alcool, de médicaments sur ordonnance ou de drogues illicites ou des antécédents de dépendance à ces produits « addiction ». </span></p>
+<p class=AmmCorpsTexte style='vertical-align:baseline'><span style='font-size:10.0pt; font-family:"Arial",sans-serif'>- Vous fumez. </span></p>
+<p class=AmmCorpsTexte style='margin-right:32.4pt;vertical-align:baseline'><span style='font-size:10.0pt;font-family:"Arial",sans-serif'>- Vous présentez des antécédents de troubles de l’humeur (dépression, anxiété ou trouble de la personnalité) ou avez été suivi(e) par un psychiatre pour toute autre maladie mentale. </span></p>
+<p class=AmmCorpsTexte style='margin-right:10.8pt;vertical-align:baseline'><span style='font-size:10.0pt;font-family:"Arial",sans-serif'> </span></p>
+<p class=AmmCorpsTexte style='margin-right:10.8pt;vertical-align:baseline'><span style='font-size:10.0pt;font-family:"Arial",sans-serif'>Si vous remarquez l’apparition des signes suivants pendant le traitement avec la méthadone, cela pourrait être un signe que vous présentez une dépendance ou une addiction. </span></p>
+<p class=AmmCorpsTexte style='margin-right:14.4pt;vertical-align:baseline'><span style='font-size:10.0pt;font-family:"Arial",sans-serif'>- Vous ressentez le besoin de dépasser la durée de traitement recommandée par votre médecin. </span></p>
+<p class=AmmCorpsTexte style='vertical-align:baseline'><span style='font-size:10.0pt; font-family:"Arial",sans-serif'>- Vous ressentez le besoin de dépasser la dose recommandée. </span></p>
+<p class=AmmCorpsTexte style='margin-right:32.4pt;vertical-align:baseline'><span style='font-size:10.0pt;font-family:"Arial",sans-serif'>- Vous utilisez ce médicament à d’autres fins que celles pour lesquelles il vous a été prescrit (p. ex., pour rester calme ou vous aider à dormir). </span></p>
+<p class=AmmCorpsTexte style='margin-right:21.6pt;vertical-align:baseline'><span style='font-size:10.0pt;font-family:"Arial",sans-serif'>- Vous avez essayé plusieurs fois d’arrêter de prendre ce médicament ou de contrôler votre consommation, sans succès. </span></p>
+<p class=AmmCorpsTexte style='margin-right:21.6pt;vertical-align:baseline'><span style='font-size:10.0pt;font-family:"Arial",sans-serif;letter-spacing:-.05pt'>- Vous vous sentez mal lorsque vous vous arrêtez de prendre ce médicament, et vous vous sentez mieux lorsque vous recommencez à le prendre (symptômes de sevrage). </span></p>
+<p class=AmmCorpsTexte>Si vous remarquez l’un de ces signes, parlez-en à votre médecin pour déterminer les modalités de traitement les mieux adaptées à votre cas, notamment pour savoir quand arrêter votre traitement et comment l’arrêter sans risque (voir rubrique 3 « Si vous arrêtez de prendre METHADONE AP-HP, gélule. </p>
+<p class=AmmCorpsTexte><span class='gras'>Symptômes de sevrage</span></p>
+<p class=AmmCorpsTexte>Des symptômes de sevrage peuvent apparaître si l’arrêt du traitement est soudain. Les symptômes de sevrage les plus fréquents sont énumérés à la rubrique 3.</p>
+<p class=AmmCorpsTexte>En cas d’arrêt puis de reprise du traitement, les mêmes précautions que lors de la mise en place initiale du traitement et de l’augmentation progressive des doses doivent être prises.</p>
+<p class=AmmCorpsTexteGras>Insuffisance surrénalienne</p>
+<p class=AmmCorpsTexte>Consultez votre médecin ou votre pharmacien si vous ressentez l’un des symptômes suivants pendant que vous prenez de la méthadone :</p>
+<p class=AmmCorpsTexte>Faiblesse, fatigue, manque d'appétit, nausées, vomissements ou pression artérielle basse.</p>
+<p class=AmmCorpsTexte>Ces symptômes peuvent indiquer une production insuffisante de l’hormone cortisol par les surrénales, et vous pourriez avoir besoin de prendre une supplémentation hormonale.</p>
+<p class=AmmCorpsTexteGras>Diminution des hormones sexuelles et augmentation de la prolactine</p>
+<p class=AmmCorpsTexte>Une utilisation à long terme peut entraîner une diminution des niveaux d'hormones sexuelles et une augmentation des niveaux de l’hormone prolactine. Contactez votre médecin si vous présentez des symptômes tels qu'une baisse de la libido, une impuissance ou une absence de menstruation (aménorrhée).</p>
+<p class=AmmCorpsTexteGras>Mésusage, abus et usage détourné</p>
+<p class=AmmCorpsTexte>METHADONE AP-HP 5 mg, gélule est un stupéfiant qui peut donner lieu à un mésusage chez des personnes à risque. Ne donnez pas ce médicament à d’autres personnes. Il peut être nocif voire entraîner leur décès.</p>
+<p class=AmmCorpsTexte>La prise concomitante de ce médicament est déconseillée avec les boissons alcoolisées ou les médicaments contenant de l’alcool, avec certains médicaments ou certaines substances comme la cocaïne agissant sur le rythme cardiaque, avec certains médicaments agissant sur le système nerveux central, avec certains antiparasitaires, avec certains anti-infectieux, avec des médicaments dérivés de l’arsenic, avec le crizotinib, la méquitazine, le prucalopride, le torémifène, le vandétanib, la vincamine IV (voir Autres médicaments et METHADONE AP-HP 5 mg, gélule).</p>
+<p class=AmmCorpsTexte>En cas d’ingestion accidentelle, il existe un risque mortel pour les enfants et les personnes non ou peu dépendantes aux opiacés. Ne sortez jamais les gélules à l’avance des plaquettes thermoformées, tenez les plaquettes thermoformées hors de portée des enfants et ne prenez pas ce médicament devant des enfants.</p>
+<div style='border:solid windowtext 1.0pt;padding:1.0pt 4.0pt 1.0pt 4.0pt'>
+<p class=AmmCorpsTexteGras style='border:none;padding:0cm'><span class='italique'>En cas d’ingestion accidentelle de méthadone ou en cas de doute de surdosage, l’utilisation rapide de naloxone « prête à l’emploi » doit être initiée et peut être répétée en l’absence de réponse dans les 2 à 3 minutes. </span><span class='italique'><span lang=FR-BE>Des doses supplémentaires peuvent être administrées en cas de besoin, en respectant les recommandations du médicament utilisé. Un service d’urgence doit être <span class='souligne'>immédiatement</span> contacté.</span></span><span class='italique'><span lang=FR-BE> </span></span><span class='italique'>En cas de doute, la personne ayant absorbé de la méthadone doit être conduite immédiatement au service des urgences le plus proche.</span></p>
+</div>
+<p class=AmmCorpsTexte><a name="_Hlk133855968"><span class='gras'>Troubles respiratoires liés au sommeil</span></a></p>
+<p class=AmmCorpsTexte>METHADONE AP-HP, gélule peut entraîner des troubles respiratoires du sommeil tels qu’une apnée du sommeil (pauses respiratoires pendant le sommeil) et une hypoxémie du sommeil (faible taux d’oxygène dans le sang). Cela peut se traduire par des pauses respiratoires pendant le sommeil, des réveils nocturnes dus à un souffle court, des difficultés à rester endormi ou une somnolence excessive pendant la journée. Si vous, ou une autre personne, observez ces symptômes, contactez votre médecin. Il pourra envisager de réduire la dose. </p>
+<p class=AmmAnnexeTitre3>Autres mises en garde</p>
+<p class=AmmCorpsTexte>Ce médicament contient du lactose. Si votre médecin vous a informé(e) d’une intolérance à certains sucres, contactez-le avant de prendre ce médicament.</p>
+<p class=AmmCorpsTexte>Ce médicament contient moins de 1 mmol (23 mg) par gélule, c’est-à-dire qu’il est essentiellement « sans sodium ». Tenir compte de la quantité totale de gélules prise par jour.</p>
+<p class=AmmAnnexeTitre3>Précautions d'emploi</p>
+<p class=AmmCorpsTexteGras>Prévenez votre médecin si vous vous trouvez dans une des situations suivantes : </p>
+<p class=AmmListePuces1 style='text-align:justify'><span lang=FR-BE style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span><span lang=FR-BE>Si vous avez des troubles du rythme cardiaque, ralentissement des battements du cœur, antécédent de syncope ou antécédents familiaux de mort subite,</span></p>
+<p class=AmmListePuces1 style='text-align:justify'><span lang=FR-BE style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span><span lang=FR-BE>Si vous êtes atteint d’asthme,</span></p>
+<p class=AmmListePuces1 style='text-align:justify'><span lang=FR-BE style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span><span lang=FR-BE>Si vous souffrez d’insuffisance respiratoire, rénale ou hépatique (foie) grave,</span></p>
+<p class=AmmListePuces1 style='text-align:justify'><span lang=FR-BE style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span><span lang=FR-BE>Si vous êtes atteint d’insuffisance surrénalienne (insuffisance de la sécrétion d'hormones par les glandes surrénaliennes),</span></p>
+<p class=AmmListePuces1 style='text-align:justify'><span lang=FR-BE style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span><span lang=FR-BE>Si vous êtes atteint de myxoedème ou d’hypothyroïdie (maladies de la glande thyroïde),</span></p>
+<p class=AmmListePuces1 style='text-align:justify'><span lang=FR-BE style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span><span lang=FR-BE>Si vous êtes atteint d’hypertrophie prostatique (augmentation du volume de la prostate)</span></p>
+<p class=AmmListePuces1 style='text-align:justify'><span lang=FR-BE style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span><span lang=FR-BE>Si vous êtes atteint d’une obstruction partielle des voies urinaires</span></p>
+<p class=AmmListePuces1 style='text-align:justify'><span lang=FR-BE style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span><span lang=FR-BE>Si vous êtes atteint d’hypotension artérielle,</span></p>
+<p class=AmmListePuces1 style='text-align:justify'><span lang=FR-BE style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span><span lang=FR-BE>Si vous êtes atteint d’épilepsie, ou de tendance aux crises épileptiques,</span></p>
+<p class=AmmListePuces1 style='text-align:justify'><span lang=FR-BE style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span><span lang=FR-BE>Si vous êtes atteint de diabète,</span></p>
+<p class=AmmListePuces1 style='text-align:justify'><span lang=FR-BE style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span><span lang=FR-BE>Si vous êtes atteint de dysfonction des voies biliaires,</span></p>
+<p class=AmmListePuces1 style='text-align:justify'><span lang=FR-BE style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span><span lang=FR-BE>Si vous présentez une hypovolémie (diminution du volume total du sang).</span></p>
+<p class=AmmListePuces1><span lang=FR-BE style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span><span lang=FR-BE>Si vous êtes enceinte.</span></p>
+<p class=AmmCorpsTexte style='margin-top:6.0pt'><span lang=FR-BE>La constipation est un effet indésirable connu de la méthadone. En cas de constipation pendant le traitement, prévenez votre médecin qui pourra vous proposer un traitement.</span></p>
+<p class=AmmCorpsTexte>EN CAS DE DOUTE, NE PAS HESITER A DEMANDER L'AVIS DE VOTRE MEDECIN OU DE VOTRE PHARMACIEN</p>
+<p class=AmmCorpsTexteGras style='margin-top:6.0pt'>Enfants et adolescents</p>
+<p class=AmmCorpsTexte>La méthadone est contre-indiquée chez l’enfant et l’adolescent de moins de 15 ans. Depuis la commercialisation des gélules de METHADONE AP-HP, des cas fatals d’ingestion accidentelle, en particulier chez des enfants, ont été rapportés. Tenir les plaquettes hors de portée des enfants. Ne jamais sortir les gélules à l’avance et ne pas prendre ce médicament devant les enfants.</p>
+<p class=AmmCorpsTexteGras>Autres médicaments et METHADONE AP-HP 5 mg, gélule</p>
+<p class=AmmCorpsTexte>Informez votre médecin ou votre pharmacien si vous prenez, avez récemment pris ou pourriez prendre tout autre médicament, y compris un médicament obtenu sans ordonnance.</p>
+<p class=AmmCorpsTexte>Ce médicament NE DOIT PAS ETRE UTILISE avec de la buprénorphine, du citalopram, de la dompéridone, de l’escitalopram, de l’hydroxyzine, du millepertuis, de la nalbuphine du nalméfène, de la naltrexone, de l’oxybate de sodium ou de la pipéraquine (voir Ne prenez jamais METHADONE AP-HP 5 mg, gélule dans les cas suivants).</p>
+<p class=AmmCorpsTexte>Les associations aux médicaments et aux substances suivants SONT A EVITER : médicaments contenant de l’alcool, médicaments indiqués dans les troubles du rythme cardiaque (amiodarone, disopyramide, dronédarone, hydroquinidine, quinidine, sotalol), certains médicaments agissant sur le système nerveux central (amisulpride, chlorpromazine, cyamémazine, dropéridol, flupentixol, fluphénazine, halopéridol, lévomépromazine, pimozide, pipampérone, pipotiazine, quétiapine, sulpiride, tiapride, zuclopenthixol), certains antiparasitaires (halofantrine, luméfantrine, pentamidine, chloroquine, hydroxychloroquine), certains anti-infectieux (cotrimoxazole, délamanid, érythromycine par voie intra-veineuse (IV), fluconazole, moxifloxacine, spiramycine), les médicaments atropiniques, l’apalutamide, la cocaïne, les médicaments dérivés de l’arsenic, le crizotinib, la méquitazine, le prucalopride, le torémifène, le vandétanib, la vincamine IV (voir Mises en garde).</p>
+<p class=AmmCorpsTexte>L’utilisation concomitante de la méthadone et de médicaments sédatifs (médicaments agissant sur le système nerveux central) tels que les benzodiazépines ou médicaments apparentés augmente le risque de somnolence, de difficultés à respirer (dépression respiratoire), de coma et peut entraîner la mise en jeu du pronostic vital. En raison de ces risques, la prescription concomitante de ces médicaments sédatifs devrait être réservée aux patients pour lesquels il n'existe pas d'autres options thérapeutiques. </p>
+<p class=AmmCorpsTexte>Toutefois, si votre médecin décide de prescrire METHADONE AP-HP 5 mg, gélule en même temps que des médicaments sédatifs tels que les benzodiazépines ou apparentés, la dose et la durée du traitement concomitant devront être limitées par votre médecin.</p>
+<p class=AmmCorpsTexte>Merci d’informer votre médecin en cas de prise de médicaments sédatifs, et de strictement respecter les doses recommandées par votre médecin. Il serait utile, d'informer vos proches, vos amis et votre entourage pour qu'ils soient au courant de ces symptômes mentionnés ci-dessus. Contactez votre médecin si vous ressentez de tels symptômes.</p>
+<p class=AmmCorpsTexte>Si vous prenez certains antidépresseurs ou antipsychotiques, la méthadone peut interagir avec ces traitements et peut entraîner des symptômes tels que des contractions musculaires involontaires et répétées, y compris des muscles qui contrôlent le mouvement de l’œil, une agitation, une transpiration excessive, des tremblements, une exagération des réflexes, une augmentation de la tension musculaire, une température du corps supérieure à 38°C.</p>
+<p class=AmmCorpsTexte>Le risque d'effets indésirables augmente si vous utilisez la méthadone en même temps que des antidépresseurs (tels que citalopram, duloxétine, escitalopram, fluoxétine, fluvoxamine, paroxétine, sertraline, venlafaxine, amitriptyline, clomipramine, imipramine, nortriptyline), <a name="_Hlk133856037">le </a>c<span class='souligne'>annabidiol </span>(médicament utilisé pour traiter les convulsions).</p>
+<p class=AmmCorpsTexte>La gabapentine et la prégabaline (médicaments utilisés pour traiter l’épilepsie, les douleurs d’origine nerveuse ou l’anxiété) peuvent augmenter le risque de surdosage d’opioïdes, de dépression respiratoire (difficultés à respirer) et menacer le pronostic vital. </p>
+<p class=AmmCorpsTexte>Contactez votre médecin si vous présentez les symptômes suivants :</p>
+<p class=AmmListePuces1><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>des difficultés à respirer, une somnolence,</p>
+<p class=AmmListePuces1><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>des changements d'état mental (par exemple agitation, hallucinations, coma),</p>
+<p class=AmmListePuces1><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>des battements rapides du cœur, une tension artérielle instable, de la fièvre,</p>
+<p class=AmmListePuces1><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>une exagération des réflexes, des troubles de la coordination, une raideur musculaire,</p>
+<p class=AmmListePuces1><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>des symptômes gastro-intestinaux (par exemple nausées, vomissements, diarrhées).</p>
+<p class=AmmCorpsTexteGras style='margin-top:6.0pt'>METHADONE AP-HP 5 mg, gélule avec des aliments, des boissons et de l’alcool</p>
+<p class=AmmCorpsTexte>La prise concomitante de boissons alcoolisées est déconseillée avec ce médicament (voir Mises en garde et précautions d’emploi).</p>
+<p class=AmmCorpsTexteGras style='margin-top:6.0pt'>Grossesse, allaitement et fertilité</p>
+<p class=AmmCorpsTexte><span lang=FR-BE>Si vous êtes enceinte ou que vous allaitez, si vous pensez être enceinte ou planifiez une grossesse, demandez conseil à votre médecin</span><span lang=FR-BE> </span><span lang=FR-BE>ou votre pharmacien</span><span lang=FR-BE> </span><span lang=FR-BE>avant de prendre ce médicament.</span></p>
+<p class=AmmCorpsTexteGras style='margin-top:6.0pt'>Grossesse</p>
+<p class=AmmCorpsTexte>L'utilisation de la méthadone, si elle est nécessaire et après avis de votre médecin, est possible pendant la grossesse.</p>
+<p class=AmmCorpsTexte>En raison du passage de ce médicament dans la circulation sanguine du fœtus, son utilisation en cours de grossesse peut entraîner un syndrome de sevrage et une détresse respiratoire chez le nouveau-né. Une surveillance particulière de l'enfant est nécessaire.</p>
+<p class=AmmCorpsTexteGras>Allaitement</p>
+<p class=AmmCorpsTexte>Consultez votre médecin si vous allaitez ou envisagez d'allaiter pendant que vous prenez de la méthadone car cela pourrait affecter votre enfant. </p>
+<p class=AmmCorpsTexte>Surveillez votre enfant afin de détecter des signes et des symptômes anormaux tels qu'une somnolence accrue (plus importante que d'habitude), des difficultés respiratoires ou une diminution du tonus musculaire. Consultez immédiatement votre médecin si vous constatez l'un de ces symptômes.</p>
+<p class=AmmCorpsTexteGras>Fertilité</p>
+<p class=AmmCorpsTexte>L’utilisation à long terme des médicaments opioïdes peut entraîner une réduction de la fertilité chez les patients en âge de procréer.</p>
+<p class=AmmCorpsTexte>Concernant la fertilité masculine, la méthadone peut diminuer la testostérone dans le sang et abaisser le volume de l’éjaculat et la mobilité des spermatozoïdes.</p>
+<p class=AmmCorpsTexteGras style='margin-top:6.0pt'>Conduite de véhicules et utilisation de machines</p>
+<p class=AmmCorpsTexte>La vigilance et la réactivité peuvent être altérées de telle manière que l’aptitude à conduire des véhicules et utiliser des machines en serait affectée voire complétement défaillante.</p>
+<p class=AmmCorpsTexte>Pour consulter les effets secondaires éventuels affectant les compétences motrices et la concentration, voir la rubrique 4.</p>
+<p class=AmmCorpsTexte>Lorsque la posologie est stable, une interdiction totale de la conduite des véhicules n’est pas nécessaire. Le médecin traitant doit évaluer la situation individuelle.</p>
+<p class=AmmCorpsTexte>Veuillez voir avec votre médecin si, ou dans quelles conditions, vous pouvez conduire un véhicule.</p>
+<p class=AmmCorpsTexteGras style='margin-top:6.0pt'>METHADONE AP-HP 5 mg, gélule contient du lactose.</p>
+<h2><a name="Ann3bCommentPrendre">3. COMMENT PRENDRE METHADONE AP-HP 5 mg, gélule ?</a>&nbsp;&nbsp;<a href='#HautDePage'><img src='img/BackToTop.jpg' width='15px' height='15px' alt='Retour en haut de la page' title='Retour en haut de la page' /></a></h2>
+<p class=AmmCorpsTexte>Veillez à toujours prendre ce médicament en suivant exactement les indications de votre médecin ou pharmacien. Vérifiez auprès de votre médecin ou pharmacien en cas de doute.</p>
+<p class=AmmCorpsTexte>Les doses sont individuelles. </p>
+<p class=AmmCorpsTexte>Le médicament est administré par voie orale. </p>
+<p class=AmmCorpsTexte>L’administration s’effectue en une seule prise par jour.</p>
+<p class=AmmCorpsTexte>Les mesures d'accompagnement instituées précédemment avec la forme sirop doivent être scrupuleusement respectées pour le succès du traitement, et conditionnent la poursuite du traitement par la forme gélule de méthadone.</p>
+<p class=AmmCorpsTexte>Une co-prescription systématique de naloxone est recommandée.</p>
+<p class=AmmCorpsTexte>La durée de traitement est variable en fonction de chaque patient.</p>
+<p class=AmmCorpsTexte>NE SORTEZ JAMAIS LES GELULES A L’AVANCE DE LEUR PLAQUETTE THERMOFORMEE. </p>
+<p class=AmmCorpsTexte>TENEZ LA PLAQUETTE THERMOFORMEE HORS DE LA PORTEE ET DE LA VUE DES ENFANTS. </p>
+<p class=AmmCorpsTexte>NE PRENEZ PAS CE MEDICAMENT DEVANT DES ENFANTS. </p>
+<p class=AmmCorpsTexte>Découper une unité de la plaquette thermoformée. </p>
+<p class=AmmCorpsTexte>Peler chaque unité à partir du coin non scellé pour accéder à la feuille d'aluminium qui peut être percée afin de libérer la gélule. </p>
+<p class=AmmCorpsTexte>Les gélules doivent être avalées immédiatement après la sortie la plaquette thermoformée. </p>
+<p class=AmmCorpsTexte>Si vous avez l'impression que l'effet de METHADONE AP-HP 5 mg, gélule est trop fort ou trop faible, consultez votre médecin ou votre pharmacien.</p>
+<p class=AmmCorpsTexteGras>Si vous avez pris plus de METHADONE AP-HP 5 mg, gélule que vous n’auriez dû</p>
+<p class=AmmCorpsTexte>Un surdosage en produits morphiniques constitue un DANGER VITAL, nécessitant un traitement immédiat par naloxone « prête à l’emploi » qui peut être répété en l’absence de réponse dans les 2 à 3 minutes. Des doses supplémentaires peuvent être administrées en cas de besoin, en respectant les recommandations du médicament utilisé. APPELEZ IMMEDIATEMENT LES SECOURS.</p>
+<p class=AmmCorpsTexte>Afin d'éviter tout risque de surdosage, le traitement par la méthadone, entrepris sous surveillance médicale dans un centre agréé, NE DOIT PAS ETRE ASSOCIE à la prise d'autres substances stupéfiantes.</p>
+<p class=AmmCorpsTexte><span style='color:black'>Cela peut entraîner une hypoglycémie (diminution du taux de sucre dans le sang), </span>un trouble cérébral (connu sous le nom de leucoencéphalopathie toxique).</p>
+<p class=AmmCorpsTexte>Consultez immédiatement votre médecin ou votre pharmacien.</p>
+<p class=AmmCorpsTexteGras>Si vous oubliez de prendre METHADONE AP-HP 5 mg, gélule</p>
+<p class=AmmCorpsTexte>Consultez le centre de traitement ou le médecin habilité à vous prescrire le produit.</p>
+<p class=AmmCorpsTexte>Ne prenez pas de dose double pour compenser la dose que vous avez oublié de prendre.</p>
+<p class=AmmCorpsTexteGras>Si vous arrêtez de prendre METHADONE AP-HP 5 mg, gélule </p>
+<p class=AmmCorpsTexte>N'arrêtez pas votre traitement sans en informer votre médecin. </p>
+<p class=AmmCorpsTexte>Un arrêt de traitement, par diminution progressive de la posologie, peut être envisagé, avec l'accord du patient, après une stabilisation suffisante de l'état de celui-ci. Les doses doivent être diminuées par paliers progressifs sous surveillance médicale particulière au cours de cette phase car un arrêt brutal de traitement expose à l'apparition d'un syndrome de sevrage.</p>
+<p class=AmmCorpsTexte>Les symptômes de sevrage peuvent comprendre les effets suivants : agitation, larmoiement, éternuement, rhinorrhée, bâillements, transpiration, frissons, tremblements, mydriase (dilatation de la pupille), irritabilité, anxiété, douleurs des extrémités, douleur dorsale, douleur articulaire, douleur musculaire, contracture musculaire, spasme musculaire, faiblesses, crampes abdominales, insomnie, nausées, anorexie, vomissements, diarrhée, hausse de la pression artérielle, de la fréquence respiratoire ou de la fréquence cardiaque, « chair de poule » et fièvre.</p>
+<p class=AmmCorpsTexte>Si vous avez d’autres questions sur l’utilisation de ce médicament, demandez plus d’informations à votre médecin ou à votre pharmacien.</p>
+<h2><a name="Ann3bEffetsIndesirables">4. QUELS SONT LES EFFETS INDESIRABLES EVENTUELS ?</a>&nbsp;&nbsp;<a href='#HautDePage'><img src='img/BackToTop.jpg' width='15px' height='15px' alt='Retour en haut de la page' title='Retour en haut de la page' /></a></h2>
+<p class=AmmCorpsTexte>Comme tous les médicaments, ce médicament peut provoquer des effets indésirables, mais ils ne surviennent pas systématiquement chez tout le monde.</p>
+<p class=AmmCorpsTexte>La méthadone entraîne les mêmes effets indésirables que la morphine. Les manifestations les plus graves sont : dépression respiratoire ou arrêt respiratoire, hypotension sévère, choc (effondrement de la pression sanguine), troubles du rythme voire arrêt cardiaque. </p>
+<p class=AmmCorpsTexte>Des cas fatals d’ingestion accidentelle, en particulier chez des enfants ont été rapportés.</p>
+<p class=AmmCorpsTexte>Chez les sujets présentant une dépendance aux opioïdes, les effets indésirables peuvent être :</p>
+<p class=AmmListePuces1 style='text-align:justify'><span style='font-family: Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>en début de traitement : euphorie, vertiges, somnolence, nausées, vomissements, constipation, sédation, transpiration excessive, troubles urinaires, œdèmes,</p>
+<p class=AmmListePuces1 style='margin-top:0cm;margin-right:0cm;margin-bottom: 6.0pt;margin-left:17.85pt;text-align:justify;text-indent:-17.85pt'><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>au cours du traitement d'entretien : transpiration excessive, nausées, constipation, très rares cas d’augmentation du volume des seins chez l’homme,</p>
+<p class=AmmListePuces1 style='margin-top:0cm;margin-right:0cm;margin-bottom: 6.0pt;margin-left:17.85pt;text-align:justify;text-indent:-17.85pt'><a name="_Hlk133856130"><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>Vous pourriez développer une dépendance à MÉTHADONE AP-HP, gélule (pour plus d’informations voir la rubrique 2 « Avertissements et précautions ».</a></p>
+<p class=AmmCorpsTexte>Les autres effets observés sont : maux de tête, insomnie, agitation, troubles visuels, rétrécissement du diamètre de la pupille, bouche sèche, constipation, perte de l'appétit, rétention urinaire, réactions allergiques (démangeaisons, urticaire), éruptions cutanées, douleur biliaire (douleur abdominale intense), diminution ou accélération du rythme cardiaque avec anomalies à l’électrocardiogramme, bouffée congestive (rougeur de la peau au niveau de la face et du cou avec sensation de chaleur), diminution de la libido, prise de poids, hallucinations, désorientation, confusion, diminution du dosage sanguin de la testostérone, sédation, sensation d’étourdissement, malaise, chute, sécrétion excessive de prolactine, baisse du nombre de plaquettes sanguines, dépendance, convulsions, anomalies de l’appareil reproducteur (ovaires/testicules), insuffisance surrénalienne, règles douloureuses, absence de règles, fatigue, sécrétion et écoulement de lait par la glande mammaire, hypoglycémie (diminution du taux de sucre dans le sang), apnée du sommeil (pauses respiratoires pendant le sommeil).</p>
+<p class=AmmAnnexeTitre3>Déclaration des effets secondaires</p>
+<p class=AmmCorpsTexte>Si vous ressentez un quelconque effet indésirable, parlez-en à votre médecin ou votre pharmacien. Ceci s’applique aussi à tout effet indésirable qui ne serait pas mentionné dans cette notice. Vous pouvez également déclarer les effets indésirables directement via le système national de déclaration : Agence nationale de sécurité du médicament et des produits de santé (ANSM) et réseau des Centres Régionaux de Pharmacovigilance - Site internet :<span style='color:red'> </span><span class=MsoHyperlink>https://signalement.social-sante.gouv.fr</span></p>
+<p class=AmmCorpsTexte>En signalant les effets indésirables, vous contribuez à fournir davantage d’informations sur la sécurité du médicament.</p>
+<h2><a name="Ann3bConservation">5. COMMENT CONSERVER METHADONE AP-HP 5 mg, gélule ?</a>&nbsp;&nbsp;<a href='#HautDePage'><img src='img/BackToTop.jpg' width='15px' height='15px' alt='Retour en haut de la page' title='Retour en haut de la page' /></a></h2>
+<p class=AmmCorpsTexte>Tenir ce médicament hors de la vue et de la portée des enfants.</p>
+<p class=AmmCorpsTexte><a name="_Hlk133856288">Conservez ce médicament dans un endroit sûr et sécurisé auquel personne d’autre que vous n’a accès. La prise de ce médicament par des personnes auxquelles il n’a pas été prescrit peut entraîner un risque grave pour leur santé et leur décès.</a></p>
+<p class=AmmCorpsTexte>N’utilisez pas ce médicament après la date de péremption indiquée sur la boîte et les plaquettes, après EXP. La date de péremption fait référence au dernier jour de ce mois.</p>
+<p class=AmmCorpsTexte><span lang=FR-BE>A conserver à une température ne dépassant pas 30°C.</span></p>
+<p class=AmmCorpsTexte style='margin-bottom:0cm;margin-bottom:.0001pt'><span lang=FR-BE>Ne jetez aucun médicament au tout-à-l’égout <span style='color:black'>ou avec </span>les ordures ménagères. Demandez à votre pharmacien d’éliminer les médicaments que vous n’utilisez plus. Ces mesures contribueront à protéger l’environnement.</span></p>
+<h2><a name="Ann3bEmballage">6. CONTENU DE L’EMBALLAGE ET AUTRES INFORMATIONS</a>&nbsp;&nbsp;<a href='#HautDePage'><img src='img/BackToTop.jpg' width='15px' height='15px' alt='Retour en haut de la page' title='Retour en haut de la page' /></a></h2>
+<p class="AmmAnnexeTitre2"><a name="Ann3bContenu">Ce que contient METHADONE AP-HP 5 mg, gélule</a>&nbsp;&nbsp;<a href='#HautDePage'><img src='img/BackToTop.jpg' width='15px' height='15px' alt='Retour en haut de la page' title='Retour en haut de la page' /></a></p>
+<p class=AmmListePuces1><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>La substance active est :</p>
+<p class=AmmComposition style='margin-top:6.0pt;margin-right:0cm;margin-bottom: 6.0pt;margin-left:17.85pt'>Chlorhydrate de méthadone............................................................................................... 5 mg</p>
+<p class=AmmComposition align=center style='text-align:center'>Pour une gélule.</p>
+<p class=AmmListePuces1><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>Les autres composants sont : </p>
+<p class=AmmComposition style='margin-top:6.0pt;margin-right:0cm;margin-bottom: 6.0pt;margin-left:17.85pt'>Carmellose sodique, carboxyméthylamidon sodique (type A), stéarate de magnésium, silice colloïdale anhydre, lactose monohydraté.</p>
+<p class=AmmComposition style='margin-top:6.0pt;margin-right:0cm;margin-bottom: 6.0pt;margin-left:17.85pt'><span class='italique'><span class='souligne'>Enveloppe de la gélule</span></span> : gélatine, dioxyde de titane (E171), oxyde de fer (E172) jaune (uniquement pour la coiffe).</p>
+<p class="AmmAnnexeTitre2"><a name="RcpEmballage">Qu’est-ce que METHADONE AP-HP 5 mg, gélule et contenu de l’emballage extérieur</a>&nbsp;&nbsp;<a href='#HautDePage'><img src='img/BackToTop.jpg' width='15px' height='15px' alt='Retour en haut de la page' title='Retour en haut de la page' /></a></p>
+<p class=AmmCorpsTexte>Ce médicament se présente sous forme de gélule. Boîte de 7 gélules.</p>
+<p class="AmmAnnexeTitre2"><a name="Ann3bTituAMM">Titulaire de l’autorisation de mise sur le marché</a>&nbsp;&nbsp;<a href='#HautDePage'><img src='img/BackToTop.jpg' width='15px' height='15px' alt='Retour en haut de la page' title='Retour en haut de la page' /></a></p>
+<p class=AmmCorpsTexteGras style='margin-bottom:0cm;margin-bottom:.0001pt'>ASSISTANCE PUBLIQUE-HOPITAUX DE PARIS</p>
+<p class=AmmCorpsTexte style='margin-bottom:0cm;margin-bottom:.0001pt'><span style='text-transform:uppercase'>55 Boulevard DIDEROT</span></p>
+<p class=AmmCorpsTexte style='margin-bottom:0cm;margin-bottom:.0001pt'><span style='text-transform:uppercase'>CS 22305</span></p>
+<p class=AmmCorpsTexte><span style='text-transform:uppercase'>75610 Paris CEDEX 12</span></p>
+<p class="AmmAnnexeTitre2"><a name="Ann3bExploitAMM">Exploitant de l’autorisation de mise sur le marché</a>&nbsp;&nbsp;<a href='#HautDePage'><img src='img/BackToTop.jpg' width='15px' height='15px' alt='Retour en haut de la page' title='Retour en haut de la page' /></a></p>
+<p class=AmmCorpsTexteGras style='margin-bottom:0cm;margin-bottom:.0001pt'>LABORATOIRES BOUCHARA-RECORDATI</p>
+<p class=AmmCorpsTexte style='margin-bottom:0cm;margin-bottom:.0001pt'>IMMEUBLE LE WILSON</p>
+<p class=AmmCorpsTexte style='margin-bottom:0cm;margin-bottom:.0001pt'>70 AVENUE DU GENERAL DE GAULLE</p>
+<p class=AmmCorpsTexte style='margin-bottom:0cm;margin-bottom:.0001pt'>92800 PUTEAUX</p>
+<p class="AmmAnnexeTitre2"><a name="Ann3bFab">Fabricant</a>&nbsp;&nbsp;<a href='#HautDePage'><img src='img/BackToTop.jpg' width='15px' height='15px' alt='Retour en haut de la page' title='Retour en haut de la page' /></a></p>
+<p class=AmmCorpsTexteGras style='margin-bottom:0cm;margin-bottom:.0001pt'>LABORATOIRES BOUCHARA-RECORDATI</p>
+<p class=AmmCorpsTexte style='margin-bottom:0cm;margin-bottom:.0001pt'><span style='text-transform:uppercase'>Parc Mécatronic</span></p>
+<p class=AmmCorpsTexte>03410 SAINT-VICTOR </p>
+<p class=AmmCorpsTexte style='margin-top:6.0pt'>Ou</p>
+<p class=AmmCorpsTexteGras style='margin-top:6.0pt;margin-right:0cm;margin-bottom: 0cm;margin-left:0cm;margin-bottom:.0001pt'>SOPHARTEX</p>
+<p class=AmmCorpsTexte style='margin-bottom:0cm;margin-bottom:.0001pt'>21 RUE DU PRESSOIR</p>
+<p class=AmmCorpsTexte style='margin-bottom:0cm;margin-bottom:.0001pt'>28500 VERNOUILLET</p>
+<p class="AmmAnnexeTitre2"><a name="Ann3bNomsMediEEE">Noms du médicament dans les Etats membres de l'Espace Economique Européen</a>&nbsp;&nbsp;<a href='#HautDePage'><img src='img/BackToTop.jpg' width='15px' height='15px' alt='Retour en haut de la page' title='Retour en haut de la page' /></a></p>
+<p class=AmmCorpsTexte>Sans objet.</p>
+<p class="AmmAnnexeTitre2"><a name="Ann3bContenu">La dernière date à laquelle cette notice a été révisée est :</a>&nbsp;&nbsp;<a href='#HautDePage'><img src='img/BackToTop.jpg' width='15px' height='15px' alt='Retour en haut de la page' title='Retour en haut de la page' /></a></p>
+<p class=AmmCorpsTexte>[à compléter ultérieurement par le titulaire]</p>
+<p class="AmmAnnexeTitre2"><a name="Ann3bAutres">Autres</a>&nbsp;&nbsp;<a href='#HautDePage'><img src='img/BackToTop.jpg' width='15px' height='15px' alt='Retour en haut de la page' title='Retour en haut de la page' /></a></p>
+<p class=AmmCorpsTexte>Des informations détaillées sur ce médicament sont disponibles sur le site Internet de l’ANSM (France).</p>
+</div>					
+					<p class="alignright"><a href="#HautDePage">Retour en haut de la page <img src="img/BackToTop.jpg" width="20px" height="20px" alt="Retour en haut de la page" title="Retour en haut de la page" /></a></p>
+				</div>
+			</div>
+		</div>
+	</div>
+
+<table summary="" class="content" width="1000">
+	<tr>
+		<td height="100px">&nbsp;</td>
+	</tr>
+</table>
+<table summary="Pied de page" class="footer" width="1000">
+	<tr>
+		<td>
+			<table summary="" class="tablealigncenter" border="0">
+				<tr>
+					<td width="100px" class="aligncenter"><a id="lien_ansm" href="http://ansm.sante.fr/" target="_blank"><img src="img/Logo_ANSM.png" width="150" height="60" alt="ANSM - Agence nationale de sécurité du médicament et des produits de santé" title="L'ANSM met à disposition les principales informations issues de l'Autorisation de mise sur le marché, l'appartenance à un groupe générique, les liens vers les informations de sécurité qu'elle publie, l'identification des médicaments sous surveillance renforcée - nouvelle fenêtre" /></a></td>
+					          <td>&nbsp;</td>
+					<td width="100px" class="aligncenter"><img src="img/Logo_HAS.png" width="150" height="60" alt="HAS - Haute autorité de santé" title="La HAS met à disposition les informations relatives au service médical rendu, à l'amélioration du service médical rendu ainsi que les liens vers les avis de la Commission de la Transparence correspondants - nouvelle fenêtre" /></td>
+					<td>&nbsp;</td>
+					<td width="100px" class="aligncenter"><img src="img/Logo_CNAM.png" width="150" height="60" alt="UNCAM - Unin nationale des caisses d'assurance maladie" title="L'UNCAM met à disposition le taux de remboursement, le prix et les indications remboursables le cas échéant, ainsi que l'agrément aux collectivités - nouvelle fenêtre" /></td>
+          				</tr>
+			</table> 
+		</td>
+	</tr>
+</table>
+<table summary="" class="finpage" width="1000">
+	<tr>
+		<td height="100px" class="aligncenter">
+			<a class="navigation" href="plan.php">Plan du site</a>&nbsp;|&nbsp;
+			<a class="navigation" href="accessibilite.php">Accessibilité</a>&nbsp;|&nbsp;
+			<a class="navigation" href="contact.php">Contact</a>&nbsp;|&nbsp;
+			<a class="navigation" href="telechargement.php">Téléchargement</a>&nbsp;|&nbsp;
+			<a class="navigation" href="DeclarationConfidentialite.php">Declaration de confidentialité</a>&nbsp;|&nbsp;
+			<a class="navigation" href="http://www.service-public.fr/" title="Service Public - Nouvelle fenêtre" target="_blank">Service-Public.fr</a>&nbsp;|&nbsp;
+			<a class="navigation" href="http://www.legifrance.gouv.fr/" title="Legifrance - Nouvelle fenêtre" target="_blank">Legifrance</a>&nbsp;|&nbsp;
+			<a class="navigation" href="http://www.gouvernement.fr/" title="Gouvernement - Nouvelle fenêtre" target="_blank" >Gouvernement.fr</a>
+		</td>
+	</tr>
+</table>
+
+
+
+<!-- Matomo -->
+<script type="text/javascript">
+  var _paq = window._paq = window._paq || [];
+  /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
+  _paq.push(['trackPageView']);
+  _paq.push(['enableLinkTracking']);
+  (function() {
+    var u="https://stats.integra.fr/";
+    _paq.push(['setTrackerUrl', u+'matomo.php']);
+    _paq.push(['setSiteId', '79']);
+    var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+    g.type='text/javascript'; g.async=true; g.src=u+'matomo.js'; s.parentNode.insertBefore(g,s);
+  })();
+</script>
+<!-- End Matomo Code -->
+
+
+
+</body>
+</html>

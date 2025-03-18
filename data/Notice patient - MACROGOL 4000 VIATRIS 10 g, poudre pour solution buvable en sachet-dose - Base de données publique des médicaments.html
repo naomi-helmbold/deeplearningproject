@@ -1,0 +1,360 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="fr" lang="fr">
+<head>
+	<title>Notice patient - MACROGOL 4000 VIATRIS 10 g, poudre pour solution buvable en sachet-dose  - Base de données publique des médicaments</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=windows-1252"/>
+	<meta name="robots" content="index, follow"/>
+	<meta name="Description" content="Base de données publique des médicaments"/>
+	<meta name="Keywords" content="base, données, publique, médicaments, Notice patient, MACROGOL 4000 VIATRIS 10 g, poudre pour solution buvable en sachet-dose "/>
+	<meta name="Subject" content="medicament"/>
+	<link href='https://fonts.googleapis.com/css?family=Noticia+Text' rel='stylesheet' type='text/css' />
+	<link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro' rel='stylesheet' type='text/css' />
+	<link href="style/style_bdm.css?v=2.2.3" type="text/css" rel="stylesheet"/>
+	<link href="style/style_RCP_Notice.css" type="text/css" rel="stylesheet"/>
+  <link rel="alternate" href="http://m.base-donnees-publique.medicaments.gouv.fr/#!info-66460615">
+    <script type="text/javascript" src="scripts/autocomplete.js?v=2.2.3"></script>
+	<script type="text/javascript" src="scripts/jquery.js"></script>
+    <script type="text/javascript" src="scripts/jquery-ui.min.js"></script>
+	<script type="text/javascript" src="scripts/common.js"></script>
+	<link rel="icon" type="image/x-icon" href="favicon.ico" />
+</head>
+
+<body>
+
+<a name="HautDePage" />
+<div id="bandeauhaut">
+	<a id="lien_ministere" class="lienmenu" href="http://www.sante.gouv.fr" target="_blank" title="Site du ministère des affaires sociales et de la santé - nouvelle fenêtre"><img id="logoministere" src="img/Logo_Ministere.jpg"  alt="Logo du ministère des affaires sociales et de la santé"/></a>
+	<h1 class="texteTitreSite">
+		Base <span class="texteBleu">de</span> données <span class="texteBleu">publique</span><br/><span class="texteBleu">des</span> médicaments
+	</h1>
+		<a id="lien_medicament_gouv" class="lienEspaceMedic" target="_blank" href="http://medicaments.gouv.fr" title="Visiter [medicaments.gouv.fr] - nouvelle fenêtre">Visiter [medicaments.gouv.fr] <img src="/img/icone_lien.png" alt="Visiter [medicaments.gouv.fr]"  title="Visiter [medicaments.gouv.fr] - nouvelle fenetre" /></a>
+</div>
+<!--div align="center">
+	<a id="banniere" target="_blank" href="http://social-sante.gouv.fr/soins-et-maladies/medicaments/medicaments-generiques/" title="Visiter [medicaments.gouv.fr] - M?dicaments g?n?riques">
+		<img width="1000"   src ="/img/carrouselbannieres.gif" alt="Visiter [medicaments.gouv.fr] - M?dicaments g?n?riques" title="Visiter [medicaments.gouv.fr] - M?dicaments g?n?riques" />
+	</a>
+</div-->
+
+<div id="menuhaut">
+	<span id="menuhaut_gauche">
+		<a id="lien_accueil" class="navigation" href="index.php">Accueil</a>&nbsp;|&nbsp;
+		<a id="lien_glossaire" class="navigation" href="glossaire.php">Glossaire</a>&nbsp;|&nbsp;
+		<a id="lien_aide" class="navigation" href="aide.php">Aide</a>		
+	</span>
+	
+		
+	<span id="menuhaut_dernmaj">
+        <br>Dernière <span title=" 2.4.4
+">mise à jour</span> le 03/03/2025	</span>
+</div>
+
+	<script language="javascript" type="text/javascript">
+		//<![CDATA[ 
+		function Aff(men) {
+			document.write("<ul class=\"menuDoc\">");
+			for(var no_rub=0;no_rub<men.num_rub;no_rub++) {
+				document.write("<li><a class='leftMenu' href='"+menu[no_rub].page+"'>");
+				document.write(men[no_rub].txt);
+				document.write("</a></li>");
+				if (men[no_rub].nb_lien != 0){
+					document.write("<ul class=\"sousMenuDoc\">");
+				}
+				for(var no_lien=0;no_lien<men[no_rub].nb_lien;no_lien++) {
+					document.write("<li><a class='leftMenu' href='"+men[no_rub][no_lien].page+"'>");
+					document.write(men[no_rub][no_lien].txt);
+					document.write("</a></li>");
+				}
+				if (men[no_rub].nb_lien != 0){
+					document.write("</ul>");
+				}
+			}
+			document.write("</ul>");
+		}
+		
+		function CreerMenu(police,imgRub,imgOption,imgOptionFin,hauteur) {
+			this.num_rub=0;
+			this.police=police;
+			this.imgRub=imgRub;
+			this.imgOpt=imgOption;
+			this.imgOptFin=imgOptionFin;
+			this.hauteur=hauteur;
+			this.AddRub=AddRub;
+			this.AddLien=AddLien;
+		}
+		
+		function AddRub(txt,aff,page) {
+			var rub = new Object;
+				rub.txt=txt;
+				rub.aff=aff;
+				rub.page=page;
+				rub.nb_lien=0;
+			this[this.num_rub]=rub;
+			this.num_rub++;
+		}
+
+		function AddLien(txt,page) {
+			var no_rub = this.num_rub-1;
+			var no_lien= this[no_rub].nb_lien;
+			var lien = new Object;
+				lien.txt=txt;
+				lien.page=page;
+			this[no_rub][no_lien]=lien;
+			this[no_rub].nb_lien++;
+		}
+		var menu=new CreerMenu("arial","img/dyn04.gif","img/dyn22.gif","img/dyn55.gif",18);
+		//]]> 
+		menu.AddRub("Description médicament","O","#Ann3bQuestceque");
+			menu.AddRub("Informations","O","#Ann3bInfoNecessaires");
+			menu.AddRub("Utilisation","O","#Ann3bCommentPrendre");
+			menu.AddRub("Effets indésirables","O","#Ann3bEffetsIndesirables");
+			menu.AddRub("Conservation","O","#Ann3bConservation");
+			menu.AddRub("Info. supplémentaires","O","#Ann3bEmballage");
+				</script>
+
+	<div id="container">
+		<div id="leftnav">
+			<div id="cadreMenuGauche">
+				<h2 class="sommaireMenu">Sommaire</h2>
+				<div id="menuGauche">
+					<script language="JavaScript" type="text/javascript">Aff(menu);</script>
+				</div>
+			</div>
+		</div>
+		<div id="contentPrincipal">
+			<div id="boutonsliens">
+				<a id='lien_fiche_info' href='extrait.php?specid=66460615' ><img id="ongletficheinfo" alt="Onglet fiche information" src="img/onglet_fiche_info_vert.png" /></a><a id='lien_rcp' href='affichageDoc.php?specid=66460615&amp;typedoc=R'><img class="onglet" alt="Onglet résumé des caractéristiques du produit" src="img/onglet_rcp_vert.png" /></a><a id='lien_notice' href='affichageDoc.php?specid=66460615&amp;typedoc=N'><img class="onglet" alt="Onglet notice patient" src="img/onglet_notice_gris.png" /></a>			</div>
+			<div class="titredeno">
+				<table summary="" border="0" cellspacing="0">
+					<tr><td colspan="3" height="10px"></td></tr>
+					<tr>
+						<td width="15px">&nbsp;</td>
+						<td width="685px"><h1 class="textedeno">MACROGOL 4000 VIATRIS 10 g, poudre pour solution buvable en sachet-dose  - Notice patient</h1></td>
+						<td width="43px" class="tdcenter"><a href="Javascript:void(null)" onclick="print();"><img src="img/imprimante.png" height="20px" width="20px" alt="Imprimer le document" title="Imprimer le document" border="0" /></a></td>
+					</tr>
+					<tr><td colspan="3" height="10px"></td></tr>
+				</table>
+			</div>
+			
+			<div id="contentDocument">
+				<div id="textDocument">
+					<p class="DateNotif">ANSM - Mis à jour le : 28/12/2021</p>
+<p class="AmmNoticeTitre1"><a name="Ann3bDenomination">Dénomination du médicament</a></p>
+<p class=AmmCorpsTexteGras align=center style='text-align:center'>MACROGOL 4000 VIATRIS 10 g, poudre pour solution buvable en sachet-dose</p>
+<p class=AmmCorpsTexteGras align=center style='text-align:center'>Macrogol 4000</p>
+<p class="AmmNoticeTitre1"><a name="Ann3bEncadre">Encadré</a></p>
+<p class=AmmCorpsTexteGras>Veuillez lire attentivement cette notice avant de prendre ce médicament car elle contient des informations importantes pour vous.</p>
+<p class=AmmCorpsTexte><span lang=FR-BE>Vous devez toujours prendre ce médicament en suivant scrupuleusement les informations fournies dans cette notice ou par votre médecin, votre pharmacien ou votre infirmier/ère.</span></p>
+<p class=AmmListePuces1><span lang=FR-BE style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span><span lang=FR-BE>Gardez cette notice. Vous pourriez avoir besoin de la relire.</span></p>
+<p class=AmmListePuces1><span lang=FR-BE style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span><span lang=FR-BE>Adressez-vous à votre pharmacien pour tout conseil ou information.</span></p>
+<p class=AmmListePuces1><span lang=FR-BE style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span><span lang=FR-BE>Si vous ressentez un quelconque effet indésirable, parlez-en à votre médecin, votre pharmacien ou votre infirmier/ère. Ceci s’applique aussi à tout effet indésirable qui ne serait pas mentionné dans cette notice. </span>Voir rubrique 4.</p>
+<p class=AmmListePuces1><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>Vous devez vous adresser à votre médecin si vous ne ressentez aucune amélioration ou si vous vous sentez moins bien.</p>
+<p class="AmmNoticeTitre1"><a name="Ann3bSomm">Que contient cette notice ?</a></p>
+<p class=AmmCorpsTexte style='margin-top:0cm;margin-right:0cm;margin-bottom: 0cm;margin-left:14.2pt;margin-bottom:.0001pt;text-indent:-14.2pt'>1. Qu'est-ce que MACROGOL 4000 VIATRIS 10 g, poudre pour solution buvable en sachet-dose et dans quels cas est-il utilisé ?</p>
+<p class=AmmCorpsTexte style='margin-top:0cm;margin-right:0cm;margin-bottom: 0cm;margin-left:14.2pt;margin-bottom:.0001pt;text-indent:-14.2pt'>2. Quelles sont les informations à connaître avant de prendre MACROGOL 4000 VIATRIS 10 g, poudre pour solution buvable en sachet-dose ?</p>
+<p class=AmmCorpsTexte style='margin-top:0cm;margin-right:0cm;margin-bottom: 0cm;margin-left:14.2pt;margin-bottom:.0001pt;text-indent:-14.2pt'>3. Comment prendre MACROGOL 4000 VIATRIS 10 g, poudre pour solution buvable en sachet&#8209;dose ?</p>
+<p class=AmmCorpsTexte style='margin-top:0cm;margin-right:0cm;margin-bottom: 0cm;margin-left:14.2pt;margin-bottom:.0001pt;text-indent:-14.2pt'>4. Quels sont les effets indésirables éventuels ?</p>
+<p class=AmmCorpsTexte style='margin-top:0cm;margin-right:0cm;margin-bottom: 0cm;margin-left:14.2pt;margin-bottom:.0001pt;text-indent:-14.2pt'>5. Comment conserver MACROGOL 4000 VIATRIS 10 g, poudre pour solution buvable en sachet&#8209;dose ?</p>
+<p class=AmmCorpsTexte style='margin-top:0cm;margin-right:0cm;margin-bottom: 0cm;margin-left:14.2pt;margin-bottom:.0001pt;text-indent:-14.2pt'>6. Contenu de l’emballage et autres informations.</p>
+<h2><a name="Ann3bQuestceque">1. QU’EST-CE QUE MACROGOL 4000 VIATRIS 10 g, poudre pour solution buvable en sachet-dose ET DANS QUELS CAS EST-IL UTILISE ?</a>&nbsp;&nbsp;<a href='#HautDePage'><img src='img/BackToTop.jpg' width='15px' height='15px' alt='Retour en haut de la page' title='Retour en haut de la page' /></a></h2>
+<p class=AmmCorpsTexte><a name="_Toc142279002">Classe pharmacothérapeutique</a> : laxatif osmotique - code ATC : A06AD15 (A : appareil digestif et métabolisme).</p>
+<p class=AmmCorpsTexte>MACROGOL 4000 VIATRIS contient la substance active macrogol 4000 et appartient à un groupe de médicaments appelés laxatifs osmotiques. Il permet d’augmenter la quantité d’eau dans les matières fécales, ce qui aide à résoudre les problèmes liés à un transit intestinal ralenti. MACROGOL 4000 VIATRIS n’est pas absorbé dans la circulation sanguine et n’est pas modifié dans l’organisme.</p>
+<p class=AmmCorpsTexte>MACROGOL 4000 VIATRIS est indiqué pour le traitement de la constipation chez l'adulte et l'enfant de plus de 8 ans.</p>
+<p class=AmmCorpsTexte>Ce médicament se présente sous forme d’une poudre qu’il faut dissoudre dans un verre d’eau (au minimum 50 ml) et boire. Son effet se manifeste généralement en 24h à 48h.</p>
+<p class=AmmCorpsTexte>Le traitement de la constipation par un médicament doit être associé à des règles d’hygiène de vie et à une alimentation saine.</p>
+<h2><a name="Ann3bInfoNecessaires">2. QUELLES SONT LES INFORMATIONS A CONNAITRE AVANT DE PRENDRE MACROGOL 4000 VIATRIS 10 g, poudre pour solution buvable en sachet-dose ?</a>&nbsp;&nbsp;<a href='#HautDePage'><img src='img/BackToTop.jpg' width='15px' height='15px' alt='Retour en haut de la page' title='Retour en haut de la page' /></a></h2>
+<p class=AmmCorpsTexteGras style='margin-top:6.0pt;page-break-after:avoid'>Ne prenez jamais MACROGOL 4000 VIATRIS 10 g, poudre pour solution buvable en sachet-dose :</p>
+<p class=AmmListePuces1><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>si vous êtes allergique (hypersensible) au macrogol (polyéthylène glycol) ou à l'un des autres composants contenus dans ce médicament, mentionnés dans la rubrique 6,</p>
+<p class=AmmListePuces1><span style='font-family: Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>si vous avez une maladie telle qu’une maladie sévère de l’intestin :</p>
+<p class=AmmListePuces2 style='page-break-after:auto'><span style='font-family: "Courier New"'>o<span style='font:7.0pt "Times New Roman"'>   </span></span>inflammation de l’intestin (telle que rectocolite hémorragique, maladie de Crohn, dilatation anormale de l’intestin),</p>
+<p class=AmmListePuces2 style='page-break-after:auto'><span style='font-family: "Courier New"'>o<span style='font:7.0pt "Times New Roman"'>   </span></span>perforation de l’intestin ou risque de perforation de l’intestin,</p>
+<p class=AmmListePuces2 style='page-break-after:auto'><span style='font-family: "Courier New"'>o<span style='font:7.0pt "Times New Roman"'>   </span></span>iléus ou suspicion d’obstruction de l’intestin,</p>
+<p class=AmmListePuces2 style='page-break-after:auto'><span style='font-family: "Courier New"'>o<span style='font:7.0pt "Times New Roman"'>   </span></span>douleurs abdominales de cause incertaine.</p>
+<p class=AmmCorpsTexte style='margin-top:6.0pt'>Ne prenez pas ce médicament si vous êtes atteint par l’une des affections citées ci-dessus. En cas de doute, parlez-en à votre médecin ou à votre pharmacien avant de prendre ce médicament.</p>
+<p class=AmmCorpsTexteGras><span lang=FR-BE>Avertissements et précautions</span></p>
+<p class=AmmCorpsTexte><span lang=FR-BE>Adressez-vous à votre médecin, pharmacien ou votre infirmier/ère avant de prendre</span> MACROGOL 4000 VIATRIS 10 g, poudre pour solution buvable en sachet-dose.</p>
+<p class=AmmCorpsTexte>Des cas de réactions allergiques se manifestant par une éruption sur la peau et un gonflement du visage ou de la gorge (angio-oedème) ont été rapportés chez l’adulte après la prise de médicaments contenant du macrogol (polyéthylène glycol).</p>
+<p class=AmmCorpsTexte>Des cas isolés de manifestations allergiques sévères ayant conduit à des pertes de connaissance, collapsus, ou difficultés respiratoires et sensations de malaise général ont été rapportés.</p>
+<p class=AmmCorpsTexteGras>Si vous présentez un de ces symptômes, arrêtez de prendre MACROGOL 4000 VIATRIS et contactez immédiatement votre médecin.</p>
+<p class=AmmCorpsTexte>Dans la mesure où ce médicament peut quelquefois engendrer une diarrhée, contactez votre médecin ou votre pharmacien avant de prendre ce médicament si :</p>
+<p class=AmmListePuces1><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>vous avez une fonction rénale ou hépatique altérée,</p>
+<p class=AmmListePuces1 style='margin-top:0cm;margin-right:0cm;margin-bottom: 6.0pt;margin-left:17.85pt;text-indent:-17.85pt'><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>vous prenez des diurétiques (médicaments augmentant l’élimination urinaire) ou vous êtes âgé, car vous êtes susceptible d’avoir une diminution de vos taux sanguins de sodium (sel) et de potassium.</p>
+<p class=AmmCorpsTexteGras><span style='font-weight:normal'>En cas de trouble de la déglutition, adressez-vous à votre médecin ou pharmacien avant de prendre MACROGOL VIATRIS 4000.</span></p>
+<p class=AmmCorpsTexteGras>Enfants et adolescents</p>
+<p class=AmmCorpsTexte>Sans objet.</p>
+<p class=AmmCorpsTexteGras>Autres médicaments et MACROGOL 4000 VIATRIS 10 g, poudre pour solution buvable en sachet-dose</p>
+<p class=AmmCorpsTexte>Il est possible que l'absorption d'autres médicaments puisse être transitoirement réduite lors de l’utilisation avec MACROGOL 4000 VIATRIS, en particulier des médicaments ayant un index thérapeutique étroit ou une demi-vie courte comme la digoxine, les antiépileptiques, les coumarines et les immunosuppresseurs, entraînant une diminution de l'efficacité.</p>
+<p class=AmmCorpsTexte>Si vous avez besoin d'épaissir des liquides afin de les avaler en toute sécurité, MACROGOL 4000 VIATRIS peut dénaturer l'effet de l'épaississant.Si vous prenez ou avez récemment pris d’autres médicaments, y compris un médicament obtenu sans ordonnance, parlez-en à votre médecin ou à votre pharmacien.</p>
+<p class=AmmCorpsTexteGras>MACROGOL 4000 VIATRIS 10 g, poudre pour solution buvable en sachet-dose avec des aliments, boissons et de l’alcool</p>
+<p class=AmmCorpsTexte>Sans objet.</p>
+<p class=AmmCorpsTexteGras><span lang=FR-BE>Grossesse et allaitement</span></p>
+<p class=AmmCorpsTexte>MACROGOL 4000 VIATRIS peut être pris pendant la grossesse et l’allaitement.</p>
+<p class=AmmCorpsTexte>Si vous êtes enceinte ou que vous allaitez, si vous pensez être enceinte ou planifiez une grossesse, demandez conseil à votre médecin ou pharmacien avant de prendre ce médicament.</p>
+<p class=AmmCorpsTexteGras>Conduite de véhicules et utilisation de machines</p>
+<p class=AmmCorpsTexte>Aucune étude sur les effets de MACROGOL 4000 VIATRIS 10 g, poudre pour solution buvable en sachet-dose sur l’aptitude à conduire des véhicules et à utiliser des machines n’a été réalisée..</p>
+<p class=AmmCorpsTexteGras>MACROGOL 4000 VIATRIS 10 g, poudre pour solution buvable en sachet-dose contient de l’anhydride sulfureux (E220), du sorbitol (E420), du glucose et du sodium.</p>
+<p class=AmmCorpsTexte align=left style='text-align:left;text-autospace:none'><span style='font-size:10.0pt;font-family:"Arial",sans-serif'>Ce médicament contient de l’anhydride sulfureux (E220) et peut, dans de rares cas, provoquer des réactions</span></p>
+<p class=AmmCorpsTexte>d’hypersensibilité sévères et des bronchospasmes. Si votre médecin vous a informé(e) d'une intolérance à certains sucres, contactez-le avant de prendre ce médicament.</p>
+<p class=AmmCorpsTexte>L’utilisation de ce médicament est déconseillée chez les patients présentant une intolérance au fructose (maladie héréditaire rare).</p>
+<p class=AmmCorpsTexte>Ce médicament contient 2 mg de sorbitol par sachet-dose. </p>
+<p class=AmmCorpsTexte>MACROGOL 4000 VIATRIS peut néanmoins être utilisé si vous êtes diabétique ou si vous devez suivre un régime exempt de galactose.</p>
+<p class=AmmCorpsTexte>Ce médicament contient moins de 1 mmol (23 mg) de sodium par dose, c.-à-d. qu’il est essentiellement « sans sodium ».</p>
+<h2><a name="Ann3bCommentPrendre">3. COMMENT PRENDRE MACROGOL 4000 VIATRIS 10 g, poudre pour solution buvable en sachet-dose ?</a>&nbsp;&nbsp;<a href='#HautDePage'><img src='img/BackToTop.jpg' width='15px' height='15px' alt='Retour en haut de la page' title='Retour en haut de la page' /></a></h2>
+<p class=AmmCorpsTexte><a name="_Hlk508614454"><span lang=FR-BE>Veillez à toujours prendre ce médicament en suivant exactement les instructions de cette notice ou les indications de votre médecin, pharmacien ou infirmier/ère. Vérifiez auprès de votre médecin, pharmacien ou infirmier/ère en cas de doute.</span></a></p>
+<p class=AmmCorpsTexteGras>Posologie</p>
+<p class=AmmCorpsTexte><span class='souligne'>Adultes et enfants de plus de 8 ans</span></p>
+<p class=AmmCorpsTexte>La dose habituelle recommandée est de 1 à 2 sachets par jour, de préférence en prise unique le matin.</p>
+<p class=AmmCorpsTexte>La dose journalière peut être adaptée à l’effet obtenu et peut varier de 1 sachet tous les 2 jours (chez les enfants en particulier) à 2 sachets par jour au maximum.</p>
+<p class=AmmCorpsTexte>Dissolvez le contenu du sachet dans un verre d’eau (au minimum 50 ml) immédiatement avant de prendre MACROGOL 4000 VIATRIS.</p>
+<p class=AmmCorpsTexte style='margin-top:6.0pt;page-break-after:avoid'>Notez que :</p>
+<p class=AmmListePuces1><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>MACROGOL 4000 VIATRIS agit habituellement en 24h à 48h.</p>
+<p class=AmmListePuces1><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>Chez les enfants, la durée de traitement par MACROGOL 4000 VIATRIS ne devrait pas excéder 3 mois.</p>
+<p class=AmmListePuces1><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>L’amélioration de votre transit intestinal après avoir pris MACROGOL 4000 VIATRIS peut être maintenue en adoptant des règles d’hygiène de vie et un régime alimentaire.</p>
+<p class=AmmListePuces1><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>Contactez votre pharmacien ou votre médecin si les symptômes s’aggravent ou persistent.</p>
+<p class=AmmCorpsTexteGras style='margin-top:6.0pt'>Si vous avez pris plus de MACROGOL 4000 VIATRIS 10 g, poudre pour solution buvable en sachet-dose que vous n’auriez dû :</p>
+<p class=AmmCorpsTexte>Prendre trop de MACROGOL 4000 VIATRIS peut engendrer une diarrhée, des douleurs abdominales ou des vomissements. La diarrhée disparaît habituellement quand le traitement est arrêté ou la dose diminuée.</p>
+<p class=AmmCorpsTexte>Si vous souffrez de diarrhée sévère ou de vomissements, vous devez contacter un médecin dès que possible car vous pourriez avoir besoin d’un traitement pour prévenir les pertes de sels (électrolytes) dues aux pertes de liquide.</p>
+<p class=AmmCorpsTexteGras style='margin-top:6.0pt;page-break-after:avoid'>Si vous oubliez de prendre MACROGOL 4000 VIATRIS 10 g, poudre pour solution buvable en sachet-dose :</p>
+<p class=AmmCorpsTexte>Prenez la dose mais ne la doublez pas pour compenser la dose que vous avez oublié de prendre.</p>
+<p class=AmmCorpsTexteGras>Si vous arrêtez de prendre MACROGOL 4000 VIATRIS 10 g, poudre pour solution buvable en sachet-dose :</p>
+<p class=AmmCorpsTexte>Sans objet.</p>
+<p class=AmmCorpsTexte>Si vous avez d’autres questions sur l’utilisation de ce médicament, demandez plus d’informations à votre médecin, à votre pharmacien ou à votre infirmier/ère.</p>
+<h2><a name="Ann3bEffetsIndesirables">4. QUELS SONT LES EFFETS INDESIRABLES EVENTUELS ?</a>&nbsp;&nbsp;<a href='#HautDePage'><img src='img/BackToTop.jpg' width='15px' height='15px' alt='Retour en haut de la page' title='Retour en haut de la page' /></a></h2>
+<p class=AmmCorpsTexte><a name="_Hlk508614539">Comme tous les médicaments, ce médicament peut provoquer des effets indésirables, mais ils ne surviennent pas systématiquement chez tout le monde.</a></p>
+<p class=AmmCorpsTexte>Les effets indésirables habituellement modérés et de courte durée incluent :</p>
+<p class=AmmAnnexeTitre3>Chez l’enfant :</p>
+<p class=AmmCorpsTexte><span class='souligne'>Fréquent (peut affecter jusqu’à 1 patient sur 10)</span></p>
+<p class=AmmListePuces1><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>Douleur abdominale</p>
+<p class=AmmListePuces1><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>Diarrhée qui peut entraîner une douleur au niveau de l’anus</p>
+<p class=AmmCorpsTexte style='margin-top:6.0pt;page-break-after:avoid'><span class='souligne'>Peu fréquent (peut affecter jusqu’à 1 patient sur 100)</span></p>
+<p class=AmmListePuces1><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>Nausées ou vomissements</p>
+<p class=AmmListePuces1><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>Ballonnements abdominaux</p>
+<p class=AmmCorpsTexte style='margin-top:6.0pt;page-break-after:avoid'><span class='souligne'>Fréquence indéterminée (fréquence ne pouvant être estimée à partir des données disponibles)</span></p>
+<p class=AmmListePuces1 style='margin-top:0cm;margin-right:0cm;margin-bottom: 6.0pt;margin-left:17.85pt;text-indent:-17.85pt'><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>Réaction allergique (hypersensibilité) à type d’éruption, urticaire, gonflement du visage ou de la gorge, difficultés respiratoires, perte de connaissance ou collapsus</p>
+<p class=AmmAnnexeTitre3>Chez l’adulte :</p>
+<p class=AmmCorpsTexte><span class='souligne'>Fréquent (peut affecter jusqu’à 1 patient sur 10)</span></p>
+<p class=AmmListePuces1><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>Douleur abdominale</p>
+<p class=AmmListePuces1><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>Ballonnements abdominaux</p>
+<p class=AmmListePuces1><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>Nausées</p>
+<p class=AmmListePuces1><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>Diarrhée</p>
+<p class=AmmCorpsTexte style='margin-top:6.0pt;page-break-after:avoid'><span class='souligne'>Peu fréquent (peut affecter jusqu’ à 1 patient sur 100)</span></p>
+<p class=AmmListePuces1><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>Vomissements</p>
+<p class=AmmListePuces1><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>Besoin impérieux d’aller à la selle</p>
+<p class=AmmListePuces1><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>Incontinence fécale</p>
+<p class=AmmCorpsTexte style='margin-top:6.0pt;page-break-after:avoid'><span class='souligne'>Fréquence indéterminée (fréquence ne pouvant être estimée à partir des données disponibles)</span></p>
+<p class=AmmListePuces1><span style='font-family: Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>Faible taux de potassium dans le sang ce qui peut provoquer une faiblesse musculaire, des contractions musculaires ou un rythme cardiaque anormal</p>
+<p class=AmmListePuces1><span style='font-family: Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>Faible taux de sodium dans le sang ce qui peut provoquer de la fatigue et de la confusion, des contractions musculaires, des convulsions et un coma</p>
+<p class=AmmListePuces1><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>Déshydratation provoquée par une diarrhée sévère, en particulier chez le sujet âgé</p>
+<p class=AmmListePuces1 style='margin-top:0cm;margin-right:0cm;margin-bottom: 6.0pt;margin-left:17.85pt;text-indent:-17.85pt'><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>Symptômes d’une réaction allergique tels que rougeur de la peau, éruption, urticaire, gonflement du visage ou de la gorge, difficultés respiratoires, perte de connaissance ou collapsus</p>
+<p class=AmmAnnexeTitre3>Déclaration des effets secondaires</p>
+<p class=AmmCorpsTexte>Si vous ressentez un quelconque effet indésirable, parlez-en à votre médecin, votre pharmacien ou à votre infirmier/ère. Ceci s’applique aussi à tout effet indésirable qui ne serait pas mentionné dans cette notice. Vous pouvez également déclarer les effets indésirables directement via le système national de déclaration : Agence nationale de sécurité du médicament et des produits de santé (ANSM) et réseau des Centres Régionaux de Pharmacovigilance - Site internet : <a href="http://www.signalement-sante.gouv.fr">www.signalement-sante.gouv.fr</a></p>
+<p class=AmmCorpsTexte>En signalant les effets indésirables, vous contribuez à fournir davantage d’informations sur la sécurité du médicament.</p>
+<h2><a name="Ann3bConservation">5. COMMENT CONSERVER MACROGOL 4000 VIATRIS 10 g, poudre pour solution buvable en sachet-dose ?</a>&nbsp;&nbsp;<a href='#HautDePage'><img src='img/BackToTop.jpg' width='15px' height='15px' alt='Retour en haut de la page' title='Retour en haut de la page' /></a></h2>
+<p class=AmmCorpsTexte>Tenir ce médicament hors de la vue et de la portée des enfants.</p>
+<p class=AmmCorpsTexte><span lang=FR-BE>N’utilisez pas ce médicament après la date de péremption indiquée sur la boîte. La date de péremption fait référence au dernier jour de ce mois.</span></p>
+<p class=AmmCorpsTexte><a name="_Toc142279025">Ce médicament ne nécessite pas de précaution particulière de conservation.</a></p>
+<p class=AmmCorpsTexte><span lang=FR-BE>Ne jetez aucun médicament au tout-à-l’égout ou avec les ordures ménagères. Demandez à votre pharmacien d’éliminer les médicaments que vous n’utilisez plus. Ces mesures contribueront à protéger l’environnement.</span></p>
+<h2><a name="Ann3bEmballage">6. CONTENU DE L’EMBALLAGE ET AUTRES INFORMATIONS</a>&nbsp;&nbsp;<a href='#HautDePage'><img src='img/BackToTop.jpg' width='15px' height='15px' alt='Retour en haut de la page' title='Retour en haut de la page' /></a></h2>
+<p class="AmmAnnexeTitre2"><a name="Ann3bContenu">Ce que contient MACROGOL 4000 VIATRIS 10 g, poudre pour solution buvable en sachet-dose</a>&nbsp;&nbsp;<a href='#HautDePage'><img src='img/BackToTop.jpg' width='15px' height='15px' alt='Retour en haut de la page' title='Retour en haut de la page' /></a></p>
+<p class=AmmListePuces1 style='margin-top:6.0pt;page-break-after:avoid'><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>La substance active est :</p>
+<p class=AmmComposition>Macrogol 4000.................................................................................................................... 10,000 g</p>
+<p class=AmmCorpsTexte align=center style='text-align:center'>Pour un sachet-dose.</p>
+<p class=AmmListePuces1 style='margin-top:6.0pt;page-break-after:avoid'><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>Les autres composants sont :</p>
+<p class=AmmCorpsTexte>Saccharine sodique et arôme orange-pamplemousse*</p>
+<p class=AmmCorpsTexte>*<span class='souligne'>Composition de l'arôme orange-pamplemousse</span> : huiles essentielles d'orange et de pamplemousse, citral, aldéhyde acétique, linalol, éthylbutyrate, alpha terpinéol, octanal, cis-3-hexénol, buthylhydroxyanisole (E320), maltodextrine, gomme arabique (E414), sorbitol (E420), anhydride sulfureux (E220).</p>
+<p class="AmmAnnexeTitre2"><a name="RcpEmballage">Qu’est-ce que MACROGOL 4000 VIATRIS 10 g, poudre pour solution buvable en sachet-dose et contenu de l’emballage extérieur</a>&nbsp;&nbsp;<a href='#HautDePage'><img src='img/BackToTop.jpg' width='15px' height='15px' alt='Retour en haut de la page' title='Retour en haut de la page' /></a></p>
+<p class=AmmCorpsTexte><a name="_Hlk508614653">Ce médicament se présente sous forme de poudre pour solution buvable en sachet-dose. Boîte de 10, 20, 50 ou 100 sachets.</a></p>
+<p class="AmmAnnexeTitre2"><a name="Ann3bTituAMM">Titulaire de l’autorisation de mise sur le marché</a>&nbsp;&nbsp;<a href='#HautDePage'><img src='img/BackToTop.jpg' width='15px' height='15px' alt='Retour en haut de la page' title='Retour en haut de la page' /></a></p>
+<p class=AmmCorpsTexteGras style='margin-bottom:0cm;margin-bottom:.0001pt'>VIATRIS SANTE</p>
+<p class=AmmCorpsTexte style='margin-bottom:0cm;margin-bottom:.0001pt'>1 RUE DE TURIN</p>
+<p class=AmmCorpsTexte>69007 LYON</p>
+<p class="AmmAnnexeTitre2"><a name="Ann3bExploitAMM">Exploitant de l’autorisation de mise sur le marché</a>&nbsp;&nbsp;<a href='#HautDePage'><img src='img/BackToTop.jpg' width='15px' height='15px' alt='Retour en haut de la page' title='Retour en haut de la page' /></a></p>
+<p class=AmmCorpsTexteGras style='margin-bottom:0cm;margin-bottom:.0001pt'>VIATRIS SANTE</p>
+<p class=AmmCorpsTexte style='margin-bottom:0cm;margin-bottom:.0001pt'>1 RUE DE TURIN</p>
+<p class=AmmCorpsTexte>69007 LYON</p>
+<p class="AmmAnnexeTitre2"><a name="Ann3bFab">Fabricant</a>&nbsp;&nbsp;<a href='#HautDePage'><img src='img/BackToTop.jpg' width='15px' height='15px' alt='Retour en haut de la page' title='Retour en haut de la page' /></a></p>
+<p class=AmmCorpsTexteGras style='margin-bottom:0cm;margin-bottom:.0001pt; page-break-after:avoid'><span lang=EN-US>LAMP SAN PROSPERO SPA</span></p>
+<p class=AmmCorpsTexte style='margin-bottom:0cm;margin-bottom:.0001pt; page-break-after:avoid'><span lang=EN-US>VIA DELLA PACE 25/A</span></p>
+<p class=AmmCorpsTexte style='margin-bottom:0cm;margin-bottom:.0001pt; page-break-after:avoid'><span lang=EN-US>41030 SAN PROSPERO</span></p>
+<p class=AmmCorpsTexte>ITALIE</p>
+<p class=AmmCorpsTexte style='margin-top:6.0pt'>ou</p>
+<p class=AmmCorpsTexteGras style='margin-bottom:0cm;margin-bottom:.0001pt'>VIATRIS SANTE</p>
+<p class=AmmCorpsTexte style='margin-bottom:0cm;margin-bottom:.0001pt'>1 RUE DE TURIN</p>
+<p class=AmmCorpsTexte>69007 LYON</p>
+<p class=AmmCorpsTexte style='margin-top:6.0pt'>ou</p>
+<p class=AmmCorpsTexteGras style='margin-bottom:0cm;margin-bottom:.0001pt'>ROTTAPHARM Ltd</p>
+<p class=AmmCorpsTexte style='margin-bottom:0cm;margin-bottom:.0001pt'>DAMASTOWN INDUSTRIAL PARK</p>
+<p class=AmmCorpsTexte style='margin-bottom:0cm;margin-bottom:.0001pt'>MULHUDDART</p>
+<p class=AmmCorpsTexte style='margin-bottom:0cm;margin-bottom:.0001pt'>DUBLIN 15, D15 XD71</p>
+<p class=AmmCorpsTexte>IRLANDE</p>
+<p class="AmmAnnexeTitre2"><a name="Ann3bNomsMediEEE">Noms du médicament dans les Etats membres de l'Espace Economique Européen</a>&nbsp;&nbsp;<a href='#HautDePage'><img src='img/BackToTop.jpg' width='15px' height='15px' alt='Retour en haut de la page' title='Retour en haut de la page' /></a></p>
+<p class=AmmCorpsTexte>Sans objet.</p>
+<p class="AmmAnnexeTitre2"><a name="Ann3bContenu">La dernière date à laquelle cette notice a été révisée est :</a>&nbsp;&nbsp;<a href='#HautDePage'><img src='img/BackToTop.jpg' width='15px' height='15px' alt='Retour en haut de la page' title='Retour en haut de la page' /></a></p>
+<p class=AmmCorpsTexte>[à compléter ultérieurement par le titulaire]</p>
+<p class="AmmAnnexeTitre2"><a name="Ann3bAutres">Autres</a>&nbsp;&nbsp;<a href='#HautDePage'><img src='img/BackToTop.jpg' width='15px' height='15px' alt='Retour en haut de la page' title='Retour en haut de la page' /></a></p>
+<p class=AmmCorpsTexte>Des informations détaillées sur ce médicament sont disponibles sur le site Internet de l’ANSM (France).</p>
+<p class=AmmCorpsTexte> </p>
+</div>					
+					<p class="alignright"><a href="#HautDePage">Retour en haut de la page <img src="img/BackToTop.jpg" width="20px" height="20px" alt="Retour en haut de la page" title="Retour en haut de la page" /></a></p>
+				</div>
+			</div>
+		</div>
+	</div>
+
+<table summary="" class="content" width="1000">
+	<tr>
+		<td height="100px">&nbsp;</td>
+	</tr>
+</table>
+<table summary="Pied de page" class="footer" width="1000">
+	<tr>
+		<td>
+			<table summary="" class="tablealigncenter" border="0">
+				<tr>
+					<td width="100px" class="aligncenter"><a id="lien_ansm" href="http://ansm.sante.fr/" target="_blank"><img src="img/Logo_ANSM.png" width="150" height="60" alt="ANSM - Agence nationale de sécurité du médicament et des produits de santé" title="L'ANSM met à disposition les principales informations issues de l'Autorisation de mise sur le marché, l'appartenance à un groupe générique, les liens vers les informations de sécurité qu'elle publie, l'identification des médicaments sous surveillance renforcée - nouvelle fenêtre" /></a></td>
+					          <td>&nbsp;</td>
+					<td width="100px" class="aligncenter"><img src="img/Logo_HAS.png" width="150" height="60" alt="HAS - Haute autorité de santé" title="La HAS met à disposition les informations relatives au service médical rendu, à l'amélioration du service médical rendu ainsi que les liens vers les avis de la Commission de la Transparence correspondants - nouvelle fenêtre" /></td>
+					<td>&nbsp;</td>
+					<td width="100px" class="aligncenter"><img src="img/Logo_CNAM.png" width="150" height="60" alt="UNCAM - Unin nationale des caisses d'assurance maladie" title="L'UNCAM met à disposition le taux de remboursement, le prix et les indications remboursables le cas échéant, ainsi que l'agrément aux collectivités - nouvelle fenêtre" /></td>
+          				</tr>
+			</table> 
+		</td>
+	</tr>
+</table>
+<table summary="" class="finpage" width="1000">
+	<tr>
+		<td height="100px" class="aligncenter">
+			<a class="navigation" href="plan.php">Plan du site</a>&nbsp;|&nbsp;
+			<a class="navigation" href="accessibilite.php">Accessibilité</a>&nbsp;|&nbsp;
+			<a class="navigation" href="contact.php">Contact</a>&nbsp;|&nbsp;
+			<a class="navigation" href="telechargement.php">Téléchargement</a>&nbsp;|&nbsp;
+			<a class="navigation" href="DeclarationConfidentialite.php">Declaration de confidentialité</a>&nbsp;|&nbsp;
+			<a class="navigation" href="http://www.service-public.fr/" title="Service Public - Nouvelle fenêtre" target="_blank">Service-Public.fr</a>&nbsp;|&nbsp;
+			<a class="navigation" href="http://www.legifrance.gouv.fr/" title="Legifrance - Nouvelle fenêtre" target="_blank">Legifrance</a>&nbsp;|&nbsp;
+			<a class="navigation" href="http://www.gouvernement.fr/" title="Gouvernement - Nouvelle fenêtre" target="_blank" >Gouvernement.fr</a>
+		</td>
+	</tr>
+</table>
+
+
+
+<!-- Matomo -->
+<script type="text/javascript">
+  var _paq = window._paq = window._paq || [];
+  /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
+  _paq.push(['trackPageView']);
+  _paq.push(['enableLinkTracking']);
+  (function() {
+    var u="https://stats.integra.fr/";
+    _paq.push(['setTrackerUrl', u+'matomo.php']);
+    _paq.push(['setSiteId', '79']);
+    var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+    g.type='text/javascript'; g.async=true; g.src=u+'matomo.js'; s.parentNode.insertBefore(g,s);
+  })();
+</script>
+<!-- End Matomo Code -->
+
+
+
+</body>
+</html>

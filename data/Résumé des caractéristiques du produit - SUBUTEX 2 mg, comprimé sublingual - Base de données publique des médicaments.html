@@ -1,0 +1,1061 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="fr" lang="fr">
+<head>
+	<title>Résumé des caractéristiques du produit - SUBUTEX 2 mg, comprimé sublingual  - Base de données publique des médicaments</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=windows-1252"/>
+	<meta name="robots" content="index, follow"/>
+	<meta name="Description" content="Base de données publique des médicaments"/>
+	<meta name="Keywords" content="base, données, publique, médicaments, Résumé des caractéristiques du produit, SUBUTEX 2 mg, comprimé sublingual "/>
+	<meta name="Subject" content="medicament"/>
+	<link href='https://fonts.googleapis.com/css?family=Noticia+Text' rel='stylesheet' type='text/css' />
+	<link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro' rel='stylesheet' type='text/css' />
+	<link href="style/style_bdm.css?v=2.2.3" type="text/css" rel="stylesheet"/>
+	<link href="style/style_RCP_Notice.css" type="text/css" rel="stylesheet"/>
+  <link rel="alternate" href="http://m.base-donnees-publique.medicaments.gouv.fr/#!info-65150204">
+    <script type="text/javascript" src="scripts/autocomplete.js?v=2.2.3"></script>
+	<script type="text/javascript" src="scripts/jquery.js"></script>
+    <script type="text/javascript" src="scripts/jquery-ui.min.js"></script>
+	<script type="text/javascript" src="scripts/common.js"></script>
+	<link rel="icon" type="image/x-icon" href="favicon.ico" />
+</head>
+
+<body>
+
+<a name="HautDePage" />
+<div id="bandeauhaut">
+	<a id="lien_ministere" class="lienmenu" href="http://www.sante.gouv.fr" target="_blank" title="Site du ministère des affaires sociales et de la santé - nouvelle fenêtre"><img id="logoministere" src="img/Logo_Ministere.jpg"  alt="Logo du ministère des affaires sociales et de la santé"/></a>
+	<h1 class="texteTitreSite">
+		Base <span class="texteBleu">de</span> données <span class="texteBleu">publique</span><br/><span class="texteBleu">des</span> médicaments
+	</h1>
+		<a id="lien_medicament_gouv" class="lienEspaceMedic" target="_blank" href="http://medicaments.gouv.fr" title="Visiter [medicaments.gouv.fr] - nouvelle fenêtre">Visiter [medicaments.gouv.fr] <img src="/img/icone_lien.png" alt="Visiter [medicaments.gouv.fr]"  title="Visiter [medicaments.gouv.fr] - nouvelle fenetre" /></a>
+</div>
+<!--div align="center">
+	<a id="banniere" target="_blank" href="http://social-sante.gouv.fr/soins-et-maladies/medicaments/medicaments-generiques/" title="Visiter [medicaments.gouv.fr] - M?dicaments g?n?riques">
+		<img width="1000"   src ="/img/carrouselbannieres.gif" alt="Visiter [medicaments.gouv.fr] - M?dicaments g?n?riques" title="Visiter [medicaments.gouv.fr] - M?dicaments g?n?riques" />
+	</a>
+</div-->
+
+<div id="menuhaut">
+	<span id="menuhaut_gauche">
+		<a id="lien_accueil" class="navigation" href="index.php">Accueil</a>&nbsp;|&nbsp;
+		<a id="lien_glossaire" class="navigation" href="glossaire.php">Glossaire</a>&nbsp;|&nbsp;
+		<a id="lien_aide" class="navigation" href="aide.php">Aide</a>		
+	</span>
+	
+		
+	<span id="menuhaut_dernmaj">
+        <br>Dernière <span title=" 2.4.4
+">mise à jour</span> le 03/03/2025	</span>
+</div>
+
+	<script language="javascript" type="text/javascript">
+		//<![CDATA[ 
+		function Aff(men) {
+			document.write("<ul class=\"menuDoc\">");
+			for(var no_rub=0;no_rub<men.num_rub;no_rub++) {
+				document.write("<li><a class='leftMenu' href='"+menu[no_rub].page+"'>");
+				document.write(men[no_rub].txt);
+				document.write("</a></li>");
+				if (men[no_rub].nb_lien != 0){
+					document.write("<ul class=\"sousMenuDoc\">");
+				}
+				for(var no_lien=0;no_lien<men[no_rub].nb_lien;no_lien++) {
+					document.write("<li><a class='leftMenu' href='"+men[no_rub][no_lien].page+"'>");
+					document.write(men[no_rub][no_lien].txt);
+					document.write("</a></li>");
+				}
+				if (men[no_rub].nb_lien != 0){
+					document.write("</ul>");
+				}
+			}
+			document.write("</ul>");
+		}
+		
+		function CreerMenu(police,imgRub,imgOption,imgOptionFin,hauteur) {
+			this.num_rub=0;
+			this.police=police;
+			this.imgRub=imgRub;
+			this.imgOpt=imgOption;
+			this.imgOptFin=imgOptionFin;
+			this.hauteur=hauteur;
+			this.AddRub=AddRub;
+			this.AddLien=AddLien;
+		}
+		
+		function AddRub(txt,aff,page) {
+			var rub = new Object;
+				rub.txt=txt;
+				rub.aff=aff;
+				rub.page=page;
+				rub.nb_lien=0;
+			this[this.num_rub]=rub;
+			this.num_rub++;
+		}
+
+		function AddLien(txt,page) {
+			var no_rub = this.num_rub-1;
+			var no_lien= this[no_rub].nb_lien;
+			var lien = new Object;
+				lien.txt=txt;
+				lien.page=page;
+			this[no_rub][no_lien]=lien;
+			this[no_rub].nb_lien++;
+		}
+		var menu=new CreerMenu("arial","img/dyn04.gif","img/dyn22.gif","img/dyn55.gif",18);
+		//]]> 
+		menu.AddRub("Dénomination","O","#RcpDenomination");
+			menu.AddRub("Composition","O","#RcpCompoQualiQuanti");
+			menu.AddRub("Forme pharma.","O","#RcpFormePharm");
+			menu.AddRub("Clinique","O","#RcpDonneesCliniques");
+			menu.AddLien("Indic. thérapeutiques","#RcpIndicTherap");
+				menu.AddLien("Posologie","#RcpPosoAdmin");
+				menu.AddLien("Contre-indications","#RcpContreindications");
+				menu.AddLien("Mise en garde","#RcpMisesEnGarde");
+				menu.AddLien("Interactions","#RcpInteractionsMed");
+				menu.AddLien("Grossesse, allait.","#RcpFertGrossAllait");
+				menu.AddLien("Conduite véhicules","#RcpConduite");
+				menu.AddLien("Effets indésirables","#RcpEffetsIndesirables");
+				menu.AddLien("Surdosage","#RcpSurdosage");
+				menu.AddRub("Pharmacologie","O","#RcpPropPharmacologiques");
+			menu.AddLien("Pharmacodynamie","#RcpPropPharmacodynamiques");
+				menu.AddLien("Pharmacocinétique","#RcpPropPharmacocinetiques");
+				menu.AddLien("Sécurité préclinique","#RcpSecuritePreclinique");
+				menu.AddRub("Pharmaceutique","O","#RcpDonneesPharmaceutiques");
+			menu.AddLien("Liste excipients","#RcpListeExcipients");
+				menu.AddLien("Incompatibilités","#RcpIncompatibilites");
+				menu.AddLien("Durée conservation","#RcpDureeConservation");
+				menu.AddLien("Conservation","#RcpPrecConservation");
+				menu.AddLien("Emballage","#RcpEmballage");
+				menu.AddLien("Utilisation/manipulation","#RcpPrecEmpl");
+				menu.AddRub("Titulaire AMM","O","#RcpTitulaireAmm");
+			menu.AddRub("Présentations","O","#RcpNumAutor");
+			menu.AddRub("Autorisation, renouv.","O","#RcpPremiereAutorisation");
+			menu.AddRub("Date de révision","O","#RcpDateRevision");
+			menu.AddRub("Dosimétrie","O","#RcpDosimetrie");
+			menu.AddRub("Préparation radiopharma.","O","#RcpInstPrepRadioph");
+				</script>
+
+	<div id="container">
+		<div id="leftnav">
+			<div id="cadreMenuGauche">
+				<h2 class="sommaireMenu">Sommaire</h2>
+				<div id="menuGauche">
+					<script language="JavaScript" type="text/javascript">Aff(menu);</script>
+				</div>
+			</div>
+		</div>
+		<div id="contentPrincipal">
+			<div id="boutonsliens">
+				<a id='lien_fiche_info' href='extrait.php?specid=65150204' ><img id="ongletficheinfo" alt="Onglet fiche information" src="img/onglet_fiche_info_vert.png" /></a><a id='lien_rcp' href='affichageDoc.php?specid=65150204&amp;typedoc=R'><img class="onglet" alt="Onglet résumé des caractéristiques du produit" src="img/onglet_rcp_gris.png" /></a><a id='lien_notice' href='affichageDoc.php?specid=65150204&amp;typedoc=N'><img class="onglet" alt="Onglet notice patient" src="img/onglet_notice_vert.png" /></a>			</div>
+			<div class="titredeno">
+				<table summary="" border="0" cellspacing="0">
+					<tr><td colspan="3" height="10px"></td></tr>
+					<tr>
+						<td width="15px">&nbsp;</td>
+						<td width="685px"><h1 class="textedeno">SUBUTEX 2 mg, comprimé sublingual  - Résumé des caractéristiques du produit</h1></td>
+						<td width="43px" class="tdcenter"><a href="Javascript:void(null)" onclick="print();"><img src="img/imprimante.png" height="20px" width="20px" alt="Imprimer le document" title="Imprimer le document" border="0" /></a></td>
+					</tr>
+					<tr><td colspan="3" height="10px"></td></tr>
+				</table>
+			</div>
+			
+			<div id="contentDocument">
+				<div id="textDocument">
+					<p class="DateNotif">ANSM - Mis à jour le : 30/09/2024</p>
+<p class="AmmAnnexeTitre1"><a name="RcpDenomination">1. DENOMINATION DU MEDICAMENT</a>&nbsp;&nbsp;<a href='#HautDePage'><img src='img/BackToTop.jpg' width='15px' height='15px' alt='Retour en haut de la page' title='Retour en haut de la page' /></a></p>
+<p class=AmmCorpsTexteGras>SUBUTEX 2 mg, comprimé sublingual</p>
+<p class="AmmAnnexeTitre1"><a name="RcpCompoQualiQuanti">2. COMPOSITION QUALITATIVE ET QUANTITATIVE</a>&nbsp;&nbsp;<a href='#HautDePage'><img src='img/BackToTop.jpg' width='15px' height='15px' alt='Retour en haut de la page' title='Retour en haut de la page' /></a></p>
+<p class=AmmComposition>Chlorhydrate de buprénorphine............................................................................................ 2,16 mg</p>
+<p class=AmmComposition>Quantité correspondant à buprénorphine base..................................................................... 2,00 mg</p>
+<p class=AmmCorpsTexte align=center style='margin-bottom:6.0pt;text-align:center'><span style='font-size:10.0pt;font-family:"Arial",sans-serif'>pour un comprimé.</span></p>
+<p class=AmmCorpsTexte>Excipient à effet notoire : lactose</p>
+<p class=AmmCorpsTexte>Pour la liste complète des excipients, voir rubrique 6.1.</p>
+<p class="AmmAnnexeTitre1"><a name="RcpFormePharm">3. FORME PHARMACEUTIQUE</a>&nbsp;&nbsp;<a href='#HautDePage'><img src='img/BackToTop.jpg' width='15px' height='15px' alt='Retour en haut de la page' title='Retour en haut de la page' /></a></p>
+<p class=AmmCorpsTexte><a name="_Toc142278915">Comprimé sublingual.</a></p>
+<p class=AmmCorpsTexte>Comprimé blanc à crème, ovale, plat, aux bords biseautés avec la gravure « B2 » sur une face.</p>
+<p class="AmmAnnexeTitre1"><a name="RcpDonneesCliniques">4. DONNEES CLINIQUES</a>&nbsp;&nbsp;<a href='#HautDePage'><img src='img/BackToTop.jpg' width='15px' height='15px' alt='Retour en haut de la page' title='Retour en haut de la page' /></a></p>
+<p class="AmmAnnexeTitre2"><a name="RcpIndicTherap">4.1. Indications thérapeutiques</a>&nbsp;&nbsp;<a href='#HautDePage'><img src='img/BackToTop.jpg' width='15px' height='15px' alt='Retour en haut de la page' title='Retour en haut de la page' /></a></p>
+<p class=AmmCorpsTexte><a name="_Toc142278917">Traitement substitutif de la pharmacodépendance aux opioïdes, dans le cadre d'une thérapeutique globale de prise en charge médicale, sociale et psychologique.</a></p>
+<p class=AmmCorpsTexte>Le traitement est réservé aux adultes et adolescents de plus de 15 ans, volontaires pour recevoir un traitement de la dépendance aux opioïdes.</p>
+<p class="AmmAnnexeTitre2"><a name="RcpPosoAdmin">4.2. Posologie et mode d'administration</a>&nbsp;&nbsp;<a href='#HautDePage'><img src='img/BackToTop.jpg' width='15px' height='15px' alt='Retour en haut de la page' title='Retour en haut de la page' /></a></p>
+<p class=AmmCorpsTexte>Le traitement doit se faire sous le contrôle d’un médecin spécialisé dans la prise en charge de la dépendance/addiction aux opiacés.</p>
+<p class=AmmCorpsTexte>Il est recommandé de prescrire le traitement par la buprénorphine dans le cadre d’une prise en charge globale de la dépendance aux opioïdes.</p>
+<p class=AmmCorpsTexte>Le résultat du traitement dépend, d'une part, de la posologie prescrite et d'autre part, des mesures médico-psychologiques et socio-éducatives associées pour le suivi des patients.</p>
+<p class=AmmCorpsTexte style='margin-bottom:6.0pt'><span class='gras'><span class='souligne'><span style='font-size: 10.0pt;font-family:"Arial",sans-serif'>Précautions à prendre avant l’induction du traitement</span></span></span></p>
+<p class=AmmCorpsTexte>Avant d'instaurer le traitement, le médecin doit prendre en compte le type de dépendance aux opioïdes (opioïdes à durée d'action longue ou courte), l'intervalle de temps écoulé depuis la dernière prise d'opioïdes et le niveau de dépendance aux opioïdes. Afin d'éviter de précipiter l'apparition d'un syndrome de sevrage, l'induction du traitement par buprénorphine doit être effectuée dès l'apparition des signes objectifs et évidents de sevrage (démontré par ex., par un score indiquant un sevrage léger à modéré sur l'échelle clinique validée des symptômes de sevrage des opioïdes (COWS)). </p>
+<p class=AmmCorpsTexte>Chez les patients dépendants à l’héroïne ou aux opioïdes à courte durée d’action, la première dose de buprénorphine doit être prise lors de l’apparition des premiers signes de sevrage mais doit intervenir au moins 6 heures après la dernière prise d’opioïdes.</p>
+<p class=AmmCorpsTexte>Chez les patients recevant de la méthadone, la dose de méthadone doit être diminuée à une posologie maximum de 30 mg/jour avant de commencer le traitement par la buprénorphine. La longue demi-vie de la méthadone doit être prise en compte lors de l’instauration du traitement par buprénorphine. La première dose de buprénorphine ne doit être prise que lorsque les premiers signes de sevrage apparaissent et généralement pas moins de 24 heures après la dernière prise de méthadone. La buprénorphine peut précipiter l'apparition de symptômes de sevrage chez les patients dépendants à la méthadone.</p>
+<p class=AmmAnnexeTitre3><a name="_Toc142278918">Posologie</a></p>
+<p class=AmmAnnexeTitre4><span class='gras'><span style='font-style:normal'>Mise en place du traitement (induction) :</span></span></p>
+<p class=AmmAnnexeTitre4><span style='font-style:normal;text-decoration:none'>La dose initiale recommandée chez l'adulte et l'adolescent âgé de plus de 15 ans est de 2 à 4 mg par jour. <a name="_Hlk174961076">Pour minimiser les symptômes de sevrage indésirables et l’usage d’opioïdes conséquents, et maintenir le patient sous traitement, cette dose peut être répétée jusqu’à 12 mg au premier jour. Dans certains cas, selon la réponse du patient, la dose au jour 1 peut être augmentée sans dépasser 24 mg de buprénorphine. </a>Pendant la phase d’instauration du traitement, il est recommandé de contrôler quotidiennement son administration afin de s’assurer que le comprimé est placé correctement sous la langue et d’observer la réponse du patient au traitement, ce qui permettra d’adapter efficacement la dose administrée en fonction de l’effet clinique obtenu chez le patient.</span></p>
+<p class=AmmAnnexeTitre4><span class='gras'><span style='font-style:normal'>Adaptation posologique et traitement d'entretien :</span></span></p>
+<p class=AmmAnnexeTitre4><span style='font-style:normal;text-decoration:none'>Suite à l'induction du traitement le jour 1, le patient doit être stabilisé à une dose d'entretien adéquate déterminée individuellement<a name="_Hlk174961206">. La titration de la buprénorphine permet d'obtenir une dose qui stabilise le patient et le maintien en traitement, guidé par une évaluation répétée de l'état clinique et psychologique du patient tel que la consommation et le besoin impérieux d'opioïdes, d'autres troubles addictifs associés, des symptômes d'anxiété et de dépression dus à des consommations ou des comorbidités psychiatriques.</a></span></p>
+<p class=AmmCorpsTexte>Une dose quotidienne d'entretien de 16 mg ou plus est recommandée sans dépasser 24 mg de buprénorphine.</p>
+<p class=AmmCorpsTexte>Pendant le traitement d'entretien, il est important de réévaluer périodiquement la dose (augmentation ou diminution) en fonction de l'état clinique et psychologique du patient, comme décrit ci-dessus.</p>
+<p class=AmmCorpsTexte>La buprénorphine fait partie d'un traitement intégré décidé avec le patient (décision partagée), impliquant si besoin les pairs, la famille et les proches, et combinant médication, réduction des risques et soutien psychosocial déterminé individuellement comme des interventions motivationnelles, psychoéducation, psychothérapies spécifiques, amélioration des conditions de vie, médicaments pour les comorbidités psychiatriques, etc.</p>
+<p class=AmmAnnexeTitre4><span style='font-style:normal'>Cette approche centrée sur le patient doit permettre une rémission (disparition des consommations problématiques de substances) et un rétablissement ciblant le développement de nouvelles habitudes de vie et stratégies comportementales et la diminution des vulnérabilités qui contribueront à améliorer l'autonomie fonctionnelle des patients pour leurs projets de vie et leur qualité de vie, et prévenir les rechutes.</span></p>
+<p class=AmmAnnexeTitre4><span style='font-style:normal;text-decoration:none'>Une délivrance quotidienne de la buprénorphine est recommandée, notamment pendant la période d’instauration du traitement. Par la suite et après stabilisation de son état, des quantités de médicament pour plusieurs jours de traitement pourront être remises au patient. Il est recommandé, cependant, de limiter la quantité du médicament délivré en une fois à 7 jours au maximum.</span></p>
+<p class=AmmAnnexeTitre4><span class='gras'><span style='font-style:normal'>Administration non quotidienne :</span></span></p>
+<p class=AmmAnnexeTitre4><span style='font-style:normal;text-decoration:none'>Après obtention d'une stabilisation satisfaisante, la fréquence d'administration du traitement peut être réduite à une administration tous les deux jours en doublant la dose quotidienne du patient. Par exemple, un patient stabilisé recevant une dose quotidienne de 8 mg de buprénorphine peut recevoir 16 mg de buprénorphine un jour sur deux, sans traitement les jours intermédiaires. Chez certains patients, après l'obtention d'une stabilisation satisfaisante, la fréquence d'administration du traitement peut être réduite à 3 administrations par semaine (par exemple lundi, mercredi et vendredi). La dose du lundi et du mercredi doit être égale à deux fois la dose quotidienne du patient, et la dose du vendredi doit être égale à trois fois la dose quotidienne du patient, sans traitement les jours intermédiaires. En aucun cas, la dose ne doit dépasser 24 mg de buprénorphine par jour. Cette posologie peut ne pas convenir aux patients nécessitant une dose quotidienne &gt; 8 mg de buprénorphine/jour.</span></p>
+<p class=AmmAnnexeTitre4><span class='gras'><span style='font-style:normal'>Objectifs du traitement, réduction des doses et arrêt du traitement (arrêt progressif) :</span></span></p>
+<p class=AmmAnnexeTitre4><a name="_Hlk174961244"><span style='font-style:normal; text-decoration:none'>Avant de commencer le traitement par buprénorphine, une stratégie de traitement comprenant la durée du traitement et les objectifs du traitement doit être convenue avec le patient.</span></a></p>
+<p class=AmmAnnexeTitre4><span style='font-style:normal;text-decoration:none'>Le trouble de l’usage des opioïdes est un trouble chronique, fréquemment associé à des comorbidités psychiatriques (c’est-à-dire des pathologies duelles) et à d’autres vulnérabilités qui contribuent au risque élevé de rechute. Le traitement doit être administré aussi longtemps que nécessaire (plusieurs mois à plusieurs années) pour permettre le processus de rémission et de rétablissement. La durée du traitement d'entretien doit être déterminée individuellement avant d'envisager, par décision partagée, la réduction et l'arrêt de la buprénorphine. </span></p>
+<p class=AmmAnnexeTitre4><span style='font-style:normal;text-decoration:none'>Pendant le traitement, des contacts fréquents doivent être établis entre le médecin et le patient pour évaluer la nécessité de poursuivre le traitement, envisager son arrêt et ajuster les posologies si nécessaire. Lorsqu'un patient n'a plus besoin d'un traitement par buprénorphine, il peut être conseillé de réduire progressivement la dose pour prévenir les symptômes de sevrage (voir rubrique 4.4). La diminution doit être très progressive, au moins sur plusieurs mois, avec une réévaluation périodique comme mentionnée ci-dessus, pour s'assurer que le patient reste stable et éviter les rechutes et/ou le transfert de dépendance.</span></p>
+<p class=AmmAnnexeTitre4><span style='font-style:normal;text-decoration:none'>Lorsque l’évaluation clinique et la volonté du patient conduisent à envisager l’arrêt du traitement, celui-ci doit être effectué avec prudence. La décision d’arrêter le traitement par la buprénorphine après une période d'entretien ou de stabilisation brève doit être prise dans le cadre d’une prise en charge globale. Pour éviter des symptômes de sevrage et une rechute éventuelle, dans les cas favorables, la dose de buprénorphine peut être diminuée progressivement jusqu’à l’arrêt du traitement. Après une période de stabilisation jugée satisfaisante, si le patient l’accepte, le médecin pourra proposer au patient de diminuer progressivement sa dose de buprénorphine, jusqu'à un arrêt total du traitement de substitution dans les cas favorables. La mise à disposition de comprimés sublinguaux dosés respectivement à 0,4 mg, 2 mg et 8 mg permet une diminution progressive de la posologie. Durant la période d'arrêt du traitement, une attention particulière sera portée aux risques de rechute.</span></p>
+<p class=AmmCorpsTexte><span class='gras'><span class='souligne'>Populations particulières</span></span></p>
+<p class=AmmAnnexeTitre4>Sujets âgés </p>
+<p class=AmmCorpsTexte>La sécurité et l'efficacité de la buprénorphine chez les patients âgés de plus de 65 ans n’ont pas été établies. Aucune recommandation sur la posologie ne peut être donnée.</p>
+<p class=AmmAnnexeTitre4>Insuffisance hépatique</p>
+<p class=AmmCorpsTexte>Un bilan hépatique et la recherche d’une hépatite virale sont recommandés avant de commencer le traitement. </p>
+<p class=AmmCorpsTexte>L’effet de l’insuffisance hépatique sur la pharmacocinétique de la buprénorphine a été évalué dans une étude réalisée après commercialisation. En raison de la métabolisation importante de la buprénorphine, on retrouve des taux plasmatiques de buprénorphine plus élevés chez les patients atteints d’insuffisance hépatique. L’exposition systémique est légèrement augmentée chez les sujets atteints d’une insuffisance hépatique légère et aucun ajustement de posologie n’est jugé nécessaire. </p>
+<p class=AmmCorpsTexte>Après administration d’une dose unique de 2 mg, l’exposition systémique totale est significativement augmentée chez les sujets atteints d’insuffisance hépatique modérée (1,6 fois) et sévère (2,8 fois) comparée aux sujets sains. Les patients doivent être surveillés afin d’éviter les signes et symptômes de toxicité ou de surdosage causés par des taux élevés de buprénorphine. SUBUTEX doit être utilisé avec précaution chez les patients atteints d’insuffisance hépatique modérée et une diminution de la dose initiale et de la dose d’entretien doit être considérée. Compte tenu d’une exposition élevée chez les patients atteints d’insuffisance hépatique sévère et d’une possible accumulation après l’administration de doses répétées, SUBUTEX ne doit pas être utilisé chez les patients atteints d’insuffisance hépatique sévère (voir rubriques 4.3 et 5.2). </p>
+<p class=AmmCorpsTexte>Les patients présentant une hépatite virale, sous traitement médical concomitant (voir rubrique 4.5) et/ou souffrant d’un dysfonctionnement hépatique ont un risque plus élevé d’atteinte accélérée du foie. Un bilan hépatique initial et la recherche d'une hépatite virale sont recommandés avant de commencer le traitement. Il est recommandé de contrôler régulièrement la fonction hépatique (voir rubrique 4.4).</p>
+<p class=AmmAnnexeTitre4>Insuffisance rénale</p>
+<p class=AmmCorpsTexte>La modification de la posologie de la buprénorphine n’est généralement pas nécessaire chez les patients atteints d’insuffisance rénale. La prudence est recommandée chez les patients présentant une insuffisance rénale sévère (clairance de la créatinine &lt; 30 ml/min) (voir rubriques 4.4 et 5.2).</p>
+<p class=AmmAnnexeTitre4>Population pédiatrique</p>
+<p class=AmmCorpsTexte>La sécurité et l'efficacité de la buprénorphine chez les enfants âgés de moins de 15 ans n'ont pas été établies. Aucune donnée n'est disponible.</p>
+<p class=AmmCorpsTexte>En raison de l'absence de données chez les adolescents (âgés de 15 à 17 ans), ces patients doivent être surveillés plus étroitement pendant le traitement.</p>
+<p class=AmmAnnexeTitre3>Mode d’administration</p>
+<p class=AmmCorpsTexte>Administration par voie sublinguale : les médecins doivent informer les patients que la voie sublinguale constitue la seule voie efficace et bien tolérée pour l'administration de ce médicament. Le comprimé doit être maintenu sous la langue jusqu’à dissolution complète, ce qui intervient habituellement en 5 à 10 minutes. Les patients ne doivent pas avaler ou consommer des aliments ou des boissons avant la dissolution complète du comprimé.</p>
+<p class=AmmCorpsTexte>Une dose se compose de comprimés de SUBUTEX de différents dosages, qui peuvent être placés sous la langue simultanément ou en deux parts ; la deuxième part doit être placée sous la langue dès que le ou les comprimés de la première part sont dissous. </p>
+<p class=AmmCorpsTexte>Pour des instructions spécifiques concernant la posologie pendant le traitement d’induction, de stabilisation et d’entretien, se reporter aux sections ci-dessus intitulées « Mise en place du traitement (induction) » et « Adaptation posologique et traitement d’entretien ».</p>
+<p class="AmmAnnexeTitre2"><a name="RcpContreindications">4.3. Contre-indications</a>&nbsp;&nbsp;<a href='#HautDePage'><img src='img/BackToTop.jpg' width='15px' height='15px' alt='Retour en haut de la page' title='Retour en haut de la page' /></a></p>
+<p class=AmmCorpsTexte><a name="_Toc142278919">Hypersensibilité à la buprénorphine ou à l’un des excipients mentionnés à la rubrique 6.1.</a></p>
+<p class=AmmCorpsTexte>Enfants de moins de 15 ans.</p>
+<p class=AmmCorpsTexte>Insuffisance respiratoire sévère.</p>
+<p class=AmmCorpsTexte>Insuffisance hépatique sévère.</p>
+<p class=AmmCorpsTexte>Intoxication alcoolique aiguë ou delirium tremens.</p>
+<p class=AmmCorpsTexte>Association à la méthadone, les analgésiques morphiniques de palier III, la naltrexone, et le nalméfène (voir rubrique 4.5).</p>
+<p class="AmmAnnexeTitre2"><a name="RcpMisesEnGarde">4.4. Mises en garde spéciales et précautions d'emploi</a>&nbsp;&nbsp;<a href='#HautDePage'><img src='img/BackToTop.jpg' width='15px' height='15px' alt='Retour en haut de la page' title='Retour en haut de la page' /></a></p>
+<p class=AmmAnnexeTitre3><a name="_Toc142278920">Mises en garde</a></p>
+<p class=AmmCorpsTexte>Ce médicament est exclusivement réservé au traitement de la pharmacodépendance aux opioïdes.</p>
+<p class=AmmCorpsTexte>Utilisation chez l’adolescent- : en raison de l'absence de données chez l’adolescent (âgé de 15 à 17 ans), les patients appartenant à cette tranche d’âge doivent être plus étroitement surveillés pendant le traitement.</p>
+<p class=AmmCorpsTexte>Il est recommandé que ce traitement soit prescrit par des médecins assurant une prise en charge thérapeutique globale de la dépendance aux opioïdes.</p>
+<p class=AmmAnnexeTitre3>Mésusage, abus et usage détourné</p>
+<p class=AmmCorpsTexte>Tout comme les autres opioïdes, licites ou illicites, la buprénorphine peut être mal utilisée ou utilisée de manière abusive. Parmi les risques de mésusage et d’abus figurent le surdosage, la propagation d’infections virales ou d’infections localisées et systémiques transmises par voie sanguine, la dépression respiratoire et l’atteinte hépatique. Le mauvais usage de la buprénorphine par une personne autre que le patient à qui le produit est destiné risque également de créer une nouvelle catégorie d'individus primodépendants à cette substance ; ce type d’utilisation peut aussi apparaître lorsque le médicament est distribué directement par le patient en vue d’un usage illicite ou lorsque le médicament est volé, n’étant pas conservé en lieu sûr.</p>
+<p class=AmmCorpsTexte>En cas de mésusage intentionnel du médicament par voie intraveineuse, des réactions locales, parfois septiques (abcès, cellulite), des hépatites aiguës potentiellement graves et d'autres infections aiguës, telles que des pneumonies ou des endocardites, ont été rapportées.</p>
+<p class=AmmCorpsTexte>Un traitement sous-optimal par la buprénorphine peut indiquer un mauvais usage du médicament par le patient, pouvant entraîner un surdosage ou l’abandon du traitement. Un patient sous-dosé en buprénorphine peut continuer à gérer ses symptômes de sevrage et son envie irrépressible de consommer des opioïdes, de l’alcool ou d’autres nooleptiques (par exemple des benzodiazépines).</p>
+<p class=AmmCorpsTexte>Afin de réduire le risque de mésusage, d’abus et d’usage détourné, les médecins doivent prendre les mesures qui s’imposent lorsqu’ils prescrivent et administrent la buprénorphine, par exemple éviter de donner des ordonnances pour de multiples renouvellements dès le début de traitement ; d’autre part, ils doivent effectuer des visites de suivi du patient tout en mettant en place un contrôle clinique adapté aux besoins du patient.</p>
+<p class=AmmAnnexeTitre3><a name="_Hlk71301672">Troubles respiratoires du sommeil</a></p>
+<p class=AmmCorpsTexte>Les opioïdes peuvent provoquer des troubles respiratoires du sommeil, notamment l’apnée centrale du sommeil (ACS) et l’hypoxémie du sommeil. Le risque d’ACS augmente en fonction de la dose d’opioïdes utilisée. Chez les patients présentant une ACS, une diminution de la dose totale d’opioïdes doit être envisagée.</p>
+<p class=AmmAnnexeTitre3>Dépression respiratoire </p>
+<p class=AmmCorpsTexte>Des cas de décès par dépression respiratoire ont été observés, particulièrement lorsque la buprénorphine avait été utilisée en association avec des benzodiazépines (voir rubrique 4.5) ou lorsque la buprénorphine n’avait pas été utilisée conformément aux informations posologiques. Des décès ont également été rapportés après la prise concomitante de buprénorphine et d’autres dépresseurs tels que l’alcool ou d’autres opioïdes. </p>
+<p class=AmmCorpsTexte>L’administration de buprénorphine à des personnes non dépendantes aux opioïdes, qui ne sont pas tolérantes aux effets des opioïdes, peut entraîner une dépression respiratoire potentiellement mortelle.</p>
+<p class=AmmCorpsTexte>Ce produit doit être utilisé avec précaution chez les patients atteints d’asthme ou d’insuffisance respiratoire (telle qu'une maladie pulmonaire obstructive chronique, un cœur pulmonaire, une diminution de la capacité respiratoire, une hypoxie, une hypercapnie, une dépression respiratoire préexistante ou une cyphoscoliose (déformation de la colonne vertébrale pouvant entraîner une dyspnée).</p>
+<p class=AmmCorpsTexte>Les patients présentant les facteurs de risque physiques et/ou pharmacologiques ci-dessus doivent être surveillés et une réduction de la dose peut être envisagée.</p>
+<p class=AmmCorpsTexte>La buprénorphine peut provoquer une dépression respiratoire sévère potentiellement mortelle chez les enfants et les personnes non dépendantes qui l’ingèrent accidentellement ou de manière délibérée. Les patients doivent être avertis de conserver les plaquettes en sûreté, de ne jamais sortir à l’avance les comprimés de la plaquette, de tenir les plaquettes hors de portée des enfants et des autres membres de la famille et de ne pas prendre ce médicament devant les enfants. Un service d’urgence doit être immédiatement contacté en cas d’ingestion accidentelle ou de suspicion d’ingestion.</p>
+<p class=AmmAnnexeTitre3>Dépression du SNC</p>
+<p class=AmmCorpsTexte>La buprénorphine peut provoquer une somnolence, en particulier lorsqu'il y a prise/administration concomitante avec de l’alcool ou avec des dépresseurs du système nerveux central (tels que benzodiazépines, tranquillisants, sédatifs ou hypnotiques) (voir rubriques 4.5 et 4.7).</p>
+<p class=AmmCorpsTexte><a name="_Hlk57114687"><span class='gras'><span class='souligne'>Risque en cas d’utilisation concomitante de sédatifs tels que les benzodiazépines et médicaments apparentés</span></span></a></p>
+<p class=AmmCorpsTexte>L’utilisation concomitante de buprénorphine et de sédatifs tels que les benzodiazépines ou des médicaments apparentés peut entraîner une sédation, une dépression respiratoire, un coma et le décès. En raison de ces risques, la prescription concomitante de ces médicaments sédatifs doit être réservée aux patients pour lesquels il n’existe pas d’alternatives thérapeutiques. S’il est décidé de prescrire la buprénorphine avec des médicaments sédatifs, la dose minimale efficace des médicaments sédatifs doit être utilisée et la durée de traitement doit être la plus courte possible. </p>
+<p class=AmmCorpsTexte>Les patients doivent être étroitement surveillés afin que des signes et symptômes de dépression respiratoire et de sédation puissent être détectés. À cet égard, il est fortement recommandé d’informer les patients et leurs soignants qu’ils doivent être vigilants à ces symptômes (voir rubrique 4.5).</p>
+<p class=AmmAnnexeTitre3><a name="_Hlk57114713">Syndrome sérotoninergique</a></p>
+<p class=AmmCorpsTexte>L’administration concomitante de SUBUTEX et d’autres agents sérotoninergiques, tels que les inhibiteurs de la MAO, les inhibiteurs sélectifs de la recapture de la sérotonine (ISRS), les inhibiteurs de la recapture de la sérotonine et de la noradrénaline (IRSN) ou les antidépresseurs tricycliques, peut engendrer un syndrome sérotoninergique, qui est une maladie potentiellement mortelle (voir rubrique 4.5).</p>
+<p class=AmmCorpsTexte>Si un traitement concomitant avec d’autres agents sérotoninergiques est justifié sur le plan clinique, il est conseillé d’observer attentivement le patient, tout particulièrement pendant l’instauration du traitement et les augmentations de dose.</p>
+<p class=AmmCorpsTexte>Les symptômes du syndrome sérotoninergique peuvent comprendre des modifications de l’état mental, une instabilité autonome, des anomalies neuromusculaires et/ou des symptômes gastro-intestinaux.</p>
+<p class=AmmCorpsTexte>En cas de suspicion de syndrome sérotoninergique, une réduction de dose ou un arrêt du traitement devra être envisagé(e) en fonction de la gravité des symptômes.</p>
+<p class=AmmAnnexeTitre3>Tolérance et trouble de l’usage des opioïdes (abus et dépendance</p>
+<p class=AmmCorpsTexte>Des études chez l’animal, ainsi que des données cliniques, ont démontré qu’en cas d’administration chronique, la buprénorphine, un agoniste partiel des récepteurs µ aux opioïdes, peut provoquer une dépendance, celle-ci étant toutefois moindre que celle provoquée par un agoniste complet (tel que la morphine). </p>
+<p class=AmmCorpsTexte>Une tolérance, une dépendance physique et psychologique et un trouble de l'usage des opioïdes peuvent se développer lors de l'administration répétée d'opioïdes tels que la buprénorphine. L'abus ou le mésusage de buprénorphine peut entraîner un surdosage et/ou la mort. Le risque de développer un trouble de l'usage des opioïdes est accru chez les patients ayant des antécédents personnels ou familiaux (parents ou fratrie) de troubles liés à l'usage de substances (y compris les troubles liés à la consommation d'alcool), chez les fumeurs ou chez les patients ayant des antécédents personnels d'autres troubles de santé mentale (par ex. dépression majeure, anxiété et troubles de la personnalité). </p>
+<p class=AmmCorpsTexte>Avant de commencer le traitement par buprénorphine et pendant le traitement, les objectifs du traitement et un plan d'arrêt doivent être convenus avec le patient (voir rubrique 4.2). </p>
+<p class=AmmCorpsTexte>Les patients devront être surveillés pour détecter tout signe de comportement de recherche de médicaments (par exemple, demandes de renouvellement trop précoces). Cela comprend la surveillance de la prise concomitante d’opioïdes et de médicaments psychoactifs (comme les benzodiazépines). Pour les patients présentant des signes et symptômes du trouble de l’usage des opioïdes, une consultation avec un spécialiste en addictologie doit être envisagée. Une tolérance, une dépendance physique et psychologique et un trouble de l'usage des opioïdes peuvent se développer lors de l'administration répétée d'opioïdes tels que la buprénorphine. L'abus ou le mésusage de buprénorphine peut entraîner un surdosage et/ou la mort. Le risque de développer un trouble de l'usage des opioïdes est accru chez les patients ayant des antécédents personnels ou familiaux (parents ou fratrie) de troubles liés à l'usage de substances (y compris les troubles liés à la consommation d'alcool), chez les fumeurs ou chez les patients ayant des antécédents personnels d'autres troubles de santé mentale (par ex. dépression majeure, anxiété et troubles de la personnalité). </p>
+<p class=AmmCorpsTexte>Avant de commencer le traitement par buprénorphine et pendant le traitement, les objectifs du traitement et un plan d'arrêt doivent être convenus avec le patient (voir rubrique 4.2). </p>
+<p class=AmmCorpsTexte>Les patients devront être surveillés pour détecter tout signe de comportement de recherche de médicaments (par exemple, demandes de renouvellement trop précoces). Cela comprend la surveillance de la prise concomitante d’opioïdes et de médicaments psychoactifs (comme les benzodiazépines). Pour les patients présentant des signes et symptômes du trouble de l’usage des opioïdes, une consultation avec un spécialiste en addictologie doit être envisagée.</p>
+<p class=AmmCorpsTexte>L'interruption brutale du traitement peut entraîner un syndrome de sevrage, dont les premiers signes peuvent apparaître plus tard.</p>
+<p class=AmmAnnexeTitre3>Hépatite, atteintes hépatiques</p>
+<p class=AmmCorpsTexte>Des cas d’hépatite aiguë grave ont été rapportés lors de mésusage, notamment par voie intraveineuse (voir rubrique 4.8). Ces atteintes hépatiques ont surtout été observées à fortes doses, et pourraient être dues à une toxicité mitochondriale. Dans de nombreux cas, la présence d’un dysfonctionnement mitochondrial préexistant (maladie génétique, anomalies enzymatiques hépatiques, infection par le virus de l’hépatite B ou de l’hépatite C, abus d’alcool, anorexie, utilisation concomitante d’autres médicaments potentiellement hépatotoxiques) et la persistance d’injections de drogues peuvent être responsables de l’atteinte hépatique ou y contribuer. </p>
+<p class=AmmCorpsTexte>Les patients présentant une hépatite virale, sous traitement médical concomitant (voir rubrique 4.5) et/ou souffrant d’un dysfonctionnement hépatique ont un risque plus élevé d’atteinte du foie et ces facteurs sous-jacents doivent être pris en compte avant la prescription de buprénorphine et au cours du traitement (voir rubrique 4.2).</p>
+<p class=AmmCorpsTexte>En cas de suspicion d'atteinte hépatique, un bilan biologique et étiologique approfondi doit être pratiqué. En fonction des résultats obtenus, le traitement peut être interrompu avec prudence afin de prévenir l'apparition de symptômes de sevrage et d'éviter le retour à l'utilisation de drogues illicites. En cas de poursuite du traitement, il faudra étroitement surveiller la fonction hépatique.</p>
+<p class=AmmAnnexeTitre3>Précipitation du syndrome de sevrage aux opioïdes</p>
+<p class=AmmCorpsTexte>Lors de l'instauration du traitement par la buprénorphine, le médecin doit prendre en compte le profil agoniste partiel de la buprénorphine et être conscient que le traitement peut précipiter l’apparition d’un syndrome de sevrage chez les patients dépendants aux opioïdes, particulièrement si le traitement est administré moins de 6 heures après la dernière utilisation d’héroïne ou d’un autre opioïde à courte durée d’action, ou s’il est administré moins de 24 heures après la dernière prise de méthadone (conformément à la longue demi-vie de la méthadone). Les patients doivent être surveillés de près lors du passage de la méthadone à la buprénorphine car des symptômes de sevrage ont été signalés. Afin d’éviter de précipiter l’apparition d’un syndrome de sevrage, l’induction du traitement par buprénorphine doit être effectuée dès l’apparition des signes objectifs de sevrage (voir rubrique 4.2).</p>
+<p class=AmmCorpsTexte>Les symptômes de sevrage peuvent aussi être associés à un sous-dosage.</p>
+<p class=AmmAnnexeTitre3>Réactions allergiques</p>
+<p class=AmmCorpsTexte>Des cas d’hypersensibilité aiguë et chronique à la buprénorphine ont été rapportés dans les études cliniques et après la mise sur le marché. Les signes et symptômes les plus fréquents sont : rash, urticaire et prurit. Des cas de bronchospasme, d’angiœdème et de choc anaphylactique ont été signalés. Des antécédents d’hypersensibilité à la buprénorphine constituent une contre-indication à l’utilisation de la buprénorphine.</p>
+<p class=AmmAnnexeTitre3>Insuffisance hépatique</p>
+<p class=AmmCorpsTexte>L’effet de l’insuffisance hépatique sur la pharmacocinétique de la buprénorphine a été évalué dans une étude avec administration d’une dose unique réalisée après commercialisation. En raison de la métabolisation importante de la buprénorphine, on retrouve des taux plasmatiques de buprénorphine plus élevés chez les patients atteints d’insuffisance hépatique modérée et sévère. Les patients doivent être surveillés afin d’éviter les signes et symptômes de toxicité ou de surdosage causés par des taux élevés de buprénorphine. SUBUTEX doit être utilisé avec précaution chez les patients atteints d’insuffisance hépatique modérée. Chez les patients atteints d’insuffisance hépatique sévère, l’utilisation de la buprénorphine est contre-indiquée (voir rubriques 4.3 et 5.2). </p>
+<p class=AmmAnnexeTitre3>Insuffisance rénale</p>
+<p class=AmmCorpsTexte>L'élimination rénale peut être prolongée, car 30 % de la dose administrée sont éliminés par la voie rénale. Les métabolites de la buprénorphine s'accumulent chez les patients atteints d'insuffisance rénale. La prudence est recommandée chez les patients présentant une insuffisance rénale sévère (clairance de la créatinine &lt; 30 ml/min) (voir rubriques 4.2 et 5.2).</p>
+<p class=AmmAnnexeTitre3>Mises en garde générales relatives à la classe des opioïdes</p>
+<p class=AmmCorpsTexte>Les opioïdes peuvent provoquer une hypotension orthostatique.</p>
+<p class=AmmCorpsTexte>Les opioïdes peuvent augmenter la pression du liquide céphalo-rachidien, ce qui peut être à l’origine de crises épileptiques. Comme avec les autres opioïdes, la prudence est recommandée chez les patients traités par la buprénorphine qui présentent un traumatisme crânien, des lésions intracrâniennes et une augmentation de la pression intracrânienne ou qui ont des antécédents de crises épileptiques.</p>
+<p class=AmmCorpsTexte>Un myosis induit par les opioïdes, des altérations du niveau de conscience ou de la perception de la douleur en tant que symptôme de la maladie peuvent interférer avec l’évaluation du patient ou compliquer le diagnostic ou le traitement clinique d’une maladie concomitante.</p>
+<p class=AmmCorpsTexte>Les opioïdes doivent être utilisés avec précaution chez les patients atteints de myxœdème, d’hypothyroïdie ou d’insuffisance corticosurrénale (par exemple maladie d’Addison).</p>
+<p class=AmmCorpsTexte>Les opioïdes doivent être utilisés avec précaution chez les patients atteints d’hypotension, d’hypertrophie prostatique ou de sténose urétrale.</p>
+<p class=AmmCorpsTexte>Les opioïdes peuvent être responsables d’une augmentation de la pression intra-cholédocienne et doivent donc être utilisés avec précaution chez les patients présentant un dysfonctionnement des voies biliaires.</p>
+<p class=AmmCorpsTexte>Les opioïdes doivent être administrés avec précaution chez les patients âgés ou affaiblis.</p>
+<p class=AmmCorpsTexte>L’attention des sportifs doit être attirée sur le fait que cette spécialité contient de la buprénorphine et que ce principe actif est inscrit sur la liste des substances dopantes.</p>
+<p class=AmmCorpsTexte>Les associations suivantes ne sont pas recommandées avec la buprénorphine : analgésiques de palier II, éthylmorphine et alcool (voir rubrique 4.5).</p>
+<p class=AmmCorpsTexte><a name="_Hlk57114761"><span class='gras'>Excipients</span></a></p>
+<p class=AmmCorpsTexte>Ce médicament contient du lactose. Les patients présentant une intolérance au galactose, un déficit total en lactase ou un syndrome de malabsorption du glucose et du galactose (maladies héréditaires rares) ne doivent pas prendre ce médicament.</p>
+<p class=AmmCorpsTexte>Ce médicament contient moins de 1 mmol (23 mg) de sodium par comprimé, c.-à-d. qu’il est essentiellement « sans sodium ».</p>
+<p class="AmmAnnexeTitre2"><a name="RcpInteractionsMed">4.5. Interactions avec d'autres médicaments et autres formes d'interactions</a>&nbsp;&nbsp;<a href='#HautDePage'><img src='img/BackToTop.jpg' width='15px' height='15px' alt='Retour en haut de la page' title='Retour en haut de la page' /></a></p>
+<p class=AmmAnnexeTitre3><a name="_Toc142278921">Associations contre-indiquées</a></p>
+<p class=AmmCorpsTexte><span class='gras'>+ Méthadone :</span></p>
+<p class=AmmCorpsTexte>Diminution de l'effet de la méthadone par blocage compétitif des récepteurs, avec risque d’apparition d’un syndrome de sevrage.</p>
+<p class=AmmCorpsTexte><span class='gras'>+ Analgésiques morphiniques de palier III :</span></p>
+<p class=AmmCorpsTexte>Chez les patients utilisant des analgésiques de palier III, une diminution de l'effet antalgique du morphinique peut être observée, par blocage compétitif des récepteurs, avec risque d'apparition d’un syndrome de sevrage.</p>
+<p class=AmmCorpsTexte><a name="_Hlk63762132"><span class='gras'>+ Naltrexone et nalméfène : </span></a></p>
+<p class=AmmCorpsTexte>La naltrexone et le nalméfène sont des antagonistes des opioïdes susceptibles de bloquer les effets pharmacologiques de la buprénorphine. Pour les patients dépendants aux opioïdes recevant un traitement par buprénorphine, la co-administration de naltrexone et de nalméfène est contre indiquée, la naltrexone et le nalméfène pouvant précipiter l'apparition brutale de symptômes de sevrage aux opioïdes prolongés et intenses.</p>
+<p class=AmmAnnexeTitre3><a name="_Toc142278922">Associations déconseillées</a></p>
+<p class=AmmCorpsTexte><span class='gras'>+ Analgésiques de palier II (tramadol, codéine et dihydrocodéine) :</span> Une diminution de l’effet analgésique du morphinique peut être observée, par blocage compétitif des récepteurs, avec risque d'apparition d’un syndrome de sevrage. </p>
+<p class=AmmCorpsTexte><span class='gras'>+ Ethylmorphine :</span> Chez les patients utilisant de l’éthylmorphine, une diminution de l’effet analgésique du morphinique peut être observée, par blocage compétitif des récepteurs, avec risque d'apparition d’un syndrome de sevrage.</p>
+<p class=AmmCorpsTexte><span class='gras'>+ Alcool :</span></p>
+<p class=AmmCorpsTexte>L’alcool augmente l’effet sédatif de la buprénorphine, ce qui peut rendre dangereuses la conduite de véhicules et l’utilisation de machines.</p>
+<p class=AmmCorpsTexte>Les patients doivent éviter de prendre la buprénorphine avec des boissons alcoolisées ou des médicaments contenant de l’alcool.</p>
+<p class=AmmAnnexeTitre3><a name="_Toc142278923">Associations faisant l'objet de précautions d’emploi</a></p>
+<p class=AmmCorpsTexte align=left style='margin-bottom:6.0pt;text-align:left; page-break-after:avoid'><span class='gras'><span style='font-size:10.0pt;font-family:"Arial",sans-serif'>+ </span></span><a name="_Hlk57114796"><span class='gras'><span lang=fr style='font-size:10.0pt; font-family:"Arial",sans-serif'>Médicaments sédatifs tels que les benzodiazépines ou substances apparentées</span></span></a></p>
+<p class=AmmCorpsTexte style='margin-bottom:6.0pt;page-break-after:avoid'><a name="_Hlk57114866"><span style='font-size:10.0pt;font-family:"Arial",sans-serif'>L’utilisation concomitante d’opioïdes et de sédatifs tels que les benzodiazépines ou substances apparentées majore le risque de sédation, de dépression respiratoire, de coma et de décès en augmentant l’effet dépresseur du SNC. La dose du sédatif et la durée de son utilisation concomitante doivent être limitées Il convient de limiter autant que possible les doses et la durée de l’association (voir rubrique 4.4). </span></a><span style='font-size:10.0pt; font-family:"Arial",sans-serif'>Les patients doivent être informés qu’il est extrêmement dangereux de s’administrer soi-même des benzodiazépines qui n’ont pas été prescrites tout en prenant ce produit et doivent également être avertis qu’ils doivent suivre scrupuleusement les indications de leur médecin lorsqu’ils prennent des benzodiazépines (voir rubrique 4.4).</span></p>
+<p class=AmmCorpsTexte style='margin-bottom:6.0pt'><span class='gras'><span style='font-size:10.0pt; font-family:"Arial",sans-serif'>+ Gabapentinoïdes</span></span></p>
+<p class=AmmCorpsTexte style='margin-bottom:6.0pt'><span style='font-size:10.0pt; font-family:"Arial",sans-serif'>L'utilisation concomitante de buprénorphine avec des gabapentinoïdes (gabapentine et prégabaline) peut entraîner une dépression respiratoire, une hypotension, une sédation profonde, un coma ou la mort (voir rubrique 4.4).</span></p>
+<p class=AmmCorpsTexte style='margin-bottom:6.0pt;page-break-after:avoid'><span class='gras'><span style='font-size:10.0pt;font-family:"Arial",sans-serif'>+ Autres dépresseurs du système nerveux central</span></span></p>
+<p class=AmmCorpsTexte style='margin-bottom:6.0pt;page-break-after:avoid'><span style='font-size:10.0pt;font-family:"Arial",sans-serif'>D’autres dérivés opioïdes (par exemple les analgésiques et les antitussifs), certains antidépresseurs, antihistaminiques H<sub>1</sub> sédatifs, barbituriques, benzodiazépines, anxiolytiques autres que benzodiazépines, neuroleptiques, clonidine et substances apparentées administrés en association avec la buprénorphine majorent la dépression du système nerveux central. L'altération de la vigilance peut rendre dangereuses la conduite de véhicules et l'utilisation de machines.</span></p>
+<p class=AmmCorpsTexte style='margin-bottom:6.0pt'><span style='font-size:10.0pt; font-family:"Arial",sans-serif'>En outre, les barbituriques augmentent le risque de dépression respiratoire.</span></p>
+<p class=AmmCorpsTexte><a name="_Hlk57114899">+ <span class='gras'>Médicaments sérotoninergiques</span>, tels que les inhibiteurs de la MAO, les inhibiteurs sélectifs de la recapture de la sérotonine (ISRS), les inhibiteurs de la recapture de la sérotonine et de la noradrénaline (IRSN) ou les antidépresseurs tricycliques, car le risque de syndrome sérotoninergique, qui est une maladie potentiellement mortelle, est accru (voir rubrique 4.4).</a></p>
+<p class=AmmCorpsTexte style='margin-bottom:6.0pt;page-break-after:avoid'><span class='gras'><span style='font-size:10.0pt;font-family:"Arial",sans-serif'>+ Inhibiteurs du CYP3A4</span></span></p>
+<p class=AmmCorpsTexte style='margin-bottom:6.0pt;page-break-after:avoid'><span style='font-size:10.0pt;font-family:"Arial",sans-serif'>Une étude d’interaction entre la buprénorphine et le kétoconazole (inhibiteur puissant du CYP3A4) a montré une augmentation des C<sub>max</sub> et ASC (aire sous la courbe) de la buprénorphine (d’environ 50 % et 70 % respectivement) et, dans une moindre mesure, de la norbuprénorphine. Les patients traités par la buprénorphine doivent être étroitement surveillés et une diminution de la posologie peut s’avérer nécessaire en cas d’association avec un inhibiteur puissant du CYP3A4 (par exemple les inhibiteurs de la protéase tels que ritonavir, nelfinavir ou indinavir ou les antifongiques azolés tels que kétoconazole, itraconazole, voriconazole ou posaconazole).</span></p>
+<p class=AmmCorpsTexte style='margin-bottom:6.0pt'><span class='gras'><span style='font-size:10.0pt; font-family:"Arial",sans-serif'>+ Inducteurs</span></span><span class='gras'><span class='italique'><span style='font-size:10.0pt;font-family:"Arial",sans-serif'> </span></span></span><span class='gras'><span style='font-size:10.0pt;font-family:"Arial",sans-serif'>du CYP3A4</span></span></p>
+<p class=AmmCorpsTexte style='margin-bottom:6.0pt'><span style='font-size:10.0pt; font-family:"Arial",sans-serif'>Dans une étude clinique réalisée sur des volontaires sains, l’association de buprénorphine avec la rifampicine ou la rifabutine montre une diminution de 70 % et 35 % respectivement des concentrations plasmatiques de buprénorphine et l’apparition de symptômes de sevrage chez 50 % des 12 volontaires. Une surveillance étroite est recommandée chez les patients traités par buprénorphine si des inducteurs (par exemple phénobarbital, carbamazépine, phénytoïne, rifampicine) sont co-administrés. Le dosage de buprénorphine ou des inducteurs du CYP3A4 peut être ajusté en conséquence.</span></p>
+<p class=AmmCorpsTexte style='margin-bottom:6.0pt'><span class='gras'><span style='font-size:10.0pt; font-family:"Arial",sans-serif'>+ Anticholinergiques</span></span></p>
+<p class=AmmCorpsTexte style='margin-bottom:6.0pt'><span style='font-size:10.0pt; font-family:"Arial",sans-serif'>L'administration concomitante de buprénorphine avec des anticholinergiques ou des médicaments ayant une activité anticholinergique (par exemple, antidépresseurs tricycliques, antihistaminiques, antipsychotiques, myorelaxants, médicaments antiparkinsoniens) peut entraîner une augmentation des effets indésirables anticholinergiques.</span></p>
+<p class="AmmAnnexeTitre2"><a name="RcpFertGrossAllait">4.6. Fertilité, grossesse et allaitement</a>&nbsp;&nbsp;<a href='#HautDePage'><img src='img/BackToTop.jpg' width='15px' height='15px' alt='Retour en haut de la page' title='Retour en haut de la page' /></a></p>
+<p class=AmmAnnexeTitre3>Grossesse</p>
+<p class=AmmCorpsTexte style='margin-bottom:6.0pt'><span style='font-size:10.0pt; font-family:"Arial",sans-serif'>Compte tenu des données disponibles et du bénéfice materno/foetal, la buprénorphine peut être utilisée pendant la grossesse. Cependant, une adaptation de la posologie quotidienne peut être nécessaire afin de maintenir l’efficacité du traitement.</span></p>
+<p class=AmmCorpsTexte style='margin-bottom:6.0pt'><span style='font-size:10.0pt; font-family:"Arial",sans-serif'>La prise chronique de buprénorphine par la mère, quelle que soit la dose, à la fin de la grossesse, peut entraîner un syndrome de sevrage (cris aigus, mauvaise prise alimentaire, sommeil anormal, irritabilité, tremblement, hypertonie, myoclonie ou convulsions) chez le nouveau-né. Ce syndrome est généralement retardé de plusieurs heures à plusieurs jours après la naissance. Des cas de troubles respiratoires chez les nouveau-nés ont aussi été rapportés. Par conséquent, si la mère est traitée jusqu’à la fin de la grossesse, une surveillance doit être envisagée à la naissance et pendant plusieurs jours après. </span></p>
+<p class=AmmAnnexeTitre3><a name="_Toc142278927">Allaitement</a></p>
+<p class=MsoBodyText><span style='font-size:10.0pt;font-family:"Arial",sans-serif'>De très petites quantités de buprénorphine et de ses métabolites passent dans le lait maternel. Ces quantités ne sont pas suffisantes pour éviter le syndrome de sevrage qui peut être retardé chez les nourrissons allaités. Après une évaluation des facteurs de risque individuels, l'allaitement peut être envisagé chez les patientes traitées par la buprénorphine.</span></p>
+<p class=AmmAnnexeTitre3>Fertilité</p>
+<p class=MsoEndnoteText style='margin-bottom:6.0pt;text-align:justify'><span style='font-family:"Arial",sans-serif'>Dans une étude conduite avec des doses pharmacologiques chez la souris, une atrophie testiculaire avec calcification tubulaire a été mise en évidence chez des animaux traités.</span></p>
+<p class=MsoBodyText style='margin-bottom:0cm;margin-bottom:.0001pt'><a name="_Hlk63762144"><span style='font-size:10.0pt;font-family:"Arial",sans-serif'>Il n’a pas été observé d’effets indésirables sur la fertilité dans les études chez le rat ; cependant, des difficultés de mise bas ont été constatées (voir rubrique 5.3).</span></a></p>
+<p class="AmmAnnexeTitre2"><a name="RcpConduite">4.7. Effets sur l'aptitude à conduire des véhicules et à utiliser des machines</a>&nbsp;&nbsp;<a href='#HautDePage'><img src='img/BackToTop.jpg' width='15px' height='15px' alt='Retour en haut de la page' title='Retour en haut de la page' /></a></p>
+<p class=AmmCorpsTexte><a name="_Toc142278929">La buprénorphine a une influence mineure à modérée sur l’aptitude à conduire des véhicules et à utiliser des machines lorsqu’elle est administrée à des patients dépendants aux opioïdes. Ce médicament peut provoquer de la somnolence, des vertiges ou une confusion mentale, en particulier pendant l'induction du traitement et l'adaptation de la posologie. Si le produit est pris en même temps que de l’alcool ou des dépresseurs du système nerveux central, son effet risque d’être majoré (voir rubriques 4.4 et 4.5). Les patients doivent être avertis que la prise de buprénorphine peut affecter leur capacité à conduire et utiliser des machines dangereuses.</a></p>
+<p class="AmmAnnexeTitre2"><a name="RcpEffetsIndesirables">4.8. Effets indésirables</a>&nbsp;&nbsp;<a href='#HautDePage'><img src='img/BackToTop.jpg' width='15px' height='15px' alt='Retour en haut de la page' title='Retour en haut de la page' /></a></p>
+<p class=AmmCorpsTexte style='margin-bottom:6.0pt'><span class='gras'><span class='italique'><span style='font-size: 10.0pt;font-family:"Arial",sans-serif'>Résumé du profil de sécurité</span></span></span></p>
+<p class=AmmCorpsTexte style='margin-top:0cm;margin-right:-.05pt;margin-bottom: 6.0pt;margin-left:0cm'><span style='font-size:10.0pt;font-family:"Arial",sans-serif'>Les effets indésirables les plus fréquemment rapportés lors de l’étude clinique pivot étaient les effets liés au syndrome de sevrage (par exemple insomnie, céphalées, nausées et hyperhidrose).</span></p>
+<p class=AmmCorpsTexte style='margin-top:0cm;margin-right:-.05pt;margin-bottom: 6.0pt;margin-left:0cm;page-break-after:avoid'><span class='gras'><span class='italique'><span style='font-size: 10.0pt;font-family:"Arial",sans-serif'>Liste tabulée des effets indésirables</span></span></span></p>
+<p class=AmmCorpsTexte style='margin-bottom:6.0pt;page-break-after:avoid'><span style='font-size:10.0pt;font-family:"Arial",sans-serif'>Le Tableau 1 présente les effets indésirables les plus fréquemment rapportés lors d’une étude clinique pivot chez les patients traités avec la buprénorphine (n=103) versus placebo (n=107). La fréquence des effets indésirables éventuels répertoriés ci-dessous est définie selon la convention suivante : très fréquent (&#8805; 1/10) ; fréquent (&#8805; 1/100, &lt; 1/10) ; peu fréquent (&#8805; 1/1 000, &lt; 1/100) ; rare (&#8805; 1/10 000, &lt; 1/1 000) ; très rare (&lt; 1/10 000).</span></p>
+<p class=AmmCorpsTexte>Le Tableau 1 récapitule aussi les effets indésirables les plus fréquemment rapportés dans la base de données de pharmacovigilance globale du titulaire, identifiés dans les études cliniques et la surveillance du produit après commercialisation. La fréquence est dite indéterminée quand l’effet indésirable n’a pas été identifié dans l’étude clinique pivot.</p>
+<p class=AmmAnnexeTitre3>Tableau 1 : Effets indésirables observés dans une étude clinique pivot et/ou notifiés dans le cadre de la pharmacovigilance, présentés par classe de systèmes d’organes</p>
+<div align=center>
+<table class=AmmCorpsTexteTable border=1 cellspacing=0 cellpadding=0 width="109%"
+style='width:109.9%;border-collapse:collapse;border:none'>
+<thead>
+<tr>
+<td width="17%" valign=top style='width:17.36%;border:solid windowtext 1.0pt;
+padding:0cm 5.4pt 0cm 5.4pt'>
+<p class=AmmCorpsTexteGras align=center style='text-align:center'>Classe de systèmes d’organes</p>
+</td>
+<td width="13%" valign=top style='width:13.78%;border:solid windowtext 1.0pt;
+border-left:none;padding:0cm 5.4pt 0cm 5.4pt'>
+<p class=AmmCorpsTexteGras align=center style='text-align:center'>Très fréquent</p>
+</td>
+<td width="16%" valign=top style='width:16.92%;border:solid windowtext 1.0pt;
+border-left:none;padding:0cm 5.4pt 0cm 5.4pt'>
+<p class=AmmCorpsTexteGras align=center style='text-align:center'>Fréquent</p>
+</td>
+<td width="9%" valign=top style='width:9.96%;border:solid windowtext 1.0pt;
+border-left:none;padding:0cm 5.4pt 0cm 5.4pt'>
+<p class=AmmCorpsTexteGras align=center style='text-align:center'>Peu fréquent</p>
+</td>
+<td width="13%" valign=top style='width:13.34%;border:solid windowtext 1.0pt;
+border-left:none;padding:0cm 5.4pt 0cm 5.4pt'>
+<p class=AmmCorpsTexteGras align=center style='text-align:center'>Rare</p>
+</td>
+<td width="10%" valign=top style='width:10.6%;border:solid windowtext 1.0pt;
+border-left:none;padding:0cm 5.4pt 0cm 5.4pt'>
+<p class=AmmCorpsTexteGras align=center style='text-align:center'>Très rare</p>
+</td>
+<td width="18%" valign=top style='width:18.04%;border:solid windowtext 1.0pt;
+border-left:none;padding:0cm 5.4pt 0cm 5.4pt'>
+<p class=AmmCorpsTexteGras align=center style='text-align:center'>Fréquence indéterminée</p>
+</td>
+</tr>
+</thead>
+<tr>
+<td width="17%" valign=top style='width:17.36%;border:solid windowtext 1.0pt;
+border-top:none;padding:0cm 5.4pt 0cm 5.4pt'>
+<p class=AmmCorpsTexte align=left style='text-align:left'><span class='gras'>Infections et infestations</span></p>
+</td>
+<td width="13%" valign=top style='width:13.78%;border-top:none;border-left:
+none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+padding:0cm 5.4pt 0cm 5.4pt'>
+<p class=AmmCorpsTexte align=left style='text-align:left'>Infection</p>
+</td>
+<td width="16%" valign=top style='width:16.92%;border-top:none;border-left:
+none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+padding:0cm 5.4pt 0cm 5.4pt'>
+<p class=AmmCorpsTexte align=left style='text-align:left'>Pharyngite</p>
+</td>
+<td width="9%" valign=top style='width:9.96%;border-top:none;border-left:
+none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+padding:0cm 5.4pt 0cm 5.4pt'>
+<p class=AmmCorpsTexte align=left style='text-align:left'> </p>
+</td>
+<td width="13%" valign=top style='width:13.34%;border-top:none;border-left:
+none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+padding:0cm 5.4pt 0cm 5.4pt'>
+<p class=AmmCorpsTexte align=left style='text-align:left'> </p>
+</td>
+<td width="10%" valign=top style='width:10.6%;border-top:none;border-left:
+none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+padding:0cm 5.4pt 0cm 5.4pt'>
+<p class=AmmCorpsTexte align=left style='text-align:left'> </p>
+</td>
+<td width="18%" valign=top style='width:18.04%;border-top:none;border-left:
+none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+padding:0cm 5.4pt 0cm 5.4pt'>
+<p class=AmmCorpsTexte align=left style='text-align:left'> </p>
+</td>
+</tr>
+<tr>
+<td width="17%" valign=top style='width:17.36%;border:solid windowtext 1.0pt;
+border-top:none;padding:0cm 5.4pt 0cm 5.4pt'>
+<p class=AmmCorpsTexte align=left style='text-align:left'><span class='gras'>Troubles psychiatriques</span></p>
+</td>
+<td width="13%" valign=top style='width:13.78%;border-top:none;border-left:
+none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+padding:0cm 5.4pt 0cm 5.4pt'>
+<p class=AmmCorpsTexte align=left style='text-align:left'>Insomnie</p>
+</td>
+<td width="16%" valign=top style='width:16.92%;border-top:none;border-left:
+none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+padding:0cm 5.4pt 0cm 5.4pt'>
+<p class=AmmCorpsTexte align=left style='text-align:left'>Agitation</p>
+<p class=AmmCorpsTexte align=left style='text-align:left'>Anxiété</p>
+<p class=AmmCorpsTexte align=left style='text-align:left'>Nervosité</p>
+</td>
+<td width="9%" valign=top style='width:9.96%;border-top:none;border-left:
+none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+padding:0cm 5.4pt 0cm 5.4pt'>
+<p class=AmmCorpsTexte align=left style='text-align:left'> </p>
+</td>
+<td width="13%" valign=top style='width:13.34%;border-top:none;border-left:
+none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+padding:0cm 5.4pt 0cm 5.4pt'>
+<p class=AmmCorpsTexte align=left style='text-align:left'>Hallucination</p>
+</td>
+<td width="10%" valign=top style='width:10.6%;border-top:none;border-left:
+none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+padding:0cm 5.4pt 0cm 5.4pt'>
+<p class=AmmCorpsTexte align=left style='text-align:left'> </p>
+</td>
+<td width="18%" valign=top style='width:18.04%;border-top:none;border-left:
+none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+padding:0cm 5.4pt 0cm 5.4pt'>
+<p class=AmmCorpsTexte align=left style='text-align:left'> </p>
+</td>
+</tr>
+<tr>
+<td width="17%" valign=top style='width:17.36%;border:solid windowtext 1.0pt;
+border-top:none;padding:0cm 5.4pt 0cm 5.4pt'>
+<p class=AmmCorpsTexte align=left style='text-align:left'><span class='gras'>Affections du système nerveux</span></p>
+</td>
+<td width="13%" valign=top style='width:13.78%;border-top:none;border-left:
+none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+padding:0cm 5.4pt 0cm 5.4pt'>
+<p class=AmmCorpsTexte align=left style='text-align:left'>Céphalée</p>
+</td>
+<td width="16%" valign=top style='width:16.92%;border-top:none;border-left:
+none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+padding:0cm 5.4pt 0cm 5.4pt'>
+<p class=AmmCorpsTexte align=left style='text-align:left'>Migraine</p>
+<p class=AmmCorpsTexte align=left style='text-align:left'>Paresthésie</p>
+<p class=AmmCorpsTexte align=left style='text-align:left'>Somnolence</p>
+<p class=AmmCorpsTexte align=left style='text-align:left'>Syncope</p>
+<p class=AmmCorpsTexte align=left style='text-align:left'>Vertige</p>
+<p class=AmmCorpsTexte align=left style='text-align:left'>Hyperkinésie</p>
+</td>
+<td width="9%" valign=top style='width:9.96%;border-top:none;border-left:
+none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+padding:0cm 5.4pt 0cm 5.4pt'>
+<p class=AmmCorpsTexte align=left style='text-align:left'> </p>
+</td>
+<td width="13%" valign=top style='width:13.34%;border-top:none;border-left:
+none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+padding:0cm 5.4pt 0cm 5.4pt'>
+<p class=AmmCorpsTexte align=left style='text-align:left'> </p>
+</td>
+<td width="10%" valign=top style='width:10.6%;border-top:none;border-left:
+none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+padding:0cm 5.4pt 0cm 5.4pt'>
+<p class=AmmCorpsTexte align=left style='text-align:left'> </p>
+</td>
+<td width="18%" valign=top style='width:18.04%;border-top:none;border-left:
+none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+padding:0cm 5.4pt 0cm 5.4pt'>
+<p class=AmmCorpsTexte align=left style='text-align:left'> </p>
+</td>
+</tr>
+<tr>
+<td width="17%" valign=top style='width:17.36%;border:solid windowtext 1.0pt;
+border-top:none;padding:0cm 5.4pt 0cm 5.4pt'>
+<p class=AmmCorpsTexte align=left style='text-align:left'><span class='gras'>Affections vasculaires</span></p>
+</td>
+<td width="13%" valign=top style='width:13.78%;border-top:none;border-left:
+none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+padding:0cm 5.4pt 0cm 5.4pt'>
+<p class=AmmCorpsTexte align=left style='text-align:left'> </p>
+</td>
+<td width="16%" valign=top style='width:16.92%;border-top:none;border-left:
+none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+padding:0cm 5.4pt 0cm 5.4pt'>
+<p class=AmmCorpsTexte align=left style='text-align:left'>Hypotension orthostatique</p>
+</td>
+<td width="9%" valign=top style='width:9.96%;border-top:none;border-left:
+none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+padding:0cm 5.4pt 0cm 5.4pt'>
+<p class=AmmCorpsTexte align=left style='text-align:left'> </p>
+</td>
+<td width="13%" valign=top style='width:13.34%;border-top:none;border-left:
+none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+padding:0cm 5.4pt 0cm 5.4pt'>
+<p class=AmmCorpsTexte align=left style='text-align:left'> </p>
+</td>
+<td width="10%" valign=top style='width:10.6%;border-top:none;border-left:
+none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+padding:0cm 5.4pt 0cm 5.4pt'>
+<p class=AmmCorpsTexte align=left style='text-align:left'> </p>
+</td>
+<td width="18%" valign=top style='width:18.04%;border-top:none;border-left:
+none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+padding:0cm 5.4pt 0cm 5.4pt'>
+<p class=AmmCorpsTexte align=left style='text-align:left'> </p>
+</td>
+</tr>
+<tr>
+<td width="17%" valign=top style='width:17.36%;border:solid windowtext 1.0pt;
+border-top:none;padding:0cm 5.4pt 0cm 5.4pt'>
+<p class=AmmCorpsTexte align=left style='text-align:left'><span class='gras'>Affections respiratoires, thoraciques et médiastinales</span></p>
+</td>
+<td width="13%" valign=top style='width:13.78%;border-top:none;border-left:
+none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+padding:0cm 5.4pt 0cm 5.4pt'>
+<p class=AmmCorpsTexte align=left style='text-align:left'> </p>
+</td>
+<td width="16%" valign=top style='width:16.92%;border-top:none;border-left:
+none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+padding:0cm 5.4pt 0cm 5.4pt'>
+<p class=AmmCorpsTexte align=left style='text-align:left'>Dyspnée</p>
+</td>
+<td width="9%" valign=top style='width:9.96%;border-top:none;border-left:
+none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+padding:0cm 5.4pt 0cm 5.4pt'>
+<p class=AmmCorpsTexte align=left style='text-align:left'> </p>
+</td>
+<td width="13%" valign=top style='width:13.34%;border-top:none;border-left:
+none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+padding:0cm 5.4pt 0cm 5.4pt'>
+<p class=AmmCorpsTexte align=left style='text-align:left'>Dépression respiratoire<sup>1</sup></p>
+</td>
+<td width="10%" valign=top style='width:10.6%;border-top:none;border-left:
+none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+padding:0cm 5.4pt 0cm 5.4pt'>
+<p class=AmmCorpsTexte align=left style='text-align:left'> </p>
+</td>
+<td width="18%" valign=top style='width:18.04%;border-top:none;border-left:
+none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+padding:0cm 5.4pt 0cm 5.4pt'>
+<p class=AmmCorpsTexte align=left style='text-align:left'> </p>
+</td>
+</tr>
+<tr>
+<td width="17%" valign=top style='width:17.36%;border:solid windowtext 1.0pt;
+border-top:none;padding:0cm 5.4pt 0cm 5.4pt'>
+<p class=AmmCorpsTexte align=left style='text-align:left;page-break-after: avoid'><span class='gras'>Affections gastro-intestinales</span></p>
+</td>
+<td width="13%" valign=top style='width:13.78%;border-top:none;border-left:
+none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+padding:0cm 5.4pt 0cm 5.4pt'>
+<p class=AmmCorpsTexte align=left style='text-align:left;page-break-after: avoid'>Nausées</p>
+<p class=AmmCorpsTexte align=left style='text-align:left;page-break-after: avoid'>Douleur abdominale</p>
+</td>
+<td width="16%" valign=top style='width:16.92%;border-top:none;border-left:
+none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+padding:0cm 5.4pt 0cm 5.4pt'>
+<p class=AmmCorpsTexte align=left style='text-align:left;page-break-after: avoid'>Constipation</p>
+<p class=AmmCorpsTexte align=left style='text-align:left;page-break-after: avoid'>Vomissement </p>
+</td>
+<td width="9%" valign=top style='width:9.96%;border-top:none;border-left:
+none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+padding:0cm 5.4pt 0cm 5.4pt'>
+<p class=AmmCorpsTexte align=left style='text-align:left;page-break-after: avoid'> </p>
+</td>
+<td width="13%" valign=top style='width:13.34%;border-top:none;border-left:
+none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+padding:0cm 5.4pt 0cm 5.4pt'>
+<p class=AmmCorpsTexte align=left style='text-align:left;page-break-after: avoid'> </p>
+</td>
+<td width="10%" valign=top style='width:10.6%;border-top:none;border-left:
+none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+padding:0cm 5.4pt 0cm 5.4pt'>
+<p class=AmmCorpsTexte align=left style='text-align:left;page-break-after: avoid'> </p>
+</td>
+<td width="18%" valign=top style='width:18.04%;border-top:none;border-left:
+none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+padding:0cm 5.4pt 0cm 5.4pt'>
+<p class=AmmCorpsTexte align=left style='text-align:left;page-break-after: avoid'>Caries dentaires</p>
+</td>
+</tr>
+<tr>
+<td width="17%" valign=top style='width:17.36%;border:solid windowtext 1.0pt;
+border-top:none;padding:0cm 5.4pt 0cm 5.4pt'>
+<p class=AmmCorpsTexte align=left style='text-align:left'><span class='gras'>Affections de la peau et du tissu sous-cutané</span></p>
+</td>
+<td width="13%" valign=top style='width:13.78%;border-top:none;border-left:
+none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+padding:0cm 5.4pt 0cm 5.4pt'>
+<p class=AmmCorpsTexte align=left style='text-align:left'>Hyperhidrose</p>
+</td>
+<td width="16%" valign=top style='width:16.92%;border-top:none;border-left:
+none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+padding:0cm 5.4pt 0cm 5.4pt'>
+<p class=AmmCorpsTexte align=left style='text-align:left'> </p>
+</td>
+<td width="9%" valign=top style='width:9.96%;border-top:none;border-left:
+none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+padding:0cm 5.4pt 0cm 5.4pt'>
+<p class=AmmCorpsTexte align=left style='text-align:left'> </p>
+</td>
+<td width="13%" valign=top style='width:13.34%;border-top:none;border-left:
+none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+padding:0cm 5.4pt 0cm 5.4pt'>
+<p class=AmmCorpsTexte align=left style='text-align:left'> </p>
+</td>
+<td width="10%" valign=top style='width:10.6%;border-top:none;border-left:
+none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+padding:0cm 5.4pt 0cm 5.4pt'>
+<p class=AmmCorpsTexte align=left style='text-align:left'> </p>
+</td>
+<td width="18%" valign=top style='width:18.04%;border-top:none;border-left:
+none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+padding:0cm 5.4pt 0cm 5.4pt'>
+<p class=AmmCorpsTexte align=left style='text-align:left'> </p>
+</td>
+</tr>
+<tr>
+<td width="17%" valign=top style='width:17.36%;border:solid windowtext 1.0pt;
+border-top:none;padding:0cm 5.4pt 0cm 5.4pt'>
+<p class=AmmCorpsTexte align=left style='text-align:left'><span class='gras'>Affections musculo-squelettiques et systémiques</span></p>
+</td>
+<td width="13%" valign=top style='width:13.78%;border-top:none;border-left:
+none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+padding:0cm 5.4pt 0cm 5.4pt'>
+<p class=AmmCorpsTexte align=left style='text-align:left'> </p>
+</td>
+<td width="16%" valign=top style='width:16.92%;border-top:none;border-left:
+none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+padding:0cm 5.4pt 0cm 5.4pt'>
+<p class=AmmCorpsTexte align=left style='text-align:left'>Spasmes musculaires</p>
+</td>
+<td width="9%" valign=top style='width:9.96%;border-top:none;border-left:
+none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+padding:0cm 5.4pt 0cm 5.4pt'>
+<p class=AmmCorpsTexte align=left style='text-align:left'> </p>
+</td>
+<td width="13%" valign=top style='width:13.34%;border-top:none;border-left:
+none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+padding:0cm 5.4pt 0cm 5.4pt'>
+<p class=AmmCorpsTexte align=left style='text-align:left'> </p>
+</td>
+<td width="10%" valign=top style='width:10.6%;border-top:none;border-left:
+none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+padding:0cm 5.4pt 0cm 5.4pt'>
+<p class=AmmCorpsTexte align=left style='text-align:left'> </p>
+</td>
+<td width="18%" valign=top style='width:18.04%;border-top:none;border-left:
+none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+padding:0cm 5.4pt 0cm 5.4pt'>
+<p class=AmmCorpsTexte align=left style='text-align:left'> </p>
+</td>
+</tr>
+<tr>
+<td width="17%" valign=top style='width:17.36%;border:solid windowtext 1.0pt;
+border-top:none;padding:0cm 5.4pt 0cm 5.4pt'>
+<p class=AmmCorpsTexte align=left style='text-align:left'><span class='gras'>Affections des organes reproducteurs et du sein</span></p>
+</td>
+<td width="13%" valign=top style='width:13.78%;border-top:none;border-left:
+none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+padding:0cm 5.4pt 0cm 5.4pt'>
+<p class=AmmCorpsTexte align=left style='text-align:left'> </p>
+</td>
+<td width="16%" valign=top style='width:16.92%;border-top:none;border-left:
+none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+padding:0cm 5.4pt 0cm 5.4pt'>
+<p class=AmmCorpsTexte align=left style='text-align:left'>Dysménorrhée</p>
+<p class=AmmCorpsTexte align=left style='text-align:left'>Leucorrhée</p>
+</td>
+<td width="9%" valign=top style='width:9.96%;border-top:none;border-left:
+none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+padding:0cm 5.4pt 0cm 5.4pt'>
+<p class=AmmCorpsTexte align=left style='text-align:left'> </p>
+</td>
+<td width="13%" valign=top style='width:13.34%;border-top:none;border-left:
+none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+padding:0cm 5.4pt 0cm 5.4pt'>
+<p class=AmmCorpsTexte align=left style='text-align:left'> </p>
+</td>
+<td width="10%" valign=top style='width:10.6%;border-top:none;border-left:
+none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+padding:0cm 5.4pt 0cm 5.4pt'>
+<p class=AmmCorpsTexte align=left style='text-align:left'> </p>
+</td>
+<td width="18%" valign=top style='width:18.04%;border-top:none;border-left:
+none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+padding:0cm 5.4pt 0cm 5.4pt'>
+<p class=AmmCorpsTexte align=left style='text-align:left'> </p>
+</td>
+</tr>
+<tr style='height:43.9pt'>
+<td width="17%" valign=top style='width:17.36%;border:solid windowtext 1.0pt;
+border-top:none;padding:0cm 5.4pt 0cm 5.4pt;height:43.9pt'>
+<p class=AmmCorpsTexte align=left style='text-align:left'><span class='gras'>Troubles généraux et anomalies au site d’administration</span></p>
+</td>
+<td width="13%" valign=top style='width:13.78%;border-top:none;border-left:
+none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+padding:0cm 5.4pt 0cm 5.4pt;height:43.9pt'>
+<p class=AmmCorpsTexte align=left style='text-align:left'>Syndrome de sevrage</p>
+</td>
+<td width="16%" valign=top style='width:16.92%;border-top:none;border-left:
+none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+padding:0cm 5.4pt 0cm 5.4pt;height:43.9pt'>
+<p class=AmmCorpsTexte align=left style='text-align:left'>Asthénie</p>
+</td>
+<td width="9%" valign=top style='width:9.96%;border-top:none;border-left:
+none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+padding:0cm 5.4pt 0cm 5.4pt;height:43.9pt'>
+<p class=AmmCorpsTexte align=left style='text-align:left'> </p>
+</td>
+<td width="13%" valign=top style='width:13.34%;border-top:none;border-left:
+none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+padding:0cm 5.4pt 0cm 5.4pt;height:43.9pt'>
+<p class=AmmCorpsTexte align=left style='text-align:left'> </p>
+</td>
+<td width="10%" valign=top style='width:10.6%;border-top:none;border-left:
+none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+padding:0cm 5.4pt 0cm 5.4pt;height:43.9pt'>
+<p class=AmmCorpsTexte align=left style='text-align:left'> </p>
+</td>
+<td width="18%" valign=top style='width:18.04%;border-top:none;border-left:
+none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+padding:0cm 5.4pt 0cm 5.4pt;height:43.9pt'>
+<p class=AmmCorpsTexte align=left style='text-align:left'>Syndrome de sevrage néonatal<sup>2</sup></p>
+</td>
+</tr>
+<tr style='height:27.75pt'>
+<td width="17%" valign=top style='width:17.36%;border:solid windowtext 1.0pt;
+border-top:none;padding:0cm 5.4pt 0cm 5.4pt;height:27.75pt'>
+<p class=AmmCorpsTexte align=left style='text-align:left'><span class='gras'>Affections du système immunitaire</span></p>
+</td>
+<td width="13%" valign=top style='width:13.78%;border-top:none;border-left:
+none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+padding:0cm 5.4pt 0cm 5.4pt;height:27.75pt'>
+<p class=AmmCorpsTexte align=left style='text-align:left'> </p>
+</td>
+<td width="16%" valign=top style='width:16.92%;border-top:none;border-left:
+none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+padding:0cm 5.4pt 0cm 5.4pt;height:27.75pt'>
+<p class=AmmCorpsTexte align=left style='text-align:left'> </p>
+</td>
+<td width="9%" valign=top style='width:9.96%;border-top:none;border-left:
+none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+padding:0cm 5.4pt 0cm 5.4pt;height:27.75pt'>
+<p class=AmmCorpsTexte align=left style='text-align:left'> </p>
+</td>
+<td width="13%" valign=top style='width:13.34%;border-top:none;border-left:
+none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+padding:0cm 5.4pt 0cm 5.4pt;height:27.75pt'>
+<p class=AmmCorpsTexte align=left style='text-align:left'> </p>
+</td>
+<td width="10%" valign=top style='width:10.6%;border-top:none;border-left:
+none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+padding:0cm 5.4pt 0cm 5.4pt;height:27.75pt'>
+<p class=AmmCorpsTexte align=left style='text-align:left'> </p>
+</td>
+<td width="18%" valign=top style='width:18.04%;border-top:none;border-left:
+none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+padding:0cm 5.4pt 0cm 5.4pt;height:27.75pt'>
+<p class=AmmCorpsTexte align=left style='text-align:left'>Réactions d’hypersensibilité<sup>3</sup></p>
+</td>
+</tr>
+<tr style='height:48.1pt'>
+<td width="17%" valign=top style='width:17.36%;border:solid windowtext 1.0pt;
+border-top:none;padding:0cm 5.4pt 0cm 5.4pt;height:48.1pt'>
+<p class=AmmCorpsTexte align=left style='text-align:left'><span class='gras'>Affections hépatiques</span></p>
+</td>
+<td width="13%" valign=top style='width:13.78%;border-top:none;border-left:
+none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+padding:0cm 5.4pt 0cm 5.4pt;height:48.1pt'>
+<p class=AmmCorpsTexte align=left style='text-align:left'> </p>
+</td>
+<td width="16%" valign=top style='width:16.92%;border-top:none;border-left:
+none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+padding:0cm 5.4pt 0cm 5.4pt;height:48.1pt'>
+<p class=AmmCorpsTexte align=left style='text-align:left'> </p>
+</td>
+<td width="9%" valign=top style='width:9.96%;border-top:none;border-left:
+none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+padding:0cm 5.4pt 0cm 5.4pt;height:48.1pt'>
+<p class=AmmCorpsTexte align=left style='text-align:left'> </p>
+</td>
+<td width="13%" valign=top style='width:13.34%;border-top:none;border-left:
+none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+padding:0cm 5.4pt 0cm 5.4pt;height:48.1pt'>
+<p class=AmmCorpsTexte align=left style='text-align:left'> </p>
+</td>
+<td width="10%" valign=top style='width:10.6%;border-top:none;border-left:
+none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+padding:0cm 5.4pt 0cm 5.4pt;height:48.1pt'>
+<p class=AmmCorpsTexte align=left style='text-align:left'> </p>
+</td>
+<td width="18%" valign=top style='width:18.04%;border-top:none;border-left:
+none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+padding:0cm 5.4pt 0cm 5.4pt;height:48.1pt'>
+<p class=AmmCorpsTexte align=left style='text-align:left'>Augmentation des transaminases, hépatite, ictère<sup>4</sup></p>
+</td>
+</tr>
+</table>
+</div>
+<p class=AmmAnnexeTitre3>Description de certains effets indésirables</p>
+<p class=AmmCorpsTexte>Un résumé des effets indésirables signalés après commercialisation du produit et qui sont considérés comme graves ou présentant un intérêt est présenté ci-dessous :</p>
+<p class=AmmCorpsTexte><sup>1</sup> Des cas de dépression respiratoire ont été observés. Des décès dus à une dépression respiratoire ont été rapportés, en particulier lorsque la buprénorphine était utilisée en association avec des benzodiazépines (voir rubrique 4.5) ou n’était pas utilisée conformément aux informations posologiques. Des décès ont également été rapportés lors de l’administration concomitante de buprénorphine et d’autres dépresseurs du SNC tels que l’alcool ou d’autres opioïdes (voir rubriques 4.4 et 4.5).</p>
+<p class=AmmCorpsTexte><sup>2</sup> Un syndrome de sevrage néonatal a été signalé chez des nouveau-nés de femmes qui ont reçu de la buprénorphine pendant la grossesse. Le syndrome peut être plus léger et plus long que celui induit par des agonistes complets des récepteurs opioïdes µ à courte durée d’action. La nature du syndrome peut varier en fonction des antécédents d’utilisation de drogues par la mère (voir rubrique 4.6).</p>
+<p class=AmmCorpsTexte><sup>3</sup> Les signes et symptômes les plus fréquents d'hypersensibilité comprennent les rash, les urticaires et les prurits. Des cas de bronchospasme, de dépression respiratoire, d'angiœdème et de choc anaphylactique ont été signalés.</p>
+<p class=AmmCorpsTexte><sup>4</sup> Des cas d’élévation des transaminases hépatiques et d’hépatite avec ictère généralement d’évolution favorable ont été observés (voir rubrique 4.4).</p>
+<p class=AmmCorpsTexte>Dépendance aux drogues</p>
+<p class=AmmCorpsTexte>L'utilisation répétée de buprénorphine peut entraîner une pharmacodépendance, même à des doses thérapeutiques. Le risque de dépendance aux médicaments peut varier en fonction des facteurs de risque individuels du patient, de la posologie et de la durée du traitement aux opioïdes (voir rubrique 4.4).</p>
+<p class=AmmAnnexeTitre3>Déclaration des effets indésirables suspectés </p>
+<p class=AmmCorpsTexte>La déclaration des effets indésirables suspectés après autorisation du médicament est importante. Elle permet une surveillance continue du rapport bénéfice/risque du médicament. </p>
+<p class=AmmCorpsTexte>Les professionnels de santé déclarent tout effet indésirable suspecté via le système national de déclaration : Agence nationale de sécurité du médicament et des produits de santé (ANSM) et réseau des Centres Régionaux de Pharmacovigilance - Site internet :<span style='color:red'> </span><span class=MsoHyperlink>https://</span><a href="http://www.signalement.social-sante.gouv.fr">www.signalement.social-sante.gouv.fr</a><span style='color:red'>/</span>.</p>
+<p class="AmmAnnexeTitre2"><a name="RcpSurdosage">4.9. Surdosage</a>&nbsp;&nbsp;<a href='#HautDePage'><img src='img/BackToTop.jpg' width='15px' height='15px' alt='Retour en haut de la page' title='Retour en haut de la page' /></a></p>
+<p class=AmmCorpsTexte>Les propriétés d'agoniste partiel morphinique de la buprénorphine lui confèrent un index thérapeutique élevé.</p>
+<p class=AmmAnnexeTitre3>Symptômes</p>
+<p class=AmmCorpsTexte>Le principal symptôme nécessitant une intervention médicale en cas de surdosage est la dépression respiratoire consécutive à une dépression du système nerveux central, car elle peut conduire à un arrêt respiratoire et à la mort (voir rubrique 4.4). Les autres signes d’un surdosage sont notamment la sédation, le myosis, l’hypotension, les nausées et les vomissements.</p>
+<p class=AmmAnnexeTitre3>Traitement / Prise en charge</p>
+<p class=AmmCorpsTexte style='margin-bottom:6.0pt'><span style='font-size:10.0pt; font-family:"Arial",sans-serif'>En cas de surdosage, une prise en charge globale doit être instituée, comprenant une surveillance étroite de l’état respiratoire et cardiaque du patient.</span></p>
+<p class=AmmCorpsTexte style='margin-bottom:6.0pt'><span style='font-size:10.0pt; font-family:"Arial",sans-serif'>Un traitement symptomatique de la dépression respiratoire et des mesures standard de soins intensifs doivent être mis en place. La libération des voies aériennes supérieures ainsi qu’une ventilation assistée ou contrôlée doivent être assurées si nécessaire. Le patient doit être transféré dans une unité disposant de tous les moyens de réanimation nécessaires. </span></p>
+<p class=AmmCorpsTexte style='margin-bottom:6.0pt'><span style='font-size:10.0pt; font-family:"Arial",sans-serif'>Si le patient vomit, des précautions doivent être prises afin d’éviter qu’il inhale son vomi.</span></p>
+<p class=AmmCorpsTexte style='margin-bottom:6.0pt'><span style='font-size:10.0pt; font-family:"Arial",sans-serif'>L’utilisation d’un antagoniste opioïde injectable (à savoir la naloxone) est recommandée, malgré l’effet modeste qu’il peut exercer dans la suppression des symptômes respiratoires induits par la prise de buprénorphine, cette dernière étant fortement liée aux récepteurs morphiniques.</span></p>
+<p class=AmmCorpsTexte>En cas d'utilisation de la naloxone, la longue durée d’action de la buprénorphine doit être prise en compte afin de déterminer la durée de traitement et la surveillance médicale nécessaires pour supprimer les effets du surdosage. La naloxone peut être éliminée plus rapidement que la buprénorphine ; par conséquent, les symptômes de surdosage de la buprénorphine préalablement contrôlés par la naloxone peuvent réapparaître. Une perfusion continue peut s’avérer nécessaire. Les débits de perfusion IV continue doivent être titrés selon la réponse du patient. Si celle-ci est impossible, une dose répétée de naloxone peut être requise.</p>
+<p class="AmmAnnexeTitre1"><a name="RcpPropPharmacologiques">5. PROPRIETES PHARMACOLOGIQUES</a>&nbsp;&nbsp;<a href='#HautDePage'><img src='img/BackToTop.jpg' width='15px' height='15px' alt='Retour en haut de la page' title='Retour en haut de la page' /></a></p>
+<p class="AmmAnnexeTitre2"><a name="RcpPropPharmacodynamiques">5.1. Propriétés pharmacodynamiques</a>&nbsp;&nbsp;<a href='#HautDePage'><img src='img/BackToTop.jpg' width='15px' height='15px' alt='Retour en haut de la page' title='Retour en haut de la page' /></a></p>
+<p class=AmmCorpsTexteGras><a name="_Toc142278933">Classe pharmacothérapeutique : </a>médicament utilisé dans la dépendance aux opioïdes, code ATC : N07BC01<span style='font-size:8.0pt'>.</span></p>
+<p class=AmmCorpsTexte style='margin-bottom:6.0pt'><span style='font-size:10.0pt; font-family:"Arial",sans-serif'>La buprénorphine est un agoniste-antagoniste morphinique et se fixe au niveau des récepteurs cérébraux </span><span style='font-size:10.0pt;font-family:Symbol'>m</span><span style='font-size: 10.0pt;font-family:"Arial",sans-serif'> et </span><span style='font-size:10.0pt; font-family:Symbol'>k</span><span style='font-size:10.0pt;font-family:"Arial",sans-serif'>. Son activité dans le traitement de substitution des opioïdes est attribuée à sa liaison lentement réversible aux récepteurs </span><span style='font-size: 10.0pt;font-family:Symbol'>m</span><span style='font-size:10.0pt;font-family: "Arial",sans-serif'> qui minimiserait de façon prolongée le besoin des toxicomanes en stupéfiants.</span></p>
+<p class=AmmCorpsTexte>L'activité agoniste partielle de la buprénorphine confère au produit un index thérapeutique élevé en limitant ses effets dépresseurs, notamment sur les fonctions cardio-respiratoires. La marge thérapeutique de la buprénorphine peut être amoindrie en cas d’association à des benzodiazépines ou dans des situations de mésusage de la buprénorphine.</p>
+<p class="AmmAnnexeTitre2"><a name="RcpPropPharmacocinetiques">5.2. Propriétés pharmacocinétiques</a>&nbsp;&nbsp;<a href='#HautDePage'><img src='img/BackToTop.jpg' width='15px' height='15px' alt='Retour en haut de la page' title='Retour en haut de la page' /></a></p>
+<p class=AmmAnnexeTitre3><a name="_Toc142278934">Absorption</a></p>
+<p class=AmmCorpsTexte style='margin-bottom:6.0pt'><span style='font-size:10.0pt; font-family:"Arial",sans-serif'>Par voie orale, la buprénorphine subit une N-désalkylation et une glycuroconjugaison dans l'intestin grêle et dans le foie par un important effet de premier passage. L'administration du médicament par voie orale est donc inappropriée.</span></p>
+<p class=AmmCorpsTexte style='margin-bottom:6.0pt'><span style='font-size:10.0pt; font-family:"Arial",sans-serif'>Par voie sublinguale, la biodisponibilité absolue de la buprénorphine est mal connue, mais a été estimée entre 15 et 30 %. Le pic de concentration plasmatique est obtenu 90 minutes après administration sublinguale, et la relation dose&#8209;concentration maximale est linéaire entre 2 et 16 mg.</span></p>
+<p class=AmmAnnexeTitre3>Distribution</p>
+<p class=MsoBodyText><span style='font-size:10.0pt;font-family:"Arial",sans-serif'>L'absorption de la buprénorphine est suivie d'une phase de distribution rapide. La demi&#8209;vie est de 2 à 5 heures.</span></p>
+<p class=AmmAnnexeTitre3>Métabolisme et élimination</p>
+<p class=AmmCorpsTexte style='margin-bottom:6.0pt'><span style='font-size:10.0pt; font-family:"Arial",sans-serif'>La buprénorphine est métabolisée par 14-N-désalkylation, et glycuroconjugaison de la molécule-mère et du métabolite désalkylé. Des données cliniques confirment que le CYP3A4 est responsable de la N-désalkylation de la buprénorphine.</span></p>
+<p class=AmmCorpsTexte style='margin-bottom:6.0pt'><span style='font-size:10.0pt; font-family:"Arial",sans-serif'>La N&#8209;désalkylbuprénorphine est un agoniste </span><span style='font-size:10.0pt;font-family:Symbol'>m</span><span style='font-size:10.0pt;font-family:"Arial",sans-serif'> de faible activité intrinsèque.</span></p>
+<p class=MsoBodyText><span style='font-size:10.0pt;font-family:"Arial",sans-serif'>L'élimination de la buprénorphine est bi ou tri-exponentielle, avec une longue phase d'élimination terminale de 20 à 25 heures, due pour partie à une réabsorption de la buprénorphine après hydrolyse intestinale du dérivé conjugué, et pour partie au caractère hautement lipophile de la molécule.</span></p>
+<p class=MsoBodyText><span style='font-size:10.0pt;font-family:"Arial",sans-serif'>La buprénorphine est essentiellement éliminée dans les fèces par excrétion biliaire des métabolites glycuroconjugués (70 %), le reste étant éliminé par les urines.</span></p>
+<p class=AmmAnnexeTitre3>Populations particulières</p>
+<p class=MsoBodyText><span class='italique'><span style='font-size:10.0pt;font-family:"Arial",sans-serif'>Insuffisance hépatique</span></span></p>
+<p class=AmmCorpsTexte align=left style='margin-bottom:6.0pt;text-align:left; text-autospace:none'><span style='font-size:10.0pt;font-family:"Arial",sans-serif'>L’effet de l’insuffisance hépatique sur la pharmacocinétique de la buprénorphine et de la naloxone a été évalué dans une étude avec administration d’une dose unique réalisée après commercialisation.</span></p>
+<p class=AmmCorpsTexte align=left style='margin-bottom:12.0pt;text-align:left; text-autospace:none'><span style='font-size:10.0pt;font-family:"Arial",sans-serif'>Le tableau 2 résume les résultats d’une étude clinique dans laquelle l’exposition après administration de buprénorphine/naloxone 2 mg/0,5 mg comprimé sublingual a été déterminée chez des sujets sains, et chez des sujets présentant différents degrés d’insuffisance hépatique.</span></p>
+<div align=center>
+<table class=AmmCorpsTexteTable border=1 cellspacing=0 cellpadding=0 width=0
+style='border-collapse:collapse;border:none'>
+<tr style='height:51.75pt'>
+<td width=629 colspan=4 style='width:472.05pt;border:double windowtext 4.5pt;
+border-bottom:solid black 1.0pt;padding:0cm 5.4pt 0cm 5.4pt;height:51.75pt'>
+<p class=AmmCorpsTexte style='margin-left:48.15pt;text-indent:-48.15pt; page-break-after:avoid'><span class='souligne'><span style='font-size:10.0pt;font-family:"Arial",sans-serif'>Tableau 2. Effet de l’insuffisance hépatique sur l</span></span><span class='souligne'><span style='font-size:10.0pt;font-family:"Arial",sans-serif'>es paramètres </span></span><span class='souligne'><span style='font-size:10.0pt;font-family:"Arial",sans-serif'>pharmacocinétique</span></span><span class='souligne'><span style='font-size:10.0pt;font-family:"Arial",sans-serif'>s</span></span><span class='souligne'><span style='font-size:10.0pt;font-family:"Arial",sans-serif'> de la buprénorphine </span></span><span class='souligne'><span style='font-size:10.0pt;font-family:"Arial",sans-serif'>après administration de </span></span><span class='souligne'><span style='font-size:10.0pt;font-family:"Arial",sans-serif'>buprénorphine/naloxone</span></span><span class='souligne'><span style='font-size:10.0pt;font-family:"Arial",sans-serif'> (</span></span><span class='souligne'><span style='font-size:10.0pt;font-family:"Arial",sans-serif'>modification par rapport à des sujets sains</span></span><span class='souligne'><span style='font-size:10.0pt; font-family:"Arial",sans-serif'>)</span></span></p>
+</td>
+</tr>
+<tr style='height:7.2pt'>
+<td width=117 style='width:87.55pt;border-top:none;border-left:double windowtext 4.5pt;
+border-bottom:double windowtext 1.5pt;border-right:solid black 1.0pt;
+padding:0cm 5.4pt 0cm 5.4pt;height:7.2pt'>
+<p class=AmmCorpsTexte><span style='font-size: 10.0pt;font-family:"Arial",sans-serif'>Paramèt</span><span style='font-size: 10.0pt;font-family:"Arial",sans-serif'>r</span><span style='font-size:10.0pt; font-family:"Arial",sans-serif'>es PK</span></p>
+</td>
+<td width=171 style='width:128.15pt;border-top:none;border-left:none;
+border-bottom:double windowtext 1.5pt;border-right:solid black 1.0pt;
+padding:0cm 5.4pt 0cm 5.4pt;height:7.2pt'>
+<p class=AmmCorpsTexte align=center style='text-align:center;page-break-after: avoid'><span style='font-size:10.0pt;font-family:"Arial",sans-serif'>Insuffisance Hépatique Légère</span></p>
+<p class=AmmCorpsTexte align=center style='text-align:center;page-break-after: avoid'><span style='font-size:10.0pt;font-family:"Arial",sans-serif'>(Child-Pugh</span><span style='font-size:10.0pt;font-family:"Arial",sans-serif'> de </span><span style='font-size:10.0pt;font-family:"Arial",sans-serif'>Class</span><span style='font-size:10.0pt;font-family:"Arial",sans-serif'>e</span><span style='font-size:10.0pt;font-family:"Arial",sans-serif'> A)</span></p>
+<p class=AmmCorpsTexte align=center style='text-align:center;page-break-after: avoid'><span style='font-size:10.0pt;font-family:"Arial",sans-serif'>(n=9)</span></p>
+</td>
+<td width=171 style='width:128.15pt;border-top:none;border-left:none;
+border-bottom:double windowtext 1.5pt;border-right:solid black 1.0pt;
+padding:0cm 5.4pt 0cm 5.4pt;height:7.2pt'>
+<p class=AmmCorpsTexte align=center style='text-align:center;page-break-after: avoid'><span style='font-size:10.0pt;font-family:"Arial",sans-serif'>Insuffisance Hépatique Modérée</span></p>
+<p class=AmmCorpsTexte align=center style='text-align:center;page-break-after: avoid'><span style='font-size:10.0pt;font-family:"Arial",sans-serif'>(Child-Pugh</span><span style='font-size:10.0pt;font-family:"Arial",sans-serif'> de </span><span style='font-size:10.0pt;font-family:"Arial",sans-serif'>Class</span><span style='font-size:10.0pt;font-family:"Arial",sans-serif'>e</span><span style='font-size:10.0pt;font-family:"Arial",sans-serif'> B)</span></p>
+<p class=AmmCorpsTexte align=center style='text-align:center;page-break-after: avoid'><span style='font-size:10.0pt;font-family:"Arial",sans-serif'>(n=8)</span></p>
+</td>
+<td width=171 style='width:128.2pt;border-top:none;border-left:none;
+border-bottom:double windowtext 1.5pt;border-right:double windowtext 4.5pt;
+padding:0cm 5.4pt 0cm 5.4pt;height:7.2pt'>
+<p class=AmmCorpsTexte align=center style='text-align:center;page-break-after: avoid'><span style='font-size:10.0pt;font-family:"Arial",sans-serif'>Insuffisance Hépatique Sévère</span></p>
+<p class=AmmCorpsTexte align=center style='text-align:center;page-break-after: avoid'><span style='font-size:10.0pt;font-family:"Arial",sans-serif'>(Child-Pugh</span><span style='font-size:10.0pt;font-family:"Arial",sans-serif'> de </span><span style='font-size:10.0pt;font-family:"Arial",sans-serif'>Class</span><span style='font-size:10.0pt;font-family:"Arial",sans-serif'>e</span><span style='font-size:10.0pt;font-family:"Arial",sans-serif'> C)</span></p>
+<p class=AmmCorpsTexte align=center style='text-align:center;page-break-after: avoid'><span style='font-size:10.0pt;font-family:"Arial",sans-serif'>(n=8)</span></p>
+</td>
+</tr>
+<tr style='height:7.2pt'>
+<td width=629 colspan=4 valign=top style='width:472.05pt;border-top:none;
+border-left:double windowtext 4.5pt;border-bottom:solid black 1.0pt;
+border-right:double windowtext 4.5pt;padding:0cm 5.4pt 0cm 5.4pt;height:7.2pt'>
+<p class=AmmCorpsTexte align=center style='text-align:center;page-break-after: avoid'><span style='font-size:10.0pt;font-family:"Arial",sans-serif'>Buprenorphine</span></p>
+</td>
+</tr>
+<tr style='height:7.2pt'>
+<td width=117 style='width:87.55pt;border-top:none;border-left:double windowtext 4.5pt;
+border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;padding:0cm 5.4pt 0cm 5.4pt;
+height:7.2pt'>
+<p class=AmmCorpsTexte><span style='font-size: 10.0pt;font-family:"Arial",sans-serif'>C<sub>max</sub></span></p>
+</td>
+<td width=171 style='width:128.15pt;border-top:none;border-left:none;
+border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;padding:0cm 5.4pt 0cm 5.4pt;
+height:7.2pt'>
+<p class=AmmCorpsTexte align=center style='text-align:center;page-break-after: avoid'><span style='font-size:10.0pt;font-family:"Arial",sans-serif'>1,2 fois plus</span></p>
+</td>
+<td width=171 style='width:128.15pt;border-top:none;border-left:none;
+border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;padding:0cm 5.4pt 0cm 5.4pt;
+height:7.2pt'>
+<p class=AmmCorpsTexte align=center style='text-align:center;page-break-after: avoid'><span style='font-size:10.0pt;font-family:"Arial",sans-serif'>1,</span><span style='font-size:10.0pt;font-family:"Arial",sans-serif'>1</span><span style='font-size:10.0pt;font-family:"Arial",sans-serif'> fois plus</span></p>
+</td>
+<td width=171 style='width:128.2pt;border-top:none;border-left:none;
+border-bottom:solid black 1.0pt;border-right:double windowtext 4.5pt;
+padding:0cm 5.4pt 0cm 5.4pt;height:7.2pt'>
+<p class=AmmCorpsTexte align=center style='text-align:center;page-break-after: avoid'><span style='font-size:10.0pt;font-family:"Arial",sans-serif'>1,7 fois plus</span></p>
+</td>
+</tr>
+<tr style='height:7.2pt'>
+<td width=117 style='width:87.55pt;border-top:none;border-left:double windowtext 4.5pt;
+border-bottom:double windowtext 4.5pt;border-right:solid black 1.0pt;
+padding:0cm 5.4pt 0cm 5.4pt;height:7.2pt'>
+<p class=AmmCorpsTexte><span style='font-size: 10.0pt;font-family:"Arial",sans-serif'>ASC<sub>défini</sub></span></p>
+</td>
+<td width=171 style='width:128.15pt;border-top:none;border-left:none;
+border-bottom:double windowtext 4.5pt;border-right:solid black 1.0pt;
+padding:0cm 5.4pt 0cm 5.4pt;height:7.2pt'>
+<p class=AmmCorpsTexte align=center style='text-align:center;page-break-after: avoid'><span style='font-size:10.0pt;font-family:"Arial",sans-serif'>Identique </span></p>
+</td>
+<td width=171 style='width:128.15pt;border-top:none;border-left:none;
+border-bottom:double windowtext 4.5pt;border-right:solid black 1.0pt;
+padding:0cm 5.4pt 0cm 5.4pt;height:7.2pt'>
+<p class=AmmCorpsTexte align=center style='text-align:center;page-break-after: avoid'><span style='font-size:10.0pt;font-family:"Arial",sans-serif'>1,</span><span style='font-size:10.0pt;font-family:"Arial",sans-serif'>6</span><span style='font-size:10.0pt;font-family:"Arial",sans-serif'> fois plus</span></p>
+</td>
+<td width=171 style='width:128.2pt;border-top:none;border-left:none;
+border-bottom:double windowtext 4.5pt;border-right:double windowtext 4.5pt;
+padding:0cm 5.4pt 0cm 5.4pt;height:7.2pt'>
+<p class=AmmCorpsTexte align=center style='text-align:center;page-break-after: avoid'><span style='font-size:10.0pt;font-family:"Arial",sans-serif'>2,</span><span style='font-size:10.0pt;font-family:"Arial",sans-serif'>8</span><span style='font-size:10.0pt;font-family:"Arial",sans-serif'> fois plus</span></p>
+</td>
+</tr>
+</table>
+</div>
+<p class=AmmCorpsTexte style='margin-top:6.0pt'>L’exposition plasmatique à la buprénorphine était environ 3 fois plus élevée chez les patients ayant une insuffisance hépatique sévère après administration d’une dose unique de 2 mg.</p>
+<p class="AmmAnnexeTitre2"><a name="RcpSecuritePreclinique">5.3. Données de sécurité préclinique</a>&nbsp;&nbsp;<a href='#HautDePage'><img src='img/BackToTop.jpg' width='15px' height='15px' alt='Retour en haut de la page' title='Retour en haut de la page' /></a></p>
+<p class=AmmCorpsTexte><a name="_Toc142278935">La toxicité chronique étudiée chez quatre espèces animales (rongeurs et non rongeurs) avec quatre voies d’administration différentes n’a pas montré d’élément cliniquement pertinent. Dans une étude de un an par voie orale chez le chien, une toxicité hépatique a été observée à très forte dose (75 mg/kg).</a></p>
+<p class=AmmCorpsTexte>Les études de tératogénèse réalisées chez le rat et le lapin permettent de conclure que la buprénorphine n’est ni embryotoxique ni fœtotoxique.</p>
+<p class=AmmCorpsTexte>Aucun effet secondaire sur la fertilité n'a été rapporté chez le rat, cependant, une mortalité péri et post-natale élevée a été observée dans cette espèce après administration orale et IM, liée à une difficulté à mettre bas et à une lactation insuffisante.</p>
+<p class=AmmCorpsTexte>Aucune preuve d'un potentiel génotoxique n'a été mise en évidence sur une batterie standard de tests.</p>
+<p class=AmmCorpsTexte>Les études de cancérogénèse chez la souris et le rat ne montrent pas de différence d'incidence de différents types de tumeurs entre les animaux traités par la buprénorphine et le groupe témoin. Cependant, dans une étude conduite avec des doses pharmacologiques chez la souris, une atrophie testiculaire avec calcification tubulaire a été mise en évidence chez des animaux traités.</p>
+<p class="AmmAnnexeTitre1"><a name="RcpDonneesPharmaceutiques">6. DONNEES PHARMACEUTIQUES</a>&nbsp;&nbsp;<a href='#HautDePage'><img src='img/BackToTop.jpg' width='15px' height='15px' alt='Retour en haut de la page' title='Retour en haut de la page' /></a></p>
+<p class="AmmAnnexeTitre2"><a name="RcpListeExcipients">6.1. Liste des excipients</a>&nbsp;&nbsp;<a href='#HautDePage'><img src='img/BackToTop.jpg' width='15px' height='15px' alt='Retour en haut de la page' title='Retour en haut de la page' /></a></p>
+<p class=AmmCorpsTexte><a name="_Toc142278937">Lactose monohydraté, mannitol, amidon de maïs, povidone K30, acide citrique anhydre, citrate de sodium, stéarate de magnésium.</a></p>
+<p class="AmmAnnexeTitre2"><a name="RcpIncompatibilites">6.2. Incompatibilités</a>&nbsp;&nbsp;<a href='#HautDePage'><img src='img/BackToTop.jpg' width='15px' height='15px' alt='Retour en haut de la page' title='Retour en haut de la page' /></a></p>
+<p class=AmmCorpsTexte><a name="_Toc142278938">Sans objet.</a></p>
+<p class="AmmAnnexeTitre2"><a name="RcpDureeConservation">6.3. Durée de conservation</a>&nbsp;&nbsp;<a href='#HautDePage'><img src='img/BackToTop.jpg' width='15px' height='15px' alt='Retour en haut de la page' title='Retour en haut de la page' /></a></p>
+<p class=AmmCorpsTexte>2 ans</p>
+<p class="AmmAnnexeTitre2"><a name="RcpPrecConservation">6.4. Précautions particulières de conservation</a>&nbsp;&nbsp;<a href='#HautDePage'><img src='img/BackToTop.jpg' width='15px' height='15px' alt='Retour en haut de la page' title='Retour en haut de la page' /></a></p>
+<p class=AmmCorpsTexte><a name="_Toc142278940"><span lang=FR-BE>A conserver à une température ne dépassant pas 30°C.</span></a></p>
+<p class=AmmCorpsTexte><span lang=FR-BE>A conserver dans l’emballage extérieur à l’abri de l’humidité.</span></p>
+<p class="AmmAnnexeTitre2"><a name="RcpEmballage">6.5. Nature et contenu de l'emballage extérieur </a>&nbsp;&nbsp;<a href='#HautDePage'><img src='img/BackToTop.jpg' width='15px' height='15px' alt='Retour en haut de la page' title='Retour en haut de la page' /></a></p>
+<p class=AmmCorpsTexte>7 comprimés sous plaquettes thermoformées nylon/aluminium/PVC/aluminium. </p>
+<p class=AmmCorpsTexte>28 comprimés sous plaquettes thermoformées nylon/aluminium/PVC/aluminium.</p>
+<p class=AmmCorpsTexte>Toutes les présentations peuvent ne pas être commercialisées.</p>
+<p class="AmmAnnexeTitre2"><a name="RcpPrecEmpl">6.6. Précautions particulières d’élimination et de manipulation</a>&nbsp;&nbsp;<a href='#HautDePage'><img src='img/BackToTop.jpg' width='15px' height='15px' alt='Retour en haut de la page' title='Retour en haut de la page' /></a></p>
+<p class=AmmCorpsTexte><span lang=FR-BE>Pas d’exigences particulières.</span></p>
+<p class="AmmAnnexeTitre1"><a name="RcpTitulaireAmm">7. TITULAIRE DE L’AUTORISATION DE MISE SUR LE MARCHE</a>&nbsp;&nbsp;<a href='#HautDePage'><img src='img/BackToTop.jpg' width='15px' height='15px' alt='Retour en haut de la page' title='Retour en haut de la page' /></a></p>
+<p class=AmmCorpsTexteGras style='margin-bottom:0cm;margin-bottom:.0001pt'><a name="_Toc142278943"><span lang=EN-GB>INDIVIOR EUROPE LIMITED</span></a></p>
+<p class=AmmCorpsTexte style='margin-bottom:0cm;margin-bottom:.0001pt'><span lang=EN-GB>27 WINDSOR PLACE</span></p>
+<p class=AmmCorpsTexte style='margin-bottom:0cm;margin-bottom:.0001pt'><span lang=EN-GB>DUBLIN 2</span></p>
+<p class=AmmCorpsTexte style='margin-bottom:0cm;margin-bottom:.0001pt'>D02 DK44</p>
+<p class=AmmCorpsTexte style='margin-bottom:0cm;margin-bottom:.0001pt'>IRLANDE</p>
+<p class="AmmAnnexeTitre1"><a name="RcpNumAutor">8. NUMERO(S) D’AUTORISATION DE MISE SUR LE MARCHE</a>&nbsp;&nbsp;<a href='#HautDePage'><img src='img/BackToTop.jpg' width='15px' height='15px' alt='Retour en haut de la page' title='Retour en haut de la page' /></a></p>
+<p class=AmmListePuces1 style='text-align:justify'><span style='font-family: Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>34009 339 514 0 5 : 7 comprimés sous plaquettes thermoformées nylon/aluminium/PVC/aluminium.</p>
+<p class=AmmListePuces1 style='text-align:justify'><span style='font-family: Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>34009 345 661 1 0: 28 comprimés sous plaquettes thermoformées nylon/aluminium/PVC/aluminium.</p>
+<p class="AmmAnnexeTitre1"><a name="RcpPremiereAutorisation">9. DATE DE PREMIERE AUTORISATION/DE RENOUVELLEMENT DE L’AUTORISATION</a>&nbsp;&nbsp;<a href='#HautDePage'><img src='img/BackToTop.jpg' width='15px' height='15px' alt='Retour en haut de la page' title='Retour en haut de la page' /></a></p>
+<p class=AmmCorpsTexte><a name="_Toc142278945">[à compléter ultérieurement par le titulaire]</a></p>
+<p class="AmmAnnexeTitre1"><a name="RcpDateRevision">10. DATE DE MISE A JOUR DU TEXTE</a>&nbsp;&nbsp;<a href='#HautDePage'><img src='img/BackToTop.jpg' width='15px' height='15px' alt='Retour en haut de la page' title='Retour en haut de la page' /></a></p>
+<p class=AmmCorpsTexte><a name="_Toc142278946">[à compléter ultérieurement par le titulaire]</a></p>
+<p class="AmmAnnexeTitre1"><a name="RcpDosimetrie">11. DOSIMETRIE</a>&nbsp;&nbsp;<a href='#HautDePage'><img src='img/BackToTop.jpg' width='15px' height='15px' alt='Retour en haut de la page' title='Retour en haut de la page' /></a></p>
+<p class=AmmCorpsTexte>Sans objet.</p>
+<p class="AmmAnnexeTitre1"><a name="RcpInstPrepRadioph">12. INSTRUCTIONS POUR LA PREPARATION DES RADIOPHARMACEUTIQUES</a>&nbsp;&nbsp;<a href='#HautDePage'><img src='img/BackToTop.jpg' width='15px' height='15px' alt='Retour en haut de la page' title='Retour en haut de la page' /></a></p>
+<p class=AmmCorpsTexte><a name="_Toc142278948">Sans objet.</a></p>
+<div style='border:none;border-top:solid windowtext 1.0pt;padding:1.0pt 0cm 0cm 0cm'>
+<p class="AmmAnnexeTitre"><a name="RcpCondPrescription">CONDITIONS DE PRESCRIPTION ET DE DELIVRANCE</a></p>
+</div>
+<p class=AmmCorpsTexte>Liste I</p>
+<p class=AmmCorpsTexte>Prescription sur ordonnance répondant aux spécifications fixées par l’arrêté du 31 mars 1999.</p>
+<p class=AmmCorpsTexte>Prescription limitée à 28 jours<span style='font-size: 9.0pt'>.</span></p>
+<p class=AmmCorpsTexte>Délivrance fractionnée de 7 jours.</p>
+<span class='gras'><span style='font-size:12.0pt;font-family:"Arial",sans-serif;color:#0B3D92;
+text-transform:uppercase'><br clear=all>
+</span></span>					
+					<p class="alignright"><a href="#HautDePage">Retour en haut de la page <img src="img/BackToTop.jpg" width="20px" height="20px" alt="Retour en haut de la page" title="Retour en haut de la page" /></a></p>
+				</div>
+			</div>
+		</div>
+	</div>
+
+<table summary="" class="content" width="1000">
+	<tr>
+		<td height="100px">&nbsp;</td>
+	</tr>
+</table>
+<table summary="Pied de page" class="footer" width="1000">
+	<tr>
+		<td>
+			<table summary="" class="tablealigncenter" border="0">
+				<tr>
+					<td width="100px" class="aligncenter"><a id="lien_ansm" href="http://ansm.sante.fr/" target="_blank"><img src="img/Logo_ANSM.png" width="150" height="60" alt="ANSM - Agence nationale de sécurité du médicament et des produits de santé" title="L'ANSM met à disposition les principales informations issues de l'Autorisation de mise sur le marché, l'appartenance à un groupe générique, les liens vers les informations de sécurité qu'elle publie, l'identification des médicaments sous surveillance renforcée - nouvelle fenêtre" /></a></td>
+					          <td>&nbsp;</td>
+					<td width="100px" class="aligncenter"><img src="img/Logo_HAS.png" width="150" height="60" alt="HAS - Haute autorité de santé" title="La HAS met à disposition les informations relatives au service médical rendu, à l'amélioration du service médical rendu ainsi que les liens vers les avis de la Commission de la Transparence correspondants - nouvelle fenêtre" /></td>
+					<td>&nbsp;</td>
+					<td width="100px" class="aligncenter"><img src="img/Logo_CNAM.png" width="150" height="60" alt="UNCAM - Unin nationale des caisses d'assurance maladie" title="L'UNCAM met à disposition le taux de remboursement, le prix et les indications remboursables le cas échéant, ainsi que l'agrément aux collectivités - nouvelle fenêtre" /></td>
+          				</tr>
+			</table> 
+		</td>
+	</tr>
+</table>
+<table summary="" class="finpage" width="1000">
+	<tr>
+		<td height="100px" class="aligncenter">
+			<a class="navigation" href="plan.php">Plan du site</a>&nbsp;|&nbsp;
+			<a class="navigation" href="accessibilite.php">Accessibilité</a>&nbsp;|&nbsp;
+			<a class="navigation" href="contact.php">Contact</a>&nbsp;|&nbsp;
+			<a class="navigation" href="telechargement.php">Téléchargement</a>&nbsp;|&nbsp;
+			<a class="navigation" href="DeclarationConfidentialite.php">Declaration de confidentialité</a>&nbsp;|&nbsp;
+			<a class="navigation" href="http://www.service-public.fr/" title="Service Public - Nouvelle fenêtre" target="_blank">Service-Public.fr</a>&nbsp;|&nbsp;
+			<a class="navigation" href="http://www.legifrance.gouv.fr/" title="Legifrance - Nouvelle fenêtre" target="_blank">Legifrance</a>&nbsp;|&nbsp;
+			<a class="navigation" href="http://www.gouvernement.fr/" title="Gouvernement - Nouvelle fenêtre" target="_blank" >Gouvernement.fr</a>
+		</td>
+	</tr>
+</table>
+
+
+
+<!-- Matomo -->
+<script type="text/javascript">
+  var _paq = window._paq = window._paq || [];
+  /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
+  _paq.push(['trackPageView']);
+  _paq.push(['enableLinkTracking']);
+  (function() {
+    var u="https://stats.integra.fr/";
+    _paq.push(['setTrackerUrl', u+'matomo.php']);
+    _paq.push(['setSiteId', '79']);
+    var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+    g.type='text/javascript'; g.async=true; g.src=u+'matomo.js'; s.parentNode.insertBefore(g,s);
+  })();
+</script>
+<!-- End Matomo Code -->
+
+
+
+</body>
+</html>

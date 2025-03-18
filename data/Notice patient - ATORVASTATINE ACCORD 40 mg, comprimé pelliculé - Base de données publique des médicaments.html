@@ -1,0 +1,403 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="fr" lang="fr">
+<head>
+	<title>Notice patient - ATORVASTATINE ACCORD 40 mg, comprimé pelliculé  - Base de données publique des médicaments</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=windows-1252"/>
+	<meta name="robots" content="index, follow"/>
+	<meta name="Description" content="Base de données publique des médicaments"/>
+	<meta name="Keywords" content="base, données, publique, médicaments, Notice patient, ATORVASTATINE ACCORD 40 mg, comprimé pelliculé "/>
+	<meta name="Subject" content="medicament"/>
+	<link href='https://fonts.googleapis.com/css?family=Noticia+Text' rel='stylesheet' type='text/css' />
+	<link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro' rel='stylesheet' type='text/css' />
+	<link href="style/style_bdm.css?v=2.2.3" type="text/css" rel="stylesheet"/>
+	<link href="style/style_RCP_Notice.css" type="text/css" rel="stylesheet"/>
+  <link rel="alternate" href="http://m.base-donnees-publique.medicaments.gouv.fr/#!info-66456143">
+    <script type="text/javascript" src="scripts/autocomplete.js?v=2.2.3"></script>
+	<script type="text/javascript" src="scripts/jquery.js"></script>
+    <script type="text/javascript" src="scripts/jquery-ui.min.js"></script>
+	<script type="text/javascript" src="scripts/common.js"></script>
+	<link rel="icon" type="image/x-icon" href="favicon.ico" />
+</head>
+
+<body>
+
+<a name="HautDePage" />
+<div id="bandeauhaut">
+	<a id="lien_ministere" class="lienmenu" href="http://www.sante.gouv.fr" target="_blank" title="Site du ministère des affaires sociales et de la santé - nouvelle fenêtre"><img id="logoministere" src="img/Logo_Ministere.jpg"  alt="Logo du ministère des affaires sociales et de la santé"/></a>
+	<h1 class="texteTitreSite">
+		Base <span class="texteBleu">de</span> données <span class="texteBleu">publique</span><br/><span class="texteBleu">des</span> médicaments
+	</h1>
+		<a id="lien_medicament_gouv" class="lienEspaceMedic" target="_blank" href="http://medicaments.gouv.fr" title="Visiter [medicaments.gouv.fr] - nouvelle fenêtre">Visiter [medicaments.gouv.fr] <img src="/img/icone_lien.png" alt="Visiter [medicaments.gouv.fr]"  title="Visiter [medicaments.gouv.fr] - nouvelle fenetre" /></a>
+</div>
+<!--div align="center">
+	<a id="banniere" target="_blank" href="http://social-sante.gouv.fr/soins-et-maladies/medicaments/medicaments-generiques/" title="Visiter [medicaments.gouv.fr] - M?dicaments g?n?riques">
+		<img width="1000"   src ="/img/carrouselbannieres.gif" alt="Visiter [medicaments.gouv.fr] - M?dicaments g?n?riques" title="Visiter [medicaments.gouv.fr] - M?dicaments g?n?riques" />
+	</a>
+</div-->
+
+<div id="menuhaut">
+	<span id="menuhaut_gauche">
+		<a id="lien_accueil" class="navigation" href="index.php">Accueil</a>&nbsp;|&nbsp;
+		<a id="lien_glossaire" class="navigation" href="glossaire.php">Glossaire</a>&nbsp;|&nbsp;
+		<a id="lien_aide" class="navigation" href="aide.php">Aide</a>		
+	</span>
+	
+		
+	<span id="menuhaut_dernmaj">
+        <br>Dernière <span title=" 2.4.4
+">mise à jour</span> le 03/03/2025	</span>
+</div>
+
+	<script language="javascript" type="text/javascript">
+		//<![CDATA[ 
+		function Aff(men) {
+			document.write("<ul class=\"menuDoc\">");
+			for(var no_rub=0;no_rub<men.num_rub;no_rub++) {
+				document.write("<li><a class='leftMenu' href='"+menu[no_rub].page+"'>");
+				document.write(men[no_rub].txt);
+				document.write("</a></li>");
+				if (men[no_rub].nb_lien != 0){
+					document.write("<ul class=\"sousMenuDoc\">");
+				}
+				for(var no_lien=0;no_lien<men[no_rub].nb_lien;no_lien++) {
+					document.write("<li><a class='leftMenu' href='"+men[no_rub][no_lien].page+"'>");
+					document.write(men[no_rub][no_lien].txt);
+					document.write("</a></li>");
+				}
+				if (men[no_rub].nb_lien != 0){
+					document.write("</ul>");
+				}
+			}
+			document.write("</ul>");
+		}
+		
+		function CreerMenu(police,imgRub,imgOption,imgOptionFin,hauteur) {
+			this.num_rub=0;
+			this.police=police;
+			this.imgRub=imgRub;
+			this.imgOpt=imgOption;
+			this.imgOptFin=imgOptionFin;
+			this.hauteur=hauteur;
+			this.AddRub=AddRub;
+			this.AddLien=AddLien;
+		}
+		
+		function AddRub(txt,aff,page) {
+			var rub = new Object;
+				rub.txt=txt;
+				rub.aff=aff;
+				rub.page=page;
+				rub.nb_lien=0;
+			this[this.num_rub]=rub;
+			this.num_rub++;
+		}
+
+		function AddLien(txt,page) {
+			var no_rub = this.num_rub-1;
+			var no_lien= this[no_rub].nb_lien;
+			var lien = new Object;
+				lien.txt=txt;
+				lien.page=page;
+			this[no_rub][no_lien]=lien;
+			this[no_rub].nb_lien++;
+		}
+		var menu=new CreerMenu("arial","img/dyn04.gif","img/dyn22.gif","img/dyn55.gif",18);
+		//]]> 
+		menu.AddRub("Description médicament","O","#Ann3bQuestceque");
+			menu.AddRub("Informations","O","#Ann3bInfoNecessaires");
+			menu.AddRub("Utilisation","O","#Ann3bCommentPrendre");
+			menu.AddRub("Effets indésirables","O","#Ann3bEffetsIndesirables");
+			menu.AddRub("Conservation","O","#Ann3bConservation");
+			menu.AddRub("Info. supplémentaires","O","#Ann3bEmballage");
+				</script>
+
+	<div id="container">
+		<div id="leftnav">
+			<div id="cadreMenuGauche">
+				<h2 class="sommaireMenu">Sommaire</h2>
+				<div id="menuGauche">
+					<script language="JavaScript" type="text/javascript">Aff(menu);</script>
+				</div>
+			</div>
+		</div>
+		<div id="contentPrincipal">
+			<div id="boutonsliens">
+				<a id='lien_fiche_info' href='extrait.php?specid=66456143' ><img id="ongletficheinfo" alt="Onglet fiche information" src="img/onglet_fiche_info_vert.png" /></a><a id='lien_rcp' href='affichageDoc.php?specid=66456143&amp;typedoc=R'><img class="onglet" alt="Onglet résumé des caractéristiques du produit" src="img/onglet_rcp_vert.png" /></a><a id='lien_notice' href='affichageDoc.php?specid=66456143&amp;typedoc=N'><img class="onglet" alt="Onglet notice patient" src="img/onglet_notice_gris.png" /></a>			</div>
+			<div class="titredeno">
+				<table summary="" border="0" cellspacing="0">
+					<tr><td colspan="3" height="10px"></td></tr>
+					<tr>
+						<td width="15px">&nbsp;</td>
+						<td width="685px"><h1 class="textedeno">ATORVASTATINE ACCORD 40 mg, comprimé pelliculé  - Notice patient</h1></td>
+						<td width="43px" class="tdcenter"><a href="Javascript:void(null)" onclick="print();"><img src="img/imprimante.png" height="20px" width="20px" alt="Imprimer le document" title="Imprimer le document" border="0" /></a></td>
+					</tr>
+					<tr><td colspan="3" height="10px"></td></tr>
+				</table>
+			</div>
+			
+			<div id="contentDocument">
+				<div id="textDocument">
+					<p class="DateNotif">ANSM - Mis à jour le : 11/03/2024</p>
+<p class="AmmNoticeTitre1"><a name="Ann3bDenomination">Dénomination du médicament</a></p>
+<p class=AmmCorpsTexteGras align=center style='text-align:center'><a name="_Toc142278999">ATORVASTATINE ACCORD 40 mg, comprimé pelliculé</a></p>
+<p class=AmmCorpsTexteGras align=center style='text-align:center'>Atorvastatine </p>
+<p class="AmmNoticeTitre1"><a name="Ann3bEncadre">Encadré</a></p>
+<p class=AmmCorpsTexteGras><a name="_Toc142279000"><span lang=FR-BE>Veuillez lire attentivement cette notice avant de prendre ce médicament car elle contient des informations importantes pour vous.</span></a></p>
+<p class=AmmListePuces1><span lang=FR-BE style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span><span lang=FR-BE>Gardez cette notice. Vous pourriez avoir besoin de la relire.</span></p>
+<p class=AmmListePuces1><span lang=FR-BE style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span><span lang=FR-BE>Si vous avez d’autres questions, interrogez votre médecin ou votre pharmacien.</span></p>
+<p class=AmmListePuces1><span lang=FR-BE style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span><span lang=FR-BE>Ce médicament vous a été personnellement prescrit. Ne le donnez pas à d’autres personnes. Il pourrait leur être nocif, même si les signes de leur maladie sont identiques aux vôtres.</span></p>
+<p class=AmmListePuces1><span lang=FR-BE style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span><span lang=FR-BE>Si vous ressentez un quelconque effet indésirable, parlez-en à votre médecin ou votre pharmacien. Ceci s’applique aussi à tout effet indésirable qui ne serait pas mentionné dans cette notice. </span>Voir rubrique 4.</p>
+<p class="AmmNoticeTitre1"><a name="Ann3bSomm">Que contient cette notice ?</a></p>
+<p class=AmmCorpsTexte style='margin-top:0cm;margin-right:0cm;margin-bottom: 0cm;margin-left:14.2pt;margin-bottom:.0001pt;text-indent:-14.2pt'>1. Qu'est-ce que ATORVASTATINE ACCORD 40 mg, comprimé pelliculé et dans quels cas est-il utilisé?</p>
+<p class=AmmCorpsTexte style='margin-top:0cm;margin-right:0cm;margin-bottom: 0cm;margin-left:14.2pt;margin-bottom:.0001pt;text-indent:-14.2pt'>2. Quelles sont les informations à connaître avant de prendre ATORVASTATINE ACCORD 40 mg, comprimé pelliculé ?</p>
+<p class=AmmCorpsTexte style='margin-top:0cm;margin-right:0cm;margin-bottom: 0cm;margin-left:14.2pt;margin-bottom:.0001pt;text-indent:-14.2pt'>3. Comment prendre ATORVASTATINE ACCORD 40 mg, comprimé pelliculé ?</p>
+<p class=AmmCorpsTexte style='margin-top:0cm;margin-right:0cm;margin-bottom: 0cm;margin-left:14.2pt;margin-bottom:.0001pt;text-indent:-14.2pt'>4. Quels sont les effets indésirables éventuels ?</p>
+<p class=AmmCorpsTexte style='margin-top:0cm;margin-right:0cm;margin-bottom: 0cm;margin-left:14.2pt;margin-bottom:.0001pt;text-indent:-14.2pt'>5. Comment conserver ATORVASTATINE ACCORD 40 mg, comprimé pelliculé ?</p>
+<p class=AmmCorpsTexte style='margin-top:0cm;margin-right:0cm;margin-bottom: 0cm;margin-left:14.2pt;margin-bottom:.0001pt;text-indent:-14.2pt'><span style='color:black'>6. Contenu de l’emballage et autres informations.</span></p>
+<h2><a name="Ann3bQuestceque">1. QU’EST-CE QUE ATORVASTATINE ACCORD 40 mg, comprimé pelliculé ET DANS QUELS CAS EST-IL UTILISE ?</a>&nbsp;&nbsp;<a href='#HautDePage'><img src='img/BackToTop.jpg' width='15px' height='15px' alt='Retour en haut de la page' title='Retour en haut de la page' /></a></h2>
+<p class=AmmCorpsTexteGras><a name="_Toc142279003">Classe pharmacothérapeutique : Hypolipidémiants, inhibiteurs de l'HMG-CoA réductase, Code ATC: C10AA05</a><span style='font-size:8.0pt'>.</span></p>
+<p class=AmmCorpsTexte><a name="_Toc142279004">ATORVASTATINE ACCORD 40 mg, comprimé pelliculé appartient à un groupe de médicaments appelés statines, qui interviennent dans la régulation des lipides (graisses).</a></p>
+<p class=AmmCorpsTexte><span style='color:black'>ATORVASTATINE ACCORD 40 mg, comprimé pelliculé est utilisé pour diminuer le taux sanguin des lipides appelés cholestérol et triglycérides lorsqu'un régime pauvre en graisses associé à des modifications du mode de vie ne sont pas suffisantes. Si vous présentez des facteurs de risque de survenue de maladie du cœur, ATORVASTATINE ACCORD 40 mg, comprimé pelliculé peut également être utilisé pour réduire ce risque même si votre taux de cholestérol est normal. Vous devez continuer à poursuivre un régime alimentaire standard pauvre en cholestérol pendant toute la durée du traitement</span>.</p>
+<h2><a name="Ann3bInfoNecessaires">2. QUELLES SONT LES INFORMATIONS A CONNAITRE AVANT DE PRENDRE ATORVASTATINE ACCORD 40 mg, comprimé pelliculé ?</a>&nbsp;&nbsp;<a href='#HautDePage'><img src='img/BackToTop.jpg' width='15px' height='15px' alt='Retour en haut de la page' title='Retour en haut de la page' /></a></h2>
+<p class=AmmCorpsTexteGras><a name="_Toc142279015">Ne prenez jamais ATORVASTATINE ACCORD 40 mg, comprimé pelliculé :</a></p>
+<p class=AmmListePuces1 style='text-align:justify'><a name="_Hlk526773515"><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>si vous utilisez l’association glécaprévir/pibrentasvir dans le traitement de l’hépatite C.</a></p>
+<p class=AmmListePuces1 style='text-align:justify'><span style='font-family: Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>si vous êtes allergique à l’atorvastatine ou à l’un des autres composants contenus dans ce médicament, mentionnés dans la rubrique 6.</p>
+<p class=AmmListePuces1 style='text-align:justify'><span style='font-family: Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>si vous avez ou avez eu une maladie du foie.</p>
+<p class=AmmListePuces1 style='text-align:justify'><span style='font-family: Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>si vous avez eu des résultats d'analyse des tests de votre fonction hépatique anormaux et inexpliqués.</p>
+<p class=AmmListePuces1 style='text-align:justify'><span style='font-family: Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>si vous êtes une femme en âge d'avoir des enfants et que vous n'utilisez pas une méthode de contraception fiable.</p>
+<p class=AmmListePuces1 style='text-align:justify'><span style='font-family: Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>si vous êtes enceinte ou essayez de l'être.</p>
+<p class=AmmListePuces1 style='text-align:justify'><span style='font-family: Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>si vous allaitez.</p>
+<p class=AmmCorpsTexteGras>Avertissements et précautions</p>
+<p class=AmmCorpsTexte><span lang=FR-BE>Adressez-vous à votre médecin, pharmacien </span><span style='color:black'>ou infirmier/ère </span><span lang=FR-BE>avant de prendre </span>ATORVASTATINE ACCORD 40 mg, comprimé pelliculé<span lang=FR-BE>. </span></p>
+<p class=AmmListePuces1 style='text-align:justify'><span style='font-family: Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>si vous avez une insuffisance respiratoire sévère,</p>
+<p class=AmmListePuces1 style='text-align:justify'><span style='font-family: Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>si vous prenez ou avez pris au cours des 7 derniers jours un médicament appelé acide fusidique, (médicament utilisé pour traiter les infections bactériennes) par voie orale ou injectable. L’association de l'acide fusidique et d’ATORVASTATINE ACCORD peut provoquer des problèmes musculaires graves (rhabdomyolyse),</p>
+<p class=AmmListePuces1 style='text-align:justify'><span style='font-family: Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>si vous avez précédemment eu un accident vasculaire cérébral avec saignement dans le cerveau, ou si vous avez de petites poches de liquide dans le cerveau suite à un accident vasculaire cérébral.</p>
+<p class=AmmListePuces1 style='text-align:justify'><span style='font-family: Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>si vous avez des problèmes aux reins.</p>
+<p class=AmmListePuces1 style='text-align:justify'><span style='font-family: Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>si l'activité de votre glande thyroïde est insuffisante (hypothyroïdie).</p>
+<p class=AmmListePuces1 style='text-align:justify'><span style='font-family: Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>si vous avez présenté dans le passé des courbatures ou des douleurs musculaires répétées et inexpliquées, ou si vous avez des antécédents personnels ou familiaux de problèmes musculaires.</p>
+<p class=AmmListePuces1 style='text-align:justify'><span style='font-family: Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>si vous avez eu des problèmes musculaires pendant un traitement avec d'autres médicaments diminuant les lipides du sang (par exemple un autre médicament de type « statine » ou « fibrate»).</p>
+<p class=AmmListePuces1 style='text-align:justify'><span style='font-family: Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>si vous buvez régulièrement d'importantes quantités d'alcool.</p>
+<p class=AmmListePuces1 style='text-align:justify'><span style='font-family: Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>si vous avez des antécédents de maladie du foie.</p>
+<p class=AmmListePuces1 style='text-align:justify'><span style='font-family: Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>si vous êtes âgés de plus de 70 ans.</p>
+<p class=AmmListePuces1><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>si vous avez ou avez eu une myasthénie (maladie accompagnée d'une faiblesse musculaire générale, pouvant parfois toucher les muscles utilisés pour respirer) ou une myasthénie oculaire (maladie provoquant une faiblesse musculaire au niveau des yeux), car les statines peuvent parfois aggraver ces affections ou entraîner leur apparition (voir rubrique 4).</p>
+<p class=AmmCorpsTexte style='margin-top:6.0pt'>Si vous présentez l'une des situations ci-dessus, votre médecin vous prescrira une analyse de sang avant, et peut-être pendant, votre traitement par ATORVASTATINE ACCORD 40 mg, comprimé pelliculé afin de d'évaluer votre risque de survenue d'effets indésirables musculaires. En effet, le risque d'effets indésirables musculaires, notamment de rhabdomyolyse, peut-être majoré en cas de prise simultanée de certains médicaments avec ATORVASTATINE ACCORD 40 mg, comprimé pelliculé (<a href="http://agence-prd.ansm.sante.fr/php/ecodex/notice/N0231519.htm#Ann3b_Interactions_12"><span style='color:windowtext;text-decoration:none'>voir rubrique 2 « Autres médicaments et ATORVASTATINE ACCORD 40 mg, comprimé pelliculé »</span></a>).</p>
+<p class=AmmCorpsTexte style='margin-top:6.0pt'><span style='color:black'>Prévenez également votre médecin ou votre pharmacien si vous avez une faiblesse musculaire constante. Des examens complémentaires et un traitement peuvent être nécessaires pour la diagnostiquer et la traiter.</span></p>
+<p class=AmmCorpsTexte>L'utilisation de ce médicament est déconseillée chez les patients présentant une intolérance au galactose, un déficit en lactase de Lapp ou un syndrome de malabsorption du glucose ou du galactose (maladies héréditaires rares).</p>
+<p class=AmmCorpsTexte>L'utilisation de ce médicament est déconseillée chez les patients présentant une intolérance au fructose, un syndrome de malabsorption du glucose et du galactose ou un déficit en sucrase/isomaltase (maladies héréditaires rares).</p>
+<p class=AmmCorpsTexteGras>Enfants et adolescents</p>
+<p class=AmmCorpsTexte>Sans objet.</p>
+<p class=AmmCorpsTexteGras>Autres médicaments et ATORVASTATINE ACCORD 40 mg, comprimé pelliculé</p>
+<p class=AmmCorpsTexte>Certains médicaments peuvent modifier l'effet d'ATORVASTATINE ACCORD 40 mg, comprimé pelliculé, ou l'effet de ces médicaments peut aussi être modifié en cas d'association avec ATORVASTATINE ACCORD 40 mg, comprimé pelliculé. Ces interactions peuvent diminuer l'efficacité de l'un des médicaments ou des deux. Dans d'autres cas, cette interaction pourrait augmenter le risque de survenue ou la sévérité d'effets indésirables, y compris une dégradation importante des muscles appelé rhabdomyolyse, <a href="http://agence-prd.ansm.sante.fr/php/ecodex/notice/N0231519.htm#Ann3b_4_EffetsIndesirables_14"><span style='color:windowtext;text-decoration:none'>décrits à la rubrique 4</span></a>:</p>
+<p class=AmmListePuces1 style='text-align:justify'><span style='font-family: Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>Des médicaments utilisés pour modifier le fonctionnement du système immunitaire, telle que la ciclosporine.</p>
+<p class=AmmListePuces1 style='text-align:justify'><span style='font-family: Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>Certains médicaments antibiotiques ou antifongiques, tel que l'érythromycine, la clarithromycine, la télithromycine, le kétoconazole, l'itraconazole, le voriconazole, le fluconazole, le posaconazole, la rifampicine, l'acide fusidique.</p>
+<p class=AmmListePuces1 style='text-align:justify'><span style='font-family: Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>D'autres médicaments utilisés pour réguler les taux de lipides, tels que le gemfibrozil, d'autres fibrates ou le colestipol.</p>
+<p class=AmmListePuces1 style='text-align:justify'><span style='font-family: Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>Certains inhibiteurs calciques utilisés en cas d'angine de poitrine ou d'hypertension artérielle, tels que l'amlodipine, le diltiazem ; ou des médicaments utilisés pour contrôler le rythme cardiaque, tels que la digoxine, le vérapamil ou l'amiodarone.</p>
+<p class=AmmListePuces1 style='text-align:justify'><a name="_Hlk526773550"></a><a name="_Hlk529781233"><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span><span style='color:black'>Des médicaments utilisés pour le traitement de l'infection à VIH, tels que le ritonavir, le lopinavir, l'atazanavir, l'indinavir, ou le darunavir, l’association tipranavir/ritonavir, etc.</span></a></p>
+<p class=AmmListePuces1 style='text-align:justify'><span style='font-family: Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>Certains médicaments utilisés dans le traitement de l'hépatite C, comme le télaprévir, le bocéprévir et l'association elbasvir/grazoprévir.</p>
+<p class=AmmListePuces1 style='text-align:justify'><span style='font-family: Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>D'autres médicaments connus pour interagir avec ATORVASTATINE ACCORD 40 mg, comprimé pelliculé tels que l'ézétimibe (qui diminue le cholestérol), la warfarine (qui diminue la coagulation sanguine), les contraceptifs oraux, le stiripentol (un anticonvulsivant utilisé dans le traitement de l'épilepsie), la cimétidine (utilisée dans le traitement des brûlures d'estomac et des ulcères d'estomac), la phénazone (un antidouleur), la colchicine (utilisée dans le traitement de la goutte),<span style='color:black'> </span> et les antiacides (<span style='color:black'>produits contre l’indigestion contenant de l’aluminium ou du magnésium</span>).</p>
+<p class=AmmListePuces1 style='text-align:justify'><span style='font-family: Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>Médicaments obtenus sans prescription médicale : le millepertuis.</p>
+<p class=AmmListePuces1 style='text-align:justify'><span style='font-family: Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span><span style='color:black'>Si vous devez prendre de l'acide fusidique par voie orale pour traiter une infection bactérienne, vous devrez arrêter temporairement d'utiliser ce médicament. Votre médecin vous dira quand vous pourrez reprendre </span>ATORVASTATINE ACCORD<span style='color:black'> en toute sécurité. L’association d’</span>ATORVASTATINE ACCORD<span style='color:black'> avec l'acide fusidique peut, dans de rares cas, conduire à une faiblesse musculaire, une sensibilité ou une douleur musculaire (rhabdomyolyse). Voir plus d'informations concernant la rhabdomyolyse dans la rubrique 4.</span></p>
+<p class=AmmCorpsTexteGras style='margin-top:6.0pt'>ATORVASTATINE ACCORD 40 mg, comprimé pelliculé avec des aliments et boissons</p>
+<p class=AmmCorpsTexte>Voir également la rubrique 3 relatives aux instructions sur la façon de prendre ATORVASTATINE ACCORD 40 mg, comprimé pelliculé. Vous devez prendre en compte les informations suivantes :</p>
+<p class=AmmCorpsTexte><span class='italique'>Jus de pamplemousse</span></p>
+<p class=AmmCorpsTexte>Ne consommez pas plus d'un ou deux petits verres de jus de pamplemousse par jour, car de grandes quantités de jus de pamplemousse peuvent modifier les effets d'ATORVASTATINE ACCORD 40 mg, comprimé pelliculé.</p>
+<p class=AmmCorpsTexte><span class='italique'>Alcool</span></p>
+<p class=AmmCorpsTexte>Evitez de boire trop d'alcool lors de votre traitement par ce médicament. Pour plus d'informations, <a href="http://agence-prd.ansm.sante.fr/php/ecodex/notice/N0231519.htm#Ann3b_MisesEnGarde_11"><span style='color:windowtext;text-decoration:none'>voir également la rubrique 2 « Faites attention avec ATORVASTATINE ACCORD 40 mg, comprimé pelliculé»</span></a>.</p>
+<p class=AmmCorpsTexteGras><a name="_Toc142279012">Grossesse et allaitement</a></p>
+<p class=AmmCorpsTexte><span lang=FR-BE>Si vous êtes enceinte ou que vous allaitez, si vous pensez être enceinte ou planifiez une grossesse, demandez conseil à votre médecin</span><span lang=FR-BE> </span><span lang=FR-BE>ou pharmacien avant de prendre ce médicament.</span></p>
+<p class=AmmCorpsTexte><span lang=FR-BE>Ne prenez pas ATORVASTATINE ACCORD 40 mg, comprimé pelliculé si vous êtes enceinte ou tentez de l'être.</span></p>
+<p class=AmmCorpsTexte><span lang=FR-BE>Ne prenez pas ATORVASTATINE ACCORD 40 mg, comprimé pelliculé si vous êtes en âge d'avoir des enfants, sauf si vous utilisez une méthode de contraception fiable.</span></p>
+<p class=AmmCorpsTexte><span lang=FR-BE>Ne prenez pas ATORVASTATINE ACCORD 40 mg, comprimé pelliculé si vous allaitez.</span></p>
+<p class=AmmCorpsTexte><span lang=FR-BE>La sécurité d'emploi d'ATORVASTATINE ACCORD 40 mg, comprimé pelliculé pendant la grossesse et l'allaitement n'a pas encore été établie.</span></p>
+<p class=AmmCorpsTexte><span lang=FR-BE>Demandez conseil à votre médecin ou à votre pharmacien avant de prendre tout médicament.</span></p>
+<p class=AmmCorpsTexteGras>Conduite de véhicules et utilisation de machines</p>
+<p class=AmmCorpsTexte>Ce médicament n'affecte normalement pas votre capacité à conduire ou à utiliser des machines. Cependant, ne conduisez pas si ce médicament affecte votre aptitude à conduire. N'utilisez pas d'appareils ou de machines si votre capacité à les utiliser est affectée par ce médicament.</p>
+<p class=AmmCorpsTexteGras>ATORVASTATINE ACCORD 40 mg, comprimé pelliculé contient du lactose.</p>
+<p class=AmmCorpsTexte>Si votre médecin vous a informé(e) d'une intolérance à certains sucres, contactez-le avant de prendre ce médicament.</p>
+<h2><a name="Ann3bCommentPrendre">3. COMMENT PRENDRE ATORVASTATINE ACCORD 40 mg, comprimé pelliculé ?</a>&nbsp;&nbsp;<a href='#HautDePage'><img src='img/BackToTop.jpg' width='15px' height='15px' alt='Retour en haut de la page' title='Retour en haut de la page' /></a></h2>
+<p class=AmmCorpsTexte><a name="_Toc142279021">Avant que vous ne commenciez le traitement, votre médecin vous prescrira un régime pauvre en cholestérol, que vous devrez poursuivre pendant toute la durée de votre traitement par ATORVASTATINE ACCORD 40 mg, comprimé pelliculé.</a></p>
+<p class=AmmCorpsTexte>La dose initiale habituelle d'ATORVASTATINE ACCORD 40 mg, comprimé pelliculé est de 10 mg en une prise par jour chez les adultes et les enfants âgés de 10 ans et plus. Si nécessaire, la posologie peut être augmentée par votre médecin jusqu'à la posologie dont vous avez besoin. </p>
+<p class=AmmCorpsTexte>La posologie sera adaptée par votre médecin à intervalles d'au moins 4 semaines. La dose maximale d'ATORVASTATINE ACCORD 40 mg, comprimé pelliculé est de 80 mg une fois par jour.</p>
+<p class=AmmCorpsTexte>Les comprimés d'ATORVASTATINE ACCORD 40 mg, comprimé pelliculé doivent être avalés entiers avec un verre d'eau et peuvent être pris à tout moment de la journée, avec ou sans aliments. Essayez cependant de prendre votre comprimé tous les jours à la même heure.</p>
+<p class=AmmCorpsTexte>Respectez toujours la posologie indiquée par votre médecin. En cas de doute, consultez votre médecin ou votre pharmacien.</p>
+<p class=AmmCorpsTexte>La barre de cassure n'est là que pour faciliter la prise du comprimé si vous éprouvez des difficultés à l'avaler en entier.</p>
+<p class=AmmCorpsTexte><span class='gras'>La durée du traitement par ATORVASTATINE ACCORD 40 mg, comprimé pelliculé est déterminée par votre médecin.</span></p>
+<p class=AmmCorpsTexte>Si vous pensez que l'effet d'ATORVASTATINE ACCORD 40 mg, comprimé pelliculé est trop fort ou trop faible, parlez-en à votre médecin.</p>
+<p class=AmmCorpsTexte><span class='gras'><span style='color:black'>Si vous avez pris plus d’ATORVASTATINE ACCORD 40 mg, comprimé pelliculé que vous n'auriez dû :</span></span></p>
+<p class=AmmCorpsTexte><span style='color:black'>Si vous avez pris accidentellement plus de comprimés d'ATORVASTATINE ACCORD 40 mg, comprimé pelliculé que vous n'auriez dû (plus que votre dose quotidienne habituelle), contactez votre médecin ou l'hôpital le plus proche pour avis.</span></p>
+<p class=AmmCorpsTexte><span class='gras'>Si vous oubliez de prendre ATORVASTATINE ACCORD 40 mg, comprimé pelliculé :</span></p>
+<p class=AmmCorpsTexte>Si vous avez oublié de prendre une dose, prenez simplement la prochaine dose prévue à l'heure normale. Ne prenez pas de dose double pour compenser la dose que vous avez oublié de prendre.</p>
+<p class=AmmCorpsTexte><span class='gras'>Si vous arrêtez de prendre ATORVASTATINE ACCORD 40 mg, comprimé pelliculé :</span></p>
+<p class=AmmCorpsTexte>Sans objet.</p>
+<p class=AmmCorpsTexte>Si vous avez d'autres questions sur l'utilisation de ce médicament ou souhaitez arrêter de prendre votre traitement, demandez plus d'informations à votre médecin ou à votre pharmacien.</p>
+<h2><a name="Ann3bEffetsIndesirables">4. QUELS SONT LES EFFETS INDESIRABLES EVENTUELS ?</a>&nbsp;&nbsp;<a href='#HautDePage'><img src='img/BackToTop.jpg' width='15px' height='15px' alt='Retour en haut de la page' title='Retour en haut de la page' /></a></h2>
+<p class=AmmCorpsTexte><a name="_Toc142279023"><span style='color:black'>Comme tous les médicaments, </span>ce médicament peut provoquer des </a><span style='color:black'>effets indésirables, </span>mais ils ne surviennent pas systématiquement chez<span style='color:black'> tout le monde.</span></p>
+<p class=AmmCorpsTexte><span class='gras'><span style='color:black'>Si vous ressentez l'un des effets indésirables ou symptômes graves suivants, arrêtez de prendre vos comprimés et contactez immédiatement votre médecin ou allez au service des urgences de l'hôpital le plus proche.</span></span></p>
+<p class=AmmAnnexeTitre4>Rare : peut affecter jusqu’à 1 patient sur 1 000</p>
+<p class=AmmListePuces1 style='text-align:justify'><span style='font-family: Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>réaction allergique sévère entraînant un gonflement du visage, de la langue et de la gorge pouvant provoquer d'importantes difficultés à respirer.</p>
+<p class=AmmListePuces1 style='text-align:justify'><span style='font-family: Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>pathologie sévère avec pelade et gonflement graves de la peau, cloques sur la peau, dans la bouche, sur la zone génitale et autour des yeux et une fièvre. Eruption cutanée de taches roses-rouges, particulièrement sur la paume des mains ou la plante des pieds, qui peuvent former des cloques.</p>
+<p class=AmmListePuces1 style='text-align:justify'><span style='font-family: Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>faiblesse musculaire, sensibilité douloureuse, douleur ou rupture musculaires ou coloration rouge-brun de l’urine, associées à une sensation de malaise ou de fièvre, pouvant être causé par une atteinte musculaire anormale <span style='color:black'>(rhabdomyolyse)</span>. La dégradation anormale des muscles ne disparaît pas toujours, même après l’arrêt de l’atorvastatine et peut engager le pronostic vital et entraîner des problèmes aux reins.</p>
+<p class=AmmAnnexeTitre4 style='margin-top:6.0pt;page-break-after:avoid'>Très rare : peut affecter jusqu’à 1 patient sur 10 000</p>
+<p class=AmmListePuces1 style='text-align:justify;page-break-after:avoid'><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>La présence inattendue ou inhabituelle de saignements ou d'hématomes peut être le signe d'anomalies du fonctionnement de votre foie. Dans ce cas, consultez votre médecin dès que possible.</p>
+<p class=AmmListePuces1 style='text-align:justify'><span style='font-family: Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>Syndrome lupoïde (incluant éruption cutanée, troubles articulaires et effets sur les cellules sanguines).</p>
+<p class=AmmAnnexeTitre3>Autres effets indésirables éventuels d'ATORVASTATINE ACCORD 40 mg, comprimé pelliculé.</p>
+<p class=AmmAnnexeTitre4>Fréquent : peut affecter jusqu’à 1 personne sur 10</p>
+<p class=AmmListePuces1 style='text-align:justify'><span style='font-family: Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>inflammation des cavités nasales, maux de gorge, saignement de nez.</p>
+<p class=AmmListePuces1 style='text-align:justify'><span style='font-family: Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>réactions allergiques.</p>
+<p class=AmmListePuces1 style='text-align:justify'><span style='font-family: Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>augmentation du taux de sucre dans le sang (si vous êtes diabétique, continuez à surveiller attentivement votre glycémie), augmentation du taux de créatine phosphokinase dans le sang.</p>
+<p class=AmmListePuces1 style='text-align:justify'><span style='font-family: Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>maux de tête.</p>
+<p class=AmmListePuces1 style='text-align:justify'><span style='font-family: Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>nausées, constipation, flatulence, indigestion, diarrhée.</p>
+<p class=AmmListePuces1 style='text-align:justify'><span style='font-family: Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>douleurs articulaires, douleurs musculaires et maux de dos.</p>
+<p class=AmmListePuces1 style='text-align:justify'><span style='font-family: Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>résultats d'analyse de sang montrant l'apparition d'une anomalie de la fonction du foie.</p>
+<p class=AmmAnnexeTitre4 style='margin-top:6.0pt'>Peu fréquent : peut affecter jusqu’à 1 personne sur 100</p>
+<p class=AmmListePuces1 style='text-align:justify'><span style='font-family: Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>anorexie (perte d'appétit), prise de poids, diminution du taux de sucre dans le sang (si vous êtes diabétique, vous devez continuer à surveiller attentivement votre glycémie).</p>
+<p class=AmmListePuces1 style='text-align:justify'><span style='font-family: Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>cauchemars, insomnie.</p>
+<p class=AmmListePuces1 style='text-align:justify'><span style='font-family: Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>sensations vertigineuses, engourdissement ou picotements dans les doigts et les orteils, diminution de la sensibilité à la douleur ou au toucher, modification du goût, perte de mémoire.</p>
+<p class=AmmListePuces1 style='text-align:justify'><span style='font-family: Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>vision floue.</p>
+<p class=AmmListePuces1 style='text-align:justify'><span style='font-family: Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>bourdonnements d'oreilles et/ou de tête.</p>
+<p class=AmmListePuces1 style='text-align:justify'><span style='font-family: Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>vomissements, éructation, douleur abdominale haute et basse, pancréatite (inflammation du pancréas provoquant des maux d'estomac).</p>
+<p class=AmmListePuces1 style='text-align:justify'><span style='font-family: Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>hépatite (inflammation du foie).</p>
+<p class=AmmListePuces1 style='text-align:justify'><span style='font-family: Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>éruptions, éruptions et démangeaisons cutanées, urticaire, perte de cheveux.</p>
+<p class=AmmListePuces1 style='text-align:justify'><span style='font-family: Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>douleur dans le cou, fatigue musculaire.</p>
+<p class=AmmListePuces1 style='text-align:justify'><span style='font-family: Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>fatigue, sensation de malaise, faiblesse, douleur dans la poitrine, gonflement en particulier des chevilles (œdèmes), augmentation de la température.</p>
+<p class=AmmListePuces1 style='text-align:justify'><span style='font-family: Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>présence de globules blancs dans les urines.</p>
+<p class=AmmAnnexeTitre4 style='margin-top:6.0pt'>Rare : peut affecter jusqu’à 1 personne sur 1 000</p>
+<p class=AmmListePuces1 style='text-align:justify'><span style='font-family: Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>troubles visuels.</p>
+<p class=AmmListePuces1 style='text-align:justify'><span style='font-family: Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>saignement ou ecchymose inattendu.</p>
+<p class=AmmListePuces1 style='text-align:justify'><span style='font-family: Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>cholestase (jaunissement de la peau et du blanc des yeux).</p>
+<p class=AmmListePuces1 style='text-align:justify'><span style='font-family: Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>lésion des tendons.</p>
+<p class=AmmAnnexeTitre4 style='margin-top:6.0pt'>Très rare : peut affecter jusqu’à 1 personne sur 10 000</p>
+<p class=AmmListePuces1 style='text-align:justify'><span style='font-family: Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>une réaction allergique : les symptômes peuvent inclure une respiration bruyante, une douleur ou oppression dans la poitrine, un gonflement de la paupière, du visage, des lèvres, de la bouche, de la langue ou de la gorge, une difficulté à respirer, une perte de conscience.</p>
+<p class=AmmListePuces1 style='text-align:justify'><span style='font-family: Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>perte d’audition.</p>
+<p class=AmmListePuces1 style='text-align:justify'><span style='font-family: Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>gynécomastie (augmentation de la taille de la poitrine chez l’homme).</p>
+<p class=AmmAnnexeTitre4 style='margin-top:6.0pt'><a name="_Hlk134622311">Fréquence indéterminée : ne peut être estimée sur la base des données disponibles</a></p>
+<p class=AmmListePuces1 style='text-align:justify'><span style='font-family: Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>faiblesse musculaire constante.</p>
+<p class=AmmListePuces1><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>myasthénie (maladie provoquant une faiblesse musculaire générale, pouvant parfois toucher les muscles utilisés pour respirer).</p>
+<p class=AmmListePuces1><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>myasthénie oculaire (maladie provoquant une faiblesse des muscles oculaires).</p>
+<p class=AmmListePuces1 style='margin-left:0cm;text-indent:0cm'>Adressez-vous à votre médecin si vous présentez une faiblesse dans vos bras ou vos jambes qui s’aggrave après des périodes d’activité, une vision double ou des paupières tombantes, des difficultés à avaler ou un essoufflement.</p>
+<p class=AmmAnnexeTitre4 style='margin-top:6.0pt'>Effets indésirables éventuels rapportés avec certaines statines (médicaments du même type)</p>
+<p class=AmmListePuces1 style='text-align:justify'><span style='font-family: Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>troubles sexuels.</p>
+<p class=AmmListePuces1 style='text-align:justify'><span style='font-family: Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>dépression.</p>
+<p class=AmmListePuces1 style='text-align:justify'><span style='font-family: Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>troubles respiratoires, dont toux et/ou essoufflement persistant ou fièvre.</p>
+<p class=AmmListePuces1 style='text-align:justify'><span style='font-family: Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>diabète. Plus probable si vous avez des taux élevés de sucres et de graisses dans le sang, si vous êtes en surpoids et si vous avez une pression artérielle élevée. Votre médecin vous suivra pendant que vous prenez ce médicament.</p>
+<p class=AmmAnnexeTitre3>Déclaration des effets secondaires</p>
+<p class=AmmCorpsTexte>Si vous ressentez un quelconque effet indésirable, parlez-en à votre médecin ou votre pharmacien. Ceci s’applique aussi à tout effet indésirable qui ne serait pas mentionné dans cette notice. Vous pouvez également déclarer les effets indésirables directement via le système national de déclaration : Agence nationale de sécurité du médicament et des produits de santé (ANSM) et réseau des Centres Régionaux de Pharmacovigilance – Site internet :<span style='color:red'> </span><a href="https://signalement.social-sante.gouv.fr">https://signalement.social-sante.gouv.fr</a><span style='color:red'> </span></p>
+<p class=AmmCorpsTexte>En signalant les effets indésirables, vous contribuez à fournir davantage d’informations sur la sécurité du médicament.</p>
+<h2><a name="Ann3bConservation">5. COMMENT CONSERVER ATORVASTATINE ACCORD 40 mg, comprimé pelliculé ?</a>&nbsp;&nbsp;<a href='#HautDePage'><img src='img/BackToTop.jpg' width='15px' height='15px' alt='Retour en haut de la page' title='Retour en haut de la page' /></a></h2>
+<p class=AmmCorpsTexte><a name="_Toc142279026"></a><a name="_Toc142279024">Tenir ce médicament hors de la vue et de la portée des enfants.</a></p>
+<p class=AmmCorpsTexte><span lang=FR-BE>N’utilisez pas <a name="_Hlk134622361">ATORVASTATINE ACCORD</a> après la date de péremption indiquée sur la boîte et sur le film thermosoudé après EXP. La date de péremption fait référence au dernier jour de ce mois</span>.</p>
+<p class=AmmCorpsTexte><a name="_Toc142279025">Pas de précautions particulières de conservation concernant la température. </a></p>
+<p class=AmmCorpsTexte>A conserver dans la plaquette d'origine.</p>
+<p class=AmmCorpsTexte><span lang=FR-BE>Ne jetez aucun médicament au tout-à-l’égout<span style='color:black'> ou avec </span>les ordures ménagères. Demandez à votre pharmacien d’éliminer les médicaments que vous n’utilisez plus. Ces mesures contribueront à protéger l’environnement.</span></p>
+<p class=AmmCorpsTexte><a name="_Hlk134622410"><span lang=FR-BE>Si vous remarquez une décoloration ou tout signe d’altération de ce médicament, demandez conseil à votre pharmacien.</span></a></p>
+<h2><a name="Ann3bEmballage">6. CONTENU DE L’EMBALLAGE ET AUTRES INFORMATIONS</a>&nbsp;&nbsp;<a href='#HautDePage'><img src='img/BackToTop.jpg' width='15px' height='15px' alt='Retour en haut de la page' title='Retour en haut de la page' /></a></h2>
+<p class="AmmAnnexeTitre2"><a name="Ann3bContenu">Ce que contient ATORVASTATINE ACCORD 40 mg, comprimé pelliculé</a>&nbsp;&nbsp;<a href='#HautDePage'><img src='img/BackToTop.jpg' width='15px' height='15px' alt='Retour en haut de la page' title='Retour en haut de la page' /></a></p>
+<p class=AmmListePuces1><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>La substance active est:</p>
+<p class=AmmComposition style='margin-top:6.0pt;margin-right:0cm;margin-bottom: 6.0pt;margin-left:17.6pt'>Atorvastatine (sous forme d'atorvastatine calcique)............................................................ 40 mg</p>
+<p class=AmmListePuces1 align=center style='text-align:center;text-indent:0cm'>Pour un comprimé pelliculé.</p>
+<p class=AmmListePuces1 align=center style='text-align:center;text-indent:0cm'> </p>
+<p class=AmmListePuces1><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>Les autres composants sont:</p>
+<p class=AmmListePuces1 style='margin-top:6.0pt;margin-right:0cm;margin-bottom: 0cm;margin-left:17.85pt;margin-bottom:.0001pt;text-indent:0cm'><span class='souligne'>Noyau</span>: lactose monohydraté, stéarate de magnésium (E572), laurylsulfate de sodium, cellulose microcristalline, silice colloïdale anhydre, hydroxyanisole butylé (E320), crospovidone (E1202), bicarbonate de sodium (E500) et sinespum (qui se compose de saccharose, stéarate de sorbitane, stéarate de polyéthylène glycol (E-171), diméthicone, dioxyde de silicium, 2-Bromo-2-nitropropane-1,3-diol).</p>
+<p class=AmmListePuces1 style='margin-top:6.0pt;margin-right:0cm;margin-bottom: 0cm;margin-left:17.85pt;margin-bottom:.0001pt;text-indent:0cm'><span class='souligne'>Pelliculage</span>: Opadry OYL-28900 blanc (qui se compose de lactose monohydraté, hypromellose, dioxyde de titane (E171) et macrogol 4000). </p>
+<p class="AmmAnnexeTitre2"><a name="RcpEmballage">Qu’est-ce que ATORVASTATINE ACCORD 40 mg, comprimé pelliculé et contenu de l’emballage extérieur</a>&nbsp;&nbsp;<a href='#HautDePage'><img src='img/BackToTop.jpg' width='15px' height='15px' alt='Retour en haut de la page' title='Retour en haut de la page' /></a></p>
+<p class=AmmCorpsTexte>Les comprimés, quel que soit leur dosage, sont blancs, de forme oblongue, biconvexe, sécables et portent le code AT4 sur une face.</p>
+<p class=AmmCorpsTexte>Ce médicament est disponible en comprimés pelliculés de 10 mg, 20 mg, 40 mg et 80 mg.</p>
+<p class=AmmCorpsTexte>Tous les dosages sont proposés en boîtes de plaquettes contenant 14, 28, 30, 50, 56, 100 comprimés pelliculés.</p>
+<p class=AmmCorpsTexte>Toutes les présentations peuvent ne pas être commercialisées.</p>
+<p class="AmmAnnexeTitre2"><a name="Ann3bTituAMM">Titulaire de l’autorisation de mise sur le marché</a>&nbsp;&nbsp;<a href='#HautDePage'><img src='img/BackToTop.jpg' width='15px' height='15px' alt='Retour en haut de la page' title='Retour en haut de la page' /></a></p>
+<p class=AmmCorpsTexteGras style='margin-bottom:0cm;margin-bottom:.0001pt; page-break-after:avoid'><a name="_Toc142279031">ACCORD HEALTHCARE FRANCE SAS</a></p>
+<p class=AmmCorpsTexte style='margin-bottom:0cm;margin-bottom:.0001pt; page-break-after:avoid'>635 RUE DE LA CHAUDE RIVIERE</p>
+<p class=AmmCorpsTexte>59000 LILLE</p>
+<p class="AmmAnnexeTitre2"><a name="Ann3bExploitAMM">Exploitant de l’autorisation de mise sur le marché</a>&nbsp;&nbsp;<a href='#HautDePage'><img src='img/BackToTop.jpg' width='15px' height='15px' alt='Retour en haut de la page' title='Retour en haut de la page' /></a></p>
+<p class=AmmCorpsTexteGras style='margin-bottom:0cm;margin-bottom:.0001pt'><a name="_Toc142279032">ACCORD HEALTHCARE FRANCE SAS</a></p>
+<p class=AmmCorpsTexte style='margin-bottom:0cm;margin-bottom:.0001pt'>635 RUE DE LA CHAUDE RIVIERE </p>
+<p class=AmmCorpsTexte>59800 LILLE</p>
+<p class="AmmAnnexeTitre2"><a name="Ann3bFab">Fabricant</a>&nbsp;&nbsp;<a href='#HautDePage'><img src='img/BackToTop.jpg' width='15px' height='15px' alt='Retour en haut de la page' title='Retour en haut de la page' /></a></p>
+<p class=AmmCorpsTexteGras style='margin-bottom:0cm;margin-bottom:.0001pt; page-break-after:avoid'><a name="_Toc142279033">LABORATORIOS CINFA, S.A.</a></p>
+<p class=AmmCorpsTexte style='margin-bottom:0cm;margin-bottom:.0001pt; page-break-after:avoid'>OLAZ-CHIPI, 10 – POLIGONO INDUSTRIAL ARETA</p>
+<p class=AmmCorpsTexte style='margin-bottom:0cm;margin-bottom:.0001pt; page-break-after:avoid'>31620 HUARTE – PAMPLONA</p>
+<p class=AmmCorpsTexte style='margin-bottom:0cm;margin-bottom:.0001pt; page-break-after:avoid'>ESPAGNE</p>
+<p class=AmmCorpsTexte style='margin-top:6.0pt'>ou</p>
+<p class=AmmCorpsTexteGras style='margin-bottom:0cm;margin-bottom:.0001pt'><span lang=EN-GB>GALENICUM HEALTH, S.L.U.</span></p>
+<p class=AmmCorpsTexte style='margin-bottom:0cm;margin-bottom:.0001pt'>SANT GABRIEL, 50</p>
+<p class=AmmCorpsTexte style='margin-bottom:0cm;margin-bottom:.0001pt'>ESPLUGUES DE LLOBREGAT</p>
+<p class=AmmCorpsTexte style='margin-bottom:0cm;margin-bottom:.0001pt'>08950 BARCELONA</p>
+<p class=AmmCorpsTexte style='margin-bottom:0cm;margin-bottom:.0001pt'><span lang=EN-GB>ESPAGNE</span></p>
+<p class=AmmCorpsTexte style='margin-top:6.0pt'><span lang=EN-US>ou</span></p>
+<p class=AmmCorpsTexteGras style='margin-bottom:0cm;margin-bottom:.0001pt'><span lang=EN-GB>SAG MANUFACTURING SLU</span></p>
+<p class=AmmCorpsTexte style='margin-bottom:0cm;margin-bottom:.0001pt'><span lang=EN-GB>CRTA N-I, KM 36</span></p>
+<p class=AmmCorpsTexte style='margin-bottom:0cm;margin-bottom:.0001pt'>28750 SAN AGUSTIN DE GUADALIX,</p>
+<p class=AmmCorpsTexte style='margin-bottom:0cm;margin-bottom:.0001pt'>MADRID</p>
+<p class=AmmCorpsTexte>ESPAGNE</p>
+<p class="AmmAnnexeTitre2"><a name="Ann3bNomsMediEEE">Noms du médicament dans les Etats membres de l'Espace Economique Européen</a>&nbsp;&nbsp;<a href='#HautDePage'><img src='img/BackToTop.jpg' width='15px' height='15px' alt='Retour en haut de la page' title='Retour en haut de la page' /></a></p>
+<p class=AmmCorpsTexteGras>Ce médicament est autorisé dans les Etats membres de l'Espace Economique Européen sous les noms suivants : Conformément à la réglementation en vigueur. </p>
+<p class=AmmCorpsTexte>[À compléter ultérieurement par le titulaire]</p>
+<p class="AmmAnnexeTitre2"><a name="Ann3bContenu">La dernière date à laquelle cette notice a été révisée est :</a>&nbsp;&nbsp;<a href='#HautDePage'><img src='img/BackToTop.jpg' width='15px' height='15px' alt='Retour en haut de la page' title='Retour en haut de la page' /></a></p>
+<p class=AmmCorpsTexte>[à compléter ultérieurement par le titulaire]</p>
+<p class="AmmAnnexeTitre2"><a name="Ann3bAutres">Autres</a>&nbsp;&nbsp;<a href='#HautDePage'><img src='img/BackToTop.jpg' width='15px' height='15px' alt='Retour en haut de la page' title='Retour en haut de la page' /></a></p>
+<p class=AmmCorpsTexte>Des informations détaillées sur ce médicament sont disponibles sur le site Internet de l’ANSM (France).</p>
+</div>					
+					<p class="alignright"><a href="#HautDePage">Retour en haut de la page <img src="img/BackToTop.jpg" width="20px" height="20px" alt="Retour en haut de la page" title="Retour en haut de la page" /></a></p>
+				</div>
+			</div>
+		</div>
+	</div>
+
+<table summary="" class="content" width="1000">
+	<tr>
+		<td height="100px">&nbsp;</td>
+	</tr>
+</table>
+<table summary="Pied de page" class="footer" width="1000">
+	<tr>
+		<td>
+			<table summary="" class="tablealigncenter" border="0">
+				<tr>
+					<td width="100px" class="aligncenter"><a id="lien_ansm" href="http://ansm.sante.fr/" target="_blank"><img src="img/Logo_ANSM.png" width="150" height="60" alt="ANSM - Agence nationale de sécurité du médicament et des produits de santé" title="L'ANSM met à disposition les principales informations issues de l'Autorisation de mise sur le marché, l'appartenance à un groupe générique, les liens vers les informations de sécurité qu'elle publie, l'identification des médicaments sous surveillance renforcée - nouvelle fenêtre" /></a></td>
+					          <td>&nbsp;</td>
+					<td width="100px" class="aligncenter"><img src="img/Logo_HAS.png" width="150" height="60" alt="HAS - Haute autorité de santé" title="La HAS met à disposition les informations relatives au service médical rendu, à l'amélioration du service médical rendu ainsi que les liens vers les avis de la Commission de la Transparence correspondants - nouvelle fenêtre" /></td>
+					<td>&nbsp;</td>
+					<td width="100px" class="aligncenter"><img src="img/Logo_CNAM.png" width="150" height="60" alt="UNCAM - Unin nationale des caisses d'assurance maladie" title="L'UNCAM met à disposition le taux de remboursement, le prix et les indications remboursables le cas échéant, ainsi que l'agrément aux collectivités - nouvelle fenêtre" /></td>
+          				</tr>
+			</table> 
+		</td>
+	</tr>
+</table>
+<table summary="" class="finpage" width="1000">
+	<tr>
+		<td height="100px" class="aligncenter">
+			<a class="navigation" href="plan.php">Plan du site</a>&nbsp;|&nbsp;
+			<a class="navigation" href="accessibilite.php">Accessibilité</a>&nbsp;|&nbsp;
+			<a class="navigation" href="contact.php">Contact</a>&nbsp;|&nbsp;
+			<a class="navigation" href="telechargement.php">Téléchargement</a>&nbsp;|&nbsp;
+			<a class="navigation" href="DeclarationConfidentialite.php">Declaration de confidentialité</a>&nbsp;|&nbsp;
+			<a class="navigation" href="http://www.service-public.fr/" title="Service Public - Nouvelle fenêtre" target="_blank">Service-Public.fr</a>&nbsp;|&nbsp;
+			<a class="navigation" href="http://www.legifrance.gouv.fr/" title="Legifrance - Nouvelle fenêtre" target="_blank">Legifrance</a>&nbsp;|&nbsp;
+			<a class="navigation" href="http://www.gouvernement.fr/" title="Gouvernement - Nouvelle fenêtre" target="_blank" >Gouvernement.fr</a>
+		</td>
+	</tr>
+</table>
+
+
+
+<!-- Matomo -->
+<script type="text/javascript">
+  var _paq = window._paq = window._paq || [];
+  /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
+  _paq.push(['trackPageView']);
+  _paq.push(['enableLinkTracking']);
+  (function() {
+    var u="https://stats.integra.fr/";
+    _paq.push(['setTrackerUrl', u+'matomo.php']);
+    _paq.push(['setSiteId', '79']);
+    var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+    g.type='text/javascript'; g.async=true; g.src=u+'matomo.js'; s.parentNode.insertBefore(g,s);
+  })();
+</script>
+<!-- End Matomo Code -->
+
+
+
+</body>
+</html>

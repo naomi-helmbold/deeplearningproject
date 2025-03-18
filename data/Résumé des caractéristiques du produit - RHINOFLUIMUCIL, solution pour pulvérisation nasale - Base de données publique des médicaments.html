@@ -1,0 +1,505 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="fr" lang="fr">
+<head>
+	<title>Résumé des caractéristiques du produit - RHINOFLUIMUCIL, solution pour pulvérisation nasale  - Base de données publique des médicaments</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=windows-1252"/>
+	<meta name="robots" content="index, follow"/>
+	<meta name="Description" content="Base de données publique des médicaments"/>
+	<meta name="Keywords" content="base, données, publique, médicaments, Résumé des caractéristiques du produit, RHINOFLUIMUCIL, solution pour pulvérisation nasale "/>
+	<meta name="Subject" content="medicament"/>
+	<link href='https://fonts.googleapis.com/css?family=Noticia+Text' rel='stylesheet' type='text/css' />
+	<link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro' rel='stylesheet' type='text/css' />
+	<link href="style/style_bdm.css?v=2.2.3" type="text/css" rel="stylesheet"/>
+	<link href="style/style_RCP_Notice.css" type="text/css" rel="stylesheet"/>
+  <link rel="alternate" href="http://m.base-donnees-publique.medicaments.gouv.fr/#!info-62249357">
+    <script type="text/javascript" src="scripts/autocomplete.js?v=2.2.3"></script>
+	<script type="text/javascript" src="scripts/jquery.js"></script>
+    <script type="text/javascript" src="scripts/jquery-ui.min.js"></script>
+	<script type="text/javascript" src="scripts/common.js"></script>
+	<link rel="icon" type="image/x-icon" href="favicon.ico" />
+</head>
+
+<body>
+
+<a name="HautDePage" />
+<div id="bandeauhaut">
+	<a id="lien_ministere" class="lienmenu" href="http://www.sante.gouv.fr" target="_blank" title="Site du ministère des affaires sociales et de la santé - nouvelle fenêtre"><img id="logoministere" src="img/Logo_Ministere.jpg"  alt="Logo du ministère des affaires sociales et de la santé"/></a>
+	<h1 class="texteTitreSite">
+		Base <span class="texteBleu">de</span> données <span class="texteBleu">publique</span><br/><span class="texteBleu">des</span> médicaments
+	</h1>
+		<a id="lien_medicament_gouv" class="lienEspaceMedic" target="_blank" href="http://medicaments.gouv.fr" title="Visiter [medicaments.gouv.fr] - nouvelle fenêtre">Visiter [medicaments.gouv.fr] <img src="/img/icone_lien.png" alt="Visiter [medicaments.gouv.fr]"  title="Visiter [medicaments.gouv.fr] - nouvelle fenetre" /></a>
+</div>
+<!--div align="center">
+	<a id="banniere" target="_blank" href="http://social-sante.gouv.fr/soins-et-maladies/medicaments/medicaments-generiques/" title="Visiter [medicaments.gouv.fr] - M?dicaments g?n?riques">
+		<img width="1000"   src ="/img/carrouselbannieres.gif" alt="Visiter [medicaments.gouv.fr] - M?dicaments g?n?riques" title="Visiter [medicaments.gouv.fr] - M?dicaments g?n?riques" />
+	</a>
+</div-->
+
+<div id="menuhaut">
+	<span id="menuhaut_gauche">
+		<a id="lien_accueil" class="navigation" href="index.php">Accueil</a>&nbsp;|&nbsp;
+		<a id="lien_glossaire" class="navigation" href="glossaire.php">Glossaire</a>&nbsp;|&nbsp;
+		<a id="lien_aide" class="navigation" href="aide.php">Aide</a>		
+	</span>
+	
+		
+	<span id="menuhaut_dernmaj">
+        <br>Dernière <span title=" 2.4.4
+">mise à jour</span> le 03/03/2025	</span>
+</div>
+
+	<script language="javascript" type="text/javascript">
+		//<![CDATA[ 
+		function Aff(men) {
+			document.write("<ul class=\"menuDoc\">");
+			for(var no_rub=0;no_rub<men.num_rub;no_rub++) {
+				document.write("<li><a class='leftMenu' href='"+menu[no_rub].page+"'>");
+				document.write(men[no_rub].txt);
+				document.write("</a></li>");
+				if (men[no_rub].nb_lien != 0){
+					document.write("<ul class=\"sousMenuDoc\">");
+				}
+				for(var no_lien=0;no_lien<men[no_rub].nb_lien;no_lien++) {
+					document.write("<li><a class='leftMenu' href='"+men[no_rub][no_lien].page+"'>");
+					document.write(men[no_rub][no_lien].txt);
+					document.write("</a></li>");
+				}
+				if (men[no_rub].nb_lien != 0){
+					document.write("</ul>");
+				}
+			}
+			document.write("</ul>");
+		}
+		
+		function CreerMenu(police,imgRub,imgOption,imgOptionFin,hauteur) {
+			this.num_rub=0;
+			this.police=police;
+			this.imgRub=imgRub;
+			this.imgOpt=imgOption;
+			this.imgOptFin=imgOptionFin;
+			this.hauteur=hauteur;
+			this.AddRub=AddRub;
+			this.AddLien=AddLien;
+		}
+		
+		function AddRub(txt,aff,page) {
+			var rub = new Object;
+				rub.txt=txt;
+				rub.aff=aff;
+				rub.page=page;
+				rub.nb_lien=0;
+			this[this.num_rub]=rub;
+			this.num_rub++;
+		}
+
+		function AddLien(txt,page) {
+			var no_rub = this.num_rub-1;
+			var no_lien= this[no_rub].nb_lien;
+			var lien = new Object;
+				lien.txt=txt;
+				lien.page=page;
+			this[no_rub][no_lien]=lien;
+			this[no_rub].nb_lien++;
+		}
+		var menu=new CreerMenu("arial","img/dyn04.gif","img/dyn22.gif","img/dyn55.gif",18);
+		//]]> 
+		menu.AddRub("Dénomination","O","#RcpDenomination");
+			menu.AddRub("Composition","O","#RcpCompoQualiQuanti");
+			menu.AddRub("Forme pharma.","O","#RcpFormePharm");
+			menu.AddRub("Clinique","O","#RcpDonneesCliniques");
+			menu.AddLien("Indic. thérapeutiques","#RcpIndicTherap");
+				menu.AddLien("Posologie","#RcpPosoAdmin");
+				menu.AddLien("Contre-indications","#RcpContreindications");
+				menu.AddLien("Mise en garde","#RcpMisesEnGarde");
+				menu.AddLien("Interactions","#RcpInteractionsMed");
+				menu.AddLien("Grossesse, allait.","#RcpFertGrossAllait");
+				menu.AddLien("Conduite véhicules","#RcpConduite");
+				menu.AddLien("Effets indésirables","#RcpEffetsIndesirables");
+				menu.AddLien("Surdosage","#RcpSurdosage");
+				menu.AddRub("Pharmacologie","O","#RcpPropPharmacologiques");
+			menu.AddLien("Pharmacodynamie","#RcpPropPharmacodynamiques");
+				menu.AddLien("Pharmacocinétique","#RcpPropPharmacocinetiques");
+				menu.AddLien("Sécurité préclinique","#RcpSecuritePreclinique");
+				menu.AddRub("Pharmaceutique","O","#RcpDonneesPharmaceutiques");
+			menu.AddLien("Liste excipients","#RcpListeExcipients");
+				menu.AddLien("Incompatibilités","#RcpIncompatibilites");
+				menu.AddLien("Durée conservation","#RcpDureeConservation");
+				menu.AddLien("Conservation","#RcpPrecConservation");
+				menu.AddLien("Emballage","#RcpEmballage");
+				menu.AddLien("Utilisation/manipulation","#RcpPrecEmpl");
+				menu.AddRub("Titulaire AMM","O","#RcpTitulaireAmm");
+			menu.AddRub("Présentations","O","#RcpNumAutor");
+			menu.AddRub("Autorisation, renouv.","O","#RcpPremiereAutorisation");
+			menu.AddRub("Date de révision","O","#RcpDateRevision");
+			menu.AddRub("Dosimétrie","O","#RcpDosimetrie");
+			menu.AddRub("Préparation radiopharma.","O","#RcpInstPrepRadioph");
+				</script>
+
+	<div id="container">
+		<div id="leftnav">
+			<div id="cadreMenuGauche">
+				<h2 class="sommaireMenu">Sommaire</h2>
+				<div id="menuGauche">
+					<script language="JavaScript" type="text/javascript">Aff(menu);</script>
+				</div>
+			</div>
+		</div>
+		<div id="contentPrincipal">
+			<div id="boutonsliens">
+				<a id='lien_fiche_info' href='extrait.php?specid=62249357' ><img id="ongletficheinfo" alt="Onglet fiche information" src="img/onglet_fiche_info_vert.png" /></a><a id='lien_rcp' href='affichageDoc.php?specid=62249357&amp;typedoc=R'><img class="onglet" alt="Onglet résumé des caractéristiques du produit" src="img/onglet_rcp_gris.png" /></a><a id='lien_notice' href='affichageDoc.php?specid=62249357&amp;typedoc=N'><img class="onglet" alt="Onglet notice patient" src="img/onglet_notice_vert.png" /></a>			</div>
+			<div class="titredeno">
+				<table summary="" border="0" cellspacing="0">
+					<tr><td colspan="3" height="10px"></td></tr>
+					<tr>
+						<td width="15px">&nbsp;</td>
+						<td width="685px"><h1 class="textedeno">RHINOFLUIMUCIL, solution pour pulvérisation nasale  - Résumé des caractéristiques du produit</h1></td>
+						<td width="43px" class="tdcenter"><a href="Javascript:void(null)" onclick="print();"><img src="img/imprimante.png" height="20px" width="20px" alt="Imprimer le document" title="Imprimer le document" border="0" /></a></td>
+					</tr>
+					<tr><td colspan="3" height="10px"></td></tr>
+				</table>
+			</div>
+			
+			<div id="contentDocument">
+				<div id="textDocument">
+					<p class="DateNotif">ANSM - Mis à jour le : 17/10/2024</p>
+<p class="AmmAnnexeTitre1"><a name="RcpDenomination">1. DENOMINATION DU MEDICAMENT</a>&nbsp;&nbsp;<a href='#HautDePage'><img src='img/BackToTop.jpg' width='15px' height='15px' alt='Retour en haut de la page' title='Retour en haut de la page' /></a></p>
+<p class=AmmCorpsTexteGras>RHINOFLUIMUCIL, solution pour pulvérisation nasale</p>
+<p class="AmmAnnexeTitre1"><a name="RcpCompoQualiQuanti">2. COMPOSITION QUALITATIVE ET QUANTITATIVE</a>&nbsp;&nbsp;<a href='#HautDePage'><img src='img/BackToTop.jpg' width='15px' height='15px' alt='Retour en haut de la page' title='Retour en haut de la page' /></a></p>
+<p class=AmmComposition>Acétylcystéine ................................................................................................................... 1,0000 g</p>
+<p class=AmmComposition>Sulfate de tuaminoheptane ................................................................................................. 0,5000 g</p>
+<p class=AmmComposition>Solution de chlorure de benzalkonium</p>
+<p class=AmmComposition>Correspondant à chlorure de benzalkonium ......................................................................... 0,0125 g</p>
+<p class=AmmCorpsTexte align=center style='text-align:center'>Pour 100 ml de solution pour pulvérisation nasale.</p>
+<p class=AmmCorpsTexte>Excipient à effet notoire : d-limonène</p>
+<p class=AmmCorpsTexte>Pour la liste complète des excipients, voir rubrique 6.1.</p>
+<p class="AmmAnnexeTitre1"><a name="RcpFormePharm">3. FORME PHARMACEUTIQUE</a>&nbsp;&nbsp;<a href='#HautDePage'><img src='img/BackToTop.jpg' width='15px' height='15px' alt='Retour en haut de la page' title='Retour en haut de la page' /></a></p>
+<p class=AmmCorpsTexte><a name="_Toc142278915">Solution pour pulvérisation nasale.</a></p>
+<p class="AmmAnnexeTitre1"><a name="RcpDonneesCliniques">4. DONNEES CLINIQUES</a>&nbsp;&nbsp;<a href='#HautDePage'><img src='img/BackToTop.jpg' width='15px' height='15px' alt='Retour en haut de la page' title='Retour en haut de la page' /></a></p>
+<p class="AmmAnnexeTitre2"><a name="RcpIndicTherap">4.1. Indications thérapeutiques</a>&nbsp;&nbsp;<a href='#HautDePage'><img src='img/BackToTop.jpg' width='15px' height='15px' alt='Retour en haut de la page' title='Retour en haut de la page' /></a></p>
+<p class=AmmCorpsTexte><a name="_Toc142278917">Traitement local symptomatique de courte durée des affections rhinopharyngées avec sécrétion excessive de la muqueuse de l’adulte et des adolescents de plus de 15 ans.</a></p>
+<p class="AmmAnnexeTitre2"><a name="RcpPosoAdmin">4.2. Posologie et mode d'administration</a>&nbsp;&nbsp;<a href='#HautDePage'><img src='img/BackToTop.jpg' width='15px' height='15px' alt='Retour en haut de la page' title='Retour en haut de la page' /></a></p>
+<p class=AmmAnnexeTitre3><a name="_Toc142278918">Posologie</a></p>
+<p class=AmmCorpsTexte>Réservé à l’adulte et aux adolescents de plus de 15 ans.</p>
+<p class=AmmCorpsTexte>Adulte et adolescents de plus de 15 ans : 2 pulvérisations dans chaque narine, 3 à 4 fois par jour.</p>
+<p class=AmmCorpsTexte>La durée maximale du traitement est de 3 à 5 jours.</p>
+<p class=AmmAnnexeTitre3>Mode d’administration</p>
+<p class=AmmCorpsTexte>Les pulvérisations nasales se font avec le flacon en position verticale, la tête légèrement penchée en avant, afin d’éviter d’avaler le produit.</p>
+<p class="AmmAnnexeTitre2"><a name="RcpContreindications">4.3. Contre-indications</a>&nbsp;&nbsp;<a href='#HautDePage'><img src='img/BackToTop.jpg' width='15px' height='15px' alt='Retour en haut de la page' title='Retour en haut de la page' /></a></p>
+<p class=AmmCorpsTexte><a name="_Toc142278919">Ce médicament est contre-indiqué dans les cas suivants :</a></p>
+<p class=AmmListePuces1><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>Hypersensibilité aux substances actives ou à l’un des excipients mentionnés à la rubrique 6.1.</p>
+<p class=AmmListePuces1 style='text-align:justify'><span style='font-family: Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>Enfant de moins de 15 ans.</p>
+<p class=AmmListePuces1 style='text-align:justify'><span style='font-family: Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>Antécédents d'accident vasculaire cérébral ou de facteurs de risque susceptibles de favoriser la survenue d'accident vasculaire cérébral, en raison de l'activité sympathomimétique alpha du vasoconstricteur.</p>
+<p class=AmmListePuces1 style='text-align:justify'><span style='font-family: Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>Hypertension artérielle sévère ou mal équilibrée par le traitement.</p>
+<p class=AmmListePuces1 style='text-align:justify'><span style='font-family: Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>Insuffisance coronarienne sévère.</p>
+<p class=AmmListePuces1 style='text-align:justify'><span style='font-family: Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>Risque de glaucome par fermeture de l'angle.</p>
+<p class=AmmListePuces1 style='text-align:justify'><span style='font-family: Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>Risque de rétention urinaire liée à des troubles urétro-prostatiques.</p>
+<p class=AmmListePuces1 style='text-align:justify'><span style='font-family: Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>Antécédents de convulsions.</p>
+<p class=AmmListePuces1 style='text-align:justify'><span style='font-family: Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>Hypophysectomie ou chirurgie exposant la dure-mère.</p>
+<p class=AmmListePuces1><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>Phéochromocytome </p>
+<p class=AmmListePuces1 style='margin-top:0cm;margin-right:0cm;margin-bottom: 6.0pt;margin-left:17.85pt;text-align:justify;text-indent:-17.85pt;page-break-after: avoid'><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>En association aux sympathomimétiques à action indirecte : vasoconstricteurs destinés à décongestionner le nez, qu'ils soient administrés par voie orale ou nasale (pseudoéphédrine, éphédrine…) ainsi que bupropion, cafédrine, théodrénaline, méthylphénidate, en raison du risque de vasoconstriction et/ou de poussées hypertensives (voir rubrique 4.5).</p>
+<div style='border:solid windowtext 1.0pt;padding:1.0pt 4.0pt 1.0pt 4.0pt'>
+<p class=AmmCorpsTexteGras style='border:none;padding:0cm'>L’association de deux décongestionnants est contre-indiquée, quelle que soit la voie d’administration (orale et/ou nasale) : une telle association est inutile et dangereuse et correspond à un mésusage.</p>
+</div>
+<p class="AmmAnnexeTitre2"><a name="RcpMisesEnGarde">4.4. Mises en garde spéciales et précautions d'emploi</a>&nbsp;&nbsp;<a href='#HautDePage'><img src='img/BackToTop.jpg' width='15px' height='15px' alt='Retour en haut de la page' title='Retour en haut de la page' /></a></p>
+<p class=AmmAnnexeTitre4><a name="_Toc142278920">En raison de la présence de tuaminoheptane.</a></p>
+<p class=AmmCorpsTexte>Ne pas avaler.</p>
+<p class=AmmCorpsTexte>Ne pas utiliser de façon prolongée, en raison d'un risque de rebond et de rhinite iatrogène.</p>
+<p class=AmmCorpsTexte>Dès l'ouverture du conditionnement, et <span class='italique'>a fortiori</span> dès la première utilisation d'une préparation à usage nasal, une contamination microbienne est possible.</p>
+<p class=AmmCorpsTexte>Des instillations répétées et/ou prolongées peuvent entraîner un passage systémique non négligeable des principes actifs.</p>
+<p class=AmmCorpsTexte>Il est impératif de respecter strictement la posologie, la durée de traitement de 3 à 5 jours, les contre-indications (voir rubrique 4.3).</p>
+<p class=AmmCorpsTexte>Les patients doivent être informés que la survenue d'une hypertension artérielle, de tachycardie, de palpitations ou de troubles du rythme cardiaque, de nausées ou de tout signe neurologique (tels que l'apparition ou la majoration de céphalées) impose l'arrêt du traitement.</p>
+<p class=AmmCorpsTexte>De même, la surveillance du traitement doit être renforcée en cas d'hypertension artérielle, d'affections cardiaques, d'hyperthyroïdie, de psychose ou de diabète ou de maladie vasculaire occlusive.</p>
+<p class=AmmCorpsTexte>La prise de ce médicament est déconseillée, en raison du risque de vasoconstriction et/ou de poussées hypertensives lié à l'activité sympathomimétique alpha, avec les médicaments suivants (voir rubriques 4.5) : </p>
+<p class=AmmListePuces1><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>IMAO irréversibles (iproniazide, phénelzine),</p>
+<p class=AmmListePuces1 style='margin-bottom:6.0pt'><span style='font-family: Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>Alcaloïdes de l'ergot de seigle dopaminergiques (bromocriptine, cabergoline, lisuride) ou vasoconstricteurs (dihydroergotamine, ergotamine ou méthylergométrine).</p>
+<p class=AmmCorpsTexte>Des troubles neurologiques à type de convulsions, d'hallucinations, de troubles du comportement, d'agitation, d'insomnie, ont été décrits après administration de vasoconstricteurs par voie systémique, en particulier au cours d'épisodes fébriles ou lors de surdosages.</p>
+<p class=AmmCorpsTexte>Par conséquent, il convient notamment :</p>
+<p class=AmmListePuces1><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>de ne pas prescrire ce traitement en association avec des médicaments susceptibles d'abaisser le seuil épileptogène tels que : dérivés terpéniques, clobutinol, substances atropiniques, anesthésiques locaux... ou en cas d'antécédents convulsifs;</p>
+<p class=AmmListePuces1 style='margin-bottom:6.0pt'><span style='font-family: Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>de respecter, dans tous les cas, la posologie préconisée, et d'informer le patient des risques de surdosage en cas d'association avec d'autres médicaments contenant des vasoconstricteurs.</p>
+<p class=AmmCorpsTexte>Ce médicament contient 0,006 mg de chlorure de benzalkonium par dose. Le chlorure de benzalkonium peut provoquer une irritation ou un œdème de la muqueuse nasale, particulièrement dans le cas d'une utilisation à long terme.</p>
+<p class=AmmCorpsTexte>Ce médicament contient du d-limonène (dans l’essence de menthe). Le d-limonène peut provoquer des réactions allergiques.</p>
+<p class=AmmCorpsTexte>L'attention des sportifs est attirée sur le fait que cette spécialité contenant du tuaminoheptane, peut induire une réaction positive des tests pratiqués lors des contrôles anti-dopage.</p>
+<p class=AmmCorpsTexte>En cas d’exposition oculaire accidentelle, ce médicament peut provoquer une irritation. Rincer l’œil exposé avec de grandes quantités d’eau.</p>
+<p class="AmmAnnexeTitre2"><a name="RcpInteractionsMed">4.5. Interactions avec d'autres médicaments et autres formes d'interactions</a>&nbsp;&nbsp;<a href='#HautDePage'><img src='img/BackToTop.jpg' width='15px' height='15px' alt='Retour en haut de la page' title='Retour en haut de la page' /></a></p>
+<p class=AmmAnnexeTitre3><a name="_Toc142278921">Liées à la présence du vasoconstricteur = tuaminoheptane :</a></p>
+<p class=AmmAnnexeTitre3>Associations contre-indiquées</p>
+<p class=AmmCorpsTexteGras>+ Sympathomimétiques indirects (pseudoéphédrine, éphédrine, bupropion, cafédrine, théodrénaline, méthylphénidate) :</p>
+<p class=AmmCorpsTexte>Risque de vasoconstriction et/ou de poussées hypertensives.</p>
+<p class=AmmAnnexeTitre3><a name="_Toc142278922">Associations déconseillées</a></p>
+<p class=AmmCorpsTexteGras>+ IMAO irréversibles (iproniazide, phénelzine) :</p>
+<p class=AmmCorpsTexte>Crises hypertensives (inhibition du métabolisme des amines pressives). Du fait de la durée d’action de l’IMAO, cette interaction est encore possible 15 jours après l'arrêt de l'IMAO.</p>
+<p class=AmmCorpsTexteGras>+ Alcaloïdes de l’ergot de seigle dopaminergiques (bromocriptine, cabergoline, lisuride) :</p>
+<p class=AmmCorpsTexte>Risque de vasoconstriction et/ou de poussées hypertensives.</p>
+<p class=AmmCorpsTexteGras>+ Alcaloïdes de l’ergot de seigle vasoconstricteurs (dihydrergotamine, ergotamine, méthylergométrine) :</p>
+<p class=AmmCorpsTexte>Risque de vasoconstriction et/ou de poussées hypertensives.</p>
+<p class="AmmAnnexeTitre2"><a name="RcpFertGrossAllait">4.6. Fertilité, grossesse et allaitement</a>&nbsp;&nbsp;<a href='#HautDePage'><img src='img/BackToTop.jpg' width='15px' height='15px' alt='Retour en haut de la page' title='Retour en haut de la page' /></a></p>
+<p class=AmmAnnexeTitre3>Grossesse</p>
+<p class=AmmCorpsTexte>Les études effectuées chez l’animal sont insuffisantes en ce qui concerne le risque tératogène du tuaminoheptane (voir section 5.3). Les études effectuées chez l’animal avec l’acétylcystéine n’ont pas mis en évidence d’effets délétères directs ou indirects sur la reproduction (voir section 5.3).</p>
+<p class=AmmCorpsTexte>En clinique, il n’existe pas ou peu de données sur l'utilisation du sulfate de tuaminoheptane chez les femmes enceintes. En conséquence et en raison des puissantes propriétés vasoconstrictrices du tuaminoheptane, l'utilisation de ce médicament est déconseillée pendant la grossesse.</p>
+<p class=AmmAnnexeTitre3><a name="_Toc142278927">Allaitement</a></p>
+<p class=AmmCorpsTexte>Le passage de tuaminoheptane ou de l’acétylcystéine dans le lait maternel n'est pas connu. Compte-tenu des propriétés vasoconstrictrices du tuaminoheptane, il est déconseillé d’utiliser ce médicament pendant l'allaitement.</p>
+<p class=AmmCorpsTexte><span class='gras'><span class='souligne'>Fertilité</span></span></p>
+<p class=AmmCorpsTexte>Aucune donnée sur la fertilité n’est disponible.</p>
+<p class="AmmAnnexeTitre2"><a name="RcpConduite">4.7. Effets sur l'aptitude à conduire des véhicules et à utiliser des machines</a>&nbsp;&nbsp;<a href='#HautDePage'><img src='img/BackToTop.jpg' width='15px' height='15px' alt='Retour en haut de la page' title='Retour en haut de la page' /></a></p>
+<p class=AmmCorpsTexte><a name="_Toc142278929"><span lang=FR-BE>Aucune étude spécifique n’a été effectuée mais les patients doivent être avertis que des hallucinations ont été rapportées (voir rubrique 4.8).</span></a></p>
+<p class="AmmAnnexeTitre2"><a name="RcpEffetsIndesirables">4.8. Effets indésirables</a>&nbsp;&nbsp;<a href='#HautDePage'><img src='img/BackToTop.jpg' width='15px' height='15px' alt='Retour en haut de la page' title='Retour en haut de la page' /></a></p>
+<p class=AmmCorpsTexte>Les effets indésirables sont classés par système organe et par fréquence, selon la règle suivante : très fréquent (&#8805; 1/10) ; fréquent (&#8805; 1/100, &lt; 1/10) ; peu fréquent (&#8805; 1/1 000, &lt; 1/100) ; rare (&#8805; 1/10 000, &lt; 1/1 000) ; très rare (&lt; 1/10 000) et les fréquences indéterminées (qui ne peuvent être estimées sur la base des données disponibles).</p>
+<p class=AmmCorpsTexte><span class='gras'><span class='souligne'>Tableau récapitulatif des effets indésirables</span></span></p>
+<p class=AmmCorpsTexte><span class='gras'>Liés à la présence du vasoconstricteur (tuaminoheptane) :</span></p>
+<p class=AmmCorpsTexte><span class='gras'>Fréquence indéterminée pour tous les effets indésirables</span></p>
+<table class=AmmCorpsTexteTable border=1 cellspacing=0 cellpadding=0 width=0
+style='border-collapse:collapse;border:none'>
+<tr style='height:20.8pt'>
+<td width=279 style='width:209.15pt;border:solid windowtext 1.0pt;padding:
+0cm 5.4pt 0cm 5.4pt;height:20.8pt'>
+<p class=AmmCorpsTexte><span class='gras'>Classe de systèmes d’organes</span></p>
+</td>
+<td width=300 style='width:225.1pt;border:solid windowtext 1.0pt;border-left:
+none;padding:0cm 5.4pt 0cm 5.4pt;height:20.8pt'>
+<p class=AmmCorpsTexte><span class='gras'>Effets indésirables</span></p>
+</td>
+</tr>
+<tr style='height:25.95pt'>
+<td width=279 valign=top style='width:209.15pt;border:solid windowtext 1.0pt;
+border-top:none;padding:0cm 5.4pt 0cm 5.4pt;height:25.95pt'>
+<p class=AmmCorpsTexte><span lang=EN-US>Affections cardiaques<span class='italique'> </span></span></p>
+</td>
+<td width=300 valign=top style='width:225.1pt;border-top:none;border-left:
+none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+padding:0cm 5.4pt 0cm 5.4pt;height:25.95pt'>
+<p class=AmmCorpsTexte>Palpitations,</p>
+<p class=AmmCorpsTexte>Tachycardie,</p>
+<p class=AmmCorpsTexte>Infarctus du myocarde,</p>
+<p class=AmmCorpsTexte> </p>
+</td>
+</tr>
+<tr style='height:16.15pt'>
+<td width=279 valign=top style='width:209.15pt;border:solid windowtext 1.0pt;
+border-top:none;padding:0cm 5.4pt 0cm 5.4pt;height:16.15pt'>
+<p class=AmmCorpsTexte><span lang=EN-US>Affections oculaires</span></p>
+</td>
+<td width=300 valign=top style='width:225.1pt;border-top:none;border-left:
+none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+padding:0cm 5.4pt 0cm 5.4pt;height:16.15pt'>
+<p class=AmmCorpsTexte>Crise de glaucome par fermeture de l’angle</p>
+</td>
+</tr>
+<tr style='height:25.95pt'>
+<td width=279 valign=top style='width:209.15pt;border:solid windowtext 1.0pt;
+border-top:none;padding:0cm 5.4pt 0cm 5.4pt;height:25.95pt'>
+<p class=AmmCorpsTexte>Affections gastro-intestinales</p>
+</td>
+<td width=300 valign=top style='width:225.1pt;border-top:none;border-left:
+none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+padding:0cm 5.4pt 0cm 5.4pt;height:25.95pt'>
+<p class=AmmCorpsTexte>Sécheresse buccale,</p>
+<p class=AmmCorpsTexte>Nausées,</p>
+<p class=AmmCorpsTexte>Vomissements</p>
+</td>
+</tr>
+<tr style='height:25.95pt'>
+<td width=279 valign=top style='width:209.15pt;border:solid windowtext 1.0pt;
+border-top:none;padding:0cm 5.4pt 0cm 5.4pt;height:25.95pt'>
+<p class=AmmCorpsTexte><span lang=EN-US>Affections du système nerveux</span></p>
+</td>
+<td width=300 valign=top style='width:225.1pt;border-top:none;border-left:
+none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+padding:0cm 5.4pt 0cm 5.4pt;height:25.95pt'>
+<p class=AmmCorpsTexte>Accidents ischémiques transitoires, Accidents vasculaires ischémiques, Syndrome de vasoconstriction cérébrale réversible, Accidents vasculaires cérébraux hémorragiques, exceptionnellement chez des patients ayant utilisé des spécialités à base de chlorhydrate de pseudoéphédrine (ces accidents vasculaires cérébraux sont apparus lors de surdosage ou mésusage chez des patients présentant des facteurs de risques vasculaires), Céphalées, Convulsions</p>
+</td>
+</tr>
+<tr style='height:25.95pt'>
+<td width=279 valign=top style='width:209.15pt;border:solid windowtext 1.0pt;
+border-top:none;padding:0cm 5.4pt 0cm 5.4pt;height:25.95pt'>
+<p class=AmmCorpsTexte><span lang=EN-US>Affections psychiatriques</span></p>
+</td>
+<td width=300 valign=top style='width:225.1pt;border-top:none;border-left:
+none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+padding:0cm 5.4pt 0cm 5.4pt;height:25.95pt'>
+<p class=AmmCorpsTexte>Anxiété,</p>
+<p class=AmmCorpsTexte>Agitation,</p>
+<p class=AmmCorpsTexte>Troubles du comportement,</p>
+<p class=AmmCorpsTexte>Hallucinations,</p>
+<p class=AmmCorpsTexte>Insomnie,</p>
+<p class=AmmCorpsTexte>Une fièvre, un surdosage, une association médicamenteuse susceptible de diminuer le seuil épileptogène ou de favoriser un surdosage, ont souvent été retrouvés et semblent prédisposer à la survenue de tels effets (voir rubriques 4.3 et 4.4)</p>
+</td>
+</tr>
+<tr style='height:25.95pt'>
+<td width=279 valign=top style='width:209.15pt;border:solid windowtext 1.0pt;
+border-top:none;padding:0cm 5.4pt 0cm 5.4pt;height:25.95pt'>
+<p class=AmmCorpsTexte>Affections du rein et des voies urinaires</p>
+</td>
+<td width=300 valign=top style='width:225.1pt;border-top:none;border-left:
+none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+padding:0cm 5.4pt 0cm 5.4pt;height:25.95pt'>
+<p class=AmmCorpsTexte>Dysurie (en particulier en cas de troubles urétroprostatiques),</p>
+<p class=AmmCorpsTexte>Rétention urinaire (en particulier en cas de troubles urétroprostatiques)</p>
+</td>
+</tr>
+<tr style='height:25.95pt'>
+<td width=279 valign=top style='width:209.15pt;border:solid windowtext 1.0pt;
+border-top:none;padding:0cm 5.4pt 0cm 5.4pt;height:25.95pt'>
+<p class=AmmCorpsTexte>Affections de la peau et du tissu sous-cutané</p>
+</td>
+<td width=300 valign=top style='width:225.1pt;border-top:none;border-left:
+none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+padding:0cm 5.4pt 0cm 5.4pt;height:25.95pt'>
+<p class=AmmCorpsTexte><span lang=EN-US>Sueurs,</span></p>
+<p class=AmmCorpsTexte><span lang=EN-US>Exanthème,</span></p>
+<p class=AmmCorpsTexte><span lang=EN-US>Prurit,</span></p>
+<p class=AmmCorpsTexte><span lang=EN-US>Urticaire</span></p>
+</td>
+</tr>
+<tr style='height:12.95pt'>
+<td width=279 valign=top style='width:209.15pt;border:solid windowtext 1.0pt;
+border-top:none;padding:0cm 5.4pt 0cm 5.4pt;height:12.95pt'>
+<p class=AmmCorpsTexte><span lang=EN-US>Affections vasculaires</span></p>
+</td>
+<td width=300 valign=top style='width:225.1pt;border-top:none;border-left:
+none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+padding:0cm 5.4pt 0cm 5.4pt;height:12.95pt'>
+<p class=AmmCorpsTexte>Hypertension (poussée hypertensive)</p>
+<p class=AmmCorpsTexte>Troubles ischémiques</p>
+</td>
+</tr>
+<tr style='height:12.3pt'>
+<td width=279 valign=top style='width:209.15pt;border:solid windowtext 1.0pt;
+border-top:none;padding:0cm 5.4pt 0cm 5.4pt;height:12.3pt'>
+<p class=AmmCorpsTexte>Affections respiratoires, thoraciques et médiastinales</p>
+</td>
+<td width=300 valign=top style='width:225.1pt;border-top:none;border-left:
+none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+padding:0cm 5.4pt 0cm 5.4pt;height:12.3pt'>
+<p class=AmmCorpsTexte>Sensation de sécheresse nasale, </p>
+<p class=AmmCorpsTexte><span lang=EN-US> </span></p>
+</td>
+</tr>
+<tr style='height:3.5pt'>
+<td width=279 valign=top style='width:209.15pt;border:solid windowtext 1.0pt;
+border-top:none;padding:0cm 5.4pt 0cm 5.4pt;height:3.5pt'>
+<p class=AmmCorpsTexte>Troubles généraux et anomalies au site d’administration </p>
+</td>
+<td width=300 valign=top style='width:225.1pt;border-top:none;border-left:
+none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+padding:0cm 5.4pt 0cm 5.4pt;height:3.5pt'>
+<p class=AmmCorpsTexte>Exceptionnellement, manifestations allergiques locales, </p>
+<p class=AmmCorpsTexte></p>
+</td>
+</tr>
+</table>
+<p class=AmmCorpsTexteGras style='margin-top:12.0pt'><span class='souligne'>Déclaration des effets indésirables suspectés </span></p>
+<p class=AmmCorpsTexte>La déclaration des effets indésirables suspectés après autorisation du médicament est importante. Elle permet une surveillance continue du rapport bénéfice/risque du médicament. Les professionnels de santé déclarent tout effet indésirable suspecté via le système national de déclaration : Agence nationale de sécurité du médicament et des produits de santé (ANSM) et réseau des Centres Régionaux de Pharmacovigilance - Site internet :<span style='color:red'> </span><span style='color:#353838'><a href="https://signalement.social-sante.gouv.fr/">https://signalement.social-sante.gouv.fr/</a></span>.</p>
+<p class="AmmAnnexeTitre2"><a name="RcpSurdosage">4.9. Surdosage</a>&nbsp;&nbsp;<a href='#HautDePage'><img src='img/BackToTop.jpg' width='15px' height='15px' alt='Retour en haut de la page' title='Retour en haut de la page' /></a></p>
+<p class=AmmCorpsTexte>En cas d'administration réitérée ou abusive, le sulfate de tuaminoheptane peut provoquer, par passage systémique : hypothermie, sédation, perte de connaissance, coma ou dépression respiratoire.</p>
+<p class="AmmAnnexeTitre1"><a name="RcpPropPharmacologiques">5. PROPRIETES PHARMACOLOGIQUES</a>&nbsp;&nbsp;<a href='#HautDePage'><img src='img/BackToTop.jpg' width='15px' height='15px' alt='Retour en haut de la page' title='Retour en haut de la page' /></a></p>
+<p class="AmmAnnexeTitre2"><a name="RcpPropPharmacodynamiques">5.1. Propriétés pharmacodynamiques</a>&nbsp;&nbsp;<a href='#HautDePage'><img src='img/BackToTop.jpg' width='15px' height='15px' alt='Retour en haut de la page' title='Retour en haut de la page' /></a></p>
+<p class=AmmCorpsTexteGras><a name="_Toc142278933">Classe pharmacothérapeutique : sympathomimétiques en association, sauf aux corticoïdes, code ATC : R01AB08</a><span style='font-size:8.0pt'>.</span></p>
+<p class=AmmCorpsTexte>Ce médicament contient un sympathomimétique alpha, vasoconstricteur décongestionnant par voie nasale, le sulfate de tuaminoheptane, un antiseptique, le chlorure de benzalkonium, et un mucolytique, l’acétylcystéine.</p>
+<p class="AmmAnnexeTitre2"><a name="RcpPropPharmacocinetiques">5.2. Propriétés pharmacocinétiques</a>&nbsp;&nbsp;<a href='#HautDePage'><img src='img/BackToTop.jpg' width='15px' height='15px' alt='Retour en haut de la page' title='Retour en haut de la page' /></a></p>
+<p class=AmmCorpsTexte><a name="_Toc142278934">Administré par voie nasale, le tuaminoheptane est résorbé au niveau de la muqueuse nasale, et également au niveau gastro-intestinal après déglutition. La résorption au niveau de la muqueuse nasale est diminuée par la vasoconstriction provoquée par l'application de ce produit.</a></p>
+<p class="AmmAnnexeTitre2"><a name="RcpSecuritePreclinique">5.3. Données de sécurité préclinique</a>&nbsp;&nbsp;<a href='#HautDePage'><img src='img/BackToTop.jpg' width='15px' height='15px' alt='Retour en haut de la page' title='Retour en haut de la page' /></a></p>
+<p class=AmmCorpsTexte><a name="_Toc142278935">Les données non cliniques des études conventionnelles et de toxicologie en administration répétée menées sur l’acétylcystéine et le sulfate de tuaminoheptane seuls ou en association n’ont pas révélé de risque particulier pour l’Homme.</a></p>
+<p class=AmmCorpsTexte>Les études visant à détecter tout effet toxique local et/ou systémique ont montré que le produit est bien toléré par les surfaces muqueuses et séreuses.</p>
+<p class=AmmCorpsTexte>Aucune étude de génotoxicité et de toxicité sur la reproduction n’est disponible pour l’association de l’acétylcystéine et du sulfate de tuaminoheptane, ni pour le sulfate de tuaminoheptane seul.</p>
+<p class=AmmCorpsTexte>Les études de génotoxicité et de toxicité sur la reproduction conduites avec l’acétylcystéine n’ont pas montré de risque particulier pour l’Homme.</p>
+<p class="AmmAnnexeTitre1"><a name="RcpDonneesPharmaceutiques">6. DONNEES PHARMACEUTIQUES</a>&nbsp;&nbsp;<a href='#HautDePage'><img src='img/BackToTop.jpg' width='15px' height='15px' alt='Retour en haut de la page' title='Retour en haut de la page' /></a></p>
+<p class="AmmAnnexeTitre2"><a name="RcpListeExcipients">6.1. Liste des excipients</a>&nbsp;&nbsp;<a href='#HautDePage'><img src='img/BackToTop.jpg' width='15px' height='15px' alt='Retour en haut de la page' title='Retour en haut de la page' /></a></p>
+<p class=AmmCorpsTexte><a name="_Toc142278937">Hypromellose, édétate disodique, phosphate monosodique monohydraté, phosphate disodique dodécahydraté, dithiothreitol, sorbitol à 70 pour cent, essence de menthe (contenant du d-limonène), éthanol à 96 pour cent, hydroxyde de sodium, eau purifiée.</a></p>
+<p class="AmmAnnexeTitre2"><a name="RcpIncompatibilites">6.2. Incompatibilités</a>&nbsp;&nbsp;<a href='#HautDePage'><img src='img/BackToTop.jpg' width='15px' height='15px' alt='Retour en haut de la page' title='Retour en haut de la page' /></a></p>
+<p class=AmmCorpsTexte><a name="_Toc142278938">Sans objet.</a></p>
+<p class="AmmAnnexeTitre2"><a name="RcpDureeConservation">6.3. Durée de conservation</a>&nbsp;&nbsp;<a href='#HautDePage'><img src='img/BackToTop.jpg' width='15px' height='15px' alt='Retour en haut de la page' title='Retour en haut de la page' /></a></p>
+<p class=AmmCorpsTexte>La durée de conservation est :</p>
+<p class=AmmListePuces1><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>Avant ouverture : 30 mois.</p>
+<p class=AmmListePuces1><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>Après ouverture : conserver le médicament pendant 20 jours maximum.</p>
+<p class="AmmAnnexeTitre2"><a name="RcpPrecConservation">6.4. Précautions particulières de conservation</a>&nbsp;&nbsp;<a href='#HautDePage'><img src='img/BackToTop.jpg' width='15px' height='15px' alt='Retour en haut de la page' title='Retour en haut de la page' /></a></p>
+<p class=AmmCorpsTexte><a name="_Toc142278940"><span lang=FR-BE>A conserver à une température ne dépassant pas 25°C</span></a></p>
+<p class="AmmAnnexeTitre2"><a name="RcpEmballage">6.5. Nature et contenu de l'emballage extérieur </a>&nbsp;&nbsp;<a href='#HautDePage'><img src='img/BackToTop.jpg' width='15px' height='15px' alt='Retour en haut de la page' title='Retour en haut de la page' /></a></p>
+<p class=AmmCorpsTexte>10 ml en flacon (verre) de 15 ml + nébuliseur.</p>
+<p class="AmmAnnexeTitre2"><a name="RcpPrecEmpl">6.6. Précautions particulières d’élimination et de manipulation</a>&nbsp;&nbsp;<a href='#HautDePage'><img src='img/BackToTop.jpg' width='15px' height='15px' alt='Retour en haut de la page' title='Retour en haut de la page' /></a></p>
+<p class=AmmCorpsTexte><span lang=FR-BE>Pas d'exigences particulières.</span></p>
+<p class="AmmAnnexeTitre1"><a name="RcpTitulaireAmm">7. TITULAIRE DE L’AUTORISATION DE MISE SUR LE MARCHE</a>&nbsp;&nbsp;<a href='#HautDePage'><img src='img/BackToTop.jpg' width='15px' height='15px' alt='Retour en haut de la page' title='Retour en haut de la page' /></a></p>
+<p class=AmmCorpsTexteGras style='margin-bottom:0cm;margin-bottom:.0001pt; page-break-after:avoid'><a name="_Toc142278943">ZAMBON FRANCE S.A.</a></p>
+<p class=AmmCorpsTexte style='margin-bottom:0cm;margin-bottom:.0001pt; page-break-after:avoid'>13, RUE RENÉ JACQUES</p>
+<p class=AmmCorpsTexte style='margin-bottom:0cm;margin-bottom:.0001pt; page-break-after:avoid'>92138 ISSY-LES-MOULINEAUX CEDEX</p>
+<p class=AmmCorpsTexte>FRANCE</p>
+<p class="AmmAnnexeTitre1"><a name="RcpNumAutor">8. NUMERO(S) D’AUTORISATION DE MISE SUR LE MARCHE</a>&nbsp;&nbsp;<a href='#HautDePage'><img src='img/BackToTop.jpg' width='15px' height='15px' alt='Retour en haut de la page' title='Retour en haut de la page' /></a></p>
+<p class=AmmListePuces1><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>34009 326 371 1 9 : 10 ml en flacon (verre) + nébuliseur.</p>
+<p class="AmmAnnexeTitre1"><a name="RcpPremiereAutorisation">9. DATE DE PREMIERE AUTORISATION/DE RENOUVELLEMENT DE L’AUTORISATION</a>&nbsp;&nbsp;<a href='#HautDePage'><img src='img/BackToTop.jpg' width='15px' height='15px' alt='Retour en haut de la page' title='Retour en haut de la page' /></a></p>
+<p class=AmmCorpsTexte><a name="_Toc142278945"><span style='color:#538135'>[à compléter ultérieurement par le titulaire]</span></a></p>
+<p class="AmmAnnexeTitre1"><a name="RcpDateRevision">10. DATE DE MISE A JOUR DU TEXTE</a>&nbsp;&nbsp;<a href='#HautDePage'><img src='img/BackToTop.jpg' width='15px' height='15px' alt='Retour en haut de la page' title='Retour en haut de la page' /></a></p>
+<p class=AmmCorpsTexte><a name="_Toc142278946"><span style='color:#538135'>[à compléter ultérieurement par le titulaire]</span></a></p>
+<p class="AmmAnnexeTitre1"><a name="RcpDosimetrie">11. DOSIMETRIE</a>&nbsp;&nbsp;<a href='#HautDePage'><img src='img/BackToTop.jpg' width='15px' height='15px' alt='Retour en haut de la page' title='Retour en haut de la page' /></a></p>
+<p class=AmmCorpsTexte>Sans objet.</p>
+<p class="AmmAnnexeTitre1"><a name="RcpInstPrepRadioph">12. INSTRUCTIONS POUR LA PREPARATION DES RADIOPHARMACEUTIQUES</a>&nbsp;&nbsp;<a href='#HautDePage'><img src='img/BackToTop.jpg' width='15px' height='15px' alt='Retour en haut de la page' title='Retour en haut de la page' /></a></p>
+<p class=AmmCorpsTexte><a name="_Toc142278948">Sans objet.</a></p>
+<div style='border:none;border-top:solid windowtext 1.0pt;padding:1.0pt 0cm 0cm 0cm'>
+<p class="AmmAnnexeTitre"><a name="RcpCondPrescription">CONDITIONS DE PRESCRIPTION ET DE DELIVRANCE</a></p>
+</div>
+<p class=AmmCorpsTexte>Liste II</p>
+<span class='gras'><span style='font-size:12.0pt;font-family:"Arial",sans-serif;color:#0B3D92;
+text-transform:uppercase'><br clear=all>
+</span></span>					
+					<p class="alignright"><a href="#HautDePage">Retour en haut de la page <img src="img/BackToTop.jpg" width="20px" height="20px" alt="Retour en haut de la page" title="Retour en haut de la page" /></a></p>
+				</div>
+			</div>
+		</div>
+	</div>
+
+<table summary="" class="content" width="1000">
+	<tr>
+		<td height="100px">&nbsp;</td>
+	</tr>
+</table>
+<table summary="Pied de page" class="footer" width="1000">
+	<tr>
+		<td>
+			<table summary="" class="tablealigncenter" border="0">
+				<tr>
+					<td width="100px" class="aligncenter"><a id="lien_ansm" href="http://ansm.sante.fr/" target="_blank"><img src="img/Logo_ANSM.png" width="150" height="60" alt="ANSM - Agence nationale de sécurité du médicament et des produits de santé" title="L'ANSM met à disposition les principales informations issues de l'Autorisation de mise sur le marché, l'appartenance à un groupe générique, les liens vers les informations de sécurité qu'elle publie, l'identification des médicaments sous surveillance renforcée - nouvelle fenêtre" /></a></td>
+					          <td>&nbsp;</td>
+					<td width="100px" class="aligncenter"><img src="img/Logo_HAS.png" width="150" height="60" alt="HAS - Haute autorité de santé" title="La HAS met à disposition les informations relatives au service médical rendu, à l'amélioration du service médical rendu ainsi que les liens vers les avis de la Commission de la Transparence correspondants - nouvelle fenêtre" /></td>
+					<td>&nbsp;</td>
+					<td width="100px" class="aligncenter"><img src="img/Logo_CNAM.png" width="150" height="60" alt="UNCAM - Unin nationale des caisses d'assurance maladie" title="L'UNCAM met à disposition le taux de remboursement, le prix et les indications remboursables le cas échéant, ainsi que l'agrément aux collectivités - nouvelle fenêtre" /></td>
+          				</tr>
+			</table> 
+		</td>
+	</tr>
+</table>
+<table summary="" class="finpage" width="1000">
+	<tr>
+		<td height="100px" class="aligncenter">
+			<a class="navigation" href="plan.php">Plan du site</a>&nbsp;|&nbsp;
+			<a class="navigation" href="accessibilite.php">Accessibilité</a>&nbsp;|&nbsp;
+			<a class="navigation" href="contact.php">Contact</a>&nbsp;|&nbsp;
+			<a class="navigation" href="telechargement.php">Téléchargement</a>&nbsp;|&nbsp;
+			<a class="navigation" href="DeclarationConfidentialite.php">Declaration de confidentialité</a>&nbsp;|&nbsp;
+			<a class="navigation" href="http://www.service-public.fr/" title="Service Public - Nouvelle fenêtre" target="_blank">Service-Public.fr</a>&nbsp;|&nbsp;
+			<a class="navigation" href="http://www.legifrance.gouv.fr/" title="Legifrance - Nouvelle fenêtre" target="_blank">Legifrance</a>&nbsp;|&nbsp;
+			<a class="navigation" href="http://www.gouvernement.fr/" title="Gouvernement - Nouvelle fenêtre" target="_blank" >Gouvernement.fr</a>
+		</td>
+	</tr>
+</table>
+
+
+
+<!-- Matomo -->
+<script type="text/javascript">
+  var _paq = window._paq = window._paq || [];
+  /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
+  _paq.push(['trackPageView']);
+  _paq.push(['enableLinkTracking']);
+  (function() {
+    var u="https://stats.integra.fr/";
+    _paq.push(['setTrackerUrl', u+'matomo.php']);
+    _paq.push(['setSiteId', '79']);
+    var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+    g.type='text/javascript'; g.async=true; g.src=u+'matomo.js'; s.parentNode.insertBefore(g,s);
+  })();
+</script>
+<!-- End Matomo Code -->
+
+
+
+</body>
+</html>

@@ -1,0 +1,1047 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="fr" lang="fr">
+<head>
+	<title>Résumé des caractéristiques du produit - MOPRAL 10 mg, gélule gastro-résistante  - Base de données publique des médicaments</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=windows-1252"/>
+	<meta name="robots" content="index, follow"/>
+	<meta name="Description" content="Base de données publique des médicaments"/>
+	<meta name="Keywords" content="base, données, publique, médicaments, Résumé des caractéristiques du produit, MOPRAL 10 mg, gélule gastro-résistante "/>
+	<meta name="Subject" content="medicament"/>
+	<link href='https://fonts.googleapis.com/css?family=Noticia+Text' rel='stylesheet' type='text/css' />
+	<link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro' rel='stylesheet' type='text/css' />
+	<link href="style/style_bdm.css?v=2.2.3" type="text/css" rel="stylesheet"/>
+	<link href="style/style_RCP_Notice.css" type="text/css" rel="stylesheet"/>
+  <link rel="alternate" href="http://m.base-donnees-publique.medicaments.gouv.fr/#!info-69606819">
+    <script type="text/javascript" src="scripts/autocomplete.js?v=2.2.3"></script>
+	<script type="text/javascript" src="scripts/jquery.js"></script>
+    <script type="text/javascript" src="scripts/jquery-ui.min.js"></script>
+	<script type="text/javascript" src="scripts/common.js"></script>
+	<link rel="icon" type="image/x-icon" href="favicon.ico" />
+</head>
+
+<body>
+
+<a name="HautDePage" />
+<div id="bandeauhaut">
+	<a id="lien_ministere" class="lienmenu" href="http://www.sante.gouv.fr" target="_blank" title="Site du ministère des affaires sociales et de la santé - nouvelle fenêtre"><img id="logoministere" src="img/Logo_Ministere.jpg"  alt="Logo du ministère des affaires sociales et de la santé"/></a>
+	<h1 class="texteTitreSite">
+		Base <span class="texteBleu">de</span> données <span class="texteBleu">publique</span><br/><span class="texteBleu">des</span> médicaments
+	</h1>
+		<a id="lien_medicament_gouv" class="lienEspaceMedic" target="_blank" href="http://medicaments.gouv.fr" title="Visiter [medicaments.gouv.fr] - nouvelle fenêtre">Visiter [medicaments.gouv.fr] <img src="/img/icone_lien.png" alt="Visiter [medicaments.gouv.fr]"  title="Visiter [medicaments.gouv.fr] - nouvelle fenetre" /></a>
+</div>
+<!--div align="center">
+	<a id="banniere" target="_blank" href="http://social-sante.gouv.fr/soins-et-maladies/medicaments/medicaments-generiques/" title="Visiter [medicaments.gouv.fr] - M?dicaments g?n?riques">
+		<img width="1000"   src ="/img/carrouselbannieres.gif" alt="Visiter [medicaments.gouv.fr] - M?dicaments g?n?riques" title="Visiter [medicaments.gouv.fr] - M?dicaments g?n?riques" />
+	</a>
+</div-->
+
+<div id="menuhaut">
+	<span id="menuhaut_gauche">
+		<a id="lien_accueil" class="navigation" href="index.php">Accueil</a>&nbsp;|&nbsp;
+		<a id="lien_glossaire" class="navigation" href="glossaire.php">Glossaire</a>&nbsp;|&nbsp;
+		<a id="lien_aide" class="navigation" href="aide.php">Aide</a>		
+	</span>
+	
+		
+	<span id="menuhaut_dernmaj">
+        <br>Dernière <span title=" 2.4.4
+">mise à jour</span> le 03/03/2025	</span>
+</div>
+
+	<script language="javascript" type="text/javascript">
+		//<![CDATA[ 
+		function Aff(men) {
+			document.write("<ul class=\"menuDoc\">");
+			for(var no_rub=0;no_rub<men.num_rub;no_rub++) {
+				document.write("<li><a class='leftMenu' href='"+menu[no_rub].page+"'>");
+				document.write(men[no_rub].txt);
+				document.write("</a></li>");
+				if (men[no_rub].nb_lien != 0){
+					document.write("<ul class=\"sousMenuDoc\">");
+				}
+				for(var no_lien=0;no_lien<men[no_rub].nb_lien;no_lien++) {
+					document.write("<li><a class='leftMenu' href='"+men[no_rub][no_lien].page+"'>");
+					document.write(men[no_rub][no_lien].txt);
+					document.write("</a></li>");
+				}
+				if (men[no_rub].nb_lien != 0){
+					document.write("</ul>");
+				}
+			}
+			document.write("</ul>");
+		}
+		
+		function CreerMenu(police,imgRub,imgOption,imgOptionFin,hauteur) {
+			this.num_rub=0;
+			this.police=police;
+			this.imgRub=imgRub;
+			this.imgOpt=imgOption;
+			this.imgOptFin=imgOptionFin;
+			this.hauteur=hauteur;
+			this.AddRub=AddRub;
+			this.AddLien=AddLien;
+		}
+		
+		function AddRub(txt,aff,page) {
+			var rub = new Object;
+				rub.txt=txt;
+				rub.aff=aff;
+				rub.page=page;
+				rub.nb_lien=0;
+			this[this.num_rub]=rub;
+			this.num_rub++;
+		}
+
+		function AddLien(txt,page) {
+			var no_rub = this.num_rub-1;
+			var no_lien= this[no_rub].nb_lien;
+			var lien = new Object;
+				lien.txt=txt;
+				lien.page=page;
+			this[no_rub][no_lien]=lien;
+			this[no_rub].nb_lien++;
+		}
+		var menu=new CreerMenu("arial","img/dyn04.gif","img/dyn22.gif","img/dyn55.gif",18);
+		//]]> 
+		menu.AddRub("Dénomination","O","#RcpDenomination");
+			menu.AddRub("Composition","O","#RcpCompoQualiQuanti");
+			menu.AddRub("Forme pharma.","O","#RcpFormePharm");
+			menu.AddRub("Clinique","O","#RcpDonneesCliniques");
+			menu.AddLien("Indic. thérapeutiques","#RcpIndicTherap");
+				menu.AddLien("Posologie","#RcpPosoAdmin");
+				menu.AddLien("Contre-indications","#RcpContreindications");
+				menu.AddLien("Mise en garde","#RcpMisesEnGarde");
+				menu.AddLien("Interactions","#RcpInteractionsMed");
+				menu.AddLien("Grossesse, allait.","#RcpFertGrossAllait");
+				menu.AddLien("Conduite véhicules","#RcpConduite");
+				menu.AddLien("Effets indésirables","#RcpEffetsIndesirables");
+				menu.AddLien("Surdosage","#RcpSurdosage");
+				menu.AddRub("Pharmacologie","O","#RcpPropPharmacologiques");
+			menu.AddLien("Pharmacodynamie","#RcpPropPharmacodynamiques");
+				menu.AddLien("Pharmacocinétique","#RcpPropPharmacocinetiques");
+				menu.AddLien("Sécurité préclinique","#RcpSecuritePreclinique");
+				menu.AddRub("Pharmaceutique","O","#RcpDonneesPharmaceutiques");
+			menu.AddLien("Liste excipients","#RcpListeExcipients");
+				menu.AddLien("Incompatibilités","#RcpIncompatibilites");
+				menu.AddLien("Durée conservation","#RcpDureeConservation");
+				menu.AddLien("Conservation","#RcpPrecConservation");
+				menu.AddLien("Emballage","#RcpEmballage");
+				menu.AddLien("Utilisation/manipulation","#RcpPrecEmpl");
+				menu.AddRub("Titulaire AMM","O","#RcpTitulaireAmm");
+			menu.AddRub("Présentations","O","#RcpNumAutor");
+			menu.AddRub("Autorisation, renouv.","O","#RcpPremiereAutorisation");
+			menu.AddRub("Date de révision","O","#RcpDateRevision");
+			menu.AddRub("Dosimétrie","O","#RcpDosimetrie");
+			menu.AddRub("Préparation radiopharma.","O","#RcpInstPrepRadioph");
+				</script>
+
+	<div id="container">
+		<div id="leftnav">
+			<div id="cadreMenuGauche">
+				<h2 class="sommaireMenu">Sommaire</h2>
+				<div id="menuGauche">
+					<script language="JavaScript" type="text/javascript">Aff(menu);</script>
+				</div>
+			</div>
+		</div>
+		<div id="contentPrincipal">
+			<div id="boutonsliens">
+				<a id='lien_fiche_info' href='extrait.php?specid=69606819' ><img id="ongletficheinfo" alt="Onglet fiche information" src="img/onglet_fiche_info_vert.png" /></a><a id='lien_rcp' href='affichageDoc.php?specid=69606819&amp;typedoc=R'><img class="onglet" alt="Onglet résumé des caractéristiques du produit" src="img/onglet_rcp_gris.png" /></a><a id='lien_notice' href='affichageDoc.php?specid=69606819&amp;typedoc=N'><img class="onglet" alt="Onglet notice patient" src="img/onglet_notice_vert.png" /></a>			</div>
+			<div class="titredeno">
+				<table summary="" border="0" cellspacing="0">
+					<tr><td colspan="3" height="10px"></td></tr>
+					<tr>
+						<td width="15px">&nbsp;</td>
+						<td width="685px"><h1 class="textedeno">MOPRAL 10 mg, gélule gastro-résistante  - Résumé des caractéristiques du produit</h1></td>
+						<td width="43px" class="tdcenter"><a href="Javascript:void(null)" onclick="print();"><img src="img/imprimante.png" height="20px" width="20px" alt="Imprimer le document" title="Imprimer le document" border="0" /></a></td>
+					</tr>
+					<tr><td colspan="3" height="10px"></td></tr>
+				</table>
+			</div>
+			
+			<div id="contentDocument">
+				<div id="textDocument">
+					<p class="DateNotif">ANSM - Mis à jour le : 04/09/2023</p>
+<p class="AmmAnnexeTitre1"><a name="RcpDenomination">1. DENOMINATION DU MEDICAMENT</a>&nbsp;&nbsp;<a href='#HautDePage'><img src='img/BackToTop.jpg' width='15px' height='15px' alt='Retour en haut de la page' title='Retour en haut de la page' /></a></p>
+<p class=AmmCorpsTexteGras><a name="_Toc142278913">MOPRAL 10 mg, gélule gastro-résistante </a></p>
+<p class="AmmAnnexeTitre1"><a name="RcpCompoQualiQuanti">2. COMPOSITION QUALITATIVE ET QUANTITATIVE</a>&nbsp;&nbsp;<a href='#HautDePage'><img src='img/BackToTop.jpg' width='15px' height='15px' alt='Retour en haut de la page' title='Retour en haut de la page' /></a></p>
+<p class=AmmComposition>Oméprazole............................................................................................................ 10 milligrammes</p>
+<p class=AmmCorpsTexte align=center style='text-align:center'>Pour une dose.</p>
+<p class=AmmCorpsTexte><a name="_Toc142278914">Chaque gélule contient 10 mg d’oméprazole.</a></p>
+<p class=AmmCorpsTexte><span class='souligne'>Excipient(s) à effet notoire :</span></p>
+<p class=AmmCorpsTexte>Chaque gélule contient 4 mg de lactose.</p>
+<p class=AmmCorpsTexte>Pour la liste complète des excipients, voir rubrique 6.1</p>
+<p class="AmmAnnexeTitre1"><a name="RcpFormePharm">3. FORME PHARMACEUTIQUE</a>&nbsp;&nbsp;<a href='#HautDePage'><img src='img/BackToTop.jpg' width='15px' height='15px' alt='Retour en haut de la page' title='Retour en haut de la page' /></a></p>
+<p class=AmmCorpsTexte><a name="_Toc142278915">Gélule gastro-résistante.</a></p>
+<p class=AmmCorpsTexte>Gélule en gélatine avec un corps rose opaque portant la mention 10 et une tête rose opaque marquée A/OS et contenant des granulés gastro-résistants.</p>
+<p class="AmmAnnexeTitre1"><a name="RcpDonneesCliniques">4. DONNEES CLINIQUES</a>&nbsp;&nbsp;<a href='#HautDePage'><img src='img/BackToTop.jpg' width='15px' height='15px' alt='Retour en haut de la page' title='Retour en haut de la page' /></a></p>
+<p class="AmmAnnexeTitre2"><a name="RcpIndicTherap">4.1. Indications thérapeutiques</a>&nbsp;&nbsp;<a href='#HautDePage'><img src='img/BackToTop.jpg' width='15px' height='15px' alt='Retour en haut de la page' title='Retour en haut de la page' /></a></p>
+<p class=AmmCorpsTexte><a name="_Toc142278917">Les gélules de MOPRAL sont indiquées dans :</a></p>
+<p class=AmmAnnexeTitre3>Adultes :</p>
+<p class=AmmListePuces1 style='text-align:justify'><span style='font-family: Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>Traitement des ulcères duodénaux.</p>
+<p class=AmmListePuces1 style='text-align:justify'><span style='font-family: Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>Prévention des récidives d’ulcères duodénaux.</p>
+<p class=AmmListePuces1 style='text-align:justify'><span style='font-family: Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>Traitement des ulcères gastriques.</p>
+<p class=AmmListePuces1 style='text-align:justify'><span style='font-family: Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>Prévention des récidives d’ulcères gastriques.</p>
+<p class=AmmListePuces1 style='text-align:justify'><span style='font-family: Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>En association à des antibiotiques appropriés, éradication de Helicobacter pylori (H. pylori) dans la maladie ulcéreuse gastroduodénale.</p>
+<p class=AmmListePuces1 style='text-align:justify'><span style='font-family: Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>Traitement des ulcères gastriques et duodénaux associés à la prise d’anti-inflammatoires non stéroïdiens (AINS) </p>
+<p class=AmmListePuces1 style='text-align:justify'><span style='font-family: Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>Prévention des ulcères gastriques et duodénaux associés à la prise d’anti-inflammatoires non stéroïdiens (AINS) chez les patients à risque.</p>
+<p class=AmmListePuces1 style='text-align:justify'><span style='font-family: Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>Traitement de l’œsophagite par reflux.</p>
+<p class=AmmListePuces1 style='text-align:justify'><span style='font-family: Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>Traitement d’entretien des patients après cicatrisation d’une œsophagite par reflux.</p>
+<p class=AmmListePuces1 style='text-align:justify'><span style='font-family: Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>Traitement du reflux gastro-œsophagien symptomatique.</p>
+<p class=AmmListePuces1 style='text-align:justify'><span style='font-family: Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>Traitement du syndrome de Zollinger-Ellison.</p>
+<p class=AmmAnnexeTitre3>Utilisation pédiatrique :</p>
+<p class=AmmCorpsTexte><span class='italique'>Enfants à partir d’un an et </span><span class='italique'><span style='font-family:Symbol'>³</span> à 10 kg</span></p>
+<p class=AmmListePuces1><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>Traitement de l’œsophagite par reflux.</p>
+<p class=AmmListePuces1 style='text-align:justify'><span style='font-family: Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>Traitement symptomatique du pyrosis et des régurgitations acides en cas de reflux gastro-œsophagien.</p>
+<p class=AmmCorpsTexte style='margin-top:6.0pt'><span class='italique'>Enfants de plus de 4 ans et adolescents</span></p>
+<p class=AmmListePuces1><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>En association à des antibiotiques, traitement de l’ulcère duodénal consécutif à une infection par <span class='italique'>H. pylori.</span></p>
+<p class="AmmAnnexeTitre2"><a name="RcpPosoAdmin">4.2. Posologie et mode d'administration</a>&nbsp;&nbsp;<a href='#HautDePage'><img src='img/BackToTop.jpg' width='15px' height='15px' alt='Retour en haut de la page' title='Retour en haut de la page' /></a></p>
+<p class=AmmAnnexeTitre3><a name="_Toc142278918"><span style='font-size:11.0pt; text-decoration:none'>Posologie</span></a></p>
+<p class=AmmAnnexeTitre4><span class='gras'>Adultes </span></p>
+<p class=AmmCorpsTexteGras>Traitement des ulcères duodénaux</p>
+<p class=AmmCorpsTexte>La dose recommandée chez les patients ayant un ulcère duodénal évolutif est 20 mg de MOPRAL une fois par jour. Chez la plupart des patients, la cicatrisation survient dans les 2 semaines.</p>
+<p class=AmmCorpsTexte>Chez les patients avec une cicatrisation incomplète après le traitement initial, la cicatrisation sera généralement obtenue après 2 semaines supplémentaires de traitement. Chez les patients faiblement répondeurs, la dose de 40 mg de MOPRAL une fois par jour est recommandée et la cicatrisation est généralement obtenue en 4 semaines.</p>
+<p class=AmmCorpsTexteGras>Prévention des récidives des ulcères duodénaux</p>
+<p class=AmmCorpsTexte>Pour la prévention des récidives de l’ulcère duodénal chez les patients non infectés par <span class='italique'>H. pylori</span> ou lorsque l’éradication de <span class='italique'>H. pylori</span> n’est pas possible, la dose recommandée est 20 mg de MOPRAL une fois par jour. Chez certains patients, une dose journalière de 10 mg peut être suffisante. En cas d’échec thérapeutique, la dose peut être augmentée à 40 mg.</p>
+<p class=AmmCorpsTexteGras>Traitement des ulcères gastriques</p>
+<p class=AmmCorpsTexte>La dose recommandée est 20 mg de MOPRAL une fois par jour. Chez la plupart des patients, la cicatrisation survient dans les 4 semaines. Chez les patients non cicatrisés après le traitement initial, la cicatrisation sera obtenue au cours des 4 semaines supplémentaires de traitement. Chez les patients faiblement répondeurs, la dose recommandée est 40 mg de MOPRAL une fois par jour et la cicatrisation est généralement obtenue dans les 8 semaines.</p>
+<p class=AmmCorpsTexteGras>Prévention des récidives des ulcères gastriques</p>
+<p class=AmmCorpsTexte>Pour la prévention de la récidive chez les patients faiblement répondeurs, la dose recommandée est 20 mg de MOPRAL une fois par jour. Si nécessaire, la dose peut être augmentée à 40 mg de MOPRAL une fois par jour.</p>
+<p class=AmmCorpsTexteGras>Eradication de <span class='italique'>H. pylori</span> dans la maladie ulcéreuse gastroduodénale</p>
+<p class=AmmCorpsTexte>Pour l’éradication de <span class='italique'>H. pylori</span>, le choix des antibiotiques devra prendre en compte la tolérance individuelle du patient et devra tenir compte des profils de résistance locaux, régionaux et nationaux, ainsi que des recommandations en vigueur.</p>
+<p class=AmmListePuces1 style='text-align:justify'><span style='font-family: Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>MOPRAL 20 mg + clarithromycine 500 mg + amoxicilline 1 000 mg, chacun deux fois par jour pendant une semaine, ou</p>
+<p class=AmmListePuces1 style='text-align:justify'><span style='font-family: Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>MOPRAL 20 mg + clarithromycine 250 mg (ou 500 mg) + métronidazole 400 mg (ou 500 mg ou tinidazole 500 mg), chacun deux fois par jour pendant une semaine, ou </p>
+<p class=AmmListePuces1 style='text-align:justify'><span style='font-family: Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>MOPRAL 40 mg une fois par jour avec l’amoxicilline 500 mg et le métronidazole 400 mg (ou 500 mg ou tinidazole 500 mg) chacun des deux trois fois par jour pendant une semaine.</p>
+<p class=AmmCorpsTexte style='margin-top:6.0pt'>Si le patient présente encore <span class='italique'>H. pylori</span> après cette trithérapie, le traitement peut être répété.</p>
+<p class=AmmCorpsTexteGras>Traitement des ulcères gastriques et duodénaux associés à la prise d’AINS</p>
+<p class=AmmCorpsTexte>Pour le traitement des ulcères gastriques et duodénaux induits par les AINS, la dose recommandée est 20 mg de MOPRAL une fois par jour. Chez la plupart des patients, la cicatrisation survient dans les 4 semaines. Chez les patients non cicatrisés après le traitement initial, la cicatrisation sera obtenue au cours des 4 semaines supplémentaires de traitement.</p>
+<p class=AmmCorpsTexteGras>Prévention des ulcères gastriques et duodénaux associés à la prise d’AINS chez les patients à risque</p>
+<p class=AmmCorpsTexte>Pour la prévention des ulcères gastriques ou duodénaux associés à la prise d’AINS chez les patients à risque (âge &gt; 60 ans, antécédents d’ulcères gastriques et duodénaux, antécédent d’hémorragie digestive haute) la dose recommandée est 20 mg de MOPRAL une fois par jour.</p>
+<p class=AmmCorpsTexteGras>Traitement de l’œsophagite par reflux</p>
+<p class=AmmCorpsTexte>La dose recommandée est 20 mg de MOPRAL une fois par jour. Chez la plupart des patients, la cicatrisation survient dans les 4 semaines. Chez les patients non cicatrisés après le traitement initial de 4 semaines, la cicatrisation sera obtenue au cours de 4 semaines supplémentaires de traitement.</p>
+<p class=AmmCorpsTexte>Chez les patients ayant une œsophagite sévère, la dose recommandée est 40 mg de MOPRAL une fois par jour, et la cicatrisation est généralement obtenue dans les 8 semaines. </p>
+<p class=AmmCorpsTexteGras>Traitement d’entretien des patients après cicatrisation d’une œsophagite par reflux </p>
+<p class=AmmCorpsTexte>Après cicatrisation des œsophagites par reflux, le traitement d’entretien recommandé est 10 mg de MOPRAL une fois par jour. Si nécessaire, la dose peut être augmentée à 20 – 40 mg de MOPRAL une fois par jour.</p>
+<p class=AmmCorpsTexteGras>Traitement du reflux gastro-œsophagien symptomatique</p>
+<p class=AmmCorpsTexte>La dose recommandée est 20 mg de MOPRAL par jour. Certains patients répondent à la dose de 10 mg par jour et par conséquent, la posologie peut être ajustée individuellement.</p>
+<p class=AmmCorpsTexte>Si les symptômes ne sont pas contrôlés après 4 semaines de traitement par 20 mg de MOPRAL par jour, des investigations supplémentaires sont recommandées.</p>
+<p class=AmmCorpsTexteGras>Traitement du syndrome de Zollinger-Ellison</p>
+<p class=AmmCorpsTexte>Chez les patients ayant un syndrome de Zollinger-Ellison, la posologie doit être ajustée individuellement et le traitement poursuivi aussi longtemps que nécessaire. La dose initiale journalière recommandée est 60 mg de MOPRAL. Tous les patients ayant une maladie sévère et une réponse inadaptée aux autres traitements ont été efficacement contrôlés, et plus de 90 % d’entre eux ont été maintenus à des doses comprises entre 20 et 120 mg de MOPRAL par jour. Pour des posologies supérieures à 80 mg par jour, la dose journalière devra être divisée et donnée en 2 prises.</p>
+<p class=AmmCorpsTexteGras><span class='italique'><span class='souligne'>Population pédiatrique</span></span></p>
+<p class=AmmCorpsTexteGras>Chez l’enfant à partir d’un an et <span style='font-family:Symbol'>³</span> à 10 kg</p>
+<p class=AmmCorpsTexte><span class='souligne'>Traitement de l’œsophagite par reflux</span></p>
+<p class=AmmCorpsTexte>Traitement symptomatique du pyrosis et des régurgitations acides en cas de reflux gastro-œsophagien.</p>
+<p class=AmmCorpsTexte>Les posologies recommandées sont les suivantes :</p>
+<div align=center>
+<table class=AmmCorpsTexteTable border=1 cellspacing=0 cellpadding=0
+style='border-collapse:collapse;border:none'>
+<tr>
+<td width=59 valign=top style='width:44.6pt;border:solid windowtext 1.0pt;
+padding:0cm 3.5pt 0cm 3.5pt'>
+<p class=AmmCorpsTexte style='margin-top:6.0pt;margin-right:0cm;margin-bottom: 6.0pt;margin-left:0cm;punctuation-wrap:simple;text-autospace:none;vertical-align: baseline'><span style='font-size:10.0pt;font-family:"Arial",sans-serif'>Âge</span></p>
+</td>
+<td width=83 valign=top style='width:61.95pt;border:solid windowtext 1.0pt;
+border-left:none;padding:0cm 3.5pt 0cm 3.5pt'>
+<p class=AmmCorpsTexte style='margin-top:6.0pt;margin-right:0cm;margin-bottom: 6.0pt;margin-left:0cm;punctuation-wrap:simple;text-autospace:none;vertical-align: baseline'><span style='font-size:10.0pt;font-family:"Arial",sans-serif'>Poids  </span></p>
+</td>
+<td width=443 valign=top style='width:332.35pt;border:solid windowtext 1.0pt;
+border-left:none;padding:0cm 3.5pt 0cm 3.5pt'>
+<p class=AmmCorpsTexte style='margin-top:6.0pt;margin-right:0cm;margin-bottom: 6.0pt;margin-left:0cm;punctuation-wrap:simple;text-autospace:none;vertical-align: baseline'><span style='font-size:10.0pt;font-family:"Arial",sans-serif'>Posologie</span></p>
+</td>
+</tr>
+<tr>
+<td width=59 valign=top style='width:44.6pt;border:solid windowtext 1.0pt;
+border-top:none;padding:0cm 3.5pt 0cm 3.5pt'>
+<p class=AmmCorpsTexte align=left style='margin-top:6.0pt;margin-right:0cm; margin-bottom:6.0pt;margin-left:0cm;text-align:left;punctuation-wrap:simple; text-autospace:none;vertical-align:baseline'><span style='font-size:10.0pt; font-family:"Arial",sans-serif'>&#8805; 1 an</span></p>
+</td>
+<td width=83 valign=top style='width:61.95pt;border-top:none;border-left:
+none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+padding:0cm 3.5pt 0cm 3.5pt'>
+<p class=AmmCorpsTexte align=left style='margin-top:6.0pt;margin-right:0cm; margin-bottom:6.0pt;margin-left:0cm;text-align:left;punctuation-wrap:simple; text-autospace:none;vertical-align:baseline'><span style='font-size:10.0pt; font-family:"Arial",sans-serif'>10 à 20 kg</span></p>
+</td>
+<td width=443 valign=top style='width:332.35pt;border-top:none;border-left:
+none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+padding:0cm 3.5pt 0cm 3.5pt'>
+<p class=AmmCorpsTexte align=left style='margin-top:6.0pt;margin-right:0cm; margin-bottom:6.0pt;margin-left:0cm;text-align:left;punctuation-wrap:simple; text-autospace:none;vertical-align:baseline'><span style='font-size:10.0pt; font-family:"Arial",sans-serif'>10 mg une fois par jour. La posologie peut être augmentée à 20 mg une fois par jour si nécessaire.</span></p>
+</td>
+</tr>
+<tr>
+<td width=59 valign=top style='width:44.6pt;border:solid windowtext 1.0pt;
+border-top:none;padding:0cm 3.5pt 0cm 3.5pt'>
+<p class=AmmCorpsTexte align=left style='margin-top:6.0pt;margin-right:0cm; margin-bottom:6.0pt;margin-left:0cm;text-align:left;punctuation-wrap:simple; text-autospace:none;vertical-align:baseline'><span style='font-size:10.0pt; font-family:"Arial",sans-serif'>&#8805; 2 ans</span></p>
+</td>
+<td width=83 valign=top style='width:61.95pt;border-top:none;border-left:
+none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+padding:0cm 3.5pt 0cm 3.5pt'>
+<p class=AmmCorpsTexte align=left style='margin-top:6.0pt;margin-right:0cm; margin-bottom:6.0pt;margin-left:0cm;text-align:left;punctuation-wrap:simple; text-autospace:none;vertical-align:baseline'><span style='font-size:10.0pt; font-family:"Arial",sans-serif'>&gt; 20 kg </span></p>
+</td>
+<td width=443 valign=top style='width:332.35pt;border-top:none;border-left:
+none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+padding:0cm 3.5pt 0cm 3.5pt'>
+<p class=AmmCorpsTexte align=left style='margin-top:6.0pt;margin-right:0cm; margin-bottom:6.0pt;margin-left:0cm;text-align:left;punctuation-wrap:simple; text-autospace:none;vertical-align:baseline'><span style='font-size:10.0pt; font-family:"Arial",sans-serif'>20 mg une fois par jour. La posologie peut être augmentée à 40 mg une fois par jour si nécessaire.</span></p>
+</td>
+</tr>
+</table>
+</div>
+<p class=AmmCorpsTexte style='margin-top:6.0pt'><span class='souligne'>Œsophagite par reflux :</span> la durée du traitement est de 4 à 8 semaines.</p>
+<p class=AmmCorpsTexte><span class='souligne'>Traitement symptomatique du pyrosis et des régurgitations acides en cas de reflux gastro-œsophagien :</span> la durée du traitement est de 2 à 4 semaines. Si les symptômes ne sont pas contrôlés après 2 à 4 semaines de traitement, des investigations supplémentaires sont recommandées.</p>
+<p class=AmmCorpsTexteGras>Adolescents et enfants de plus de 4 ans</p>
+<p class=AmmCorpsTexte><span class='souligne'>Traitement de l’ulcère duodénal consécutif à une infection par <span class='italique'>H. pylori :</span></span></p>
+<p class=AmmCorpsTexte>Lors du choix des antibiotiques à utiliser, il conviendra de tenir compte des recommandations officielles locales, régionales et nationales, concernant la résistance bactérienne, la durée du traitement (le plus souvent 7 jours, mais cette durée peut atteindre parfois 14 jours), et l’utilisation adéquate de ces antibiotiques.</p>
+<p class=AmmCorpsTexte>Le traitement devra être surveillé par un spécialiste.</p>
+<p class=AmmCorpsTexte>Les posologies recommandées sont les suivantes :</p>
+<div align=center>
+<table class=AmmCorpsTexteTable border=1 cellspacing=0 cellpadding=0
+style='border-collapse:collapse;border:none'>
+<tr>
+<td width=97 valign=top style='width:72.75pt;border:solid windowtext 1.0pt;
+padding:0cm 3.5pt 0cm 3.5pt'>
+<p class=AmmCorpsTexte>Poids</p>
+</td>
+<td width=507 valign=top style='width:380.55pt;border:solid windowtext 1.0pt;
+border-left:none;padding:0cm 3.5pt 0cm 3.5pt'>
+<p class=AmmCorpsTexte>Posologie</p>
+</td>
+</tr>
+<tr>
+<td width=97 valign=top style='width:72.75pt;border:solid windowtext 1.0pt;
+border-top:none;padding:0cm 3.5pt 0cm 3.5pt'>
+<p class=AmmCorpsTexte>15-30 kg </p>
+</td>
+<td width=507 valign=top style='width:380.55pt;border-top:none;border-left:
+none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+padding:0cm 3.5pt 0cm 3.5pt'>
+<p class=AmmCorpsTexte>Association avec deux antibiotiques : MOPRAL 10 mg, amoxicilline 25 mg/kg de poids corporel et clarithromycine 7,5 mg/kg de poids corporel sont tous administrés simultanément deux fois par jour pendant 1 semaine.</p>
+</td>
+</tr>
+<tr>
+<td width=97 valign=top style='width:72.75pt;border:solid windowtext 1.0pt;
+border-top:none;padding:0cm 3.5pt 0cm 3.5pt'>
+<p class=AmmCorpsTexte>31-40 kg</p>
+</td>
+<td width=507 valign=top style='width:380.55pt;border-top:none;border-left:
+none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+padding:0cm 3.5pt 0cm 3.5pt'>
+<p class=AmmCorpsTexte>Association avec deux antibiotiques : MOPRAL 20 mg, amoxicilline 750 mg et clarithromycine 7,5 mg/kg de poids corporel sont tous administrés simultanément deux fois par jour pendant 1 semaine.</p>
+</td>
+</tr>
+<tr>
+<td width=97 valign=top style='width:72.75pt;border:solid windowtext 1.0pt;
+border-top:none;padding:0cm 3.5pt 0cm 3.5pt'>
+<p class=AmmCorpsTexte>&gt;40 kg</p>
+</td>
+<td width=507 valign=top style='width:380.55pt;border-top:none;border-left:
+none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+padding:0cm 3.5pt 0cm 3.5pt'>
+<p class=AmmCorpsTexte>Association avec deux antibiotiques : MOPRAL 20 mg, amoxicilline 1 g et clarithromycine 500 mg sont tous administrés simultanément deux fois par jour pendant 1 semaine.</p>
+</td>
+</tr>
+</table>
+</div>
+<p class=AmmAnnexeTitre3><span class='italique'>Populations particulières</span></p>
+<p class=AmmCorpsTexte><span class='italique'>Insuffisance Rénale</span> : </p>
+<p class=AmmCorpsTexte>Aucun ajustement posologique n’est nécessaire en cas d’insuffisance rénale (voir rubrique 5.2).</p>
+<p class=AmmCorpsTexte><span class='italique'>Insuffisance Hépatique</span> : </p>
+<p class=AmmCorpsTexte>Chez les patients présentant une insuffisance hépatique, une dose journalière de 10 mg-20 mg peut suffire (voir rubrique 5.2).</p>
+<p class=AmmCorpsTexte><span class='italique'><span style='color:black'>Sujets âgés</span></span></p>
+<p class=AmmCorpsTexte>Aucune adaptation posologique n’est nécessaire chez le sujet âgé (voir rubrique 5.2).</p>
+<p class=AmmAnnexeTitre3>Mode d’administration</p>
+<p class=AmmCorpsTexte>Il est recommandé de prendre les gélules de MOPRAL le matin et de les avaler en entier avec un demi-verre d’eau. Les gélules ne doivent être ni mâchées ni croquées.</p>
+<p class=AmmCorpsTexte><span class='souligne'>Chez les patients ayant des difficultés de déglutition et chez les enfants capables de boire ou d’avaler des aliments semi-liquides </span></p>
+<p class=AmmCorpsTexte>Les patients peuvent ouvrir les gélules et avaler le contenu avec un demi-verre d’eau ou après mélange avec un aliment légèrement acide comme par exemple : jus de fruit, compote de pomme ou eau non gazeuse. On doit conseiller aux patients de prendre le mélange immédiatement (ou dans les 30 minutes) et de toujours remuer le mélange juste avant de le boire, puis de rincer le verre avec un demi-verre d’eau et le boire.</p>
+<p class=AmmCorpsTexte>Les patients peuvent également sucer la gélule et avaler les granulés avec un demi-verre d’eau. Les granulés gastro-résistants ne doivent pas être mâchés.</p>
+<p class="AmmAnnexeTitre2"><a name="RcpContreindications">4.3. Contre-indications</a>&nbsp;&nbsp;<a href='#HautDePage'><img src='img/BackToTop.jpg' width='15px' height='15px' alt='Retour en haut de la page' title='Retour en haut de la page' /></a></p>
+<p class=AmmListePuces1 style='text-align:justify'><a name="_Toc142278919"><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>Hypersensibilité à la substance active, aux dérivés benzimidazolés ou à l’un des excipients mentionnés à la rubrique 6.1.</a></p>
+<p class=AmmListePuces1 style='text-align:justify'><span style='font-family: Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>L’oméprazole, comme les autres inhibiteurs de la pompe à protons (IPP), ne doit pas être administré de façon concomitante avec le nelfinavir (voir rubrique 4.5).</p>
+<p class="AmmAnnexeTitre2"><a name="RcpMisesEnGarde">4.4. Mises en garde spéciales et précautions d'emploi</a>&nbsp;&nbsp;<a href='#HautDePage'><img src='img/BackToTop.jpg' width='15px' height='15px' alt='Retour en haut de la page' title='Retour en haut de la page' /></a></p>
+<p class=AmmCorpsTexte><a name="_Toc142278920">En présence de tout symptôme alarmant (tel que perte de poids importante et involontaire, vomissements répétés, dysphagie, hématémèse ou méléna) et en cas de suspicion ou de présence d’un ulcère gastrique, l’éventualité d’une lésion maligne doit être écartée car le traitement peut atténuer les symptômes et retarder le diagnostic.</a></p>
+<p class=AmmCorpsTexte>L’association concomitante d’atazanavir avec des inhibiteurs de la pompe à proton n’est pas recommandée (voir rubrique 4.5). Si l’association de l’atazanavir avec un inhibiteur de la pompe à proton est jugée indispensable, une surveillance clinique étroite (ex : surveillance de la charge virale) est recommandée associée à une augmentation de la dose de l’atazanavir à 400 mg avec 100 mg de ritonavir ; une dose maximale de 20 mg d’oméprazole ne doit pas être dépassée.</p>
+<p class=AmmCorpsTexte>L’oméprazole, comme tous les médicaments anti-sécrétoires gastriques acides, peut réduire l’absorption de la vitamine B12 (cyanocobalamine), en raison de l’hypo – ou achlorhydrie. Ceci devra être pris en compte lors d’un traitement au long cours chez les patients disposant de réserves réduites ou présentant des facteurs de risque de diminution de l’absorption de la vitamine B12.</p>
+<p class=AmmCorpsTexte>L’oméprazole est un inhibiteur du CYP2C19. Au début et à la fin d’un traitement avec l’oméprazole, le risque d’interactions avec les produits métabolisés par le CYP2C19 doit être envisagé. Une interaction entre le clopidogrel et l’oméprazole a été observée (voir rubrique 4.5). La pertinence clinique de cette interaction est incertaine. Par précaution, l’utilisation concomitante d’oméprazole et de clopidogrel doit être déconseillée.</p>
+<p class=AmmCorpsTexte>Des cas d’hypomagnésémies sévères ont été rapportés chez des patients traités par des inhibiteurs de la pompe à protons (IPP) tels que l'oméprazole pendant au moins trois mois, et dans la plupart des cas pendant un an. L’hypomagnésémie peut se manifester par des signes cliniques graves tels que fatigue, tétanie, bouffées délirantes, convulsions, sensations vertigineuses, arythmie ventriculaire mais elle peut débuter de façon insidieuse et passer inaperçue. Chez la plupart des patients, l’hypomagnésémie s’est améliorée après supplémentation en magnésium et arrêt de l'IPP.</p>
+<p class=AmmCorpsTexte>Chez les patients nécessitant un traitement prolongé ou en cas d’association des IPP avec de la digoxine ou avec des médicaments pouvant induire une hypomagnésémie (par exemple des diurétiques), un dosage du taux de magnésium sanguin doit être envisagé par les professionnels de santé avant de commencer le traitement par l’IPP puis régulièrement pendant le traitement.</p>
+<p class=AmmCorpsTexte>Des réactions cutanées indésirables graves (SCAR), notamment le syndrome de Stevens-Johnson (SSJ), la nécrolyse épidermique toxique (NET), la réaction médicamenteuse avec éosinophilie et symptômes systémiques (DRESS) et la pustulose exanthématique aiguë généralisée (PEAG), qui peuvent mettre en jeu le pronostic vital ou être fatales, ont été rapportées très rarement et rarement, respectivement, en association avec le traitement par oméprazole.</p>
+<p class=AmmCorpsTexte>Les inhibiteurs de la pompe à protons, en particulier s’ils sont utilisés à fortes doses et sur une durée prolongée (&gt; 1 an), peuvent augmenter modérément le risque de fracture de la hanche, du poignet et des vertèbres, principalement chez les patients âgés ou en présence d'autres facteurs de risque identifiés. Des études observationnelles suggèrent que les inhibiteurs de la pompe à protons peuvent augmenter le risque global de fracture de 10 à 40%. Cette augmentation peut être en partie due à d’autres facteurs de risque. Les patients présentant un risque d'ostéoporose doivent être pris en charge conformément aux recommandations en vigueur, et recevoir un apport approprié en vitamine D et en calcium.</p>
+<p class=AmmCorpsTexte>Atteinte de la fonction rénale </p>
+<p class=AmmCorpsTexte>Une néphrite tubulo-interstitielle (NTI) aiguë a été observée chez des patients prenant de l’oméprazole et peut survenir à tout moment durant le traitement par l’oméprazole (voir rubrique 4.8). La néphrite tubulo-interstitielle aiguë peut évoluer vers une insuffisance rénale.</p>
+<p class=AmmCorpsTexte>L’oméprazole doit être interrompu en cas de suspicion de NTI, et un traitement approprié doit être rapidement instauré.</p>
+<p class=AmmCorpsTexte><span class='italique'><span class='souligne'>Lupus érythémateux cutané Subaigu (LECS)</span></span></p>
+<p class=AmmCorpsTexte>Les inhibiteurs de la pompe à protons sont associés à de très rares cas de LECS. Si des lésions surviennent, en particulier sur les zones de la peau exposées au soleil, et si elles sont accompagnées d’arthralgies, le patient doit consulter un médecin rapidement et le professionnel de la santé devrait envisager l’arrêt de Mopral. L’apparition d’un LECS après un traitement antérieur avec un inhibiteur de la pompe à protons peut augmenter le risque de LECS avec d'autres inhibiteurs de la pompe à protons.</p>
+<p class=AmmCorpsTexte><span class='italique'><span class='souligne'>Interférence avec les tests de laboratoire</span></span></p>
+<p class=AmmCorpsTexte>L’augmentation du taux de Chromogranine A (CgA) peut interférer avec les tests réalisés pour l’exploration des tumeurs neuroendocrines. Pour éviter cette interférence, le traitement par l’oméprazole doit être interrompu au moins 5 jours avant de mesurer le taux de CgA (voir rubrique 5.1). Si les taux de CgA et de gastrine ne se sont pas normalisés après la mesure initiale, les mesures doivent être répétées 14 jours après l’arrêt du traitement par inhibiteur de la pompe à protons.</p>
+<p class=AmmAnnexeTitre3>Population pédiatrique</p>
+<p class=AmmCorpsTexte>Certains enfants atteints d’affections chroniques peuvent nécessiter un traitement à long terme bien que cela ne soit pas recommandé.</p>
+<p class=AmmCorpsTexte>Un traitement par inhibiteurs de la pompe à protons pourrait légèrement augmenter le risque d’infections gastrointestinales, comme une infection par <span class='italique'>Salmonella</span> et par <span class='italique'>Campylobacter</span> et possiblement par <span class='italique'>Clostridium difficile</span> chez les patients hospitalisés (voir rubrique 5.1).</p>
+<p class=AmmCorpsTexte>Comme dans tous les traitements à long terme, en particulier lorsque la période de traitement est supérieure à un an, une surveillance régulière des patients est nécessaire.</p>
+<p class=AmmCorpsTexteGras>Ce médicament contient du Lactose et du Sodium</p>
+<p class=AmmCorpsTexte>Les patients présentant une intolérance au galactose, un déficit total en lactase ou un syndrome de malabsorption du glucose et du galactose (maladies héréditaires rares) ne doivent pas prendre ce médicament.</p>
+<p class=AmmCorpsTexte>Ce médicament contient moins de 1 mmol (23 mg) de sodium par gélule, c’est-à-dire qu’il est essentiellement « sans sodium ».</p>
+<p class="AmmAnnexeTitre2"><a name="RcpInteractionsMed">4.5. Interactions avec d'autres médicaments et autres formes d'interactions</a>&nbsp;&nbsp;<a href='#HautDePage'><img src='img/BackToTop.jpg' width='15px' height='15px' alt='Retour en haut de la page' title='Retour en haut de la page' /></a></p>
+<p class=AmmAnnexeTitre3><a name="_Toc142278928"></a><a name="_Toc142278926"></a><a name="_Toc142278925">Effets de l’oméprazole sur la pharmacocinétique des autres substances actives</a></p>
+<p class=AmmAnnexeTitre4><span class='gras'>Substances actives dont l’absorption est dépendante du pH</span></p>
+<p class=AmmCorpsTexte>La diminution de l’acidité intra gastrique au cours du traitement par l’oméprazole peut diminuer ou augmenter l’absorption des substances actives dont l’absorption est dépendante du pH.</p>
+<p class=AmmCorpsTexteGras><span class='souligne'>Nelfinavir, atazanavir</span></p>
+<p class=AmmCorpsTexte>Les concentrations plasmatiques de l'atazanavir et du nelfinavir diminuent en cas de co-administration avec l'oméprazole.</p>
+<p class=AmmCorpsTexte><a name="OLE_LINK4">L'administration concomitante d'oméprazole </a>avec le nelfinavir est contre-indiquée (voir rubrique 4.3).</p>
+<p class=AmmCorpsTexte>L'administration concomitante d'oméprazole (40 mg une fois par jour) a entraîné une diminution de l’exposition moyenne au nelfinavir de 40 % et une diminution de l’exposition moyenne de son métabolite pharmacologiquement actif M8 de 75-90 %. L’interaction pourrait également entraîner une inhibition du CYP2C19.</p>
+<p class=AmmCorpsTexte>L'administration concomitante d'oméprazole avec l’atazanavir n'est pas recommandée (voir rubrique 4.4).</p>
+<p class=AmmCorpsTexte>L’oméprazole (40 mg en une prise par jour) administré en association avec l’atazanavir 300 mg associé au ritonavir 100 mg, chez des volontaires sains, a entraîné une diminution de 75 % de l’exposition à l’atazanavir. L’augmentation de la posologie de l’atazanavir à 400 mg n’a pas compensé l’impact de l’oméprazole sur l’exposition à l’atazanavir. L’association d’oméprazole (20 mg une fois par jour) avec l’atazanavir 400 mg/ritonavir 100 mg chez des volontaires sains a diminué approximativement de 30% l’exposition à l’atazanavir en comparaison à l’exposition observée avec l’atazanavir 300 mg/ ritonavir 100 mg une fois par jour.</p>
+<p class=AmmCorpsTexteGras><span class='souligne'>Digoxine</span></p>
+<p class=AmmCorpsTexte>Un traitement concomitant par oméprazole (20 mg par jour) et digoxine chez des sujets sains augmente la biodisponibilité de la digoxine de 10%. La toxicité de la digoxine est rarement rapportée. Cependant, il faut être prudent chez les patients âgés lorsque l’oméprazole est administré à de fortes doses. La surveillance thérapeutique de la digoxine doit alors être renforcée.</p>
+<p class=AmmCorpsTexteGras><span class='souligne'>Clopidogrel</span></p>
+<p class=AmmCorpsTexte>Les résultats des études menées chez des sujets sains ont montré une interaction pharmacocinétique (PK)/ pharmacodynamique (PD) entre le clopidogrel (pour une dose de charge de 300mg / suivie d’une dose d’entretien de 75mg par jour) et l’oméprazole (80 mg par jour par voie orale) entrainant une diminution moyenne de 46% de l’exposition au métabolite actif du clopidogrel et entrainant une diminution de l’inhibition maximale de l’agrégation plaquettaire (induite par l’ADP) de 16% en moyenne.</p>
+<p class=AmmCorpsTexte>Des données contradictoires sur les conséquences cliniques d’une interaction PK/PD de l’oméprazole en termes d’événements cardiovasculaires majeurs ont été rapportées à la fois dans les études observationnelles et cliniques. Par mesure de précaution, l’utilisation concomitante d’oméprazole et de clopidogrel doit être déconseillée (voir rubrique 4.4).</p>
+<p class=AmmCorpsTexteGras><span class='souligne'>Autres substances actives</span></p>
+<p class=AmmCorpsTexte>L’absorption du posaconazole, de l’erlotinib, du kétoconazole et de l’itraconazole est significativement diminuée et l’efficacité clinique peut donc être affaiblie. L’association concomitante du posaconazole et de l’erlotinib avec l’oméprazole doit être évitée.</p>
+<p class=AmmAnnexeTitre4><span class='gras'>Substances actives métabolisées par le CYP2C19</span></p>
+<p class=AmmCorpsTexte>L’oméprazole est un inhibiteur modéré du CYP2C19, principal enzyme de métabolisation de l’oméprazole. De ce fait, lors d’une administration concomitante avec des substances actives métabolisées par le CYP2C19, la métabolisation peut être diminuée et l’exposition systémique de ces substances augmentée. Des exemples de tels médicaments sont la R-warfarine et les autres anti-vitamines K, le cilostazol, le diazépam et la phénytoïne.</p>
+<p class=AmmCorpsTexteGras><span class='souligne'>Cilostazol</span></p>
+<p class=AmmCorpsTexte>L’oméprazole, administré à la dose de 40 mg à des sujets sains dans une étude en cross-over, a augmenté la Cmax et l’ASC pour le cilostazol de 18% et 26% respectivement, et pour l’un de ses métabolites actifs de 29% et 69% respectivement.</p>
+<p class=AmmCorpsTexteGras><span class='souligne'>Phénytoïne</span></p>
+<p class=AmmCorpsTexte>Il est recommandé de surveiller les concentrations plasmatiques de phénytoïne durant les deux premières semaines qui suivent l’initiation d’un traitement par oméprazole. Si un ajustement de dose de phénytoïne est réalisé, une surveillance et des ajustements de doses successifs peuvent être nécessaires jusqu’à la fin du traitement par oméprazole.</p>
+<p class=AmmAnnexeTitre4><span class='gras'>Mécanisme inconnu</span></p>
+<p class=AmmCorpsTexteGras><span class='souligne'>Saquinavir</span></p>
+<p class=AmmCorpsTexte>Il resulte de l'administration concomitante d'oméprazole avec du saquinavir/ritonavir une augmentation des concentrations plasmatiques d’environ 70% pour le saquinavir, ceci associé à une bonne tolérance chez les patients infectés par le VIH.</p>
+<p class=AmmCorpsTexteGras><span class='souligne'>Tacrolimus</span></p>
+<p class=AmmCorpsTexte>L’administration concomitante d’oméprazole augmente les concentrations sériques du tacrolimus. Une surveillance renforcée des concentrations du tacrolimus et de la fonction rénale (clairance de la créatinine) doit être réalisée ainsi qu’un ajustement du dosage du tacrolimus si nécessaire.</p>
+<p class=AmmCorpsTexteGras><span class='souligne'>Méthotrexate</span></p>
+<p class=AmmCorpsTexte>Une augmentation des concentrations de méthotrexate a été observée chez certains patients en cas d’administration concomitante de méthotrexate avec les inhibiteurs de la pompe à protons (IPP). Lors de l'administration de fortes doses de méthotrexate, un arrêt provisoire du traitement par oméprazole peut être nécessaire.</p>
+<p class=AmmAnnexeTitre4><span class='gras'>Effets des autres substances actives sur la pharmacocinétique de l’oméprazole</span></p>
+<p class=AmmCorpsTexteGras><span class='souligne'>Inhibiteurs du CYP2C19 et/ou du CYP3A4</span></p>
+<p class=AmmCorpsTexte>Comme l’oméprazole est métabolisé par CYP2C19 et CYP3A4, des substances actives connues pour inhiber CYP2C19 ou CYP3A4 (telles que la clarithromycine et le voriconazole) peuvent conduire à une augmentation des taux sériques d’oméprazole par diminution de sa métabolisation. L’administration concomitante du voriconazole a entraîné plus d’un doublement de l’exposition à l’oméprazole. L’oméprazole à forte dose a été bien toléré, l’ajustement des doses d’oméprazole n’est généralement pas nécessaire. Cependant, un ajustement de dose peut être nécessaire chez les patients souffrant d’une insuffisance hépatique sévère et si un traitement à long terme est indiqué.</p>
+<p class=AmmCorpsTexteGras><span class='souligne'>Inducteurs du CYP2C19 et/ou du CYP3A4</span></p>
+<p class=AmmCorpsTexte>Des substances actives connues pour être inductrices du CYP2C19 ou du CYP3A4 ou des deux (comme la rifampicine et le millepertuis) peuvent entraîner une diminution des concentrations plasmatiques d’oméprazole par augmentation de sa métabolisation. </p>
+<p class="AmmAnnexeTitre2"><a name="RcpFertGrossAllait">4.6. Fertilité, grossesse et allaitement</a>&nbsp;&nbsp;<a href='#HautDePage'><img src='img/BackToTop.jpg' width='15px' height='15px' alt='Retour en haut de la page' title='Retour en haut de la page' /></a></p>
+<p class=AmmAnnexeTitre3>Grossesse</p>
+<p class=AmmCorpsTexte>Les résultats de trois études épidémiologiques prospectives (plus de 1000 résultats d’expositions) indiquent qu’il n’y a aucun effet indésirable de l’oméprazole lors de la grossesse ou sur la santé du fœtus/nouveau-né. L’oméprazole peut être utilisé lors de la grossesse.</p>
+<p class=AmmAnnexeTitre3>Allaitement</p>
+<p class=AmmCorpsTexte>L’oméprazole est excrété dans le lait maternel, mais n’a probablement pas d’influence sur l’enfant s’il est utilisé à dose thérapeutique.</p>
+<p class=AmmAnnexeTitre3>Fertilité</p>
+<p class=AmmCorpsTexte>Des études conduites chez l’animal avec un mélange racémique d’oméprazole, administré par voie orale, n’indiquent pas d’effets sur la fertilité.</p>
+<p class="AmmAnnexeTitre2"><a name="RcpConduite">4.7. Effets sur l'aptitude à conduire des véhicules et à utiliser des machines</a>&nbsp;&nbsp;<a href='#HautDePage'><img src='img/BackToTop.jpg' width='15px' height='15px' alt='Retour en haut de la page' title='Retour en haut de la page' /></a></p>
+<p class=AmmCorpsTexte><a name="_Toc142278929">MOPRAL 10 mg, gélule gastro-résistante n’a aucun effet ou un effet négligeable sur l’aptitude à conduire des véhicules et à utiliser des machines.</a></p>
+<p class=AmmCorpsTexte>Cependant des effets indésirables tels qu’étourdissements et troubles visuels peuvent se produire (voir rubrique 4.8). Si cela est le cas, les patients ne doivent pas conduire de véhicules automobiles ou utiliser des machines.</p>
+<p class="AmmAnnexeTitre2"><a name="RcpEffetsIndesirables">4.8. Effets indésirables</a>&nbsp;&nbsp;<a href='#HautDePage'><img src='img/BackToTop.jpg' width='15px' height='15px' alt='Retour en haut de la page' title='Retour en haut de la page' /></a></p>
+<p class=AmmCorpsTexteGras><a name="_Toc142278930"><span class='souligne'>Résumé du profil de sécurité</span></a></p>
+<p class=AmmCorpsTexte>Les effets indésirables les plus fréquents (1-10% des patients) sont les céphalées, les douleurs abdominales, la constipation, la diarrhée, les flatulences et les nausées/vomissements. </p>
+<p class=AmmCorpsTexte>Des réactions indésirables cutanées sévères (SCAR), incluant le syndrome de Stevens-Johnson (SSJ), la nécrolyse épidermique toxique (NET), la réaction médicamenteuse avec éosinophilie et symptômes systémiques (DRESS) et la pustulose exanthématique aiguë généralisée (PEAG) ont été rapportées en association avec le traitement par oméprazole (voir rubrique 4.4).</p>
+<p class=AmmCorpsTexteGras><span class='souligne'>Tableau des effets indésirables</span></p>
+<p class=AmmCorpsTexte>Les effets indésirables suivants ont été rapportés ou suspectés au cours des essais cliniques de l’oméprazole et depuis sa mise sur le marché. Aucun des effets n’a été dose-dépendant. Les effets indésirables sont classés par fréquence et par classe de système d’organes. La fréquence est définie par la convention suivante :<span style='letter-spacing:-.15pt'> très fréquent (<span class='souligne'>&gt;</span></span> 1/10), fréquent (<span class='souligne'>&gt;</span><span style='letter-spacing:-.15pt'> 1/100 à </span><span style='font-family:Symbol; letter-spacing:-.15pt'>&lt;</span><span style='letter-spacing:-.15pt'> 1/10), p</span>eu fréquent (<span class='souligne'>&gt;</span> 1/1 000 à &lt;1/100), rare (<span class='souligne'>&gt;</span> 1/10 000 à <span style='font-family:Symbol'>&lt;</span> 1/1 000), très rare (&lt; 1/10 000), fréquence indéterminée (ne peut être estimée sur la base des données disponibles). </p>
+<table class=AmmCorpsTexteTable border=1 cellspacing=0 cellpadding=0 width=0
+style='width:464.35pt;margin-left:5.4pt;border-collapse:collapse;border:none'>
+<thead>
+<tr style='height:21.9pt'>
+<td width=128 valign=top style='width:96.3pt;border:solid windowtext 1.0pt;
+padding:0cm 5.4pt 0cm 5.4pt;height:21.9pt'>
+<p class=AmmCorpsTexte align=center style='margin-top:6.0pt;margin-right:0cm; margin-bottom:6.0pt;margin-left:0cm;text-align:center;punctuation-wrap:simple; text-autospace:none;vertical-align:baseline'><span class='gras'><span style='font-size:10.0pt; font-family:"Arial",sans-serif'>Fréquence et classe de système d’organes</span></span></p>
+</td>
+<td width=491 valign=top style='width:368.05pt;border:solid windowtext 1.0pt;
+border-left:none;padding:0cm 5.4pt 0cm 5.4pt;height:21.9pt'>
+<p class=AmmCorpsTexte align=center style='margin-top:6.0pt;margin-right:0cm; margin-bottom:6.0pt;margin-left:0cm;text-align:center;punctuation-wrap:simple; text-autospace:none;vertical-align:baseline'><span class='gras'><span style='font-size:10.0pt; font-family:"Arial",sans-serif'>Effet indésirable</span></span></p>
+</td>
+</tr>
+</thead>
+<tr style='page-break-inside:avoid'>
+<td width=619 colspan=2 valign=top style='width:464.35pt;border:solid windowtext 1.0pt;
+border-top:none;padding:0cm 5.4pt 0cm 5.4pt'>
+<p class=AmmCorpsTexte align=left style='margin-top:6.0pt;margin-right:0cm; margin-bottom:6.0pt;margin-left:0cm;text-align:left; punctuation-wrap:simple;text-autospace:none;vertical-align:baseline'><span class='gras'><span style='font-size:10.0pt;font-family:"Arial",sans-serif;letter-spacing:-.15pt'>Affections hématologiques et du système lymphatique</span></span></p>
+</td>
+</tr>
+<tr>
+<td width=128 valign=top style='width:96.3pt;border:solid windowtext 1.0pt;
+border-top:none;padding:0cm 5.4pt 0cm 5.4pt'>
+<p class=AmmCorpsTexte align=left style='margin-top:6.0pt;margin-right:0cm; margin-bottom:6.0pt;margin-left:0cm;text-align:left;punctuation-wrap:simple; text-autospace:none;vertical-align:baseline'><span style='font-size:10.0pt; font-family:"Arial",sans-serif'>Rare : </span></p>
+</td>
+<td width=491 valign=top style='width:368.05pt;border-top:none;border-left:
+none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+padding:0cm 5.4pt 0cm 5.4pt'>
+<p class=AmmCorpsTexte align=left style='margin-top:6.0pt;margin-right:0cm; margin-bottom:6.0pt;margin-left:0cm;text-align:left;punctuation-wrap:simple; text-autospace:none;vertical-align:baseline'><span style='font-size:10.0pt; font-family:"Arial",sans-serif'>Leucopénie, thrombocytopénie</span></p>
+</td>
+</tr>
+<tr>
+<td width=128 valign=top style='width:96.3pt;border:solid windowtext 1.0pt;
+border-top:none;padding:0cm 5.4pt 0cm 5.4pt'>
+<p class=AmmCorpsTexte align=left style='margin-top:6.0pt;margin-right:0cm; margin-bottom:6.0pt;margin-left:0cm;text-align:left;punctuation-wrap:simple; text-autospace:none;vertical-align:baseline'><span style='font-size:10.0pt; font-family:"Arial",sans-serif'>Très rare : </span></p>
+</td>
+<td width=491 valign=top style='width:368.05pt;border-top:none;border-left:
+none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+padding:0cm 5.4pt 0cm 5.4pt'>
+<p class=AmmCorpsTexte align=left style='margin-top:6.0pt;margin-right:0cm; margin-bottom:6.0pt;margin-left:0cm;text-align:left;punctuation-wrap:simple; text-autospace:none;vertical-align:baseline'><span style='font-size:10.0pt; font-family:"Arial",sans-serif'>Agranulocytose, pancytopénie</span></p>
+</td>
+</tr>
+<tr style='page-break-inside:avoid'>
+<td width=619 colspan=2 valign=top style='width:464.35pt;border:solid windowtext 1.0pt;
+border-top:none;padding:0cm 5.4pt 0cm 5.4pt'>
+<p class=AmmCorpsTexte align=left style='margin-top:6.0pt;margin-right:0cm; margin-bottom:6.0pt;margin-left:0cm;text-align:left;punctuation-wrap:simple; text-autospace:none;vertical-align:baseline'><span class='gras'><span style='font-size:10.0pt; font-family:"Arial",sans-serif;letter-spacing:-.15pt'>Affections du système immunitaire</span></span></p>
+</td>
+</tr>
+<tr>
+<td width=128 valign=top style='width:96.3pt;border:solid windowtext 1.0pt;
+border-top:none;padding:0cm 5.4pt 0cm 5.4pt'>
+<p class=AmmCorpsTexte align=left style='margin-top:6.0pt;margin-right:0cm; margin-bottom:6.0pt;margin-left:0cm;text-align:left;punctuation-wrap:simple; text-autospace:none;vertical-align:baseline'><span style='font-size:10.0pt; font-family:"Arial",sans-serif'>Rare :</span></p>
+</td>
+<td width=491 valign=top style='width:368.05pt;border-top:none;border-left:
+none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+padding:0cm 5.4pt 0cm 5.4pt'>
+<p class=AmmCorpsTexte align=left style='margin-top:6.0pt;margin-right:0cm; margin-bottom:6.0pt;margin-left:0cm;text-align:left;punctuation-wrap:simple; text-autospace:none;vertical-align:baseline'><span style='font-size:10.0pt; font-family:"Arial",sans-serif'>Réactions d’hypersensibilité telles que fièvre, angio-œdème et réaction/choc anaphylactique </span></p>
+</td>
+</tr>
+<tr style='page-break-inside:avoid'>
+<td width=619 colspan=2 valign=top style='width:464.35pt;border:solid windowtext 1.0pt;
+border-top:none;padding:0cm 5.4pt 0cm 5.4pt'>
+<p class=AmmCorpsTexte align=left style='margin-top:6.0pt;margin-right:0cm; margin-bottom:6.0pt;margin-left:0cm;text-align:left;punctuation-wrap:simple; text-autospace:none;vertical-align:baseline'><span class='gras'><span style='font-size:10.0pt; font-family:"Arial",sans-serif;letter-spacing:-.15pt'>Troubles du métabolisme et de la nutrition</span></span></p>
+</td>
+</tr>
+<tr>
+<td width=128 valign=top style='width:96.3pt;border:solid windowtext 1.0pt;
+border-top:none;padding:0cm 5.4pt 0cm 5.4pt'>
+<p class=AmmCorpsTexte align=left style='margin-top:6.0pt;margin-right:0cm; margin-bottom:6.0pt;margin-left:0cm;text-align:left;punctuation-wrap:simple; text-autospace:none;vertical-align:baseline'><span style='font-size:10.0pt; font-family:"Arial",sans-serif'>Rare :</span></p>
+</td>
+<td width=491 valign=top style='width:368.05pt;border-top:none;border-left:
+none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+padding:0cm 5.4pt 0cm 5.4pt'>
+<p class=AmmCorpsTexte align=left style='margin-top:6.0pt;margin-right:0cm; margin-bottom:6.0pt;margin-left:0cm;text-align:left;punctuation-wrap:simple; text-autospace:none;vertical-align:baseline'><span style='font-size:10.0pt; font-family:"Arial",sans-serif'>Hyponatrémie</span></p>
+</td>
+</tr>
+<tr>
+<td width=128 valign=top style='width:96.3pt;border:solid windowtext 1.0pt;
+border-top:none;padding:0cm 5.4pt 0cm 5.4pt'>
+<p class=AmmCorpsTexte align=left style='margin-top:6.0pt;margin-right:0cm; margin-bottom:6.0pt;margin-left:0cm;text-align:left;punctuation-wrap:simple; text-autospace:none;vertical-align:baseline'><span style='font-size:10.0pt; font-family:"Arial",sans-serif'>Indéterminée :</span></p>
+</td>
+<td width=491 valign=top style='width:368.05pt;border-top:none;border-left:
+none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+padding:0cm 5.4pt 0cm 5.4pt'>
+<p class=AmmCorpsTexte align=left style='margin-top:6.0pt;margin-right:0cm; margin-bottom:6.0pt;margin-left:0cm;text-align:left;punctuation-wrap:simple; text-autospace:none;vertical-align:baseline'><span style='font-size:10.0pt; font-family:"Arial",sans-serif'>Hypomagnésémie ; une hypomagnésémie sévère peut conduire à une hypocalcémie.</span><span style='font-size:10.0pt; font-family:"Times New Roman",serif'> </span><span style='font-size:10.0pt; font-family:"Arial",sans-serif'>Une hypomagnésémie peut également être associée à une hypokaliémie.</span></p>
+</td>
+</tr>
+<tr style='page-break-inside:avoid'>
+<td width=619 colspan=2 valign=top style='width:464.35pt;border:solid windowtext 1.0pt;
+border-top:none;padding:0cm 5.4pt 0cm 5.4pt'>
+<p class=AmmCorpsTexte align=left style='margin-top:6.0pt;margin-right:0cm; margin-bottom:6.0pt;margin-left:0cm;text-align:left; punctuation-wrap:simple;text-autospace:none;vertical-align:baseline'><span class='gras'><span style='font-size:10.0pt;font-family:"Arial",sans-serif;letter-spacing:-.15pt'>Affections psychiatriques</span></span></p>
+</td>
+</tr>
+<tr>
+<td width=128 valign=top style='width:96.3pt;border:solid windowtext 1.0pt;
+border-top:none;padding:0cm 5.4pt 0cm 5.4pt'>
+<p class=AmmCorpsTexte align=left style='margin-top:6.0pt;margin-right:0cm; margin-bottom:6.0pt;margin-left:0cm;text-align:left; punctuation-wrap:simple;text-autospace:none;vertical-align:baseline'><span style='font-size:10.0pt;font-family:"Arial",sans-serif'>Peu fréquent :</span></p>
+</td>
+<td width=491 valign=top style='width:368.05pt;border-top:none;border-left:
+none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+padding:0cm 5.4pt 0cm 5.4pt'>
+<p class=AmmCorpsTexte align=left style='margin-top:6.0pt;margin-right:0cm; margin-bottom:6.0pt;margin-left:0cm;text-align:left; punctuation-wrap:simple;text-autospace:none;vertical-align:baseline'><span style='font-size:10.0pt;font-family:"Arial",sans-serif'>Insomnie</span></p>
+</td>
+</tr>
+<tr>
+<td width=128 valign=top style='width:96.3pt;border:solid windowtext 1.0pt;
+border-top:none;padding:0cm 5.4pt 0cm 5.4pt'>
+<p class=AmmCorpsTexte align=left style='margin-top:6.0pt;margin-right:0cm; margin-bottom:6.0pt;margin-left:0cm;text-align:left;punctuation-wrap:simple; text-autospace:none;vertical-align:baseline'><span style='font-size:10.0pt; font-family:"Arial",sans-serif'>Rare :</span></p>
+</td>
+<td width=491 valign=top style='width:368.05pt;border-top:none;border-left:
+none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+padding:0cm 5.4pt 0cm 5.4pt'>
+<p class=AmmCorpsTexte align=left style='margin-top:6.0pt;margin-right:0cm; margin-bottom:6.0pt;margin-left:0cm;text-align:left;punctuation-wrap:simple; text-autospace:none;vertical-align:baseline'><span style='font-size:10.0pt; font-family:"Arial",sans-serif'>Agitation, confusion, dépression</span></p>
+</td>
+</tr>
+<tr>
+<td width=128 valign=top style='width:96.3pt;border:solid windowtext 1.0pt;
+border-top:none;padding:0cm 5.4pt 0cm 5.4pt'>
+<p class=AmmCorpsTexte align=left style='margin-top:6.0pt;margin-right:0cm; margin-bottom:6.0pt;margin-left:0cm;text-align:left;punctuation-wrap:simple; text-autospace:none;vertical-align:baseline'><span style='font-size:10.0pt; font-family:"Arial",sans-serif'>Très rare :</span></p>
+</td>
+<td width=491 valign=top style='width:368.05pt;border-top:none;border-left:
+none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+padding:0cm 5.4pt 0cm 5.4pt'>
+<p class=AmmCorpsTexte align=left style='margin-top:6.0pt;margin-right:0cm; margin-bottom:6.0pt;margin-left:0cm;text-align:left;punctuation-wrap:simple; text-autospace:none;vertical-align:baseline'><span style='font-size:10.0pt; font-family:"Arial",sans-serif'>Agressivité, hallucinations</span></p>
+</td>
+</tr>
+<tr style='page-break-inside:avoid'>
+<td width=619 colspan=2 valign=top style='width:464.35pt;border:solid windowtext 1.0pt;
+border-top:none;padding:0cm 5.4pt 0cm 5.4pt'>
+<p class=AmmCorpsTexte align=left style='margin-top:6.0pt;margin-right:0cm; margin-bottom:6.0pt;margin-left:0cm;text-align:left; punctuation-wrap:simple;text-autospace:none;vertical-align:baseline'><span class='gras'><span style='font-size:10.0pt;font-family:"Arial",sans-serif'>Affections du système nerveux </span></span></p>
+</td>
+</tr>
+<tr>
+<td width=128 valign=top style='width:96.3pt;border:solid windowtext 1.0pt;
+border-top:none;padding:0cm 5.4pt 0cm 5.4pt'>
+<p class=AmmCorpsTexte align=left style='margin-top:6.0pt;margin-right:0cm; margin-bottom:6.0pt;margin-left:0cm;text-align:left; punctuation-wrap:simple;text-autospace:none;vertical-align:baseline'><span style='font-size:10.0pt;font-family:"Arial",sans-serif'>Fréquent :</span></p>
+</td>
+<td width=491 valign=top style='width:368.05pt;border-top:none;border-left:
+none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+padding:0cm 5.4pt 0cm 5.4pt'>
+<p class=AmmCorpsTexte align=left style='margin-top:6.0pt;margin-right:0cm; margin-bottom:6.0pt;margin-left:0cm;text-align:left; punctuation-wrap:simple;text-autospace:none;vertical-align:baseline'><span style='font-size:10.0pt;font-family:"Arial",sans-serif'>Céphalées</span></p>
+</td>
+</tr>
+<tr>
+<td width=128 valign=top style='width:96.3pt;border:solid windowtext 1.0pt;
+border-top:none;padding:0cm 5.4pt 0cm 5.4pt'>
+<p class=AmmCorpsTexte align=left style='margin-top:6.0pt;margin-right:0cm; margin-bottom:6.0pt;margin-left:0cm;text-align:left; punctuation-wrap:simple;text-autospace:none;vertical-align:baseline'><span style='font-size:10.0pt;font-family:"Arial",sans-serif'>Peu fréquent :</span></p>
+</td>
+<td width=491 valign=top style='width:368.05pt;border-top:none;border-left:
+none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+padding:0cm 5.4pt 0cm 5.4pt'>
+<p class=AmmCorpsTexte align=left style='margin-top:6.0pt;margin-right:0cm; margin-bottom:6.0pt;margin-left:0cm;text-align:left; punctuation-wrap:simple;text-autospace:none;vertical-align:baseline'><span style='font-size:10.0pt;font-family:"Arial",sans-serif'>Étourdissements, paresthésie, somnolence</span></p>
+</td>
+</tr>
+<tr>
+<td width=128 valign=top style='width:96.3pt;border:solid windowtext 1.0pt;
+border-top:none;padding:0cm 5.4pt 0cm 5.4pt'>
+<p class=AmmCorpsTexte align=left style='margin-top:6.0pt;margin-right:0cm; margin-bottom:6.0pt;margin-left:0cm;text-align:left;punctuation-wrap:simple; text-autospace:none;vertical-align:baseline'><span style='font-size:10.0pt; font-family:"Arial",sans-serif'>Rare :</span></p>
+</td>
+<td width=491 valign=top style='width:368.05pt;border-top:none;border-left:
+none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+padding:0cm 5.4pt 0cm 5.4pt'>
+<p class=AmmCorpsTexte align=left style='margin-top:6.0pt;margin-right:0cm; margin-bottom:6.0pt;margin-left:0cm;text-align:left;punctuation-wrap:simple; text-autospace:none;vertical-align:baseline'><span style='font-size:10.0pt; font-family:"Arial",sans-serif'>Troubles du goût </span></p>
+</td>
+</tr>
+<tr style='page-break-inside:avoid'>
+<td width=619 colspan=2 valign=top style='width:464.35pt;border:solid windowtext 1.0pt;
+border-top:none;padding:0cm 5.4pt 0cm 5.4pt'>
+<p class=AmmCorpsTexte align=left style='margin-top:6.0pt;margin-right:0cm; margin-bottom:6.0pt;margin-left:0cm;text-align:left;punctuation-wrap:simple; text-autospace:none;vertical-align:baseline'><span class='gras'><span style='font-size:10.0pt; font-family:"Arial",sans-serif;letter-spacing:-.15pt'>Affections oculaires</span></span></p>
+</td>
+</tr>
+<tr>
+<td width=128 valign=top style='width:96.3pt;border:solid windowtext 1.0pt;
+border-top:none;padding:0cm 5.4pt 0cm 5.4pt'>
+<p class=AmmCorpsTexte align=left style='margin-top:6.0pt;margin-right:0cm; margin-bottom:6.0pt;margin-left:0cm;text-align:left;punctuation-wrap:simple; text-autospace:none;vertical-align:baseline'><span style='font-size:10.0pt; font-family:"Arial",sans-serif'>Rare :</span></p>
+</td>
+<td width=491 valign=top style='width:368.05pt;border-top:none;border-left:
+none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+padding:0cm 5.4pt 0cm 5.4pt'>
+<p class=AmmCorpsTexte align=left style='margin-top:6.0pt;margin-right:0cm; margin-bottom:6.0pt;margin-left:0cm;text-align:left;punctuation-wrap:simple; text-autospace:none;vertical-align:baseline'><span style='font-size:10.0pt; font-family:"Arial",sans-serif'>Vision trouble</span></p>
+</td>
+</tr>
+<tr style='page-break-inside:avoid'>
+<td width=619 colspan=2 valign=top style='width:464.35pt;border:solid windowtext 1.0pt;
+border-top:none;padding:0cm 5.4pt 0cm 5.4pt'>
+<p class=AmmCorpsTexte align=left style='margin-top:6.0pt;margin-right:0cm; margin-bottom:6.0pt;margin-left:0cm;text-align:left; punctuation-wrap:simple;text-autospace:none;vertical-align:baseline'><span class='gras'><span style='font-size:10.0pt;font-family:"Arial",sans-serif;letter-spacing:-.15pt'>Affections de l’oreille et du labyrinthe</span></span></p>
+</td>
+</tr>
+<tr>
+<td width=128 valign=top style='width:96.3pt;border:solid windowtext 1.0pt;
+border-top:none;padding:0cm 5.4pt 0cm 5.4pt'>
+<p class=AmmCorpsTexte align=left style='margin-top:6.0pt;margin-right:0cm; margin-bottom:6.0pt;margin-left:0cm;text-align:left; punctuation-wrap:simple;text-autospace:none;vertical-align:baseline'><span style='font-size:10.0pt;font-family:"Arial",sans-serif'>Peu fréquent :</span></p>
+</td>
+<td width=491 valign=top style='width:368.05pt;border-top:none;border-left:
+none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+padding:0cm 5.4pt 0cm 5.4pt'>
+<p class=AmmCorpsTexte align=left style='margin-top:6.0pt;margin-right:0cm; margin-bottom:6.0pt;margin-left:0cm;text-align:left; punctuation-wrap:simple;text-autospace:none;vertical-align:baseline'><span style='font-size:10.0pt;font-family:"Arial",sans-serif'>Vertiges</span></p>
+</td>
+</tr>
+<tr style='page-break-inside:avoid'>
+<td width=619 colspan=2 valign=top style='width:464.35pt;border:solid windowtext 1.0pt;
+border-top:none;padding:0cm 5.4pt 0cm 5.4pt'>
+<p class=AmmCorpsTexte align=left style='margin-top:6.0pt;margin-right:0cm; margin-bottom:6.0pt;margin-left:0cm;text-align:left;punctuation-wrap:simple; text-autospace:none;vertical-align:baseline'><span class='gras'><span style='font-size:10.0pt; font-family:"Arial",sans-serif;letter-spacing:-.15pt'>Affections respiratoires, thoraciques et médiastinales</span></span></p>
+</td>
+</tr>
+<tr>
+<td width=128 valign=top style='width:96.3pt;border:solid windowtext 1.0pt;
+border-top:none;padding:0cm 5.4pt 0cm 5.4pt'>
+<p class=AmmCorpsTexte align=left style='margin-top:6.0pt;margin-right:0cm; margin-bottom:6.0pt;margin-left:0cm;text-align:left;punctuation-wrap:simple; text-autospace:none;vertical-align:baseline'><span style='font-size:10.0pt; font-family:"Arial",sans-serif'>Rare :</span></p>
+</td>
+<td width=491 valign=top style='width:368.05pt;border-top:none;border-left:
+none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+padding:0cm 5.4pt 0cm 5.4pt'>
+<p class=AmmCorpsTexte align=left style='margin-top:6.0pt;margin-right:0cm; margin-bottom:6.0pt;margin-left:0cm;text-align:left;punctuation-wrap:simple; text-autospace:none;vertical-align:baseline'><span style='font-size:10.0pt; font-family:"Arial",sans-serif'>Bronchospasme</span></p>
+</td>
+</tr>
+<tr style='page-break-inside:avoid'>
+<td width=619 colspan=2 valign=top style='width:464.35pt;border:solid windowtext 1.0pt;
+border-top:none;padding:0cm 5.4pt 0cm 5.4pt'>
+<p class=AmmCorpsTexte align=left style='margin-top:6.0pt;margin-right:0cm; margin-bottom:6.0pt;margin-left:0cm;text-align:left; punctuation-wrap:simple;text-autospace:none;vertical-align:baseline'><span class='gras'><span style='font-size:10.0pt;font-family:"Arial",sans-serif;letter-spacing:-.15pt'>Affections gastro-intestinales</span></span></p>
+</td>
+</tr>
+<tr>
+<td width=128 valign=top style='width:96.3pt;border:solid windowtext 1.0pt;
+border-top:none;padding:0cm 5.4pt 0cm 5.4pt'>
+<p class=AmmCorpsTexte align=left style='margin-top:6.0pt;margin-right:0cm; margin-bottom:6.0pt;margin-left:0cm;text-align:left;punctuation-wrap:simple; text-autospace:none;vertical-align:baseline'><span style='font-size:10.0pt; font-family:"Arial",sans-serif'>Fréquent :</span></p>
+</td>
+<td width=491 valign=top style='width:368.05pt;border-top:none;border-left:
+none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+padding:0cm 5.4pt 0cm 5.4pt'>
+<p class=AmmCorpsTexte align=left style='margin-top:6.0pt;margin-right:0cm; margin-bottom:6.0pt;margin-left:0cm;text-align:left;punctuation-wrap:simple; text-autospace:none;vertical-align:baseline'><span style='font-size:10.0pt; font-family:"Arial",sans-serif'>Douleurs abdominales, constipation, diarrhée, flatulence, nausées/vomissements, polypes des glandes fundiques (bénins)</span></p>
+</td>
+</tr>
+<tr>
+<td width=128 valign=top style='width:96.3pt;border:solid windowtext 1.0pt;
+border-top:none;padding:0cm 5.4pt 0cm 5.4pt'>
+<p class=AmmCorpsTexte align=left style='margin-top:6.0pt;margin-right:0cm; margin-bottom:6.0pt;margin-left:0cm;text-align:left;punctuation-wrap:simple; text-autospace:none;vertical-align:baseline'><span style='font-size:10.0pt; font-family:"Arial",sans-serif'>Rare :</span></p>
+</td>
+<td width=491 valign=top style='width:368.05pt;border-top:none;border-left:
+none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+padding:0cm 5.4pt 0cm 5.4pt'>
+<p class=AmmCorpsTexte align=left style='margin-top:6.0pt;margin-right:0cm; margin-bottom:6.0pt;margin-left:0cm;text-align:left;punctuation-wrap:simple; text-autospace:none;vertical-align:baseline'><span style='font-size:10.0pt; font-family:"Arial",sans-serif'>Sécheresse buccale, <span style='letter-spacing: -.1pt'>stomatite, candidose gastro-intestinale</span> </span></p>
+</td>
+</tr>
+<tr>
+<td width=128 valign=top style='width:96.3pt;border:solid windowtext 1.0pt;
+border-top:none;padding:0cm 5.4pt 0cm 5.4pt'>
+<p class=AmmCorpsTexte align=left style='margin-top:6.0pt;margin-right:0cm; margin-bottom:6.0pt;margin-left:0cm;text-align:left;punctuation-wrap:simple; text-autospace:none;vertical-align:baseline'><span style='font-size:10.0pt; font-family:"Arial",sans-serif'>Indéterminée</span></p>
+</td>
+<td width=491 valign=top style='width:368.05pt;border-top:none;border-left:
+none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+padding:0cm 5.4pt 0cm 5.4pt'>
+<p class=AmmCorpsTexte align=left style='margin-top:6.0pt;margin-right:0cm; margin-bottom:6.0pt;margin-left:0cm;text-align:left;punctuation-wrap:simple; text-autospace:none;vertical-align:baseline'><span style='font-size:10.0pt; font-family:"Arial",sans-serif'>Colite microscopique</span></p>
+</td>
+</tr>
+<tr style='page-break-inside:avoid'>
+<td width=619 colspan=2 valign=top style='width:464.35pt;border:solid windowtext 1.0pt;
+border-top:none;padding:0cm 5.4pt 0cm 5.4pt'>
+<p class=AmmCorpsTexte align=left style='margin-top:6.0pt;margin-right:0cm; margin-bottom:6.0pt;margin-left:0cm;text-align:left;punctuation-wrap:simple; text-autospace:none;vertical-align:baseline'><span class='gras'><span style='font-size:10.0pt; font-family:"Arial",sans-serif;letter-spacing:-.1pt'>Affections hépatobiliaires</span></span></p>
+</td>
+</tr>
+<tr>
+<td width=128 valign=top style='width:96.3pt;border:solid windowtext 1.0pt;
+border-top:none;padding:0cm 5.4pt 0cm 5.4pt'>
+<p class=AmmCorpsTexte align=left style='margin-top:6.0pt;margin-right:0cm; margin-bottom:6.0pt;margin-left:0cm;text-align:left;punctuation-wrap:simple; text-autospace:none;vertical-align:baseline'><span style='font-size:10.0pt; font-family:"Arial",sans-serif'>Peu fréquent :</span></p>
+</td>
+<td width=491 valign=top style='width:368.05pt;border-top:none;border-left:
+none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+padding:0cm 5.4pt 0cm 5.4pt'>
+<p class=AmmCorpsTexte align=left style='margin-top:6.0pt;margin-right:0cm; margin-bottom:6.0pt;margin-left:0cm;text-align:left;punctuation-wrap:simple; text-autospace:none;vertical-align:baseline'><span style='font-size:10.0pt; font-family:"Arial",sans-serif;letter-spacing:-.1pt'>Augmentation des enzymes hépatiques</span><span style='font-size:10.0pt;font-family:"Arial",sans-serif'> </span></p>
+</td>
+</tr>
+<tr>
+<td width=128 valign=top style='width:96.3pt;border:solid windowtext 1.0pt;
+border-top:none;padding:0cm 5.4pt 0cm 5.4pt'>
+<p class=AmmCorpsTexte align=left style='margin-top:6.0pt;margin-right:0cm; margin-bottom:6.0pt;margin-left:0cm;text-align:left;punctuation-wrap:simple; text-autospace:none;vertical-align:baseline'><span style='font-size:10.0pt; font-family:"Arial",sans-serif'>Rare :</span></p>
+</td>
+<td width=491 valign=top style='width:368.05pt;border-top:none;border-left:
+none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+padding:0cm 5.4pt 0cm 5.4pt'>
+<p class=AmmCorpsTexte align=left style='margin-top:6.0pt;margin-right:0cm; margin-bottom:6.0pt;margin-left:0cm;text-align:left;punctuation-wrap:simple; text-autospace:none;vertical-align:baseline'><span style='font-size:10.0pt; font-family:"Arial",sans-serif;letter-spacing:-.1pt'>Hépatite avec ou sans ictère</span><span style='font-size:10.0pt;font-family:"Arial",sans-serif'> </span></p>
+</td>
+</tr>
+<tr>
+<td width=128 valign=top style='width:96.3pt;border:solid windowtext 1.0pt;
+border-top:none;padding:0cm 5.4pt 0cm 5.4pt'>
+<p class=AmmCorpsTexte align=left style='margin-top:6.0pt;margin-right:0cm; margin-bottom:6.0pt;margin-left:0cm;text-align:left;punctuation-wrap:simple; text-autospace:none;vertical-align:baseline'><span style='font-size:10.0pt; font-family:"Arial",sans-serif'>Très rare :</span></p>
+</td>
+<td width=491 valign=top style='width:368.05pt;border-top:none;border-left:
+none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+padding:0cm 5.4pt 0cm 5.4pt'>
+<p class=AmmCorpsTexte align=left style='margin-top:6.0pt;margin-right:0cm; margin-bottom:6.0pt;margin-left:0cm;text-align:left;punctuation-wrap:simple; text-autospace:none;vertical-align:baseline'><span style='font-size:10.0pt; font-family:"Arial",sans-serif;letter-spacing:-.1pt'>Insuffisance hépatique, encéphalopathie chez les patients ayant une insuffisance hépatique préexistante</span><span style='font-size:10.0pt;font-family:"Arial",sans-serif'> </span></p>
+</td>
+</tr>
+<tr style='page-break-inside:avoid'>
+<td width=619 colspan=2 valign=top style='width:464.35pt;border:solid windowtext 1.0pt;
+border-top:none;padding:0cm 5.4pt 0cm 5.4pt'>
+<p class=AmmCorpsTexte align=left style='margin-top:6.0pt;margin-right:0cm; margin-bottom:6.0pt;margin-left:0cm;text-align:left; punctuation-wrap:simple;text-autospace:none;vertical-align:baseline'><span class='gras'><span style='font-size:10.0pt;font-family:"Arial",sans-serif'>Affections de la peau et du tissu sous-cutané </span></span></p>
+</td>
+</tr>
+<tr>
+<td width=128 valign=top style='width:96.3pt;border:solid windowtext 1.0pt;
+border-top:none;padding:0cm 5.4pt 0cm 5.4pt'>
+<p class=AmmCorpsTexte align=left style='margin-top:6.0pt;margin-right:0cm; margin-bottom:6.0pt;margin-left:0cm;text-align:left; punctuation-wrap:simple;text-autospace:none;vertical-align:baseline'><span style='font-size:10.0pt;font-family:"Arial",sans-serif'>Peu fréquent :</span></p>
+</td>
+<td width=491 valign=top style='width:368.05pt;border-top:none;border-left:
+none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+padding:0cm 5.4pt 0cm 5.4pt'>
+<p class=AmmCorpsTexte align=left style='margin-top:6.0pt;margin-right:0cm; margin-bottom:6.0pt;margin-left:0cm;text-align:left; punctuation-wrap:simple;text-autospace:none;vertical-align:baseline'><span style='font-size:10.0pt;font-family:"Arial",sans-serif'>Dermatite, prurit, rash, urticaire</span></p>
+</td>
+</tr>
+<tr>
+<td width=128 valign=top style='width:96.3pt;border:solid windowtext 1.0pt;
+border-top:none;padding:0cm 5.4pt 0cm 5.4pt'>
+<p class=AmmCorpsTexte align=left style='margin-top:6.0pt;margin-right:0cm; margin-bottom:6.0pt;margin-left:0cm;text-align:left; punctuation-wrap:simple;text-autospace:none;vertical-align:baseline'><span style='font-size:10.0pt;font-family:"Arial",sans-serif'>Rare :</span></p>
+</td>
+<td width=491 valign=top style='width:368.05pt;border-top:none;border-left:
+none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+padding:0cm 5.4pt 0cm 5.4pt'>
+<p class=AmmCorpsTexte align=left style='margin-top:6.0pt;margin-right:0cm; margin-bottom:6.0pt;margin-left:0cm;text-align:left; punctuation-wrap:simple;text-autospace:none;vertical-align:baseline'><span style='font-size:10.0pt;font-family:"Arial",sans-serif'>Alopécie, photosensibilité</span>, pustulose exanthématique aiguë généralisée (PEAG), réaction médicamenteuse avec éosinophilie et symptômes systémiques (DRESS)</p>
+</td>
+</tr>
+<tr>
+<td width=128 valign=top style='width:96.3pt;border:solid windowtext 1.0pt;
+border-top:none;padding:0cm 5.4pt 0cm 5.4pt'>
+<p class=AmmCorpsTexte align=left style='margin-top:6.0pt;margin-right:0cm; margin-bottom:6.0pt;margin-left:0cm;text-align:left; punctuation-wrap:simple;text-autospace:none;vertical-align:baseline'><span style='font-size:10.0pt;font-family:"Arial",sans-serif'>Très rare :</span></p>
+</td>
+<td width=491 valign=top style='width:368.05pt;border-top:none;border-left:
+none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+padding:0cm 5.4pt 0cm 5.4pt'>
+<p class=AmmCorpsTexte align=left style='margin-top:6.0pt;margin-right:0cm; margin-bottom:6.0pt;margin-left:0cm;text-align:left; punctuation-wrap:simple;text-autospace:none;vertical-align:baseline'><span style='font-size:10.0pt;font-family:"Arial",sans-serif'>Erythème polymorphe, syndrome de Stevens-Johnson</span> (SSJ)<span style='font-size:10.0pt; font-family:"Arial",sans-serif'>, nécrolyse épidermique toxique </span>(NET)</p>
+</td>
+</tr>
+<tr>
+<td width=128 valign=top style='width:96.3pt;border:solid windowtext 1.0pt;
+border-top:none;padding:0cm 5.4pt 0cm 5.4pt'>
+<p class=AmmCorpsTexte align=left style='margin-top:6.0pt;margin-right:0cm; margin-bottom:6.0pt;margin-left:0cm;text-align:left;punctuation-wrap:simple; text-autospace:none;vertical-align:baseline'><span style='font-size:10.0pt; font-family:"Arial",sans-serif'>Indéterminée :</span></p>
+</td>
+<td width=491 valign=top style='width:368.05pt;border-top:none;border-left:
+none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+padding:0cm 5.4pt 0cm 5.4pt'>
+<p class=AmmCorpsTexte align=left style='margin-top:6.0pt;margin-right:0cm; margin-bottom:6.0pt;margin-left:0cm;text-align:left;punctuation-wrap:simple; text-autospace:none;vertical-align:baseline'><span style='font-size:10.0pt; font-family:"Arial",sans-serif'>Lupus Erythémateux cutané subaigu (voir rubrique 4.4).</span></p>
+</td>
+</tr>
+<tr style='page-break-inside:avoid'>
+<td width=619 colspan=2 valign=top style='width:464.35pt;border:solid windowtext 1.0pt;
+border-top:none;padding:0cm 5.4pt 0cm 5.4pt'>
+<p class=AmmCorpsTexte align=left style='margin-top:6.0pt;margin-right:0cm; margin-bottom:6.0pt;margin-left:0cm;text-align:left; punctuation-wrap:simple;text-autospace:none;vertical-align:baseline'><span class='gras'><span style='font-size:10.0pt;font-family:"Arial",sans-serif'>Affections musculo-squelettiques et systémiques</span></span></p>
+</td>
+</tr>
+<tr>
+<td width=128 valign=top style='width:96.3pt;border:solid windowtext 1.0pt;
+border-top:none;padding:0cm 5.4pt 0cm 5.4pt'>
+<p class=AmmCorpsTexte align=left style='margin-top:6.0pt;margin-right:0cm; margin-bottom:6.0pt;margin-left:0cm;text-align:left;punctuation-wrap:simple; text-autospace:none;vertical-align:baseline'><span style='font-size:10.0pt; font-family:"Arial",sans-serif'>Peu fréquent :</span></p>
+</td>
+<td width=491 valign=top style='width:368.05pt;border-top:none;border-left:
+none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+padding:0cm 5.4pt 0cm 5.4pt'>
+<p class=AmmCorpsTexte align=left style='margin-top:6.0pt;margin-right:0cm; margin-bottom:6.0pt;margin-left:0cm;text-align:left; punctuation-wrap:simple;text-autospace:none;vertical-align:baseline'><span style='font-size:10.0pt;font-family:"Arial",sans-serif'>Fracture de la hanche, du poignet ou des vertèbres </span></p>
+</td>
+</tr>
+<tr>
+<td width=128 valign=top style='width:96.3pt;border:solid windowtext 1.0pt;
+border-top:none;padding:0cm 5.4pt 0cm 5.4pt'>
+<p class=AmmCorpsTexte align=left style='margin-top:6.0pt;margin-right:0cm; margin-bottom:6.0pt;margin-left:0cm;text-align:left;punctuation-wrap:simple; text-autospace:none;vertical-align:baseline'><span style='font-size:10.0pt; font-family:"Arial",sans-serif'>Rare :</span></p>
+</td>
+<td width=491 valign=top style='width:368.05pt;border-top:none;border-left:
+none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+padding:0cm 5.4pt 0cm 5.4pt'>
+<p class=AmmCorpsTexte align=left style='margin-top:6.0pt;margin-right:0cm; margin-bottom:6.0pt;margin-left:0cm;text-align:left;punctuation-wrap:simple; text-autospace:none;vertical-align:baseline'><span style='font-size:10.0pt; font-family:"Arial",sans-serif'>Arthralgies, myalgies</span></p>
+</td>
+</tr>
+<tr>
+<td width=128 valign=top style='width:96.3pt;border:solid windowtext 1.0pt;
+border-top:none;padding:0cm 5.4pt 0cm 5.4pt'>
+<p class=AmmCorpsTexte align=left style='margin-top:6.0pt;margin-right:0cm; margin-bottom:6.0pt;margin-left:0cm;text-align:left;punctuation-wrap:simple; text-autospace:none;vertical-align:baseline'><span style='font-size:10.0pt; font-family:"Arial",sans-serif'>Très rare :</span></p>
+</td>
+<td width=491 valign=top style='width:368.05pt;border-top:none;border-left:
+none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+padding:0cm 5.4pt 0cm 5.4pt'>
+<p class=AmmCorpsTexte align=left style='margin-top:6.0pt;margin-right:0cm; margin-bottom:6.0pt;margin-left:0cm;text-align:left;punctuation-wrap:simple; text-autospace:none;vertical-align:baseline'><span style='font-size:10.0pt; font-family:"Arial",sans-serif'>Faiblesses musculaires</span></p>
+</td>
+</tr>
+<tr style='page-break-inside:avoid'>
+<td width=619 colspan=2 valign=top style='width:464.35pt;border:solid windowtext 1.0pt;
+border-top:none;padding:0cm 5.4pt 0cm 5.4pt'>
+<p class=AmmCorpsTexte align=left style='margin-top:6.0pt;margin-right:0cm; margin-bottom:6.0pt;margin-left:0cm;text-align:left; punctuation-wrap:simple;text-autospace:none;vertical-align:baseline'><span class='gras'><span style='font-size:10.0pt;font-family:"Arial",sans-serif'>Affections du rein et des voies urinaires</span></span></p>
+</td>
+</tr>
+<tr>
+<td width=128 valign=top style='width:96.3pt;border:solid windowtext 1.0pt;
+border-top:none;padding:0cm 5.4pt 0cm 5.4pt'>
+<p class=AmmCorpsTexte align=left style='margin-top:6.0pt;margin-right:0cm; margin-bottom:6.0pt;margin-left:0cm;text-align:left; punctuation-wrap:simple;text-autospace:none;vertical-align:baseline'><span style='font-size:10.0pt;font-family:"Arial",sans-serif'>Rare :</span></p>
+</td>
+<td width=491 valign=top style='width:368.05pt;border-top:none;border-left:
+none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+padding:0cm 5.4pt 0cm 5.4pt'>
+<p class=AmmCorpsTexte>Néphrite tubulo-interstitielle (avec évolution possible vers une insuffisance rénale)</p>
+</td>
+</tr>
+<tr style='page-break-inside:avoid'>
+<td width=619 colspan=2 valign=top style='width:464.35pt;border:solid windowtext 1.0pt;
+border-top:none;padding:0cm 5.4pt 0cm 5.4pt'>
+<p class=AmmCorpsTexte align=left style='margin-top:6.0pt;margin-right:0cm; margin-bottom:6.0pt;margin-left:0cm;text-align:left;punctuation-wrap:simple; text-autospace:none;vertical-align:baseline'><span class='gras'><span style='font-size:10.0pt; font-family:"Arial",sans-serif'>Affections des organes de reproduction et du sein</span></span></p>
+</td>
+</tr>
+<tr>
+<td width=128 valign=top style='width:96.3pt;border:solid windowtext 1.0pt;
+border-top:none;padding:0cm 5.4pt 0cm 5.4pt'>
+<p class=AmmCorpsTexte align=left style='margin-top:6.0pt;margin-right:0cm; margin-bottom:6.0pt;margin-left:0cm;text-align:left;punctuation-wrap:simple; text-autospace:none;vertical-align:baseline'><span style='font-size:10.0pt; font-family:"Arial",sans-serif'>Très rare :</span></p>
+</td>
+<td width=491 valign=top style='width:368.05pt;border-top:none;border-left:
+none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+padding:0cm 5.4pt 0cm 5.4pt'>
+<p class=AmmCorpsTexte align=left style='margin-top:6.0pt;margin-right:0cm; margin-bottom:6.0pt;margin-left:0cm;text-align:left;punctuation-wrap:simple; text-autospace:none;vertical-align:baseline'><span style='font-size:10.0pt; font-family:"Arial",sans-serif'>Gynécomastie</span></p>
+</td>
+</tr>
+<tr style='page-break-inside:avoid'>
+<td width=619 colspan=2 valign=top style='width:464.35pt;border:solid windowtext 1.0pt;
+border-top:none;padding:0cm 5.4pt 0cm 5.4pt'>
+<p class=AmmCorpsTexte align=left style='margin-top:6.0pt;margin-right:0cm; margin-bottom:6.0pt;margin-left:0cm;text-align:left; punctuation-wrap:simple;text-autospace:none;vertical-align:baseline'><span class='gras'><span style='font-size:10.0pt;font-family:"Arial",sans-serif;letter-spacing:-.1pt'>Troubles généraux et anomalies au site d’administration</span></span></p>
+</td>
+</tr>
+<tr>
+<td width=128 valign=top style='width:96.3pt;border:solid windowtext 1.0pt;
+border-top:none;padding:0cm 5.4pt 0cm 5.4pt'>
+<p class=AmmCorpsTexte align=left style='margin-top:6.0pt;margin-right:0cm; margin-bottom:6.0pt;margin-left:0cm;text-align:left; punctuation-wrap:simple;text-autospace:none;vertical-align:baseline'><span style='font-size:10.0pt;font-family:"Arial",sans-serif'>Peu fréquent :</span></p>
+</td>
+<td width=491 valign=top style='width:368.05pt;border-top:none;border-left:
+none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+padding:0cm 5.4pt 0cm 5.4pt'>
+<p class=AmmCorpsTexte align=left style='margin-top:6.0pt;margin-right:0cm; margin-bottom:6.0pt;margin-left:0cm;text-align:left; punctuation-wrap:simple;text-autospace:none;vertical-align:baseline'><span style='font-size:10.0pt;font-family:"Arial",sans-serif'>Malaise, œdème périphérique</span></p>
+</td>
+</tr>
+<tr>
+<td width=128 valign=top style='width:96.3pt;border:solid windowtext 1.0pt;
+border-top:none;padding:0cm 5.4pt 0cm 5.4pt'>
+<p class=AmmCorpsTexte align=left style='margin-top:6.0pt;margin-right:0cm; margin-bottom:6.0pt;margin-left:0cm;text-align:left; punctuation-wrap:simple;text-autospace:none;vertical-align:baseline'><span style='font-size:10.0pt;font-family:"Arial",sans-serif'>Rare :</span></p>
+</td>
+<td width=491 valign=top style='width:368.05pt;border-top:none;border-left:
+none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+padding:0cm 5.4pt 0cm 5.4pt'>
+<p class=AmmCorpsTexte align=left style='margin-top:6.0pt;margin-right:0cm; margin-bottom:6.0pt;margin-left:0cm;text-align:left; punctuation-wrap:simple;text-autospace:none;vertical-align:baseline'><span style='font-size:10.0pt;font-family:"Arial",sans-serif'>Augmentation de la sudation</span></p>
+</td>
+</tr>
+</table>
+<p class=AmmAnnexeTitre3>Population pédiatrique :</p>
+<p class=AmmCorpsTexte>La tolérance de l’oméprazole a été évaluée chez 310 enfants âgés de 0 à 16 ans souffrant de maladies liées à l’acidité gastrique. Les données sur l’usage à long terme sont limitées et proviennent de 46 enfants ayant reçu un traitement d’entretien par oméprazole lors d’une étude clinique dans l’œsophagite érosive sévère pendant une durée allant jusqu’à 749 jours. Le profil des événements indésirables a été généralement identique à celui observé chez les adultes, aussi bien dans les traitements à court et long terme. Il n’existe pas de données à long terme concernant les effets d’un traitement par oméprazole sur la puberté et la croissance.</p>
+<p class=AmmAnnexeTitre3>Déclaration des effets indésirables suspectés</p>
+<p class=AmmCorpsTexte>La déclaration des effets indésirables suspectés après autorisation du médicament est importante. Elle permet une surveillance continue du rapport bénéfice/risque du médicament. Les professionnels de santé déclarent tout effet indésirable suspecté via le système national de déclaration : Agence nationale de sécurité du médicament et des produits de santé (ANSM) et réseau des Centres Régionaux de Pharmacovigilance - Site internet :<span style='color:red'> </span><a href="https://signalement.social-sante.gouv.fr">https://signalement.social-sante.gouv.fr</a> </p>
+<p class="AmmAnnexeTitre2"><a name="RcpSurdosage">4.9. Surdosage</a>&nbsp;&nbsp;<a href='#HautDePage'><img src='img/BackToTop.jpg' width='15px' height='15px' alt='Retour en haut de la page' title='Retour en haut de la page' /></a></p>
+<p class=AmmCorpsTexte><a name="_Toc142278931">Il y a peu d’information disponible relative aux effets d’un surdosage d’oméprazole chez les humains. Dans la littérature, des doses allant jusqu’à 560 mg ont été décrites, et des administrations de doses uniques orales d’oméprazole allant jusqu’à 2 400 mg (120 fois la dose clinique usuelle recommandée) ont été rapportées de façon occasionnelle. Nausées, vomissements, étourdissements, douleurs abdominales, diarrhées et céphalées ont été rapportés. De même des cas d’apathie, de dépression et de confusion ont été décrits dans des cas isolés.</a></p>
+<p class=AmmCorpsTexte>Les symptômes liés à un surdosage d’oméprazole décrits sont transitoires, et aucun effet grave n’a été rapporté. Le taux d’élimination est resté inchangé (cinétique de premier ordre) avec l’augmentation des doses. Le traitement, s’il est nécessaire, est symptomatique.</p>
+<p class="AmmAnnexeTitre1"><a name="RcpPropPharmacologiques">5. PROPRIETES PHARMACOLOGIQUES</a>&nbsp;&nbsp;<a href='#HautDePage'><img src='img/BackToTop.jpg' width='15px' height='15px' alt='Retour en haut de la page' title='Retour en haut de la page' /></a></p>
+<p class="AmmAnnexeTitre2"><a name="RcpPropPharmacodynamiques">5.1. Propriétés pharmacodynamiques</a>&nbsp;&nbsp;<a href='#HautDePage'><img src='img/BackToTop.jpg' width='15px' height='15px' alt='Retour en haut de la page' title='Retour en haut de la page' /></a></p>
+<p class=AmmCorpsTexteGras><a name="_Toc142278933">Classe pharmacothérapeutique : Médicaments pour les troubles liés à l’acidité, inhibiteurs de la pompe à protons. Code ATC : A02BC01</a></p>
+<p class=AmmAnnexeTitre3>Mécanisme d’action </p>
+<p class=AmmCorpsTexte>L’oméprazole est un mélange racémique de deux énantiomères réduisant la sécrétion acide gastrique par un mécanisme d’action spécifiquement ciblé. C’est un inhibiteur spécifique de la pompe à protons dans la cellule pariétale. Il agit rapidement et entraîne un contrôle de la sécrétion acide gastrique par une inhibition réversible, avec une prise journalière.</p>
+<p class=AmmCorpsTexte>L’oméprazole est une base faible. Il est concentré et converti en forme active dans l’environnement hautement acide des canalicules intracellulaires des cellules pariétales, où il inhibe l’enzyme H+K+-ATPase (la pompe à protons). Cette étape finale du processus de formation de l’acidité gastrique est dépendante de la dose et entraîne une inhibition importante à la fois de la sécrétion acide basale et de la sécrétion acide stimulée, quel que soit le stimulus.</p>
+<p class=AmmAnnexeTitre3>Effets pharmacodynamiques</p>
+<p class=AmmCorpsTexte>Tous les effets pharmacodynamiques observés peuvent être expliqués par l’effet de l’oméprazole sur la sécrétion acide.</p>
+<p class=AmmAnnexeTitre4>Effet sur la sécrétion acide gastrique</p>
+<p class=AmmCorpsTexte>Une prise orale d’oméprazole une fois par jour entraîne une inhibition rapide et efficace de la sécrétion acide gastrique sur 24 heures avec un maximum d’effet obtenu après 4 jours de traitement. Avec l’oméprazole 20 mg, une diminution moyenne d’au moins 80% de l’acidité intra gastrique sur 24 heures est alors maintenue chez les patients ayant un ulcère duodénal, avec une diminution moyenne de 70% environ du pic de débit acide après stimulation par la penta gastrine 24 heures après la prise.</p>
+<p class=AmmCorpsTexte>Une prise orale d’oméprazole 20 mg maintient un pH intra gastrique <span style='font-family:Symbol'>³</span> 3 pendant en moyenne 17 heures sur une période de 24 heures chez les patients ayant un ulcère duodénal.</p>
+<p class=AmmCorpsTexte>La réduction de la sécrétion acide et de l’acidité intra gastrique a pour conséquence la réduction/la normalisation de manière dose dépendante de l’exposition acide de l’œsophage chez les patients ayant du reflux gastro-œsophagien. </p>
+<p class=AmmCorpsTexte>L’inhibition de la sécrétion acide est liée à l’aire sous la courbe des concentrations plasmatiques de l’oméprazole (ASC), et non à la concentration plasmatique réelle à un temps donné.</p>
+<p class=AmmCorpsTexte>Il n’a pas été observé de tachyphylaxie lors du traitement par oméprazole.</p>
+<p class=AmmAnnexeTitre4>Effet sur H. pylori </p>
+<p class=AmmCorpsTexte><span class='italique'>H. pylori</span> est associé à la maladie ulcéreuse gastroduodénale incluant l’ulcère gastrique et l’ulcère duodénal. H. pylori est un facteur important dans le développement de la gastrite. <span class='italique'>H. pylori</span> et l’acide gastrique sont des facteurs importants dans le développement de la maladie ulcéreuse gastroduodénale. <span class='italique'>H. pylori</span> est un facteur important dans le développement de la gastrite atrophique associé à une augmentation du risque de développer un cancer gastrique.</p>
+<p class=AmmCorpsTexte>L’éradication de <span class='italique'>H. pylori</span> par l’oméprazole associé à des antimicrobiens est associée à des taux élevés de cicatrisation et de rémission à long terme des ulcères gastroduodénaux. </p>
+<p class=AmmCorpsTexte>Les bithérapies ont été testées et se sont révélées moins efficaces que les trithérapies. Les bithérapies peuvent cependant être envisagées lors d’une hypersensibilité connue empêchant l’utilisation des trithérapies.</p>
+<p class=AmmAnnexeTitre4>Autres effets liés à l’inhibition acide</p>
+<p class=AmmCorpsTexte>Lors d’un traitement à long terme, des kystes glandulaires gastriques ont été observés avec une fréquence légèrement augmentée. Ces modifications sont une conséquence physiologique d’une inhibition prononcée de la sécrétion acide : elles sont bénignes et réversibles.</p>
+<p class=AmmCorpsTexte>La diminution de l'acidité gastrique, quelle qu’en soit l’origine y compris l’utilisation des inhibiteurs de la pompe à protons, favorise le développement de bactéries intra-gastriques normalement présentes dans le tractus gastro-intestinal. Un traitement entraînant la diminution de l’acidité peut conduire à un risque légèrement augmenté d’infections gastro-intestinales, telles que les infections par <span class='italique'>Salmonella</span> et <span class='italique'>Campylobacter</span> et possiblement par <span class='italique'>Clostridium difficile</span> chez les patients hospitalisés.</p>
+<p class=AmmCorpsTexte>Pendant le traitement par des médicaments antisécrétoires, la concentration sérique de gastrine augmente en réaction à la diminution de la sécrétion acide. De même, le taux de CgA augmente à cause de la diminution de l’acidité gastrique. L’augmentation du taux de CgA peut interférer avec les tests réalisés pour l’exploration des tumeurs neuroendocrines. </p>
+<p class=AmmCorpsTexte>D’après des données publiées, la prise d’inhibiteurs de la pompe à protons devrait être interrompue entre 5 jours et 2 semaines avant de mesurer le taux de CgA. Le but est de permettre un retour à la normale des taux de CgA qui auraient été artificiellement augmentés par la prise d’IPP.</p>
+<p class=AmmCorpsTexte>Une augmentation du nombre de cellules ECL en relation possible avec l’augmentation des concentrations sériques de la gastrine a été observée chez certains patients (à la fois des adultes et des enfants) traités au long cours avec l’oméprazole. Les résultats sont considérés comme étant non cliniquement significatifs.</p>
+<p class=AmmAnnexeTitre3>Population pédiatrique</p>
+<p class=AmmCorpsTexte>Dans une étude non contrôlée menée chez des enfants (1 à 16 ans) atteints d’œsophagite sévère par reflux, l’oméprazole, à des doses comprises entre 0,7 et 1,4 mg/kg, a amélioré le stade de l’œsophagite dans 90 % des cas et a diminué de manière significative les symptômes de reflux. Au cours d’une étude en simple aveugle, des enfants âgés de 0 à 24 mois ayant fait l’objet d’un diagnostic clinique de reflux gastro-œsophagien ont été traités avec 0,5 mg, 1 mg ou 1,5 mg d’oméprazole/kg. La fréquence des épisodes de vomissements/régurgitation a diminué de 50 % après 8 semaines de traitement quelle que soit la dose.</p>
+<p class=AmmAnnexeTitre4>Eradication de H. pylori chez l’enfant </p>
+<p class=AmmCorpsTexte>Une étude clinique en double aveugle randomisée (étude Héliot) a conclu à l’efficacité et à la bonne tolérance de l’oméprazole associé à deux antibiotiques (amoxicilline et clarithromycine) dans le traitement des infections à <span class='italique'>H. pylori</span> chez les enfants âgés de 4 ans et plus souffrant de gastrite : taux d’éradication de <span class='italique'>H. pylori</span> : 74,2 % (23/31 patients) avec oméprazole + amoxicilline + clarithromycine versus 9,4 % (3/32 patients) avec amoxicilline + clarithromycine. Néanmoins, aucune preuve n’a été apportée quant au bénéfice clinique sur les symptômes dyspeptiques. Cette étude n’apporte aucune information concernant les enfants de moins de 4 ans.</p>
+<p class="AmmAnnexeTitre2"><a name="RcpPropPharmacocinetiques">5.2. Propriétés pharmacocinétiques</a>&nbsp;&nbsp;<a href='#HautDePage'><img src='img/BackToTop.jpg' width='15px' height='15px' alt='Retour en haut de la page' title='Retour en haut de la page' /></a></p>
+<p class=AmmAnnexeTitre3><a name="_Toc142278934">Absorption </a></p>
+<p class=AmmCorpsTexte>L’oméprazole et le magnésium d’oméprazole sont instables en milieu acide, et de ce fait l’administration orale se fait sous forme de granulés gastro-résistants en gélules ou comprimés. L’absorption de l’oméprazole est rapide, avec un pic plasmatique survenant environ 1 à 2 heures après la prise. L'absorption de l’oméprazole se situe au niveau de l'intestin grêle et est habituellement totale en 3 à 6 heures. La prise concomitante d’aliments n’influence pas la biodisponibilité. La disponibilité systémique (biodisponibilité) d'une dose orale unique d'oméprazole est d'environ 40 %. Après l’administration répétée de doses quotidiennes uniques, la biodisponibilité s'élève jusqu'à environ 60 %. </p>
+<p class=AmmAnnexeTitre3>Distribution</p>
+<p class=AmmCorpsTexte>Le volume de distribution apparent chez le sujet sain est d’environ 0,3 l/kg de poids corporel. La liaison de l’oméprazole aux protéines plasmatiques est de 97 %.</p>
+<p class=AmmAnnexeTitre3>Biotransformation</p>
+<p class=AmmCorpsTexte>L’oméprazole est totalement métabolisé par le cytochrome P450 (CYP). La majeure partie de son métabolisme est dépendante du polymorphisme de l’enzyme CYP2C19, responsable de la formation de l’hydroxy-oméprazole, principal métabolite plasmatique. La partie restante est dépendante d’une autre isoforme spécifique, le CYP3A4, responsable de la formation de sulfone d’oméprazole. Du fait de la forte affinité de l’oméprazole pour le CYP2C19, il existe potentiellement une inhibition compétitive et des interactions médicamenteuses métaboliques avec d’autres substrats du CYP2C19. En revanche, l’oméprazole n’a pas le potentiel d’inhiber le métabolisme d’autres substrats du CYP3A4 du fait de sa faible affinité pour le CYP3A4. De plus, l’oméprazole n’a pas d’effet inhibiteur sur les principales enzymes CYP.</p>
+<p class=AmmCorpsTexte>Environ 3% de la population caucasienne et 15-20% de la population asiatique possèdent une enzyme CYP2C19 peu fonctionnelle et sont appelés métaboliseurs lents. Chez ces individus, le métabolisme de l’oméprazole est probablement principalement réalisé par le CYP3A4. Après des administrations répétées de doses journalières de 20 mg d’oméprazole, l’aire sous la courbe (ASC) moyenne a été de 5 à 10 fois supérieure chez les métaboliseurs lents que chez les sujets ayant une enzyme CYP2C19 fonctionnelle (métaboliseurs rapides). Les pics de concentrations plasmatiques moyens étaient également de 3 à 5 fois plus élevés. Ceci n’a pas d’implication sur la posologie quotidienne de l’oméprazole.</p>
+<p class=AmmAnnexeTitre3>Elimination</p>
+<p class=AmmCorpsTexte>La demi-vie d’élimination plasmatique de l’oméprazole est habituellement inférieure à 1 heure après une administration quotidienne unique et répétée. L’oméprazole est éliminé complètement du plasma entre 2 administrations sans tendance à l’accumulation pour une administration quotidienne. Près de 80% de l’administration d’une dose orale d’oméprazole est excrété sous forme de métabolites dans les urines, le reste dans les fèces, provenant principalement de la sécrétion biliaire.</p>
+<p class=AmmAnnexeTitre3>Linéarité / Non linéarité</p>
+<p class=AmmCorpsTexte>L’aire sous la courbe d’oméprazole (ASC) augmente avec des administrations répétées. Cette augmentation est dose-dépendante et résulte en une relation non linéaire dose - ASC après administrations répétées. Cet effet temps- et dose-dépendant est dû à une diminution du premier passage hépatique et de la clairance systémique, probablement lié à une inhibition de l’enzyme CYP2C19 par l’oméprazole et/ou ses métabolites (ex : sulfone). </p>
+<p class=AmmCorpsTexte>Il n’a pas été mis en évidence d’effet sur la sécrétion acide gastrique par les métabolites de l’oméprazole. </p>
+<p class=AmmAnnexeTitre3>Populations spécifiques</p>
+<p class=AmmCorpsTexteGras>Insuffisance hépatique</p>
+<p class=AmmCorpsTexte>Le métabolisme de l’oméprazole des patients présentant une insuffisance hépatique est altéré, entraînant une augmentation de l’aire sous la courbe. L’oméprazole ne montre pas de tendance à l’accumulation avec une seule prise par jour.</p>
+<p class=AmmCorpsTexteGras>Insuffisance rénale</p>
+<p class=AmmCorpsTexte>La pharmacocinétique de l’oméprazole, incluant la biodisponibilité systémique et le taux d’élimination n’est pas modifiée chez les patients présentant une insuffisance rénale.</p>
+<p class=AmmCorpsTexteGras>Sujets âgés</p>
+<p class=AmmCorpsTexte>Le métabolisme de l’oméprazole est légèrement réduit chez le sujet âgé (75-79 ans).</p>
+<p class=AmmCorpsTexteGras>Population pédiatrique</p>
+<p class=AmmCorpsTexte>Au cours du traitement à la posologie recommandée chez l’enfant à partir de 1 an, les concentrations plasmatiques ont été similaires à celles observées chez l’adulte. Chez les enfants de moins de 6 mois, la clairance de l’oméprazole est faible en raison de la faible capacité à métaboliser l’oméprazole.</p>
+<p class="AmmAnnexeTitre2"><a name="RcpSecuritePreclinique">5.3. Données de sécurité préclinique</a>&nbsp;&nbsp;<a href='#HautDePage'><img src='img/BackToTop.jpg' width='15px' height='15px' alt='Retour en haut de la page' title='Retour en haut de la page' /></a></p>
+<p class=AmmCorpsTexte><a name="_Toc142278935">Les études chez le rat traité à long terme avec de l’oméprazole ont montré une hyperplasie des cellules ECL gastriques et des tumeurs carcinoïdes. Ces modifications sont le résultat d’une hypergastrinémie prolongée, secondaire à l’inhibition acide. </a></p>
+<p class=AmmCorpsTexte>Des observations similaires ont été faites après traitement avec des antagonistes du récepteur H2, des inhibiteurs de la pompe à protons, et après fundectomie partielle. De ce fait, ces changements ne résultent pas d’un effet direct d’une quelconque substance active individuelle.</p>
+<p class="AmmAnnexeTitre1"><a name="RcpDonneesPharmaceutiques">6. DONNEES PHARMACEUTIQUES</a>&nbsp;&nbsp;<a href='#HautDePage'><img src='img/BackToTop.jpg' width='15px' height='15px' alt='Retour en haut de la page' title='Retour en haut de la page' /></a></p>
+<p class="AmmAnnexeTitre2"><a name="RcpListeExcipients">6.1. Liste des excipients</a>&nbsp;&nbsp;<a href='#HautDePage'><img src='img/BackToTop.jpg' width='15px' height='15px' alt='Retour en haut de la page' title='Retour en haut de la page' /></a></p>
+<p class=AmmCorpsTexte><a name="_Toc142278937"><span class='souligne'>Contenu :</span></a></p>
+<p class=AmmCorpsTexte>Phosphate disodique dihydraté, hydroxypropylcellulose à faible substitution, hypromellose, lactose anhydre, stéarate de magnésium, mannitol, acide méthacrylique – copolymère d’acrylate d’éthyle (1 : 1) dispersion 30%, cellulose microcristalline, macrogol (polyéthylèneglycol 400), laurilsulfate de sodium.</p>
+<p class=AmmCorpsTexte><span class='souligne'>Composition de l’enveloppe de la gélule : </span></p>
+<p class=AmmCorpsTexte>Oxyde de fer rouge (E 172), dioxyde de titane (E 171), gélatine, stéarate de magnésium, laurilsulfate de sodium, encre (contenant de la laque, de l’ammoniaque, de l’hydroxyde de potassium et de l’oxyde de fer noir (E 172)), silice colloïdale anhydre, paraffine liquide.</p>
+<p class="AmmAnnexeTitre2"><a name="RcpIncompatibilites">6.2. Incompatibilités</a>&nbsp;&nbsp;<a href='#HautDePage'><img src='img/BackToTop.jpg' width='15px' height='15px' alt='Retour en haut de la page' title='Retour en haut de la page' /></a></p>
+<p class=AmmCorpsTexte><a name="_Toc142278938">Sans objet.</a></p>
+<p class="AmmAnnexeTitre2"><a name="RcpDureeConservation">6.3. Durée de conservation</a>&nbsp;&nbsp;<a href='#HautDePage'><img src='img/BackToTop.jpg' width='15px' height='15px' alt='Retour en haut de la page' title='Retour en haut de la page' /></a></p>
+<p class=AmmCorpsTexte><a name="_Toc142278939">3 ans.</a></p>
+<p class="AmmAnnexeTitre2"><a name="RcpPrecConservation">6.4. Précautions particulières de conservation</a>&nbsp;&nbsp;<a href='#HautDePage'><img src='img/BackToTop.jpg' width='15px' height='15px' alt='Retour en haut de la page' title='Retour en haut de la page' /></a></p>
+<p class=AmmCorpsTexte><a name="_Toc142278940">A conserver à une température ne dépassant pas 30°C.</a></p>
+<p class=AmmCorpsTexte>Flacon : conserver le flacon soigneusement fermé à l’abri de l’humidité.</p>
+<p class=AmmCorpsTexte>Plaquettes : à conserver dans l'emballage d’origine à l’abri de l’humidité.</p>
+<p class="AmmAnnexeTitre2"><a name="RcpEmballage">6.5. Nature et contenu de l'emballage extérieur </a>&nbsp;&nbsp;<a href='#HautDePage'><img src='img/BackToTop.jpg' width='15px' height='15px' alt='Retour en haut de la page' title='Retour en haut de la page' /></a></p>
+<p class=AmmCorpsTexte><a name="_Toc142278942"></a><a name="_Toc142278941">14, 28, 30 gélules en flacon (PEHD) avec un bouchon à vis bien ajusté en polypropylène muni d’une capsule dessicante.</a></p>
+<p class=AmmCorpsTexte>14, 28 gélules sous plaquettes (Aluminium / Aluminium).</p>
+<p class=AmmCorpsTexte>Toutes les présentations peuvent ne pas être commercialisées.</p>
+<p class="AmmAnnexeTitre2"><a name="RcpPrecEmpl">6.6. Précautions particulières d’élimination et de manipulation</a>&nbsp;&nbsp;<a href='#HautDePage'><img src='img/BackToTop.jpg' width='15px' height='15px' alt='Retour en haut de la page' title='Retour en haut de la page' /></a></p>
+<p class=AmmCorpsTexte>Pas d'exigences particulières.</p>
+<p class=AmmCorpsTexte>Tout médicament non utilisé ou déchet doit être éliminé conformément à la réglementation en vigueur.</p>
+<p class="AmmAnnexeTitre1"><a name="RcpTitulaireAmm">7. TITULAIRE DE L’AUTORISATION DE MISE SUR LE MARCHE</a>&nbsp;&nbsp;<a href='#HautDePage'><img src='img/BackToTop.jpg' width='15px' height='15px' alt='Retour en haut de la page' title='Retour en haut de la page' /></a></p>
+<p class=AmmCorpsTexteGras style='margin-bottom:0cm;margin-bottom:.0001pt; page-break-after:avoid'><a name="_Toc142278943"><span lang=DE>CHEPLAPHARM ARZNEIMITTEL GMBH</span></a></p>
+<p class=AmmCorpsTexte style='margin-bottom:0cm;margin-bottom:.0001pt; page-break-after:avoid'><span lang=DE>ZIEGELHOF 24</span></p>
+<p class=AmmCorpsTexte style='margin-bottom:0cm;margin-bottom:.0001pt'>17489 GREIFSWALD</p>
+<p class=AmmCorpsTexte style='margin-bottom:0cm;margin-bottom:.0001pt'>ALLEMAGNE</p>
+<p class="AmmAnnexeTitre1"><a name="RcpNumAutor">8. NUMERO(S) D’AUTORISATION DE MISE SUR LE MARCHE</a>&nbsp;&nbsp;<a href='#HautDePage'><img src='img/BackToTop.jpg' width='15px' height='15px' alt='Retour en haut de la page' title='Retour en haut de la page' /></a></p>
+<p class=AmmListePuces1><a name="_Toc142278944"><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>34009 341 300 4 5 : 14 gélules en flacon (PEHD)</a></p>
+<p class=AmmListePuces1><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>34009 341 301 0 6 : 28 gélules en flacon (PEHD)</p>
+<p class=AmmListePuces1><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>34009 340 524 6 0 : 30 gélules en flacon (PEHD)</p>
+<p class=AmmListePuces1><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>34009 418 575 2 2 : 14 gélules sous plaquettes (Aluminium/Aluminium) </p>
+<p class=AmmListePuces1><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>34009 418 577 5 1 : 28 gélules sous plaquettes (Aluminium/Aluminium) </p>
+<p class="AmmAnnexeTitre1"><a name="RcpPremiereAutorisation">9. DATE DE PREMIERE AUTORISATION/DE RENOUVELLEMENT DE L’AUTORISATION</a>&nbsp;&nbsp;<a href='#HautDePage'><img src='img/BackToTop.jpg' width='15px' height='15px' alt='Retour en haut de la page' title='Retour en haut de la page' /></a></p>
+<p class=AmmCorpsTexte><a name="_Toc142278945">[à compléter ultérieurement par le titulaire]</a></p>
+<p class="AmmAnnexeTitre1"><a name="RcpDateRevision">10. DATE DE MISE A JOUR DU TEXTE</a>&nbsp;&nbsp;<a href='#HautDePage'><img src='img/BackToTop.jpg' width='15px' height='15px' alt='Retour en haut de la page' title='Retour en haut de la page' /></a></p>
+<p class=AmmCorpsTexte><a name="_Toc142278946">[à compléter ultérieurement par le titulaire]</a></p>
+<p class="AmmAnnexeTitre1"><a name="RcpDosimetrie">11. DOSIMETRIE</a>&nbsp;&nbsp;<a href='#HautDePage'><img src='img/BackToTop.jpg' width='15px' height='15px' alt='Retour en haut de la page' title='Retour en haut de la page' /></a></p>
+<p class=AmmCorpsTexte><a name="_Toc142278947">Sans objet.</a></p>
+<p class="AmmAnnexeTitre1"><a name="RcpInstPrepRadioph">12. INSTRUCTIONS POUR LA PREPARATION DES RADIOPHARMACEUTIQUES</a>&nbsp;&nbsp;<a href='#HautDePage'><img src='img/BackToTop.jpg' width='15px' height='15px' alt='Retour en haut de la page' title='Retour en haut de la page' /></a></p>
+<p class=AmmCorpsTexte><a name="_Toc142278948">Sans objet.</a></p>
+<div style='border:none;border-top:solid windowtext 1.0pt;padding:1.0pt 0cm 0cm 0cm'>
+<p class="AmmAnnexeTitre"><a name="RcpCondPrescription">CONDITIONS DE PRESCRIPTION ET DE DELIVRANCE</a></p>
+</div>
+<p class=AmmCorpsTexte style='margin-top:6.0pt;page-break-after:avoid'>Médicament soumis à prescription médicale.</p>
+<p class=AmmCorpsTexte>Liste II.</p>
+<span class='gras'><span style='font-size:12.0pt;font-family:"Arial",sans-serif;color:#0B3D92;
+text-transform:uppercase'><br clear=all>
+</span></span>					
+					<p class="alignright"><a href="#HautDePage">Retour en haut de la page <img src="img/BackToTop.jpg" width="20px" height="20px" alt="Retour en haut de la page" title="Retour en haut de la page" /></a></p>
+				</div>
+			</div>
+		</div>
+	</div>
+
+<table summary="" class="content" width="1000">
+	<tr>
+		<td height="100px">&nbsp;</td>
+	</tr>
+</table>
+<table summary="Pied de page" class="footer" width="1000">
+	<tr>
+		<td>
+			<table summary="" class="tablealigncenter" border="0">
+				<tr>
+					<td width="100px" class="aligncenter"><a id="lien_ansm" href="http://ansm.sante.fr/" target="_blank"><img src="img/Logo_ANSM.png" width="150" height="60" alt="ANSM - Agence nationale de sécurité du médicament et des produits de santé" title="L'ANSM met à disposition les principales informations issues de l'Autorisation de mise sur le marché, l'appartenance à un groupe générique, les liens vers les informations de sécurité qu'elle publie, l'identification des médicaments sous surveillance renforcée - nouvelle fenêtre" /></a></td>
+					          <td>&nbsp;</td>
+					<td width="100px" class="aligncenter"><img src="img/Logo_HAS.png" width="150" height="60" alt="HAS - Haute autorité de santé" title="La HAS met à disposition les informations relatives au service médical rendu, à l'amélioration du service médical rendu ainsi que les liens vers les avis de la Commission de la Transparence correspondants - nouvelle fenêtre" /></td>
+					<td>&nbsp;</td>
+					<td width="100px" class="aligncenter"><img src="img/Logo_CNAM.png" width="150" height="60" alt="UNCAM - Unin nationale des caisses d'assurance maladie" title="L'UNCAM met à disposition le taux de remboursement, le prix et les indications remboursables le cas échéant, ainsi que l'agrément aux collectivités - nouvelle fenêtre" /></td>
+          				</tr>
+			</table> 
+		</td>
+	</tr>
+</table>
+<table summary="" class="finpage" width="1000">
+	<tr>
+		<td height="100px" class="aligncenter">
+			<a class="navigation" href="plan.php">Plan du site</a>&nbsp;|&nbsp;
+			<a class="navigation" href="accessibilite.php">Accessibilité</a>&nbsp;|&nbsp;
+			<a class="navigation" href="contact.php">Contact</a>&nbsp;|&nbsp;
+			<a class="navigation" href="telechargement.php">Téléchargement</a>&nbsp;|&nbsp;
+			<a class="navigation" href="DeclarationConfidentialite.php">Declaration de confidentialité</a>&nbsp;|&nbsp;
+			<a class="navigation" href="http://www.service-public.fr/" title="Service Public - Nouvelle fenêtre" target="_blank">Service-Public.fr</a>&nbsp;|&nbsp;
+			<a class="navigation" href="http://www.legifrance.gouv.fr/" title="Legifrance - Nouvelle fenêtre" target="_blank">Legifrance</a>&nbsp;|&nbsp;
+			<a class="navigation" href="http://www.gouvernement.fr/" title="Gouvernement - Nouvelle fenêtre" target="_blank" >Gouvernement.fr</a>
+		</td>
+	</tr>
+</table>
+
+
+
+<!-- Matomo -->
+<script type="text/javascript">
+  var _paq = window._paq = window._paq || [];
+  /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
+  _paq.push(['trackPageView']);
+  _paq.push(['enableLinkTracking']);
+  (function() {
+    var u="https://stats.integra.fr/";
+    _paq.push(['setTrackerUrl', u+'matomo.php']);
+    _paq.push(['setSiteId', '79']);
+    var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+    g.type='text/javascript'; g.async=true; g.src=u+'matomo.js'; s.parentNode.insertBefore(g,s);
+  })();
+</script>
+<!-- End Matomo Code -->
+
+
+
+</body>
+</html>

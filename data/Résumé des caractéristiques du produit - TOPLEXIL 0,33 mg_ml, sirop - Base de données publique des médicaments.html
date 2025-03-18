@@ -1,0 +1,412 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="fr" lang="fr">
+<head>
+	<title>Résumé des caractéristiques du produit - TOPLEXIL 0,33 mg/ml, sirop  - Base de données publique des médicaments</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=windows-1252"/>
+	<meta name="robots" content="index, follow"/>
+	<meta name="Description" content="Base de données publique des médicaments"/>
+	<meta name="Keywords" content="base, données, publique, médicaments, Résumé des caractéristiques du produit, TOPLEXIL 0,33 mg/ml, sirop "/>
+	<meta name="Subject" content="medicament"/>
+	<link href='https://fonts.googleapis.com/css?family=Noticia+Text' rel='stylesheet' type='text/css' />
+	<link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro' rel='stylesheet' type='text/css' />
+	<link href="style/style_bdm.css?v=2.2.3" type="text/css" rel="stylesheet"/>
+	<link href="style/style_RCP_Notice.css" type="text/css" rel="stylesheet"/>
+  <link rel="alternate" href="http://m.base-donnees-publique.medicaments.gouv.fr/#!info-62982231">
+    <script type="text/javascript" src="scripts/autocomplete.js?v=2.2.3"></script>
+	<script type="text/javascript" src="scripts/jquery.js"></script>
+    <script type="text/javascript" src="scripts/jquery-ui.min.js"></script>
+	<script type="text/javascript" src="scripts/common.js"></script>
+	<link rel="icon" type="image/x-icon" href="favicon.ico" />
+</head>
+
+<body>
+
+<a name="HautDePage" />
+<div id="bandeauhaut">
+	<a id="lien_ministere" class="lienmenu" href="http://www.sante.gouv.fr" target="_blank" title="Site du ministère des affaires sociales et de la santé - nouvelle fenêtre"><img id="logoministere" src="img/Logo_Ministere.jpg"  alt="Logo du ministère des affaires sociales et de la santé"/></a>
+	<h1 class="texteTitreSite">
+		Base <span class="texteBleu">de</span> données <span class="texteBleu">publique</span><br/><span class="texteBleu">des</span> médicaments
+	</h1>
+		<a id="lien_medicament_gouv" class="lienEspaceMedic" target="_blank" href="http://medicaments.gouv.fr" title="Visiter [medicaments.gouv.fr] - nouvelle fenêtre">Visiter [medicaments.gouv.fr] <img src="/img/icone_lien.png" alt="Visiter [medicaments.gouv.fr]"  title="Visiter [medicaments.gouv.fr] - nouvelle fenetre" /></a>
+</div>
+<!--div align="center">
+	<a id="banniere" target="_blank" href="http://social-sante.gouv.fr/soins-et-maladies/medicaments/medicaments-generiques/" title="Visiter [medicaments.gouv.fr] - M?dicaments g?n?riques">
+		<img width="1000"   src ="/img/carrouselbannieres.gif" alt="Visiter [medicaments.gouv.fr] - M?dicaments g?n?riques" title="Visiter [medicaments.gouv.fr] - M?dicaments g?n?riques" />
+	</a>
+</div-->
+
+<div id="menuhaut">
+	<span id="menuhaut_gauche">
+		<a id="lien_accueil" class="navigation" href="index.php">Accueil</a>&nbsp;|&nbsp;
+		<a id="lien_glossaire" class="navigation" href="glossaire.php">Glossaire</a>&nbsp;|&nbsp;
+		<a id="lien_aide" class="navigation" href="aide.php">Aide</a>		
+	</span>
+	
+		
+	<span id="menuhaut_dernmaj">
+        <br>Dernière <span title=" 2.4.4
+">mise à jour</span> le 03/03/2025	</span>
+</div>
+
+	<script language="javascript" type="text/javascript">
+		//<![CDATA[ 
+		function Aff(men) {
+			document.write("<ul class=\"menuDoc\">");
+			for(var no_rub=0;no_rub<men.num_rub;no_rub++) {
+				document.write("<li><a class='leftMenu' href='"+menu[no_rub].page+"'>");
+				document.write(men[no_rub].txt);
+				document.write("</a></li>");
+				if (men[no_rub].nb_lien != 0){
+					document.write("<ul class=\"sousMenuDoc\">");
+				}
+				for(var no_lien=0;no_lien<men[no_rub].nb_lien;no_lien++) {
+					document.write("<li><a class='leftMenu' href='"+men[no_rub][no_lien].page+"'>");
+					document.write(men[no_rub][no_lien].txt);
+					document.write("</a></li>");
+				}
+				if (men[no_rub].nb_lien != 0){
+					document.write("</ul>");
+				}
+			}
+			document.write("</ul>");
+		}
+		
+		function CreerMenu(police,imgRub,imgOption,imgOptionFin,hauteur) {
+			this.num_rub=0;
+			this.police=police;
+			this.imgRub=imgRub;
+			this.imgOpt=imgOption;
+			this.imgOptFin=imgOptionFin;
+			this.hauteur=hauteur;
+			this.AddRub=AddRub;
+			this.AddLien=AddLien;
+		}
+		
+		function AddRub(txt,aff,page) {
+			var rub = new Object;
+				rub.txt=txt;
+				rub.aff=aff;
+				rub.page=page;
+				rub.nb_lien=0;
+			this[this.num_rub]=rub;
+			this.num_rub++;
+		}
+
+		function AddLien(txt,page) {
+			var no_rub = this.num_rub-1;
+			var no_lien= this[no_rub].nb_lien;
+			var lien = new Object;
+				lien.txt=txt;
+				lien.page=page;
+			this[no_rub][no_lien]=lien;
+			this[no_rub].nb_lien++;
+		}
+		var menu=new CreerMenu("arial","img/dyn04.gif","img/dyn22.gif","img/dyn55.gif",18);
+		//]]> 
+		menu.AddRub("Dénomination","O","#RcpDenomination");
+			menu.AddRub("Composition","O","#RcpCompoQualiQuanti");
+			menu.AddRub("Forme pharma.","O","#RcpFormePharm");
+			menu.AddRub("Clinique","O","#RcpDonneesCliniques");
+			menu.AddLien("Indic. thérapeutiques","#RcpIndicTherap");
+				menu.AddLien("Posologie","#RcpPosoAdmin");
+				menu.AddLien("Contre-indications","#RcpContreindications");
+				menu.AddLien("Mise en garde","#RcpMisesEnGarde");
+				menu.AddLien("Interactions","#RcpInteractionsMed");
+				menu.AddLien("Grossesse, allait.","#RcpFertGrossAllait");
+				menu.AddLien("Conduite véhicules","#RcpConduite");
+				menu.AddLien("Effets indésirables","#RcpEffetsIndesirables");
+				menu.AddLien("Surdosage","#RcpSurdosage");
+				menu.AddRub("Pharmacologie","O","#RcpPropPharmacologiques");
+			menu.AddLien("Pharmacodynamie","#RcpPropPharmacodynamiques");
+				menu.AddLien("Pharmacocinétique","#RcpPropPharmacocinetiques");
+				menu.AddLien("Sécurité préclinique","#RcpSecuritePreclinique");
+				menu.AddRub("Pharmaceutique","O","#RcpDonneesPharmaceutiques");
+			menu.AddLien("Liste excipients","#RcpListeExcipients");
+				menu.AddLien("Incompatibilités","#RcpIncompatibilites");
+				menu.AddLien("Durée conservation","#RcpDureeConservation");
+				menu.AddLien("Conservation","#RcpPrecConservation");
+				menu.AddLien("Emballage","#RcpEmballage");
+				menu.AddLien("Utilisation/manipulation","#RcpPrecEmpl");
+				menu.AddRub("Titulaire AMM","O","#RcpTitulaireAmm");
+			menu.AddRub("Présentations","O","#RcpNumAutor");
+			menu.AddRub("Autorisation, renouv.","O","#RcpPremiereAutorisation");
+			menu.AddRub("Date de révision","O","#RcpDateRevision");
+			menu.AddRub("Dosimétrie","O","#RcpDosimetrie");
+			menu.AddRub("Préparation radiopharma.","O","#RcpInstPrepRadioph");
+				</script>
+
+	<div id="container">
+		<div id="leftnav">
+			<div id="cadreMenuGauche">
+				<h2 class="sommaireMenu">Sommaire</h2>
+				<div id="menuGauche">
+					<script language="JavaScript" type="text/javascript">Aff(menu);</script>
+				</div>
+			</div>
+		</div>
+		<div id="contentPrincipal">
+			<div id="boutonsliens">
+				<a id='lien_fiche_info' href='extrait.php?specid=62982231' ><img id="ongletficheinfo" alt="Onglet fiche information" src="img/onglet_fiche_info_vert.png" /></a><a id='lien_rcp' href='affichageDoc.php?specid=62982231&amp;typedoc=R'><img class="onglet" alt="Onglet résumé des caractéristiques du produit" src="img/onglet_rcp_gris.png" /></a><a id='lien_notice' href='affichageDoc.php?specid=62982231&amp;typedoc=N'><img class="onglet" alt="Onglet notice patient" src="img/onglet_notice_vert.png" /></a>			</div>
+			<div class="titredeno">
+				<table summary="" border="0" cellspacing="0">
+					<tr><td colspan="3" height="10px"></td></tr>
+					<tr>
+						<td width="15px">&nbsp;</td>
+						<td width="685px"><h1 class="textedeno">TOPLEXIL 0,33 mg/ml, sirop  - Résumé des caractéristiques du produit</h1></td>
+						<td width="43px" class="tdcenter"><a href="Javascript:void(null)" onclick="print();"><img src="img/imprimante.png" height="20px" width="20px" alt="Imprimer le document" title="Imprimer le document" border="0" /></a></td>
+					</tr>
+					<tr><td colspan="3" height="10px"></td></tr>
+				</table>
+			</div>
+			
+			<div id="contentDocument">
+				<div id="textDocument">
+					<p class="DateNotif">ANSM - Mis à jour le : 26/07/2024</p>
+<p class="AmmAnnexeTitre1"><a name="RcpDenomination">1. DENOMINATION DU MEDICAMENT</a>&nbsp;&nbsp;<a href='#HautDePage'><img src='img/BackToTop.jpg' width='15px' height='15px' alt='Retour en haut de la page' title='Retour en haut de la page' /></a></p>
+<p class=AmmCorpsTexteGras>TOPLEXIL 0,33 mg/ml, sirop</p>
+<p class="AmmAnnexeTitre1"><a name="RcpCompoQualiQuanti">2. COMPOSITION QUALITATIVE ET QUANTITATIVE</a>&nbsp;&nbsp;<a href='#HautDePage'><img src='img/BackToTop.jpg' width='15px' height='15px' alt='Retour en haut de la page' title='Retour en haut de la page' /></a></p>
+<p class=AmmComposition>Oxomémazine...................................................................................................................... 0,033 g</p>
+<p class=AmmCorpsTexte align=center style='text-align:center'>Pour 100 ml de sirop</p>
+<p class=AmmCorpsTexte>Excipients à effet notoire : saccharose, sodium.</p>
+<p class=AmmCorpsTexte>Pour la liste complète des excipients, voir rubrique 6.1.</p>
+<p class="AmmAnnexeTitre1"><a name="RcpFormePharm">3. FORME PHARMACEUTIQUE</a>&nbsp;&nbsp;<a href='#HautDePage'><img src='img/BackToTop.jpg' width='15px' height='15px' alt='Retour en haut de la page' title='Retour en haut de la page' /></a></p>
+<p class=AmmCorpsTexte><a name="_Toc142278915">Sirop.</a></p>
+<p class="AmmAnnexeTitre1"><a name="RcpDonneesCliniques">4. DONNEES CLINIQUES</a>&nbsp;&nbsp;<a href='#HautDePage'><img src='img/BackToTop.jpg' width='15px' height='15px' alt='Retour en haut de la page' title='Retour en haut de la page' /></a></p>
+<p class="AmmAnnexeTitre2"><a name="RcpIndicTherap">4.1. Indications thérapeutiques</a>&nbsp;&nbsp;<a href='#HautDePage'><img src='img/BackToTop.jpg' width='15px' height='15px' alt='Retour en haut de la page' title='Retour en haut de la page' /></a></p>
+<p class=AmmCorpsTexte><a name="_Toc142278917">Traitement symptomatique des toux non productives gênantes en particulier à prédominance nocturne.</a></p>
+<p class="AmmAnnexeTitre2"><a name="RcpPosoAdmin">4.2. Posologie et mode d'administration</a>&nbsp;&nbsp;<a href='#HautDePage'><img src='img/BackToTop.jpg' width='15px' height='15px' alt='Retour en haut de la page' title='Retour en haut de la page' /></a></p>
+<p class=AmmAnnexeTitre3><a name="_Toc142278918">Posologie</a></p>
+<p class=AmmCorpsTexte>RESERVE A L'ADULTE ET A L'ENFANT DE PLUS DE 2 ANS.</p>
+<p class=AmmCorpsTexte>Chez l’adulte : 10 ml par prise, 4 fois par jour.</p>
+<p class=AmmAnnexeTitre4>Population pédiatrique</p>
+<p class=AmmCorpsTexte>Chez l’enfant : la posologie quotidienne est fonction du poids de l’enfant (1 ml de sirop par kg de poids corporel et par jour), soit à titre indicatif :</p>
+<p class=AmmListePuces1><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>Enfant de 13 à 20 kg (soit 2 à 6 ans) : 5 ml par prise, 2 à 3 fois par jour,</p>
+<p class=AmmListePuces1><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>Enfant de 20 à 30 kg (soit 6 à 10 ans) : 10 ml par prise, 2 à 3 fois par jour,</p>
+<p class=AmmListePuces1><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>Enfant de 30 à 40 kg (soit 10 à 12 ans) : 10 ml par prise, 3 à 4 fois par jour</p>
+<p class=AmmListePuces1><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>Enfant de plus de 40 kg (soit 12 ans) : 10 ml par prise, 4 fois par jour.</p>
+<p class=AmmCorpsTexte style='margin-top:6.0pt'>Les prises sont à renouveler en cas de besoin et espacées de 4 heures minimum.</p>
+<p class=AmmAnnexeTitre3>Durée de traitement</p>
+<p class=AmmCorpsTexte>Elle doit être brève et ne pas dépasser 5 jours de traitement sans prescription médicale.</p>
+<p class=AmmAnnexeTitre3>Mode d’administration</p>
+<p class=AmmCorpsTexte>Voie orale. Utiliser le gobelet doseur.</p>
+<p class=AmmCorpsTexte>Il convient de privilégier les prises vespérales en raison de l’effet sédatif, surtout en début de traitement, de l’oxomémazine.</p>
+<p class="AmmAnnexeTitre2"><a name="RcpContreindications">4.3. Contre-indications</a>&nbsp;&nbsp;<a href='#HautDePage'><img src='img/BackToTop.jpg' width='15px' height='15px' alt='Retour en haut de la page' title='Retour en haut de la page' /></a></p>
+<p class=AmmCorpsTexte><a name="_Toc142278919">Ce médicament est CONTRE&#8209;INDIQUE dans les cas suivants :</a></p>
+<p class=AmmListePuces1><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>Hypersensibilité à l’un des constituants, et notamment aux antihistaminiques,</p>
+<p class=AmmListePuces1><span style='font-family: Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>En raison de la présence d’oxomémazine</p>
+<p class=AmmListePuces2><span style='font-family:"Courier New"'>o<span style='font:7.0pt "Times New Roman"'>   </span></span>nourrisson (moins de 2 ans) (voir rubrique 4.4),</p>
+<p class=AmmListePuces2><span style='font-family:"Courier New"'>o<span style='font:7.0pt "Times New Roman"'>   </span></span>antécédents d’agranulocytose,</p>
+<p class=AmmListePuces2><span style='font-family:"Courier New"'>o<span style='font:7.0pt "Times New Roman"'>   </span></span>risque de rétention urinaire liée à des troubles urétro-prostatiques,</p>
+<p class=AmmListePuces2><span style='font-family:"Courier New"'>o<span style='font:7.0pt "Times New Roman"'>   </span></span>risque de glaucome par fermeture de l’angle,</p>
+<p class=AmmListePuces1 style='margin-left:17.85pt;text-indent:-17.85pt'><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>En association avec la cabergoline et le quinagolide (voir rubrique 4.5).</p>
+<p class="AmmAnnexeTitre2"><a name="RcpMisesEnGarde">4.4. Mises en garde spéciales et précautions d'emploi</a>&nbsp;&nbsp;<a href='#HautDePage'><img src='img/BackToTop.jpg' width='15px' height='15px' alt='Retour en haut de la page' title='Retour en haut de la page' /></a></p>
+<p class=AmmCorpsTexte><a name="_Toc142278920">Les toux productives, qui sont un élément fondamental de la défense bronchopulmonaire, sont à respecter. </a></p>
+<p class=AmmCorpsTexte>Il est illogique d’associer un expectorant ou un mucolytique à ce médicament antitussif.</p>
+<p class=AmmCorpsTexte>Avant de prescrire un traitement antitussif, il convient de rechercher les causes de la toux qui requièrent un traitement spécifique. </p>
+<p class=AmmCorpsTexte>Si la toux résiste à un antitussif administré à une posologie usuelle, on ne doit pas procéder à une augmentation des doses, mais à un rée<a name="_Hlk157085068">xamen de la situation clinique.</a></p>
+<p class=AmmAnnexeTitre3>Liées à la présence d’oxomémazine<span style='text-decoration:none'> :</span></p>
+<p class=AmmCorpsTexte>Dans la mesure où les phénothiazines ont été considérées comme d’hypothétiques facteurs de risque dans la survenue de mort subite du nourrisson, l’oxomémazine ne doit pas être utilisée chez l’enfant de moins de 2 ans.</p>
+<p class=AmmCorpsTexte>La surveillance (clinique et éventuellement électrique) doit être renforcée chez les épileptiques en raison de la possibilité d’abaissement du seuil épileptogène.</p>
+<p class=AmmCorpsTexte>Le risque d’abus et de pharmacodépendance est faible. Toutefois, des cas d’abus et de pharmacodépendance ont été rapportés principalement chez des adultes après mésusage de l’oxomémazine à visée sédative. La survenue de signes ou symptômes évoquant un usage abusif ou une dépendance à l’oxomémazine doit faire l’objet d’une surveillance attentive.</p>
+<p class=AmmAnnexeTitre4>L’oxomémazine doit être utilisée avec prudence :</p>
+<p class=AmmListePuces1><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>Chez le sujet âgé présentant :</p>
+<p class=AmmListePuces2 style='text-align:justify'><span style='font-family: "Courier New"'>o<span style='font:7.0pt "Times New Roman"'>   </span></span>une plus grande sensibilité à l’hypotension orthostatique, aux vertiges et à la sédation,</p>
+<p class=AmmListePuces2 style='text-align:justify'><span style='font-family: "Courier New"'>o<span style='font:7.0pt "Times New Roman"'>   </span></span>une constipation chronique (risque d’iléus paralytique),</p>
+<p class=AmmListePuces2 style='text-align:justify'><span style='font-family: "Courier New"'>o<span style='font:7.0pt "Times New Roman"'>   </span></span>une éventuelle hypertrophie prostatique.</p>
+<p class=AmmListePuces1 style='margin-left:17.85pt;text-align:justify; text-indent:-17.85pt'><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>Chez les sujets porteurs de certaines affections cardio&#8209;vasculaires, en raison des effets tachycardisants et hypertenseurs des phénothiazines.</p>
+<p class=AmmListePuces1 style='margin-left:17.85pt;text-align:justify; text-indent:-17.85pt'><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>En cas d’insuffisance hépatique et/ou rénale sévères (en raison du risque d’accumulation).</p>
+<p class=AmmCorpsTexte style='margin-top:6.0pt'>En cas d’utilisation chez l’enfant, il convient d’éliminer un asthme bronchique ou un reflux gastro&#8209;œsophagien avant d’utiliser l’oxomémazine comme antitussif.</p>
+<p class=AmmCorpsTexte>La prise de boissons alcoolisées ou de médicaments contenant de l’alcool (voir rubrique 4.5) est fortement déconseillée pendant la durée du traitement.</p>
+<p class=AmmCorpsTexte>Compte-tenu de l’effet photosensibilisant des phénothiazines, il est préférable de ne pas s’exposer au soleil pendant le traitement.</p>
+<p class=AmmCorpsTexte>Les antihistaminiques H1 doivent être utilisés avec prudence en raison du risque de sédation. L’association avec d’autres médicaments sédatifs doit être déconseillée (voir rubrique 4.5).</p>
+<p class=AmmAnnexeTitre3>Liées à la présence d’excipients à effet notoire :</p>
+<p class=AmmCorpsTexte>Ce médicament contient du saccharose. Son utilisation est déconseillée chez les patients présentant une intolérance au fructose, un syndrome de malabsorption du glucose et du galactose ou un déficit en sucrase/isomaltase.</p>
+<p class=AmmCorpsTexte>Ce médicament contient 3,7 g de saccharose par prise de 5 ml et 7,3 g par prise de 10 ml dont il faut tenir compte dans la ration journalière en cas de régime pauvre en sucre ou de diabète.</p>
+<p class=AmmCorpsTexte><span class='gras'>Ce médicament contient moins de 1 mmol (23 mg) de sodium par </span>dose de 10 ml, c’est-à-dire qu’il est essentiellement « sans sodium ».</p>
+<p class="AmmAnnexeTitre2"><a name="RcpInteractionsMed">4.5. Interactions avec d'autres médicaments et autres formes d'interactions</a>&nbsp;&nbsp;<a href='#HautDePage'><img src='img/BackToTop.jpg' width='15px' height='15px' alt='Retour en haut de la page' title='Retour en haut de la page' /></a></p>
+<p class=AmmCorpsTexteGras><a name="_Toc142278921">Médicaments abaissant le seuil épileptogène</a></p>
+<p class=AmmCorpsTexte>L'utilisation conjointe de médicaments proconvulsivants, ou abaissant le seuil épileptogène, devra être soigneusement pesée, en raison de la sévérité du risque encouru. Ces médicaments sont représentés notamment par la plupart des antidépresseurs (imipraminiques, inhibiteurs sélectifs de la recapture de la sérotonine), les neuroleptiques (phénothiazines et butyrophénones), la méfloquine, la chloroquine, le bupropion, le tramadol.</p>
+<p class=AmmCorpsTexteGras>Médicaments atropiniques</p>
+<p class=AmmCorpsTexte>Il faut prendre en compte le fait que les substances atropiniques peuvent additionner leurs effets indésirables et entraîner plus facilement une rétention urinaire, une poussée aiguë de glaucome, une constipation, une sécheresse de la bouche, etc…</p>
+<p class=AmmCorpsTexte>Les divers médicaments atropiniques sont représentés par les antidépresseurs imipraminiques, la plupart des antihistaminiques H1 atropiniques, les antiparkinsoniens anticholinergiques, les antispasmodiques atropiniques, le disopyramide, les neuroleptiques phénothiaziniques ainsi que la clozapine.</p>
+<p class=AmmCorpsTexteGras>Médicaments sédatifs</p>
+<p class=AmmCorpsTexte>Il faut prendre en compte le fait que de nombreux médicaments ou substances peuvent additionner leurs effets dépresseurs du système nerveux central et contribuer à diminuer la vigilance. Il s'agit des dérivés morphiniques (analgésiques, antitussifs et traitements de substitution), des neuroleptiques, des barbituriques, des benzodiazépines, des anxiolytiques autres que les benzodiazépines (par exemple, le méprobamate), des hypnotiques, des antidépresseurs sédatifs (amitriptyline, doxépine, miansérine, mirtazapine, trimipramine), des antihistaminiques H1 sédatifs, des antihypertenseurs centraux, du baclofène et du thalidomide.</p>
+<p class=AmmAnnexeTitre3>Associations contre-indiquées</p>
+<p class=AmmListePuces1 style='text-align:justify'><span style='font-family: Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>Dopaminergiques, hors Parkinson (cabergoline, quinagolide) : Antagonisme réciproque de l’agoniste dopaminergique et des neuroleptiques.</p>
+<p class=AmmAnnexeTitre3><a name="_Toc142278922">Associations déconseillées</a></p>
+<p class=AmmListePuces1 style='text-align:justify'><span style='font-family: Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>Autres médicaments sédatifs : Potentialisation de l’effet sédatif des antihistaminiques H1.</p>
+<p class=AmmListePuces1 style='text-align:justify'><span style='font-family: Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>Consommation d’alcool : Majoration par l’alcool de l’effet sédatif de ces substances. L’altération de la vigilance peut rendre dangereuses la conduite de véhicules et l’utilisation de machines. Eviter la prise de boissons alcoolisées et de médicaments contenant de l'alcool.</p>
+<p class=AmmAnnexeTitre3><a name="_Toc142278923">Associations </a>faisant l'objet de précautions d’emploi</p>
+<p class=AmmListePuces1 style='text-align:justify'><span style='font-family: Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>Topiques gastro&#8209;intestinaux, antiacides et charbon : Diminution de l’absorption digestive des neuroleptiques phénothiaziniques. Prendre les topiques gastro&#8209;intestinaux et antiacides à distance des neuroleptiques phénothiaziniques (plus de 2 heures, si possible).</p>
+<p class=AmmAnnexeTitre3><a name="_Toc142278924">Associations à prendre en compte</a></p>
+<p class=AmmListePuces1 style='text-align:justify'><span style='font-family: Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>Antihypertenseurs : Majoration du risque d’hypotension, notamment orthostatique.</p>
+<p class=AmmListePuces1 style='text-align:justify'><span style='font-family: Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>Bêta&#8209;bloquants (sauf esmolol et sotalol) : Effet vasodilatateur et risques d’hypotension, notamment orthostatique (effet additif).</p>
+<p class=AmmListePuces1 style='text-align:justify'><span style='font-family: Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>Bêta&#8209;bloquants dans l’insuffisance cardiaque (bisoprolol, carvédidol, métoprolol, nébivolol) : effet vasodilatateur et risques d’hypotension, notamment orthostatique (effet additif).</p>
+<p class=AmmListePuces1 style='text-align:justify'><span style='font-family: Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>Dérivés nitrés et apparentés : Majoration du risque d’hypotension, notamment orthostatique.</p>
+<p class="AmmAnnexeTitre2"><a name="RcpFertGrossAllait">4.6. Fertilité, grossesse et allaitement</a>&nbsp;&nbsp;<a href='#HautDePage'><img src='img/BackToTop.jpg' width='15px' height='15px' alt='Retour en haut de la page' title='Retour en haut de la page' /></a></p>
+<p class=AmmCorpsTexte>La présence d’oxomémazine conditionne la conduite à tenir pendant la grossesse et l’allaitement.</p>
+<p class=AmmAnnexeTitre3>Grossesse</p>
+<p class=AmmAnnexeTitre4>Aspect malformatif :</p>
+<p class=AmmCorpsTexte>Il n’y a pas de données fiables de tératogenèse chez l’animal.</p>
+<p class=AmmCorpsTexte>Il n’existe pas actuellement de données suffisamment pertinentes pour évaluer un éventuel effet malformatif ou foetotoxique de l’oxomémazine lorsqu’elle est administrée pendant la grossesse.</p>
+<p class=AmmAnnexeTitre4>Aspect foetotoxique :</p>
+<p class=AmmCorpsTexte>Chez les nouveaux&#8209;nés de mères traitées au long cours par de fortes posologies de médicaments anticholinergiques ont été rarement décrits des signes digestifs liés aux propriétés atropiniques (distension abdominale, iléus méconial, retard à l’émission du méconium, difficulté de la mise en route de l’alimentation, tachycardies, troubles neurologiques…).</p>
+<p class=AmmCorpsTexte>Compte&#8209;tenu de ces données, l’utilisation de ce médicament est déconseillée au cours du premier trimestre de la grossesse. Il ne sera prescrit que si nécessaire par la suite, en se limitant au 3<sup>ème</sup> trimestre, à un usage ponctuel.</p>
+<p class=AmmCorpsTexte>Si l’administration de ce médicament a eu lieu en fin de grossesse, il semble justifié d’observer une période de surveillance des fonctions neurologiques et digestives du nouveau&#8209;né.</p>
+<p class=AmmAnnexeTitre3><a name="_Toc142278927">Allaitement</a></p>
+<p class=AmmCorpsTexte>Le passage de l’oxomémazine dans le lait maternel n’est pas connu. Compte&#8209;tenu des possibilités de sédation ou d’excitation paradoxale du nouveau&#8209;né, et plus encore des risques d’apnée du sommeil évoqués avec les phénothiazines, ce médicament est déconseillé en cas d’allaitement.</p>
+<p class="AmmAnnexeTitre2"><a name="RcpConduite">4.7. Effets sur l'aptitude à conduire des véhicules et à utiliser des machines</a>&nbsp;&nbsp;<a href='#HautDePage'><img src='img/BackToTop.jpg' width='15px' height='15px' alt='Retour en haut de la page' title='Retour en haut de la page' /></a></p>
+<p class=AmmCorpsTexte><a name="_Toc142278929"><span lang=FR-BE>L’attention est appelée, notamment chez les conducteurs de véhicules et les utilisateurs de machines, sur les <span class='souligne'>risques de somnolence</span> attachés à l’emploi de ce médicament, surtout en début de traitement. Ce phénomène est accentué par la prise de boissons alcoolisées ou de médicaments contenant de l’alcool.</span></a></p>
+<p class="AmmAnnexeTitre2"><a name="RcpEffetsIndesirables">4.8. Effets indésirables</a>&nbsp;&nbsp;<a href='#HautDePage'><img src='img/BackToTop.jpg' width='15px' height='15px' alt='Retour en haut de la page' title='Retour en haut de la page' /></a></p>
+<p class=AmmCorpsTexte>Les caractéristiques pharmacologiques de la molécule d’oxomémazine sont à l’origine d’effets indésirables d’inégale intensité et liés ou non à la dose (voir rubrique 5.1) :</p>
+<p class=AmmCorpsTexteGras><span class='souligne'>Effets neurovégétatifs :</span></p>
+<p class=AmmListePuces1><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>sédation ou somnolence, plus marquée en début de traitement ;</p>
+<p class=AmmListePuces1 style='text-align:justify'><span style='font-family: Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>effets anticholinergiques à type de sécheresse des muqueuses, constipation, troubles de l’accommodation, mydriase, palpitations cardiaques, risque de rétention urinaire ;</p>
+<p class=AmmListePuces1 style='text-align:justify'><span style='font-family: Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>hypotension orthostatique ;</p>
+<p class=AmmListePuces1 style='text-align:justify'><span style='font-family: Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>troubles de l’équilibre, vertiges, baisse de la mémoire ou de la concentration (plus fréquent chez le sujet âgé) ;</p>
+<p class=AmmListePuces1 style='text-align:justify'><span style='font-family: Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>incoordination motrice, tremblements ;</p>
+<p class=AmmListePuces1 style='text-align:justify'><span style='font-family: Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>confusion mentale, hallucinations ;</p>
+<p class=AmmListePuces1 style='text-align:justify'><span style='font-family: Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>plus rarement, effets à type d’excitation : agitation, nervosité, insomnie.</p>
+<p class=AmmCorpsTexteGras style='margin-top:6.0pt'><span class='souligne'>Affections psychiatriques :</span></p>
+<p class=AmmListePuces1><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>abus/dépendance médicamenteuse (voir rubrique 4.4) (fréquence indéterminée).</p>
+<p class=AmmCorpsTexteGras style='margin-top:6.0pt'><span class='souligne'>Réactions de sensibilisation :</span></p>
+<p class=AmmListePuces1><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>érythèmes, eczéma, prurit, purpura, urticaire éventuellement géant,</p>
+<p class=AmmListePuces1><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>œdème, plus rarement œdème de Quincke,</p>
+<p class=AmmListePuces1><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>choc anaphylactique,</p>
+<p class=AmmListePuces1 style='margin-bottom:6.0pt'><span style='font-family: Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>photosensibilisation.</p>
+<p class=AmmCorpsTexteGras><span class='souligne'>Affections hématologiques et du système lymphatique :</span></p>
+<p class=AmmListePuces1><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>leucopénie, neutropénie, <span class='souligne'>agranulocytose exceptionnelle</span>,</p>
+<p class=AmmListePuces1><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>anémie hémolytique,</p>
+<p class=AmmListePuces1><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>éosinophilie (fréquence indéterminée),</p>
+<p class=AmmListePuces1><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>thrombocytopénie, y compris purpura thrombocytopénique (fréquence indéterminée).<a name="_Hlk157085119"></a></p>
+<p class=AmmCorpsTexte style='margin-top:6.0pt'>En raison de la présence de glycérol, risque de troubles digestifs et de diarrhée.</p>
+<p class=AmmAnnexeTitre3>Déclaration des effets indésirables suspectés </p>
+<p class=AmmCorpsTexte>La déclaration des effets indésirables suspectés après autorisation du médicament est importante. Elle permet une surveillance continue du rapport bénéfice/risque du médicament. Les professionnels de santé déclarent tout effet indésirable suspecté via le système national de déclaration : Agence nationale de sécurité du médicament et des produits de santé (ANSM) et réseau des Centres Régionaux de Pharmacovigilance - Site internet :<span style='color:red'> </span><a href="https://signalement.social-sante.gouv.fr/">https://signalement.social-sante.gouv.fr/</a>.</p>
+<p class="AmmAnnexeTitre2"><a name="RcpSurdosage">4.9. Surdosage</a>&nbsp;&nbsp;<a href='#HautDePage'><img src='img/BackToTop.jpg' width='15px' height='15px' alt='Retour en haut de la page' title='Retour en haut de la page' /></a></p>
+<p class=AmmCorpsTexte><span class='souligne'>Signes</span> d’un surdosage en oxomémazine : convulsions (surtout chez l’enfant), troubles de la conscience, coma.</p>
+<p class=AmmCorpsTexte>Un traitement symptomatique sera institué en milieu spécialisé.</p>
+<p class="AmmAnnexeTitre1"><a name="RcpPropPharmacologiques">5. PROPRIETES PHARMACOLOGIQUES</a>&nbsp;&nbsp;<a href='#HautDePage'><img src='img/BackToTop.jpg' width='15px' height='15px' alt='Retour en haut de la page' title='Retour en haut de la page' /></a></p>
+<p class="AmmAnnexeTitre2"><a name="RcpPropPharmacodynamiques">5.1. Propriétés pharmacodynamiques</a>&nbsp;&nbsp;<a href='#HautDePage'><img src='img/BackToTop.jpg' width='15px' height='15px' alt='Retour en haut de la page' title='Retour en haut de la page' /></a></p>
+<p class=AmmCorpsTexteGras><a name="_Toc142278933">Classe pharmacothérapeutique : ANTIHISTAMINIQUES À USAGE SYSTÉMIQUE, code ATC : R06AD08 </a></p>
+<p class=AmmCorpsTexte><span class='souligne'>Oxomémazine</span> : antihistaminique H1, phénothiazine à chaîne latérale aliphatique, qui se caractérise par :</p>
+<p class=AmmListePuces1 style='text-align:justify'><span style='font-family: Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>un effet sédatif marqué aux doses usuelles, d’origine histaminergique et adrénolytique centrale,</p>
+<p class=AmmListePuces1><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>un effet anticholinergique à l’origine d’effets indésirables périphériques,</p>
+<p class=AmmListePuces1 style='text-align:justify'><span style='font-family: Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>un effet adrénolytique périphérique, pouvant retentir au plan hémodynamique (risque d’hypotension orthostatique).</p>
+<p class=AmmCorpsTexte style='margin-top:6.0pt'>Les antihistaminiques ont en commun la propriété de s’opposer, par antagonisme compétitif plus ou moins réversible, aux effets de l’histamine notamment sur la peau, les bronches, l’intestin, et les vaisseaux.</p>
+<p class="AmmAnnexeTitre2"><a name="RcpPropPharmacocinetiques">5.2. Propriétés pharmacocinétiques</a>&nbsp;&nbsp;<a href='#HautDePage'><img src='img/BackToTop.jpg' width='15px' height='15px' alt='Retour en haut de la page' title='Retour en haut de la page' /></a></p>
+<p class=AmmCorpsTexte><a name="_Toc142278934">Les données de pharmacocinétique avec l’<span class='souligne'>oxomémazine</span> font défaut.</a></p>
+<p class=AmmCorpsTexte>Pour l’ensemble des antihistaminiques, notamment phénothiaziniques, des éléments d’ordre général peuvent être apportés :</p>
+<p class=AmmListePuces1 style='text-align:justify'><span style='font-family: Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>La biodisponibilité est généralement moyenne. </p>
+<p class=AmmListePuces1 style='text-align:justify'><span style='font-family: Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>Le cas échéant, le métabolisme peut être intense, avec formation de nombreux métabolites, ce qui explique le très faible pourcentage de produit retrouvé inchangé dans les urines.</p>
+<p class=AmmListePuces1 style='text-align:justify'><span style='font-family: Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>La demi&#8209;vie est variable mais souvent prolongée, autorisant une seule prise quotidienne.</p>
+<p class=AmmListePuces1 style='text-align:justify'><span style='font-family: Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>La liposolubilité de ces molécules est à l’origine de la valeur élevée du volume de distribution.</p>
+<p class=AmmCorpsTexte style='margin-top:6.0pt'><span class='souligne'>Variation physiopathologique</span> : risque d’accumulation des antihistaminiques chez les insuffisants rénaux ou hépatiques.</p>
+<p class="AmmAnnexeTitre2"><a name="RcpSecuritePreclinique">5.3. Données de sécurité préclinique</a>&nbsp;&nbsp;<a href='#HautDePage'><img src='img/BackToTop.jpg' width='15px' height='15px' alt='Retour en haut de la page' title='Retour en haut de la page' /></a></p>
+<p class=AmmCorpsTexte><a name="_Toc142278935">Sans objet</a></p>
+<p class="AmmAnnexeTitre1"><a name="RcpDonneesPharmaceutiques">6. DONNEES PHARMACEUTIQUES</a>&nbsp;&nbsp;<a href='#HautDePage'><img src='img/BackToTop.jpg' width='15px' height='15px' alt='Retour en haut de la page' title='Retour en haut de la page' /></a></p>
+<p class="AmmAnnexeTitre2"><a name="RcpListeExcipients">6.1. Liste des excipients</a>&nbsp;&nbsp;<a href='#HautDePage'><img src='img/BackToTop.jpg' width='15px' height='15px' alt='Retour en haut de la page' title='Retour en haut de la page' /></a></p>
+<p class=AmmCorpsTexte><a name="_Toc142278937">Benzoate de sodium, glycérol, acide citrique monohydraté, citrate de sodium, arôme composé caramel (caramel, résinoide de fénugrec, méthylcyclopenténolone hydratée, maltol, acide butyrique, piperonal, diacétyle, éthylvanilline, vanilline, propylèneglycol, eau distillée) caramel (E150), saccharose liquide, eau purifiée.</a></p>
+<p class="AmmAnnexeTitre2"><a name="RcpIncompatibilites">6.2. Incompatibilités</a>&nbsp;&nbsp;<a href='#HautDePage'><img src='img/BackToTop.jpg' width='15px' height='15px' alt='Retour en haut de la page' title='Retour en haut de la page' /></a></p>
+<p class=AmmCorpsTexte><a name="_Toc142278938">Sans objet.</a></p>
+<p class="AmmAnnexeTitre2"><a name="RcpDureeConservation">6.3. Durée de conservation</a>&nbsp;&nbsp;<a href='#HautDePage'><img src='img/BackToTop.jpg' width='15px' height='15px' alt='Retour en haut de la page' title='Retour en haut de la page' /></a></p>
+<p class=AmmCorpsTexte>3 ans.</p>
+<p class=AmmCorpsTexte>A conserver maximum six mois après la première ouverture du flacon.</p>
+<p class="AmmAnnexeTitre2"><a name="RcpPrecConservation">6.4. Précautions particulières de conservation</a>&nbsp;&nbsp;<a href='#HautDePage'><img src='img/BackToTop.jpg' width='15px' height='15px' alt='Retour en haut de la page' title='Retour en haut de la page' /></a></p>
+<p class=AmmCorpsTexte><a name="_Toc142278940">Ce médicament ne nécessite pas de précautions particulières de conservation.</a></p>
+<p class=AmmCorpsTexte><span lang=FR-BE>A conserver dans l’emballage primaire d’origine, à l’abri de la lumière.</span></p>
+<p class=AmmCorpsTexte>Pour les conditions de conservation du médicament après première ouverture, voir la rubrique 6.3.</p>
+<p class="AmmAnnexeTitre2"><a name="RcpEmballage">6.5. Nature et contenu de l'emballage extérieur </a>&nbsp;&nbsp;<a href='#HautDePage'><img src='img/BackToTop.jpg' width='15px' height='15px' alt='Retour en haut de la page' title='Retour en haut de la page' /></a></p>
+<p class=AmmListePuces1 style='text-align:justify'><span style='font-family: Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>150 ml en flacon (verre brun type Ill) avec fermeture sécurité enfant et gobelet doseur (polypropylène). </p>
+<p class=AmmListePuces1 style='text-align:justify'><span style='font-family: Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>200 ml en flacon (verre brun type Ill) avec fermeture sécurité enfant et gobelet doseur (polypropylène). </p>
+<p class=AmmListePuces1 style='margin-bottom:6.0pt;text-align:justify'><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>250 ml en flacon (verre brun type Ill) avec fermeture sécurité enfant et gobelet doseur (polypropylène). </p>
+<p class=AmmCorpsTexte>Toutes les présentations peuvent ne pas être commercialisées.</p>
+<p class="AmmAnnexeTitre2"><a name="RcpPrecEmpl">6.6. Précautions particulières d’élimination et de manipulation</a>&nbsp;&nbsp;<a href='#HautDePage'><img src='img/BackToTop.jpg' width='15px' height='15px' alt='Retour en haut de la page' title='Retour en haut de la page' /></a></p>
+<p class=AmmCorpsTexte><span lang=FR-BE>Pas d’exigences particulières pour l’élimination.</span></p>
+<p class=AmmCorpsTexte><span lang=FR-BE>Tout médicament non utilisé ou déchet doit être éliminé conformément à la réglementation en vigueur.</span></p>
+<p class="AmmAnnexeTitre1"><a name="RcpTitulaireAmm">7. TITULAIRE DE L’AUTORISATION DE MISE SUR LE MARCHE</a>&nbsp;&nbsp;<a href='#HautDePage'><img src='img/BackToTop.jpg' width='15px' height='15px' alt='Retour en haut de la page' title='Retour en haut de la page' /></a></p>
+<p class=AmmCorpsTexteGras style='margin-bottom:0cm;margin-bottom:.0001pt'><a name="_Toc142278943">OPELLA HEALTHCARE FRANCE SAS</a></p>
+<p class=AmmCorpsTexte style='margin-bottom:0cm;margin-bottom:.0001pt'>157 AVENUE CHARLES DE GAULLE</p>
+<p class=AmmCorpsTexte style='margin-bottom:0cm;margin-bottom:.0001pt'>92200 NEUILLY-SUR-SEINE</p>
+<p class="AmmAnnexeTitre1"><a name="RcpNumAutor">8. NUMERO(S) D’AUTORISATION DE MISE SUR LE MARCHE</a>&nbsp;&nbsp;<a href='#HautDePage'><img src='img/BackToTop.jpg' width='15px' height='15px' alt='Retour en haut de la page' title='Retour en haut de la page' /></a></p>
+<p class=AmmListePuces1 style='text-align:justify'><span style='font-family: Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>34009 359 578 4 9 : 150 ml en flacon (verre brun) avec fermeture sécurité enfant et gobelet doseur (polypropylène).</p>
+<p class=AmmListePuces1 style='text-align:justify'><span style='font-family: Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>34009 359 579 0 0 : 200 ml en flacon (verre brun) avec fermeture sécurité enfant et gobelet doseur (polypropylène).</p>
+<p class=AmmListePuces1 style='text-align:justify'><span style='font-family: Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>34009 359 580 9 9 : 250 ml en flacon (verre brun) avec fermeture sécurité enfant et gobelet doseur (polypropylène).</p>
+<p class="AmmAnnexeTitre1"><a name="RcpPremiereAutorisation">9. DATE DE PREMIERE AUTORISATION/DE RENOUVELLEMENT DE L’AUTORISATION</a>&nbsp;&nbsp;<a href='#HautDePage'><img src='img/BackToTop.jpg' width='15px' height='15px' alt='Retour en haut de la page' title='Retour en haut de la page' /></a></p>
+<p class=AmmCorpsTexte><a name="_Toc142278945">[à compléter ultérieurement par le titulaire]</a></p>
+<p class="AmmAnnexeTitre1"><a name="RcpDateRevision">10. DATE DE MISE A JOUR DU TEXTE</a>&nbsp;&nbsp;<a href='#HautDePage'><img src='img/BackToTop.jpg' width='15px' height='15px' alt='Retour en haut de la page' title='Retour en haut de la page' /></a></p>
+<p class=AmmCorpsTexte><a name="_Toc142278946">[à compléter ultérieurement par le titulaire]</a></p>
+<p class="AmmAnnexeTitre1"><a name="RcpDosimetrie">11. DOSIMETRIE</a>&nbsp;&nbsp;<a href='#HautDePage'><img src='img/BackToTop.jpg' width='15px' height='15px' alt='Retour en haut de la page' title='Retour en haut de la page' /></a></p>
+<p class=AmmCorpsTexte>Sans objet.</p>
+<p class="AmmAnnexeTitre1"><a name="RcpInstPrepRadioph">12. INSTRUCTIONS POUR LA PREPARATION DES RADIOPHARMACEUTIQUES</a>&nbsp;&nbsp;<a href='#HautDePage'><img src='img/BackToTop.jpg' width='15px' height='15px' alt='Retour en haut de la page' title='Retour en haut de la page' /></a></p>
+<p class=AmmCorpsTexte><a name="_Toc142278948">Sans objet.</a></p>
+<div style='border:none;border-top:solid windowtext 1.0pt;padding:1.0pt 0cm 0cm 0cm'>
+<p class="AmmAnnexeTitre"><a name="RcpCondPrescription">CONDITIONS DE PRESCRIPTION ET DE DELIVRANCE</a></p>
+</div>
+<p class=AmmCorpsTexte style='margin-top:6.0pt'>Médicament non soumis à prescription médicale.</p>
+<span class='gras'><span style='font-size:12.0pt;font-family:"Arial",sans-serif;color:#0B3D92;
+text-transform:uppercase'><br clear=all>
+</span></span>					
+					<p class="alignright"><a href="#HautDePage">Retour en haut de la page <img src="img/BackToTop.jpg" width="20px" height="20px" alt="Retour en haut de la page" title="Retour en haut de la page" /></a></p>
+				</div>
+			</div>
+		</div>
+	</div>
+
+<table summary="" class="content" width="1000">
+	<tr>
+		<td height="100px">&nbsp;</td>
+	</tr>
+</table>
+<table summary="Pied de page" class="footer" width="1000">
+	<tr>
+		<td>
+			<table summary="" class="tablealigncenter" border="0">
+				<tr>
+					<td width="100px" class="aligncenter"><a id="lien_ansm" href="http://ansm.sante.fr/" target="_blank"><img src="img/Logo_ANSM.png" width="150" height="60" alt="ANSM - Agence nationale de sécurité du médicament et des produits de santé" title="L'ANSM met à disposition les principales informations issues de l'Autorisation de mise sur le marché, l'appartenance à un groupe générique, les liens vers les informations de sécurité qu'elle publie, l'identification des médicaments sous surveillance renforcée - nouvelle fenêtre" /></a></td>
+					          <td>&nbsp;</td>
+					<td width="100px" class="aligncenter"><img src="img/Logo_HAS.png" width="150" height="60" alt="HAS - Haute autorité de santé" title="La HAS met à disposition les informations relatives au service médical rendu, à l'amélioration du service médical rendu ainsi que les liens vers les avis de la Commission de la Transparence correspondants - nouvelle fenêtre" /></td>
+					<td>&nbsp;</td>
+					<td width="100px" class="aligncenter"><img src="img/Logo_CNAM.png" width="150" height="60" alt="UNCAM - Unin nationale des caisses d'assurance maladie" title="L'UNCAM met à disposition le taux de remboursement, le prix et les indications remboursables le cas échéant, ainsi que l'agrément aux collectivités - nouvelle fenêtre" /></td>
+          				</tr>
+			</table> 
+		</td>
+	</tr>
+</table>
+<table summary="" class="finpage" width="1000">
+	<tr>
+		<td height="100px" class="aligncenter">
+			<a class="navigation" href="plan.php">Plan du site</a>&nbsp;|&nbsp;
+			<a class="navigation" href="accessibilite.php">Accessibilité</a>&nbsp;|&nbsp;
+			<a class="navigation" href="contact.php">Contact</a>&nbsp;|&nbsp;
+			<a class="navigation" href="telechargement.php">Téléchargement</a>&nbsp;|&nbsp;
+			<a class="navigation" href="DeclarationConfidentialite.php">Declaration de confidentialité</a>&nbsp;|&nbsp;
+			<a class="navigation" href="http://www.service-public.fr/" title="Service Public - Nouvelle fenêtre" target="_blank">Service-Public.fr</a>&nbsp;|&nbsp;
+			<a class="navigation" href="http://www.legifrance.gouv.fr/" title="Legifrance - Nouvelle fenêtre" target="_blank">Legifrance</a>&nbsp;|&nbsp;
+			<a class="navigation" href="http://www.gouvernement.fr/" title="Gouvernement - Nouvelle fenêtre" target="_blank" >Gouvernement.fr</a>
+		</td>
+	</tr>
+</table>
+
+
+
+<!-- Matomo -->
+<script type="text/javascript">
+  var _paq = window._paq = window._paq || [];
+  /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
+  _paq.push(['trackPageView']);
+  _paq.push(['enableLinkTracking']);
+  (function() {
+    var u="https://stats.integra.fr/";
+    _paq.push(['setTrackerUrl', u+'matomo.php']);
+    _paq.push(['setSiteId', '79']);
+    var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+    g.type='text/javascript'; g.async=true; g.src=u+'matomo.js'; s.parentNode.insertBefore(g,s);
+  })();
+</script>
+<!-- End Matomo Code -->
+
+
+
+</body>
+</html>

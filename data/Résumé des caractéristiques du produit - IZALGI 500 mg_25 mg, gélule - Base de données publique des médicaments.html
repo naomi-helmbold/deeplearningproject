@@ -1,0 +1,621 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="fr" lang="fr">
+<head>
+	<title>Résumé des caractéristiques du produit - IZALGI 500 mg/25 mg, gélule  - Base de données publique des médicaments</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=windows-1252"/>
+	<meta name="robots" content="index, follow"/>
+	<meta name="Description" content="Base de données publique des médicaments"/>
+	<meta name="Keywords" content="base, données, publique, médicaments, Résumé des caractéristiques du produit, IZALGI 500 mg/25 mg, gélule "/>
+	<meta name="Subject" content="medicament"/>
+	<link href='https://fonts.googleapis.com/css?family=Noticia+Text' rel='stylesheet' type='text/css' />
+	<link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro' rel='stylesheet' type='text/css' />
+	<link href="style/style_bdm.css?v=2.2.3" type="text/css" rel="stylesheet"/>
+	<link href="style/style_RCP_Notice.css" type="text/css" rel="stylesheet"/>
+  <link rel="alternate" href="http://m.base-donnees-publique.medicaments.gouv.fr/#!info-67613291">
+    <script type="text/javascript" src="scripts/autocomplete.js?v=2.2.3"></script>
+	<script type="text/javascript" src="scripts/jquery.js"></script>
+    <script type="text/javascript" src="scripts/jquery-ui.min.js"></script>
+	<script type="text/javascript" src="scripts/common.js"></script>
+	<link rel="icon" type="image/x-icon" href="favicon.ico" />
+</head>
+
+<body>
+
+<a name="HautDePage" />
+<div id="bandeauhaut">
+	<a id="lien_ministere" class="lienmenu" href="http://www.sante.gouv.fr" target="_blank" title="Site du ministère des affaires sociales et de la santé - nouvelle fenêtre"><img id="logoministere" src="img/Logo_Ministere.jpg"  alt="Logo du ministère des affaires sociales et de la santé"/></a>
+	<h1 class="texteTitreSite">
+		Base <span class="texteBleu">de</span> données <span class="texteBleu">publique</span><br/><span class="texteBleu">des</span> médicaments
+	</h1>
+		<a id="lien_medicament_gouv" class="lienEspaceMedic" target="_blank" href="http://medicaments.gouv.fr" title="Visiter [medicaments.gouv.fr] - nouvelle fenêtre">Visiter [medicaments.gouv.fr] <img src="/img/icone_lien.png" alt="Visiter [medicaments.gouv.fr]"  title="Visiter [medicaments.gouv.fr] - nouvelle fenetre" /></a>
+</div>
+<!--div align="center">
+	<a id="banniere" target="_blank" href="http://social-sante.gouv.fr/soins-et-maladies/medicaments/medicaments-generiques/" title="Visiter [medicaments.gouv.fr] - M?dicaments g?n?riques">
+		<img width="1000"   src ="/img/carrouselbannieres.gif" alt="Visiter [medicaments.gouv.fr] - M?dicaments g?n?riques" title="Visiter [medicaments.gouv.fr] - M?dicaments g?n?riques" />
+	</a>
+</div-->
+
+<div id="menuhaut">
+	<span id="menuhaut_gauche">
+		<a id="lien_accueil" class="navigation" href="index.php">Accueil</a>&nbsp;|&nbsp;
+		<a id="lien_glossaire" class="navigation" href="glossaire.php">Glossaire</a>&nbsp;|&nbsp;
+		<a id="lien_aide" class="navigation" href="aide.php">Aide</a>		
+	</span>
+	
+		
+	<span id="menuhaut_dernmaj">
+        <br>Dernière <span title=" 2.4.4
+">mise à jour</span> le 03/03/2025	</span>
+</div>
+
+	<script language="javascript" type="text/javascript">
+		//<![CDATA[ 
+		function Aff(men) {
+			document.write("<ul class=\"menuDoc\">");
+			for(var no_rub=0;no_rub<men.num_rub;no_rub++) {
+				document.write("<li><a class='leftMenu' href='"+menu[no_rub].page+"'>");
+				document.write(men[no_rub].txt);
+				document.write("</a></li>");
+				if (men[no_rub].nb_lien != 0){
+					document.write("<ul class=\"sousMenuDoc\">");
+				}
+				for(var no_lien=0;no_lien<men[no_rub].nb_lien;no_lien++) {
+					document.write("<li><a class='leftMenu' href='"+men[no_rub][no_lien].page+"'>");
+					document.write(men[no_rub][no_lien].txt);
+					document.write("</a></li>");
+				}
+				if (men[no_rub].nb_lien != 0){
+					document.write("</ul>");
+				}
+			}
+			document.write("</ul>");
+		}
+		
+		function CreerMenu(police,imgRub,imgOption,imgOptionFin,hauteur) {
+			this.num_rub=0;
+			this.police=police;
+			this.imgRub=imgRub;
+			this.imgOpt=imgOption;
+			this.imgOptFin=imgOptionFin;
+			this.hauteur=hauteur;
+			this.AddRub=AddRub;
+			this.AddLien=AddLien;
+		}
+		
+		function AddRub(txt,aff,page) {
+			var rub = new Object;
+				rub.txt=txt;
+				rub.aff=aff;
+				rub.page=page;
+				rub.nb_lien=0;
+			this[this.num_rub]=rub;
+			this.num_rub++;
+		}
+
+		function AddLien(txt,page) {
+			var no_rub = this.num_rub-1;
+			var no_lien= this[no_rub].nb_lien;
+			var lien = new Object;
+				lien.txt=txt;
+				lien.page=page;
+			this[no_rub][no_lien]=lien;
+			this[no_rub].nb_lien++;
+		}
+		var menu=new CreerMenu("arial","img/dyn04.gif","img/dyn22.gif","img/dyn55.gif",18);
+		//]]> 
+		menu.AddRub("Dénomination","O","#RcpDenomination");
+			menu.AddRub("Composition","O","#RcpCompoQualiQuanti");
+			menu.AddRub("Forme pharma.","O","#RcpFormePharm");
+			menu.AddRub("Clinique","O","#RcpDonneesCliniques");
+			menu.AddLien("Indic. thérapeutiques","#RcpIndicTherap");
+				menu.AddLien("Posologie","#RcpPosoAdmin");
+				menu.AddLien("Contre-indications","#RcpContreindications");
+				menu.AddLien("Mise en garde","#RcpMisesEnGarde");
+				menu.AddLien("Interactions","#RcpInteractionsMed");
+				menu.AddLien("Grossesse, allait.","#RcpFertGrossAllait");
+				menu.AddLien("Conduite véhicules","#RcpConduite");
+				menu.AddLien("Effets indésirables","#RcpEffetsIndesirables");
+				menu.AddLien("Surdosage","#RcpSurdosage");
+				menu.AddRub("Pharmacologie","O","#RcpPropPharmacologiques");
+			menu.AddLien("Pharmacodynamie","#RcpPropPharmacodynamiques");
+				menu.AddLien("Pharmacocinétique","#RcpPropPharmacocinetiques");
+				menu.AddLien("Sécurité préclinique","#RcpSecuritePreclinique");
+				menu.AddRub("Pharmaceutique","O","#RcpDonneesPharmaceutiques");
+			menu.AddLien("Liste excipients","#RcpListeExcipients");
+				menu.AddLien("Incompatibilités","#RcpIncompatibilites");
+				menu.AddLien("Durée conservation","#RcpDureeConservation");
+				menu.AddLien("Conservation","#RcpPrecConservation");
+				menu.AddLien("Emballage","#RcpEmballage");
+				menu.AddLien("Utilisation/manipulation","#RcpPrecEmpl");
+				menu.AddRub("Titulaire AMM","O","#RcpTitulaireAmm");
+			menu.AddRub("Présentations","O","#RcpNumAutor");
+			menu.AddRub("Autorisation, renouv.","O","#RcpPremiereAutorisation");
+			menu.AddRub("Date de révision","O","#RcpDateRevision");
+			menu.AddRub("Dosimétrie","O","#RcpDosimetrie");
+			menu.AddRub("Préparation radiopharma.","O","#RcpInstPrepRadioph");
+				</script>
+
+	<div id="container">
+		<div id="leftnav">
+			<div id="cadreMenuGauche">
+				<h2 class="sommaireMenu">Sommaire</h2>
+				<div id="menuGauche">
+					<script language="JavaScript" type="text/javascript">Aff(menu);</script>
+				</div>
+			</div>
+		</div>
+		<div id="contentPrincipal">
+			<div id="boutonsliens">
+				<a id='lien_fiche_info' href='extrait.php?specid=67613291' ><img id="ongletficheinfo" alt="Onglet fiche information" src="img/onglet_fiche_info_vert.png" /></a><a id='lien_rcp' href='affichageDoc.php?specid=67613291&amp;typedoc=R'><img class="onglet" alt="Onglet résumé des caractéristiques du produit" src="img/onglet_rcp_gris.png" /></a><a id='lien_notice' href='affichageDoc.php?specid=67613291&amp;typedoc=N'><img class="onglet" alt="Onglet notice patient" src="img/onglet_notice_vert.png" /></a>			</div>
+			<div class="titredeno">
+				<table summary="" border="0" cellspacing="0">
+					<tr><td colspan="3" height="10px"></td></tr>
+					<tr>
+						<td width="15px">&nbsp;</td>
+						<td width="685px"><h1 class="textedeno">IZALGI 500 mg/25 mg, gélule  - Résumé des caractéristiques du produit</h1></td>
+						<td width="43px" class="tdcenter"><a href="Javascript:void(null)" onclick="print();"><img src="img/imprimante.png" height="20px" width="20px" alt="Imprimer le document" title="Imprimer le document" border="0" /></a></td>
+					</tr>
+					<tr><td colspan="3" height="10px"></td></tr>
+				</table>
+			</div>
+			
+			<div id="contentDocument">
+				<div id="textDocument">
+					<p class="DateNotif">ANSM - Mis à jour le : 02/01/2025</p>
+<p class="AmmAnnexeTitre1"><a name="RcpDenomination">1. DENOMINATION DU MEDICAMENT</a>&nbsp;&nbsp;<a href='#HautDePage'><img src='img/BackToTop.jpg' width='15px' height='15px' alt='Retour en haut de la page' title='Retour en haut de la page' /></a></p>
+<p class=AmmCorpsTexteGras>IZALGI 500 mg/25 mg, gélule</p>
+<p class="AmmAnnexeTitre1"><a name="RcpCompoQualiQuanti">2. COMPOSITION QUALITATIVE ET QUANTITATIVE</a>&nbsp;&nbsp;<a href='#HautDePage'><img src='img/BackToTop.jpg' width='15px' height='15px' alt='Retour en haut de la page' title='Retour en haut de la page' /></a></p>
+<p class=AmmComposition>Paracétamol.................................................................................................................... 500,00 mg</p>
+<p class=AmmComposition>Poudre d’opium (titrée à 10% m/m en morphine base anhydre)............................................. 25,00 mg</p>
+<p class=AmmCorpsTexte align=center style='text-align:center'>Pour une gélule</p>
+<p class=AmmCorpsTexte>Pour la liste complète des excipients, voir rubrique 6.1.</p>
+<p class="AmmAnnexeTitre1"><a name="RcpFormePharm">3. FORME PHARMACEUTIQUE</a>&nbsp;&nbsp;<a href='#HautDePage'><img src='img/BackToTop.jpg' width='15px' height='15px' alt='Retour en haut de la page' title='Retour en haut de la page' /></a></p>
+<p class=AmmCorpsTexte><a name="_Toc142278915">Gélule.</a></p>
+<p class=AmmCorpsTexte>Gélule verte n°0 allongée contenant une poudre de couleur légèrement grisâtre.</p>
+<p class="AmmAnnexeTitre1"><a name="RcpDonneesCliniques">4. DONNEES CLINIQUES</a>&nbsp;&nbsp;<a href='#HautDePage'><img src='img/BackToTop.jpg' width='15px' height='15px' alt='Retour en haut de la page' title='Retour en haut de la page' /></a></p>
+<p class="AmmAnnexeTitre2"><a name="RcpIndicTherap">4.1. Indications thérapeutiques</a>&nbsp;&nbsp;<a href='#HautDePage'><img src='img/BackToTop.jpg' width='15px' height='15px' alt='Retour en haut de la page' title='Retour en haut de la page' /></a></p>
+<p class=AmmCorpsTexte><a name="_Toc142278917">Traitement symptomatique de la douleur aiguë d’intensité modérée à intense et/ou ne répondant pas à l’utilisation d’antalgiques de palier 1 utilisés seuls.</a></p>
+<p class="AmmAnnexeTitre2"><a name="RcpPosoAdmin">4.2. Posologie et mode d'administration</a>&nbsp;&nbsp;<a href='#HautDePage'><img src='img/BackToTop.jpg' width='15px' height='15px' alt='Retour en haut de la page' title='Retour en haut de la page' /></a></p>
+<p class=AmmAnnexeTitre3><a name="_Toc142278918">Posologie</a></p>
+<p class=AmmCorpsTexte>Comme pour tous les médicaments antalgiques, la posologie de IZALGI 500 mg/25 mg, gélule doit être adaptée à l’intensité de la douleur et à la réponse clinique de chaque patient.</p>
+<p class=AmmCorpsTexte>La posologie usuelle est de 1 gélule, à renouveler si besoin au bout de 4 à 6 heures. Il n'est généralement pas nécessaire de dépasser 4 gélules par jour. </p>
+<p class=AmmCorpsTexte>Pour éviter un risque de surdosage, vérifier l’absence de paracétamol dans la composition d’autres médicaments associés. LA DOSE TOTALE DE PARACETAMOL NE DOIT PAS EXCEDER 4 GRAMMES PAR JOUR (voir rubrique 4.9).</p>
+<p class=AmmCorpsTexte>La dose totale journalière de paracétamol ne doit pas excéder 3 grammes/jour dans les situations suivantes :</p>
+<p class=AmmCorpsTexte>Poids &lt; 50 kg, insuffisance hépatocellulaire légère à modérée, insuffisance rénale sévère (clairance de la créatinine &lt; 10 ml/min), alcoolisme chronique, dénutrition chronique, jeûne prolongé, sujet âgé.</p>
+<p class=AmmCorpsTexte>La poudre d’opium est titrée à 10% de morphine ce qui correspond à 2,5 mg de morphine par gélule. </p>
+<p class=AmmCorpsTexte>Les prises doivent toujours être espacées d’au moins 4 heures.</p>
+<p class=AmmCorpsTexte>Les prises systématiques régulièrement réparties sur les 24h permettent d’éviter les oscillations de la douleur.</p>
+<p class=AmmCorpsTexte>Il n’existe pas de données d’efficacité et de sécurité au-delà de 10 jours de traitement (voir rubrique 5.1).</p>
+<p class=AmmCorpsTexte><span class='souligne'>Sujet âgé</span> : la posologie sera diminuée, et pourra éventuellement être augmentée en fonction de la tolérance et des besoins.</p>
+<p class=AmmCorpsTexte><span class='souligne'>Insuffisance rénale</span> : en cas d’insuffisance rénale sévère (clairance de la créatinine inférieure à 10 ml/min), l’intervalle entre deux prises sera au minimum de 8 heures. </p>
+<p class=AmmCorpsTexte><span class='souligne'>Enfants et adolescents</span> : Ce médicament est contre-indiqué chez l’enfant en dessous de 15 ans compte-tenu de l’absence de données concernant la sécurité et l’efficacité (voir rubrique 4.3).</p>
+<p class=AmmAnnexeTitre3>Mode d’administration</p>
+<p class=AmmCorpsTexte>Voie orale.</p>
+<p class=AmmCorpsTexte>Les gélules sont destinées à être ingérées telles quelles à l’aide d’un grand verre d’eau.</p>
+<p class="AmmAnnexeTitre2"><a name="RcpContreindications">4.3. Contre-indications</a>&nbsp;&nbsp;<a href='#HautDePage'><img src='img/BackToTop.jpg' width='15px' height='15px' alt='Retour en haut de la page' title='Retour en haut de la page' /></a></p>
+<p class=AmmListePuces1 style='text-align:justify'><a name="_Toc142278919"><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>Enfants de moins de 15 ans.</a></p>
+<p class=AmmListePuces1 style='text-align:justify'><span style='font-family: Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>Hypersensibilité au paracétamol, à la poudre d’opium ou à l’un des excipients, mentionnés à la rubrique 6.1.</p>
+<p class=AmmListePuces1 style='text-align:justify'><span style='font-family: Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>Insuffisance hépatocellulaire sévère (avec ou sans encéphalopathie) (voir rubrique 4.4).</p>
+<p class=AmmListePuces1 style='text-align:justify'><span style='font-family: Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>Asthme et insuffisance respiratoire (en raison de la présence de poudre d’opium).</p>
+<p class=AmmListePuces1 style='text-align:justify'><span style='font-family: Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>Allaitement.</p>
+<p class=AmmListePuces1 style='text-align:justify'><span style='font-family: Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>Association aux agonistes-antagonistes morphiniques (nalbuphine, buprénorphine, pentazocine) et aux morphiniques antagonistes partiels (naltrexone, nalméfène) (voir rubrique 4.5).</p>
+<p class="AmmAnnexeTitre2"><a name="RcpMisesEnGarde">4.4. Mises en garde spéciales et précautions d'emploi</a>&nbsp;&nbsp;<a href='#HautDePage'><img src='img/BackToTop.jpg' width='15px' height='15px' alt='Retour en haut de la page' title='Retour en haut de la page' /></a></p>
+<p class=AmmAnnexeTitre3><a name="_Toc142278920">Mises en garde spéciales</a></p>
+<p class=AmmCorpsTexte>Ce médicament contient du paracétamol. Pour éviter un risque de surdosage, vérifier l’absence de paracétamol dans la composition d’autres médicaments associés. LA DOSE TOTALE DE PARACETAMOL NE DOIT PAS EXCEDER 4 GRAMMES PAR JOUR (voir rubrique 4.9). Dans les situations suivantes, la dose totale de 3 grammes/jour ne devra pas être dépassée (voir rubrique 4.2) :</p>
+<p class=AmmListePuces1><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>poids &lt; 50kg,</p>
+<p class=AmmListePuces1><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>insuffisance hépatocellulaire légère à modérée,</p>
+<p class=AmmListePuces1><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>insuffisance rénale sévère (clairance de la créatinine &lt; 10 ml/min),</p>
+<p class=AmmListePuces1><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>alcoolisme chronique,</p>
+<p class=AmmListePuces1><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>dénutrition chronique,</p>
+<p class=AmmListePuces1><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>jeûne prolongé,</p>
+<p class=AmmListePuces1 style='margin-top:0cm;margin-right:0cm;margin-bottom: 6.0pt;margin-left:17.85pt;text-indent:-17.85pt'><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>sujet âgé.</p>
+<p class=AmmCorpsTexte>L’utilisation prolongée et à des doses supérieures à celles recommandées peut conduire à un état de pharmacodépendance. Chez les patients prédisposés, le traitement doit se faire sous surveillance médicale.</p>
+<p class=AmmCorpsTexte>IZALGI 500 mg/25 mg, gélule ne doit être utilisé qu’après une évaluation soigneuse du rapport bénéfice-risque, suivant l’étiologie de la douleur et le profil du patient.</p>
+<p class=AmmCorpsTexte><a name="_Hlk185336015">Des cas d'acidose métabolique à trou anionique élevé (AMTAE) due à une acidose pyroglutamique ont été rapportés chez les patients atteints d'une maladie grave telle qu’une insuffisance rénale sévère et un sepsis, ou chez les patients souffrant de malnutrition ou d’autres sources de déficit en glutathion (par exemple, l’alcoolisme chronique) qui ont été traités par du paracétamol à une dose thérapeutique pendant une période prolongée ou par une association de paracétamol et de flucloxacilline. En cas de suspicion d’AMTAE due à une acidose pyroglutamique, il est recommandé d’arrêter immédiatement le paracétamol et d’effectuer une surveillance étroite. La mesure de la 5-oxoproline urinaire peut être utile pour identifier l’acidose pyroglutamique comme cause sous-jacente de l’AMTAE chez les patients présentant de multiples facteurs de risque.</a></p>
+<p class=AmmCorpsTexteGras>Risque lié à l'utilisation concomitante de médicaments sédatifs tels que les benzodiazépines ou autres médicaments apparentés :</p>
+<p class=AmmCorpsTexte>L'utilisation concomitante d’IZALGI et de sédatifs tels que les benzodiazépines ou autres médicaments apparentés peut entraîner une sédation, une dépression respiratoire, un coma et la mort. En raison de ces risques, la prescription concomitante avec ces médicaments sédatifs doit être réservée aux patients pour lesquels d'autres options thérapeutiques ne sont pas possibles. Si la décision de prescrire IZALGI en même temps que des médicaments sédatifs est prise, la dose efficace la plus faible doit être utilisée et la durée du traitement doit être aussi courte que possible.</p>
+<p class=AmmCorpsTexte>Les patients doivent être suivis de près pour surveiller la survenue de signes et symptômes de dépression respiratoire et de sédation.</p>
+<p class=AmmCorpsTexte>À cet égard, il est fortement recommandé d'informer les patients et leurs soignants afin qu’ils connaissent ces symptômes (voir rubrique 4.5).</p>
+<p class=AmmCorpsTexteGras>Traitement antiplaquettaire par inhibiteur du P2Y12 par voie orale</p>
+<p class=AmmCorpsTexte>Une réduction de l’efficacité du traitement par inhibiteur P2Y12 a été observée, dès le premier jour de traitement concomitant par inhibiteur P2Y12 et morphine (voir rubrique 4.5).</p>
+<p class=AmmAnnexeTitre3>Précautions d'emploi</p>
+<p class=AmmCorpsTexte>Il est recommandé de ne pas dépasser les doses conseillées et de respecter l’intervalle minimal d’administration.</p>
+<p class=AmmAnnexeTitre4>Patients âgés</p>
+<p class=AmmCorpsTexte>Chez les personnes âgées et très âgées, la sensibilité particulière aux effets antalgiques mais aussi aux effets centraux (confusion) ou digestifs, associée à une baisse de la fonction rénale, doit inciter à la prudence. La posologie devra être réduite en augmentant l’intervalle entre les prises (voir rubrique 4.2).</p>
+<p class=AmmAnnexeTitre4>Patients atteints d’insuffisance rénale</p>
+<p class=AmmCorpsTexte>La posologie devra être réduite en augmentant l’intervalle entre les prises (voir rubrique 4.2).</p>
+<p class=AmmAnnexeTitre4>Patients atteints d’insuffisance hépatocellulaire</p>
+<p class=AmmCorpsTexte>IZALGI 500 mg/25 mg, gélule n’est pas recommandé chez les patients atteints d’insuffisance hépatocellulaire légère à modérée, en raison de l’absence d’évaluation dans cette population.</p>
+<p class=AmmCorpsTexte>La poudre d’opium peut précipiter ou aggraver l’encéphalopathie (voir rubrique 4.3).</p>
+<p class=AmmAnnexeTitre4>Sujets porteurs d’un déficit en G6PD</p>
+<p class=AmmCorpsTexte>Des cas d’hémolyse aiguë ont été rapportés chez ces patients avec des doses élevées de paracétamol, c'est-à-dire supérieures à la posologie maximale quotidienne recommandée. Il est important de respecter les posologies.</p>
+<p class=AmmAnnexeTitre3>Autres</p>
+<p class=AmmCorpsTexte>En cas de découverte d’une hépatite virale aiguë, il convient d’arrêter le traitement.</p>
+<p class=AmmCorpsTexte>L’absorption d’alcool est déconseillée pendant le traitement.</p>
+<p class=AmmCorpsTexte>Du fait de la présence d’opium, une pathologie urétro-prostatique ou vésicale, fréquente chez le sujet âgé, expose au risque de rétention urinaire.</p>
+<p class=AmmCorpsTexte>En cas d’hypertension intracrânienne, la poudre d’opium risque d’augmenter l’importance de cette hypertension.</p>
+<p class=AmmCorpsTexte>La co-prescription de traitements psychotropes, dépresseurs du SNC ou avec un effet anti-cholinergique augmente la survenue d’effets indésirables (voir rubrique 4.5).</p>
+<p class=AmmCorpsTexte>IZALGI 500 mg/25 mg devra être utilisé avec précaution chez les patients souffrant de troubles convulsifs. L'opium peut abaisser le seuil épileptogène chez les patients ayant des antécédents d'épilepsie.</p>
+<p class=AmmCorpsTexte>Il est impératif de s’assurer de l’absence de syndrome occlusif avant de mettre en route le traitement. La constipation est un effet indésirable connu de la poudre d’opium.</p>
+<p class=AmmCorpsTexte>Chez le patient cholécystectomisé, la poudre d’opium peut provoquer un syndrome douloureux abdominal aigu de type biliaire ou pancréatique, le plus souvent associé à des anomalies biologiques, évocateur d’un spasme du sphincter d’Oddi.</p>
+<p class=AmmCorpsTexte>Chez les patients présentant une atteinte du tractus biliaire et une pancréatite administration d'opium doit être prudente et accompagnée d’une surveillance En cas de toux productive, la poudre d'opium peut entraver l'expectoration.</p>
+<p class=AmmCorpsTexte>L’attention des sportifs doit être attirée sur le fait que cette spécialité contient de la morphine et que cette substance active est inscrite sur la liste des substances dopantes.</p>
+<p class="AmmAnnexeTitre2"><a name="RcpInteractionsMed">4.5. Interactions avec d'autres médicaments et autres formes d'interactions</a>&nbsp;&nbsp;<a href='#HautDePage'><img src='img/BackToTop.jpg' width='15px' height='15px' alt='Retour en haut de la page' title='Retour en haut de la page' /></a></p>
+<p class=AmmAnnexeTitre3><a name="_Toc142278921">LIEES AU PARACETAMOL</a></p>
+<p class=AmmAnnexeTitre3>Associations faisant l'objet de précautions d’emploi</p>
+<p class=AmmCorpsTexteGras>+ Anticoagulant oraux :</p>
+<p class=AmmCorpsTexte>Risque d’augmentation de l’effet de l’anticoagulant oral et du risque hémorragique en cas de prise de paracétamol aux doses maximales (4 g/jour) pendant au moins 4 jours. Contrôle régulier de l’INR. Adaptation éventuelle de la posologie de l’anticoagulant oral pendant le traitement par le paracétamol et après son arrêt.</p>
+<p class=AmmCorpsTexteGras>+ Flucloxaciline</p>
+<p class=AmmCorpsTexte><a name="_Hlk185336381">Des précautions doivent être prises lorsque le paracétamol est utilisé en même temps que la flucloxacilline, car une prise concomitante a été associée à une acidose métabolique à trou anionique élevé due à une acidose pyroglutamique, en particulier chez les patients présentant des facteurs de risque (voir rubrique 4.4).</a></p>
+<p class=AmmCorpsTexteGras>+ Interférence avec les examens paracliniques</p>
+<p class=AmmCorpsTexte>La prise de paracétamol peut fausser le dosage de la glycémie par la méthode à la glucose oxydase-peroxydase en cas de concentrations anormalement élevées.</p>
+<p class=AmmCorpsTexte>La prise de paracétamol peut fausser le dosage de l’acide urique sanguin par la méthode à l’acide phosphotungstique.</p>
+<p class=AmmAnnexeTitre3>LIEES A L’OPIUM</p>
+<p class=AmmAnnexeTitre3>Associations contre-indiquées</p>
+<p class=AmmCorpsTexteGras>+ Morphiniques agonistes-antagonistes (nalbuphine, buprénorphine, pentazocine) :</p>
+<p class=AmmCorpsTexte>Diminution de l’effet antalgique par blocage compétitif des récepteurs avec risque d’apparition d’un syndrome de sevrage.</p>
+<p class=AmmCorpsTexteGras>+ Morphiniques antagonistes partiels (naltrexone, nalméfène) :</p>
+<p class=AmmCorpsTexte>Risque de diminution de l’effet antalgique.</p>
+<p class=AmmAnnexeTitre3><a name="_Toc142278922">Associations déconseillées</a></p>
+<p class=AmmCorpsTexteGras>+ Alcool (boisson ou excipient) :</p>
+<p class=AmmCorpsTexte>Majoration par l’alcool de l’effet sédatif des analgésiques morphiniques. L’altération de la vigilance peut rendre dangereuses la conduite de véhicules et l’utilisation des machines.</p>
+<p class=AmmCorpsTexte>Eviter la prise de boissons alcoolisées et de médicaments contenant de l’alcool.</p>
+<p class=AmmAnnexeTitre3><a name="_Toc142278924">Associations à prendre en compte</a></p>
+<p class=AmmCorpsTexteGras>+ Autres analgésiques morphiniques agonistes, antitussifs morphine-like, antitussifs morphiniques vrais, barbituriques :</p>
+<p class=AmmCorpsTexte>Risque majoré de dépression respiratoire, pouvant être fatale en cas de surdosage.</p>
+<p class=AmmCorpsTexteGras>+ Médicaments sédatifs tels que les benzodiazépines ou les médicaments apparentés :</p>
+<p class=AmmCorpsTexte>L'utilisation concomitante d'opioïdes avec des médicaments sédatifs tels que les benzodiazépines ou les médicaments apparentés augmente le risque de sédation, de dépression respiratoire, de coma et de décès en raison d'un effet dépresseur additif sur le SNC. La dose et la durée de l'utilisation concomitante doivent être limitées (voir rubrique 4.4).</p>
+<p class=AmmCorpsTexteGras>+ Autres dépresseurs du SNC : antidépresseurs sédatifs, antihistaminiques H1 sédatifs, anxiolytiques et hypnotiques, neuroleptiques, clonidine et apparentés, thalidomide :</p>
+<p class=AmmCorpsTexte>Majoration de la dépression centrale. L’altération de la vigilance peut rendre dangereuses la conduite de véhicules et l’utilisation des machines.</p>
+<p class=AmmCorpsTexte><a name="_Toc142278928"></a><a name="_Toc142278926"></a><a name="_Toc142278925">Une exposition retardée et réduite au traitement antiplaquettaire par inhibiteur du P2Y12 par voie orale a été observée chez des patients atteints du syndrome coronarien aigu traités par morphine. Cette interaction peut être liée à une diminution de la motilité gastro-intestinale et s’applique aux autres opioïdes. Même si les conséquences cliniques ne sont pas connues, les données indiquent une réduction potentielle de l’efficacité des inhibiteurs de P2Y12 chez les patients co-traités avec la morphine et inhibiteur de P2Y12 (voir rubrique 4.4). Chez les patients atteints du syndrome coronarien aigu, chez qui la morphine ne peut être retirée et pour lesquels une inhibition rapide de P2Y12 est jugée cruciale, l'utilisation d'un inhibiteur de P2Y12 par voie parentérale peut être envisagée.</a></p>
+<p class="AmmAnnexeTitre2"><a name="RcpFertGrossAllait">4.6. Fertilité, grossesse et allaitement</a>&nbsp;&nbsp;<a href='#HautDePage'><img src='img/BackToTop.jpg' width='15px' height='15px' alt='Retour en haut de la page' title='Retour en haut de la page' /></a></p>
+<p class=AmmAnnexeTitre3>Grossesse</p>
+<p class=AmmCorpsTexte><a name="_Toc142278927">La présence de poudre d'opium conditionne la conduite à tenir.</a></p>
+<p class=AmmCorpsTexte>Les études effectuées chez l'animal ont mis en évidence un effet tératogène de certaines substances contenues dans la poudre d'opium (ex : morphine, codéine).</p>
+<p class=AmmCorpsTexte>Il n'existe pas de données cliniques suffisamment pertinentes pour évaluer le risque malformatif de ce médicament dans l'espèce humaine. En cas d'administration en fin de grossesse, tenir compte des propriétés morphinomimétiques de ce médicament et envisager une surveillance néonatale :</p>
+<p class=AmmListePuces1><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>risque de syndrome de sevrage chez le nouveau-né en cas d'administration chronique en fin de grossesse, et cela quelle que soit la dose ;</p>
+<p class=AmmListePuces1 style='margin-top:0cm;margin-right:0cm;margin-bottom: 6.0pt;margin-left:17.85pt;text-indent:-17.85pt'><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>risque théorique de dépression respiratoire chez le nouveau-né après de fortes doses, même en traitement bref, avant ou pendant l'accouchement.</p>
+<p class=AmmCorpsTexte>Par conséquent, IZALGI 500 mg/25 mg, gélule ne doit pas être utilisé au cours de la grossesse à moins d'une nécessité absolue.</p>
+<p class=AmmAnnexeTitre3>Allaitement</p>
+<p class=AmmCorpsTexte>Le passage de cette spécialité dans le lait maternel n’est pas connu. Toutefois, en raison de la présence de dérivés morphinomimétiques et du passage de la morphine dans le lait maternel, ce médicament est contre-indiqué lors de l’allaitement.</p>
+<p class="AmmAnnexeTitre2"><a name="RcpConduite">4.7. Effets sur l'aptitude à conduire des véhicules et à utiliser des machines</a>&nbsp;&nbsp;<a href='#HautDePage'><img src='img/BackToTop.jpg' width='15px' height='15px' alt='Retour en haut de la page' title='Retour en haut de la page' /></a></p>
+<p class=AmmCorpsTexte><a name="_Toc142278929">Les effets d’IZALGI 500 mg/25 mg, gélule sur l’aptitude à conduire des véhicules et à utiliser des machines n’ont pas été étudiés. Cependant, les conducteurs de véhicules et utilisateurs de machines doivent être prudents car il existe un risque de somnolence lié à la présence de poudre d’opium.</a></p>
+<p class="AmmAnnexeTitre2"><a name="RcpEffetsIndesirables">4.8. Effets indésirables</a>&nbsp;&nbsp;<a href='#HautDePage'><img src='img/BackToTop.jpg' width='15px' height='15px' alt='Retour en haut de la page' title='Retour en haut de la page' /></a></p>
+<p class=AmmCorpsTexte>Au cours des études cliniques, les effets indésirables suivants ont été rapportés avec les fréquences suivantes : très fréquents (<span style='font-family:Symbol'>³</span> 1/10) ; fréquents (&#8805; 1/100, &lt; 1/10) ; peu fréquents (&#8805; 1/1000, &lt;1/100) ; rares (&#8805; 1/10000, &lt; 1/1000) ; très rares (&lt; 1/10000), incluant les cas isolés.</p>
+<table class=AmmCorpsTexteTable border=0 cellspacing=0 cellpadding=0
+style='border-collapse:collapse'>
+<thead>
+<tr>
+<td width=133 style='width:100.0pt;border:solid windowtext 1.0pt;padding:
+0cm 3.5pt 0cm 3.5pt'>
+<p class=AmmCorpsTexteGras align=left style='text-align:left;page-break-after: avoid'><span lang=EN-US>Système organe / classe (MedDRA)</span></p>
+</td>
+<td width=127 style='width:94.9pt;border:solid windowtext 1.0pt;border-left:
+none;padding:0cm 3.5pt 0cm 3.5pt'>
+<p class=AmmCorpsTexteGras align=left style='text-align:left;page-break-after: avoid'><span lang=EN-US>Fréquents &#8805;1/100, &lt;1/10</span></p>
+</td>
+<td width=132 style='width:99.2pt;border:solid windowtext 1.0pt;border-left:
+none;padding:0cm 3.5pt 0cm 3.5pt'>
+<p class=AmmCorpsTexteGras align=left style='text-align:left;page-break-after: avoid'><span lang=EN-US>Peu fréquents &#8805;1/1000, &lt;1/100</span></p>
+</td>
+<td width=141 style='width:106.05pt;border:solid windowtext 1.0pt;
+border-left:none;padding:0cm 3.5pt 0cm 3.5pt'>
+<p class=AmmCorpsTexteGras align=left style='text-align:left;page-break-after: avoid'>Rares<br> &#8805;1/10000, &lt;1/1000</p>
+</td>
+<td width=133 style='width:100.05pt;border:solid windowtext 1.0pt;
+border-left:none;padding:0cm 3.5pt 0cm 3.5pt'>
+<p class=AmmCorpsTexteGras align=left style='text-align:left;page-break-after: avoid'>Très rares &lt;1/10000 incluant des notifications isolées</p>
+</td>
+</tr>
+<tr>
+<td width=133 valign=top style='width:100.0pt;border:solid windowtext 1.0pt;
+border-top:none;padding:0cm 3.5pt 0cm 3.5pt'>
+<p class=AmmCorpsTexte align=left style='text-align:left'>Affections du système immunitaire</p>
+</td>
+<td width=127 valign=top style='width:94.9pt;border-top:none;border-left:
+none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+padding:0cm 3.5pt 0cm 3.5pt'>
+<p class=AmmCorpsTexte align=left style='text-align:left'><span style='font-family:"Times New Roman",serif'> </span></p>
+</td>
+<td width=132 valign=top style='width:99.2pt;border-top:none;border-left:
+none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+padding:0cm 3.5pt 0cm 3.5pt'>
+<p class=AmmCorpsTexte align=left style='text-align:left'><span class='italique'> </span></p>
+</td>
+<td width=141 valign=top style='width:106.05pt;border-top:none;border-left:
+none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+padding:0cm 3.5pt 0cm 3.5pt'>
+<p class=AmmCorpsTexte align=left style='text-align:left'>Réactions d’hypersensibilité à type de malaise et d’œdème</p>
+</td>
+<td width=133 valign=top style='width:100.05pt;border-top:none;border-left:
+none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+padding:0cm 3.5pt 0cm 3.5pt'>
+<p class=AmmCorpsTexte align=left style='text-align:left'><span style='font-family:"Times New Roman",serif'> </span></p>
+</td>
+</tr>
+<tr>
+<td width=133 valign=top style='width:100.0pt;border:solid windowtext 1.0pt;
+border-top:none;padding:0cm 3.5pt 0cm 3.5pt'>
+<p class=AmmCorpsTexte align=left style='text-align:left'><span lang=EN-US>Affections gastro-intestinales</span></p>
+</td>
+<td width=127 valign=top style='width:94.9pt;border-top:none;border-left:
+none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+padding:0cm 3.5pt 0cm 3.5pt'>
+<p class=AmmCorpsTexte align=left style='text-align:left'><span lang=EN-US style='font-family:"Times New Roman",serif'> </span></p>
+</td>
+<td width=132 valign=top style='width:99.2pt;border-top:none;border-left:
+none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+padding:0cm 3.5pt 0cm 3.5pt'>
+<p class=AmmCorpsTexte align=left style='text-align:left'> </p>
+</td>
+<td width=141 valign=top style='width:106.05pt;border-top:none;border-left:
+none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+padding:0cm 3.5pt 0cm 3.5pt'>
+<p class=AmmCorpsTexte align=left style='text-align:left'>Constipation, nausées, vomissements, douleurs abdominales</p>
+</td>
+<td width=133 valign=top style='width:100.05pt;border-top:none;border-left:
+none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+padding:0cm 3.5pt 0cm 3.5pt'>
+<p class=AmmCorpsTexte align=left style='text-align:left'>Hémorragie gastro-intestinale</p>
+</td>
+</tr>
+<tr>
+<td width=133 valign=top style='width:100.0pt;border:solid windowtext 1.0pt;
+border-top:none;padding:0cm 3.5pt 0cm 3.5pt'>
+<p class=AmmCorpsTexte align=left style='text-align:left'>Affections du système nerveux</p>
+</td>
+<td width=127 valign=top style='width:94.9pt;border-top:none;border-left:
+none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+padding:0cm 3.5pt 0cm 3.5pt'>
+<p class=AmmCorpsTexte align=left style='text-align:left'><span style='font-family:"Times New Roman",serif'> </span></p>
+</td>
+<td width=132 valign=top style='width:99.2pt;border-top:none;border-left:
+none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+padding:0cm 3.5pt 0cm 3.5pt'>
+<p class=AmmCorpsTexte align=left style='text-align:left'>Insomnie, somnolence</p>
+</td>
+<td width=141 valign=top style='width:106.05pt;border-top:none;border-left:
+none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+padding:0cm 3.5pt 0cm 3.5pt'>
+<p class=AmmCorpsTexte align=left style='text-align:left'><span style='font-family:"Times New Roman",serif'> </span></p>
+</td>
+<td width=133 valign=top style='width:100.05pt;border-top:none;border-left:
+none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+padding:0cm 3.5pt 0cm 3.5pt'>
+<p class=AmmCorpsTexte align=left style='text-align:left'><span lang=EN-US> </span></p>
+</td>
+</tr>
+<tr>
+<td width=133 valign=top style='width:100.0pt;border:solid windowtext 1.0pt;
+border-top:none;padding:0cm 3.5pt 0cm 3.5pt'>
+<p class=AmmCorpsTexte align=left style='text-align:left'>Affections de la peau et du tissu sous-cutané</p>
+</td>
+<td width=127 valign=top style='width:94.9pt;border-top:none;border-left:
+none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+padding:0cm 3.5pt 0cm 3.5pt'>
+<p class=AmmCorpsTexte align=left style='text-align:left'><span style='font-family:"Times New Roman",serif'> </span></p>
+</td>
+<td width=132 valign=top style='width:99.2pt;border-top:none;border-left:
+none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+padding:0cm 3.5pt 0cm 3.5pt'>
+<p class=AmmCorpsTexte align=left style='text-align:left'><span style='font-family:"Times New Roman",serif'> </span></p>
+</td>
+<td width=141 valign=top style='width:106.05pt;border-top:none;border-left:
+none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+padding:0cm 3.5pt 0cm 3.5pt'>
+<p class=AmmCorpsTexte align=left style='text-align:left'>Erythème, urticaire, prurit</p>
+</td>
+<td width=133 valign=top style='width:100.05pt;border-top:none;border-left:
+none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+padding:0cm 3.5pt 0cm 3.5pt'>
+<p class=AmmCorpsTexte align=left style='text-align:left'><span lang=EN-US> </span></p>
+</td>
+</tr>
+</thead>
+</table>
+<p class=AmmAnnexeTitre3>LIES AU PARACETAMOL</p>
+<p class=AmmCorpsTexte>Les effets indésirables suivants ont été rapportés chez des patients traités par paracétamol seul :</p>
+<p class=AmmListePuces1 style='text-align:justify'><span style='font-family: Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>Quelques rares réactions d’hypersensibilité à type de choc anaphylactique, œdème de Quincke, érythème, urticaire, rashs cutanés. Leur survenue impose l’arrêt définitif de ce médicament et des médicaments apparentés.</p>
+<p class=AmmListePuces1 style='text-align:justify'><span style='font-family: Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>Des très rares cas de réactions cutanées graves (par exemple, toxidermies bulleuses de type syndrome de Stevens Johnson et Lyell, pustulose exanthématique aiguë). Leur survenue impose l’arrêt définitif de ce médicament et des médicaments apparentés.</p>
+<p class=AmmListePuces1 style='margin-top:0cm;margin-right:0cm;margin-bottom: 6.0pt;margin-left:17.85pt;text-align:justify;text-indent:-17.85pt'><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>De très exceptionnels cas de thrombopénie, leucopénie et neutropénie ont été signalés.</p>
+<p class=AmmCorpsTexte><a name="_Hlk185336725"><span class='souligne'>Troubles du métabolisme et de la nutrition</span></a></p>
+<p class=AmmCorpsTexte>Acidose métabolique à trou anionique élevé (fréquence « indéterminée » (ne peut être estimée à partir des données disponibles)).</p>
+<p class=AmmCorpsTexte><span class='gras'><span class='souligne'>Description des effets indésirables sélectionnés</span></span></p>
+<p class=AmmCorpsTexte><span class='souligne'>Acidose métabolique à trou anionique élevé</span></p>
+<p class=AmmCorpsTexte>Des cas d’acidose métabolique à trou anionique élevé due à une acidose pyroglutamique ont été observés chez des patients présentant des facteurs de risque et prenant du paracétamol (voir rubrique 4.4). Une acidose pyroglutamique peut survenir chez ces patients en raison des faibles taux de glutathion.</p>
+<p class=AmmAnnexeTitre3>LIES A LA POUDRE D’OPIUM</p>
+<p class=AmmCorpsTexte>Les effets indésirables de la poudre d’opium sont comparables à ceux des autres opiacés. Possibilité de :</p>
+<p class=AmmListePuces1 style='text-align:justify;page-break-after:avoid'><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>Somnolence, confusion, sédation, excitation, euphorie, dysphorie, cauchemars, en particulier chez le sujet âgé, avec éventuellement hallucinations.</p>
+<p class=AmmListePuces1 style='text-align:justify;page-break-after:avoid'><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>Convulsions (peu fréquent).</p>
+<p class=AmmListePuces1 style='text-align:justify;page-break-after:avoid'><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>Dépression respiratoire, bronchospasme (voir rubrique 4.3).</p>
+<p class=AmmListePuces1 style='text-align:justify;page-break-after:avoid'><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>Augmentation de la pression intracrânienne.</p>
+<p class=AmmListePuces1 style='text-align:justify;page-break-after:avoid'><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>Nausées, vomissements, constipation.</p>
+<p class=AmmListePuces1 style='text-align:justify'><span style='font-family: Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>Syndrome douloureux abdominal aigu de type biliaire ou pancréatique, évocateur d’un spasme du sphincter d’Oddi, survenant particulièrement chez les patients cholécystectomisés.</p>
+<p class=AmmListePuces1 style='text-align:justify'><span style='font-family: Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>Pancréatite aiguë.</p>
+<p class=AmmListePuces1 style='text-align:justify'><span style='font-family: Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>Myosis, états vertigineux.</p>
+<p class=AmmListePuces1 style='text-align:justify'><span style='font-family: Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>Dysurie et rétention urinaire.</p>
+<p class=AmmListePuces1 style='text-align:justify'><span style='font-family: Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>Prurit, urticaire et rash.</p>
+<p class=AmmListePuces1 style='margin-top:0cm;margin-right:0cm;margin-bottom: 6.0pt;margin-left:17.85pt;text-align:justify;text-indent:-17.85pt'><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>Hyperalgésie : en cas d’augmentation de la sensibilité à la douleur ou d’aggravation de la douleur initiale après une augmentation de la dose du traitement ou en cas d’apparition d’une douleur anormale, de qualité et de localisation anatomique différente de la douleur initiale, le traitement doit être arrêté.</p>
+<p class=AmmCorpsTexte>Pharmacodépendance et syndrome de sevrage (lors d’une utilisation prolongée à des doses supra-thérapeutiques).</p>
+<p class=AmmAnnexeTitre3>Déclaration des effets indésirables suspectés </p>
+<p class=AmmCorpsTexte>La déclaration des effets indésirables suspectés après autorisation du médicament est importante. Elle permet une surveillance continue du rapport bénéfice/risque du médicament. Les professionnels de santé déclarent tout effet indésirable suspecté via le système national de déclaration : Agence nationale de sécurité du médicament et des produits de santé (ANSM) et réseau des Centres Régionaux de Pharmacovigilance - Site internet :<span style='color:red'> </span><a name="_Hlk184139134">https://signalement.social-sante.gouv.fr</a></p>
+<p class="AmmAnnexeTitre2"><a name="RcpSurdosage">4.9. Surdosage</a>&nbsp;&nbsp;<a href='#HautDePage'><img src='img/BackToTop.jpg' width='15px' height='15px' alt='Retour en haut de la page' title='Retour en haut de la page' /></a></p>
+<p class=AmmAnnexeTitre3><a name="_Toc142278931">LIE AU PARACETAMOL :</a></p>
+<p class=AmmCorpsTexte>Le risque d’une intoxication grave (surdosage thérapeutique ou intoxication accidentelle fréquente), pouvant conduire à une insuffisance hépatique sévère, potentiellement mortelle, est particulièrement élevé chez les sujets âgés, chez les jeunes enfants et les adolescents, chez les patients présentant une affection hépatique, en cas d’alcoolisme chronique, chez les patients dénutris, chez les patients de moins de 50 kg.</p>
+<p class=AmmAnnexeTitre4>Symptômes</p>
+<p class=AmmListePuces1 style='text-align:justify'><span style='font-family: Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>A une phase précoce, l’intoxication peut être totalement asymptomatique.</p>
+<p class=AmmListePuces1 style='text-align:justify'><span style='font-family: Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>Généralement dans les 24 premières heures apparaissent des nausées, vomissements, anorexie, pâleur, douleurs abdominales.</p>
+<p class=AmmListePuces1 style='text-align:justify'><span style='font-family: Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>Dans les 12 à 48 heures après l’ingestion, peuvent apparaître une augmentation des transaminases hépatiques, de la lactico-déshydrogénase, de la bilirubine et une diminution du taux de prothrombine.</p>
+<p class=AmmListePuces1 style='text-align:justify'><span style='font-family: Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>Un surdosage peut provoquer une cytolyse hépatique susceptible d’aboutir à une insuffisance hépatocellulaire, une acidose métabolique, une encéphalopathie pouvant aller jusqu’au coma et à la mort. Une atteinte toxique rénale avec nécrose tubulaire aiguë et insuffisance rénale peut survenir même en absence d’insuffisance hépatique.</p>
+<p class=AmmListePuces1 style='text-align:justify'><span style='font-family: Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>Une hyperamylasémie et plus rarement des pancréatites aiguës ont été observées.</p>
+<p class=AmmListePuces1 style='margin-top:0cm;margin-right:0cm;margin-bottom: 6.0pt;margin-left:17.85pt;text-indent:-17.85pt'><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>Des arythmies cardiaques ont été rapportées.</p>
+<p class=AmmAnnexeTitre4>Conduite d’urgence</p>
+<p class=AmmListePuces1><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>Transfert immédiat en milieu hospitalier.</p>
+<p class=AmmListePuces1><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>Prélever un tube de sang pour faire le dosage plasmatique initial de paracétamol.</p>
+<p class=AmmListePuces1><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>Evacuation rapide du produit ingéré par lavage gastrique.</p>
+<p class=AmmListePuces1><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>Le traitement du surdosage comprend l’administration aussi précoce que possible de l’antidote N-acétylcystéine par voie IV ou voie orale si possible avant la dixième heure.</p>
+<p class=AmmListePuces1 style='margin-top:0cm;margin-right:0cm;margin-bottom: 6.0pt;margin-left:17.85pt;text-indent:-17.85pt'><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>Traitement symptomatique.</p>
+<p class=AmmAnnexeTitre3>LIE A LA POUDRE D’OPIUM :</p>
+<p class=AmmAnnexeTitre4>Symptômes :</p>
+<p class=AmmCorpsTexte>Surdosage léger à modéré : une euphorie, une somnolence, une constipation, des nausées, des vomissements et un myosis. Une bradycardie ou une hypotension légère peuvent être présents.</p>
+<p class=AmmCorpsTexte>Surdosage sévère : une dépression respiratoire pouvant aboutir à une apnée, une hypoxie, un coma, une bradycardie, ou une lésion pulmonaire aiguë. Rarement, des crises convulsives peuvent se déclencher suite à la survenue d’une hypoxie. La nécrose tubulaire aiguë secondaire à la rhabdomyolyse et une myoglobinurie peuvent survenir chez les patients dans un coma prolongé ou présentant des convulsions. Ces complications peuvent entraîner la mort.</p>
+<p class=AmmAnnexeTitre4>Traitement :</p>
+<p class=AmmListePuces1><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>Décontamination</p>
+<p class=AmmCorpsTexte>Un surdosage en opiacés peut engager le pronostic vital. L’administration de charbon actif devrait être envisagée rapidement après une ingestion orale importante, si le patient peut protéger ses voies respiratoires et ne présente pas de signes sévères de toxicité. Si un patient présente des signes de toxicité modérée à sévère, il ne faut pas administrer de charbon actif, en raison du risque d’inhalation.</p>
+<p class=AmmListePuces1><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>Prise en charge d’une intoxication d'intensité légère à modérée</p>
+<p class=AmmCorpsTexte>Une surveillance du patient peut suffire.</p>
+<p class=AmmListePuces1><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>Prise en charge d’une intoxication sévère</p>
+<p class=AmmCorpsTexte>Un traitement de soutien intensif peut être nécessaire pour corriger une insuffisance respiratoire et un choc. De plus, l’antagoniste spécifique naloxone est utilisé pour inverser rapidement la dépression respiratoire sévère et le coma provoqués par des doses excessives d'analgésiques opioïdes. La naloxone ayant une durée d'action plus courte que beaucoup d’opioïdes, de nombreux patients répondeurs doivent être gardés sous surveillance étroite à la recherche de signes de rechute et les injections devront être répétées en fonction de la fréquence respiratoire et de la sévérité du coma. Alternativement, dans des situations où l'administration répétée est nécessaire, par exemple lorsqu’un opioïde à action prolongée est la cause ou est soupçonné d'être la cause des symptômes, une perfusion intraveineuse continue de naloxone peut être réalisée et sera adaptée à la réponse. Tous les patients doivent être surveillés pendant au moins 6 heures après la dernière dose de naloxone. L'utilisation des antagonistes des opioïdes comme la naloxone chez les personnes physiquement dépendantes aux opiacés peut provoquer des symptômes de sevrage.</p>
+<p class="AmmAnnexeTitre1"><a name="RcpPropPharmacologiques">5. PROPRIETES PHARMACOLOGIQUES</a>&nbsp;&nbsp;<a href='#HautDePage'><img src='img/BackToTop.jpg' width='15px' height='15px' alt='Retour en haut de la page' title='Retour en haut de la page' /></a></p>
+<p class="AmmAnnexeTitre2"><a name="RcpPropPharmacodynamiques">5.1. Propriétés pharmacodynamiques</a>&nbsp;&nbsp;<a href='#HautDePage'><img src='img/BackToTop.jpg' width='15px' height='15px' alt='Retour en haut de la page' title='Retour en haut de la page' /></a></p>
+<p class=AmmCorpsTexteGras><a name="_Toc142278933">Classe pharmacothérapeutique : </a>Paracétamol en association sauf aux psycholeptiques, code ATC : N02BE51<span style='font-size:8.0pt'>.</span></p>
+<p class=AmmAnnexeTitre3>Mécanisme d’action</p>
+<p class=AmmCorpsTexte><span style='background:white'>Ce médicament est un antalgique de palier 2 (selon la classification OMS) associant deux substances actives :</span></p>
+<p class=AmmListePuces1><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>Paracétamol : analgésique et antipyrétique. Le paracétamol a un mode d’action essentiellement central.</p>
+<p class=AmmListePuces1 style='margin-top:0cm;margin-right:0cm;margin-bottom: 6.0pt;margin-left:17.85pt;text-indent:-17.85pt'><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>Opium : analgésique opiacé avec un mécanisme d’action central et périphérique.</p>
+<p class=AmmAnnexeTitre3>Efficacité et sécurité clinique</p>
+<p class=AmmCorpsTexte><span style='background:white'>Dans une étude comparative, randomisée, en double insu, en groupes parallèles <span class='italique'>versus</span> placebo et en administration unique, conduite chez 232 patients ayant subi une extraction dentaire de la 3<sup>ème</sup> molaire incluse, il a été démontré que l'efficacité antalgique des associations paracétamol, caféine, poudre d'opium 500mg/50mg/25mg et 500mg/50mg/50mg était supérieure au placebo et non inférieure au tramadol 100 mg, un antalgique de palier 2. </span></p>
+<p class=AmmCorpsTexte><span style='background:white'>Une étude clinique comparative, randomisée, en double insu et en groupes parallèles conduite chez 1141 patients présentant une gonarthrose douloureuse a testé différents dosages de l’association paracétamol, poudre d’opium : 500mg/10mg, 500mg/25mg et 500mg/50mg <span class='italique'>versus</span> un antalgique de palier 2, associant paracétamol, codéine 500mg/30mg. Les traitements étaient administrés pendant 10 jours, à raison de 3 à 4 gélules par jour. </span></p>
+<p class=AmmCorpsTexte><span style='background:white'>Cette étude a permis d’identifier l’association paracétamol, poudre d’opium 500mg/25mg comme étant celle qui contenait la dose minimale de poudre d’opium permettant de démontrer une non infériorité par rapport à l’association antalgique de référence (paracétamol, codéine 500mg/30mg).</span></p>
+<p class="AmmAnnexeTitre2"><a name="RcpPropPharmacocinetiques">5.2. Propriétés pharmacocinétiques</a>&nbsp;&nbsp;<a href='#HautDePage'><img src='img/BackToTop.jpg' width='15px' height='15px' alt='Retour en haut de la page' title='Retour en haut de la page' /></a></p>
+<p class=AmmCorpsTexteGras><a name="_Toc142278934">PARACETAMOL</a></p>
+<p class=AmmAnnexeTitre3>Absorption</p>
+<p class=AmmCorpsTexte>L’absorption du paracétamol par voie orale est complète et rapide. Les concentrations plasmatiques maximales sont atteintes 30 à 60 minutes après ingestion.</p>
+<p class=AmmAnnexeTitre3>Distribution</p>
+<p class=AmmCorpsTexte>Le paracétamol se distribue rapidement dans tous les tissus. Les concentrations sont comparables dans le sang, la salive et le plasma. La liaison aux protéines plasmatiques est faible.</p>
+<p class=AmmAnnexeTitre3>Biotransformation</p>
+<p class=AmmCorpsTexte>Le paracétamol est métabolisé essentiellement au niveau du foie. Les 2 voies métaboliques majeures sont la glycuroconjugaison et la sulfoconjugaison. Cette dernière voie est rapidement saturable aux posologies supérieures aux doses thérapeutiques. Une voie mineure, catalysée par le cytochrome P 450, est la formation d’un intermédiaire réactif (le N-acétyl benzoquinone imine), qui, dans les conditions normales d’utilisation, est rapidement détoxifié par le glutathion réduit et éliminé dans les urines après conjugaison à la cystéine et à l’acide mercaptopurique. En revanche, lors d’intoxications massives, la quantité de ce métabolite toxique est augmentée.</p>
+<p class=AmmAnnexeTitre3>Elimination</p>
+<p class=AmmCorpsTexte>L’élimination est essentiellement urinaire. 90% de la dose ingérée est éliminée par le rein en 24 heures, principalement sous forme glycuroconjuguée (60 à 80%) et sulfoconjuguée (20 à 30 %).</p>
+<p class=AmmCorpsTexte>Moins de 5% est éliminé sous forme inchangée.</p>
+<p class=AmmCorpsTexte>La demi-vie d’élimination est d’environ 2 heures.</p>
+<p class=AmmAnnexeTitre3>Variations physiopathologiques</p>
+<p class=AmmCorpsTexte><span class='souligne'>Insuffisance rénale</span> : en cas d'insuffisance rénale sévère (clairance de la créatinine inférieure à 10 ml/min), l'élimination du paracétamol et de ses métabolites est retardée.</p>
+<p class=AmmCorpsTexte><span class='souligne'>Sujet âgé</span> : la capacité de conjugaison n'est pas modifiée.</p>
+<p class=AmmCorpsTexte>Une étude d’interaction n’a pas montré de modification des paramètres pharmacocinétiques du paracétamol par la poudre d’opium.</p>
+<p class=ammcorpstexte0 style='margin-bottom:6.0pt;page-break-after:avoid'><span class='gras'><span style='font-size:10.0pt;color:windowtext;text-transform:uppercase'>POUDRE D’OPIUM</span></span></p>
+<p class=AmmAnnexeTitre3>Absorption</p>
+<p class=AmmCorpsTexte>Les alcaloïdes de l'opium sont rapidement absorbés après administration orale.</p>
+<p class=AmmCorpsTexte>Les concentrations sériques maximales de morphine, principal alcaloïde de la poudre d’opium, sont obtenues en 2 à 4 heures. L'effet de premier passage hépatique est supérieur à 50 %.</p>
+<p class=AmmAnnexeTitre3>Distribution</p>
+<p class=AmmCorpsTexte>Après absorption, la morphine est liée aux protéines plasmatiques dans la proportion de 30 %.</p>
+<p class=AmmAnnexeTitre3>Biotransformation</p>
+<p class=AmmCorpsTexte>Les alcaloïdes de l'opium sont métabolisés de façon importante en dérivés glucuronoconjugués qui subissent un cycle entérohépatique. Le 6-glucuronide est un métabolite de la morphine environ 50 fois plus actif que la substance-mère. La morphine est également déméthylée, ce qui conduit à un autre métabolite actif, la normorphine.</p>
+<p class=AmmCorpsTexte><a name="OLE_LINK5"></a><a name="OLE_LINK4"></a><a name="OLE_LINK3">La codéine est métabolisée pour donner la codéine-6-glucuronide, la morphine (seul métabolite actif) et la norcodéine. La codéine étant présente dans la poudre d’opium à des quantités dix fois inférieures à celles de la morphine, sa transformation hépatique a peu de conséquence sur la biodisponibilité globale en morphine</a>.</p>
+<p class=AmmAnnexeTitre3>Elimination</p>
+<p class=AmmCorpsTexte>L'élimination des dérivés glucuronoconjugués se fait essentiellement par voie urinaire, à la fois par filtration glomérulaire et sécrétion tubulaire.</p>
+<p class=AmmCorpsTexte>L'élimination fécale est faible (&lt; 10 %).</p>
+<p class="AmmAnnexeTitre2"><a name="RcpSecuritePreclinique">5.3. Données de sécurité préclinique</a>&nbsp;&nbsp;<a href='#HautDePage'><img src='img/BackToTop.jpg' width='15px' height='15px' alt='Retour en haut de la page' title='Retour en haut de la page' /></a></p>
+<p class=AmmCorpsTexte><a name="_Toc142278935">Dans les études de toxicité aiguë portant sur l’association paracétamol / poudre d’opium, la dose létale (DL) 50 par voie orale s’est avérée supérieure à 2000 mg/kg chez 2 espèces (rat et souris).</a></p>
+<p class=AmmCorpsTexte>Après 4 semaines d’administration d’une association paracétamol / opium par voie orale chez le chien (espèce la plus sensible), les signes rapportés ont été principalement une toxicité hépatique du paracétamol (examen histopathologique), sans effet dépresseur central, excepté une diminution de l’activité motrice attribuable à l’opium à la plus forte dose (500-600 mg/kg) : à cette dose la mortalité a été de 50%. La dose sans effet toxique (NOAEL) est estimée à 100 mg/kg.</p>
+<p class=AmmAnnexeTitre4>Données sur la reproduction :</p>
+<p class=AmmCorpsTexte>Paracétamol : Le paracétamol n’est pas tératogène chez la souris ou le rat et n'a pas entraîné d'anomalies de croissance intra-utérine chez les rats. Chez les rats et les souris, des doses orales élevées ont altéré la spermiogénèse et provoqué une atrophie testiculaire.</p>
+<p class=AmmCorpsTexte>Opium : Chez les animaux de laboratoire, des gestations associées à une augmentation des malformations congénitales lors d’un traitement de la mère par opiacés pourraient être dues à une toxicité chez la mère.</p>
+<p class="AmmAnnexeTitre1"><a name="RcpDonneesPharmaceutiques">6. DONNEES PHARMACEUTIQUES</a>&nbsp;&nbsp;<a href='#HautDePage'><img src='img/BackToTop.jpg' width='15px' height='15px' alt='Retour en haut de la page' title='Retour en haut de la page' /></a></p>
+<p class="AmmAnnexeTitre2"><a name="RcpListeExcipients">6.1. Liste des excipients</a>&nbsp;&nbsp;<a href='#HautDePage'><img src='img/BackToTop.jpg' width='15px' height='15px' alt='Retour en haut de la page' title='Retour en haut de la page' /></a></p>
+<p class=AmmCorpsTexte><a name="_Toc142278937">Stéarate de magnésium.</a></p>
+<p class=AmmCorpsTexte>Composition de l’enveloppe de la gélule : gélatine, dioxyde de titane (E 171), oxyde de fer noir (E 172), oxyde de fer jaune (E 172), bleu patente V.</p>
+<p class="AmmAnnexeTitre2"><a name="RcpIncompatibilites">6.2. Incompatibilités</a>&nbsp;&nbsp;<a href='#HautDePage'><img src='img/BackToTop.jpg' width='15px' height='15px' alt='Retour en haut de la page' title='Retour en haut de la page' /></a></p>
+<p class=AmmCorpsTexte><a name="_Toc142278938">Sans objet.</a></p>
+<p class="AmmAnnexeTitre2"><a name="RcpDureeConservation">6.3. Durée de conservation</a>&nbsp;&nbsp;<a href='#HautDePage'><img src='img/BackToTop.jpg' width='15px' height='15px' alt='Retour en haut de la page' title='Retour en haut de la page' /></a></p>
+<p class=AmmCorpsTexte>Plaquettes thermoformées : 2 ans.</p>
+<p class=AmmCorpsTexte>Flacon :</p>
+<p class=AmmCorpsTexte>Avant ouverture du flacon : 2 ans.</p>
+<p class=AmmCorpsTexte>Après ouverture du flacon : 2 mois.</p>
+<p class="AmmAnnexeTitre2"><a name="RcpPrecConservation">6.4. Précautions particulières de conservation</a>&nbsp;&nbsp;<a href='#HautDePage'><img src='img/BackToTop.jpg' width='15px' height='15px' alt='Retour en haut de la page' title='Retour en haut de la page' /></a></p>
+<p class=AmmCorpsTexte><a name="_Toc142278940">A conserver à une température ne dépassant pas 30°C.</a></p>
+<p class="AmmAnnexeTitre2"><a name="RcpEmballage">6.5. Nature et contenu de l'emballage extérieur </a>&nbsp;&nbsp;<a href='#HautDePage'><img src='img/BackToTop.jpg' width='15px' height='15px' alt='Retour en haut de la page' title='Retour en haut de la page' /></a></p>
+<p class=AmmCorpsTexte><a name="_Toc142278942"></a><a name="_Toc142278941">8, 16 et 100 gélules sous plaquettes thermoformées (PVC/Aluminium).</a></p>
+<p class=AmmCorpsTexte>16 et 90 gélules <span style='color:black'>en flacon (PEHD) avec bouchon polypropylène.</span></p>
+<p class=AmmCorpsTexte>Toutes les présentations peuvent ne pas être commercialisées.</p>
+<p class="AmmAnnexeTitre2"><a name="RcpPrecEmpl">6.6. Précautions particulières d’élimination et de manipulation</a>&nbsp;&nbsp;<a href='#HautDePage'><img src='img/BackToTop.jpg' width='15px' height='15px' alt='Retour en haut de la page' title='Retour en haut de la page' /></a></p>
+<p class=AmmCorpsTexte><span lang=FR-BE>Pas d’exigences particulières.</span></p>
+<p class="AmmAnnexeTitre1"><a name="RcpTitulaireAmm">7. TITULAIRE DE L’AUTORISATION DE MISE SUR LE MARCHE</a>&nbsp;&nbsp;<a href='#HautDePage'><img src='img/BackToTop.jpg' width='15px' height='15px' alt='Retour en haut de la page' title='Retour en haut de la page' /></a></p>
+<p class=AmmCorpsTexteGras style='margin-bottom:0cm;margin-bottom:.0001pt; page-break-after:avoid'><a name="_Toc142278943">VIATRIS MEDICAL</a></p>
+<p class=AmmCorpsTexte style='margin-bottom:0cm;margin-bottom:.0001pt; page-break-after:avoid'>1 BIS PLACE DE LA DEFENSE – TOUR TRINITY</p>
+<p class=AmmCorpsTexte>92400 COURBEVOIE</p>
+<p class="AmmAnnexeTitre1"><a name="RcpNumAutor">8. NUMERO(S) D’AUTORISATION DE MISE SUR LE MARCHE</a>&nbsp;&nbsp;<a href='#HautDePage'><img src='img/BackToTop.jpg' width='15px' height='15px' alt='Retour en haut de la page' title='Retour en haut de la page' /></a></p>
+<p class=AmmListePuces1><a name="_Toc142278944"><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>34009 496 054 7 7 : 8 gélules sous plaquettes thermoformées (PVC/Aluminium).</a></p>
+<p class=AmmListePuces1><span style='font-family: Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>34009 496 055 3 8 : 16 gélules sous plaquettes thermoformées (PVC/Aluminium).</p>
+<p class=AmmListePuces1><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>34009 550 031 8 2 : 100 gélules sous plaquettes thermoformées (PVC/Aluminium).</p>
+<p class=AmmListePuces1><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>34009 301 501 0 8 : 16 gélules en flacon (PEHD) avec bouchon polypropylène.</p>
+<p class=AmmListePuces1><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>34009 301 501 1 5 : 90 gélules en flacon (PEHD) avec bouchon polypropylène.</p>
+<p class="AmmAnnexeTitre1"><a name="RcpPremiereAutorisation">9. DATE DE PREMIERE AUTORISATION/DE RENOUVELLEMENT DE L’AUTORISATION</a>&nbsp;&nbsp;<a href='#HautDePage'><img src='img/BackToTop.jpg' width='15px' height='15px' alt='Retour en haut de la page' title='Retour en haut de la page' /></a></p>
+<p class=AmmCorpsTexte><a name="_Toc142278945">[à compléter ultérieurement par le titulaire]</a></p>
+<p class="AmmAnnexeTitre1"><a name="RcpDateRevision">10. DATE DE MISE A JOUR DU TEXTE</a>&nbsp;&nbsp;<a href='#HautDePage'><img src='img/BackToTop.jpg' width='15px' height='15px' alt='Retour en haut de la page' title='Retour en haut de la page' /></a></p>
+<p class=AmmCorpsTexte><a name="_Toc142278946">[à compléter ultérieurement par le titulaire]</a></p>
+<p class="AmmAnnexeTitre1"><a name="RcpDosimetrie">11. DOSIMETRIE</a>&nbsp;&nbsp;<a href='#HautDePage'><img src='img/BackToTop.jpg' width='15px' height='15px' alt='Retour en haut de la page' title='Retour en haut de la page' /></a></p>
+<p class=AmmCorpsTexte>Sans objet.</p>
+<p class="AmmAnnexeTitre1"><a name="RcpInstPrepRadioph">12. INSTRUCTIONS POUR LA PREPARATION DES RADIOPHARMACEUTIQUES</a>&nbsp;&nbsp;<a href='#HautDePage'><img src='img/BackToTop.jpg' width='15px' height='15px' alt='Retour en haut de la page' title='Retour en haut de la page' /></a></p>
+<p class=AmmCorpsTexte><a name="_Toc142278948">Sans objet.</a></p>
+<div style='border:none;border-top:solid windowtext 1.0pt;padding:1.0pt 0cm 0cm 0cm'>
+<p class="AmmAnnexeTitre"><a name="RcpCondPrescription">CONDITIONS DE PRESCRIPTION ET DE DELIVRANCE</a></p>
+</div>
+<p class=AmmCorpsTexte>Liste I.</p>
+<span class='gras'><span style='font-size:12.0pt;font-family:"Arial",sans-serif;color:#0B3D92;
+text-transform:uppercase'><br clear=all>
+</span></span>					
+					<p class="alignright"><a href="#HautDePage">Retour en haut de la page <img src="img/BackToTop.jpg" width="20px" height="20px" alt="Retour en haut de la page" title="Retour en haut de la page" /></a></p>
+				</div>
+			</div>
+		</div>
+	</div>
+
+<table summary="" class="content" width="1000">
+	<tr>
+		<td height="100px">&nbsp;</td>
+	</tr>
+</table>
+<table summary="Pied de page" class="footer" width="1000">
+	<tr>
+		<td>
+			<table summary="" class="tablealigncenter" border="0">
+				<tr>
+					<td width="100px" class="aligncenter"><a id="lien_ansm" href="http://ansm.sante.fr/" target="_blank"><img src="img/Logo_ANSM.png" width="150" height="60" alt="ANSM - Agence nationale de sécurité du médicament et des produits de santé" title="L'ANSM met à disposition les principales informations issues de l'Autorisation de mise sur le marché, l'appartenance à un groupe générique, les liens vers les informations de sécurité qu'elle publie, l'identification des médicaments sous surveillance renforcée - nouvelle fenêtre" /></a></td>
+					          <td>&nbsp;</td>
+					<td width="100px" class="aligncenter"><img src="img/Logo_HAS.png" width="150" height="60" alt="HAS - Haute autorité de santé" title="La HAS met à disposition les informations relatives au service médical rendu, à l'amélioration du service médical rendu ainsi que les liens vers les avis de la Commission de la Transparence correspondants - nouvelle fenêtre" /></td>
+					<td>&nbsp;</td>
+					<td width="100px" class="aligncenter"><img src="img/Logo_CNAM.png" width="150" height="60" alt="UNCAM - Unin nationale des caisses d'assurance maladie" title="L'UNCAM met à disposition le taux de remboursement, le prix et les indications remboursables le cas échéant, ainsi que l'agrément aux collectivités - nouvelle fenêtre" /></td>
+          				</tr>
+			</table> 
+		</td>
+	</tr>
+</table>
+<table summary="" class="finpage" width="1000">
+	<tr>
+		<td height="100px" class="aligncenter">
+			<a class="navigation" href="plan.php">Plan du site</a>&nbsp;|&nbsp;
+			<a class="navigation" href="accessibilite.php">Accessibilité</a>&nbsp;|&nbsp;
+			<a class="navigation" href="contact.php">Contact</a>&nbsp;|&nbsp;
+			<a class="navigation" href="telechargement.php">Téléchargement</a>&nbsp;|&nbsp;
+			<a class="navigation" href="DeclarationConfidentialite.php">Declaration de confidentialité</a>&nbsp;|&nbsp;
+			<a class="navigation" href="http://www.service-public.fr/" title="Service Public - Nouvelle fenêtre" target="_blank">Service-Public.fr</a>&nbsp;|&nbsp;
+			<a class="navigation" href="http://www.legifrance.gouv.fr/" title="Legifrance - Nouvelle fenêtre" target="_blank">Legifrance</a>&nbsp;|&nbsp;
+			<a class="navigation" href="http://www.gouvernement.fr/" title="Gouvernement - Nouvelle fenêtre" target="_blank" >Gouvernement.fr</a>
+		</td>
+	</tr>
+</table>
+
+
+
+<!-- Matomo -->
+<script type="text/javascript">
+  var _paq = window._paq = window._paq || [];
+  /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
+  _paq.push(['trackPageView']);
+  _paq.push(['enableLinkTracking']);
+  (function() {
+    var u="https://stats.integra.fr/";
+    _paq.push(['setTrackerUrl', u+'matomo.php']);
+    _paq.push(['setSiteId', '79']);
+    var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+    g.type='text/javascript'; g.async=true; g.src=u+'matomo.js'; s.parentNode.insertBefore(g,s);
+  })();
+</script>
+<!-- End Matomo Code -->
+
+
+
+</body>
+</html>

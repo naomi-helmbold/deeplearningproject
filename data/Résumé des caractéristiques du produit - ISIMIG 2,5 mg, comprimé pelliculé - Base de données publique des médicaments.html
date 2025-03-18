@@ -1,0 +1,1074 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="fr" lang="fr">
+<head>
+	<title>Résumé des caractéristiques du produit - ISIMIG 2,5 mg, comprimé pelliculé  - Base de données publique des médicaments</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=windows-1252"/>
+	<meta name="robots" content="index, follow"/>
+	<meta name="Description" content="Base de données publique des médicaments"/>
+	<meta name="Keywords" content="base, données, publique, médicaments, Résumé des caractéristiques du produit, ISIMIG 2,5 mg, comprimé pelliculé "/>
+	<meta name="Subject" content="medicament"/>
+	<link href='https://fonts.googleapis.com/css?family=Noticia+Text' rel='stylesheet' type='text/css' />
+	<link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro' rel='stylesheet' type='text/css' />
+	<link href="style/style_bdm.css?v=2.2.3" type="text/css" rel="stylesheet"/>
+	<link href="style/style_RCP_Notice.css" type="text/css" rel="stylesheet"/>
+  <link rel="alternate" href="http://m.base-donnees-publique.medicaments.gouv.fr/#!info-69591915">
+    <script type="text/javascript" src="scripts/autocomplete.js?v=2.2.3"></script>
+	<script type="text/javascript" src="scripts/jquery.js"></script>
+    <script type="text/javascript" src="scripts/jquery-ui.min.js"></script>
+	<script type="text/javascript" src="scripts/common.js"></script>
+	<link rel="icon" type="image/x-icon" href="favicon.ico" />
+</head>
+
+<body>
+
+<a name="HautDePage" />
+<div id="bandeauhaut">
+	<a id="lien_ministere" class="lienmenu" href="http://www.sante.gouv.fr" target="_blank" title="Site du ministère des affaires sociales et de la santé - nouvelle fenêtre"><img id="logoministere" src="img/Logo_Ministere.jpg"  alt="Logo du ministère des affaires sociales et de la santé"/></a>
+	<h1 class="texteTitreSite">
+		Base <span class="texteBleu">de</span> données <span class="texteBleu">publique</span><br/><span class="texteBleu">des</span> médicaments
+	</h1>
+		<a id="lien_medicament_gouv" class="lienEspaceMedic" target="_blank" href="http://medicaments.gouv.fr" title="Visiter [medicaments.gouv.fr] - nouvelle fenêtre">Visiter [medicaments.gouv.fr] <img src="/img/icone_lien.png" alt="Visiter [medicaments.gouv.fr]"  title="Visiter [medicaments.gouv.fr] - nouvelle fenetre" /></a>
+</div>
+<!--div align="center">
+	<a id="banniere" target="_blank" href="http://social-sante.gouv.fr/soins-et-maladies/medicaments/medicaments-generiques/" title="Visiter [medicaments.gouv.fr] - M?dicaments g?n?riques">
+		<img width="1000"   src ="/img/carrouselbannieres.gif" alt="Visiter [medicaments.gouv.fr] - M?dicaments g?n?riques" title="Visiter [medicaments.gouv.fr] - M?dicaments g?n?riques" />
+	</a>
+</div-->
+
+<div id="menuhaut">
+	<span id="menuhaut_gauche">
+		<a id="lien_accueil" class="navigation" href="index.php">Accueil</a>&nbsp;|&nbsp;
+		<a id="lien_glossaire" class="navigation" href="glossaire.php">Glossaire</a>&nbsp;|&nbsp;
+		<a id="lien_aide" class="navigation" href="aide.php">Aide</a>		
+	</span>
+	
+		
+	<span id="menuhaut_dernmaj">
+        <br>Dernière <span title=" 2.4.4
+">mise à jour</span> le 03/03/2025	</span>
+</div>
+
+	<script language="javascript" type="text/javascript">
+		//<![CDATA[ 
+		function Aff(men) {
+			document.write("<ul class=\"menuDoc\">");
+			for(var no_rub=0;no_rub<men.num_rub;no_rub++) {
+				document.write("<li><a class='leftMenu' href='"+menu[no_rub].page+"'>");
+				document.write(men[no_rub].txt);
+				document.write("</a></li>");
+				if (men[no_rub].nb_lien != 0){
+					document.write("<ul class=\"sousMenuDoc\">");
+				}
+				for(var no_lien=0;no_lien<men[no_rub].nb_lien;no_lien++) {
+					document.write("<li><a class='leftMenu' href='"+men[no_rub][no_lien].page+"'>");
+					document.write(men[no_rub][no_lien].txt);
+					document.write("</a></li>");
+				}
+				if (men[no_rub].nb_lien != 0){
+					document.write("</ul>");
+				}
+			}
+			document.write("</ul>");
+		}
+		
+		function CreerMenu(police,imgRub,imgOption,imgOptionFin,hauteur) {
+			this.num_rub=0;
+			this.police=police;
+			this.imgRub=imgRub;
+			this.imgOpt=imgOption;
+			this.imgOptFin=imgOptionFin;
+			this.hauteur=hauteur;
+			this.AddRub=AddRub;
+			this.AddLien=AddLien;
+		}
+		
+		function AddRub(txt,aff,page) {
+			var rub = new Object;
+				rub.txt=txt;
+				rub.aff=aff;
+				rub.page=page;
+				rub.nb_lien=0;
+			this[this.num_rub]=rub;
+			this.num_rub++;
+		}
+
+		function AddLien(txt,page) {
+			var no_rub = this.num_rub-1;
+			var no_lien= this[no_rub].nb_lien;
+			var lien = new Object;
+				lien.txt=txt;
+				lien.page=page;
+			this[no_rub][no_lien]=lien;
+			this[no_rub].nb_lien++;
+		}
+		var menu=new CreerMenu("arial","img/dyn04.gif","img/dyn22.gif","img/dyn55.gif",18);
+		//]]> 
+		menu.AddRub("Dénomination","O","#RcpDenomination");
+			menu.AddRub("Composition","O","#RcpCompoQualiQuanti");
+			menu.AddRub("Forme pharma.","O","#RcpFormePharm");
+			menu.AddRub("Clinique","O","#RcpDonneesCliniques");
+			menu.AddLien("Indic. thérapeutiques","#RcpIndicTherap");
+				menu.AddLien("Posologie","#RcpPosoAdmin");
+				menu.AddLien("Contre-indications","#RcpContreindications");
+				menu.AddLien("Mise en garde","#RcpMisesEnGarde");
+				menu.AddLien("Interactions","#RcpInteractionsMed");
+				menu.AddLien("Grossesse, allait.","#RcpFertGrossAllait");
+				menu.AddLien("Conduite véhicules","#RcpConduite");
+				menu.AddLien("Effets indésirables","#RcpEffetsIndesirables");
+				menu.AddLien("Surdosage","#RcpSurdosage");
+				menu.AddRub("Pharmacologie","O","#RcpPropPharmacologiques");
+			menu.AddLien("Pharmacodynamie","#RcpPropPharmacodynamiques");
+				menu.AddLien("Pharmacocinétique","#RcpPropPharmacocinetiques");
+				menu.AddLien("Sécurité préclinique","#RcpSecuritePreclinique");
+				menu.AddRub("Pharmaceutique","O","#RcpDonneesPharmaceutiques");
+			menu.AddLien("Liste excipients","#RcpListeExcipients");
+				menu.AddLien("Incompatibilités","#RcpIncompatibilites");
+				menu.AddLien("Durée conservation","#RcpDureeConservation");
+				menu.AddLien("Conservation","#RcpPrecConservation");
+				menu.AddLien("Emballage","#RcpEmballage");
+				menu.AddLien("Utilisation/manipulation","#RcpPrecEmpl");
+				menu.AddRub("Titulaire AMM","O","#RcpTitulaireAmm");
+			menu.AddRub("Présentations","O","#RcpNumAutor");
+			menu.AddRub("Autorisation, renouv.","O","#RcpPremiereAutorisation");
+			menu.AddRub("Date de révision","O","#RcpDateRevision");
+			menu.AddRub("Dosimétrie","O","#RcpDosimetrie");
+			menu.AddRub("Préparation radiopharma.","O","#RcpInstPrepRadioph");
+				</script>
+
+	<div id="container">
+		<div id="leftnav">
+			<div id="cadreMenuGauche">
+				<h2 class="sommaireMenu">Sommaire</h2>
+				<div id="menuGauche">
+					<script language="JavaScript" type="text/javascript">Aff(menu);</script>
+				</div>
+			</div>
+		</div>
+		<div id="contentPrincipal">
+			<div id="boutonsliens">
+				<a id='lien_fiche_info' href='extrait.php?specid=69591915' ><img id="ongletficheinfo" alt="Onglet fiche information" src="img/onglet_fiche_info_vert.png" /></a><a id='lien_rcp' href='affichageDoc.php?specid=69591915&amp;typedoc=R'><img class="onglet" alt="Onglet résumé des caractéristiques du produit" src="img/onglet_rcp_gris.png" /></a><a id='lien_notice' href='affichageDoc.php?specid=69591915&amp;typedoc=N'><img class="onglet" alt="Onglet notice patient" src="img/onglet_notice_vert.png" /></a>			</div>
+			<div class="titredeno">
+				<table summary="" border="0" cellspacing="0">
+					<tr><td colspan="3" height="10px"></td></tr>
+					<tr>
+						<td width="15px">&nbsp;</td>
+						<td width="685px"><h1 class="textedeno">ISIMIG 2,5 mg, comprimé pelliculé  - Résumé des caractéristiques du produit</h1></td>
+						<td width="43px" class="tdcenter"><a href="Javascript:void(null)" onclick="print();"><img src="img/imprimante.png" height="20px" width="20px" alt="Imprimer le document" title="Imprimer le document" border="0" /></a></td>
+					</tr>
+					<tr><td colspan="3" height="10px"></td></tr>
+				</table>
+			</div>
+			
+			<div id="contentDocument">
+				<div id="textDocument">
+					<p class="DateNotif">ANSM - Mis à jour le : 14/06/2021</p>
+<p class="AmmAnnexeTitre1"><a name="RcpDenomination">1. DENOMINATION DU MEDICAMENT</a>&nbsp;&nbsp;<a href='#HautDePage'><img src='img/BackToTop.jpg' width='15px' height='15px' alt='Retour en haut de la page' title='Retour en haut de la page' /></a></p>
+<p class=AmmCorpsTexteGras>ISIMIG 2,5 mg, comprimé pelliculé</p>
+<p class="AmmAnnexeTitre1"><a name="RcpCompoQualiQuanti">2. COMPOSITION QUALITATIVE ET QUANTITATIVE</a>&nbsp;&nbsp;<a href='#HautDePage'><img src='img/BackToTop.jpg' width='15px' height='15px' alt='Retour en haut de la page' title='Retour en haut de la page' /></a></p>
+<p class=AmmComposition><a name="_Toc142278914">Frovatriptan......................................................................................................................... 2,50 mg</a></p>
+<p class=AmmComposition>Sous forme de succinate de frovatriptan monohydraté.......................................................... 3,91 mg</p>
+<p class=AmmCorpsTexte align=center style='text-align:center'>Pour un comprimé pelliculé</p>
+<p class=AmmCorpsTexte>Excipient à effet notoire : Chaque comprimé renferme environ 100 mg de lactose</p>
+<p class=AmmCorpsTexte>Pour la liste complète des excipients, voir rubrique 6.1.</p>
+<p class="AmmAnnexeTitre1"><a name="RcpFormePharm">3. FORME PHARMACEUTIQUE</a>&nbsp;&nbsp;<a href='#HautDePage'><img src='img/BackToTop.jpg' width='15px' height='15px' alt='Retour en haut de la page' title='Retour en haut de la page' /></a></p>
+<p class=AmmCorpsTexte><a name="_Toc142278915">Comprimé pelliculé.</a></p>
+<p class=AmmCorpsTexte>Comprimé pelliculé blanc, rond, biconvexe, marqué d’un « m » sur une face et « 2,5 » sur l’autre face.</p>
+<p class="AmmAnnexeTitre1"><a name="RcpDonneesCliniques">4. DONNEES CLINIQUES</a>&nbsp;&nbsp;<a href='#HautDePage'><img src='img/BackToTop.jpg' width='15px' height='15px' alt='Retour en haut de la page' title='Retour en haut de la page' /></a></p>
+<p class="AmmAnnexeTitre2"><a name="RcpIndicTherap">4.1. Indications thérapeutiques</a>&nbsp;&nbsp;<a href='#HautDePage'><img src='img/BackToTop.jpg' width='15px' height='15px' alt='Retour en haut de la page' title='Retour en haut de la page' /></a></p>
+<p class=AmmCorpsTexte><a name="_Toc142278917">Traitement de la phase céphalalgique de la crise de migraine avec ou sans aura.</a></p>
+<p class=AmmCorpsTexte>ISIMIG est indiqué chez les adultes.</p>
+<p class="AmmAnnexeTitre2"><a name="RcpPosoAdmin">4.2. Posologie et mode d'administration</a>&nbsp;&nbsp;<a href='#HautDePage'><img src='img/BackToTop.jpg' width='15px' height='15px' alt='Retour en haut de la page' title='Retour en haut de la page' /></a></p>
+<p class=AmmAnnexeTitre3><a name="_Toc142278918">Posologie</a></p>
+<p class=AmmCorpsTexte>Le comprimé de frovatriptan doit être pris aussi précocement que possible après le début d'une crise de céphalée migraineuse, mais il est efficace lorsqu'il est pris à un stade ultérieur.</p>
+<p class=AmmCorpsTexte>Le comprimé de frovatriptan ne doit pas être utilisé en prophylaxie.</p>
+<p class=AmmCorpsTexte>Si un patient n'est pas soulagé après la première dose de frovatriptan, une seconde dose ne doit pas être prise lors de la même crise car aucun avantage n'a été démontré.</p>
+<p class=AmmCorpsTexte>Le frovatriptan pourra être utilisé pour les crises de migraine suivantes.</p>
+<p class=AmmAnnexeTitre4>Adulte (de 18 à 65 ans)</p>
+<p class=AmmCorpsTexte>La dose recommandée est de un comprimé à 2,5 mg de frovatriptan.</p>
+<p class=AmmCorpsTexte>Si les symptômes de la migraine réapparaissent après une amélioration initiale, un deuxième comprimé peut être pris, à condition de respecter un intervalle d'au-moins 2 heures entre les deux doses.</p>
+<p class=AmmCorpsTexte>La dose totale ne doit pas dépasser 2 comprimés à 2,5 mg par 24 heures.</p>
+<p class=AmmAnnexeTitre4>Population pédiatrique (de moins de 18 ans)</p>
+<p class=AmmCorpsTexte>La sécurité et l’efficacité d’ISIMIG chez les enfants et les adolescents âgés de moins de 18 ans n’ont pas été établies. De ce fait, son utilisation dans cette classe d’âge n’est pas recommandée.</p>
+<p class=AmmCorpsTexte>Aucune donnée n’est disponible.</p>
+<p class=AmmAnnexeTitre4>Patient âgé (de plus de 65 ans)</p>
+<p class=AmmCorpsTexte>Les données chez les sujets de plus de 65 ans sous frovatriptan restent limitées. Par conséquent, son utilisation chez cette catégorie de patients ne peut pas être recommandée.</p>
+<p class=AmmAnnexeTitre4>Insuffisant rénal</p>
+<p class=AmmCorpsTexte>Aucune adaptation de la dose n’est nécessaire (voir rubrique 5.2) chez les patients atteints d’insuffisance rénale.</p>
+<p class=AmmAnnexeTitre4>Insuffisant hépatique</p>
+<p class=AmmCorpsTexte>Aucune adaptation de la dose n’est nécessaire (voir rubrique 5.2) chez les patients souffrant d’insuffisance hépatique légère ou modérée. L’utilisation de frovatriptan est contre-indiquée chez les patients atteints d’une insuffisance hépatique grave (voir rubrique 4.3).</p>
+<p class=AmmAnnexeTitre3>Mode d’administration</p>
+<p class=AmmCorpsTexte>Voie orale.</p>
+<p class=AmmCorpsTexte>Les comprimés doivent être avalés entiers avec de l’eau.</p>
+<p class="AmmAnnexeTitre2"><a name="RcpContreindications">4.3. Contre-indications</a>&nbsp;&nbsp;<a href='#HautDePage'><img src='img/BackToTop.jpg' width='15px' height='15px' alt='Retour en haut de la page' title='Retour en haut de la page' /></a></p>
+<p class=AmmListePuces1><a name="_Toc142278919"><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>Hypersensibilité à la substance active ou à l’un des excipients mentionnés à la rubrique 6.1.</a></p>
+<p class=AmmListePuces1><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>Antécédents d'infarctus du myocarde, pathologie cardiaque ischémique, vasospasme coronarien (angor de Prinzmetal), pathologie vasculaire périphérique, patients présentant des symptômes de pathologie cardiaque ischémique ou des signes cliniques compatibles avec une pathologie cardiaque ischémique.</p>
+<p class=AmmListePuces1><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>Hypertension artérielle modérée ou sévère, hypertension légère non contrôlée.</p>
+<p class=AmmListePuces1><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>Antécédents d'accident vasculaire cérébral (AVC) ou d'accident ischémique transitoire (AIT).</p>
+<p class=AmmListePuces1><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>Insuffisance hépatique sévère (Child-Pugh C).</p>
+<p class=AmmListePuces1><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>Administration concomitante de frovatriptan avec l'ergotamine, les dérivés de l'ergotamine (y compris le méthysergide) ou d'autres agonistes des récepteurs à la 5-hydroxytryptamine (5-HT<sub>1</sub>).</p>
+<p class="AmmAnnexeTitre2"><a name="RcpMisesEnGarde">4.4. Mises en garde spéciales et précautions d'emploi</a>&nbsp;&nbsp;<a href='#HautDePage'><img src='img/BackToTop.jpg' width='15px' height='15px' alt='Retour en haut de la page' title='Retour en haut de la page' /></a></p>
+<p class=AmmCorpsTexte><a name="_Toc142278920">Le frovatriptan ne doit être utilisé qu'après avoir établi un diagnostic certain de migraine.</a></p>
+<p class=AmmCorpsTexte>Le frovatriptan n'est pas indiqué dans le traitement des migraines hémiplégiques, basilaires ou ophtalmoplégiques.</p>
+<p class=AmmCorpsTexte>Comme avec les autres traitements de la crise de migraine, avant de traiter les céphalées des patients sans diagnostic antérieur de migraine ou des patients migraineux présentant des symptômes atypiques, il est nécessaire d'exclure d'autres pathologies neurologiques potentiellement graves. Il faut noter que les migraineux peuvent présenter un risque accru de survenue de certains événements vasculaires cérébraux (par exemple : AVC ou AIT).</p>
+<p class=AmmCorpsTexte>La sécurité et l'efficacité du frovatriptan au cours de la phase d'aura, avant le début de la céphalée migraineuse, reste encore à établir.</p>
+<p class=AmmCorpsTexte>Comme avec les autres agonistes des récepteurs 5HT1, le frovatriptan ne doit pas être administré aux patients ayant des facteurs de risque de maladie cardiaque ischémique, y compris les gros fumeurs ou les patients utilisant des thérapies de substitution à base de nicotine, sans un bilan cardiovasculaire préalable (<a href="http://afssaps-prd.afssaps.fr/php/ecodex/rcp/R0197523.htm#Rcp_4_3_ContreIndic_2#Rcp_4_3_ContreIndic_2"><span style='color:windowtext;text-decoration:none'>voir rubrique 4.3</span></a>). Une attention particulière doit être portée aux femmes ménopausées et aux hommes de plus de 40 ans présentant ces facteurs de risque.</p>
+<p class=AmmCorpsTexte>Cependant, ce bilan peut ne pas identifier tous les patients qui ont une maladie cardio-vasculaire et, dans de très rares cas, des événements cardiaques graves sont survenus chez des patients sans maladie cardio-vasculaire sous-jacente lors de la prise d'agonistes 5HT1.</p>
+<p class=AmmCorpsTexte>Après administration, la prise de frovatriptan peut être associée à des symptômes transitoires comprenant des douleurs thoraciques ou une sensation d'oppression pouvant être intense et pouvant s'étendre au niveau de la gorge (<a href="http://afssaps-prd.afssaps.fr/php/ecodex/rcp/R0197523.htm#Rcp_4_8_EffetsIndesirables_5#Rcp_4_8_EffetsIndesirables_5"><span style='color:windowtext;text-decoration:none'>voir rubrique 4.8</span></a>).</p>
+<p class=AmmCorpsTexte>Si la symptomatologie évoque une ischémie cardiaque, il ne faut pas prendre de doses supplémentaires de frovatriptan et des explorations appropriées devront être réalisées.</p>
+<p class=AmmCorpsTexte>Les patients doivent être informés des premiers signes et symptômes des réactions d’hypersensibilité, incluant des affections cutanées, des angioedèmes et de l’anaphylaxie (voir rubrique 4.8). Le traitement par frovatriptan doit être immédiatement arrêté en cas de survenue de réactions graves allergiques/d’hypersensibilité et ne doit pas être réinstauré de nouveau.</p>
+<p class=AmmCorpsTexte>Il est recommandé d'attendre 24 heures après administration de frovatriptan pour administrer un produit à base d'ergotamine. Un délai d'au moins 24 heures doit être respecté après l'administration d'un médicament contenant de l'ergotamine avant de donner du frovatriptan (<a href="http://afssaps-prd.afssaps.fr/php/ecodex/rcp/R0197523.htm#Rcp_4_3_ContreIndic_2#Rcp_4_3_ContreIndic_2"><span style='color:windowtext;text-decoration:none'>voir rubriques 4.3</span></a> et <a href="http://afssaps-prd.afssaps.fr/php/ecodex/rcp/R0197523.htm#Rcp_4_5_Interactions_4#Rcp_4_5_Interactions_4"><span style='color:windowtext;text-decoration:none'>4.5</span></a>).</p>
+<p class=AmmCorpsTexte>En cas d'utilisation trop rapprochée (utilisation répétée sur plusieurs jours consécutifs correspondant à une mauvaise utilisation du produit) le produit peut s'accumuler entraînant ainsi une augmentation des effets indésirables.</p>
+<p class=AmmCorpsTexte>L'utilisation prolongée d'un traitement antalgique pour traiter les céphalées peut entraîner une aggravation de celles-ci. Dans ces cas ou en cas de suspicion, un avis médical est nécessaire et le traitement doit être interrompu. Le diagnostic de céphalée par abus médicamenteux (CAM) doit être suspecté chez les patients présentant des céphalées fréquentes ou quotidiennes malgré (ou à cause de) l'utilisation régulière d'un traitement antimigraineux.</p>
+<p class=AmmCorpsTexte>La dose recommandée de frovatriptan ne doit pas être dépassée.</p>
+<p class=AmmCorpsTexte>La fréquence des effets indésirables peut être augmentée par l'association de triptans à des préparations contenant du millepertuis (Hypericum perforatum).</p>
+<p class=AmmCorpsTexte>Ce médicament contient du lactose, par conséquent les patients présentant une intolérance au galactose, un déficit total en lactase ou un syndrome de malabsorption du glucose et du galactose (maladies héréditaires rares) ne doivent pas prendre ce médicament.</p>
+<p class=AmmCorpsTexte>Ce médicament contient moins de 1 mmol (23 mg) de sodium par dose, c.-à-d. qu’il est essentiellement « sans sodium ».</p>
+<p class="AmmAnnexeTitre2"><a name="RcpInteractionsMed">4.5. Interactions avec d'autres médicaments et autres formes d'interactions</a>&nbsp;&nbsp;<a href='#HautDePage'><img src='img/BackToTop.jpg' width='15px' height='15px' alt='Retour en haut de la page' title='Retour en haut de la page' /></a></p>
+<p class=AmmAnnexeTitre3><a name="_Toc142278921">Associations contre-indiquées</a></p>
+<p class=AmmCorpsTexteGras>+ Vasoconstricteurs alcaloïdes de l'ergot de seigle, ergotamine et dérivés de l'ergotamine (y compris le méthysergide) et autres agonistes des récepteurs 5HT1 :</p>
+<p class=AmmCorpsTexte>Risque d'hypertension artérielle, de vasoconstriction artérielle coronaire par addition d'effets vasoconstricteurs en cas d'association au cours d'une même crise (voir rubrique 4.3).</p>
+<p class=AmmCorpsTexte>Les effets peuvent être additifs. Il est conseillé d'attendre au moins 24 heures après l'utilisation de médicaments contenant de l'ergotamine, avant l'administration du frovatriptan. De même, il est conseillé d'attendre 24 heures après l'utilisation du frovatriptan avant l'administration d'un médicament contenant de l'ergotamine (voir rubrique 4.4).</p>
+<p class=AmmAnnexeTitre3><a name="_Toc142278922">Associations déconseillées</a></p>
+<p class=AmmCorpsTexteGras>+ IMAO</p>
+<p class=AmmCorpsTexte>Bien que le frovatriptan ne soit pas métabolisé par la MAO-A, un risque potentiel de syndrome sérotoninergique ou d'hypertension ne peut être exclu (voir rubrique 5.2).</p>
+<p class=AmmAnnexeTitre3><a name="_Toc142278924">Associations à prendre en compte</a></p>
+<p class=AmmCorpsTexteGras>+ Antidépresseurs sérotoninergiques purs (citalopram, fluoxétine, fluvoxamine, paroxétine, sertraline)</p>
+<p class=AmmCorpsTexte>Risque potentiel d'hypertension artérielle, de vasoconstriction coronaire ou de syndrome sérotoninergique.</p>
+<p class=AmmCorpsTexte>Le strict respect des doses préconisées constitue un facteur essentiel dans la prévention de l'apparition de ce syndrome.</p>
+<p class=AmmCorpsTexteGras>+ Méthylergométrine</p>
+<p class=AmmCorpsTexte>Risque d'hypertension artérielle, de vasoconstriction artérielle coronaire.</p>
+<p class=AmmCorpsTexteGras>+ Fluvoxamine</p>
+<p class=AmmCorpsTexte>La fluvoxamine est un puissant inhibiteur du cytochrome CYP1A2 et il a été démontré qu'elle augmentait le taux plasmatique de frovatriptan de 27 à 49 %.</p>
+<p class=AmmCorpsTexteGras>+ Contraceptifs oraux</p>
+<p class=AmmCorpsTexte>Chez les femmes prenant un contraceptif oral la concentration en frovatriptan est plus élevé de 30 % que chez les femmes sans contraceptif oral. Aucune augmentation de l'incidence d'effet indésirable n'a été reportée.</p>
+<p class=AmmCorpsTexteGras>+ Millepertuis (voie orale)</p>
+<p class=AmmCorpsTexte>Comme avec les autres triptans, le risque d'apparition d'un syndrome sérotoninergique est augmenté.</p>
+<p class="AmmAnnexeTitre2"><a name="RcpFertGrossAllait">4.6. Fertilité, grossesse et allaitement</a>&nbsp;&nbsp;<a href='#HautDePage'><img src='img/BackToTop.jpg' width='15px' height='15px' alt='Retour en haut de la page' title='Retour en haut de la page' /></a></p>
+<p class=AmmAnnexeTitre3>Grossesse</p>
+<p class=AmmCorpsTexte>Il n'y a pas ou peu de données sur l'utilisation de frovatriptan chez la femme enceinte. Des études chez l'animal ont montré une toxicité de la reproduction (voir rubrique 5.3). Le risque chez l'homme n'est pas connu. ISIMIG n’est pas recommandé au cours d'une grossesse et chez les femmes en âge de procréer n’utilisant pas de contraception, à moins d'une nécessité clairement définie.</p>
+<p class=AmmAnnexeTitre3><a name="_Toc142278927">Allaitement</a></p>
+<p class=AmmCorpsTexte>Chez la femme, l’excrétion du frovatriptan et/ou de ses métabolites dans le lait maternel n’est pas connue.</p>
+<p class=AmmCorpsTexte>Chez la rate allaitante, le frovatriptan et/ou ses métabolites sont excrétés dans le lait, la concentration maximale dans le lait étant quatre fois supérieure à celle maximale relevée dans le sang. Un risque chez les nouveaux nés/nourrissons allaités ne peut être exclu.  </p>
+<p class=AmmCorpsTexte>ISIMIG n’est pas recommandé au cours de l’allaitement, à moins d'une nécessité clairement définie. Dans ce cas, un délai de 24 heures doit être observé.</p>
+<p class="AmmAnnexeTitre2"><a name="RcpConduite">4.7. Effets sur l'aptitude à conduire des véhicules et à utiliser des machines</a>&nbsp;&nbsp;<a href='#HautDePage'><img src='img/BackToTop.jpg' width='15px' height='15px' alt='Retour en haut de la page' title='Retour en haut de la page' /></a></p>
+<p class=AmmCorpsTexte><a name="_Toc142278929">Aucune étude concernant l'effet du frovatriptan sur l'aptitude à conduire des véhicules et à utiliser des machines.</a></p>
+<p class=AmmCorpsTexte>La migraine ou le traitement par frovatriptan peut entraîner une somnolence.</p>
+<p class=AmmCorpsTexte>Les patients doivent être conseillés d'évaluer leur facilité à réaliser des tâches complexes telle que conduire un véhicule au cours d'une crise de migraine et suite à l'administration de frovatriptan.</p>
+<p class="AmmAnnexeTitre2"><a name="RcpEffetsIndesirables">4.8. Effets indésirables</a>&nbsp;&nbsp;<a href='#HautDePage'><img src='img/BackToTop.jpg' width='15px' height='15px' alt='Retour en haut de la page' title='Retour en haut de la page' /></a></p>
+<p class=AmmCorpsTexte>Le frovatriptan, à la dose recommandée de 2,5 mg, a été administré à plus de 2700 patients et les effets indésirables les plus fréquemment rencontrés (&lt; 10 %) sont étourdissement, fatigue, paresthésie, céphalée et bouffée de chaleur. Les effets indésirables sous frovatriptan rapportés dans les essais cliniques étaient transitoires, généralement légers à modérés et à résolution spontanée. Certains symptômes rapportés comme effets indésirables peuvent être considérés comme des symptômes associés à la migraine.</p>
+<p class=AmmCorpsTexte>Le tableau ci-dessous montre l'ensemble des réactions indésirables considérées comme étant en relation avec la prise de frovatriptan 2,5 mg, ayant montré une incidence plus élevée par rapport au placebo dans les 4 essais cliniques contrôlés versus placebo.</p>
+<p class=AmmCorpsTexte>Les effets sont listés par ordre décroissant d'incidence et par système. Ceux collectés après commercialisation sont notés avec un astérisque.*</p>
+<div align=center>
+<table class=AmmCorpsTexteTable border=0 cellspacing=0 cellpadding=0 width="98%"
+style='border-collapse:collapse'>
+<thead>
+<tr>
+<td width="45%" style='width:45.26%;border:solid windowtext 1.0pt;
+padding:0cm 0cm 0cm 0cm'>
+<p class=AmmCorpsTexteGras>Système Organe</p>
+</td>
+<td width="13%" style='width:13.7%;border:solid windowtext 1.0pt;border-left:
+none;padding:0cm 0cm 0cm 0cm'>
+<p class=AmmCorpsTexteGras>Fréquent &#8805;1/100 &lt;1/10</p>
+</td>
+<td width="13%" style='width:13.7%;border:solid windowtext 1.0pt;border-left:
+none;padding:0cm 0cm 0cm 0cm'>
+<p class=AmmCorpsTexteGras>Peu fréquent &#8805;1/1000 &lt;1/100</p>
+</td>
+<td width="13%" style='width:13.68%;border:solid windowtext 1.0pt;
+border-left:none;padding:0cm 0cm 0cm 0cm'>
+<p class=AmmCorpsTexteGras>Rare &#8805;1/10000 &lt;1/1000</p>
+</td>
+<td width="13%" style='width:13.66%;border:solid windowtext 1.0pt;
+border-left:none;padding:0cm 0cm 0cm 0cm'>
+<p class=AmmCorpsTexteGras>Inconnu<br> (Ne peut pas être estimé à partir des données disponibles)</p>
+</td>
+</tr>
+<tr>
+<td width="45%" valign=top style='width:45.26%;border:solid windowtext 1.0pt;
+border-top:none;padding:0cm 0cm 0cm 0cm;border:solid windowtext 1.0pt !msorm;
+border-top:none !msorm;padding:0cm 0cm 0cm 0cm !msorm'>
+<p class=AmmCorpsTexteGras>Affections hématologiques et du système lymphatique</p>
+</td>
+<td width="13%" valign=top style='width:13.7%;border-top:none;border-left:
+none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+padding:0cm 0cm 0cm 0cm;border-top:none !msorm;border-left:none !msorm;
+border-bottom:solid windowtext 1.0pt !msorm;border-right:solid windowtext 1.0pt !msorm;
+padding:0cm 0cm 0cm 0cm !msorm'>
+<p class=AmmCorpsTexte> </p>
+</td>
+<td width="13%" valign=top style='width:13.7%;border-top:none;border-left:
+none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+padding:0cm 0cm 0cm 0cm;border-top:none !msorm;border-left:none !msorm;
+border-bottom:solid windowtext 1.0pt !msorm;border-right:solid windowtext 1.0pt !msorm;
+padding:0cm 0cm 0cm 0cm !msorm'>
+<p class=AmmCorpsTexte> </p>
+</td>
+<td width="13%" valign=top style='width:13.68%;border-top:none;border-left:
+none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+padding:0cm 0cm 0cm 0cm;border-top:none !msorm;border-left:none !msorm;
+border-bottom:solid windowtext 1.0pt !msorm;border-right:solid windowtext 1.0pt !msorm;
+padding:0cm 0cm 0cm 0cm !msorm'>
+<p class=AmmCorpsTexte><span style='color:black'>Lymphadénopathie</span></p>
+</td>
+<td width="13%" valign=top style='width:13.66%;border-top:none;border-left:
+none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+padding:0cm 0cm 0cm 0cm;border-top:none !msorm;border-left:none !msorm;
+border-bottom:solid windowtext 1.0pt !msorm;border-right:solid windowtext 1.0pt !msorm;
+padding:0cm 0cm 0cm 0cm !msorm'>
+<p class=AmmCorpsTexte> </p>
+</td>
+</tr>
+<tr>
+<td width="45%" valign=top style='width:45.26%;border:solid windowtext 1.0pt;
+border-top:none;padding:0cm 0cm 0cm 0cm;border:solid windowtext 1.0pt !msorm;
+border-top:none !msorm;padding:0cm 0cm 0cm 0cm !msorm'>
+<p class=AmmCorpsTexteGras>Affections du système immunitaire</p>
+</td>
+<td width="13%" valign=top style='width:13.7%;border-top:none;border-left:
+none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+padding:0cm 0cm 0cm 0cm;border-top:none !msorm;border-left:none !msorm;
+border-bottom:solid windowtext 1.0pt !msorm;border-right:solid windowtext 1.0pt !msorm;
+padding:0cm 0cm 0cm 0cm !msorm'>
+<p class=AmmCorpsTexte> </p>
+</td>
+<td width="13%" valign=top style='width:13.7%;border-top:none;border-left:
+none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+padding:0cm 0cm 0cm 0cm;border-top:none !msorm;border-left:none !msorm;
+border-bottom:solid windowtext 1.0pt !msorm;border-right:solid windowtext 1.0pt !msorm;
+padding:0cm 0cm 0cm 0cm !msorm'>
+<p class=AmmCorpsTexte> </p>
+</td>
+<td width="13%" valign=top style='width:13.68%;border-top:none;border-left:
+none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+padding:0cm 0cm 0cm 0cm;border-top:none !msorm;border-left:none !msorm;
+border-bottom:solid windowtext 1.0pt !msorm;border-right:solid windowtext 1.0pt !msorm;
+padding:0cm 0cm 0cm 0cm !msorm'>
+<p class=AmmCorpsTexte><span style='color:black'> </span></p>
+</td>
+<td width="13%" valign=top style='width:13.66%;border-top:none;border-left:
+none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+padding:0cm 0cm 0cm 0cm;border-top:none !msorm;border-left:none !msorm;
+border-bottom:solid windowtext 1.0pt !msorm;border-right:solid windowtext 1.0pt !msorm;
+padding:0cm 0cm 0cm 0cm !msorm'>
+<p class=AmmCorpsTexte><span style='color:black'>Réactions d’hypersensibilité* (incluant affections cutanées, angioedème et anaphylaxie) </span></p>
+</td>
+</tr>
+<tr>
+<td width="45%" valign=top style='width:45.26%;border:solid windowtext 1.0pt;
+border-top:none;padding:0cm 0cm 0cm 0cm;border:solid windowtext 1.0pt !msorm;
+border-top:none !msorm;padding:0cm 0cm 0cm 0cm !msorm'>
+<p class=AmmCorpsTexteGras>Affections métaboliques et nutritionnelles</p>
+</td>
+<td width="13%" valign=top style='width:13.7%;border-top:none;border-left:
+none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+padding:0cm 0cm 0cm 0cm;border-top:none !msorm;border-left:none !msorm;
+border-bottom:solid windowtext 1.0pt !msorm;border-right:solid windowtext 1.0pt !msorm;
+padding:0cm 0cm 0cm 0cm !msorm'>
+<p class=AmmCorpsTexte> </p>
+</td>
+<td width="13%" valign=top style='width:13.7%;border-top:none;border-left:
+none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+padding:0cm 0cm 0cm 0cm;border-top:none !msorm;border-left:none !msorm;
+border-bottom:solid windowtext 1.0pt !msorm;border-right:solid windowtext 1.0pt !msorm;
+padding:0cm 0cm 0cm 0cm !msorm'>
+<p class=AmmCorpsTexte><span style='color:black'>Déshydratation</span></p>
+</td>
+<td width="13%" valign=top style='width:13.68%;border-top:none;border-left:
+none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+padding:0cm 0cm 0cm 0cm;border-top:none !msorm;border-left:none !msorm;
+border-bottom:solid windowtext 1.0pt !msorm;border-right:solid windowtext 1.0pt !msorm;
+padding:0cm 0cm 0cm 0cm !msorm'>
+<p class=AmmCorpsTexte><span style='color:black'>Hypoglycémie</span></p>
+</td>
+<td width="13%" valign=top style='width:13.66%;border-top:none;border-left:
+none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+padding:0cm 0cm 0cm 0cm;border-top:none !msorm;border-left:none !msorm;
+border-bottom:solid windowtext 1.0pt !msorm;border-right:solid windowtext 1.0pt !msorm;
+padding:0cm 0cm 0cm 0cm !msorm'>
+<p class=AmmCorpsTexte> </p>
+</td>
+</tr>
+<tr>
+<td width="45%" valign=top style='width:45.26%;border:solid windowtext 1.0pt;
+border-top:none;padding:0cm 0cm 0cm 0cm;border:solid windowtext 1.0pt !msorm;
+border-top:none !msorm;padding:0cm 0cm 0cm 0cm !msorm'>
+<p class=AmmCorpsTexteGras>Affections psychiatriques</p>
+</td>
+<td width="13%" valign=top style='width:13.7%;border-top:none;border-left:
+none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+padding:0cm 0cm 0cm 0cm;border-top:none !msorm;border-left:none !msorm;
+border-bottom:solid windowtext 1.0pt !msorm;border-right:solid windowtext 1.0pt !msorm;
+padding:0cm 0cm 0cm 0cm !msorm'>
+<p class=AmmCorpsTexte> </p>
+</td>
+<td width="13%" valign=top style='width:13.7%;border-top:none;border-left:
+none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+padding:0cm 0cm 0cm 0cm;border-top:none !msorm;border-left:none !msorm;
+border-bottom:solid windowtext 1.0pt !msorm;border-right:solid windowtext 1.0pt !msorm;
+padding:0cm 0cm 0cm 0cm !msorm'>
+<p class=AmmCorpsTexte><span style='color:black'>Anxiété, insomnie, confusion, nervosité, agitation, dépression, dépersonnalisation</span></p>
+</td>
+<td width="13%" valign=top style='width:13.68%;border-top:none;border-left:
+none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+padding:0cm 0cm 0cm 0cm;border-top:none !msorm;border-left:none !msorm;
+border-bottom:solid windowtext 1.0pt !msorm;border-right:solid windowtext 1.0pt !msorm;
+padding:0cm 0cm 0cm 0cm !msorm'>
+<p class=AmmCorpsTexte><span style='color:black'>Cauchemars, troubles de la personnalité</span></p>
+</td>
+<td width="13%" valign=top style='width:13.66%;border-top:none;border-left:
+none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+padding:0cm 0cm 0cm 0cm;border-top:none !msorm;border-left:none !msorm;
+border-bottom:solid windowtext 1.0pt !msorm;border-right:solid windowtext 1.0pt !msorm;
+padding:0cm 0cm 0cm 0cm !msorm'>
+<p class=AmmCorpsTexte> </p>
+</td>
+</tr>
+<tr>
+<td width="45%" valign=top style='width:45.26%;border:solid windowtext 1.0pt;
+border-top:none;padding:0cm 0cm 0cm 0cm;border:solid windowtext 1.0pt !msorm;
+border-top:none !msorm;padding:0cm 0cm 0cm 0cm !msorm'>
+<p class=AmmCorpsTexteGras>Affections du système nerveux</p>
+</td>
+<td width="13%" valign=top style='width:13.7%;border-top:none;border-left:
+none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+padding:0cm 0cm 0cm 0cm;border-top:none !msorm;border-left:none !msorm;
+border-bottom:solid windowtext 1.0pt !msorm;border-right:solid windowtext 1.0pt !msorm;
+padding:0cm 0cm 0cm 0cm !msorm'>
+<p class=AmmCorpsTexte><span style='color:black'>Etourdissement, paresthésies, céphalées, somnolence, dysesthésies, hypoesthésie</span></p>
+</td>
+<td width="13%" valign=top style='width:13.7%;border-top:none;border-left:
+none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+padding:0cm 0cm 0cm 0cm;border-top:none !msorm;border-left:none !msorm;
+border-bottom:solid windowtext 1.0pt !msorm;border-right:solid windowtext 1.0pt !msorm;
+padding:0cm 0cm 0cm 0cm !msorm'>
+<p class=AmmCorpsTexte><span style='color:black'>Dysgueusie, tremblements, troubles de l'attention, léthargie, hyperesthésie, sédation, vertiges, contractions musculaires involontaires</span></p>
+</td>
+<td width="13%" valign=top style='width:13.68%;border-top:none;border-left:
+none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+padding:0cm 0cm 0cm 0cm;border-top:none !msorm;border-left:none !msorm;
+border-bottom:solid windowtext 1.0pt !msorm;border-right:solid windowtext 1.0pt !msorm;
+padding:0cm 0cm 0cm 0cm !msorm'>
+<p class=AmmCorpsTexte><span style='color:black'>Hypertonie, amnésie, hypotonie, hyporéflexie, troubles du mouvement</span></p>
+</td>
+<td width="13%" valign=top style='width:13.66%;border-top:none;border-left:
+none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+padding:0cm 0cm 0cm 0cm;border-top:none !msorm;border-left:none !msorm;
+border-bottom:solid windowtext 1.0pt !msorm;border-right:solid windowtext 1.0pt !msorm;
+padding:0cm 0cm 0cm 0cm !msorm'>
+<p class=AmmCorpsTexte> </p>
+</td>
+</tr>
+<tr>
+<td width="45%" valign=top style='width:45.26%;border:solid windowtext 1.0pt;
+border-top:none;padding:0cm 0cm 0cm 0cm;border:solid windowtext 1.0pt !msorm;
+border-top:none !msorm;padding:0cm 0cm 0cm 0cm !msorm'>
+<p class=AmmCorpsTexteGras>Affections oculaires</p>
+</td>
+<td width="13%" valign=top style='width:13.7%;border-top:none;border-left:
+none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+padding:0cm 0cm 0cm 0cm;border-top:none !msorm;border-left:none !msorm;
+border-bottom:solid windowtext 1.0pt !msorm;border-right:solid windowtext 1.0pt !msorm;
+padding:0cm 0cm 0cm 0cm !msorm'>
+<p class=AmmCorpsTexte><span style='color:black'>Troubles de la vision</span></p>
+</td>
+<td width="13%" valign=top style='width:13.7%;border-top:none;border-left:
+none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+padding:0cm 0cm 0cm 0cm;border-top:none !msorm;border-left:none !msorm;
+border-bottom:solid windowtext 1.0pt !msorm;border-right:solid windowtext 1.0pt !msorm;
+padding:0cm 0cm 0cm 0cm !msorm'>
+<p class=AmmCorpsTexte><span style='color:black'>Douleur oculaire, irritation oculaire, photophobie</span></p>
+</td>
+<td width="13%" valign=top style='width:13.68%;border-top:none;border-left:
+none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+padding:0cm 0cm 0cm 0cm;border-top:none !msorm;border-left:none !msorm;
+border-bottom:solid windowtext 1.0pt !msorm;border-right:solid windowtext 1.0pt !msorm;
+padding:0cm 0cm 0cm 0cm !msorm'>
+<p class=AmmCorpsTexte><span style='color:black'>Cécité nocturne</span></p>
+</td>
+<td width="13%" valign=top style='width:13.66%;border-top:none;border-left:
+none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+padding:0cm 0cm 0cm 0cm;border-top:none !msorm;border-left:none !msorm;
+border-bottom:solid windowtext 1.0pt !msorm;border-right:solid windowtext 1.0pt !msorm;
+padding:0cm 0cm 0cm 0cm !msorm'>
+<p class=AmmCorpsTexte> </p>
+</td>
+</tr>
+<tr>
+<td width="45%" valign=top style='width:45.26%;border:solid windowtext 1.0pt;
+border-top:none;padding:0cm 0cm 0cm 0cm;border:solid windowtext 1.0pt !msorm;
+border-top:none !msorm;padding:0cm 0cm 0cm 0cm !msorm'>
+<p class=AmmCorpsTexteGras>Affections auditives et du labyrinthe</p>
+</td>
+<td width="13%" valign=top style='width:13.7%;border-top:none;border-left:
+none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+padding:0cm 0cm 0cm 0cm;border-top:none !msorm;border-left:none !msorm;
+border-bottom:solid windowtext 1.0pt !msorm;border-right:solid windowtext 1.0pt !msorm;
+padding:0cm 0cm 0cm 0cm !msorm'>
+<p class=AmmCorpsTexte> </p>
+</td>
+<td width="13%" valign=top style='width:13.7%;border-top:none;border-left:
+none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+padding:0cm 0cm 0cm 0cm;border-top:none !msorm;border-left:none !msorm;
+border-bottom:solid windowtext 1.0pt !msorm;border-right:solid windowtext 1.0pt !msorm;
+padding:0cm 0cm 0cm 0cm !msorm'>
+<p class=AmmCorpsTexte><span style='color:black'>Acouphènes, douleur auriculaire</span></p>
+</td>
+<td width="13%" valign=top style='width:13.68%;border-top:none;border-left:
+none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+padding:0cm 0cm 0cm 0cm;border-top:none !msorm;border-left:none !msorm;
+border-bottom:solid windowtext 1.0pt !msorm;border-right:solid windowtext 1.0pt !msorm;
+padding:0cm 0cm 0cm 0cm !msorm'>
+<p class=AmmCorpsTexte><span style='color:black'>Gêne auriculaire, troubles de l'audition, prurit auriculaire, hyperacousie</span></p>
+</td>
+<td width="13%" valign=top style='width:13.66%;border-top:none;border-left:
+none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+padding:0cm 0cm 0cm 0cm;border-top:none !msorm;border-left:none !msorm;
+border-bottom:solid windowtext 1.0pt !msorm;border-right:solid windowtext 1.0pt !msorm;
+padding:0cm 0cm 0cm 0cm !msorm'>
+<p class=AmmCorpsTexte> </p>
+</td>
+</tr>
+<tr>
+<td width="45%" valign=top style='width:45.26%;border:solid windowtext 1.0pt;
+border-top:none;padding:0cm 0cm 0cm 0cm;border:solid windowtext 1.0pt !msorm;
+border-top:none !msorm;padding:0cm 0cm 0cm 0cm !msorm'>
+<p class=AmmCorpsTexteGras>Affections cardiaques</p>
+</td>
+<td width="13%" valign=top style='width:13.7%;border-top:none;border-left:
+none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+padding:0cm 0cm 0cm 0cm;border-top:none !msorm;border-left:none !msorm;
+border-bottom:solid windowtext 1.0pt !msorm;border-right:solid windowtext 1.0pt !msorm;
+padding:0cm 0cm 0cm 0cm !msorm'>
+<p class=AmmCorpsTexte> </p>
+</td>
+<td width="13%" valign=top style='width:13.7%;border-top:none;border-left:
+none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+padding:0cm 0cm 0cm 0cm;border-top:none !msorm;border-left:none !msorm;
+border-bottom:solid windowtext 1.0pt !msorm;border-right:solid windowtext 1.0pt !msorm;
+padding:0cm 0cm 0cm 0cm !msorm'>
+<p class=AmmCorpsTexte><span style='color:black'>Palpitation, tachycardie</span></p>
+</td>
+<td width="13%" valign=top style='width:13.68%;border-top:none;border-left:
+none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+padding:0cm 0cm 0cm 0cm;border-top:none !msorm;border-left:none !msorm;
+border-bottom:solid windowtext 1.0pt !msorm;border-right:solid windowtext 1.0pt !msorm;
+padding:0cm 0cm 0cm 0cm !msorm'>
+<p class=AmmCorpsTexte><span style='color:black'>Bradycardie</span></p>
+</td>
+<td width="13%" valign=top style='width:13.66%;border-top:none;border-left:
+none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+padding:0cm 0cm 0cm 0cm;border-top:none !msorm;border-left:none !msorm;
+border-bottom:solid windowtext 1.0pt !msorm;border-right:solid windowtext 1.0pt !msorm;
+padding:0cm 0cm 0cm 0cm !msorm'>
+<p class=AmmCorpsTexte><span style='color:black'>Infarctus du myocarde*, artériospasme coronaire* </span></p>
+</td>
+</tr>
+<tr>
+<td width="45%" valign=top style='width:45.26%;border:solid windowtext 1.0pt;
+border-top:none;padding:0cm 0cm 0cm 0cm;border:solid windowtext 1.0pt !msorm;
+border-top:none !msorm;padding:0cm 0cm 0cm 0cm !msorm'>
+<p class=AmmCorpsTexteGras>Affections vasculaires</p>
+</td>
+<td width="13%" valign=top style='width:13.7%;border-top:none;border-left:
+none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+padding:0cm 0cm 0cm 0cm;border-top:none !msorm;border-left:none !msorm;
+border-bottom:solid windowtext 1.0pt !msorm;border-right:solid windowtext 1.0pt !msorm;
+padding:0cm 0cm 0cm 0cm !msorm'>
+<p class=AmmCorpsTexte><span style='color:black'>Bouffée de chaleur</span></p>
+</td>
+<td width="13%" valign=top style='width:13.7%;border-top:none;border-left:
+none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+padding:0cm 0cm 0cm 0cm;border-top:none !msorm;border-left:none !msorm;
+border-bottom:solid windowtext 1.0pt !msorm;border-right:solid windowtext 1.0pt !msorm;
+padding:0cm 0cm 0cm 0cm !msorm'>
+<p class=AmmCorpsTexte><span style='color:black'>Extrémités froides, Hypertension</span></p>
+</td>
+<td width="13%" valign=top style='width:13.68%;border-top:none;border-left:
+none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+padding:0cm 0cm 0cm 0cm;border-top:none !msorm;border-left:none !msorm;
+border-bottom:solid windowtext 1.0pt !msorm;border-right:solid windowtext 1.0pt !msorm;
+padding:0cm 0cm 0cm 0cm !msorm'>
+<p class=AmmCorpsTexte> </p>
+</td>
+<td width="13%" valign=top style='width:13.66%;border-top:none;border-left:
+none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+padding:0cm 0cm 0cm 0cm;border-top:none !msorm;border-left:none !msorm;
+border-bottom:solid windowtext 1.0pt !msorm;border-right:solid windowtext 1.0pt !msorm;
+padding:0cm 0cm 0cm 0cm !msorm'>
+<p class=AmmCorpsTexte> </p>
+</td>
+</tr>
+<tr>
+<td width="45%" valign=top style='width:45.26%;border:solid windowtext 1.0pt;
+border-top:none;padding:0cm 0cm 0cm 0cm;border:solid windowtext 1.0pt !msorm;
+border-top:none !msorm;padding:0cm 0cm 0cm 0cm !msorm'>
+<p class=AmmCorpsTexteGras>Affections respiratoires et du médiastin</p>
+</td>
+<td width="13%" valign=top style='width:13.7%;border-top:none;border-left:
+none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+padding:0cm 0cm 0cm 0cm;border-top:none !msorm;border-left:none !msorm;
+border-bottom:solid windowtext 1.0pt !msorm;border-right:solid windowtext 1.0pt !msorm;
+padding:0cm 0cm 0cm 0cm !msorm'>
+<p class=AmmCorpsTexte><span style='color:black'>Sensation de constriction du pharynx</span></p>
+</td>
+<td width="13%" valign=top style='width:13.7%;border-top:none;border-left:
+none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+padding:0cm 0cm 0cm 0cm;border-top:none !msorm;border-left:none !msorm;
+border-bottom:solid windowtext 1.0pt !msorm;border-right:solid windowtext 1.0pt !msorm;
+padding:0cm 0cm 0cm 0cm !msorm'>
+<p class=AmmCorpsTexte><span style='color:black'>Rhinite, sinusite, douleur pharyngo-laryngée</span></p>
+</td>
+<td width="13%" valign=top style='width:13.68%;border-top:none;border-left:
+none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+padding:0cm 0cm 0cm 0cm;border-top:none !msorm;border-left:none !msorm;
+border-bottom:solid windowtext 1.0pt !msorm;border-right:solid windowtext 1.0pt !msorm;
+padding:0cm 0cm 0cm 0cm !msorm'>
+<p class=AmmCorpsTexte><span style='color:black'>Epistaxis, hoquet, hyperventilation, troubles respiratoires, irritation de la gorge</span></p>
+</td>
+<td width="13%" valign=top style='width:13.66%;border-top:none;border-left:
+none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+padding:0cm 0cm 0cm 0cm;border-top:none !msorm;border-left:none !msorm;
+border-bottom:solid windowtext 1.0pt !msorm;border-right:solid windowtext 1.0pt !msorm;
+padding:0cm 0cm 0cm 0cm !msorm'>
+<p class=AmmCorpsTexte> </p>
+</td>
+</tr>
+<tr>
+<td width="45%" valign=top style='width:45.26%;border:solid windowtext 1.0pt;
+border-top:none;padding:0cm 0cm 0cm 0cm;border:solid windowtext 1.0pt !msorm;
+border-top:none !msorm;padding:0cm 0cm 0cm 0cm !msorm'>
+<p class=AmmCorpsTexteGras>Affections gastro-intestinales</p>
+</td>
+<td width="13%" valign=top style='width:13.7%;border-top:none;border-left:
+none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+padding:0cm 0cm 0cm 0cm;border-top:none !msorm;border-left:none !msorm;
+border-bottom:solid windowtext 1.0pt !msorm;border-right:solid windowtext 1.0pt !msorm;
+padding:0cm 0cm 0cm 0cm !msorm'>
+<p class=AmmCorpsTexte><span style='color:black'>Nausée, sécheresse buccale, dyspepsie, douleur abdominale</span></p>
+</td>
+<td width="13%" valign=top style='width:13.7%;border-top:none;border-left:
+none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+padding:0cm 0cm 0cm 0cm;border-top:none !msorm;border-left:none !msorm;
+border-bottom:solid windowtext 1.0pt !msorm;border-right:solid windowtext 1.0pt !msorm;
+padding:0cm 0cm 0cm 0cm !msorm'>
+<p class=AmmCorpsTexte><span style='color:black'>Diarrhée, dysphagie, flatulence, gêne gastrique, ballonnement</span></p>
+</td>
+<td width="13%" valign=top style='width:13.68%;border-top:none;border-left:
+none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+padding:0cm 0cm 0cm 0cm;border-top:none !msorm;border-left:none !msorm;
+border-bottom:solid windowtext 1.0pt !msorm;border-right:solid windowtext 1.0pt !msorm;
+padding:0cm 0cm 0cm 0cm !msorm'>
+<p class=AmmCorpsTexte><span style='color:black'>Constipation, éructation, reflux gastro-œsophagien, syndrome du côlon irritable, lèvres boursoufflées, douleur de la lèvre, spasme œsophagien, ampoules de la muqueuse buccale, ulcère gastro-duodénal, douleur des glandes salivaires, stomatite, douleur dentaire</span></p>
+</td>
+<td width="13%" valign=top style='width:13.66%;border-top:none;border-left:
+none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+padding:0cm 0cm 0cm 0cm;border-top:none !msorm;border-left:none !msorm;
+border-bottom:solid windowtext 1.0pt !msorm;border-right:solid windowtext 1.0pt !msorm;
+padding:0cm 0cm 0cm 0cm !msorm'>
+<p class=AmmCorpsTexte> </p>
+</td>
+</tr>
+<tr>
+<td width="45%" valign=top style='width:45.26%;border:solid windowtext 1.0pt;
+border-top:none;padding:0cm 0cm 0cm 0cm;border:solid windowtext 1.0pt !msorm;
+border-top:none !msorm;padding:0cm 0cm 0cm 0cm !msorm'>
+<p class=AmmCorpsTexteGras>Affections cutanées et du tissu sous -cutanée</p>
+</td>
+<td width="13%" valign=top style='width:13.7%;border-top:none;border-left:
+none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+padding:0cm 0cm 0cm 0cm;border-top:none !msorm;border-left:none !msorm;
+border-bottom:solid windowtext 1.0pt !msorm;border-right:solid windowtext 1.0pt !msorm;
+padding:0cm 0cm 0cm 0cm !msorm'>
+<p class=AmmCorpsTexte><span style='color:black'>Hyperhydrose</span></p>
+</td>
+<td width="13%" valign=top style='width:13.7%;border-top:none;border-left:
+none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+padding:0cm 0cm 0cm 0cm;border-top:none !msorm;border-left:none !msorm;
+border-bottom:solid windowtext 1.0pt !msorm;border-right:solid windowtext 1.0pt !msorm;
+padding:0cm 0cm 0cm 0cm !msorm'>
+<p class=AmmCorpsTexte><span style='color:black'>Prurit</span></p>
+</td>
+<td width="13%" valign=top style='width:13.68%;border-top:none;border-left:
+none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+padding:0cm 0cm 0cm 0cm;border-top:none !msorm;border-left:none !msorm;
+border-bottom:solid windowtext 1.0pt !msorm;border-right:solid windowtext 1.0pt !msorm;
+padding:0cm 0cm 0cm 0cm !msorm'>
+<p class=AmmCorpsTexte><span style='color:black'>Erythème, piloérection, purpura, urticaire</span></p>
+</td>
+<td width="13%" valign=top style='width:13.66%;border-top:none;border-left:
+none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+padding:0cm 0cm 0cm 0cm;border-top:none !msorm;border-left:none !msorm;
+border-bottom:solid windowtext 1.0pt !msorm;border-right:solid windowtext 1.0pt !msorm;
+padding:0cm 0cm 0cm 0cm !msorm'>
+<p class=AmmCorpsTexte> </p>
+</td>
+</tr>
+<tr>
+<td width="45%" valign=top style='width:45.26%;border:solid windowtext 1.0pt;
+border-top:none;padding:0cm 0cm 0cm 0cm;border:solid windowtext 1.0pt !msorm;
+border-top:none !msorm;padding:0cm 0cm 0cm 0cm !msorm'>
+<p class=AmmCorpsTexteGras>Affections musculo-squelettiques et systémiques</p>
+</td>
+<td width="13%" valign=top style='width:13.7%;border-top:none;border-left:
+none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+padding:0cm 0cm 0cm 0cm;border-top:none !msorm;border-left:none !msorm;
+border-bottom:solid windowtext 1.0pt !msorm;border-right:solid windowtext 1.0pt !msorm;
+padding:0cm 0cm 0cm 0cm !msorm'>
+<p class=AmmCorpsTexte> </p>
+</td>
+<td width="13%" valign=top style='width:13.7%;border-top:none;border-left:
+none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+padding:0cm 0cm 0cm 0cm;border-top:none !msorm;border-left:none !msorm;
+border-bottom:solid windowtext 1.0pt !msorm;border-right:solid windowtext 1.0pt !msorm;
+padding:0cm 0cm 0cm 0cm !msorm'>
+<p class=AmmCorpsTexte><span style='color:black'>Raideur musculaire, douleur musculo-squelettique, douleur aux extrémités, douleur dorsale, arthralgie</span></p>
+</td>
+<td width="13%" valign=top style='width:13.68%;border-top:none;border-left:
+none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+padding:0cm 0cm 0cm 0cm;border-top:none !msorm;border-left:none !msorm;
+border-bottom:solid windowtext 1.0pt !msorm;border-right:solid windowtext 1.0pt !msorm;
+padding:0cm 0cm 0cm 0cm !msorm'>
+<p class=AmmCorpsTexte> </p>
+</td>
+<td width="13%" valign=top style='width:13.66%;border-top:none;border-left:
+none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+padding:0cm 0cm 0cm 0cm;border-top:none !msorm;border-left:none !msorm;
+border-bottom:solid windowtext 1.0pt !msorm;border-right:solid windowtext 1.0pt !msorm;
+padding:0cm 0cm 0cm 0cm !msorm'>
+<p class=AmmCorpsTexte> </p>
+</td>
+</tr>
+<tr>
+<td width="45%" valign=top style='width:45.26%;border:solid windowtext 1.0pt;
+border-top:none;padding:0cm 0cm 0cm 0cm;border:solid windowtext 1.0pt !msorm;
+border-top:none !msorm;padding:0cm 0cm 0cm 0cm !msorm'>
+<p class=AmmCorpsTexteGras>Affections rénales et troubles urinaires</p>
+</td>
+<td width="13%" valign=top style='width:13.7%;border-top:none;border-left:
+none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+padding:0cm 0cm 0cm 0cm;border-top:none !msorm;border-left:none !msorm;
+border-bottom:solid windowtext 1.0pt !msorm;border-right:solid windowtext 1.0pt !msorm;
+padding:0cm 0cm 0cm 0cm !msorm'>
+<p class=AmmCorpsTexte> </p>
+</td>
+<td width="13%" valign=top style='width:13.7%;border-top:none;border-left:
+none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+padding:0cm 0cm 0cm 0cm;border-top:none !msorm;border-left:none !msorm;
+border-bottom:solid windowtext 1.0pt !msorm;border-right:solid windowtext 1.0pt !msorm;
+padding:0cm 0cm 0cm 0cm !msorm'>
+<p class=AmmCorpsTexte><span style='color:black'>Pollakiurie, polyurie</span></p>
+</td>
+<td width="13%" valign=top style='width:13.68%;border-top:none;border-left:
+none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+padding:0cm 0cm 0cm 0cm;border-top:none !msorm;border-left:none !msorm;
+border-bottom:solid windowtext 1.0pt !msorm;border-right:solid windowtext 1.0pt !msorm;
+padding:0cm 0cm 0cm 0cm !msorm'>
+<p class=AmmCorpsTexte><span style='color:black'>Nycturie, douleur rénale</span></p>
+</td>
+<td width="13%" valign=top style='width:13.66%;border-top:none;border-left:
+none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+padding:0cm 0cm 0cm 0cm;border-top:none !msorm;border-left:none !msorm;
+border-bottom:solid windowtext 1.0pt !msorm;border-right:solid windowtext 1.0pt !msorm;
+padding:0cm 0cm 0cm 0cm !msorm'>
+<p class=AmmCorpsTexte> </p>
+</td>
+</tr>
+<tr>
+<td width="45%" valign=top style='width:45.26%;border:solid windowtext 1.0pt;
+border-top:none;padding:0cm 0cm 0cm 0cm;border:solid windowtext 1.0pt !msorm;
+border-top:none !msorm;padding:0cm 0cm 0cm 0cm !msorm'>
+<p class=AmmCorpsTexteGras>Affections du système reproducteur</p>
+</td>
+<td width="13%" valign=top style='width:13.7%;border-top:none;border-left:
+none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+padding:0cm 0cm 0cm 0cm;border-top:none !msorm;border-left:none !msorm;
+border-bottom:solid windowtext 1.0pt !msorm;border-right:solid windowtext 1.0pt !msorm;
+padding:0cm 0cm 0cm 0cm !msorm'>
+<p class=AmmCorpsTexte> </p>
+</td>
+<td width="13%" valign=top style='width:13.7%;border-top:none;border-left:
+none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+padding:0cm 0cm 0cm 0cm;border-top:none !msorm;border-left:none !msorm;
+border-bottom:solid windowtext 1.0pt !msorm;border-right:solid windowtext 1.0pt !msorm;
+padding:0cm 0cm 0cm 0cm !msorm'>
+<p class=AmmCorpsTexte> </p>
+</td>
+<td width="13%" valign=top style='width:13.68%;border-top:none;border-left:
+none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+padding:0cm 0cm 0cm 0cm;border-top:none !msorm;border-left:none !msorm;
+border-bottom:solid windowtext 1.0pt !msorm;border-right:solid windowtext 1.0pt !msorm;
+padding:0cm 0cm 0cm 0cm !msorm'>
+<p class=AmmCorpsTexte><span style='color:black'>Hypersensibilité mammaire</span></p>
+</td>
+<td width="13%" valign=top style='width:13.66%;border-top:none;border-left:
+none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+padding:0cm 0cm 0cm 0cm;border-top:none !msorm;border-left:none !msorm;
+border-bottom:solid windowtext 1.0pt !msorm;border-right:solid windowtext 1.0pt !msorm;
+padding:0cm 0cm 0cm 0cm !msorm'>
+<p class=AmmCorpsTexte> </p>
+</td>
+</tr>
+<tr>
+<td width="45%" valign=top style='width:45.26%;border:solid windowtext 1.0pt;
+border-top:none;padding:0cm 0cm 0cm 0cm;border:solid windowtext 1.0pt !msorm;
+border-top:none !msorm;padding:0cm 0cm 0cm 0cm !msorm'>
+<p class=AmmCorpsTexteGras>Troubles généraux et anomalies au site d'administration</p>
+</td>
+<td width="13%" valign=top style='width:13.7%;border-top:none;border-left:
+none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+padding:0cm 0cm 0cm 0cm;border-top:none !msorm;border-left:none !msorm;
+border-bottom:solid windowtext 1.0pt !msorm;border-right:solid windowtext 1.0pt !msorm;
+padding:0cm 0cm 0cm 0cm !msorm'>
+<p class=AmmCorpsTexte><span style='color:black'>Fatigue, gêne thoracique</span></p>
+</td>
+<td width="13%" valign=top style='width:13.7%;border-top:none;border-left:
+none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+padding:0cm 0cm 0cm 0cm;border-top:none !msorm;border-left:none !msorm;
+border-bottom:solid windowtext 1.0pt !msorm;border-right:solid windowtext 1.0pt !msorm;
+padding:0cm 0cm 0cm 0cm !msorm'>
+<p class=AmmCorpsTexte><span style='color:black'>Douleur thoracique, sensation de chaleur, sensation de température anormale, douleurs, asthénie, soif, manque d'énergie, hyperactivité, malaise</span></p>
+</td>
+<td width="13%" valign=top style='width:13.68%;border-top:none;border-left:
+none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+padding:0cm 0cm 0cm 0cm;border-top:none !msorm;border-left:none !msorm;
+border-bottom:solid windowtext 1.0pt !msorm;border-right:solid windowtext 1.0pt !msorm;
+padding:0cm 0cm 0cm 0cm !msorm'>
+<p class=AmmCorpsTexte><span style='color:black'>Fièvre</span></p>
+</td>
+<td width="13%" valign=top style='width:13.66%;border-top:none;border-left:
+none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+padding:0cm 0cm 0cm 0cm;border-top:none !msorm;border-left:none !msorm;
+border-bottom:solid windowtext 1.0pt !msorm;border-right:solid windowtext 1.0pt !msorm;
+padding:0cm 0cm 0cm 0cm !msorm'>
+<p class=AmmCorpsTexte> </p>
+</td>
+</tr>
+<tr>
+<td width="45%" valign=top style='width:45.26%;border:solid windowtext 1.0pt;
+border-top:none;padding:0cm 0cm 0cm 0cm;border:solid windowtext 1.0pt !msorm;
+border-top:none !msorm;padding:0cm 0cm 0cm 0cm !msorm'>
+<p class=AmmCorpsTexteGras>Investigations</p>
+</td>
+<td width="13%" valign=top style='width:13.7%;border-top:none;border-left:
+none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+padding:0cm 0cm 0cm 0cm;border-top:none !msorm;border-left:none !msorm;
+border-bottom:solid windowtext 1.0pt !msorm;border-right:solid windowtext 1.0pt !msorm;
+padding:0cm 0cm 0cm 0cm !msorm'>
+<p class=AmmCorpsTexte> </p>
+</td>
+<td width="13%" valign=top style='width:13.7%;border-top:none;border-left:
+none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+padding:0cm 0cm 0cm 0cm;border-top:none !msorm;border-left:none !msorm;
+border-bottom:solid windowtext 1.0pt !msorm;border-right:solid windowtext 1.0pt !msorm;
+padding:0cm 0cm 0cm 0cm !msorm'>
+<p class=AmmCorpsTexte> </p>
+</td>
+<td width="13%" valign=top style='width:13.68%;border-top:none;border-left:
+none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+padding:0cm 0cm 0cm 0cm;border-top:none !msorm;border-left:none !msorm;
+border-bottom:solid windowtext 1.0pt !msorm;border-right:solid windowtext 1.0pt !msorm;
+padding:0cm 0cm 0cm 0cm !msorm'>
+<p class=AmmCorpsTexte><span style='color:black'>Bilirubinémie, hypocalcémie, anomalies des tests urinaires</span></p>
+</td>
+<td width="13%" valign=top style='width:13.66%;border-top:none;border-left:
+none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+padding:0cm 0cm 0cm 0cm;border-top:none !msorm;border-left:none !msorm;
+border-bottom:solid windowtext 1.0pt !msorm;border-right:solid windowtext 1.0pt !msorm;
+padding:0cm 0cm 0cm 0cm !msorm'>
+<p class=AmmCorpsTexte> </p>
+</td>
+</tr>
+<tr>
+<td width="45%" valign=top style='width:45.26%;border:solid windowtext 1.0pt;
+border-top:none;padding:0cm 0cm 0cm 0cm;border:solid windowtext 1.0pt !msorm;
+border-top:none !msorm;padding:0cm 0cm 0cm 0cm !msorm'>
+<p class=AmmCorpsTexteGras>Accidents, empoisonnement, et complications procédurales</p>
+</td>
+<td width="13%" valign=top style='width:13.7%;border-top:none;border-left:
+none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+padding:0cm 0cm 0cm 0cm;border-top:none !msorm;border-left:none !msorm;
+border-bottom:solid windowtext 1.0pt !msorm;border-right:solid windowtext 1.0pt !msorm;
+padding:0cm 0cm 0cm 0cm !msorm'>
+<p class=AmmCorpsTexte> </p>
+</td>
+<td width="13%" valign=top style='width:13.7%;border-top:none;border-left:
+none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+padding:0cm 0cm 0cm 0cm;border-top:none !msorm;border-left:none !msorm;
+border-bottom:solid windowtext 1.0pt !msorm;border-right:solid windowtext 1.0pt !msorm;
+padding:0cm 0cm 0cm 0cm !msorm'>
+<p class=AmmCorpsTexte> </p>
+</td>
+<td width="13%" valign=top style='width:13.68%;border-top:none;border-left:
+none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+padding:0cm 0cm 0cm 0cm;border-top:none !msorm;border-left:none !msorm;
+border-bottom:solid windowtext 1.0pt !msorm;border-right:solid windowtext 1.0pt !msorm;
+padding:0cm 0cm 0cm 0cm !msorm'>
+<p class=AmmCorpsTexte><span style='color:black'>Morsure</span></p>
+</td>
+<td width="13%" valign=top style='width:13.66%;border-top:none;border-left:
+none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+padding:0cm 0cm 0cm 0cm;border-top:none !msorm;border-left:none !msorm;
+border-bottom:solid windowtext 1.0pt !msorm;border-right:solid windowtext 1.0pt !msorm;
+padding:0cm 0cm 0cm 0cm !msorm'>
+<p class=AmmCorpsTexte> </p>
+</td>
+</tr>
+</thead>
+</table>
+</div>
+<p class=AmmCorpsTexte style='margin-top:6.0pt;margin-right:0cm;margin-bottom: 0cm;margin-left:0cm;margin-bottom:.0001pt;page-break-after:avoid'>Dans deux études cliniques long-terme, les effets indésirables observés n'ont pas été différents de ceux cités dans la liste ci-dessus.</p>
+<p class=AmmAnnexeTitre3>Déclaration des effets indésirables suspectés </p>
+<p class=AmmCorpsTexte>La déclaration des effets indésirables suspectés après autorisation du médicament est importante. Elle permet une surveillance continue du rapport bénéfice/risque du médicament. Les professionnels de santé déclarent tout effet indésirable suspecté via le système national de déclaration : Agence nationale de sécurité du médicament et des produits de santé (ANSM) et réseau des Centres Régionaux de Pharmacovigilance - Site internet :<span style='color:red'> </span><a href="http://www.signalement-sante.gouv.fr">www.signalement-sante.gouv.fr</a>.</p>
+<p class="AmmAnnexeTitre2"><a name="RcpSurdosage">4.9. Surdosage</a>&nbsp;&nbsp;<a href='#HautDePage'><img src='img/BackToTop.jpg' width='15px' height='15px' alt='Retour en haut de la page' title='Retour en haut de la page' /></a></p>
+<p class=AmmCorpsTexte><a name="_Toc142278931">Il y a une expérience limitée de surdosage clinique avec le frovatriptan. La dose orale unique maximale de frovatriptan administrée à des patients des deux sexes souffrant de migraine a été de 40 mg (16 fois la dose clinique recommandée de 2,5 mg) et la dose unique maximale administrée à des sujets sains de sexe masculin, a été de 100 mg (40 fois la dose clinique recommandée). Les deux cas n'ont pas été associés à des effets indésirables autres que ceux cités </a><a href="http://afssaps-prd.afssaps.fr/php/ecodex/rcp/R0197523.htm#Rcp_4_8_EffetsIndesirables_5#Rcp_4_8_EffetsIndesirables_5"><span style='color:windowtext;text-decoration:none'>dans la rubrique 4.8.</span></a> Cependant, après mise sur le marché un cas grave de spasme coronarien a été rapporté après la prise de 4 fois la dose recommandée de frovatriptan pendant trois jours consécutifs, chez un patient traité par antidépresseur tricyclique comme traitement de fond pour la migraine. Le patient a bien récupéré.</p>
+<p class=AmmCorpsTexte>Il n'existe pas d'antidote spécifique au frovatriptan. La demi-vie d'élimination terminale du frovatriptan est d'environ 26 heures (<a href="http://afssaps-prd.afssaps.fr/php/ecodex/rcp/R0197523.htm#Rcp_5_2_PropPharmacocinetique_6#Rcp_5_2_PropPharmacocinetique_6"><span style='color:windowtext;text-decoration:none'>voir rubrique 5.2</span></a>).</p>
+<p class=AmmCorpsTexte>On ne connaît pas les effets de l'hémodialyse ou de la dialyse péritonéale sur les concentrations plasmatiques du frovatriptan.</p>
+<p class=AmmAnnexeTitre3>Traitement</p>
+<p class=AmmCorpsTexte>En cas de surdosage avec le frovatriptan, le patient doit être mis sous surveillance pendant au moins 48 heures et tout traitement symptomatique standard doit être administré comme nécessaire.</p>
+<p class="AmmAnnexeTitre1"><a name="RcpPropPharmacologiques">5. PROPRIETES PHARMACOLOGIQUES</a>&nbsp;&nbsp;<a href='#HautDePage'><img src='img/BackToTop.jpg' width='15px' height='15px' alt='Retour en haut de la page' title='Retour en haut de la page' /></a></p>
+<p class="AmmAnnexeTitre2"><a name="RcpPropPharmacodynamiques">5.1. Propriétés pharmacodynamiques</a>&nbsp;&nbsp;<a href='#HautDePage'><img src='img/BackToTop.jpg' width='15px' height='15px' alt='Retour en haut de la page' title='Retour en haut de la page' /></a></p>
+<p class=AmmCorpsTexteGras><a name="_Toc142278933">Classe pharmacothérapeutique : Agonistes sélectifs de la sérotonine (5-HT<sub>1</sub>), code ATC : N02CC07</a><span style='font-size:8.0pt'>.</span></p>
+<p class=AmmCorpsTexte>Le frovatriptan est un agoniste sélectif des récepteurs 5-HT. Il présente une forte affinité pour les sites de liaison 5-HT<sub>1B</sub> et 5-HT<sub>1D</sub> dans des dosages radioligands et présente des effets agonistes puissants sur les récepteurs 5-HT<sub>1B</sub> et 5-HT<sub>1D</sub> dans des biodosages fonctionnels.</p>
+<p class=AmmCorpsTexte>Il présente une sélectivité importante pour les récepteurs 5-HT<sub>1B/1D</sub> et pas d'affinité significative pour les récepteurs 5-HT<sub>2</sub>, 5-HT<sub>3</sub>, 5-HT<sub>4</sub>, 5-HT<sub>6</sub>, &#945;-adrénergiques ou histaminergiques.</p>
+<p class=AmmCorpsTexte>Le frovatriptan n'a pas d'affinité significative pour les sites de liaison des benzodiazépines.</p>
+<p class=AmmCorpsTexte>Le frovatriptan semble agir de manière sélective sur les artères intracrâniennes extracérébrales pour en inhiber la dilatation excessive lors de la crise migraine. A des concentrations similaires de celles obtenues chez l'homme, le frovatriptan a induit une constriction des artères cérébrales humaines isolées, avec peu, voire pas d'effet sur les artères coronaires humains isolées.</p>
+<p class=AmmCorpsTexte>L'efficacité du frovatriptan dans le traitement de la crise de migraine et des symptômes associés a été étudiée lors de trois études cliniques multicentriques sous contrôle placebo.</p>
+<p class=AmmCorpsTexte>Dans ces études, l'efficacité du frovatriptan 2,5 mg a été significativement supérieure au placebo en termes d'amélioration de la céphalée à 2 et 4 heures après l'administration du produit et en termes de première réponse. Le soulagement de la douleur (passage d'une céphalée d'intensité sévère à modérée à une céphalée d'intensité légère à absente) après 2 heures était de 37-46 % avec le frovatriptan et de 21-27 % avec le placebo.</p>
+<p class=AmmCorpsTexte>La disparition complète de la douleur à 2 heures était de 9-14 % avec le frovatriptan et de 2-3 % avec le placebo. L'efficacité maximale du frovatriptan est atteinte en 4 heures.</p>
+<p class=AmmCorpsTexte>Dans une étude clinique comparant le frovatriptan 2,5 mg avec le sumatriptan 100 mg, l'efficacité du frovatriptan 2,5 mg a été légèrement inférieure à celle du sumatriptan 100 mg à 2 heures et à 4 heures. La fréquence des évènements indésirables a été légèrement inférieure avec le frovatriptan 2,5 mg par rapport au sumatriptan 100 mg. Aucune étude comparant le frovatriptan 2,5 mg au sumatriptan 50 mg n'a été réalisée.</p>
+<p class=AmmCorpsTexte>Chez les personnes âgées en bonne santé, de faibles changements transitoires de la pression artérielle systolique (au sein de valeurs normales) ont été observés chez certains sujets, suite à une dose orale unique de frovatriptan à 2,5 mg.</p>
+<p class="AmmAnnexeTitre2"><a name="RcpPropPharmacocinetiques">5.2. Propriétés pharmacocinétiques</a>&nbsp;&nbsp;<a href='#HautDePage'><img src='img/BackToTop.jpg' width='15px' height='15px' alt='Retour en haut de la page' title='Retour en haut de la page' /></a></p>
+<p class=AmmAnnexeTitre3><a name="_Toc142278934">Absorption</a></p>
+<p class=AmmCorpsTexte>Après l'administration à des sujets sains d'une dose orale unique de frovatriptan à 2,5 mg, la concentration moyenne maximale déterminée sur sang total (concentration sanguine) en frovatriptan (C<sub>max</sub>), est atteinte entre 2 et 4 heures, elle était de 4,2 ng/ml chez les hommes et 7,0 ng/ml chez les femmes. La moyenne de l'aire sous courbe (AUC) a été de 42,9 et 94,0 ng.h/ml respectivement chez les hommes et les femmes.</p>
+<p class=AmmCorpsTexte>La biodisponibilité orale a été de 22 % chez les hommes et 30 % chez les femmes. Les pharmacocinétiques du frovatriptan étaient identiques entre des sujets sains et des migraineux et il n'existait pas de différence sur les paramètres pharmacocinétiques chez les patients au cours d'une crise de migraine et entre les crises de migraine.</p>
+<p class=AmmCorpsTexte>Le frovatriptan présente généralement une pharmacocinétique linéaire pour tout l'éventail posologique utilisé au cours des études cliniques (de 1 mg à 40 mg).</p>
+<p class=AmmCorpsTexte>L'alimentation n'a aucun effet significatif sur la biodisponibilité du frovatriptan, mais allonge légèrement le t<sub>max</sub> d'environ 1 heure.</p>
+<p class=AmmAnnexeTitre3>Distribution</p>
+<p class=AmmCorpsTexte>Le volume de distribution (à l'état d'équilibre) du frovatriptan, suite à l'administration intraveineuse de 0,8 mg, a été de 4,2 l/kg chez les hommes et 3,0 l/kg chez les femmes.</p>
+<p class=AmmCorpsTexte>La liaison du frovatriptan aux protéines plasmatiques est faible (environ 15 %). La liaison réversible aux globules rouges au point d'équilibre est d'environ 60 %, sans différence entre les hommes et les femmes. Le sang: le ratio plasmatique était environ 2:1 à l'équilibre.</p>
+<p class=AmmAnnexeTitre3>Biotransformation</p>
+<p class=AmmCorpsTexte>Suite à l'administration orale de 2,5 mg de frovatriptan radiomarqué à des sujets sains, 32 % de la dose a été retrouvée dans les urines, et 62 % dans les matières fécales. Les composés radiomarqués excrétés dans les urines consistaient en du frovatriptan inchangé, en hydroxyl frovatriptan, en N-acétyl frovatriptan N-déméthylé, en N-acétyl hydroxyl frovatriptan N-déméthylé, et en frovatriptan N-déméthylé, avec d'autres métabolites de moindre importance. Le frovatriptan N-déméthylé présente une affinité environ 3 fois moindre pour les récepteurs 5-HT1 que le frovatriptan. Le N-acétyl frovatriptan N-déméthylé a une affinité négligeable sur les récepteurs 5-HT1. L'activité des autres métabolites n'a pas été étudiée.</p>
+<p class=AmmCorpsTexte>Les résultats des études in vitro ont montré que le cytochrome P450 1A2 est la principale enzyme impliquée dans le métabolisme du frovatriptan. Le frovatriptan n'inhibe ou n'induit pas le cytochrome CYP1A2 in vitro.</p>
+<p class=AmmCorpsTexte>Le frovatriptan n'est pas un inhibiteur des enzymes monoamine oxydase (MAO) ni des isoenzymes du cytochrome P450 et ainsi possède un faible pouvoir dans les interactions médicamenteuses (voir rubrique 4.5).</p>
+<p class=AmmCorpsTexte>Le frovatriptan n'est pas un substrat pour la MAO.</p>
+<p class=AmmAnnexeTitre3>Élimination</p>
+<p class=AmmCorpsTexte>L'élimination du frovatriptan est biphasique avec une phase de distribution dominante entre 2 et 6 heures. La clairance totale moyenne a été respectivement de 216 et de 132 ml/min chez les hommes et chez les femmes. La clairance rénale a atteint 38 % (82 ml/min) de la clairance totale chez les hommes et 49 % (65 ml/min) chez les femmes. La demi-vie d'élimination terminale est de l'ordre de 26 heures, indépendamment du sexe, alors que la phase d'élimination terminale seule devient dominante après environ 12 heures.</p>
+<p class=AmmAnnexeTitre3>Sexe</p>
+<p class=AmmCorpsTexte>L'AUC et la Cmax du frovatriptan sont plus faibles (approximativement de 50 %) chez les sujets de sexe masculin que chez les sujets de sexe féminin. Cela est dû au moins en partie, à l'utilisation concomitante de contraceptifs oraux. En se basant sur les données d'efficacité et sécurité cliniques obtenues avec une dose de 2,5 mg de frovatriptan, il n'est pas nécessaire d'ajuster la posologie en fonction du sexe (voir rubrique 4.2).</p>
+<p class=AmmAnnexeTitre3>Personnes âgées</p>
+<p class=AmmCorpsTexte>Chez les sujets âgés en bonne santé (de 65 à 77 ans), l'AUC est augmentée de 73 % chez les sujets de sexe masculin et de 22 % chez les sujets de sexe féminin, par rapport aux sujets jeunes (de 18 à 37 ans). Il n'y a pas de différence de t<sub>max</sub> ou t<sub>½</sub> entre les deux types de population (voir rubrique 4.2).</p>
+<p class=AmmAnnexeTitre3>Insuffisants rénaux</p>
+<p class=AmmCorpsTexte>L'exposition systémique au frovatriptan ainsi que la demi-vie d'élimination n'est pas significativement différente chez les sujets de sexe masculin et de sexe féminin souffrant d'insuffisance rénale (clairance de la créatinine 16-73 ml/min), par rapport à celle des sujets sains.</p>
+<p class=AmmAnnexeTitre3>Insuffisants hépatiques</p>
+<p class=AmmCorpsTexte>Suite à l'administration orale de frovatriptan à des sujets de sexe masculin et féminin entre 44 et 57 ans, souffrant d'insuffisance hépatique légère ou modérée (classes A et B Child-Pugh), les concentrations sanguines moyennes en frovatriptan sont restées dans les limites observées chez les personnes jeunes et âgées en bonne santé. Le frovatriptan n'a pas été étudié chez les patients souffrant d'une insuffisance hépatique grave (voir rubrique 4.3).</p>
+<p class="AmmAnnexeTitre2"><a name="RcpSecuritePreclinique">5.3. Données de sécurité préclinique</a>&nbsp;&nbsp;<a href='#HautDePage'><img src='img/BackToTop.jpg' width='15px' height='15px' alt='Retour en haut de la page' title='Retour en haut de la page' /></a></p>
+<p class=AmmCorpsTexte><a name="_Toc142278935">Au cours des études de toxicité en administration unique et réitérée, des effets précliniques n'ont été observés qu'à des taux d'exposition suffisamment élevés par rapport à l'exposition maximale chez l'homme.</a></p>
+<p class=AmmCorpsTexte>Une batterie standard de tests de génotoxicité n'a pas montré de potentiel génotoxique cliniquement significatif du frovatriptan. Le frovatriptan est fœtotoxique chez les rats, mais chez les lapins la fœtotoxicité n'a été observée que pour des doses maternelles toxiques.</p>
+<p class=AmmCorpsTexte>Il n'a pas été montré d'effet carcinogène au cours des études standard de carcinogénicité et au cours des études sur souris p53 (+/-) à des doses considérablement plus élevées que celles anticipées chez l'homme.</p>
+<p class="AmmAnnexeTitre1"><a name="RcpDonneesPharmaceutiques">6. DONNEES PHARMACEUTIQUES</a>&nbsp;&nbsp;<a href='#HautDePage'><img src='img/BackToTop.jpg' width='15px' height='15px' alt='Retour en haut de la page' title='Retour en haut de la page' /></a></p>
+<p class="AmmAnnexeTitre2"><a name="RcpListeExcipients">6.1. Liste des excipients</a>&nbsp;&nbsp;<a href='#HautDePage'><img src='img/BackToTop.jpg' width='15px' height='15px' alt='Retour en haut de la page' title='Retour en haut de la page' /></a></p>
+<p class=AmmCorpsTexte><a name="_Toc142278937"><span class='italique'><span class='souligne'>Noyau</span></span>: Lactose anhydre, cellulose microcristalline, stéarate de magnésium, carboxyméthylamidon sodique (type A), silice colloïdale anhydre.</a></p>
+<p class=AmmCorpsTexte><span class='italique'><span class='souligne'>Pelliculage</span></span>: OPADRY blanc: dioxyde de titane (E171), lactose anhydre, hypromellose (E464), macrogol 3000, triacétine.</p>
+<p class="AmmAnnexeTitre2"><a name="RcpIncompatibilites">6.2. Incompatibilités</a>&nbsp;&nbsp;<a href='#HautDePage'><img src='img/BackToTop.jpg' width='15px' height='15px' alt='Retour en haut de la page' title='Retour en haut de la page' /></a></p>
+<p class=AmmCorpsTexte><a name="_Toc142278938">Sans objet.</a></p>
+<p class="AmmAnnexeTitre2"><a name="RcpDureeConservation">6.3. Durée de conservation</a>&nbsp;&nbsp;<a href='#HautDePage'><img src='img/BackToTop.jpg' width='15px' height='15px' alt='Retour en haut de la page' title='Retour en haut de la page' /></a></p>
+<p class=AmmCorpsTexte><a name="_Toc142278939">3 ans.</a></p>
+<p class="AmmAnnexeTitre2"><a name="RcpPrecConservation">6.4. Précautions particulières de conservation</a>&nbsp;&nbsp;<a href='#HautDePage'><img src='img/BackToTop.jpg' width='15px' height='15px' alt='Retour en haut de la page' title='Retour en haut de la page' /></a></p>
+<p class=AmmCorpsTexte><a name="_Toc142278940">A conserver à une température ne dépassant pas 30°C.</a></p>
+<p class=AmmCorpsTexte>A conserver dans l'emballage extérieur à l’abri de l’humidité.</p>
+<p class="AmmAnnexeTitre2"><a name="RcpEmballage">6.5. Nature et contenu de l'emballage extérieur </a>&nbsp;&nbsp;<a href='#HautDePage'><img src='img/BackToTop.jpg' width='15px' height='15px' alt='Retour en haut de la page' title='Retour en haut de la page' /></a></p>
+<p class=AmmCorpsTexte><a name="_Toc142278942"></a><a name="_Toc142278941">1, 2, 3, 4, 6 et 12 comprimés sous plaquette PVC/PE/PVDC//Aluminium.</a></p>
+<p class=AmmCorpsTexte>Toutes les présentations peuvent ne pas être commercialisées.</p>
+<p class="AmmAnnexeTitre2"><a name="RcpPrecEmpl">6.6. Précautions particulières d’élimination et de manipulation</a>&nbsp;&nbsp;<a href='#HautDePage'><img src='img/BackToTop.jpg' width='15px' height='15px' alt='Retour en haut de la page' title='Retour en haut de la page' /></a></p>
+<p class=AmmCorpsTexte><span lang=FR-BE>Pas d’exigences particulières.</span></p>
+<p class=AmmCorpsTexte><span lang=FR-BE>Tout médicament non utilisé ou déchet doit être éliminé conformément à la réglementation en vigueur.</span></p>
+<p class="AmmAnnexeTitre1"><a name="RcpTitulaireAmm">7. TITULAIRE DE L’AUTORISATION DE MISE SUR LE MARCHE</a>&nbsp;&nbsp;<a href='#HautDePage'><img src='img/BackToTop.jpg' width='15px' height='15px' alt='Retour en haut de la page' title='Retour en haut de la page' /></a></p>
+<p class=AmmCorpsTexteGras style='margin-bottom:0cm;margin-bottom:.0001pt'><a name="_Toc142278943">MENARINI INTERNATIONAL OPERATIONS LUXEMBOURG SA</a></p>
+<p class=AmmCorpsTexte style='margin-bottom:0cm;margin-bottom:.0001pt'>1, AVENUE DE LA GARE</p>
+<p class=AmmCorpsTexte style='margin-bottom:0cm;margin-bottom:.0001pt'>1611 LUXEMBOURG</p>
+<p class=AmmCorpsTexte>LUXEMBOURG</p>
+<p class="AmmAnnexeTitre1"><a name="RcpNumAutor">8. NUMERO(S) D’AUTORISATION DE MISE SUR LE MARCHE</a>&nbsp;&nbsp;<a href='#HautDePage'><img src='img/BackToTop.jpg' width='15px' height='15px' alt='Retour en haut de la page' title='Retour en haut de la page' /></a></p>
+<p class=AmmAnnexeTitre1 style='margin-top:0cm;margin-right:0cm;margin-bottom: 0cm;margin-left:18.0pt;margin-bottom:.0001pt;text-indent:-18.0pt'><a name="_Toc142278944"><span style='font-size:10.0pt;font-family:Symbol; color:windowtext;text-transform:none;font-weight:normal'>·<span style='font:7.0pt "Times New Roman"'>         </span></span><span style='font-size:10.0pt;color:windowtext;text-transform: none;font-weight:normal'>34009 302 310 8 1 : 2 comprimés sous plaquette (PVC/PE/PVDC//Aluminium).</span></a></p>
+<p class=AmmAnnexeTitre1 style='margin-top:0cm;margin-right:0cm;margin-bottom: 0cm;margin-left:18.0pt;margin-bottom:.0001pt;text-indent:-18.0pt'><span style='font-size:10.0pt;font-family:Symbol;color:windowtext;text-transform: none;font-weight:normal'>·<span style='font:7.0pt "Times New Roman"'>         </span></span><span style='font-size:10.0pt;color:windowtext;text-transform: none;font-weight:normal'>34009 302 310 9 8 : 6 comprimés sous plaquette (PVC/PE/PVDC//Aluminium).</span></p>
+<p class=AmmAnnexeTitre1 style='margin-top:0cm;margin-right:0cm;margin-bottom: 0cm;margin-left:18.0pt;margin-bottom:.0001pt;text-indent:-18.0pt'><span style='font-size:10.0pt;font-family:Symbol;color:windowtext;text-transform: none;font-weight:normal'>·<span style='font:7.0pt "Times New Roman"'>         </span></span><span style='font-size:10.0pt;color:windowtext;text-transform: none;font-weight:normal'>34009 302 311 0 4 : 12 comprimés sous plaquette (PVC/PE/PVDC//Aluminium).</span></p>
+<p class="AmmAnnexeTitre1"><a name="RcpPremiereAutorisation">9. DATE DE PREMIERE AUTORISATION/DE RENOUVELLEMENT DE L’AUTORISATION</a>&nbsp;&nbsp;<a href='#HautDePage'><img src='img/BackToTop.jpg' width='15px' height='15px' alt='Retour en haut de la page' title='Retour en haut de la page' /></a></p>
+<p class=AmmCorpsTexte><a name="_Toc142278945"><span style='color:black'>[à compléter ultérieurement par le titulaire]</span></a></p>
+<p class="AmmAnnexeTitre1"><a name="RcpDateRevision">10. DATE DE MISE A JOUR DU TEXTE</a>&nbsp;&nbsp;<a href='#HautDePage'><img src='img/BackToTop.jpg' width='15px' height='15px' alt='Retour en haut de la page' title='Retour en haut de la page' /></a></p>
+<p class=AmmCorpsTexte><a name="_Toc142278946"><span style='color:black'>[à compléter ultérieurement par le titulaire]</span></a></p>
+<p class="AmmAnnexeTitre1"><a name="RcpDosimetrie">11. DOSIMETRIE</a>&nbsp;&nbsp;<a href='#HautDePage'><img src='img/BackToTop.jpg' width='15px' height='15px' alt='Retour en haut de la page' title='Retour en haut de la page' /></a></p>
+<p class=AmmCorpsTexte>Sans objet.</p>
+<p class="AmmAnnexeTitre1"><a name="RcpInstPrepRadioph">12. INSTRUCTIONS POUR LA PREPARATION DES RADIOPHARMACEUTIQUES</a>&nbsp;&nbsp;<a href='#HautDePage'><img src='img/BackToTop.jpg' width='15px' height='15px' alt='Retour en haut de la page' title='Retour en haut de la page' /></a></p>
+<p class=AmmCorpsTexte><a name="_Toc142278948">Sans objet.</a></p>
+<div style='border:none;border-top:solid windowtext 1.0pt;padding:1.0pt 0cm 0cm 0cm'>
+<p class="AmmAnnexeTitre"><a name="RcpCondPrescription">CONDITIONS DE PRESCRIPTION ET DE DELIVRANCE</a></p>
+</div>
+<p class=AmmCorpsTexte>Médicament soumis à prescription médicale.</p>
+<p class=AmmCorpsTexte>Liste I</p>
+<span class='gras'><span style='font-size:12.0pt;font-family:"Arial",sans-serif;color:#0B3D92;
+text-transform:uppercase'><br clear=all>
+</span></span>					
+					<p class="alignright"><a href="#HautDePage">Retour en haut de la page <img src="img/BackToTop.jpg" width="20px" height="20px" alt="Retour en haut de la page" title="Retour en haut de la page" /></a></p>
+				</div>
+			</div>
+		</div>
+	</div>
+
+<table summary="" class="content" width="1000">
+	<tr>
+		<td height="100px">&nbsp;</td>
+	</tr>
+</table>
+<table summary="Pied de page" class="footer" width="1000">
+	<tr>
+		<td>
+			<table summary="" class="tablealigncenter" border="0">
+				<tr>
+					<td width="100px" class="aligncenter"><a id="lien_ansm" href="http://ansm.sante.fr/" target="_blank"><img src="img/Logo_ANSM.png" width="150" height="60" alt="ANSM - Agence nationale de sécurité du médicament et des produits de santé" title="L'ANSM met à disposition les principales informations issues de l'Autorisation de mise sur le marché, l'appartenance à un groupe générique, les liens vers les informations de sécurité qu'elle publie, l'identification des médicaments sous surveillance renforcée - nouvelle fenêtre" /></a></td>
+					          <td>&nbsp;</td>
+					<td width="100px" class="aligncenter"><img src="img/Logo_HAS.png" width="150" height="60" alt="HAS - Haute autorité de santé" title="La HAS met à disposition les informations relatives au service médical rendu, à l'amélioration du service médical rendu ainsi que les liens vers les avis de la Commission de la Transparence correspondants - nouvelle fenêtre" /></td>
+					<td>&nbsp;</td>
+					<td width="100px" class="aligncenter"><img src="img/Logo_CNAM.png" width="150" height="60" alt="UNCAM - Unin nationale des caisses d'assurance maladie" title="L'UNCAM met à disposition le taux de remboursement, le prix et les indications remboursables le cas échéant, ainsi que l'agrément aux collectivités - nouvelle fenêtre" /></td>
+          				</tr>
+			</table> 
+		</td>
+	</tr>
+</table>
+<table summary="" class="finpage" width="1000">
+	<tr>
+		<td height="100px" class="aligncenter">
+			<a class="navigation" href="plan.php">Plan du site</a>&nbsp;|&nbsp;
+			<a class="navigation" href="accessibilite.php">Accessibilité</a>&nbsp;|&nbsp;
+			<a class="navigation" href="contact.php">Contact</a>&nbsp;|&nbsp;
+			<a class="navigation" href="telechargement.php">Téléchargement</a>&nbsp;|&nbsp;
+			<a class="navigation" href="DeclarationConfidentialite.php">Declaration de confidentialité</a>&nbsp;|&nbsp;
+			<a class="navigation" href="http://www.service-public.fr/" title="Service Public - Nouvelle fenêtre" target="_blank">Service-Public.fr</a>&nbsp;|&nbsp;
+			<a class="navigation" href="http://www.legifrance.gouv.fr/" title="Legifrance - Nouvelle fenêtre" target="_blank">Legifrance</a>&nbsp;|&nbsp;
+			<a class="navigation" href="http://www.gouvernement.fr/" title="Gouvernement - Nouvelle fenêtre" target="_blank" >Gouvernement.fr</a>
+		</td>
+	</tr>
+</table>
+
+
+
+<!-- Matomo -->
+<script type="text/javascript">
+  var _paq = window._paq = window._paq || [];
+  /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
+  _paq.push(['trackPageView']);
+  _paq.push(['enableLinkTracking']);
+  (function() {
+    var u="https://stats.integra.fr/";
+    _paq.push(['setTrackerUrl', u+'matomo.php']);
+    _paq.push(['setSiteId', '79']);
+    var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+    g.type='text/javascript'; g.async=true; g.src=u+'matomo.js'; s.parentNode.insertBefore(g,s);
+  })();
+</script>
+<!-- End Matomo Code -->
+
+
+
+</body>
+</html>

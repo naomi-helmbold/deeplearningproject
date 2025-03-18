@@ -1,0 +1,527 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="fr" lang="fr">
+<head>
+	<title>Notice patient - SUBUTEX 2 mg, comprimé sublingual  - Base de données publique des médicaments</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=windows-1252"/>
+	<meta name="robots" content="index, follow"/>
+	<meta name="Description" content="Base de données publique des médicaments"/>
+	<meta name="Keywords" content="base, données, publique, médicaments, Notice patient, SUBUTEX 2 mg, comprimé sublingual "/>
+	<meta name="Subject" content="medicament"/>
+	<link href='https://fonts.googleapis.com/css?family=Noticia+Text' rel='stylesheet' type='text/css' />
+	<link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro' rel='stylesheet' type='text/css' />
+	<link href="style/style_bdm.css?v=2.2.3" type="text/css" rel="stylesheet"/>
+	<link href="style/style_RCP_Notice.css" type="text/css" rel="stylesheet"/>
+  <link rel="alternate" href="http://m.base-donnees-publique.medicaments.gouv.fr/#!info-65150204">
+    <script type="text/javascript" src="scripts/autocomplete.js?v=2.2.3"></script>
+	<script type="text/javascript" src="scripts/jquery.js"></script>
+    <script type="text/javascript" src="scripts/jquery-ui.min.js"></script>
+	<script type="text/javascript" src="scripts/common.js"></script>
+	<link rel="icon" type="image/x-icon" href="favicon.ico" />
+</head>
+
+<body>
+
+<a name="HautDePage" />
+<div id="bandeauhaut">
+	<a id="lien_ministere" class="lienmenu" href="http://www.sante.gouv.fr" target="_blank" title="Site du ministère des affaires sociales et de la santé - nouvelle fenêtre"><img id="logoministere" src="img/Logo_Ministere.jpg"  alt="Logo du ministère des affaires sociales et de la santé"/></a>
+	<h1 class="texteTitreSite">
+		Base <span class="texteBleu">de</span> données <span class="texteBleu">publique</span><br/><span class="texteBleu">des</span> médicaments
+	</h1>
+		<a id="lien_medicament_gouv" class="lienEspaceMedic" target="_blank" href="http://medicaments.gouv.fr" title="Visiter [medicaments.gouv.fr] - nouvelle fenêtre">Visiter [medicaments.gouv.fr] <img src="/img/icone_lien.png" alt="Visiter [medicaments.gouv.fr]"  title="Visiter [medicaments.gouv.fr] - nouvelle fenetre" /></a>
+</div>
+<!--div align="center">
+	<a id="banniere" target="_blank" href="http://social-sante.gouv.fr/soins-et-maladies/medicaments/medicaments-generiques/" title="Visiter [medicaments.gouv.fr] - M?dicaments g?n?riques">
+		<img width="1000"   src ="/img/carrouselbannieres.gif" alt="Visiter [medicaments.gouv.fr] - M?dicaments g?n?riques" title="Visiter [medicaments.gouv.fr] - M?dicaments g?n?riques" />
+	</a>
+</div-->
+
+<div id="menuhaut">
+	<span id="menuhaut_gauche">
+		<a id="lien_accueil" class="navigation" href="index.php">Accueil</a>&nbsp;|&nbsp;
+		<a id="lien_glossaire" class="navigation" href="glossaire.php">Glossaire</a>&nbsp;|&nbsp;
+		<a id="lien_aide" class="navigation" href="aide.php">Aide</a>		
+	</span>
+	
+		
+	<span id="menuhaut_dernmaj">
+        <br>Dernière <span title=" 2.4.4
+">mise à jour</span> le 03/03/2025	</span>
+</div>
+
+	<script language="javascript" type="text/javascript">
+		//<![CDATA[ 
+		function Aff(men) {
+			document.write("<ul class=\"menuDoc\">");
+			for(var no_rub=0;no_rub<men.num_rub;no_rub++) {
+				document.write("<li><a class='leftMenu' href='"+menu[no_rub].page+"'>");
+				document.write(men[no_rub].txt);
+				document.write("</a></li>");
+				if (men[no_rub].nb_lien != 0){
+					document.write("<ul class=\"sousMenuDoc\">");
+				}
+				for(var no_lien=0;no_lien<men[no_rub].nb_lien;no_lien++) {
+					document.write("<li><a class='leftMenu' href='"+men[no_rub][no_lien].page+"'>");
+					document.write(men[no_rub][no_lien].txt);
+					document.write("</a></li>");
+				}
+				if (men[no_rub].nb_lien != 0){
+					document.write("</ul>");
+				}
+			}
+			document.write("</ul>");
+		}
+		
+		function CreerMenu(police,imgRub,imgOption,imgOptionFin,hauteur) {
+			this.num_rub=0;
+			this.police=police;
+			this.imgRub=imgRub;
+			this.imgOpt=imgOption;
+			this.imgOptFin=imgOptionFin;
+			this.hauteur=hauteur;
+			this.AddRub=AddRub;
+			this.AddLien=AddLien;
+		}
+		
+		function AddRub(txt,aff,page) {
+			var rub = new Object;
+				rub.txt=txt;
+				rub.aff=aff;
+				rub.page=page;
+				rub.nb_lien=0;
+			this[this.num_rub]=rub;
+			this.num_rub++;
+		}
+
+		function AddLien(txt,page) {
+			var no_rub = this.num_rub-1;
+			var no_lien= this[no_rub].nb_lien;
+			var lien = new Object;
+				lien.txt=txt;
+				lien.page=page;
+			this[no_rub][no_lien]=lien;
+			this[no_rub].nb_lien++;
+		}
+		var menu=new CreerMenu("arial","img/dyn04.gif","img/dyn22.gif","img/dyn55.gif",18);
+		//]]> 
+		menu.AddRub("Description médicament","O","#Ann3bQuestceque");
+			menu.AddRub("Informations","O","#Ann3bInfoNecessaires");
+			menu.AddRub("Utilisation","O","#Ann3bCommentPrendre");
+			menu.AddRub("Effets indésirables","O","#Ann3bEffetsIndesirables");
+			menu.AddRub("Conservation","O","#Ann3bConservation");
+			menu.AddRub("Info. supplémentaires","O","#Ann3bEmballage");
+				</script>
+
+	<div id="container">
+		<div id="leftnav">
+			<div id="cadreMenuGauche">
+				<h2 class="sommaireMenu">Sommaire</h2>
+				<div id="menuGauche">
+					<script language="JavaScript" type="text/javascript">Aff(menu);</script>
+				</div>
+			</div>
+		</div>
+		<div id="contentPrincipal">
+			<div id="boutonsliens">
+				<a id='lien_fiche_info' href='extrait.php?specid=65150204' ><img id="ongletficheinfo" alt="Onglet fiche information" src="img/onglet_fiche_info_vert.png" /></a><a id='lien_rcp' href='affichageDoc.php?specid=65150204&amp;typedoc=R'><img class="onglet" alt="Onglet résumé des caractéristiques du produit" src="img/onglet_rcp_vert.png" /></a><a id='lien_notice' href='affichageDoc.php?specid=65150204&amp;typedoc=N'><img class="onglet" alt="Onglet notice patient" src="img/onglet_notice_gris.png" /></a>			</div>
+			<div class="titredeno">
+				<table summary="" border="0" cellspacing="0">
+					<tr><td colspan="3" height="10px"></td></tr>
+					<tr>
+						<td width="15px">&nbsp;</td>
+						<td width="685px"><h1 class="textedeno">SUBUTEX 2 mg, comprimé sublingual  - Notice patient</h1></td>
+						<td width="43px" class="tdcenter"><a href="Javascript:void(null)" onclick="print();"><img src="img/imprimante.png" height="20px" width="20px" alt="Imprimer le document" title="Imprimer le document" border="0" /></a></td>
+					</tr>
+					<tr><td colspan="3" height="10px"></td></tr>
+				</table>
+			</div>
+			
+			<div id="contentDocument">
+				<div id="textDocument">
+					<p class="DateNotif">ANSM - Mis à jour le : 30/09/2024</p>
+<p class="AmmNoticeTitre1"><a name="Ann3bDenomination">Dénomination du médicament</a></p>
+<p class=AmmCorpsTexteGras align=center style='text-align:center'><a name="_Toc142278999">SUBUTEX 2 mg, comprimé sublingual</a></p>
+<p class=AmmCorpsTexteGras align=center style='text-align:center'>chlorhydrate de buprénorphine</p>
+<p class="AmmNoticeTitre1"><a name="Ann3bEncadre">Encadré</a></p>
+<p class=AmmCorpsTexteGras><a name="_Toc142279000"><span lang=FR-BE>Veuillez lire attentivement cette notice avant de prendre ce médicament car elle contient des informations importantes pour vous.</span></a></p>
+<p class=AmmListePuces1 style='text-align:justify'><span lang=FR-BE style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span><span lang=FR-BE>Gardez cette notice. Vous pourriez avoir besoin de la relire.</span></p>
+<p class=AmmListePuces1 style='text-align:justify'><span lang=FR-BE style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span><span lang=FR-BE>Si vous avez d’autres questions, interrogez votre médecin ou votre pharmacien.</span></p>
+<p class=AmmListePuces1 style='text-align:justify'><span lang=FR-BE style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span><span lang=FR-BE>Ce médicament vous a été personnellement prescrit. Ne le donnez pas à d’autres personnes. Il pourrait leur être nocif, même si les signes de leur maladie sont identiques aux vôtres.</span></p>
+<p class=AmmListePuces1 style='text-align:justify'><span lang=FR-BE style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span><span lang=FR-BE>Si vous ressentez un quelconque effet indésirable, parlez-en à votre médecin ou votre pharmacien. Ceci s’applique aussi à tout effet indésirable qui ne serait pas mentionné dans cette notice. </span>Voir rubrique 4.</p>
+<p class="AmmNoticeTitre1"><a name="Ann3bSomm">Que contient cette notice ?</a></p>
+<p class=AmmCorpsTexte style='margin-top:0cm;margin-right:0cm;margin-bottom: 0cm;margin-left:14.2pt;margin-bottom:.0001pt;text-indent:-14.2pt'>1. Qu'est-ce que <span style='text-transform:uppercase'>SUBUTEX </span>2 mg, comprimé sublingual et dans quels cas est-il utilisé ?</p>
+<p class=AmmCorpsTexte style='margin-top:0cm;margin-right:0cm;margin-bottom: 0cm;margin-left:14.2pt;margin-bottom:.0001pt;text-indent:-14.2pt'>2. Quelles sont les informations à connaître avant de prendre <span style='text-transform: uppercase'>SUBUTEX </span>2 mg, comprimé sublingual?</p>
+<p class=AmmCorpsTexte style='margin-top:0cm;margin-right:0cm;margin-bottom: 0cm;margin-left:14.2pt;margin-bottom:.0001pt;text-indent:-14.2pt'>3. Comment prendre <span style='text-transform:uppercase'>SUBUTEX </span>2 mg, comprimé sublingual?</p>
+<p class=AmmCorpsTexte style='margin-top:0cm;margin-right:0cm;margin-bottom: 0cm;margin-left:14.2pt;margin-bottom:.0001pt;text-indent:-14.2pt'>4. Quels sont les effets indésirables éventuels ?</p>
+<p class=AmmCorpsTexte style='margin-top:0cm;margin-right:0cm;margin-bottom: 0cm;margin-left:14.2pt;margin-bottom:.0001pt;text-indent:-14.2pt'>5. Comment conserver <span style='text-transform:uppercase'>SUBUTEX </span>2 mg, comprimé sublingual ?</p>
+<p class=AmmCorpsTexte style='margin-top:0cm;margin-right:0cm;margin-bottom: 0cm;margin-left:14.2pt;margin-bottom:.0001pt;text-indent:-14.2pt'><span style='color:black'>6. Contenu de l’emballage et autres informations.</span></p>
+<h2><a name="Ann3bQuestceque">1. QU’EST-CE QUE SUBUTEX 2 mg, comprimé sublingual ET DANS QUELS CAS EST-IL UTILISE ?</a>&nbsp;&nbsp;<a href='#HautDePage'><img src='img/BackToTop.jpg' width='15px' height='15px' alt='Retour en haut de la page' title='Retour en haut de la page' /></a></h2>
+<p class=AmmCorpsTexte><a name="_Toc142279003">MEDICAMENT UTILISE DANS LA DEPENDANCE AUX OPIOIDES.</a></p>
+<p class=AmmCorpsTexte>SUBUTEX 2 mg comprimé sublingual est utilisé pour traiter la dépendance aux opioïdes (stupéfiants). Ce médicament est exclusivement réservé au traitement de substitution des pharmacodépendances, dans le cadre d'un suivi médical et psycho social, chez les patients qui ont accepté d’être traités pour leur dépendance aux opioïdes.</p>
+<p class=AmmCorpsTexte>Le traitement par SUBUTEX 2 mg comprimé sublingual est réservé aux adultes et adolescents de plus de 15 ans.</p>
+<h2><a name="Ann3bInfoNecessaires">2. QUELLES SONT LES INFORMATIONS A CONNAITRE AVANT DE PRENDRE SUBUTEX 2 mg, comprimé sublingual ?</a>&nbsp;&nbsp;<a href='#HautDePage'><img src='img/BackToTop.jpg' width='15px' height='15px' alt='Retour en haut de la page' title='Retour en haut de la page' /></a></h2>
+<p class=AmmCorpsTexteGras><a name="_Toc142279015"><span style='font-weight: normal'>Si votre médecin vous a informé(e) d’une intolérance à certains sucres, contactez le avant de prendre ce médicament. </span></a></p>
+<p class=AmmCorpsTexteGras>Ne prenez jamais SUBUTEX 2 mg, comprimé sublingual :</p>
+<p class=AmmListePuces1 style='text-align:justify'><span style='font-family: Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>si vous êtes allergique (hypersensible) à la buprénorphine ou à l’un des autres composants contenus dans ce médicament mentionnés dans la rubrique 6.</p>
+<p class=AmmListePuces1 style='text-align:justify'><span style='font-family: Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>si vous avez moins de 15 ans,</p>
+<p class=AmmListePuces1 style='text-align:justify'><span style='font-family: Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>si vous avez une insuffisance respiratoire grave,</p>
+<p class=AmmListePuces1 style='text-align:justify'><span style='font-family: Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>si vous avez une maladie grave du foie,</p>
+<p class=AmmListePuces1 style='text-align:justify'><span style='font-family: Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>si vous présentez une intoxication alcoolique aiguë ou un delirium tremens (tremblements, sudation, anxiété, confusion ou hallucinations causés par l’alcool),</p>
+<p class=AmmListePuces1 style='text-align:justify'><span style='font-family: Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>si vous prenez de la méthadone,</p>
+<p class=AmmListePuces1 style='text-align:justify'><span style='font-family: Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>si vous prenez des analgésiques morphiniques de palier III,</p>
+<p class=AmmListePuces1 style='text-align:justify'><span style='font-family: Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>si vous prenez de la naltrexone,</p>
+<p class=AmmListePuces1 style='margin-top:0cm;margin-right:0cm;margin-bottom: 6.0pt;margin-left:17.85pt;text-align:justify;text-indent:-17.85pt'><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>si vous prenez du nalméfène.</p>
+<p class=AmmCorpsTexteGras>Avertissements et précautions</p>
+<p class=AmmCorpsTexte><span lang=FR-BE>Adressez-vous à votre médecin ou pharmacien avant de prendre </span>SUBUTEX 2 mg comprimé sublingual.</p>
+<p class=AmmCorpsTexteGras><span style='font-weight:normal'>Informez votre médecin en cas de :</span></p>
+<p class=MsoListParagraphCxSpFirst style='margin-left:21.3pt;text-indent:-21.3pt'><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>           </span></span>asthme ou autres problèmes respiratoires,</p>
+<p class=MsoListParagraphCxSpMiddle style='margin-left:21.3pt;text-indent:-21.3pt'><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>           </span></span>maladie du foie telle que l’hépatite,</p>
+<p class=MsoListParagraphCxSpMiddle style='margin-left:21.3pt;text-indent:-21.3pt'><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>           </span></span>tension artérielle basse,</p>
+<p class=MsoListParagraphCxSpMiddle style='margin-left:21.3pt;text-indent:-21.3pt'><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>           </span></span>traumatisme crânien récent ou maladie cérébrale,</p>
+<p class=MsoListParagraphCxSpMiddle style='margin-left:21.3pt;text-indent:-21.3pt'><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>           </span></span>affection des voies urinaires (en particulier si elle est liée à une hypertrophie de la prostate chez l’homme),</p>
+<p class=MsoListParagraphCxSpMiddle style='margin-left:21.3pt;text-indent:-21.3pt'><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>           </span></span>néphropathie,</p>
+<p class=MsoListParagraphCxSpMiddle style='margin-left:21.3pt;text-indent:-21.3pt'><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>           </span></span>problèmes thyroïdiens,</p>
+<p class=MsoListParagraphCxSpMiddle style='margin-left:21.3pt;text-indent:-21.3pt'><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>           </span></span>insuffisance surrénalienne (par exemple maladie d’Addison),</p>
+<p class=MsoListParagraphCxSpMiddle style='margin-top:0cm;margin-right:0cm; margin-bottom:6.0pt;margin-left:21.25pt;text-indent:-21.25pt'><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>           </span></span>dysfonctionnement des voies biliaires,</p>
+<p class=MsoListParagraphCxSpLast style='margin-top:0cm;margin-right:0cm; margin-bottom:6.0pt;margin-left:21.25pt;text-indent:-21.25pt'><a name="_Hlk57119974"><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>           </span></span>dépression ou autre maladie traitée par des antidépresseurs. L’utilisation concomitante de ces médicaments avec SUBUTEX peut provoquer un syndrome sérotoninergique, une maladie potentiellement mortelle (voir « Autres médicaments et SUBUTEX »).</a></p>
+<p class=AmmCorpsTexteGras><span class='souligne'>Informations importantes à prendre en compte</span></p>
+<p class=AmmListePuces1 style='margin-top:0cm;margin-right:0cm;margin-bottom: 6.0pt;margin-left:17.85pt;text-indent:-17.85pt'><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span><span class='gras'>Mésusage, abus et usage détourné</span></p>
+<p class=AmmCorpsTexteGras><span style='font-weight:normal'>Ce médicament peut être convoité par les individus qui utilisent de manière abusive des médicaments délivrés sur ordonnance et doit être conservé en un lieu sûr afin d’éviter tout vol</span>. Ne donnez pas ce médicament à d’autres personnes. Il peut entraîner leur décès ou leur être nocif.</p>
+<p class=AmmListePuces1 style='margin-top:0cm;margin-right:0cm;margin-bottom: 6.0pt;margin-left:17.85pt;text-indent:-17.85pt'><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span><span class='gras'>Problèmes respiratoires</span></p>
+<p class=AmmCorpsTexteGras><span style='font-weight:normal'>Certaines personnes sont décédées suite à une défaillance respiratoire (difficulté à respirer) lors d’une mauvaise utilisation de ce médicament ou lors de la prise concomitante d’autres dépresseurs du système nerveux central tels que l’alcool, les benzodiazépines (tranquillisants) ou d’autres opioïdes.</span></p>
+<p class=AmmCorpsTexteGras><a name="_Hlk71302473">• Troubles respiratoires du sommeil </a></p>
+<p class=AmmCorpsTexteGras><span style='font-weight:normal'>Subutex peut provoquer des troubles respiratoires du sommeil, tels que l’apnée du sommeil (pause respiratoire pendant le sommeil) et l’hypoxémie du sommeil (faible taux d’oxygène dans le sang). Les symptômes peuvent inclure des pauses respiratoires pendant le sommeil, un réveil nocturne dû à un essoufflement, des difficultés à maintenir le sommeil ou une somnolence excessive pendant la journée. Si vous ou une autre personne observe(z) ces symptômes, contactez votre médecin. Une réduction de dose peut être envisagée par votre médecin.</span></p>
+<p class=AmmListePuces1 style='margin-top:0cm;margin-right:0cm;margin-bottom: 6.0pt;margin-left:17.85pt;text-indent:-17.85pt'><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span><span class='gras'>Tolérance, dépendance et addiction</span></p>
+<p class=AmmCorpsTexteGras><span style='font-weight:normal'>Ce produit peut créer une dépendance.</span></p>
+<p class=AmmCorpsTexte style='margin-top:6.0pt'><a name="_Hlk173273463">Ce médicament contient de la buprénorphine qui est un médicament opioïde. L'utilisation répétée d'opioïdes peut rendre le médicament moins efficace (on s'y habitue, c'est ce qu'on appelle la tolérance). L'utilisation répétée de buprénorphine peut également entraîner une dépendance, un abus et une addiction, qui peuvent se traduire par une overdose potentiellement mortelle.</a></p>
+<p class=AmmCorpsTexte><a name="_Hlk173318963"><span style='font-size:10.0pt; font-family:"Arial",sans-serif'>La dépendance ou l’addiction peuvent vous donner l’impression que vous ne contrôlez plus la quantité de médicaments que vous devez prendre ni la fréquence à laquelle vous devez les prendre.</span></a></p>
+<p class=AmmCorpsTexte style='margin-top:6.0pt'><span style='font-size:10.0pt; font-family:"Arial",sans-serif'>Le risque de dépendance ou d’addiction varie d'une personne à l'autre. Ce risque de dépendance ou d’addiction à la buprénorphine peut être plus élevé si :</span></p>
+<p class=AmmListePuces1><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>Vous ou un membre de votre famille avez déjà consommé abusivement de l’alcool ou avez été dépendant de l'alcool, de médicaments sur ordonnance ou de drogues illégales (« addiction »).</p>
+<p class=AmmListePuces1><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>Vous êtes fumeur.</p>
+<p class=AmmListePuces1><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>Vous avez déjà eu des problèmes d'humeur (dépression, anxiété ou trouble de la personnalité) ou avez été traité par un psychiatre pour d'autres maladies mentales.</p>
+<p class=AmmCorpsTexte style='margin-top:6.0pt'>Si vous remarquez l'un des signes suivants pendant que vous prenez la buprénorphine, cela peut être le signe d'une dépendance ou d'une addiction :</p>
+<p class=AmmListePuces1><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>Vous devez prendre le médicament plus longtemps que ce que vous a conseillé votre médecin.</p>
+<p class=AmmListePuces1><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>Vous devez dépasser la dose recommandée</p>
+<p class=AmmListePuces1><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>Vous utilisez le médicament pour des raisons autres que celles prescrites, par exemple « pour rester calme » ou « pour vous aider à dormir ».</p>
+<p class=AmmListePuces1><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>Vous avez fait des tentatives répétées et infructueuses pour arrêter ou contrôler l'utilisation du médicament.</p>
+<p class=AmmListePuces1><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>Lorsque vous arrêtez de prendre le médicament, vous vous sentez mal et vous vous sentez mieux lorsque vous reprenez le médicament (« effets de sevrage »).</p>
+<p class=AmmCorpsTexteGras style='margin-top:6.0pt'><span style='font-weight: normal'>Si vous remarquez l'un de ces signes, parlez-en à votre médecin pour discuter de la meilleure voie de traitement pour vous, y compris quand il est approprié d'arrêter et comment arrêter en toute sécurité (voir la section 3, Si vous arrêtez de prendre Subutex).</span></p>
+<p class=AmmListePuces1 style='margin-top:0cm;margin-right:0cm;margin-bottom: 6.0pt;margin-left:17.85pt;text-indent:-17.85pt'><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span><span class='gras'>Symptômes de sevrage</span></p>
+<p class=AmmCorpsTexteGras><span style='font-weight:normal'>Ce produit peut entraîner l’apparition de symptômes de sevrage si vous le prenez moins de 6 heures après la prise d’un opioïde à courte durée d’action (morphine, héroïne ou produits apparentés) ou moins de 24 heures après la prise d’un opioïde à longue durée d’action tel que la méthadone.</span></p>
+<p class=AmmCorpsTexteGras><span style='font-weight:normal'>SUBUTEX 2 mg comprimé sublingual peut également provoquer des symptômes de sevrage si vous arrêtez de le prendre brutalement.</span></p>
+<p class=AmmListePuces1 style='margin-top:0cm;margin-right:0cm;margin-bottom: 6.0pt;margin-left:17.85pt;text-indent:-17.85pt'><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span><span class='gras'>Lésion du foie</span></p>
+<p class=AmmCorpsTexteGras><span style='font-weight:normal'>Des cas de lésion du foie ont été rapportés suite à la prise de SUBUTEX 2 mg comprimé sublingual, notamment lors d’un mauvais usage du médicament par voie intraveineuse et à forte dose. Celles-ci peuvent aussi être favorisées par certaines conditions telles que des infections virales (virus de l’hépatite B ou C), alcoolisme, anorexie ou par l’association avec d’autres médicaments présentant un risque pour votre foie (voir rubrique 4). Votre médecin peut faire pratiquer des tests sanguins réguliers pour surveiller l’état de votre foie. Prévenez votre médecin si vous souffrez de problèmes hépatiques avant de commencer un traitement par SUBUTEX 2 mg, comprimé sublingual.</span></p>
+<p class=AmmListePuces1 style='margin-top:0cm;margin-right:0cm;margin-bottom: 6.0pt;margin-left:17.85pt;text-indent:-17.85pt'><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span><span class='gras'>Somnolence</span></p>
+<p class=AmmCorpsTexteGras><span style='font-weight:normal'>Ce médicament peut entrainer une somnolence qui peut être augmentée par des produits tels que les boissons alcoolisées ou les médicaments traitant l’anxiété.</span></p>
+<p class=AmmListePuces1 style='margin-top:0cm;margin-right:0cm;margin-bottom: 6.0pt;margin-left:17.85pt;text-indent:-17.85pt'><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span><span class='gras'>Diagnostic des affections médicales non apparentées</span></p>
+<p class=AmmCorpsTexteGras><span style='font-weight:normal'>Ce médicament peut masquer les symptômes de douleur susceptibles de contribuer au diagnostic de certaines maladies. N’oubliez pas d’avertir votre médecin si vous prenez ce médicament.</span></p>
+<p class=AmmListePuces1 style='margin-top:0cm;margin-right:0cm;margin-bottom: 6.0pt;margin-left:17.85pt;text-indent:-17.85pt'><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span><span class='gras'>Tension artérielle</span></p>
+<p class=AmmCorpsTexteGras><span style='font-weight:normal'>Ce médicament peut provoquer une baisse soudaine de la tension artérielle, provoquant une sensation de vertige lors du passage trop rapide de la position assise ou allongée à la position debout.</span></p>
+<p class=AmmCorpsTexteGras><span style='font-weight:normal'>Une prescription et une délivrance pour une courte durée sont recommandées, notamment en début de traitement.</span></p>
+<p class=AmmCorpsTexteGras><span style='font-weight:normal'>Adressez-vous à votre médecin ou pharmacien avant de prendre SUBUTEX 2 mg comprimé sublingual.</span></p>
+<p class=AmmCorpsTexteGras>Autres médicaments et SUBUTEX 2 mg, comprimé sublingual</p>
+<p class=AmmCorpsTexte>Informez votre médecin ou pharmacien si vous prenez, avez récemment pris ou pourriez prendre tout autre médicament.</p>
+<p class=AmmCorpsTexte><span class='gras'>N’utilisez pas SUBUTEX 2 mg, comprimé sublingual</span> si vous prenez : </p>
+<p class=AmmListePuces1><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>de la méthadone, </p>
+<p class=AmmListePuces1><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>des analgésiques morphiniques (analgésiques de palier III),</p>
+<p class=AmmListePuces1><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>de la naltrexone, </p>
+<p class=AmmListePuces1><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>du nalméfène. </p>
+<p class=AmmCorpsTexte style='margin-top:6.0pt'>Certaines associations avec SUBUTEX 2 mg comprimé sublingual ne sont pas recommandées :</p>
+<p class=AmmListePuces1><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>tramadol, codéine, dihydrocodéine (analgésiques de palier II)</p>
+<p class=AmmListePuces1><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>éthylmorphine,</p>
+<p class=AmmListePuces1><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>alcool ou médicaments contenant de l’alcool.</p>
+<p class=AmmCorpsTexte style='margin-top:6.0pt;page-break-after:avoid'>Certains médicaments peuvent augmenter les effets indésirables de SUBUTEX 2 mg comprimé sublingual et risquent d’entraîner des réactions très graves. Ne prenez pas d’autres médicaments en concomitance avec SUBUTEX 2 mg comprimé sublingual sans en parler d’abord à votre médecin, notamment :</p>
+<p class=AmmListePuces1 style='text-align:justify'><span style='font-family: Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>Benzodiazépines (utilisées pour traiter l’anxiété ou les troubles du sommeil) telles que le diazépam, le témazépam et l’alprazolam. <a name="_Hlk57120458"></a><a name="_Hlk57120029">L’utilisation concomitante de SUBUTEX et de médicaments sédatifs tels que les benzodiazépines et les médicaments apparentés augmente le risque de somnolence, de difficultés pour respirer (dépression respiratoire), de coma et peut engager le pronostic vital. Pour cette raison, l’utilisation concomitante ne doit être envisagée que lorsqu’il n’existe pas d’alternatives thérapeutiques. Cependant, si votre médecin prescrit SUBUTEX avec des sédatifs, la dose et la durée du traitement concomitant doivent être limitées. Informez votre médecin de tous les sédatifs que vous prenez et suivez strictement ses recommandations concernant les doses. Il pourrait être utile d’apprendre à vos amis ou à vos proches à reconnaître les signes et symptômes mentionnés ci-dessus. Contactez votre médecin si vous présentez ces symptômes.</a></p>
+<p class=AmmListePuces1 style='text-align:justify'><span style='font-family: Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>Gabapentine ou prégabaline pour traiter l'épilepsie ou les douleurs dues à des problèmes nerveux (douleurs neuropathiques)</p>
+<p class=AmmListePuces1 style='text-align:justify'><span style='font-family: Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>Autres médicaments pouvant entraîner une somnolence qui sont utilisés pour traiter des affections telles que l’anxiété, l’insomnie, les convulsions/crises d’épilepsie et la douleur. Ces types de médicaments diminueront votre niveau de vigilance en rendant difficile la conduite de véhicules et l’utilisation de machines. Ils peuvent également provoquer une dépression du système nerveux central, ce qui est très grave : l’utilisation de ces médicaments doit être surveillée étroitement. Une liste d’exemples de ces types de médicaments est présentée ci-dessous :</p>
+<p class=AmmListePuces2 style='text-align:justify;page-break-after:auto'><span style='font-family:"Courier New"'>o<span style='font:7.0pt "Times New Roman"'>   </span></span>les autres opioïdes, certains analgésiques et antitussifs,</p>
+<p class=AmmListePuces2 style='text-align:justify;page-break-after:auto'><span style='font-family:"Courier New"'>o<span style='font:7.0pt "Times New Roman"'>   </span></span>les antidépresseurs (utilisés pour traiter la dépression) tels que l’isocarboxazide et le valproate,</p>
+<p class=AmmListePuces2 style='text-align:justify;page-break-after:auto'><span style='font-family:"Courier New"'>o<span style='font:7.0pt "Times New Roman"'>   </span></span>les antihistaminiques H1 (utilisés pour traiter les réactions allergiques) tels que la diphenhydramine et la chlorphénamine,</p>
+<p class=AmmListePuces2 style='text-align:justify;page-break-after:auto'><span style='font-family:"Courier New"'>o<span style='font:7.0pt "Times New Roman"'>   </span></span>les barbituriques (utilisés pour provoquer le sommeil ou la sédation) tels que le phénobarbital ou l’hydrate de chloral</p>
+<p class=AmmListePuces1 style='margin-left:17.85pt;text-align:justify; text-indent:-17.85pt;page-break-after:avoid'><a name="_Hlk57120132"><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>Des antidépresseurs tels que le moclobémide, la tranylcypromine, le citalopram, l’escitalopram, la fluoxétine, la fluvoxamine, la paroxétine, la sertraline, la duloxétine, la venlafaxine, l’amitriptyline, la doxépine, ou la trimipramine. Ces médicaments peuvent interagir avec SUBUTEX et vous pouvez présenter des symptômes tels que des contractions rythmiques involontaires des muscles, y compris des muscles qui contrôlent les mouvements de l'œil, une agitation, des hallucinations, un coma, une transpiration excessive, des tremblements, une exagération des réflexes, une augmentation de la tension musculaire, une température corporelle supérieure à 38 °C. Contactez votre médecin si vous ressentez ces symptômes.</a></p>
+<p class=AmmListePuces1 style='text-align:justify'><span style='font-family: Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>La clonidine (utilisée pour traiter une tension artérielle élevée) </p>
+<p class=AmmListePuces1 style='text-align:justify'><span style='font-family: Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>Les antirétroviraux (utilisés pour traiter le SIDA) tels que le ritonavir, le nelfinavir et l’indinavir, </p>
+<p class=AmmListePuces1 style='text-align:justify'><span style='font-family: Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>Certains agents antifongiques (utilisés pour traiter les infections fongiques) tels que le kétoconazole, l’itraconazole, le voriconazole ou le posaconazole et certains antibiotiques (macrolides) </p>
+<p class=AmmListePuces1><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>Les médicaments utilisés pour traiter le mal des transports ou les nausées (antihistaminiques ou antiémétiques) ;</p>
+<p class=AmmListePuces1 style='text-align:justify'><span style='font-family: Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>Les médicaments destinés au traitement des troubles psychiatriques (antipsychotiques ou neuroleptiques) ; </p>
+<p class=AmmListePuces1 style='text-align:justify'><span style='font-family: Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>Les relaxants musculaires ; </p>
+<p class=AmmListePuces1 style='text-align:justify'><span style='font-family: Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>Les médicaments pour traiter la maladie de Parkinson.</p>
+<p class=AmmCorpsTexte style='margin-top:6.0pt'>Certains médicaments peuvent diminuer les effets de SUBUTEX 2 mg comprimé sublingual et doivent être utilisés avec prudence quand ils sont co-administrés avec SUBUTEX 2 mg comprimé sublingual. Parmi ces produits figurent :</p>
+<p class=AmmListePuces1><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>les médicaments utilisés pour traiter l'épilepsie (tels que la carbamazépine, le phénobarbital ou la phénytoïne)</p>
+<p class=AmmListePuces1><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>les médicaments utilisés pour traiter la tuberculose (rifampicine).</p>
+<p class=AmmCorpsTexte style='margin-top:6.0pt'>La prise concomitante de SUBUTEX 2 mg comprimé sublingual avec les médicaments mentionnés ci-dessus doit être étroitement surveillée et peut nécessiter dans certains cas un ajustement des doses par votre médecin.</p>
+<p class=AmmCorpsTexte>Vous devez dire à votre médecin ou pharmacien, si vous prenez ou avez pris récemment un autre médicament, y compris un médicament obtenu sans ordonnance.</p>
+<p class=AmmCorpsTexteGras>SUBUTEX 2 mg, comprimé sublingual avec des aliments, boissons et de l’alcool</p>
+<p class=AmmCorpsTexteGras><a name="_Toc142279012"><span style='font-weight: normal'>L’alcool peut augmenter la somnolence et le risque de défaillance respiratoire s’il est associé à la prise de SUBUTEX 2 mg comprimé sublingual. </span></a>Vous ne devez pas boire d’alcool ni prendre des médicaments contenant de l’alcool<span style='font-weight:normal'> pendant le traitement par SUBUTEX 2 mg comprimé sublingual.</span></p>
+<p class=AmmCorpsTexteGras><span style='font-weight:normal'>Ne pas avaler ou consommer des aliments ou des boissons tant que le comprimé n'est pas complètement dissous.</span></p>
+<p class=AmmCorpsTexteGras>Grossesse et allaitement</p>
+<p class=AmmCorpsTexte><span lang=FR-BE>Si vous êtes enceinte ou que vous allaitez, si vous pensez être enceinte ou planifiez une grossesse, demandez conseil à votre médecin ou pharmacien avant de prendre ce médicament.</span></p>
+<p class=MsoBodyText style='text-autospace:none'><span style='font-size:10.0pt; font-family:"Arial",sans-serif'>La buprénorphine peut être utilisée pendant la grossesse.</span></p>
+<p class=MsoBodyText style='text-autospace:none'><span style='font-size:10.0pt; font-family:"Arial",sans-serif'>En cas de prise au cours de la grossesse, plus particulièrement à la fin de la grossesse, les médicaments tels que SUBUTEX 2 mg comprimé sublingual peuvent entraîner des symptômes de sevrage et des problèmes respiratoires chez le nouveau-né. Ces symptômes peuvent survenir plusieurs jours après la naissance.</span></p>
+<p class=AmmCorpsTexte style='margin-bottom:6.0pt;text-autospace:none'><span style='font-size:10.0pt;font-family:"Arial",sans-serif'>Avant d’allaiter votre enfant, consultez votre médecin : il évaluera vos facteurs de risque personnels et vous dira si vous pouvez allaiter pendant le traitement par ce médicament.</span></p>
+<p class=AmmCorpsTexteGras>Sportifs</p>
+<p class=AmmCorpsTexteGras><span style='font-weight:normal'>Attention ce médicament contient de la buprénorphine qui est inscrite sur la liste des substances dopantes.</span></p>
+<p class=AmmCorpsTexteGras>Conduite de véhicules et utilisation de machines</p>
+<p class=AmmCorpsTexte style='margin-bottom:6.0pt'><span style='font-size:10.0pt; font-family:"Arial",sans-serif'>SUBUTEX 2 mg, comprimé sublingual peut provoquer une somnolence, des vertiges ou une altération de la pensée. Cela peut surtout se produire pendant les premières semaines de traitement ou lorsque votre dose est modifiée, mais également lorsque vous consommez de l'alcool ou prenez d'autres sédatifs avec SUBUTEX 2 mg, comprimé sublingual. Vous ne devez pas conduire ni utiliser des outils ou des machines, ni entreprendre des activités dangereuses tant que vous ne savez pas de quelle manière ce médicament vous affecte.</span></p>
+<p class=AmmCorpsTexte style='margin-bottom:6.0pt'><span style='font-size:10.0pt; font-family:"Arial",sans-serif'>Demandez conseil à votre médecin ou pharmacien.</span></p>
+<p class=AmmCorpsTexteGras>SUBUTEX 2 mg, comprimé sublingual contient du lactose et du sodium.</p>
+<p class=AmmCorpsTexte><a name="_Hlk57120639">Ce médicament contient du lactose. </a><a name="_Hlk57120666"></a>Si votre médecin vous a informé(e) d’une intolérance à certains sucres, contactez-le avant de prendre ce médicament.</p>
+<p class=AmmCorpsTexte>Ce médicament contient moins de 1 mmol de sodium (23 mg) par comprimé, c’est-à-dire qu’il est essentiellement « sans sodium ».</p>
+<h2><a name="Ann3bCommentPrendre">3. COMMENT PRENDRE SUBUTEX 2 mg, comprimé sublingual ?</a>&nbsp;&nbsp;<a href='#HautDePage'><img src='img/BackToTop.jpg' width='15px' height='15px' alt='Retour en haut de la page' title='Retour en haut de la page' /></a></h2>
+<p class=AmmCorpsTexte><a name="_Toc142279021">Veillez à toujours prendre ce médicament en suivant exactement les indications de votre médecin ou pharmacien. Vérifiez auprès de votre médecin ou pharmacien en cas de doute.</a></p>
+<p class=AmmCorpsTexte><span class='gras'><span lang=FR-BE>Instauration du traitement</span></span></p>
+<p class=AmmCorpsTexte><span lang=FR-BE>La dose initiale recommandée chez l'adulte et l'adolescent âgé de plus de 15 ans est de 2 à 4 mg de SUBUTEX.<a name="_Hlk174961338"> Cette dose peut être répétée jusqu’à 12 mg</a> le premier jour en fonction de vos besoins. </span>Dans certains cas, selon la réponse du patient, la dose au jour 1 peut être augmentée sans dépasser 24 mg de buprénorphine.</p>
+<p class=AmmCorpsTexte><span lang=FR-BE>Vous devez présenter des signes manifestes de sevrage avant de prendre la première dose de SUBUTEX. L'évaluation du médecin au regard de votre aptitude à recevoir le traitement permettra de décider du moment où vous prendrez votre première dose de SUBUTEX.</span></p>
+<p class=AmmListePuces1><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>Instauration du traitement par SUBUTEX lors d’une dépendance à l’héroïne </p>
+<p class=AmmCorpsTexte style='margin-top:6.0pt'><span lang=FR-BE>Si vous êtes dépendant à l'héroïne ou à un opioïde à courte durée d'action, vous devez prendre votre première dose de SUBUTEX lors de l'apparition des premiers signes de sevrage, au moins 6 heures après la dernière prise d'opioïdes.</span></p>
+<p class=AmmListePuces1><span lang=FR-BE style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span><span lang=FR-BE>Instauration du traitement par SUBUTEX lors d’une dépendance à la méthadone </span></p>
+<p class=AmmCorpsTexte style='margin-top:6.0pt;page-break-after:avoid'><span lang=FR-BE>Si vous prenez de la méthadone ou un opiacé à action prolongée, idéalement la dose de méthadone doit être réduite de manière à être inférieure à 30 mg/jour avant de commencer le traitement par SUBUTEX. La première dose de SUBUTEX doit être prise lorsqu'apparaissent les premiers signes de sevrage, mais doit intervenir au moins 24 heures après la dernière prise de méthadone.</span></p>
+<p class=AmmCorpsTexteGras>Prise de SUBUTEX</p>
+<p class=AmmCorpsTexteGras><span style='font-weight:normal'>La voie sublinguale constitue la seule voie efficace et bien tolérée pour la prise de ce médicament.</span></p>
+<p class=AmmListePuces1><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>Prenez la dose en plaçant les comprimés sous la langue. </p>
+<p class=AmmListePuces1><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>Conservez les comprimés sous votre langue jusqu'à leur dissolution complète. Cela peut prendre 5 à 10 minutes.</p>
+<p class=AmmListePuces1><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>Ne mâchez pas et n’avalez pas les comprimés, sous peine d’annuler leur effet et de risquer de provoquer des symptômes de sevrage.</p>
+<p class=AmmListePuces1><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>Ne consommez pas des aliments ou des boissons tant que les comprimés ne sont pas complètement dissous.</p>
+<p class=AmmCorpsTexteGras style='margin-top:6.0pt'>Adaptation posologique et dose d'entretien : </p>
+<p class=AmmCorpsTexteGras><span style='font-weight:normal'>Au cours des jours qui suivent le début de votre traitement, votre médecin peut augmenter votre dose de SUBUTEX en fonction de vos besoins. Si vous avez l'impression que l'effet de SUBUTEX est trop fort ou trop faible, parlez-en à votre médecin ou votre pharmacien. La dose quotidienne maximale est de 24 mg. </span></p>
+<p class=AmmCorpsTexteGras><span style='font-weight:normal'>Après une période pendant laquelle le traitement aura été un succès, vous pourrez vous mettre d'accord avec votre médecin afin de diminuer progressivement la dose jusqu'à parvenir à une dose d'entretien plus faible.</span></p>
+<p class=AmmCorpsTexteGras>Arrêt du traitement</p>
+<p class=AmmCorpsTexteGras><span style='font-weight:normal'>La durée de traitement doit être déterminée individuellement pour chaque patient (plusieurs mois à plusieurs années) avant d'envisager, par décision partagée avec votre médecin, la réduction et l'arrêt de la buprénorphine. La diminution doit être très progressive, au moins sur plusieurs mois, avec une réévaluation périodique, pour s'assurer que vous restez stable et éviter les rechutes et/ou le transfert de dépendance.</span></p>
+<p class=AmmCorpsTexteGras><span style='font-weight:normal'>Un arrêt de traitement, par diminution progressive de la posologie, peut être envisagé, avec votre accord, après une stabilisation suffisante de votre état. Les doses doivent être diminuées par paliers successifs sous surveillance de votre médecin.</span></p>
+<p class=AmmCorpsTexteGras><span style='font-weight:normal'>Ne pas modifier ou arrêter le traitement sans l'accord de votre médecin traitant.</span></p>
+<p class=AmmCorpsTexteGras><span style='font-weight:normal'>L’efficacité du traitement dépend :</span></p>
+<p class=AmmListePuces1><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>de la posologie,</p>
+<p class=AmmListePuces1><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>des mesures médico-psychologiques et socio-éducatives associées.</p>
+<p class=AmmCorpsTexteGras style='margin-top:6.0pt'><span style='font-weight: normal'>Si vous avez l’impression que l’effet de SUBUTEX 2 mg, comprimé sublingual est trop fort ou trop faible, consultez votre médecin ou votre pharmacien.</span></p>
+<p class=AmmCorpsTexteGras>Si vous avez pris plus de SUBUTEX 2 mg, comprimé sublingual que vous n’auriez dû</p>
+<p class=AmmCorpsTexte>Un surdosage en buprénorphine nécessite la mise sous surveillance médicale du patient et éventuellement un traitement en urgence à l'hôpital. Consultez immédiatement votre médecin ou votre pharmacien.</p>
+<p class=AmmCorpsTexteGras>Si vous oubliez de prendre SUBUTEX 2 mg, comprimé sublingual</p>
+<p class=AmmCorpsTexte>Si vous avez oublié de prendre une dose, informez votre médecin le plus tôt possible. Ne prenez pas de dose double pour compenser la dose que vous avez oublié de prendre.</p>
+<p class=AmmCorpsTexteGras>Si vous arrêtez de prendre SUBUTEX 2 mg, comprimé sublingual</p>
+<p class=AmmCorpsTexte>Ne modifiez pas le traitement de quelque manière que ce soit et n'arrêtez pas le traitement sans l'accord de votre médecin traitant. Un arrêt brutal du traitement peut entraîner l’apparition de symptômes de sevrage.</p>
+<p class=AmmCorpsTexte>Si vous avez d’autres questions sur l’utilisation de ce médicament, demandez plus d’informations &lt;à votre médecin ou à votre pharmacien.</p>
+<p class=AmmCorpsTexte style='margin-bottom:12.0pt;page-break-after:avoid'><span class='gras'><span style='font-size:10.0pt;font-family:"Arial",sans-serif'>Comment retirer le comprimé de la plaquette thermoformée ?</span></span></p>
+<p class=AmmCorpsTexte><span style='font-size:10.0pt'><img alt='' border=0 width=108 height=104 id="Picture 1" src="https://base-donnees-publique.medicaments.gouv.fr/Rcp_Notices/images//N0425266/image001.jpg"></span></p>
+<p class=AmmCorpsTexte><span style='font-size:10.0pt'> </span></p>
+<p class=AmmCorpsTexte><span style='font-size:10.0pt'> </span></p>
+<p class=AmmCorpsTexte><span style='position:absolute;z-index:251657216;left:0px; margin-left:144px;margin-top:25px;width:424px;height:52px'>  <table cellpadding=0 cellspacing=0> <tr> <td width=424 height=52 bgcolor=white style='vertical-align:top;background: white'><span style='position:absolute;left:0pt;z-index:251657216'> <table cellpadding=0 cellspacing=0 width="100%"> <tr> <td> <div style='padding:3.6pt 7.2pt 3.6pt 7.2pt'> <p class=ammcorpstexte0><span style='font-size:10.0pt'>1- Découper une seule alvéole de la plaquette en suivant les pointillés.</span></p>
+</div>
+</td>
+</tr>
+</table>
+</span> </td>
+</tr>
+</table>
+</span><span style='position:absolute;z-index:251656192;left:0px;margin-left:
+72px;margin-top:1px;width:28px;height:28px'>
+<table cellpadding=0 cellspacing=0>
+<tr>
+<td width=28 height=28 style='vertical-align:top'><span style='position:absolute;
+left:0pt;z-index:251656192'>
+<table cellpadding=0 cellspacing=0 width="100%">
+<tr>
+<td>
+<div style='padding:3.6pt 7.2pt 3.6pt 7.2pt'>
+<p class=AmmCorpsTexte><span class='gras'><span style='color:white'>1</span></span></p>
+</div>
+</td>
+</tr>
+</table>
+</span> </td>
+</tr>
+</table>
+</span><span style='font-size:10.0pt'><img alt='' border=0 width=108 height=101
+id="Picture 2" src="https://base-donnees-publique.medicaments.gouv.fr/Rcp_Notices/images//N0425266/image002.png"></span></p>
+<p class=AmmCorpsTexte><span style='font-size:10.0pt'> </span></p>
+<p class=AmmCorpsTexte><span style='font-size:10.0pt'> </span></p>
+<p class=AmmCorpsTexte><span style='position:absolute;z-index:251658240;left:0px; margin-left:136px;margin-top:25px;width:448px;height:61px'>  <table cellpadding=0 cellspacing=0> <tr> <td width=448 height=61 bgcolor=white style='vertical-align:top;background: white'><span style='position:absolute;left:0pt;z-index:251658240'> <table cellpadding=0 cellspacing=0 width="100%"> <tr> <td> <div style='padding:3.6pt 7.2pt 3.6pt 7.2pt'> <p class=ammcorpstexte0><span style='font-size:10.0pt'>2- Décoller le film à partir du coin non scellé dans le sens de la flèche afin de libérer le comprimé.</span></p>
+</div>
+</td>
+</tr>
+</table>
+</span> </td>
+</tr>
+</table>
+</span><span style='position:absolute;z-index:251659264;left:0px;margin-left:
+72px;margin-top:1px;width:28px;height:28px'>
+<table cellpadding=0 cellspacing=0>
+<tr>
+<td width=28 height=28 style='vertical-align:top'><span style='position:absolute;
+left:0pt;z-index:251659264'>
+<table cellpadding=0 cellspacing=0 width="100%">
+<tr>
+<td>
+<div style='padding:3.6pt 7.2pt 3.6pt 7.2pt'>
+<p class=AmmCorpsTexte><span class='gras'><span style='color:white'>2</span></span></p>
+</div>
+</td>
+</tr>
+</table>
+</span> </td>
+</tr>
+</table>
+</span><span style='font-size:10.0pt'><img alt='' border=0 width=100 height=103
+id="Picture 3" src="https://base-donnees-publique.medicaments.gouv.fr/Rcp_Notices/images//N0425266/image003.png"></span></p>
+<p class=AmmCorpsTexte><span style='font-size:10.0pt;font-family:"Arial",sans-serif'> </span></p>
+<p class=AmmCorpsTexte><span style='font-size:10.0pt;font-family:"Arial",sans-serif'>Si la plaquette est endommagée, jetez le comprimé</span><span style='font-size: 10.0pt'>.</span></p>
+<h2><a name="Ann3bEffetsIndesirables">4. QUELS SONT LES EFFETS INDESIRABLES EVENTUELS ?</a>&nbsp;&nbsp;<a href='#HautDePage'><img src='img/BackToTop.jpg' width='15px' height='15px' alt='Retour en haut de la page' title='Retour en haut de la page' /></a></h2>
+<p class=AmmCorpsTexte><a name="_Toc142279023">Comme tous les médicaments, ce médicament peut provoquer des effets indésirables, mais ils ne surviennent pas systématiquement chez tout le monde.</a></p>
+<p class=AmmCorpsTexteGras>Parlez-en immédiatement à votre médecin ou consultez les urgences médicales si vous présentez :</p>
+<p class=AmmListePuces1 style='text-align:justify'><span style='font-family: Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>un gonflement du visage, des lèvres, de la langue ou de la gorge qui peut entraîner une difficulté à avaler ou à respirer, de l'urticaire/rash sévère. Ceci peut être des signes d'une réaction allergique pouvant engager le pronostic vital.</p>
+<p class=AmmCorpsTexteGras style='margin-top:6.0pt'>Parlez-en aussi à votre médecin<span style='font-weight:normal'> si vous présentez :</span></p>
+<p class=AmmListePuces1 style='text-align:justify'><span style='font-family: Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>une grande fatigue, des démangeaisons avec jaunissement de la peau ou des yeux. Ceci peut être des symptômes d’une lésion du foie.</p>
+<p class=AmmCorpsTexteGras style='margin-top:6.0pt'><span style='font-weight: normal'>Les effets indésirables suivants observés avec la buprénorphine ont été rapportés en utilisant la convention suivante :</span></p>
+<p class=AmmListePuces1><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>très fréquent (affecte plus de 1 patient sur 10) ;</p>
+<p class=AmmListePuces1><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>fréquent (affecte jusqu’à 1 patient sur 10) ;</p>
+<p class=AmmListePuces1><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>peu fréquent (affecte jusqu’à 1 patient sur 100) ;</p>
+<p class=AmmListePuces1><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>rare (affecte jusqu’à 1 patient sur 1 000) ;</p>
+<p class=AmmListePuces1><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>très rare (affecte jusqu’à 1 patient sur 10 000) ;</p>
+<p class=AmmListePuces1><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>fréquence indéterminée (ne peut être estimée sur la base des données disponibles).</p>
+<p class=AmmCorpsTexteGras style='margin-top:6.0pt'><span style='font-weight: normal'>Effets indésirables très fréquents :</span></p>
+<p class=AmmListePuces1><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>Infection,</p>
+<p class=AmmListePuces1><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>Insomnie (incapacité à dormir),</p>
+<p class=AmmListePuces1><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>Céphalée (maux de tête),</p>
+<p class=AmmListePuces1><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>Nausées,</p>
+<p class=AmmListePuces1><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>Douleur abdominale,</p>
+<p class=AmmListePuces1><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>Sueur excessive,</p>
+<p class=AmmListePuces1><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>Syndrome de sevrage.</p>
+<p class=AmmCorpsTexteGras style='margin-top:6.0pt'><span style='font-weight: normal'>Effets indésirables fréquents :</span></p>
+<p class=AmmListePuces1><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>Pharyngite,</p>
+<p class=AmmListePuces1><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>Agitation,</p>
+<p class=AmmListePuces1><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>Anxiété,</p>
+<p class=AmmListePuces1><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>Nervosité,</p>
+<p class=AmmListePuces1><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>Migraine,</p>
+<p class=AmmListePuces1><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>Paresthésie (picotement et engourdissement),</p>
+<p class=AmmListePuces1><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>Somnolence,</p>
+<p class=AmmListePuces1><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>Evanouissement,</p>
+<p class=AmmListePuces1><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>Vertige,</p>
+<p class=AmmListePuces1><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>Hyperkinésie (hyperactivité),</p>
+<p class=AmmListePuces1><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>Chute de la tension artérielle lors du passage de la position assise ou couchée à la position debout,</p>
+<p class=AmmListePuces1><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>Dyspnée (difficulté à respirer),</p>
+<p class=AmmListePuces1><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>Constipation,</p>
+<p class=AmmListePuces1><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>Vomissement,</p>
+<p class=AmmListePuces1><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>Spasme musculaire,</p>
+<p class=AmmListePuces1><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>Règles douloureuses,</p>
+<p class=AmmListePuces1><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>Perte vaginale blanche,</p>
+<p class=AmmListePuces1><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>Fatigue.</p>
+<p class=AmmCorpsTexteGras style='margin-top:6.0pt'><span style='font-weight: normal'>Effets indésirables rares :</span></p>
+<p class=AmmListePuces1><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>Hallucination,</p>
+<p class=AmmListePuces1><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>Dépression respiratoire (difficulté sévère à respirer).</p>
+<p class=AmmCorpsTexteGras style='margin-top:6.0pt'><span style='font-weight: normal'>Effets indésirables dont la fréquence est indéterminée :</span></p>
+<p class=AmmListePuces1 style='text-align:justify'><span style='font-family: Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>Caries dentaires,</p>
+<p class=AmmListePuces1 style='text-align:justify'><span style='font-family: Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>Syndrome de sevrage médicamenteux néonatal,</p>
+<p class=AmmListePuces1 style='text-align:justify'><span style='font-family: Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>Réactions d’hypersensibilité telles que rash, urticaire, démangeaisons,</p>
+<p class=AmmListePuces1 style='text-align:justify'><span style='font-family: Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>Réactions sévères d’hypersensibilité telles que bronchospasme (contraction soudaine des muscles des bronches), dépression respiratoire, gonflement de la face, des lèvres, de la langue et/ou de la gorge, qui peuvent être des signes de réaction allergique pouvant engager le pronostic vital,</p>
+<p class=AmmListePuces1><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>Problèmes de foie avec ou sans jaunisse.</p>
+<p class=AmmCorpsTexteGras style='margin-top:6.0pt'><span style='font-weight: normal'>Tous les opioïdes peuvent causer les effets indésirables additionnels suivants : crises d’épilepsie, myosis (contraction de la pupille), altération de la conscience.</span></p>
+<p class=AmmCorpsTexteGras><span style='font-weight:normal'>Si vous remarquez des effets indésirables non mentionnés dans cette notice, ou si certains effets indésirables deviennent graves, veuillez en informer votre médecin ou votre pharmacien.</span></p>
+<p class=AmmAnnexeTitre3>Déclaration des effets secondaires</p>
+<p class=AmmCorpsTexte>Si vous ressentez un quelconque effet indésirable, parlez-en à votre médecin ou votre pharmacien. Ceci s’applique aussi à tout effet indésirable qui ne serait pas mentionné dans cette notice. Vous pouvez également déclarer les effets indésirables directement via le système national de déclaration : Agence nationale de sécurité du médicament et des produits de santé (ANSM) et réseau des Centres Régionaux de Pharmacovigilance - Site internet:<span style='color:red'> </span><span class=MsoHyperlink>https://</span><a href="http://www.signalement.social-sante.gouv.fr">www.signalement.social-sante.gouv.fr</a><span style='color:red'>/</span></p>
+<p class=AmmCorpsTexte>En signalant les effets indésirables, vous contribuez à fournir davantage d’informations sur la sécurité du médicament.</p>
+<h2><a name="Ann3bConservation">5. COMMENT CONSERVER SUBUTEX 2 mg, comprimé sublingual ?</a>&nbsp;&nbsp;<a href='#HautDePage'><img src='img/BackToTop.jpg' width='15px' height='15px' alt='Retour en haut de la page' title='Retour en haut de la page' /></a></h2>
+<p class=AmmCorpsTexte><a name="_Toc142279026"></a><a name="_Toc142279024">Tenir ce médicament hors de la vue et de la portée des enfants. Conservez ce médicament dans un endroit sûr et sécurisé, où d'autres personnes ne peuvent pas y accéder. Il peut causer des dommages graves, voire mortels, aux personnes qui pourraient prendre ce médicament par accident ou intentionnellement alors qu'il ne leur a pas été prescrit.</a></p>
+<p class=AmmCorpsTexte><span lang=FR-BE>N’utilisez pas ce médicament après la date de péremption indiquée sur la boîte. La date de péremption fait référence au dernier jour de ce mois.</span></p>
+<p class=AmmCorpsTexte>A conserver à une température ne dépassant pas 30ºC.</p>
+<p class=AmmCorpsTexte>A conserver dans l’emballage extérieur à l’abri de l'humidité.</p>
+<p class=AmmCorpsTexte><span lang=FR-BE>Ne jetez aucun médicament au tout-à-l’égout <span style='color:black'>ou avec </span>les ordures ménagères. Demandez à votre pharmacien d’éliminer les médicaments que vous n’utilisez plus. Ces mesures contribueront à protéger l’environnement.</span></p>
+<h2><a name="Ann3bEmballage">6. CONTENU DE L’EMBALLAGE ET AUTRES INFORMATIONS</a>&nbsp;&nbsp;<a href='#HautDePage'><img src='img/BackToTop.jpg' width='15px' height='15px' alt='Retour en haut de la page' title='Retour en haut de la page' /></a></h2>
+<p class="AmmAnnexeTitre2"><a name="Ann3bContenu">Ce que contient SUBUTEX 2 mg, comprimé sublingual</a>&nbsp;&nbsp;<a href='#HautDePage'><img src='img/BackToTop.jpg' width='15px' height='15px' alt='Retour en haut de la page' title='Retour en haut de la page' /></a></p>
+<p class=AmmListePuces1><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>La substance active est :</p>
+<p class=AmmComposition style='margin-top:6.0pt;margin-right:0cm;margin-bottom: 6.0pt;margin-left:17.85pt'>Chlorhydrate de buprénorphine....................................................................................... 2,16 mg</p>
+<p class=AmmComposition style='margin-top:6.0pt;margin-right:0cm;margin-bottom: 6.0pt;margin-left:17.85pt'>Quantité correspondant à buprénorphine base................................................................ 2,00 mg</p>
+<p class=AmmComposition align=center style='text-align:center'>pour un comprimé sublingual.</p>
+<p class=AmmListePuces1><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>Les autres composants sont : </p>
+<p class=AmmListePuces1 style='margin-top:6.0pt;margin-right:0cm;margin-bottom: 0cm;margin-left:17.85pt;margin-bottom:.0001pt;text-indent:0cm'>Lactose monohydraté, mannitol, amidon de maïs, povidone K30, acide citrique anhydre, citrate de sodium, stéarate de magnésium.</p>
+<p class="AmmAnnexeTitre2"><a name="RcpEmballage">Qu’est-ce que SUBUTEX 2 mg, comprimé sublingual et contenu de l’emballage extérieur</a>&nbsp;&nbsp;<a href='#HautDePage'><img src='img/BackToTop.jpg' width='15px' height='15px' alt='Retour en haut de la page' title='Retour en haut de la page' /></a></p>
+<p class=AmmCorpsTexte>Ce médicament se présente sous forme de comprimé sublingual.</p>
+<p class=AmmCorpsTexte>Boîte de 7 ou 28 comprimés.</p>
+<p class=AmmCorpsTexte>Toutes les présentations peuvent ne pas être commercialisées. </p>
+<p class="AmmAnnexeTitre2"><a name="Ann3bTituAMM">Titulaire de l’autorisation de mise sur le marché</a>&nbsp;&nbsp;<a href='#HautDePage'><img src='img/BackToTop.jpg' width='15px' height='15px' alt='Retour en haut de la page' title='Retour en haut de la page' /></a></p>
+<p class=AmmCorpsTexteGras style='margin-bottom:0cm;margin-bottom:.0001pt'><a name="_Toc142279031"><span lang=EN-US>INDIVIOR EUROPE LIMITED</span></a></p>
+<p class=AmmCorpsTexte style='margin-bottom:0cm;margin-bottom:.0001pt'><span lang=EN-US>27 WINDSOR PLACE</span></p>
+<p class=AmmCorpsTexte style='margin-bottom:0cm;margin-bottom:.0001pt'><span lang=EN-US>DUBLIN 2</span></p>
+<p class=AmmCorpsTexte style='margin-bottom:0cm;margin-bottom:.0001pt'>D02 DK44</p>
+<p class=AmmCorpsTexte style='margin-bottom:0cm;margin-bottom:.0001pt'>IRLANDE</p>
+<p class="AmmAnnexeTitre2"><a name="Ann3bExploitAMM">Exploitant de l’autorisation de mise sur le marché</a>&nbsp;&nbsp;<a href='#HautDePage'><img src='img/BackToTop.jpg' width='15px' height='15px' alt='Retour en haut de la page' title='Retour en haut de la page' /></a></p>
+<p class=AmmCorpsTexteGras style='margin-bottom:0cm;margin-bottom:.0001pt'>INDIVIOR FRANCE</p>
+<p class=AmmCorpsTexte style='margin-bottom:0cm;margin-bottom:.0001pt'>7 AVENUE DE LA CRISTALLERIE</p>
+<p class=AmmCorpsTexte style='margin-bottom:0cm;margin-bottom:.0001pt'>92310 SEVRES</p>
+<p class=AmmCorpsTexte style='margin-bottom:0cm;margin-bottom:.0001pt'>FRANCE</p>
+<p class="AmmAnnexeTitre2"><a name="Ann3bFab">Fabricant</a>&nbsp;&nbsp;<a href='#HautDePage'><img src='img/BackToTop.jpg' width='15px' height='15px' alt='Retour en haut de la page' title='Retour en haut de la page' /></a></p>
+<p class=AmmCorpsTexteGras style='margin-bottom:0cm;margin-bottom:.0001pt; page-break-after:avoid'><a name="_Toc142279033">INDIVIOR EUROPE LIMITED</a></p>
+<p class=AmmCorpsTexte style='margin-bottom:0cm;margin-bottom:.0001pt; page-break-after:avoid'>27 WINDSOR PLACE</p>
+<p class=AmmCorpsTexte style='margin-bottom:0cm;margin-bottom:.0001pt; page-break-after:avoid'>DUBLIN 2</p>
+<p class=AmmCorpsTexte style='margin-bottom:0cm;margin-bottom:.0001pt'>D02 DK44</p>
+<p class=AmmCorpsTexte style='margin-bottom:0cm;margin-bottom:.0001pt'>IRLANDE</p>
+<p class="AmmAnnexeTitre2"><a name="Ann3bNomsMediEEE">Noms du médicament dans les Etats membres de l'Espace Economique Européen</a>&nbsp;&nbsp;<a href='#HautDePage'><img src='img/BackToTop.jpg' width='15px' height='15px' alt='Retour en haut de la page' title='Retour en haut de la page' /></a></p>
+<p class=AmmCorpsTexteGras>Ce médicament est autorisé dans les Etats membres de l'Espace Economique Européen sous les noms suivants : Conformément à la réglementation en vigueur.</p>
+<p class=AmmCorpsTexteGras><span style='font-weight:normal'>[À compléter ultérieurement par le titulaire]</span></p>
+<p class="AmmAnnexeTitre2"><a name="Ann3bContenu">La dernière date à laquelle cette notice a été révisée est :</a>&nbsp;&nbsp;<a href='#HautDePage'><img src='img/BackToTop.jpg' width='15px' height='15px' alt='Retour en haut de la page' title='Retour en haut de la page' /></a></p>
+<p class=AmmCorpsTexteGras><a name="_Toc142279038">{mois AAAA}.</a></p>
+<p class="AmmAnnexeTitre2"><a name="Ann3bAutres">Autres</a>&nbsp;&nbsp;<a href='#HautDePage'><img src='img/BackToTop.jpg' width='15px' height='15px' alt='Retour en haut de la page' title='Retour en haut de la page' /></a></p>
+<p class=AmmCorpsTexte>Des informations détaillées sur ce médicament sont disponibles sur le site Internet de l’ANSM (France).</p>
+<p class=AmmCorpsTexte><span style='background:silver'>Les dernières informations approuvées sur ce médicament sont disponibles en scannant le QR code inclus sur la notice avec un smartphone/un appareil. Les mêmes informations sont également disponibles sur l'URL suivante : [URL à inclure]</span></p>
+</div>					
+					<p class="alignright"><a href="#HautDePage">Retour en haut de la page <img src="img/BackToTop.jpg" width="20px" height="20px" alt="Retour en haut de la page" title="Retour en haut de la page" /></a></p>
+				</div>
+			</div>
+		</div>
+	</div>
+
+<table summary="" class="content" width="1000">
+	<tr>
+		<td height="100px">&nbsp;</td>
+	</tr>
+</table>
+<table summary="Pied de page" class="footer" width="1000">
+	<tr>
+		<td>
+			<table summary="" class="tablealigncenter" border="0">
+				<tr>
+					<td width="100px" class="aligncenter"><a id="lien_ansm" href="http://ansm.sante.fr/" target="_blank"><img src="img/Logo_ANSM.png" width="150" height="60" alt="ANSM - Agence nationale de sécurité du médicament et des produits de santé" title="L'ANSM met à disposition les principales informations issues de l'Autorisation de mise sur le marché, l'appartenance à un groupe générique, les liens vers les informations de sécurité qu'elle publie, l'identification des médicaments sous surveillance renforcée - nouvelle fenêtre" /></a></td>
+					          <td>&nbsp;</td>
+					<td width="100px" class="aligncenter"><img src="img/Logo_HAS.png" width="150" height="60" alt="HAS - Haute autorité de santé" title="La HAS met à disposition les informations relatives au service médical rendu, à l'amélioration du service médical rendu ainsi que les liens vers les avis de la Commission de la Transparence correspondants - nouvelle fenêtre" /></td>
+					<td>&nbsp;</td>
+					<td width="100px" class="aligncenter"><img src="img/Logo_CNAM.png" width="150" height="60" alt="UNCAM - Unin nationale des caisses d'assurance maladie" title="L'UNCAM met à disposition le taux de remboursement, le prix et les indications remboursables le cas échéant, ainsi que l'agrément aux collectivités - nouvelle fenêtre" /></td>
+          				</tr>
+			</table> 
+		</td>
+	</tr>
+</table>
+<table summary="" class="finpage" width="1000">
+	<tr>
+		<td height="100px" class="aligncenter">
+			<a class="navigation" href="plan.php">Plan du site</a>&nbsp;|&nbsp;
+			<a class="navigation" href="accessibilite.php">Accessibilité</a>&nbsp;|&nbsp;
+			<a class="navigation" href="contact.php">Contact</a>&nbsp;|&nbsp;
+			<a class="navigation" href="telechargement.php">Téléchargement</a>&nbsp;|&nbsp;
+			<a class="navigation" href="DeclarationConfidentialite.php">Declaration de confidentialité</a>&nbsp;|&nbsp;
+			<a class="navigation" href="http://www.service-public.fr/" title="Service Public - Nouvelle fenêtre" target="_blank">Service-Public.fr</a>&nbsp;|&nbsp;
+			<a class="navigation" href="http://www.legifrance.gouv.fr/" title="Legifrance - Nouvelle fenêtre" target="_blank">Legifrance</a>&nbsp;|&nbsp;
+			<a class="navigation" href="http://www.gouvernement.fr/" title="Gouvernement - Nouvelle fenêtre" target="_blank" >Gouvernement.fr</a>
+		</td>
+	</tr>
+</table>
+
+
+
+<!-- Matomo -->
+<script type="text/javascript">
+  var _paq = window._paq = window._paq || [];
+  /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
+  _paq.push(['trackPageView']);
+  _paq.push(['enableLinkTracking']);
+  (function() {
+    var u="https://stats.integra.fr/";
+    _paq.push(['setTrackerUrl', u+'matomo.php']);
+    _paq.push(['setSiteId', '79']);
+    var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+    g.type='text/javascript'; g.async=true; g.src=u+'matomo.js'; s.parentNode.insertBefore(g,s);
+  })();
+</script>
+<!-- End Matomo Code -->
+
+
+
+</body>
+</html>

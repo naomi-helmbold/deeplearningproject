@@ -1,0 +1,827 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="fr" lang="fr">
+<head>
+	<title>Résumé des caractéristiques du produit - METHADONE AP-HP 5 mg, gélule  - Base de données publique des médicaments</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=windows-1252"/>
+	<meta name="robots" content="index, follow"/>
+	<meta name="Description" content="Base de données publique des médicaments"/>
+	<meta name="Keywords" content="base, données, publique, médicaments, Résumé des caractéristiques du produit, METHADONE AP-HP 5 mg, gélule "/>
+	<meta name="Subject" content="medicament"/>
+	<link href='https://fonts.googleapis.com/css?family=Noticia+Text' rel='stylesheet' type='text/css' />
+	<link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro' rel='stylesheet' type='text/css' />
+	<link href="style/style_bdm.css?v=2.2.3" type="text/css" rel="stylesheet"/>
+	<link href="style/style_RCP_Notice.css" type="text/css" rel="stylesheet"/>
+  <link rel="alternate" href="http://m.base-donnees-publique.medicaments.gouv.fr/#!info-68726979">
+    <script type="text/javascript" src="scripts/autocomplete.js?v=2.2.3"></script>
+	<script type="text/javascript" src="scripts/jquery.js"></script>
+    <script type="text/javascript" src="scripts/jquery-ui.min.js"></script>
+	<script type="text/javascript" src="scripts/common.js"></script>
+	<link rel="icon" type="image/x-icon" href="favicon.ico" />
+</head>
+
+<body>
+
+<a name="HautDePage" />
+<div id="bandeauhaut">
+	<a id="lien_ministere" class="lienmenu" href="http://www.sante.gouv.fr" target="_blank" title="Site du ministère des affaires sociales et de la santé - nouvelle fenêtre"><img id="logoministere" src="img/Logo_Ministere.jpg"  alt="Logo du ministère des affaires sociales et de la santé"/></a>
+	<h1 class="texteTitreSite">
+		Base <span class="texteBleu">de</span> données <span class="texteBleu">publique</span><br/><span class="texteBleu">des</span> médicaments
+	</h1>
+		<a id="lien_medicament_gouv" class="lienEspaceMedic" target="_blank" href="http://medicaments.gouv.fr" title="Visiter [medicaments.gouv.fr] - nouvelle fenêtre">Visiter [medicaments.gouv.fr] <img src="/img/icone_lien.png" alt="Visiter [medicaments.gouv.fr]"  title="Visiter [medicaments.gouv.fr] - nouvelle fenetre" /></a>
+</div>
+<!--div align="center">
+	<a id="banniere" target="_blank" href="http://social-sante.gouv.fr/soins-et-maladies/medicaments/medicaments-generiques/" title="Visiter [medicaments.gouv.fr] - M?dicaments g?n?riques">
+		<img width="1000"   src ="/img/carrouselbannieres.gif" alt="Visiter [medicaments.gouv.fr] - M?dicaments g?n?riques" title="Visiter [medicaments.gouv.fr] - M?dicaments g?n?riques" />
+	</a>
+</div-->
+
+<div id="menuhaut">
+	<span id="menuhaut_gauche">
+		<a id="lien_accueil" class="navigation" href="index.php">Accueil</a>&nbsp;|&nbsp;
+		<a id="lien_glossaire" class="navigation" href="glossaire.php">Glossaire</a>&nbsp;|&nbsp;
+		<a id="lien_aide" class="navigation" href="aide.php">Aide</a>		
+	</span>
+	
+		
+	<span id="menuhaut_dernmaj">
+        <br>Dernière <span title=" 2.4.4
+">mise à jour</span> le 03/03/2025	</span>
+</div>
+
+	<script language="javascript" type="text/javascript">
+		//<![CDATA[ 
+		function Aff(men) {
+			document.write("<ul class=\"menuDoc\">");
+			for(var no_rub=0;no_rub<men.num_rub;no_rub++) {
+				document.write("<li><a class='leftMenu' href='"+menu[no_rub].page+"'>");
+				document.write(men[no_rub].txt);
+				document.write("</a></li>");
+				if (men[no_rub].nb_lien != 0){
+					document.write("<ul class=\"sousMenuDoc\">");
+				}
+				for(var no_lien=0;no_lien<men[no_rub].nb_lien;no_lien++) {
+					document.write("<li><a class='leftMenu' href='"+men[no_rub][no_lien].page+"'>");
+					document.write(men[no_rub][no_lien].txt);
+					document.write("</a></li>");
+				}
+				if (men[no_rub].nb_lien != 0){
+					document.write("</ul>");
+				}
+			}
+			document.write("</ul>");
+		}
+		
+		function CreerMenu(police,imgRub,imgOption,imgOptionFin,hauteur) {
+			this.num_rub=0;
+			this.police=police;
+			this.imgRub=imgRub;
+			this.imgOpt=imgOption;
+			this.imgOptFin=imgOptionFin;
+			this.hauteur=hauteur;
+			this.AddRub=AddRub;
+			this.AddLien=AddLien;
+		}
+		
+		function AddRub(txt,aff,page) {
+			var rub = new Object;
+				rub.txt=txt;
+				rub.aff=aff;
+				rub.page=page;
+				rub.nb_lien=0;
+			this[this.num_rub]=rub;
+			this.num_rub++;
+		}
+
+		function AddLien(txt,page) {
+			var no_rub = this.num_rub-1;
+			var no_lien= this[no_rub].nb_lien;
+			var lien = new Object;
+				lien.txt=txt;
+				lien.page=page;
+			this[no_rub][no_lien]=lien;
+			this[no_rub].nb_lien++;
+		}
+		var menu=new CreerMenu("arial","img/dyn04.gif","img/dyn22.gif","img/dyn55.gif",18);
+		//]]> 
+		menu.AddRub("Dénomination","O","#RcpDenomination");
+			menu.AddRub("Composition","O","#RcpCompoQualiQuanti");
+			menu.AddRub("Forme pharma.","O","#RcpFormePharm");
+			menu.AddRub("Clinique","O","#RcpDonneesCliniques");
+			menu.AddLien("Indic. thérapeutiques","#RcpIndicTherap");
+				menu.AddLien("Posologie","#RcpPosoAdmin");
+				menu.AddLien("Contre-indications","#RcpContreindications");
+				menu.AddLien("Mise en garde","#RcpMisesEnGarde");
+				menu.AddLien("Interactions","#RcpInteractionsMed");
+				menu.AddLien("Grossesse, allait.","#RcpFertGrossAllait");
+				menu.AddLien("Conduite véhicules","#RcpConduite");
+				menu.AddLien("Effets indésirables","#RcpEffetsIndesirables");
+				menu.AddLien("Surdosage","#RcpSurdosage");
+				menu.AddRub("Pharmacologie","O","#RcpPropPharmacologiques");
+			menu.AddLien("Pharmacodynamie","#RcpPropPharmacodynamiques");
+				menu.AddLien("Pharmacocinétique","#RcpPropPharmacocinetiques");
+				menu.AddLien("Sécurité préclinique","#RcpSecuritePreclinique");
+				menu.AddRub("Pharmaceutique","O","#RcpDonneesPharmaceutiques");
+			menu.AddLien("Liste excipients","#RcpListeExcipients");
+				menu.AddLien("Incompatibilités","#RcpIncompatibilites");
+				menu.AddLien("Durée conservation","#RcpDureeConservation");
+				menu.AddLien("Conservation","#RcpPrecConservation");
+				menu.AddLien("Emballage","#RcpEmballage");
+				menu.AddLien("Utilisation/manipulation","#RcpPrecEmpl");
+				menu.AddRub("Titulaire AMM","O","#RcpTitulaireAmm");
+			menu.AddRub("Présentations","O","#RcpNumAutor");
+			menu.AddRub("Autorisation, renouv.","O","#RcpPremiereAutorisation");
+			menu.AddRub("Date de révision","O","#RcpDateRevision");
+			menu.AddRub("Dosimétrie","O","#RcpDosimetrie");
+			menu.AddRub("Préparation radiopharma.","O","#RcpInstPrepRadioph");
+				</script>
+
+	<div id="container">
+		<div id="leftnav">
+			<div id="cadreMenuGauche">
+				<h2 class="sommaireMenu">Sommaire</h2>
+				<div id="menuGauche">
+					<script language="JavaScript" type="text/javascript">Aff(menu);</script>
+				</div>
+			</div>
+		</div>
+		<div id="contentPrincipal">
+			<div id="boutonsliens">
+				<a id='lien_fiche_info' href='extrait.php?specid=68726979' ><img id="ongletficheinfo" alt="Onglet fiche information" src="img/onglet_fiche_info_vert.png" /></a><a id='lien_rcp' href='affichageDoc.php?specid=68726979&amp;typedoc=R'><img class="onglet" alt="Onglet résumé des caractéristiques du produit" src="img/onglet_rcp_gris.png" /></a><a id='lien_notice' href='affichageDoc.php?specid=68726979&amp;typedoc=N'><img class="onglet" alt="Onglet notice patient" src="img/onglet_notice_vert.png" /></a>			</div>
+			<div class="titredeno">
+				<table summary="" border="0" cellspacing="0">
+					<tr><td colspan="3" height="10px"></td></tr>
+					<tr>
+						<td width="15px">&nbsp;</td>
+						<td width="685px"><h1 class="textedeno">METHADONE AP-HP 5 mg, gélule  - Résumé des caractéristiques du produit</h1></td>
+						<td width="43px" class="tdcenter"><a href="Javascript:void(null)" onclick="print();"><img src="img/imprimante.png" height="20px" width="20px" alt="Imprimer le document" title="Imprimer le document" border="0" /></a></td>
+					</tr>
+					<tr><td colspan="3" height="10px"></td></tr>
+				</table>
+			</div>
+			
+			<div id="contentDocument">
+				<div id="textDocument">
+					<p class="DateNotif">ANSM - Mis à jour le : 09/10/2024</p>
+<p class="AmmAnnexeTitre1"><a name="RcpDenomination">1. DENOMINATION DU MEDICAMENT</a>&nbsp;&nbsp;<a href='#HautDePage'><img src='img/BackToTop.jpg' width='15px' height='15px' alt='Retour en haut de la page' title='Retour en haut de la page' /></a></p>
+<p class=AmmCorpsTexteGras>METHADONE AP-HP 5 mg, gélule</p>
+<p class="AmmAnnexeTitre1"><a name="RcpCompoQualiQuanti">2. COMPOSITION QUALITATIVE ET QUANTITATIVE</a>&nbsp;&nbsp;<a href='#HautDePage'><img src='img/BackToTop.jpg' width='15px' height='15px' alt='Retour en haut de la page' title='Retour en haut de la page' /></a></p>
+<p class=AmmComposition>Chlorhydrate de méthadone..................................................................................................... 5 mg</p>
+<p class=AmmCorpsTexte align=center style='text-align:center'>Pour une gélule.</p>
+<p class=AmmCorpsTexte><span class='italique'><span class='souligne'>Excipient à effet notoire</span></span> : lactose.</p>
+<p class=AmmCorpsTexte>Pour la liste complète des excipients, voir rubrique 6.1.</p>
+<p class="AmmAnnexeTitre1"><a name="RcpFormePharm">3. FORME PHARMACEUTIQUE</a>&nbsp;&nbsp;<a href='#HautDePage'><img src='img/BackToTop.jpg' width='15px' height='15px' alt='Retour en haut de la page' title='Retour en haut de la page' /></a></p>
+<p class=AmmCorpsTexte>Gélule.</p>
+<p class=AmmCorpsTexte>Gélule constituée d’un corps de couleur blanche comportant l’inscription en couleur noire « 5 mg » en radial et d’une coiffe de couleur ivoire.</p>
+<p class="AmmAnnexeTitre1"><a name="RcpDonneesCliniques">4. DONNEES CLINIQUES</a>&nbsp;&nbsp;<a href='#HautDePage'><img src='img/BackToTop.jpg' width='15px' height='15px' alt='Retour en haut de la page' title='Retour en haut de la page' /></a></p>
+<p class="AmmAnnexeTitre2"><a name="RcpIndicTherap">4.1. Indications thérapeutiques</a>&nbsp;&nbsp;<a href='#HautDePage'><img src='img/BackToTop.jpg' width='15px' height='15px' alt='Retour en haut de la page' title='Retour en haut de la page' /></a></p>
+<p class=AmmCorpsTexte style='margin-top:6.0pt'>Traitement de substitution des pharmacodépendances majeures aux opioïdes dans le cadre d'une prise en charge médicale, sociale et psychologique, en relais de la forme sirop chez des patients traités par la forme sirop depuis au moins un an et stabilisés, notamment au plan médical et des conduites addictives.</p>
+<p class=AmmCorpsTexte style='margin-top:6.0pt'>Le traitement est réservé aux adultes et adolescents de plus de 15 ans.</p>
+<p class=AmmCorpsTexte>Un patient est considéré stabilisé si le suivi de la prise en charge de son addiction est régulier, sans usage récréatif récent de substances psychoactives, avec des dosages urinaires négatifs aux opioïdes, une capacité de gestion autonome de son traitement, un rétablissement de l’équilibre de sa vie personnelle et sociale.</p>
+<p class="AmmAnnexeTitre2"><a name="RcpPosoAdmin">4.2. Posologie et mode d'administration</a>&nbsp;&nbsp;<a href='#HautDePage'><img src='img/BackToTop.jpg' width='15px' height='15px' alt='Retour en haut de la page' title='Retour en haut de la page' /></a></p>
+<p class=AmmAnnexeTitre3>Posologie</p>
+<p class=AmmCorpsTexte><span class=AmmCorpsTexteGrasCar>La forme gélule n’est pas destinée à la mise en place d’un traitement par la méthadone</span> (voir rubrique 4.1 et Conditions de prescription et de délivrance).</p>
+<p class=AmmAnnexeTitre3>Passage de la forme sirop à la forme gélule</p>
+<p class=AmmCorpsTexte>La forme gélule sera d’emblée prescrite à la posologie correspondant à la posologie d’entretien atteinte avec la forme sirop.</p>
+<p class=AmmComposition>La première prise de gélule doit avoir lieu le lendemain de la dernière prise de sirop, à l’heure habituelle.</p>
+<p class=AmmCorpsTexte>La posologie se situe habituellement entre 60 et 100 mg/jour, même si des doses supérieures peuvent être nécessaires chez certains patients.</p>
+<p class=AmmCorpsTexte>Les modifications de posologies ultérieures seront fondées, comme pour la forme sirop, sur la réévaluation clinique du patient en tenant compte des prises en charge associées.</p>
+<p class=AmmAnnexeTitre3>Mode d’administration</p>
+<p class=AmmCorpsTexte>Le traitement sera administré en une prise unique quotidienne (voir rubrique Conditions de prescription et de délivrance).</p>
+<p class=AmmCorpsTexte>La plaquette thermoformée est sécurisée. En raison du risque mortel en cas d’ingestion accidentelle, notamment par un enfant ou une personne naïve ou peu dépendante, les patients doivent être avertis de mettre les plaquettes thermoformées en sûreté, de ne jamais sortir les gélules à l’avance de la plaquette thermoformée, de tenir les plaquettes thermoformées hors de portée des enfants et de ne pas prendre ce médicament devant des enfants. Un service d’urgence doit être contacté immédiatement en cas d’ingestion accidentelle ou de suspicion d’ingestion (voir rubriques 4.4 et 4.8).</p>
+<p class=AmmAnnexeTitre3>Modalités d’arrêt progressif du traitement</p>
+<p class=AmmCorpsTexte>L’arrêt du traitement de substitution doit se faire par diminution progressive de la posologie de 1 à 5 mg, par paliers espacés d’au moins une semaine. Une prudence particulière est indispensable pendant toute cette période. Le suivi du patient sera rapproché afin de détecter, d’une part tout symptôme clinique évoquant un syndrome de sevrage pour lequel un retour immédiat au palier précédent est nécessaire, et d’autre part toute reprise des conduites addictives, qui expose le patient à un risque de surdosage aux opioïdes et qui serait incompatible avec la poursuite du traitement par la forme gélule (voir rubrique Conditions de prescription et de délivrance).</p>
+<p class=AmmCorpsTexte>En cas d’arrêt puis de reprise du traitement, les mêmes précautions que lors de la mise en place initiale du traitement et de l’augmentation progressive des doses doivent être prises en raison de la diminution de la tolérance.</p>
+<p class=AmmCorpsTexte style='margin-top:6.0pt'>Il est recommandé de co-prescrire systématiquement la naloxone lors de l’instauration ou du renouvellement du traitement par méthadone. En effet, les patients peuvent être exposés à un risque de surdosage d'opioïdes lors de l'instauration ou de la titration de la méthadone (voir rubrique 4.4).</p>
+<p class=AmmCorpsTexte> </p>
+<div style='border:solid windowtext 1.0pt;padding:1.0pt 4.0pt 1.0pt 4.0pt'>
+<p class=AmmCorpsTexteGras align=center style='margin-bottom:0cm;margin-bottom: .0001pt;text-align:center;border:none;padding:0cm'><span lang=FR-BE>CONDITIONS DE PRESCRIPTION ET DE DELIVRANCE DE LA GELULE DE METHADONE</span></p>
+<p class=AmmCorpsTexteGras style='margin-top:6.0pt;border:none;padding:0cm'><span lang=FR-BE>Le cadre de prescription et de délivrance de la gélule, tel que défini ci-dessous, a pour objet de limiter le risque d’abus, d’usage détourné ou d’intoxication accidentelle avec cette forme de méthadone, notamment la prise du médicament par des patients non dépendants aux opioïdes, peu tolérants voire totalement naïfs, pour lesquels il existe un risque létal pour une dose de l’ordre de 1 mg/kg.</span></p>
+<p class=AmmCorpsTexteGras style='border:none;padding:0cm'><span lang=FR-BE>En cas d’usage détourné ou de mésusage avéré de la gélule par un patient (tentative d’injection, usage illicite), le médecin devra obligatoirement revenir à une prescription de méthadone sous forme sirop.</span></p>
+<p class=AmmCorpsTexte style='border:none;padding:0cm'><span lang=FR-BE>Le traitement est réservé aux adultes et adolescents de plus de 15 ans volontaires pour accepter les règles du traitement.</span></p>
+<p class=AmmCorpsTexte align=left style='text-align:left;border:none; padding:0cm'><span lang=FR-BE>Les conditions de prescription et de délivrance de la gélule de méthadone sont les suivantes :</span></p>
+<p class=AmmCorpsTexte align=left style='text-align:left;border:none; padding:0cm'>1) Stupéfiant :</p>
+<p class=AmmCorpsTexte align=left style='text-align:left;border:none; padding:0cm'>Prescription sur ordonnances sécurisées.</p>
+<p class=AmmCorpsTexte align=left style='text-align:left;border:none; padding:0cm'>Durée maximale de prescription limitée à 28 jours. Délivrance fractionnée par périodes de 7 jours maximum. </p>
+<p class=AmmCorpsTexte align=left style='text-align:left;border:none; padding:0cm'>Le prescripteur peut néanmoins préciser sur l’ordonnance la durée de chaque fraction, ou exclure le fractionnement en portant sur l’ordonnance la mention « délivrance en une seule fois », ou préciser que la dispensation doit se faire quotidiennement.</p>
+<p class=AmmCorpsTexte align=left style='text-align:left;border:none; padding:0cm'>La délivrance est effectuée par une pharmacie de ville ou par un CSAPA. Le nom du pharmacien choisi par le patient doit être mentionné sur l’ordonnance.</p>
+<p class=AmmCorpsTexte align=left style='margin-top:12.0pt;text-align:left; border:none;padding:0cm'><span lang=FR-BE>2) Médicament soumis à prescription initiale réservée aux médecins exerçant en centres de soins d’accompagnement et de prévention en addictologie (CSAPA) ou aux médecins exerçant dans les services hospitaliers spécialisés dans les soins aux toxicomanes.</span></p>
+<p class=AmmCorpsTexte align=left style='text-align:left;border:none; padding:0cm'><span lang=FR-BE>Renouvellement non restreint.</span></p>
+<p class=AmmCorpsTexte align=left style='text-align:left;border:none; padding:0cm'><span lang=FR-BE>Médicament nécessitant une surveillance particulière pendant le traitement.</span></p>
+<p class=AmmCorpsTexte align=left style='text-align:left;border:none; padding:0cm'><span class='italique'><span lang=FR-BE>Mise en place du traitement :</span></span></p>
+<p class=AmmCorpsTexte align=left style='text-align:left;border:none; padding:0cm'><span lang=FR-BE>Les patients sont volontaires et doivent accepter les règles de prise en charge :</span></p>
+<p class=AmmListePuces1 style='border:none;padding:0cm'><span style='font-family: Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>Consultation en CSAPA ou en service hospitalier spécialisé dans les soins aux toxicomanes,</p>
+<p class=AmmListePuces1 style='border:none;padding:0cm'><span style='font-family: Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>Réalisation d’analyses urinaires périodiques de contrôle.</p>
+<p class=AmmCorpsTexte align=left style='margin-top:6.0pt;text-align:left; border:none;padding:0cm'><span lang=FR-BE>Une première analyse urinaire vérifiera la réalité de la prise de méthadone et l’absence de consommation récente d’opioïdes. Les analyses portent sur : la méthadone, les opioïdes naturels et/ou de synthèse, la cocaïne, l’amphétamine, les dérivés amphétaminiques, le cannabis et le LSD ainsi que sur l’alcool. La recherche et le dosage des produits listés ne sont pas systématiques mais sont effectués sur demande du prescripteur.</span></p>
+<p class=AmmCorpsTexteGras style='margin-top:6.0pt; border:none;padding:0cm'><span class='souligne'>Modalités de prescription et de délivrance</span></p>
+<p class=AmmCorpsTexte style='border:none;padding:0cm'>La primo-prescription de la gélule de méthadone doit être faite par un médecin exerçant en CSAPA ou en service hospitalier spécialisé dans les soins aux toxicomanes, auquel le médecin traitant aura adressé son patient, en accord avec ce dernier.</p>
+<p class=AmmCorpsTexte style='border:none;padding:0cm'>Après la mise en place du traitement par la gélule de méthadone, le médecin primo-prescripteur adressera à nouveau le patient vers son médecin traitant.</p>
+<p class=AmmCorpsTexte style='border:none;padding:0cm'>Lors du premier renouvellement de prescription par le médecin traitant, le patient devra présenter au pharmacien d’officine l’ordonnance de délégation du primo-prescripteur ainsi que celle du médecin traitant. Le patient devra également présenter au pharmacien d’officine, l’ordonnance de délégation du primo-prescripteur en cas de changement de pharmacie d’officine.</p>
+</div>
+<p class="AmmAnnexeTitre2"><a name="RcpContreindications">4.3. Contre-indications</a>&nbsp;&nbsp;<a href='#HautDePage'><img src='img/BackToTop.jpg' width='15px' height='15px' alt='Retour en haut de la page' title='Retour en haut de la page' /></a></p>
+<p class=AmmListePuces1><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>Hypersensibilité à la substance active ou à l’un des excipients mentionnés à la rubrique 6.1.</p>
+<p class=AmmListePuces1 style='text-align:justify'><span style='font-family: Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>Enfants et adolescents de moins de 15 ans (voir rubrique 4.2). </p>
+<p class=AmmListePuces1 style='text-align:justify'><span style='font-family: Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>Situation à risque élevé de dépression respiratoire, en particulier : patients avec une insuffisance respiratoire sévère.</p>
+<p class=AmmListePuces1 style='text-align:justify'><span style='font-family: Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>Patients présentant un iléus paralytique constitué.</p>
+<p class=AmmListePuces1 style='text-align:justify'><span style='font-family: Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>En association avec un agoniste-antagoniste morphinique (buprénorphine, nalbuphine), avec un antagoniste morphinique partiel (naltrexone, nalméfène), avec le citalopram, l’escitalopram, la dompéridone, l’hydroxyzine, le millepertuis, l’oxybate de sodium ou la pipéraquine (voir rubrique 4.5).</p>
+<p class="AmmAnnexeTitre2"><a name="RcpMisesEnGarde">4.4. Mises en garde spéciales et précautions d'emploi</a>&nbsp;&nbsp;<a href='#HautDePage'><img src='img/BackToTop.jpg' width='15px' height='15px' alt='Retour en haut de la page' title='Retour en haut de la page' /></a></p>
+<p class=AmmAnnexeTitre3>Mises en garde spéciales</p>
+<p class=AmmCorpsTexte>Ce médicament est un dérivé morphinique dont la prescription est exclusivement réservée au traitement de substitution aux opioïdes.</p>
+<p class=AmmCorpsTexte>Le succès du traitement est fortement corrélé à la posologie et aux mesures médico-psychologiques et socio-éducatives associées.</p>
+<p class=AmmCorpsTexte>Le traitement peut révéler des troubles psychiatriques nécessitant une prise en charge pluridisciplinaire, adaptée à chaque patient.</p>
+<p class=AmmAnnexeTitre4>Dépression du SNC et respiratoire</p>
+<p class=AmmCorpsTexte>Des cas de décès par dépression respiratoire ont été rapportés avec la méthadone. Le risque de dépression respiratoire et de décès est plus important pendant la période d’initiation du traitement et lors de la reprise du traitement après une période de sevrage (perte de tolérance).</p>
+<p class=AmmCorpsTexte>La prise de méthadone avec de l’alcool ou des dépresseurs du système nerveux central (tels que tranquillisants, sédatifs, hypnotiques) peut augmenter le risque de dépression du système nerveux central.</p>
+<p class=AmmCorpsTexte>L'utilisation concomitante de méthadone et de médicaments sédatifs tels que les benzodiazépines ou des médicaments apparentés peut entraîner une sédation, une dépression respiratoire, un coma et le décès. Par conséquent, les patients recevant des dépresseurs du système nerveux central et de la méthadone doivent être encore plus étroitement surveillés pour détecter les signes de dépression respiratoire, de sédation et d’hypotension. </p>
+<p class=AmmCorpsTexte>En raison de ces risques, la prescription concomitante de ces médicaments sédatifs devrait être réservée aux patients pour lesquels il n'existe pas d'autres options thérapeutiques. </p>
+<p class=AmmCorpsTexte>Dans le cas d’une décision de prescrire la méthadone en même temps que des médicaments sédatifs, la dose efficace la plus faible doit être utilisée et la durée du traitement doit être aussi courte que possible (voir rubrique 4.5). </p>
+<p class=AmmCorpsTexte>Le patient devra être étroitement surveillé afin de détecter des signes et symptômes de dépression respiratoire et de sédation. Par conséquent, il est fortement recommandé d’informer le patient et son entourage d’être attentifs à ces symptômes (voir rubrique 4.5).</p>
+<p class=AmmAnnexeTitre4><span style='font-style:normal;text-decoration:none'>La prise concomitante de méthadone avec des boissons alcoolisées ou des médicaments contenant de l’alcool est déconseillée (voir rubrique 4.5).</span></p>
+<p class=AmmAnnexeTitre4>Addiction/Accoutumance/Dépendance/Trouble de l’usage d’opioïdes (abus et dépendance)</p>
+<p class=AmmCorpsTexte>La méthadone est un antalgique opioïde et est intrinsèquement très addictive. Elle présente une longue demi-vie, et peut donc s’accumuler. Une dose unique permettant de soulager les symptômes peut, en cas de prise quotidienne, entraîner une accumulation et, potentiellement, le décès.</p>
+<p class=AmmCorpsTexte>Comme avec les autres opioïdes, une accoutumance ainsi qu’une dépendance physique et/ou psychologique peuvent s’installer en cas d’administration répétée de méthadone. </p>
+<p class=AmmCorpsTexte>L’abus ou le mésusage intentionnel de METHADONE AP-HP peut entraîner un surdosage et/ou le décès. </p>
+<p class=AmmCorpsTexte>Le risque d’apparition d’un trouble de l’usage d’opioïde est plus élevé chez les patients présentant des antécédents personnels et/ou familiaux (parent ou frère/sœur) de troubles liés à la consommation de substances (notamment d’un trouble de l’usage d’alcool), chez les fumeurs et chez les patients présentant des antécédents personnels d’autres troubles mentaux (p. ex., trouble dépressif majeur, anxiété et troubles de la personnalité). </p>
+<p class=AmmCorpsTexte>L’apparition de signes de conduite toxicophile (p. ex., demande précoce de renouvellement d’ordonnance) doit être surveillée. Cela inclut un examen de la consommation concomitante d’opioïdes et de médicaments psychoactifs (p. ex. benzodiazépines). Chez les patients présentant des signes et symptômes de TUO, une consultation avec un addictologue doit être envisagée.</p>
+<p class=AmmAnnexeTitre4>Syndrome de sevrage</p>
+<p class=AmmCorpsTexte>Des dépendances physique et psychique peuvent apparaître au cours d’un traitement par méthadone. L’arrêt brutal du traitement entraîne l'apparition d'un syndrome de sevrage aux opioïdes et une diminution de la tolérance acquise. </p>
+<p class=AmmCorpsTexte>Le syndrome de sevrage peut se manifester par les symptômes suivants : agitation, larmoiement, éternuement, rhinorrhée, bâillements, sudation, frissons, tremblements, mydriase, irritabilité, anxiété, douleurs des extrémités, douleur dorsale, arthralgie, myalgie, contracture musculaire, spasme musculaire, faiblesse, crampes abdominales, insomnie, nausées, anorexie, vomissements, diarrhée, hausse de la tension artérielle, de la fréquence respiratoire ou de la fréquence cardiaque, piloérection et fièvre. </p>
+<p class=AmmCorpsTexte>L'apparition de ce syndrome de sevrage sera évitée par une diminution progressive des doses.</p>
+<p class=AmmCorpsTexte>Lors de la réintroduction du traitement substitutif, les recommandations incitent à une réévaluation médicale de la posologie. Il s’agit d’une situation à risque pour le patient qui doit être informé du risque de surdosage en cas d’une nouvelle consommation d’opioïdes (quelle que soit la dose).</p>
+<p class=AmmAnnexeTitre4>Mésusage / Usage détourné</p>
+<p class=AmmCorpsTexte>Le risque de mésusage de ce médicament est à surveiller. L'usage détourné peut entraîner des effets indésirables graves pouvant être fatals. Il est recommandé lors de chaque consultation de vérifier l’absence de pratique d’injection par le patient. </p>
+<p class=AmmAnnexeTitre4>Ingestion accidentelle</p>
+<p class=AmmCorpsTexte>La dose létale de la méthadone est de l’ordre de 1 mg/kg pour les enfants et les personnes naïves ou peu dépendantes aux opioïdes. Afin d’éviter tout risque d’ingestion accidentelle, les patients doivent être avertis de mettre les plaquettes thermoformées en sûreté, de ne jamais sortir à l’avance les gélules des plaquettes thermoformées, de tenir les plaquettes thermoformées hors de portée et de la vue des enfants et de ne pas prendre ce médicament devant les enfants. <span class='souligne'>Un service d’urgence doit être contacté immédiatement en cas d’ingestion accidentelle ou de suspicion d’ingestion</span> (voir rubrique 4.8).</p>
+<p class=AmmAnnexeTitre4>Mise à disposition de naloxone </p>
+<p class=AmmCorpsTexte>Lors de l’instauration, du renouvellement du traitement par méthadone, en cas d’arrêt programmé (en raison de la perte de tolérance pharmacodynamique) ou de reprise de méthadone ou dans toute situation d’utilisation anormale (ingestion accidentelle, notamment par un enfant ou une personne naïve ou peu dépendante), il est recommandé de mettre systématiquement à la disposition des patients et de leur entourage un kit de naloxone prête à l’emploi disponible avec ou sans ordonnance. Ces personnes peuvent être exposées à un risque de surdosage d'opioïdes (voir rubrique 4.2).</p>
+<p class=AmmCorpsTexte>La co-prescription systématique de naloxone doit être associée à une éducation appropriée du patient et / ou de l’entourage en cas de surdosage : situations à risques, signes / symptômes, utilisation appropriée de naloxone pour la réanimation et instructions pour l'orientation vers les soins d'urgence (voir rubrique 4.9).</p>
+<p class=AmmAnnexeTitre4>Allongement de l’intervalle QT et torsades de pointe</p>
+<p class=AmmCorpsTexte>Des cas d’allongement de l’intervalle QT et de torsades de pointe pouvant aboutir à une mort subite d’origine cardiaque ont été rapportés au cours de traitements par la méthadone, principalement à des posologies élevées (&gt; 120 mg/j). La méthadone doit être administrée avec précaution, sous surveillance clinique, électrolytique (surveillance étroite de la kaliémie et de la magnésémie) et ECG, aux patients présentant un risque d’allongement de l’intervalle QT, c’est-à-dire en cas :</p>
+<p class=AmmListePuces1 style='text-align:justify'><span style='font-family: Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>d'antécédent connu d’allongement du QT (congénital ou acquis),</p>
+<p class=AmmListePuces1 style='text-align:justify'><span style='font-family: Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>d’antécédents familiaux de mort subite,</p>
+<p class=AmmListePuces1 style='text-align:justify'><span style='font-family: Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>de posologie élevée, supérieure à 120 mg/j,</p>
+<p class=AmmListePuces1 style='text-align:justify'><span style='font-family: Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>de pathologie cardiaque évoluée,</p>
+<p class=AmmListePuces1 style='text-align:justify'><span style='font-family: Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>de traitements médicamenteux connus pour provoquer une hypokaliémie, ou pour entraîner une bradycardie, ou pour inhiber significativement le métabolisme de la méthadone (voir rubrique. 4.5).de traitements médicamenteux susceptibles de donner des torsades de pointe : antiarythmiques de classe Ia (disopyramide, hydroquinidine, quinidine), antiarythmiques de classe III (amiodarone, dronédarone, sotalol), certains antiparasitaires (chloroquine, halofantrine, luméfantrine, pentamidine), arsénieux, certains macrolides (érythromycine IV, spiramycine), certains neuroleptiques (amilsupride, chlorpromazine, cyamémazine, dropéridol, flupentixol, fluphénazine, halopéridol, lévomépromazine, pimozide, pipampérone, pipotiazine, quétiapine, sulpiride, tiapride, zuclopenthixol), crizotinib, délamanid, hydroxychloroquine, moxifloxacine, méquitazine, prucalopride, sulfaméthoxazole + triméthoprime, torémifène, vandétanib, vincamine IV.</p>
+<p class=AmmListePuces1><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span> </p>
+<p class=AmmAnnexeTitre4 style='margin-top:6.0pt'><span style='font-style:normal; text-decoration:none'>La consommation de cocaïne pendant le traitement par méthadone est déconseillée car elle expose à un risque majoré de troubles du rythme ventriculaire notamment de torsades de pointe, pouvant provoquer une mort subite ou un arrêt cardiaque (voir rubrique 4.5).</span></p>
+<p class=AmmCorpsTexte>Pour les patients présentant des facteurs de risque d'allongement de l'intervalle QT, un ECG à l’instauration du traitement par méthadone doit être réalisé ainsi que dans les 30 jours qui suivent. Des ECG supplémentaires doivent être effectués chaque année ou chaque fois que la dose de méthadone dépasse 120 mg/jour. </p>
+<p class=AmmCorpsTexte>Pour les patients présentant un allongement marqué de l'intervalle QT (&gt; 500 ms) ou un autre trouble de la conduction, l’avis d’un cardiologue est recommandé avant l’instauration du traitement. Si cette anomalie est découverte pendant le traitement sous méthadone, une réévaluation du rapport bénéfice/risque doit être envisagée. Une diminution de la dose de méthadone, une modification du traitement associé susceptible de donner des torsades de pointe, ainsi que la suppression des autres facteurs de risque pourraient être nécessaires.</p>
+<p class=AmmAnnexeTitre4 style='margin-top:6.0pt'>Insuffisance surrénalienne</p>
+<p class=AmmCorpsTexte>Les analgésiques opioïdes peuvent provoquer une insuffisance surrénalienne réversible nécessitant une surveillance et un traitement de substitution par glucocorticoïdes. Les symptômes de l'insuffisance surrénalienne peuvent inclure des nausées, des vomissements, une perte d'appétit, de la fatigue, une faiblesse, des vertiges ou une hypotension artérielle.</p>
+<p class=AmmAnnexeTitre4>Diminution des hormones sexuelles et augmentation de la prolactine</p>
+<p class=AmmCorpsTexte>L'utilisation à long terme d'analgésiques opioïdes peut être associée à une diminution des taux d'hormones sexuelles et à une augmentation de la prolactine. Les symptômes peuvent inclure une diminution de la libido, une impuissance ou une aménorrhée.</p>
+<p class=AmmAnnexeTitre4>Hypoglycémie</p>
+<p class=AmmCorpsTexte>Une hypoglycémie a été observée dans un contexte de surdosage en méthadone ou d’une augmentation de la dose. Une surveillance régulière de la glycémie est recommandée lors de l'augmentation de la dose (voir rubriques 4.8 et 4.9). </p>
+<p class=AmmCorpsTexte><span class='italique'><span class='souligne'>Syndrome sérotoninergique</span></span></p>
+<p class=AmmCorpsTexte>L’utilisation concomitante de méthadone avec certains médicaments peut entraîner un syndrome sérotoninergique justifiant l’arrêt immédiat du traitement (voir rubrique 4.5). Le syndrome sérotoninergique se manifeste par l'apparition (éventuellement brutale) simultanée ou séquentielle, d'un ensemble de symptômes pouvant nécessiter l'hospitalisation, voire exceptionnellement entraîner le décès.</p>
+<p class=AmmCorpsTexte>Ces symptômes peuvent être d'ordre :</p>
+<p class=AmmListePuces1 style='text-align:justify'><span style='font-family: Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>digestifs (diarrhée),</p>
+<p class=AmmListePuces1 style='text-align:justify'><span style='font-family: Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>neuropsychiques (agitation, confusion, hypomanie),</p>
+<p class=AmmListePuces1 style='text-align:justify'><span style='font-family: Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>moteurs (myoclonies, tremblements, hyperréflexie, rigidité, hyperactivité),</p>
+<p class=AmmListePuces1 style='text-align:justify'><span style='font-family: Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>végétatifs (variations de la pression artérielle, tachycardie, frissons, hyperthermie, sueurs, éventuellement coma).</p>
+<p class=AmmCorpsTexte style='margin-top:6.0pt'>L’arrêt des substances sérotoninergiques permet habituellement d’obtenir une amélioration rapide. Le traitement dépend du type et de la sévérité des symptômes.</p>
+<p class=AmmCorpsTexte><span class='italique'><span class='souligne'>Troubles respiratoires du sommeil</span></span></p>
+<p class=AmmCorpsTexte>Les opioïdes peuvent provoquer des troubles respiratoires du sommeil, notamment une apnée centrale du sommeil (ACS) et une hypoxémie du sommeil. L’utilisation d’opioïdes est associée à un risque dose-dépendant d’ACS. Il convient d’envisager de réduire la dose totale d’opioïdes chez les patients présentant une ACS.</p>
+<p class=AmmAnnexeTitre4>Excipients à effet notoire</p>
+<p class=AmmCorpsTexte>Ce médicament contient du lactose. Les patients présentant une intolérance au galactose, un déficit total en lactase ou un syndrome de malabsorption du glucose ou du galactose (maladies héréditaires rares) ne doivent pas prendre ce médicament.</p>
+<p class=AmmCorpsTexte>Ce médicament contient 2,6 mg de sodium par gélule, soit moins de 1 mmol (23 mg) par gélule, c’est-à-dire qu’il est essentiellement « sans sodium ». Cependant, chez les patients contrôlant leur apport alimentaire en sodium, il faut tenir compte, du nombre total de gélules de METHADONE AP-HP prises par jour, qui pourrait apporter une quantité de sodium supérieure à 23 mg.</p>
+<p class=AmmAnnexeTitre3>Précautions d'emploi</p>
+<p class=AmmCorpsTexte>La constipation est un effet indésirable connu de la méthadone. Il est impératif de rechercher et de prendre en charge une constipation pendant le traitement.</p>
+<p class=AmmCorpsTexte>Une perte de poids importante au cours du traitement doit conduire à une surveillance attentive pour déceler tout signe de surdosage qui pourrait être entrainé par un relargage soudain de la méthadone dans la circulation sanguine.</p>
+<p class=AmmCorpsTexte>La méthadone est à utiliser avec précaution chez les sujets âgés, les femmes enceintes (voir rubrique 4.6), les patients présentant une pathologie telle que : asthme, insuffisance respiratoire, rénale ou hépatique sévères et diabète.</p>
+<p class=AmmCorpsTexte>Les opioïdes peuvent augmenter la pression du liquide céphalorachidien et entraîner des convulsions : ils doivent être utilisés avec précaution chez les patients présentant un traumatisme crânien, des lésions intracrâniennes, d'autres circonstances dans lesquelles la pression du liquide céphalo-rachidien peut être augmentée, ou en cas d’antécédents d’épilepsie. </p>
+<p class=AmmCorpsTexte>Les opioïdes peuvent provoquer une hypotension orthostatique. Les opioïdes doivent être utilisés avec précaution chez les patients souffrant d'hypotension, d’hypovolémie, d'hypertrophie prostatique ou de sténose urétrale. </p>
+<p class=AmmCorpsTexte>Le myosis induit par les opioïdes, les changements de niveau de conscience peuvent interférer avec l'évaluation du patient ou modifier le diagnostic ou l'évolution d’une maladie concomitante. </p>
+<p class=AmmCorpsTexte>Les opioïdes doivent être utilisés avec précaution chez les patients atteints de myxœdème, d’hypothyroïdie, ou d'insuffisance cortico-surrénalienne (par exemple maladie d'Addison). </p>
+<p class=AmmCorpsTexte>Les opioïdes pouvant augmenter la pression intra-cholédocienne, ils doivent être utilisés avec précaution chez les patients présentant une dysfonction des voies biliaires.</p>
+<p class="AmmAnnexeTitre2"><a name="RcpInteractionsMed">4.5. Interactions avec d'autres médicaments et autres formes d'interactions</a>&nbsp;&nbsp;<a href='#HautDePage'><img src='img/BackToTop.jpg' width='15px' height='15px' alt='Retour en haut de la page' title='Retour en haut de la page' /></a></p>
+<p class=AmmAnnexeTitre3>Substances susceptibles de donner des torsades de pointe</p>
+<p class=AmmCorpsTexte>Ce trouble du rythme cardiaque grave, susceptible d’entraîner des arythmies de type fibrillation ventriculaire, peut aboutir à une mort subite ou un arrêt cardiaque. Il peut être provoqué par un certain nombre de médicaments, antiarythmiques ou non. L’hypokaliémie est un facteur favorisant, de même que la bradycardie ou un allongement préexistant de l’intervalle QT, congénital ou acquis.</p>
+<p class=AmmCorpsTexte>Les médicaments à l’origine de cet effet indésirable sont notamment les antiarythmiques de classe Ia et III, certains neuroleptiques. D’autres substances n’appartenant pas à ces classes sont également en cause.</p>
+<p class=AmmCorpsTexte>Pour l’érythromycine et la vincamine, seules les formes administrées par voie intraveineuse sont concernées par cette interaction.</p>
+<p class=AmmCorpsTexte>L’utilisation d’un médicament torsadogène avec un autre médicament torsadogène est contre-indiquée en règle générale. Toutefois, certains d’entre eux, en raison de leur caractère incontournable font exception à la règle en étant seulement déconseillés avec les autres torsadogènes. Il s’agit de la méthadone, de l’hydroxychloroquine, des antiparasitaires (chloroquine, halofantrine, luméfantrine, pentamidine), des arsénieux, du crizotinib, du cotrimoxazole et des neuroleptiques.</p>
+<p class=AmmCorpsTexte>Cependant le citalopram, l’escitalopram, la dompéridone, l’hydroxyzine et la pipéraquine ne suivent pas cet assouplissement et sont contre-indiqués avec tous les torsadogènes.</p>
+<p class=AmmCorpsTexteGras><span class='souligne'>Médicaments sédatifs</span></p>
+<p class=AmmCorpsTexte>L’utilisation concomitante de médicaments sédatifs avec la méthadone augmente le risque de sédation, de dépression respiratoire, de coma et de décès en raison de l’effet dépresseur additif sur le système nerveux central (SNC).</p>
+<p class=AmmCorpsTexte>Parmi ces médicaments sédatifs : les dérivés morphiniques (analgésiques, antitussifs et traitements de substitution), les neuroleptiques, les barbituriques, les benzodiazépines, les anxiolytiques autres que les benzodiazépines (par exemple, le méprobamate), les hypnotiques, les antidépresseurs sédatifs (amitriptyline, doxépine, miansérine, mirtazapine, trimipramine), les antihistaminiques H1 sédatifs, les antihypertenseurs centraux, le baclofène et le thalidomide.</p>
+<p class=AmmCorpsTexte>La posologie et la durée de traitement en cas d’utilisation concomitante doivent être restreintes (voir rubrique 4.4).</p>
+<p class=AmmCorpsTexte><span class='gras'><span class='souligne'>Médicaments sérotoninergiques</span></span></p>
+<p class=AmmCorpsTexte>Le syndrome sérotoninergique peut survenir lors de l'administration concomitante de méthadone avec de la péthidine, des inhibiteurs de la monoamine oxydase (MAO) et des agents sérotoninergiques tels que les inhibiteurs sélectifs de la recapture de la sérotonine (ISRS), les inhibiteurs de la recapture de la sérotonine et de la norépinéphrine (IRSN) et les antidépresseurs tricycliques (ATC). Les symptômes du syndrome sérotoninergique peuvent inclure des changements de l'état mental, une instabilité du système nerveux autonome, des anomalies neuromusculaires et/ou des symptômes gastro-intestinaux.</p>
+<p class=AmmAnnexeTitre3>Associations contre-indiquées</p>
+<p class=AmmCorpsTexte>(voir rubrique 4.3)</p>
+<p class=AmmCorpsTexteGras>+ Morphiniques agonistes-antagonistes : nalbuphine, buprénorphine </p>
+<p class=AmmCorpsTexte>Diminution de l'effet de la méthadone par blocage compétitif des récepteurs.</p>
+<p class=AmmCorpsTexteGras>+ Morphiniques antagonistes partiels : naltrexone, nalméfène</p>
+<p class=AmmCorpsTexte>Risque d'apparition d'un syndrome de sevrage.</p>
+<p class=AmmCorpsTexteGras>+ Citalopram, escitalopram</p>
+<p class=AmmCorpsTexte>Risque majoré de troubles du rythme ventriculaire, notamment de torsades de pointe.</p>
+<p class=AmmCorpsTexteGras>+ Dompéridone</p>
+<p class=AmmCorpsTexte>Risque majoré de troubles du rythme ventriculaire, notamment de torsades de pointe.</p>
+<p class=AmmCorpsTexteGras>+ Hydroxyzine</p>
+<p class=AmmCorpsTexte>Risque majoré de troubles du rythme ventriculaire, notamment de torsades de pointe.</p>
+<p class=AmmCorpsTexteGras>+ Millepertuis</p>
+<p class=AmmCorpsTexte>Diminution des concentrations de méthadone par le millepertuis, avec risque de syndrome de sevrage. </p>
+<p class=AmmCorpsTexteGras>+ Oxybate de sodium</p>
+<p class=AmmCorpsTexte>Risque majoré de dépression respiratoire, pouvant être fatale en cas de surdosage.</p>
+<p class=AmmCorpsTexteGras>+ Pipéraquine</p>
+<p class=AmmCorpsTexte>Risque majoré de troubles du rythme ventriculaire, notamment de torsades de pointe.</p>
+<p class=AmmAnnexeTitre3>Associations déconseillées</p>
+<p class=AmmCorpsTexte>(voir rubrique 4.4)</p>
+<p class=AmmCorpsTexteGras>+ Alcool (boisson ou excipient)</p>
+<p class=AmmCorpsTexte>Majoration par l’alcool de l'effet sédatif de la méthadone. </p>
+<p class=AmmCorpsTexte>L'altération de la vigilance peut rendre dangereuses la conduite de véhicules et l'utilisation de machines.</p>
+<p class=AmmCorpsTexte>Éviter la prise de boissons alcoolisées et de médicaments contenant de l'alcool.</p>
+<p class=AmmCorpsTexteGras>+ Apalutamide</p>
+<p class=AmmCorpsTexte>Risque de diminution très importante des concentrations de la méthadone, et perte d’efficacité, par augmentation de son métabolisme hépatique par l’apalutamide.</p>
+<p class=AmmCorpsTexte><span class='gras'>+ Cocaïne</span></p>
+<p class=AmmCorpsTexte>Risque majoré de troubles du rythme ventriculaire, notamment de torsades de pointe, pouvant provoquer une mort subite ou un arrêt cardiaque.</p>
+<p class=AmmCorpsTexteGras>+ Cotrimoxazole (sulfaméthoxazole + triméthoprime)</p>
+<p class=AmmCorpsTexte>Risque de troubles ventriculaires, notamment de torsades de pointe.</p>
+<p class=AmmCorpsTexte>Si l’association ne peut être évitée, contrôle clinique et électrocardiographique régulier.</p>
+<p class=AmmCorpsTexteGras>+ Substances susceptibles de donner des torsades de pointe : Antiarythmiques de classe Ia (quinidine, hydroquinidine, disopyramide), antiarythmiques de classe III (amiodarone, dronédarone, sotalol), certains antiparasitaires* (halofantrine, luméfantrine, pentamidine, chloroquine), arsénieux, certains macrolides (érythromycine IV, spiramycine ), certains neuroleptiques (amisulpride, chlorpromazine, cyamémazine, dropéridol, flupentixol, fluphénazine, halopéridol, lévomépromazine, pimozide, pipampérone, pipotiazine, quétiapine, sulpiride, tiapride, zuclopenthixol), crizotinib**, délamanid**<span style='font-weight:normal'>, </span>hydroxychloroquine, moxifloxacine, méquitazine, prucalopride, torémifène, vandétanib, vincamine IV.</p>
+<p class=AmmCorpsTexte>Risque majoré de troubles du rythme ventriculaire, notamment de torsades de pointe. </p>
+<p class=AmmCorpsTexte>Surveillance clinique et électrocardiographique pendant l’association.</p>
+<p class=AmmCorpsTexte>* Si cela est possible, interrompre l’un des 2 traitements. Si l’association ne peut être évitée, contrôle préalable du QT et surveillance ECG monitorée.</p>
+<p class=AmmCorpsTexte>** Si l’association ne peut être évitée, contrôle clinique et électrocardiographique réguliers.</p>
+<p class=AmmAnnexeTitre3>Associations faisant l'objet de précautions d’emploi</p>
+<p class=AmmCorpsTexteGras>+ Anagrélide</p>
+<p class=AmmCorpsTexte>Risque majoré de troubles du rythme ventriculaire, notamment de torsades de pointe.</p>
+<p class=AmmCorpsTexte>Surveillance clinique et électrocardiographique pendant l’association.</p>
+<p class=AmmCorpsTexteGras>+ Azithromycine, clarithromycine, roxithromycine</p>
+<p class=AmmCorpsTexte>Risque majoré de troubles du rythme ventriculaire, notamment de torsades de pointe. Surveillance clinique et électrocardiographique pendant l’association.</p>
+<p class=AmmCorpsTexteGras>+ Bêta-bloquants dans l’insuffisance cardiaque : bisoprolol, carvédilol, métoprolol, nébivolol</p>
+<p class=AmmCorpsTexte>Risque majoré de troubles du rythme ventriculaire, notamment de torsades de pointe. Surveillance clinique et électrocardiographique pendant l’association.</p>
+<p class=AmmCorpsTexteGras>+ Bradycardisants : antiarythmiques de classe Ia, certains antiarythmiques de classe III, antagonistes du calcium bradycardisants (diltiazem, vérapamil), anticholinestérasiques, bêta-bloquants, digoxine, pilocarpine, etc…</p>
+<p class=AmmCorpsTexte>Risque majoré de troubles du rythme ventriculaire, notamment de torsades de pointe. </p>
+<p class=AmmCorpsTexte>Surveillance clinique et électrocardiographique pendant l’association.</p>
+<p class=AmmCorpsTexteGras>+ Cimétidine </p>
+<p class=AmmCorpsTexte>Augmentation des concentrations plasmatiques de méthadone avec surdosage et risque majoré d’allongement de l’intervalle QT et de troubles du rythme ventriculaire, notamment de torsades de pointe. </p>
+<p class=AmmCorpsTexte>Surveillance clinique et électrocardiographique renforcée : s’il y a lieu, adaptation de la posologie de la méthadone pendant le traitement par la cimétidine et après son arrêt.</p>
+<p class=AmmCorpsTexteGras>+ Ciprofloxacine, lévofloxacine, norfloxacine</p>
+<p class=AmmCorpsTexte>Risque majoré de troubles du rythme ventriculaire, notamment de torsades de pointe.</p>
+<p class=AmmCorpsTexte>Surveillance clinique et électrocardiographique pendant l’association.</p>
+<p class=AmmCorpsTexte><span class='gras'>+ Fluconazole </span></p>
+<p class=AmmCorpsTexte>Augmentation des concentrations sériques de méthadone en raison d'une diminution du métabolisme de la méthadone.</p>
+<p class=AmmCorpsTexteGras>+ Fluvoxamine</p>
+<p class=AmmCorpsTexte>Augmentation des concentrations plasmatiques de méthadone avec surdosage et risque majoré d’allongement de l’intervalle QT et de troubles du rythme ventriculaire, notamment de torsades de pointe. </p>
+<p class=AmmCorpsTexte>Surveillance clinique et électrocardiographique renforcée : s'il y a lieu, adaptation de la posologie de la méthadone pendant le traitement par l'antidépresseur et après son arrêt. </p>
+<p class=AmmCorpsTexteGras>+ Hypokaliémiants : amphotéricine B voie IV, glucocorticoïdes, diurétiques hypokaliémiants seuls ou associés, laxatifs stimulants, réglisse, rhubarbe, ricin, tétracosactide</p>
+<p class=AmmCorpsTexte>Risque majoré de troubles du rythme ventriculaire, notamment de torsades de pointe. </p>
+<p class=AmmCorpsTexte>Corriger toute hypokaliémie avant d'administrer la méthadone et réaliser une surveillance clinique, électrolytique et électrocardiographique.</p>
+<p class=AmmCorpsTexteGras>+ Inducteurs enzymatiques : carbamazépine, phénobarbital, oxcarbazépine, primidone, phénytoïne, fosphénytoïne, rifabutine, rifampicine, éfavirenz, névirapine, dabrafénib, enzalutamide, eslicarbamazépine, lumacaftor, pitolisant</p>
+<p class=AmmCorpsTexte>Diminution des concentrations plasmatiques de méthadone, avec risque d'apparition d'un syndrome de sevrage, par augmentation de son métabolisme hépatique. </p>
+<p class=AmmCorpsTexte>Augmenter la fréquence des prises de méthadone (2 à 3 fois par jour au lieu d’une fois par jour).</p>
+<p class=AmmCorpsTexteGras>+ Inhibiteurs de protéases boostés par ritonavir </p>
+<p class=AmmCorpsTexte>Diminution des concentrations plasmatiques de méthadone avec risque d'apparition d'un syndrome de sevrage par augmentation de son métabolisme hépatique par le ritonavir.</p>
+<p class=AmmCorpsTexte>Surveillance clinique régulière et adaptation éventuelle de la posologie de la méthadone.</p>
+<p class=AmmCorpsTexteGras>+ Ondansétron</p>
+<p class=AmmCorpsTexte>Risque majoré de troubles du rythme ventriculaire, notamment de torsades de pointes. Surveillance clinique et électrocardiographique pendant l'association. </p>
+<p class=AmmCorpsTexteGras>+ Voriconazole</p>
+<p class=AmmCorpsTexte>Augmentation des concentrations plasmatiques de méthadone avec risque de surdosage et risque majoré d’allongement du QT et de troubles du rythme ventriculaire, notamment de torsades de pointe.</p>
+<p class=AmmCorpsTexte>Surveillance clinique et électrocardiographique et adaptation éventuelle de la posologie de la méthadone.</p>
+<p class=AmmAnnexeTitre3>Associations à prendre en compte</p>
+<p class=AmmCorpsTexteGras>+ Antitussifs morphine-like (dextrométhorphane, noscapine, pholcodine), antitussifs morphiniques vrais (codéine, éthylmorphine)</p>
+<p class=AmmCorpsTexte>Risque majoré de dépression respiratoire et augmentation du risque de sédation, de coma et de décès en raison de la potentialisation de l’effet dépresseur du système nerveux central. La dose et la durée de l’utilisation concomitante doivent être limitées (voir section 4.4).</p>
+<p class=AmmCorpsTexte><span class='gras'>+ Autres médicaments sédatifs</span></p>
+<p class=AmmCorpsTexte>Majoration de la dépression centrale. L’altération de la vigilance peut rendre dangereuses la conduite de véhicules et l’utilisation de machines (voir rubrique 4.7).</p>
+<p class=AmmCorpsTexte><span class='gras'>+ Barbituriques</span></p>
+<p class=AmmCorpsTexte>Risque majoré de sédation et de dépression respiratoire pouvant entraîner coma et décès, notamment chez le sujet âgé. Il convient de limiter autant que possible les doses et la durée de l’association.</p>
+<p class=AmmCorpsTexte><span class='gras'>+ Benzodiazépines et apparentés</span></p>
+<p class=AmmCorpsTexte>Risque majoré de sédation et de dépression respiratoire pouvant entraîner coma et décès, notamment chez le sujet âgé. Il convient de limiter autant que possible les doses et la durée de l’association.</p>
+<p class=AmmCorpsTexte><a name="_Hlk132548521"><span class='gras'>+ Cannabidiol</span></a></p>
+<p class=AmmCorpsTexte>L’administration concomitante de cannabidiol peut augmenter les concentrations plasmatiques de méthadone.</p>
+<p class=AmmCorpsTexteGras><a name="_Hlk132548504">+ Gabapentinoïdes (gabapentine et prégabaline)</a></p>
+<p class=AmmCorpsTexte>L’utilisation concomitante d’opioïdes et de gabapentinoïdes (gabapentine et prégabaline) augmente le risque de surdosage d’opioïdes, de dépression respiratoire et de décès.</p>
+<p class=AmmCorpsTexteGras>+ Traitements de substitution nicotinique</p>
+<p class=AmmCorpsTexte>Risque de surdosage lors du remplacement du tabac par le traitement substitutif.</p>
+<p class=AmmCorpsTexteGras>+ Médicaments atropiniques</p>
+<p class=AmmCorpsTexte>Risque important d’akinésie colique, avec constipation sévère.</p>
+<p class=AmmCorpsTexteGras>+ Autres médicaments à l'origine d'un syndrome sérotoninergique (amitriptyline, bleu de méthylène, bupropion citalopram, clomipramine, duloxétine, escitalopram, fluoxétine, fluvoxamine, imipramine, iproniazide, linézolide, lithium, millepertuis, milnacipran, moclobémide, oxitriptan, paroxétine, péthidine, sertraline, tramadol, trimipramine, tryptophane, venlafaxine)</p>
+<p class=AmmCorpsTexte>Risque d'apparition ou de majoration d'un syndrome sérotoninergique en cas d'association de ces médicaments.</p>
+<p class=AmmCorpsTexteGras>+ Quétiapine</p>
+<p class=AmmCorpsTexte>Possible augmentation des concentrations de méthadone, avec signes de surdosage.</p>
+<p class="AmmAnnexeTitre2"><a name="RcpFertGrossAllait">4.6. Fertilité, grossesse et allaitement</a>&nbsp;&nbsp;<a href='#HautDePage'><img src='img/BackToTop.jpg' width='15px' height='15px' alt='Retour en haut de la page' title='Retour en haut de la page' /></a></p>
+<p class=AmmAnnexeTitre3>Grossesse</p>
+<p class=AmmCorpsTexte>La méthadone traverse la barrière placentaire. Compte tenu des données disponibles et du bénéfice maternel et fœtal, l’utilisation de la méthadone est possible au cours de la grossesse quel qu’en soit le terme.</p>
+<p class=AmmCorpsTexte>En cours de grossesse, des doses plus importantes de méthadone sont parfois nécessaires pour l'équilibre du traitement. </p>
+<p class=AmmCorpsTexte>La prise chronique de méthadone par la mère en fin de grossesse, quelle que soit la dose, peut être à l’origine d’un syndrome de sevrage aux opioïdes chez le nouveau-né dont l’apparition peut être retardée de plusieurs heures à quelques jours.</p>
+<p class=AmmCorpsTexte>En cas d’utilisation régulière pendant la grossesse, une surveillance néonatale doit être réalisée afin de prévenir le risque de dépression respiratoire ou de syndrome de sevrage chez le nouveau-né.</p>
+<p class=AmmAnnexeTitre3>Allaitement</p>
+<p class=AmmCorpsTexte>De petites quantités de méthadone sont excrétées dans le lait maternel.<span style='font-size:11.0pt;font-family:"Calibri",sans-serif'> </span>La décision de recommander l’allaitement doit tenir compte de l'avis d'un spécialiste. Il convient de prendre en considération si la femme reçoit une dose d'entretien stable de méthadone et si elle continue de consommer des substances illicites. </p>
+<p class=AmmCorpsTexte>Si l'allaitement est envisagé, la dose de méthadone doit être aussi faible que possible. Les prescripteurs doivent conseiller aux femmes qui allaitent de surveiller le nourrisson afin de déceler tout signe de sédation et de dépression respiratoire et de contacter immédiatement un service d’aide médicale urgente si cela se produit. Bien que la quantité de méthadone excrétée dans le lait maternel ne soit pas suffisante pour éviter complètement les symptômes de sevrage chez les nourrissons allaités, cela peut atténuer la gravité du syndrome de sevrage néonatal. S'il est nécessaire d’interrompre l'allaitement, cela doit être fait progressivement car un sevrage brutal pourrait augmenter les symptômes de sevrage chez le nourrisson.</p>
+<p class=AmmAnnexeTitre3>Fertilité</p>
+<p class=AmmCorpsTexte>L'utilisation chronique d'opioïdes peut entraîner une fertilité réduite chez les femmes et les hommes en âge de procréer.</p>
+<p class=AmmCorpsTexte>Des études chez des hommes inclus dans des programmes de substitution avec la méthadone ont montré que la méthadone diminue la testostérone sérique et déprime nettement le volume de l'éjaculat et la motilité des spermatozoïdes.</p>
+<p class="AmmAnnexeTitre2"><a name="RcpConduite">4.7. Effets sur l'aptitude à conduire des véhicules et à utiliser des machines</a>&nbsp;&nbsp;<a href='#HautDePage'><img src='img/BackToTop.jpg' width='15px' height='15px' alt='Retour en haut de la page' title='Retour en haut de la page' /></a></p>
+<p class=AmmCorpsTexte>La méthadone a une influence majeure sur la capacité à conduire ou à utiliser des machines pendant et après le traitement. En cas de prise avec de l'alcool ou des dépresseurs du système nerveux central, l'effet est susceptible d'être plus prononcé (voir rubriques 4.4 et 4.5). Le délai après lequel ces activités peuvent être reprises en toute sécurité est extrêmement patient-dépendant et doit être décidé par le médecin. </p>
+<p class="AmmAnnexeTitre2"><a name="RcpEffetsIndesirables">4.8. Effets indésirables</a>&nbsp;&nbsp;<a href='#HautDePage'><img src='img/BackToTop.jpg' width='15px' height='15px' alt='Retour en haut de la page' title='Retour en haut de la page' /></a></p>
+<p class=AmmCorpsTexte><span class=AmmCorpsTexteGrasCar><span class='souligne'>Chez le sujet pharmacodépendant aux opioïdes lors de la mise en place du traitement par la méthadone</span></span><span class='gras'><span class='souligne'>,</span></span> les effets indésirables les plus fréquents sont : euphorie, vertiges, somnolence, nausées, vomissements, constipation, sédation, hypersudation, dysurie, œdèmes.</p>
+<p class=AmmCorpsTexte><span class=AmmCorpsTexteGrasCar><span class='souligne'>Chez le sujet pharmacodépendant aux opioïdes traité par la méthadone en phase d’entretien</span></span><span class='gras'><span class='souligne'>,</span></span> les effets indésirables les plus fréquents sont : hypersudation, nausées, constipation.</p>
+<p class=AmmCorpsTexte>Depuis la commercialisation des gélules de METHADONE AP-HP, des cas fatals d’ingestion accidentelle, en particulier chez des enfants, ont été rapportés (voir rubrique 4.4).</p>
+<p class=AmmCorpsTexte>Les effets indésirables ci-dessous sont classés par système organe et par fréquence. Les fréquences issues des essais cliniques sont classées en : très fréquent (&#8805;1/10), fréquent (&#8805;1/100 à &lt;1/10), peu fréquent (&#8805;1/1 000 à &lt;1/100), rare (&#8805; 1/10 000 à &lt; 1/1 000), très rare (&lt; 1/10 000), indéterminé (la fréquence ne peut pas être estimée sur la base des données disponibles).</p>
+<p class=AmmCorpsTexte>La fréquence des effets indésirables listés ci-dessous est indéterminée :</p>
+<div align=center>
+<table class=AmmCorpsTexteTable border=0 cellspacing=0 cellpadding=0
+style='border-collapse:collapse'>
+<thead>
+<tr style='height:19.55pt'>
+<td width=304 valign=top style='width:228.25pt;border:solid black 1.0pt;
+padding:.45pt 5.75pt 0cm 5.3pt;height:19.55pt'>
+<p class=AmmCorpsTexte align=center style='margin-left:.1pt;text-align:center; line-height:107%'><span class='gras'><span style='font-size:10.0pt;line-height:107%; font-family:"Arial",sans-serif'>Système Organe/Classe</span></span></p>
+</td>
+<td width=296 valign=top style='width:221.8pt;border:solid black 1.0pt;
+border-left:none;padding:.45pt 5.75pt 0cm 5.3pt;height:19.55pt'>
+<p class=AmmCorpsTexte align=center style='margin-left:.1pt;text-align:center; line-height:107%'><span class='gras'><span style='font-size:10.0pt;line-height:107%; font-family:"Arial",sans-serif'>Effets indésirables</span></span></p>
+</td>
+</tr>
+</thead>
+<tr style='height:23.55pt'>
+<td width=304 valign=top style='width:228.25pt;border:solid black 1.0pt;
+border-top:none;padding:.45pt 5.75pt 0cm 5.3pt;height:23.55pt'>
+<p class=AmmCorpsTexte align=left style='text-align:left'>Affections hématologiques et du système lymphatique </p>
+</td>
+<td width=296 valign=top style='width:221.8pt;border-top:none;border-left:
+none;border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;
+padding:.45pt 5.75pt 0cm 5.3pt;height:23.55pt'>
+<p class=AmmCorpsTexte align=left style='text-align:left'>Thrombopénie<sup>1 </sup></p>
+</td>
+</tr>
+<tr style='height:12.0pt'>
+<td width=304 valign=top style='width:228.25pt;border:solid black 1.0pt;
+border-top:none;padding:.45pt 5.75pt 0cm 5.3pt;height:12.0pt'>
+<p class=AmmCorpsTexte align=left style='text-align:left'>Affections endocriniennes </p>
+</td>
+<td width=296 valign=top style='width:221.8pt;border-top:none;border-left:
+none;border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;
+padding:.45pt 5.75pt 0cm 5.3pt;height:12.0pt'>
+<p class=AmmCorpsTexte align=left style='text-align:left'>Hyperprolactinémie<sup>2</sup> </p>
+</td>
+</tr>
+<tr style='height:12.0pt'>
+<td width=304 valign=top style='width:228.25pt;border:solid black 1.0pt;
+border-top:none;padding:.45pt 5.75pt 0cm 5.3pt;height:12.0pt'>
+<p class=AmmCorpsTexte align=left style='text-align:left'>Troubles du métabolisme et de la nutrition </p>
+</td>
+<td width=296 valign=top style='width:221.8pt;border-top:none;border-left:
+none;border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;
+padding:.45pt 5.75pt 0cm 5.3pt;height:12.0pt'>
+<p class=AmmCorpsTexte align=left style='text-align:left'>Appétit diminué </p>
+<p class=AmmCorpsTexte align=left style='text-align:left'>Hypoglycémie</p>
+</td>
+</tr>
+<tr style='height:92.4pt'>
+<td width=304 valign=top style='width:228.25pt;border:solid black 1.0pt;
+border-top:none;padding:.45pt 5.75pt 0cm 5.3pt;height:92.4pt'>
+<p class=AmmCorpsTexte align=left style='text-align:left'>Affections psychiatriques </p>
+</td>
+<td width=296 valign=top style='width:221.8pt;border-top:none;border-left:
+none;border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;
+padding:.45pt 5.75pt 0cm 5.3pt;height:92.4pt'>
+<p class=AmmCorpsTexte align=left style='text-align:left'>Humeur euphorique<sup>3</sup> </p>
+<p class=AmmCorpsTexte align=left style='text-align:left'>Insomnie </p>
+<p class=AmmCorpsTexte align=left style='text-align:left'>Agitation </p>
+<p class=AmmCorpsTexte align=left style='text-align:left'>Diminution de la libido </p>
+<p class=AmmCorpsTexte align=left style='text-align:left'>Etat confusionnel </p>
+<p class=AmmCorpsTexte align=left style='text-align:left'>Dépendance </p>
+<p class=AmmCorpsTexte align=left style='text-align:left'>Désorientation </p>
+<p class=AmmCorpsTexte align=left style='text-align:left'>Hallucination</p>
+</td>
+</tr>
+<tr style='height:69.6pt'>
+<td width=304 valign=top style='width:228.25pt;border:solid black 1.0pt;
+border-top:none;padding:.45pt 5.75pt 0cm 5.3pt;height:69.6pt'>
+<p class=AmmCorpsTexte align=left style='text-align:left'>Affections du système nerveux </p>
+</td>
+<td width=296 valign=top style='width:221.8pt;border-top:none;border-left:
+none;border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;
+padding:.45pt 5.75pt 0cm 5.3pt;height:69.6pt'>
+<p class=AmmCorpsTexte align=left style='text-align:left'>Somnolence<sup>3</sup> </p>
+<p class=AmmCorpsTexte align=left style='text-align:left'>Sédation<sup>3 </sup></p>
+<p class=AmmCorpsTexte align=left style='text-align:left'>Céphalée </p>
+<p class=AmmCorpsTexte align=left style='text-align:left'>Sensation vertigineuse<sup>3</sup> </p>
+<p class=AmmCorpsTexte align=left style='text-align:left'>Syncope </p>
+<p class=AmmCorpsTexte align=left style='text-align:left'>Convulsion </p>
+</td>
+</tr>
+<tr style='height:11.2pt'>
+<td width=304 valign=top style='width:228.25pt;border:solid black 1.0pt;
+border-top:none;padding:.45pt 5.75pt 0cm 5.3pt;height:11.2pt'>
+<p class=AmmCorpsTexte align=left style='text-align:left'>Affections endocriniennes</p>
+</td>
+<td width=296 valign=top style='width:221.8pt;border-top:none;border-left:
+none;border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;
+padding:.45pt 5.75pt 0cm 5.3pt;height:11.2pt'>
+<p class=AmmCorpsTexte align=left style='text-align:left'>Hypogonadisme</p>
+<p class=AmmCorpsTexte align=left style='text-align:left'>Insuffisance surrénalienne</p>
+</td>
+</tr>
+<tr style='height:23.4pt'>
+<td width=304 valign=top style='width:228.25pt;border:solid black 1.0pt;
+border-top:none;padding:.45pt 5.75pt 0cm 5.3pt;height:23.4pt'>
+<p class=AmmCorpsTexte align=left style='text-align:left'>Affections oculaires </p>
+</td>
+<td width=296 valign=top style='width:221.8pt;border-top:none;border-left:
+none;border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;
+padding:.45pt 5.75pt 0cm 5.3pt;height:23.4pt'>
+<p class=AmmCorpsTexte align=left style='text-align:left'>Défauts visuels </p>
+<p class=AmmCorpsTexte align=left style='text-align:left'>Myosis </p>
+</td>
+</tr>
+<tr style='height:69.6pt'>
+<td width=304 valign=top style='width:228.25pt;border:solid black 1.0pt;
+border-top:none;padding:.45pt 5.75pt 0cm 5.3pt;height:69.6pt'>
+<p class=AmmCorpsTexte align=left style='text-align:left'>Affections cardiaques </p>
+</td>
+<td width=296 valign=top style='width:221.8pt;border-top:none;border-left:
+none;border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;
+padding:.45pt 5.75pt 0cm 5.3pt;height:69.6pt'>
+<p class=AmmCorpsTexte align=left style='text-align:left'>Arrêt cardiaque<sup>4 </sup></p>
+<p class=AmmCorpsTexte align=left style='text-align:left'>Bradycardie </p>
+<p class=AmmCorpsTexte align=left style='text-align:left'>Palpitations </p>
+<p class=AmmCorpsTexte align=left style='text-align:left'>Torsade de pointes </p>
+<p class=AmmCorpsTexte align=left style='text-align:left'>Tachycardie </p>
+<p class=AmmCorpsTexte align=left style='text-align:left'>Arythmie </p>
+</td>
+</tr>
+<tr style='height:34.9pt'>
+<td width=304 valign=top style='width:228.25pt;border:solid black 1.0pt;
+border-top:none;padding:.45pt 5.75pt 0cm 5.3pt;height:34.9pt'>
+<p class=AmmCorpsTexte align=left style='text-align:left'>Affections vasculaires </p>
+</td>
+<td width=296 valign=top style='width:221.8pt;border-top:none;border-left:
+none;border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;
+padding:.45pt 5.75pt 0cm 5.3pt;height:34.9pt'>
+<p class=AmmCorpsTexte align=left style='text-align:left'>Hypotension<sup>4, 6</sup> </p>
+<p class=AmmCorpsTexte align=left style='text-align:left'>Choc<sup>4</sup> </p>
+<p class=AmmCorpsTexte align=left style='text-align:left'>Bouffée congestive </p>
+</td>
+</tr>
+<tr style='height:23.5pt'>
+<td width=304 valign=top style='width:228.25pt;border:solid black 1.0pt;
+border-top:none;padding:.45pt 5.75pt 0cm 5.3pt;height:23.5pt'>
+<p class=AmmCorpsTexte align=left style='text-align:left'>Affections respiratoires, thoraciques et médiastinales </p>
+</td>
+<td width=296 valign=top style='width:221.8pt;border-top:none;border-left:
+none;border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;
+padding:.45pt 5.75pt 0cm 5.3pt;height:23.5pt'>
+<p class=AmmCorpsTexte align=left style='text-align:left'>Dépression respiratoire<sup>4</sup> </p>
+<p class=AmmCorpsTexte align=left style='text-align:left'>Arrêt respiratoire<sup>4</sup> </p>
+<p class=AmmCorpsTexte align=left style='text-align:left'>Syndrome d’apnée centrale du sommeil</p>
+</td>
+</tr>
+<tr style='height:58.0pt'>
+<td width=304 valign=top style='width:228.25pt;border:solid black 1.0pt;
+border-top:none;padding:.45pt 5.75pt 0cm 5.3pt;height:58.0pt'>
+<p class=AmmCorpsTexte align=left style='text-align:left'>Affections gastro-intestinales </p>
+</td>
+<td width=296 valign=top style='width:221.8pt;border-top:none;border-left:
+none;border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;
+padding:.45pt 5.75pt 0cm 5.3pt;height:58.0pt'>
+<p class=AmmCorpsTexte align=left style='text-align:left'>Bouche sèche </p>
+<p class=AmmCorpsTexte align=left style='text-align:left'>Nausées<sup>3, 5</sup> Vomissement<sup>3</sup> </p>
+<p class=AmmCorpsTexte align=left style='text-align:left'>Constipation<sup>3, 5 </sup></p>
+<p class=AmmCorpsTexte align=left style='text-align:left'>Douleur abdominale </p>
+</td>
+</tr>
+<tr style='height:12.0pt'>
+<td width=304 valign=top style='width:228.25pt;border:solid black 1.0pt;
+border-top:none;padding:.45pt 5.75pt 0cm 5.3pt;height:12.0pt'>
+<p class=AmmCorpsTexte align=left style='text-align:left'>Affections hépatobiliaires </p>
+</td>
+<td width=296 valign=top style='width:221.8pt;border-top:none;border-left:
+none;border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;
+padding:.45pt 5.75pt 0cm 5.3pt;height:12.0pt'>
+<p class=AmmCorpsTexte align=left style='text-align:left'>Douleur biliaire </p>
+</td>
+</tr>
+<tr style='height:46.55pt'>
+<td width=304 valign=top style='width:228.25pt;border:solid black 1.0pt;
+border-top:none;padding:.45pt 5.75pt 0cm 5.3pt;height:46.55pt'>
+<p class=AmmCorpsTexte align=left style='text-align:left'>Affections de la peau et du tissu sous-cutané </p>
+</td>
+<td width=296 valign=top style='width:221.8pt;border-top:none;border-left:
+none;border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;
+padding:.45pt 5.75pt 0cm 5.3pt;height:46.55pt'>
+<p class=AmmCorpsTexte align=left style='text-align:left'>Hyperhidrose<sup>3, 5 </sup></p>
+<p class=AmmCorpsTexte align=left style='text-align:left'>Prurit </p>
+<p class=AmmCorpsTexte align=left style='text-align:left'>Rash </p>
+<p class=AmmCorpsTexte align=left style='text-align:left'>Urticaire </p>
+</td>
+</tr>
+<tr style='height:23.5pt'>
+<td width=304 valign=top style='width:228.25pt;border:solid black 1.0pt;
+border-top:none;padding:.45pt 5.75pt 0cm 5.3pt;height:23.5pt'>
+<p class=AmmCorpsTexte align=left style='text-align:left'>Affections du rein et des voies urinaires </p>
+</td>
+<td width=296 valign=top style='width:221.8pt;border-top:none;border-left:
+none;border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;
+padding:.45pt 5.75pt 0cm 5.3pt;height:23.5pt'>
+<p class=AmmCorpsTexte align=left style='text-align:left'>Dysurie<sup>3</sup> </p>
+<p class=AmmCorpsTexte align=left style='text-align:left'>Rétention urinaire </p>
+</td>
+</tr>
+<tr style='height:12.95pt'>
+<td width=304 valign=top style='width:228.25pt;border-top:none;border-left:
+solid black 1.0pt;border-bottom:none;border-right:solid black 1.0pt;
+padding:.45pt 5.75pt 0cm 5.3pt;height:12.95pt'>
+<p class=AmmCorpsTexte align=left style='text-align:left'>Affections des organes de reproduction et du sein </p>
+</td>
+<td width=296 valign=top style='width:221.8pt;border:none;border-right:solid black 1.0pt;
+padding:.45pt 5.75pt 0cm 5.3pt;height:12.95pt'>
+<p class=AmmCorpsTexte align=left style='text-align:left'>Gynécomastie </p>
+<p class=AmmCorpsTexte align=left style='text-align:left'>Aménorrhée </p>
+<p class=AmmCorpsTexte align=left style='text-align:left'>Dysménorrhée </p>
+<p class=AmmCorpsTexte align=left style='text-align:left'>Dysérection </p>
+<p class=AmmCorpsTexte align=left style='text-align:left'>Galactorrhée </p>
+</td>
+</tr>
+<tr style='height:57.95pt'>
+<td width=304 valign=top style='width:228.25pt;border:solid black 1.0pt;
+padding:.45pt 5.75pt 0cm 5.3pt;height:57.95pt'>
+<p class=AmmCorpsTexte align=left style='text-align:left'>Troubles généraux et anomalies au site d’administration </p>
+</td>
+<td width=296 valign=top style='width:221.8pt;border:solid black 1.0pt;
+border-left:none;padding:.45pt 5.75pt 0cm 5.3pt;height:57.95pt'>
+<p class=AmmCorpsTexte align=left style='text-align:left'>Oedème<sup>3 </sup></p>
+<p class=AmmCorpsTexte align=left style='text-align:left'>Asthénie </p>
+<p class=AmmCorpsTexte align=left style='text-align:left'>Fatigue </p>
+<p class=AmmCorpsTexte align=left style='text-align:left'>Malaise </p>
+<p class=AmmCorpsTexte align=left style='text-align:left'>Œdèmes périphériques </p>
+</td>
+</tr>
+<tr style='height:35.05pt'>
+<td width=304 valign=top style='width:228.25pt;border:solid black 1.0pt;
+border-top:none;padding:.45pt 5.75pt 0cm 5.3pt;height:35.05pt'>
+<p class=AmmCorpsTexte align=left style='text-align:left'>Investigations </p>
+</td>
+<td width=296 valign=top style='width:221.8pt;border-top:none;border-left:
+none;border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;
+padding:.45pt 5.75pt 0cm 5.3pt;height:35.05pt'>
+<p class=AmmCorpsTexte align=left style='text-align:left'>Intervalle QT prolongé à l'électrocardiogramme </p>
+<p class=AmmCorpsTexte align=left style='text-align:left'>Poids augmenté </p>
+<p class=AmmCorpsTexte align=left style='text-align:left'>Testostérone sanguine diminuée</p>
+</td>
+</tr>
+</table>
+</div>
+<p class=AmmCorpsTexte style='margin-top:6.0pt'><sup>1</sup> : Des cas réversibles de thrombopénie ont été rapportés chez des patients dépendants aux opioïdes avec hépatite chronique </p>
+<p class=AmmCorpsTexte><sup>2</sup> : Elévation de la prolactine lors de l’administration à long terme </p>
+<p class=AmmCorpsTexte><sup>3</sup> : Effets indésirables les plus fréquents chez les sujets pharmacodépendants aux opioïdes lors de la mise en place du traitement par la méthadone </p>
+<p class=AmmCorpsTexte><sup>4</sup> : Effets indésirables les plus sévères </p>
+<p class=AmmCorpsTexte><sup>5</sup> : Effets indésirables les plus fréquents chez les sujets pharmacodépendants aux opioïdes traités par la méthadone en phase d'entretien </p>
+<p class=AmmCorpsTexte><sup>6</sup> : Symptomatique</p>
+<p class=AmmAnnexeTitre3>Déclaration des effets indésirables suspectés </p>
+<p class=AmmCorpsTexte>La déclaration des effets indésirables suspectés après autorisation du médicament est importante. Elle permet une surveillance continue du rapport bénéfice/risque du médicament. Les professionnels de santé déclarent tout effet indésirable suspecté via le système national de déclaration : Agence nationale de sécurité du médicament et des produits de santé (ANSM) et réseau des Centres Régionaux de Pharmacovigilance - Site internet :<span style='color:red'> </span><a href="https://signalement.social-sante.gouv.fr/">https://signalement.social-sante.gouv.fr/</a>.</p>
+<p class="AmmAnnexeTitre2"><a name="RcpSurdosage">4.9. Surdosage</a>&nbsp;&nbsp;<a href='#HautDePage'><img src='img/BackToTop.jpg' width='15px' height='15px' alt='Retour en haut de la page' title='Retour en haut de la page' /></a></p>
+<p class=AmmCorpsTexte>Un surdosage aux opioïdes peut survenir en cas de prise de quantités plus importantes que prescrites, lors d’association avec d’autres médicaments (voir section 4.5), de reprises d’opioïdes après une réduction ou un arrêt de consommation (perte de tolérance), en cas d’antécédents de surdosage d’opioïdes ou dans toute anomalie d’utilisation des opioïdes. Une ingestion accidentelle ou volontaire par une personne naïve (entourage) peut également conduire à un surdosage.</p>
+<p class=AmmAnnexeTitre3>Symptômes </p>
+<p class=AmmCorpsTexte>Le principal symptôme nécessitant une intervention médicale en cas de surdosage est la dépression respiratoire, consécutive à une dépression du système nerveux central, car elle peut conduire à un arrêt respiratoire et à la mort (voir rubrique 4.4). L’effet dépresseur respiratoire maximal de la méthadone peut se produire plus tard et persister plus longtemps que son effet pharmacologique maximal (voir section 5.2).</p>
+<p class=AmmCorpsTexte>Les autres signes d’un surdosage sont notamment des nausées, des vomissements, une hypoglycémie, une sédation, un myosis, une hypotension artérielle, une bradycardie, une bradypnée sévère, un œdème pulmonaire, une somnolence sévère pouvant évoluer en stupeur voire coma.</p>
+<p class=AmmCorpsTexte>Ces signes ont été observés lors de cas fatals d’ingestion accidentelle, en particulier chez des enfants (voir rubrique 4.4).</p>
+<p class=AmmCorpsTexte>Dans quelques cas, le coma peut être associé à une hypothermie ou à une hypoglycémie.</p>
+<p class=AmmCorpsTexte>De rares cas de perte de l’audition, la plupart du temps réversible, ont été rapportés dans un contexte de surdosage à la méthadone.</p>
+<p class=AmmCorpsTexte>Comme avec d’autres opioïdes, des cas d’encéphalopathies ont été rapportés.</p>
+<p class=AmmCorpsTexte><a name="_Hlk132548666">Des cas de leucoencéphalopathie toxique ont été observés dans le contexte d’un surdosage de méthadone.</a></p>
+<p class=AmmCorpsTexte><span class='gras'><span class='souligne'>Conduite à tenir en cas de suspicion de surdosage ou d’ingestion accidentelle</span></span></p>
+<p class=AmmCorpsTexte>Après avoir contacté immédiatement un service d’urgence, l’utilisation rapide de naloxone « prête à l’emploi » doit être initiée en cas de suspicion de surdosage (voir rubrique 4.4).</p>
+<p class=AmmAnnexeTitre3>Traitement</p>
+<p class=AmmCorpsTexte>Le traitement symptomatique de la dépression respiratoire et de l'hypotension doit faire appel aux mesures de réanimation habituelles.</p>
+<p class=AmmCorpsTexte>Un surdosage aux opioïdes est traité par l’administration d’un antagoniste des récepteurs opioïdes, telle que la naloxone. </p>
+<p class=AmmCorpsTexte>Cet antidote est disponible avec ou sans ordonnance sous forme de kit prêt à l’emploi. Si la personne en surdosage ne répond pas à la première dose de naloxone dans les 2 à 3 minutes, une seconde dose doit être administrée. Des doses supplémentaires peuvent être administrées en cas de besoin, en respectant les recommandations de la spécialité utilisée.</p>
+<p class=AmmCorpsTexte>La méthadone ayant une durée d’action plus longue (jusqu’à 47h) que celle de la naloxone (20 minutes à 2h environ selon la voie d’administration), les symptômes d’un surdosage peuvent réapparaitre à distance d’une première amélioration et peuvent nécessiter une administration répétée de la naloxone. Une surveillance de la personne est donc nécessaire dans l’attente des secours qui doivent être systématiquement alertés. </p>
+<p class=AmmCorpsTexte>Après la prise en charge médicale, une surveillance de l’état de sédation et de dépression respiratoire du patient est nécessaire et doit être adaptée au contexte clinique de chaque patient.</p>
+<p class="AmmAnnexeTitre1"><a name="RcpPropPharmacologiques">5. PROPRIETES PHARMACOLOGIQUES</a>&nbsp;&nbsp;<a href='#HautDePage'><img src='img/BackToTop.jpg' width='15px' height='15px' alt='Retour en haut de la page' title='Retour en haut de la page' /></a></p>
+<p class="AmmAnnexeTitre2"><a name="RcpPropPharmacodynamiques">5.1. Propriétés pharmacodynamiques</a>&nbsp;&nbsp;<a href='#HautDePage'><img src='img/BackToTop.jpg' width='15px' height='15px' alt='Retour en haut de la page' title='Retour en haut de la page' /></a></p>
+<p class=AmmCorpsTexteGras>Classe pharmacothérapeutique : MEDICAMENTS UTILISES DANS LA DEPENDANCE AUX OPIACES, code ATC : N07BC02.</p>
+<p class=AmmCorpsTexte>La méthadone est un puissant agoniste complet à longue durée d’action, sans effet plafond des récepteurs aux opioïdes, comme la morphine, qui agit principalement sur les récepteurs µ. Comme les autres opioïdes, elle possède des propriétés analgésiques et antitussives et entraîne un syndrome de dépendance pharmacologique. Cependant, ses propriétés euphorisantes sont faibles aux doses thérapeutiques efficaces et au long cours.</p>
+<p class="AmmAnnexeTitre2"><a name="RcpPropPharmacocinetiques">5.2. Propriétés pharmacocinétiques</a>&nbsp;&nbsp;<a href='#HautDePage'><img src='img/BackToTop.jpg' width='15px' height='15px' alt='Retour en haut de la page' title='Retour en haut de la page' /></a></p>
+<p class=AmmAnnexeTitre3>Absorption</p>
+<p class=AmmCorpsTexte>Du fait de son caractère liposoluble, la méthadone administrée par voie orale est bien absorbée par le tube digestif, le pic plasmatique est observé 2,5 à 4 heures après l’administration. Elle subit un effet de premier passage hépatique. Les concentrations plasmatiques atteignent l’état d’équilibre en 5 jours environ (5 ½ vies). Avant l’atteinte de l’état d’équilibre, la libération de méthadone à partir de réservoirs tissulaires peut entraîner une augmentation des taux sériques et de la toxicité même en l’absence de modification de dose.</p>
+<p class=AmmAnnexeTitre3>Distribution</p>
+<p class=AmmCorpsTexte>La méthadone se lie à l'albumine et aux autres protéines plasmatiques et tissulaires, ce qui peut expliquer ses effets cumulatifs et sa lente vitesse d'élimination (son taux de fixation aux protéines plasmatiques est de 60% à 90%). Les concentrations tissulaires en méthadone (poumon, foie, rein) sont supérieures à la concentration plasmatique. Elle diffuse à travers le placenta et est excrétée dans le lait.</p>
+<p class=AmmCorpsTexte>Des variations de concentrations plasmatiques inter-individuelles sont observées chez les sujets dépendants aux opioïdes. Pour des patients recevant 100 ou 120 mg/jour de méthadone, la demi-vie plasmatique du produit est très variable, allant de 13 à 47 heures (moyenne : 25 heures). Il est donc important d’augmenter progressivement les doses de méthadone par palier en respectant un délai minimum de 5 jours. </p>
+<p class=AmmAnnexeTitre3>Biotransformation</p>
+<p class=AmmCorpsTexte>La méthadone est métabolisée principalement au niveau hépatique où elle subit une N-déméthylation et une cyclisation sans conjugaison. Les métabolites sont inactifs.</p>
+<p class=AmmCorpsTexte>Des études <span class='italique'>in vitro</span> et <span class='italique'>in vivo</span> ont montré que le cytochrome P3A4 a peu d’influence sur la distribution, le métabolisme et la clairance de la méthadone. Par ailleurs, les cytochromes CYP2B6 et CYP2C19 ont des effets stéréosélectifs sur son métabolisme, le CYP2B6 métabolisant préférentiellement la S-méthadone et le CYP2C19 la R-méthadone. Le métabolisme de la méthadone dépend principalement de l’isoenzyme CYP2B6 ; la pertinence clinique de l’effet des substances inhibant cette isoenzyme est incertaine.</p>
+<p class=AmmAnnexeTitre3>Elimination</p>
+<p class=AmmCorpsTexte>La méthadone est excrétée par filtration glomérulaire puis subit une réabsorption rénale. Sa clairance rénale diminue avec l’augmentation du pH urinaire.</p>
+<p class=AmmCorpsTexte>L'excrétion urinaire est dose-dépendante et représente la voie principale d'élimination. Après l'administration d'une dose unique de méthadone, 20% sont excrétés dans les urines sous forme inchangée et 13% sous forme métabolisée. 20 à 40% de la dose initiale sont également excrétés dans les fèces sous forme métabolisée via la bile. La méthadone peut être trouvée dans la sueur et la salive.</p>
+<p class="AmmAnnexeTitre2"><a name="RcpSecuritePreclinique">5.3. Données de sécurité préclinique</a>&nbsp;&nbsp;<a href='#HautDePage'><img src='img/BackToTop.jpg' width='15px' height='15px' alt='Retour en haut de la page' title='Retour en haut de la page' /></a></p>
+<p class=AmmCorpsTexte>La DL<sub>50</sub> chez le rat est de 95 mg/kg (voie orale).</p>
+<p class=AmmCorpsTexte>La DL<sub>50</sub> chez la souris par voie IV est de 20 mg/kg.</p>
+<p class=AmmAnnexeTitre3>Toxicité chronique</p>
+<p class=AmmCorpsTexte>Dans une étude de toxicité d’un an chez le chien, la méthadone administrée en gélules, à des doses quotidiennes comprises entre 5 et 20 mg/kg, a entraîné une réduction de la prise de poids, une sédation liée à la dose, une salivation excessive et des vomissements, une hyper irritabilité, une augmentation du rythme cardiaque et du complexe ventriculaire. Ces changements ont disparu dans la période de récupération. À la dose la plus élevée, les changements à l'électrocardiogramme étaient encore perceptibles après 6 semaines de récupération. Aucune modification histopathologique du cœur n’a été observée au moment du sacrifice. Après 6 et 12 mois de traitement, aucune anomalie n’a été observée au niveau du poids des organes, pathologie ou histopathologie quelle que soit la dose. </p>
+<p class=AmmAnnexeTitre3>Carcinogénèse</p>
+<p class=AmmCorpsTexte>Une étude de carcinogénèse réalisée chez la souris a montré une augmentation significative des adénomes hypophysaires à 15 mg/kg/jour, mais pas à 60 mg/kg/jour.</p>
+<p class=AmmCorpsTexte>Une étude de carcinogénèse réalisée chez le rat n’a pas montré d'augmentation de l'incidence des tumeurs liées au traitement, chez les rats mâles ou femelles.</p>
+<p class=AmmAnnexeTitre3>Mutagénèse</p>
+<p class=AmmCorpsTexte>La méthadone a montré une certaine activité génotoxique dans des essais in vitro, mais surtout dans des tests non validés et/ou à un niveau excessif de toxicité. Elle semblait être mutagène dans des essais in vivo chez la souris, mais pas chez le rat. Aucune conclusion finale ne peut être tirée concernant le potentiel génotoxique et l'extrapolation de ces données à l’homme est difficile. </p>
+<p class=AmmAnnexeTitre3>Fertilité</p>
+<p class=AmmCorpsTexte>Des études publiées montrent que le traitement par la méthadone de rats mâles peut altérer la fonction de reproduction. La méthadone produit une régression significative des organes sexuels secondaires et des testicules de souris et de rats mâles.</p>
+<p class="AmmAnnexeTitre1"><a name="RcpDonneesPharmaceutiques">6. DONNEES PHARMACEUTIQUES</a>&nbsp;&nbsp;<a href='#HautDePage'><img src='img/BackToTop.jpg' width='15px' height='15px' alt='Retour en haut de la page' title='Retour en haut de la page' /></a></p>
+<p class="AmmAnnexeTitre2"><a name="RcpListeExcipients">6.1. Liste des excipients</a>&nbsp;&nbsp;<a href='#HautDePage'><img src='img/BackToTop.jpg' width='15px' height='15px' alt='Retour en haut de la page' title='Retour en haut de la page' /></a></p>
+<p class=AmmCorpsTexte>Carmellose sodique, carboxyméthylamidon sodique (type A), stéarate de magnésium, silice colloïdale anhydre, lactose monohydraté.</p>
+<p class=AmmCorpsTexte><span class='italique'><span class='souligne'>Enveloppe de la gélule</span></span> : gélatine, dioxyde de titane (E171), oxyde de fer (E172) jaune (uniquement pour la coiffe).</p>
+<p class="AmmAnnexeTitre2"><a name="RcpIncompatibilites">6.2. Incompatibilités</a>&nbsp;&nbsp;<a href='#HautDePage'><img src='img/BackToTop.jpg' width='15px' height='15px' alt='Retour en haut de la page' title='Retour en haut de la page' /></a></p>
+<p class=AmmCorpsTexte>Sans objet.</p>
+<p class="AmmAnnexeTitre2"><a name="RcpDureeConservation">6.3. Durée de conservation</a>&nbsp;&nbsp;<a href='#HautDePage'><img src='img/BackToTop.jpg' width='15px' height='15px' alt='Retour en haut de la page' title='Retour en haut de la page' /></a></p>
+<p class=AmmCorpsTexte>3 ans.</p>
+<p class="AmmAnnexeTitre2"><a name="RcpPrecConservation">6.4. Précautions particulières de conservation</a>&nbsp;&nbsp;<a href='#HautDePage'><img src='img/BackToTop.jpg' width='15px' height='15px' alt='Retour en haut de la page' title='Retour en haut de la page' /></a></p>
+<p class=AmmCorpsTexte><span lang=FR-BE>A conserver à une température ne dépassant pas 30°C.</span></p>
+<p class="AmmAnnexeTitre2"><a name="RcpEmballage">6.5. Nature et contenu de l'emballage extérieur </a>&nbsp;&nbsp;<a href='#HautDePage'><img src='img/BackToTop.jpg' width='15px' height='15px' alt='Retour en haut de la page' title='Retour en haut de la page' /></a></p>
+<p class=AmmCorpsTexte>7 gélules sous plaquette thermoformée sécurisée (PVC/PVDC/Aluminium).</p>
+<p class="AmmAnnexeTitre2"><a name="RcpPrecEmpl">6.6. Précautions particulières d’élimination et de manipulation</a>&nbsp;&nbsp;<a href='#HautDePage'><img src='img/BackToTop.jpg' width='15px' height='15px' alt='Retour en haut de la page' title='Retour en haut de la page' /></a></p>
+<p class=AmmCorpsTexte>Les gélules ne doivent jamais être déconditionnées à l’avance de la plaquette thermoformée et doivent être avalées immédiatement après déconditionnement de la plaquette thermoformée (voir rubriques 4.4 et 4.8).</p>
+<p class=AmmCorpsTexte>Découper une unité de la plaquette thermoformée.</p>
+<p class=AmmCorpsTexte>Peler chaque unité à partir du coin non scellé pour accéder à la feuille d’aluminium qui peut être percée afin de libérer la gélule.</p>
+<p class="AmmAnnexeTitre1"><a name="RcpTitulaireAmm">7. TITULAIRE DE L’AUTORISATION DE MISE SUR LE MARCHE</a>&nbsp;&nbsp;<a href='#HautDePage'><img src='img/BackToTop.jpg' width='15px' height='15px' alt='Retour en haut de la page' title='Retour en haut de la page' /></a></p>
+<p class=AmmCorpsTexteGras style='margin-bottom:0cm;margin-bottom:.0001pt'>ASSISTANCE PUBLIQUE-HOPITAUX DE PARIS</p>
+<p class=AmmCorpsTexte style='margin-bottom:0cm;margin-bottom:.0001pt'><span style='text-transform:uppercase'>55 Boulevard DIDEROT</span></p>
+<p class=AmmCorpsTexte style='margin-bottom:0cm;margin-bottom:.0001pt'><span style='text-transform:uppercase'>CS 22305</span></p>
+<p class=AmmCorpsTexte><span style='text-transform:uppercase'>75610 Paris CEDEX 12</span></p>
+<p class="AmmAnnexeTitre1"><a name="RcpNumAutor">8. NUMERO(S) D’AUTORISATION DE MISE SUR LE MARCHE</a>&nbsp;&nbsp;<a href='#HautDePage'><img src='img/BackToTop.jpg' width='15px' height='15px' alt='Retour en haut de la page' title='Retour en haut de la page' /></a></p>
+<p class=AmmListePuces1 style='text-align:justify'><span style='font-family: Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>379 147 9 ou 34009 379 147 9 6 : 7 gélules sous plaquette thermoformée (PVC/PVDC/Aluminium).</p>
+<p class="AmmAnnexeTitre1"><a name="RcpPremiereAutorisation">9. DATE DE PREMIERE AUTORISATION/DE RENOUVELLEMENT DE L’AUTORISATION</a>&nbsp;&nbsp;<a href='#HautDePage'><img src='img/BackToTop.jpg' width='15px' height='15px' alt='Retour en haut de la page' title='Retour en haut de la page' /></a></p>
+<p class=AmmCorpsTexte>[à compléter ultérieurement par le titulaire]</p>
+<p class="AmmAnnexeTitre1"><a name="RcpDateRevision">10. DATE DE MISE A JOUR DU TEXTE</a>&nbsp;&nbsp;<a href='#HautDePage'><img src='img/BackToTop.jpg' width='15px' height='15px' alt='Retour en haut de la page' title='Retour en haut de la page' /></a></p>
+<p class=AmmCorpsTexte>[à compléter ultérieurement par le titulaire]</p>
+<p class="AmmAnnexeTitre1"><a name="RcpDosimetrie">11. DOSIMETRIE</a>&nbsp;&nbsp;<a href='#HautDePage'><img src='img/BackToTop.jpg' width='15px' height='15px' alt='Retour en haut de la page' title='Retour en haut de la page' /></a></p>
+<p class=AmmCorpsTexte>Sans objet.</p>
+<p class="AmmAnnexeTitre1"><a name="RcpInstPrepRadioph">12. INSTRUCTIONS POUR LA PREPARATION DES RADIOPHARMACEUTIQUES</a>&nbsp;&nbsp;<a href='#HautDePage'><img src='img/BackToTop.jpg' width='15px' height='15px' alt='Retour en haut de la page' title='Retour en haut de la page' /></a></p>
+<p class=AmmCorpsTexte>Sans objet.</p>
+<div style='border:none;border-top:solid windowtext 1.0pt;padding:1.0pt 0cm 0cm 0cm'>
+<p class="AmmAnnexeTitre"><a name="RcpCondPrescription">CONDITIONS DE PRESCRIPTION ET DE DELIVRANCE</a></p>
+</div>
+<p class=AmmCorpsTexte style='margin-top:6.0pt'>1) Stupéfiant :</p>
+<p class=AmmCorpsTexte>Prescription sur ordonnance sécurisée.</p>
+<p class=AmmCorpsTexte>Durée maximale de prescription limitée à 28 jours. Délivrance fractionnée par périodes de 7 jours maximum. Le prescripteur peut néanmoins préciser sur l’ordonnance la durée de chaque fraction, ou exclure le fractionnement en portant sur l’ordonnance la mention « délivrance en une seule fois », ou préciser que la dispensation doit se faire quotidiennement.</p>
+<p class=AmmCorpsTexte>La délivrance est effectuée par une pharmacie de ville ou par un CSAPA. Le nom du pharmacien choisi par le patient doit être mentionné sur l’ordonnance.</p>
+<p class=AmmCorpsTexte>2) Médicament soumis à prescription initiale réservée aux médecins exerçant en centres de soins d’accompagnement et de prévention en addictologie (CSAPA) ou aux médecins exerçant dans les services hospitaliers spécialisés dans les soins aux toxicomanes.</p>
+<p class=AmmCorpsTexte>Renouvellement non restreint.</p>
+<p class=AmmCorpsTexte>Médicament nécessitant une surveillance particulière pendant le traitement.</p>
+<span class='gras'><span style='font-size:12.0pt;font-family:"Arial",sans-serif;color:#0B3D92;
+text-transform:uppercase'><br clear=all>
+</span></span>					
+					<p class="alignright"><a href="#HautDePage">Retour en haut de la page <img src="img/BackToTop.jpg" width="20px" height="20px" alt="Retour en haut de la page" title="Retour en haut de la page" /></a></p>
+				</div>
+			</div>
+		</div>
+	</div>
+
+<table summary="" class="content" width="1000">
+	<tr>
+		<td height="100px">&nbsp;</td>
+	</tr>
+</table>
+<table summary="Pied de page" class="footer" width="1000">
+	<tr>
+		<td>
+			<table summary="" class="tablealigncenter" border="0">
+				<tr>
+					<td width="100px" class="aligncenter"><a id="lien_ansm" href="http://ansm.sante.fr/" target="_blank"><img src="img/Logo_ANSM.png" width="150" height="60" alt="ANSM - Agence nationale de sécurité du médicament et des produits de santé" title="L'ANSM met à disposition les principales informations issues de l'Autorisation de mise sur le marché, l'appartenance à un groupe générique, les liens vers les informations de sécurité qu'elle publie, l'identification des médicaments sous surveillance renforcée - nouvelle fenêtre" /></a></td>
+					          <td>&nbsp;</td>
+					<td width="100px" class="aligncenter"><img src="img/Logo_HAS.png" width="150" height="60" alt="HAS - Haute autorité de santé" title="La HAS met à disposition les informations relatives au service médical rendu, à l'amélioration du service médical rendu ainsi que les liens vers les avis de la Commission de la Transparence correspondants - nouvelle fenêtre" /></td>
+					<td>&nbsp;</td>
+					<td width="100px" class="aligncenter"><img src="img/Logo_CNAM.png" width="150" height="60" alt="UNCAM - Unin nationale des caisses d'assurance maladie" title="L'UNCAM met à disposition le taux de remboursement, le prix et les indications remboursables le cas échéant, ainsi que l'agrément aux collectivités - nouvelle fenêtre" /></td>
+          				</tr>
+			</table> 
+		</td>
+	</tr>
+</table>
+<table summary="" class="finpage" width="1000">
+	<tr>
+		<td height="100px" class="aligncenter">
+			<a class="navigation" href="plan.php">Plan du site</a>&nbsp;|&nbsp;
+			<a class="navigation" href="accessibilite.php">Accessibilité</a>&nbsp;|&nbsp;
+			<a class="navigation" href="contact.php">Contact</a>&nbsp;|&nbsp;
+			<a class="navigation" href="telechargement.php">Téléchargement</a>&nbsp;|&nbsp;
+			<a class="navigation" href="DeclarationConfidentialite.php">Declaration de confidentialité</a>&nbsp;|&nbsp;
+			<a class="navigation" href="http://www.service-public.fr/" title="Service Public - Nouvelle fenêtre" target="_blank">Service-Public.fr</a>&nbsp;|&nbsp;
+			<a class="navigation" href="http://www.legifrance.gouv.fr/" title="Legifrance - Nouvelle fenêtre" target="_blank">Legifrance</a>&nbsp;|&nbsp;
+			<a class="navigation" href="http://www.gouvernement.fr/" title="Gouvernement - Nouvelle fenêtre" target="_blank" >Gouvernement.fr</a>
+		</td>
+	</tr>
+</table>
+
+
+
+<!-- Matomo -->
+<script type="text/javascript">
+  var _paq = window._paq = window._paq || [];
+  /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
+  _paq.push(['trackPageView']);
+  _paq.push(['enableLinkTracking']);
+  (function() {
+    var u="https://stats.integra.fr/";
+    _paq.push(['setTrackerUrl', u+'matomo.php']);
+    _paq.push(['setSiteId', '79']);
+    var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+    g.type='text/javascript'; g.async=true; g.src=u+'matomo.js'; s.parentNode.insertBefore(g,s);
+  })();
+</script>
+<!-- End Matomo Code -->
+
+
+
+</body>
+</html>

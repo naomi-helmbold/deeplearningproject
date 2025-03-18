@@ -1,0 +1,435 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="fr" lang="fr">
+<head>
+	<title>Notice patient - VENTOLINE 100 microgrammes/dose, suspension pour inhalation en flacon pressurisé  - Base de données publique des médicaments</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=windows-1252"/>
+	<meta name="robots" content="index, follow"/>
+	<meta name="Description" content="Base de données publique des médicaments"/>
+	<meta name="Keywords" content="base, données, publique, médicaments, Notice patient, VENTOLINE 100 microgrammes/dose, suspension pour inhalation en flacon pressurisé "/>
+	<meta name="Subject" content="medicament"/>
+	<link href='https://fonts.googleapis.com/css?family=Noticia+Text' rel='stylesheet' type='text/css' />
+	<link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro' rel='stylesheet' type='text/css' />
+	<link href="style/style_bdm.css?v=2.2.3" type="text/css" rel="stylesheet"/>
+	<link href="style/style_RCP_Notice.css" type="text/css" rel="stylesheet"/>
+  <link rel="alternate" href="http://m.base-donnees-publique.medicaments.gouv.fr/#!info-64720167">
+    <script type="text/javascript" src="scripts/autocomplete.js?v=2.2.3"></script>
+	<script type="text/javascript" src="scripts/jquery.js"></script>
+    <script type="text/javascript" src="scripts/jquery-ui.min.js"></script>
+	<script type="text/javascript" src="scripts/common.js"></script>
+	<link rel="icon" type="image/x-icon" href="favicon.ico" />
+</head>
+
+<body>
+
+<a name="HautDePage" />
+<div id="bandeauhaut">
+	<a id="lien_ministere" class="lienmenu" href="http://www.sante.gouv.fr" target="_blank" title="Site du ministère des affaires sociales et de la santé - nouvelle fenêtre"><img id="logoministere" src="img/Logo_Ministere.jpg"  alt="Logo du ministère des affaires sociales et de la santé"/></a>
+	<h1 class="texteTitreSite">
+		Base <span class="texteBleu">de</span> données <span class="texteBleu">publique</span><br/><span class="texteBleu">des</span> médicaments
+	</h1>
+		<a id="lien_medicament_gouv" class="lienEspaceMedic" target="_blank" href="http://medicaments.gouv.fr" title="Visiter [medicaments.gouv.fr] - nouvelle fenêtre">Visiter [medicaments.gouv.fr] <img src="/img/icone_lien.png" alt="Visiter [medicaments.gouv.fr]"  title="Visiter [medicaments.gouv.fr] - nouvelle fenetre" /></a>
+</div>
+<!--div align="center">
+	<a id="banniere" target="_blank" href="http://social-sante.gouv.fr/soins-et-maladies/medicaments/medicaments-generiques/" title="Visiter [medicaments.gouv.fr] - M?dicaments g?n?riques">
+		<img width="1000"   src ="/img/carrouselbannieres.gif" alt="Visiter [medicaments.gouv.fr] - M?dicaments g?n?riques" title="Visiter [medicaments.gouv.fr] - M?dicaments g?n?riques" />
+	</a>
+</div-->
+
+<div id="menuhaut">
+	<span id="menuhaut_gauche">
+		<a id="lien_accueil" class="navigation" href="index.php">Accueil</a>&nbsp;|&nbsp;
+		<a id="lien_glossaire" class="navigation" href="glossaire.php">Glossaire</a>&nbsp;|&nbsp;
+		<a id="lien_aide" class="navigation" href="aide.php">Aide</a>		
+	</span>
+	
+		
+	<span id="menuhaut_dernmaj">
+        <br>Dernière <span title=" 2.4.4
+">mise à jour</span> le 03/03/2025	</span>
+</div>
+
+	<script language="javascript" type="text/javascript">
+		//<![CDATA[ 
+		function Aff(men) {
+			document.write("<ul class=\"menuDoc\">");
+			for(var no_rub=0;no_rub<men.num_rub;no_rub++) {
+				document.write("<li><a class='leftMenu' href='"+menu[no_rub].page+"'>");
+				document.write(men[no_rub].txt);
+				document.write("</a></li>");
+				if (men[no_rub].nb_lien != 0){
+					document.write("<ul class=\"sousMenuDoc\">");
+				}
+				for(var no_lien=0;no_lien<men[no_rub].nb_lien;no_lien++) {
+					document.write("<li><a class='leftMenu' href='"+men[no_rub][no_lien].page+"'>");
+					document.write(men[no_rub][no_lien].txt);
+					document.write("</a></li>");
+				}
+				if (men[no_rub].nb_lien != 0){
+					document.write("</ul>");
+				}
+			}
+			document.write("</ul>");
+		}
+		
+		function CreerMenu(police,imgRub,imgOption,imgOptionFin,hauteur) {
+			this.num_rub=0;
+			this.police=police;
+			this.imgRub=imgRub;
+			this.imgOpt=imgOption;
+			this.imgOptFin=imgOptionFin;
+			this.hauteur=hauteur;
+			this.AddRub=AddRub;
+			this.AddLien=AddLien;
+		}
+		
+		function AddRub(txt,aff,page) {
+			var rub = new Object;
+				rub.txt=txt;
+				rub.aff=aff;
+				rub.page=page;
+				rub.nb_lien=0;
+			this[this.num_rub]=rub;
+			this.num_rub++;
+		}
+
+		function AddLien(txt,page) {
+			var no_rub = this.num_rub-1;
+			var no_lien= this[no_rub].nb_lien;
+			var lien = new Object;
+				lien.txt=txt;
+				lien.page=page;
+			this[no_rub][no_lien]=lien;
+			this[no_rub].nb_lien++;
+		}
+		var menu=new CreerMenu("arial","img/dyn04.gif","img/dyn22.gif","img/dyn55.gif",18);
+		//]]> 
+		menu.AddRub("Description médicament","O","#Ann3bQuestceque");
+			menu.AddRub("Informations","O","#Ann3bInfoNecessaires");
+			menu.AddRub("Utilisation","O","#Ann3bCommentPrendre");
+			menu.AddRub("Effets indésirables","O","#Ann3bEffetsIndesirables");
+			menu.AddRub("Conservation","O","#Ann3bConservation");
+			menu.AddRub("Info. supplémentaires","O","#Ann3bEmballage");
+				</script>
+
+	<div id="container">
+		<div id="leftnav">
+			<div id="cadreMenuGauche">
+				<h2 class="sommaireMenu">Sommaire</h2>
+				<div id="menuGauche">
+					<script language="JavaScript" type="text/javascript">Aff(menu);</script>
+				</div>
+			</div>
+		</div>
+		<div id="contentPrincipal">
+			<div id="boutonsliens">
+				<a id='lien_fiche_info' href='extrait.php?specid=64720167' ><img id="ongletficheinfo" alt="Onglet fiche information" src="img/onglet_fiche_info_vert.png" /></a><a id='lien_rcp' href='affichageDoc.php?specid=64720167&amp;typedoc=R'><img class="onglet" alt="Onglet résumé des caractéristiques du produit" src="img/onglet_rcp_vert.png" /></a><a id='lien_notice' href='affichageDoc.php?specid=64720167&amp;typedoc=N'><img class="onglet" alt="Onglet notice patient" src="img/onglet_notice_gris.png" /></a>			</div>
+			<div class="titredeno">
+				<table summary="" border="0" cellspacing="0">
+					<tr><td colspan="3" height="10px"></td></tr>
+					<tr>
+						<td width="15px">&nbsp;</td>
+						<td width="685px"><h1 class="textedeno">VENTOLINE 100 microgrammes/dose, suspension pour inhalation en flacon pressurisé  - Notice patient</h1></td>
+						<td width="43px" class="tdcenter"><a href="Javascript:void(null)" onclick="print();"><img src="img/imprimante.png" height="20px" width="20px" alt="Imprimer le document" title="Imprimer le document" border="0" /></a></td>
+					</tr>
+					<tr><td colspan="3" height="10px"></td></tr>
+				</table>
+			</div>
+			
+			<div id="contentDocument">
+				<div id="textDocument">
+					<p class="DateNotif">ANSM - Mis à jour le : 22/01/2025</p>
+<p class="AmmNoticeTitre1"><a name="Ann3bDenomination">Dénomination du médicament</a></p>
+<p class=AmmCorpsTexteGras align=center style='text-align:center'><a name="_Toc142278999">VENTOLINE 100 microgrammes/dose, suspension pour inhalation en flacon pressurisé</a></p>
+<p class=AmmCorpsTexteGras align=center style='text-align:center'>Sulfate de salbutamol</p>
+<p class="AmmNoticeTitre1"><a name="Ann3bEncadre">Encadré</a></p>
+<p class=AmmCorpsTexteGras style='margin-bottom:0cm;margin-bottom:.0001pt'><a name="_Toc142279000">Veuillez lire attentivement cette notice avant d’utiliser ce médicament car elle contient des informations importantes pour vous.</a></p>
+<p class=AmmListePuces1 style='text-align:justify'><span style='font-family: Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>Gardez cette notice, vous pourriez avoir besoin de la relire.</p>
+<p class=AmmListePuces1 style='text-align:justify'><span style='font-family: Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>Si vous avez d’autres questions, interrogez votre médecin ou votre pharmacien.</p>
+<p class=AmmListePuces1 style='text-align:justify'><span style='font-family: Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>Ce médicament vous a été personnellement prescrit. Ne le donnez pas à d’autres personnes. Il pourrait leur être nocif, même si les signes de leur maladie sont identiques aux vôtres.</p>
+<p class=AmmListePuces1 style='text-align:justify'><span style='font-family: Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>Si vous ressentez un quelconque effet indésirable, qu'il soit mentionné ou non dans cette notice, parlez-en à votre médecin ou votre pharmacien. Voir rubrique 4.</p>
+<p class="AmmNoticeTitre1"><a name="Ann3bSomm">Que contient cette notice ?</a></p>
+<p class=AmmCorpsTexte style='margin-top:0cm;margin-right:0cm;margin-bottom: 0cm;margin-left:14.2pt;margin-bottom:.0001pt;text-indent:-14.2pt'>1. Qu'est-ce que <span style='text-transform:uppercase'>VENTOLINE 100</span> microgrammes/dose, suspension pour inhalation en flacon pressurisé et dans quels cas est-il utilisé ?</p>
+<p class=AmmCorpsTexte style='margin-top:0cm;margin-right:0cm;margin-bottom: 0cm;margin-left:14.2pt;margin-bottom:.0001pt;text-indent:-14.2pt'>2. Quelles sont les informations à connaître avant d'utiliser <span style='text-transform: uppercase'>VENTOLINE 100</span> microgrammes/dose, suspension pour inhalation en flacon pressurisé ?</p>
+<p class=AmmCorpsTexte style='margin-top:0cm;margin-right:0cm;margin-bottom: 0cm;margin-left:14.2pt;margin-bottom:.0001pt;text-indent:-14.2pt'>3. Comment utiliser <span style='text-transform:uppercase'>VENTOLINE 100</span> microgrammes/dose, suspension pour inhalation en flacon pressurisé ?</p>
+<p class=AmmCorpsTexte style='margin-top:0cm;margin-right:0cm;margin-bottom: 0cm;margin-left:14.2pt;margin-bottom:.0001pt;text-indent:-14.2pt'>4. Quels sont les effets indésirables éventuels ?</p>
+<p class=AmmCorpsTexte style='margin-top:0cm;margin-right:0cm;margin-bottom: 0cm;margin-left:14.2pt;margin-bottom:.0001pt;text-indent:-14.2pt'>5. Comment conserver <span style='text-transform:uppercase'>VENTOLINE 100</span> microgrammes/dose, suspension pour inhalation en flacon pressurisé ?</p>
+<p class=AmmCorpsTexte style='margin-top:0cm;margin-right:0cm;margin-bottom: 0cm;margin-left:14.2pt;margin-bottom:.0001pt;text-indent:-14.2pt'><span style='color:black'>6. Contenu de l’emballage et autres informations.</span></p>
+<h2><a name="Ann3bQuestceque">1. QU’EST-CE QUE VENTOLINE 100 microgrammes/dose, suspension pour inhalation en flacon pressurisé ET DANS QUELS CAS EST-IL UTILISE ?</a>&nbsp;&nbsp;<a href='#HautDePage'><img src='img/BackToTop.jpg' width='15px' height='15px' alt='Retour en haut de la page' title='Retour en haut de la page' /></a></h2>
+<p class=AmmCorpsTexte><a name="_Toc142279003">Classe pharmacothérapeutique : Bronchodilatateur Bêta-2 mimétique à action rapide et de courte durée par voie inhalée (R : Système Respiratoire) - code ATC : R03AC02</a></p>
+<p class=AmmCorpsTexte><a name="_Toc142279004">Ce médicament contient un bêta-2 mimétique : le salbutamol. </a></p>
+<p class=AmmCorpsTexte>C’est un bronchodilatateur <span class='italique'>(il augmente le calibre des bronches) </span>à action rapide (<span class='italique'>il agit en quelques minutes</span>) et de courte durée (4 à 6 heures) qui s’administre par voie inhalée <span class='italique'>(en l’inspirant par l'embout buccal de l'inhalateur)</span>.</p>
+<p class=AmmListePuces1 style='margin-top:0cm;margin-right:0cm;margin-bottom: 6.0pt;margin-left:0cm;text-indent:0cm'>Il est indiqué en cas de <span class=AmmCorpsTexteGrasCar>crise d’asthme</span> ou pour soulager une <span class=AmmCorpsTexteGrasCar>gêne respiratoire</span> au cours de la maladie asthmatique ou de certaines maladies des bronches.</p>
+<p class=AmmListePuces1 style='margin-top:0cm;margin-right:0cm;margin-bottom: 6.0pt;margin-left:17.85pt;text-indent:-17.85pt'>Il peut également vous être prescrit en <span class='gras'>traitement préventif de l’asthme déclenché par l’effort. </span></p>
+<p class=AmmCorpsTexte>Si vous avez de l'asthme, en fonction de sa sévérité, votre médecin peut prescrire VENTOLINE 100 microgrammes/dose, suspension pour inhalation en flacon pressurisé seul ou en complément d’un traitement de fond continu par un ou plusieurs autres médicaments, comme les corticoïdes par voie inhalée. </p>
+<p class=AmmListePuces1 style='margin-left:0cm;text-indent:0cm'>Ce médicament peut également vous être prescrit à l’occasion de certains tests respiratoires (explorations fonctionnelles respiratoires). </p>
+<h2><a name="Ann3bInfoNecessaires">2. QUELLES SONT LES INFORMATIONS A CONNAITRE AVANT D’UTILISER VENTOLINE 100 microgrammes/dose, suspension pour inhalation en flacon pressurisé ?</a>&nbsp;&nbsp;<a href='#HautDePage'><img src='img/BackToTop.jpg' width='15px' height='15px' alt='Retour en haut de la page' title='Retour en haut de la page' /></a></h2>
+<p class=AmmCorpsTexteGras><a name="_Toc142279015">N’utilisez jamais VENTOLINE 100 microgrammes/dose, suspension pour inhalation en flacon pressurisé:</a></p>
+<p class=AmmListePuces1 style='margin-top:0cm;margin-right:0cm;margin-bottom: 6.0pt;margin-left:17.85pt;text-indent:-17.85pt;page-break-after:avoid'><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>Si vous êtes allergique<span class='italique'> </span>au salbutamol <span class='italique'>(la substance active) </span>ou à l’un des autres composants contenus dans ce médicament, mentionnés dans la rubrique 6.</p>
+<p class=AmmCorpsTexte>Si vous ressentez une augmentation de la gêne respiratoire ou de la toux immédiatement après l’inhalation de ce produit, ne renouvelez pas la prise de ce médicament et contactez votre médecin. </p>
+<p class=AmmCorpsTexte>En cas de doute, demandez l’avis de votre médecin ou de votre pharmacien.</p>
+<p class=AmmCorpsTexteGras>Avertissements et précautions</p>
+<p class=AmmCorpsTexte>Adressez-vous à votre médecin ou pharmacien avant d’utiliser VENTOLINE 100 microgrammes/dose, suspension pour inhalation en flacon pressurisé. <span class='gras'>Faites attention avec ce médicament :</span></p>
+<p class=AmmListePuces1 style='margin-top:0cm;margin-right:0cm;margin-bottom: 6.0pt;margin-left:0cm;text-indent:0cm'>En cas de survenue de crises d’asthme, ou de gêne respiratoire, le soulagement habituellement obtenu doit être observé rapidement après l’utilisation de ce médicament. <span class='gras'>En cas d’échec, consultez immédiatement un médecin.</span></p>
+<p class=AmmListePuces1 style='margin-top:0cm;margin-right:0cm;margin-bottom: 6.0pt;margin-left:0cm;text-indent:0cm'>Si la dose habituellement efficace devient insuffisante, si les crises d'asthme ou les épisodes de gêne respiratoire deviennent plus fréquents, il faut craindre une aggravation de la maladie : <span class='gras'>consultez rapidement votre médecin qui réévaluera votre traitement.</span> (Voir rubrique 3)</p>
+<p class=AmmListePuces1 style='margin-top:0cm;margin-right:0cm;margin-bottom: 6.0pt;margin-left:0cm;text-indent:0cm'>Ce produit actif en inhalation, doit atteindre l’extrémité des petites bronches. En cas d’encombrement des voies respiratoires par des mucosités abondantes, notamment lors d’infection, son efficacité peut être diminuée. <span class='gras'>Consultez </span><span class='gras'>rapidement votre médecin afin qu’il mette en place un traitement adapté.</span></p>
+<p class=AmmListePuces1 style='text-align:justify'><span style='color:black'>Prévenez votre médecin </span><span style='color:black'>: </span></p>
+<p class=AmmListePuces1 style='margin-left:36.0pt;text-align:justify'>-<span style='font:7.0pt "Times New Roman"'>       </span>si vous avez des problèmes en lien avec votre glande thyroïde,</p>
+<p class=AmmListePuces1 style='margin-left:36.0pt;text-align:justify'>-<span style='font:7.0pt "Times New Roman"'>       </span>si vous avez des problèmes cardio-vasculaires, notamment certains troubles du rythme cardiaque, une angine de poitrine <span class='italique'>(sensation d'oppression thoracique et douleurs violentes localisées au niveau de la poitrine et pouvant s’étendre dans le bras gauche)</span>, ou une hypertension artérielle <span class='italique'>(augmentation de la pression du sang dans les artères)</span>,</p>
+<p class=AmmListePuces1 style='margin-left:36.0pt;text-align:justify'><span style='color:black'>-<span style='font:7.0pt "Times New Roman"'>       </span></span><span style='color:black'>si vous avez un diabète</span></p>
+<p class=AmmListePuces1 style='margin-bottom:6.0pt;text-align:justify'><span style='color:black'>afin qu'il détermine les modalités de traitement les mieux adaptées à votre cas.</span></p>
+<p class=AmmCorpsTexteGras>Autres médicaments et VENTOLINE 100 microgrammes/dose, suspension pour inhalation en flacon pressurisé</p>
+<p class=AmmCorpsTexte>Informez votre médecin ou pharmacien si vous prenez, avez pris récemment ou pourriez prendre tout autre médicament (en particulier des médicaments bêta-bloquants ou antidiabétiques), y compris un médicament obtenu sans ordonnance.</p>
+<p class=AmmCorpsTexteGras>VENTOLINE 100 microgrammes/dose, suspension pour inhalation en flacon pressurisé avec des aliments et boissons</p>
+<p class=AmmCorpsTexte>Sans objet.</p>
+<p class=AmmCorpsTexteGras><a name="_Toc142279012">Grossesse et allaitement </a></p>
+<p class=AmmCorpsTexte>D'une façon générale, demandez conseil à votre médecin ou à votre pharmacien avant de prendre tout médicament.</p>
+<p class=AmmCorpsTexte style='margin-bottom:6.0pt'><span style='font-size:10.0pt; font-family:"Arial",sans-serif'>Ce médicament dans les conditions normales d'utilisation peut être utilisé pendant la grossesse.</span></p>
+<p class=AmmCorpsTexte style='margin-bottom:6.0pt'><span style='font-size:10.0pt; font-family:"Arial",sans-serif'>Le salbutamol passe dans le lait maternel.</span></p>
+<p class=AmmCorpsTexteGras>Sportifs :</p>
+<p class=AmmCorpsTexte>Attention, ce médicament contient un principe actif pouvant rendre positifs les tests pratiqués lors de contrôles antidopage.</p>
+<p class=AmmCorpsTexteGras>Conduite de véhicules et utilisation de machines</p>
+<p class=AmmCorpsTexte>Sans objet.</p>
+<p class=AmmCorpsTexteGras>VENTOLINE 100 microgrammes/dose, suspension pour inhalation en flacon pressurisé contient :</p>
+<p class=AmmCorpsTexte>Sans objet.</p>
+<h2><a name="Ann3bCommentPrendre">3. COMMENT UTILISER VENTOLINE 100 microgrammes/dose, suspension pour inhalation en flacon pressurisé ?</a>&nbsp;&nbsp;<a href='#HautDePage'><img src='img/BackToTop.jpg' width='15px' height='15px' alt='Retour en haut de la page' title='Retour en haut de la page' /></a></h2>
+<p class=AmmCorpsTexteGras><a name="_Toc142279021">Instructions pour un bon usage</a></p>
+<p class=AmmCorpsTexte>L'inhalateur n'est pas muni d'un compteur de doses. Vous ne pouvez donc pas savoir combien de doses restent disponibles dans l’inhalateur. Aussi, il est recommandé de garder un 2<sup>ème</sup> inhalateur de VENTOLINE 100 microgrammes/dose, suspension pour inhalation en flacon pressurisé non entamé à disposition pour prendre le relais en cas de survenue imprévisible d'une crise d'asthme ou d'une gêne respiratoire alors que votre premier inhalateur serait vide. </p>
+<p class=AmmCorpsTexteGras><a name="_Toc142279017">Posologie :</a></p>
+<p class=AmmCorpsTexteGras><span style='font-weight:normal'>VENTOLINE 100 microgrammes/dose, suspension pour inhalation en flacon pressurisé doit être utilisé en fonction des besoins, plutôt qu’en prises régulières.</span></p>
+<p class=AmmCorpsTexte>Respectez toujours la posologie prescrite par votre médecin. En cas de doute, consultez votre médecin ou votre pharmacien.</p>
+<p class=AmmCorpsTexte>La dose recommandée est :</p>
+<p class=AmmListePuces1><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>en cas de crise d’asthme ou d'épisode aigu de gêne respiratoire : dès les premiers symptômes, inhalez 1 à 2 bouffées (voir ci-dessous « Mode d’emploi »).</p>
+<p class=AmmListePuces1 style='text-indent:0cm'>Cette dose peut éventuellement être répétée quelques minutes plus tard si nécessaire </p>
+<p class=AmmListePuces1 style='text-indent:0cm'> </p>
+<p class=AmmListePuces1 style='text-indent:0cm'><span class='gras'>Si les troubles ne régressent pas rapidement, consultez immédiatement </span><span class='gras'>un médecin.</span></p>
+<p class=AmmListePuces1 style='text-indent:0cm'> </p>
+<p class=AmmListePuces1 style='margin-top:0cm;margin-right:0cm;margin-bottom: 6.0pt;margin-left:17.85pt'><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>En cas de crise d'asthme sévère, les inhalations peuvent être renouvelées à raison de 2 à 6 bouffées toutes les 5 à 10 minutes jusqu'à une prise en charge éventuelle hospitalière. Dans ces situations, l'utilisation d'une chambre d’inhalation est recommandée pour faciliter l'administration. <span style='background:yellow'></span></p>
+<p class=AmmListePuces1 style='margin-top:0cm;margin-right:0cm;margin-bottom: 6.0pt;margin-left:17.85pt;text-indent:-17.85pt'><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>prévention de l’asthme d’effort : inhalez 1 à 2 bouffées (voir ci-dessous « Mode d’emploi »), 15 à 30 minutes avant l’exercice.</p>
+<p class=AmmCorpsTexte>La dose quotidienne ne doit habituellement pas dépasser<span style='color:black'> 8 </span>bouffées (voir ci-dessous ). Si vous avez besoin de prendre plus de 8 bouffées par jour de ce médicament pour soulagez vos symptômes respiratoires, vous devez consulter votre médecin afin qu'il réévalue votre traitement. </p>
+<p class=AmmCorpsTexteGras><span style='font-weight:normal'>Si votre asthme est instable (par exemple si vos symptômes ou vos exacerbations d’asthme sont fréquents, comme un souffle court qui rend la parole, l’alimentation ou le sommeil difficile, une toux, des sifflements lorsque vous respirez, si vous ressentez un serrement dans la poitrine ou si vos capacités physiques sont limitées par un essoufflement), vous devez avertir immédiatement votre médecin qui débutera ou augmentera les doses d’un traitement pour contrôler votre asthme, comme les corticostéroïdes par voie inhalée.</span></p>
+<p class=AmmCorpsTexteGras><span style='font-weight:normal'>Avertissez rapidement votre médecin si votre médicament ne vous soulage pas aussi bien que d’habitude (par exemple si vous avez besoin de doses plus importantes pour soulager vos difficultés respiratoires ou si votre inhalateur ne parvient pas à vous soulager pendant au moins trois heures) car votre asthme pourrait s’aggraver et vous pourriez avoir besoin d’un médicament différent.</span></p>
+<p class=AmmCorpsTexteGras><span style='font-weight:normal'>Si vous utilisez VENTOLINE 100 microgrammes/dose, suspension pour inhalation en flacon pressurisé plus de deux fois par semaine pour traiter vos symptômes d’asthme (en plus des utilisations en prévention avant un exercice physique) cela indique que votre asthme est mal contrôlé, ce qui pourrait augmenter le risque de crise d’asthme sévère (aggravation de l’asthme), entrainer des complications graves et pourrait menacer votre pronostic vital, voire être fatale. Vous devez alors contacter votre médecin au plus vite pour modifier votre traitement pour l’asthme.</span></p>
+<p class=AmmCorpsTexteGras><span style='font-weight:normal'>Si vous utilisez quotidiennement un médicament destiné à traiter l’inflammation des bronches (par exemple des « corticostéroïdes inhalés ») il est important de continuer à prendre ce médicament anti-inflammatoire régulièrement, même si vous vous sentez mieux.</span></p>
+<p class=AmmCorpsTexteGras>Mode d’administration :</p>
+<p class=AmmCorpsTexte>Voie inhalée (exclusivement par l'intermédiaire de l'embout buccal de l'inhalateur). </p>
+<p class=AmmCorpsTexte><span class='gras'>Lisez attentivement le mode d’emploi de l’inhalateur :</span></p>
+<p class=AmmCorpsTexte>L’efficacité de ce médicament dépend en partie d’une utilisation correcte de l’appareil. Au besoin, n’hésitez pas à demander à votre médecin de vous fournir des explications détaillées.</p>
+<p class=AmmAnnexeTitre4>Mode d’emploi :</p>
+<p class=AmmCorpsTexte>Lorsque vous utilisez votre inhalateur pour la première fois ou si vous ne l’avez pas utilisé depuis plus de 5 jours, vous devez vous assurer de son bon fonctionnement. Pour cela, retirez le capuchon de l’embout buccal en pressant doucement de chaque côté, agitez bien l’inhalateur, et appuyez sur la cartouche pour libérer deux bouffées de produit dans l’air. </p>
+<p class=AmmCorpsTexte>Pour l'utilisation courante de votre inhalateur, après avoir enlevé le capuchon de l’embout buccal en exerçant une pression de chaque côté<span class='gras'><span style='color:purple'> </span></span>de celui-ci :</p>
+<p class=AmmListePuces1><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>vérifiez l’absence de corps étrangers à l’intérieur de<span class='gras'><span style='color:purple'> </span></span>l’inhalateur y compris dans l’embout buccal,</p>
+<p class=AmmListePuces1 style='text-indent:0cm'> </p>
+<table class=AmmCorpsTexteTable border=1 cellspacing=0 cellpadding=0
+style='margin-left:18.0pt;border-collapse:collapse;border:none'>
+<tr style='height:68.95pt'>
+<td width=283 valign=top style='width:212.25pt;border:solid windowtext 1.0pt;
+padding:0cm 5.4pt 0cm 5.4pt;height:68.95pt'>
+<p class=AmmListePuces1 style='margin-left:0cm;text-indent:0cm'><img alt='' width=96 height=74 src="https://base-donnees-publique.medicaments.gouv.fr/Rcp_Notices/images//N0430349/image001.png" align=left hspace=12></p>
+</td>
+<td width=312 valign=top style='width:234.05pt;border:solid windowtext 1.0pt;
+border-left:none;padding:0cm 5.4pt 0cm 5.4pt;height:68.95pt'>
+<p class=AmmListePuces1><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>agitez bien l’inhalateur afin de mélanger les composants de la solution contenue dans la cartouche (fig.1),</p>
+<p class=AmmListePuces1 style='margin-left:0cm;text-indent:0cm'> </p>
+</td>
+</tr>
+<tr style='height:73.0pt'>
+<td width=283 valign=top style='width:212.25pt;border:solid windowtext 1.0pt;
+border-top:none;padding:0cm 5.4pt 0cm 5.4pt;height:73.0pt'>
+<p class=AmmListePuces1 style='margin-left:0cm;text-indent:0cm'><img alt='' width=96 height=72 src="https://base-donnees-publique.medicaments.gouv.fr/Rcp_Notices/images//N0430349/image002.png" align=left hspace=12></p>
+</td>
+<td width=312 valign=top style='width:234.05pt;border-top:none;border-left:
+none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+padding:0cm 5.4pt 0cm 5.4pt;height:73.0pt'>
+<p class=AmmListePuces1><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>videz vos poumons en expirant profondément en dehors de l'inhalateur (fig. 2),</p>
+</td>
+</tr>
+<tr style='height:61.9pt'>
+<td width=283 valign=top style='width:212.25pt;border:solid windowtext 1.0pt;
+border-top:none;padding:0cm 5.4pt 0cm 5.4pt;height:61.9pt'>
+<p class=AmmListePuces1 style='margin-left:0cm;text-indent:0cm'><img alt='' width=102 height=75 src="https://base-donnees-publique.medicaments.gouv.fr/Rcp_Notices/images//N0430349/image003.png" align=left hspace=12></p>
+</td>
+<td width=312 valign=top style='width:234.05pt;border-top:none;border-left:
+none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+padding:0cm 5.4pt 0cm 5.4pt;height:61.9pt'>
+<p class=AmmListePuces1><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>placez l’embout buccal entre les lèvres à l’entrée de la bouche, le fond de la cartouche métallique dirigé vers le haut (fig. 3),</p>
+<p class=AmmListePuces1><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>commencez à inspirer et pressez sur la cartouche métallique tout en continuant à inspirer lentement et profondément (fig. 3),</p>
+</td>
+</tr>
+<tr style='height:68.6pt'>
+<td width=283 valign=top style='width:212.25pt;border:solid windowtext 1.0pt;
+border-top:none;padding:0cm 5.4pt 0cm 5.4pt;height:68.6pt'>
+<p class=AmmListePuces1 style='margin-left:0cm;text-indent:0cm'><img alt='' width=102 height=78 src="https://base-donnees-publique.medicaments.gouv.fr/Rcp_Notices/images//N0430349/image004.png" align=left hspace=12></p>
+</td>
+<td width=312 valign=top style='width:234.05pt;border-top:none;border-left:
+none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+padding:0cm 5.4pt 0cm 5.4pt;height:68.6pt'>
+<p class=AmmListePuces1><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>retirez l’embout buccal de la bouche et retenez votre respiration pendant au moins 10 secondes (fig. 4),</p>
+<p class=AmmListePuces1 style='margin-left:0cm;text-indent:0cm'> </p>
+</td>
+</tr>
+</table>
+<p class=AmmListePuces1> </p>
+<p class=AmmListePuces1><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>si vous avez besoin d'une 2<sup>ème</sup> bouffée, renouveler la manipulation (schémas 2, 3, 4),</p>
+<p class=AmmListePuces1><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>puis, repositionnez le capuchon sur l’embout buccal et appuyez fermement pour le remettre en<span class='gras'><span style='color:purple'> </span></span>position,</p>
+<p class=AmmListePuces1 style='margin-top:0cm;margin-right:0cm;margin-bottom: 6.0pt;margin-left:17.85pt;text-indent:-17.85pt'><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>par mesure d’hygiène, l’embout buccal doit être nettoyé après emploi.</p>
+<p class=AmmCorpsTexteGras><span class='italique'>Contrôlez votre technique d’inhalation devant une glace :</span></p>
+<p class=AmmCorpsTexte>Si une quantité importante de produit s’échappe par le nez ou la bouche, les points suivants sont à surveiller : soit la pression de la cartouche métallique a eu lieu avant le début ou après la fin de l’inspiration, soit l’inspiration n’a pas été suffisamment profonde.</p>
+<p class=AmmCorpsTexteGras><span class='italique'>Nettoyage :</span></p>
+<p class=AmmCorpsTexteGras>Nettoyez votre aérosol-doseur au moins une fois par semaine.</p>
+<p class=AmmListePuces1><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>Séparez la cartouche de l’applicateur en plastique et retirez le capuchon,</p>
+<p class=AmmListePuces1><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>Rincez soigneusement l’applicateur en plastique sous l’eau tiède, mais ne plongez pas la cartouche métallique dans l’eau.</p>
+<p class=AmmListePuces1><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>Séchez soigneusement l’applicateur à l'aide d'un tissu sec aussi bien à l’intérieur qu’à l’extérieur,</p>
+<p class=AmmListePuces1 style='margin-top:0cm;margin-right:0cm;margin-bottom: 6.0pt;margin-left:17.85pt;text-indent:-17.85pt'><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>Une fois ces opérations effectuées, remettez en place la cartouche métallique et le capuchon.</p>
+<p class=AmmCorpsTexteGras><span class='italique'>Utilisation d’une chambre d’inhalation :</span></p>
+<p class=AmmCorpsTexte>En cas de difficulté à utiliser l’inhalateur ou si le médicament est destiné à de jeunes enfants, votre médecin peut conseiller l’utilisation d’une chambre d’inhalation. Une chambre d'inhalation est un dispositif servant de réservoir sur lequel est l’embout buccal de l'inhalateur et permettant d’inhaler plus facilement le médicament sans synchronisation main-poumon nécessaire pour que l'inspiration puisse être réalisée en même temps que le déclenchement du dispositif. </p>
+<p class=AmmCorpsTexte>Dans ce cas, vous devez inhaler immédiatement le médicament par l'embout buccal de la chambre d'inhalation après chaque déclenchement de l'inhalateur (ou éventuellement après chaque série de deux déclenchements successifs) en pressant la cartouche afin de libérer l'aérosol à l'intérieur de la chambre d’inhalation.</p>
+<p class=AmmCorpsTexteGras>Si vous avez utilisé plus de VENTOLINE 100 microgrammes/dose, suspension pour inhalation en flacon pressurisé que vous n’auriez dû</p>
+<p class=AmmCorpsTexte>Si vous prenez une dose supérieure à la dose recommandée, vous pouvez présenter des effets indésirables tels que tachycardie <span class='italique'>(accélération du rythme cardiaque)</span>, maux de tête, tremblements des mains ou nervosité/agitation (voir la rubrique 4 : « Quels sont les effets indésirables éventuels ? »).</p>
+<p class=AmmCorpsTexte>Consultez votre médecin et emportez avec vous cette notice ou votre médicament afin que votre médecin sache de quel médicament il s'agit. </p>
+<p class=AmmCorpsTexteGras>Si vous oubliez d’utiliser VENTOLINE 100 microgrammes/dose, suspension pour inhalation en flacon pressurisé</p>
+<p class=AmmCorpsTexte><a name="_Toc142279020">Ne prenez pas de dose double pour compenser la dose que vous avez oublié de prendre.</a></p>
+<p class=AmmCorpsTexteGras>Si vous arrêtez d’utiliser VENTOLINE 100 microgrammes/dose, suspension pour inhalation en flacon pressurisé </p>
+<p class=AmmCorpsTexte>Sans objet.</p>
+<h2><a name="Ann3bEffetsIndesirables">4. QUELS SONT LES EFFETS INDESIRABLES EVENTUELS ?</a>&nbsp;&nbsp;<a href='#HautDePage'><img src='img/BackToTop.jpg' width='15px' height='15px' alt='Retour en haut de la page' title='Retour en haut de la page' /></a></h2>
+<p class=AmmCorpsTexte><a name="_Toc142279023">Comme tous les médicaments, ce médicament peut provoquer des effets indésirables, mais ils ne surviennent pas systématiquement chez tout le monde.</a><span lang=FR-BE> </span></p>
+<p class=AmmListePuces1 style='margin-top:0cm;margin-right:0cm;margin-bottom: 6.0pt;margin-left:0cm;text-indent:0cm'>Lors d'un traitement avec le salbutamol, certaines personnes peuvent parfois (fréquence de survenue non connue) ressentir une douleur dans le thorax (sensation d'oppression) qui peut être due à des problèmes cardiaques tels qu’une angine de poitrine. <span class='gras'>Prévenez rapidement votre médecin</span> si vous ressentez de tels symptômes. </p>
+<p class=AmmListePuces1 style='margin-left:0cm;text-indent:0cm'>En cas d'aggravation de votre gêne respiratoire (respiration sifflante) juste après la prise de ce médicament, cessez immédiatement de l'utiliser, et contactez votre médecin dès que possible. </p>
+<p class=AmmCorpsTexte><span class=hps>Si disponible</span>, utilisez dès que possible un autre <span class=hps>médicament bronchodilatateur d’action rapide pour traiter </span>votre<span class=hps> asthme.</span></p>
+<p class=AmmCorpsTexte><span class='gras'>Peuvent également être observés :</span></p>
+<p class=AmmCorpsTexteGras>Aux doses habituellement prescrites :</p>
+<p class=AmmListePuces1><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span><span class='gras'>Fréquemment :</span></p>
+<p class=AmmCorpsTexte style='margin-top:0cm;margin-right:0cm;margin-bottom: 0cm;margin-left:36.0pt;margin-bottom:.0001pt;text-indent:-18.0pt'><span style='font-family:"Courier New"'>o<span style='font:7.0pt "Times New Roman"'>    </span></span>tremblements des extrémités <span class='italique'>(pieds et mains)</span>,</p>
+<p class=AmmCorpsTexte style='margin-top:0cm;margin-right:0cm;margin-bottom: 0cm;margin-left:36.0pt;margin-bottom:.0001pt;text-indent:-18.0pt'><span style='font-family:"Courier New"'>o<span style='font:7.0pt "Times New Roman"'>    </span></span>accélération du rythme cardiaque,</p>
+<p class=AmmCorpsTexte style='margin-left:35.7pt;text-indent:-17.85pt'><span style='font-family:"Courier New"'>o<span style='font:7.0pt "Times New Roman"'>    </span></span>maux de tête.</p>
+<p class=AmmListePuces1><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span><span class='gras'>Peu fréquemment :</span></p>
+<p class=AmmCorpsTexte style='margin-top:0cm;margin-right:0cm;margin-bottom: 0cm;margin-left:36.0pt;margin-bottom:.0001pt;text-indent:-18.0pt'><span style='font-family:"Courier New"'>o<span style='font:7.0pt "Times New Roman"'>    </span></span>palpitations,</p>
+<p class=AmmCorpsTexte style='margin-top:0cm;margin-right:0cm;margin-bottom: 0cm;margin-left:36.0pt;margin-bottom:.0001pt;text-indent:-18.0pt'><span style='font-family:"Courier New"'>o<span style='font:7.0pt "Times New Roman"'>    </span></span>irritations de la bouche ou de la gorge,</p>
+<p class=AmmCorpsTexte style='margin-left:35.7pt;text-indent:-17.85pt'><span style='font-family:"Courier New"'>o<span style='font:7.0pt "Times New Roman"'>    </span></span>crampes musculaires.</p>
+<p class=AmmListePuces1><span style='font-family: Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span><span class='gras'>Rarement :</span></p>
+<p class=AmmCorpsTexte style='margin-left:36.0pt;text-indent:-18.0pt; page-break-after:avoid'><span style='font-family:"Courier New"'>o<span style='font:7.0pt "Times New Roman"'>    </span></span><span class=AmmCorpsTexteCar>comme avec d’autres produits administrés par voie inhalée, une toux ou une augmentation de la gêne respiratoire (respiration sifflante) pourrait survenir immédiatement après l’inhalation du produit. Dans ce cas, <span class='gras'>arrêtez le traitement et contactez votre médecin afin qu’il envisage un autre traitement.</span></span></p>
+<p class=AmmListePuces1><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span><span class='gras'>Très rarement :</span></p>
+<p class=AmmCorpsTexte style='margin-top:0cm;margin-right:0cm;margin-bottom: 0cm;margin-left:71.7pt;margin-bottom:.0001pt;text-indent:-50.4pt'><span style='font-family:"Courier New"'>o<span style='font:7.0pt "Times New Roman"'>            </span></span>bouffées de chaleur, rougeurs sur la peau,</p>
+<p class=AmmCorpsTexte style='margin-top:0cm;margin-right:0cm;margin-bottom: 0cm;margin-left:71.7pt;margin-bottom:.0001pt;text-indent:-50.4pt'><span style='font-family:"Courier New"'>o<span style='font:7.0pt "Times New Roman"'>            </span></span>anomalie du rythme cardiaque,</p>
+<p class=AmmCorpsTexte style='margin-top:0cm;margin-right:0cm;margin-bottom: 0cm;margin-left:71.7pt;margin-bottom:.0001pt;text-indent:-50.4pt'><span style='font-family:"Courier New"'>o<span style='font:7.0pt "Times New Roman"'>            </span></span>nervosité, agitation,</p>
+<p class=AmmCorpsTexte style='margin-left:35.45pt;text-indent:-14.2pt'><span style='font-family:"Courier New"'>o<span style='font:7.0pt "Times New Roman"'>   </span></span>réactions allergiques pouvant se manifester par une sensation d’oppression dans la poitrine, des démangeaisons, un sifflement respiratoire, un gonflement des paupières, du visage et/ou des lèvres et éruption cutanée, une baisse de la tension artérielle pouvant aller jusqu’au malaise.</p>
+<p class=AmmCorpsTexteGras>A des doses très élevées :</p>
+<p class=AmmCorpsTexte style='margin-top:0cm;margin-right:0cm;margin-bottom: 0cm;margin-left:35.45pt;margin-bottom:.0001pt;text-indent:-14.15pt'><span style='font-family:"Courier New"'>o<span style='font:7.0pt "Times New Roman"'>   </span></span>augmentation de la quantité de sucre dans le sang, régressant à l’arrêt du traitement,</p>
+<p class=AmmCorpsTexte style='margin-left:35.45pt;text-indent:-14.2pt'><span style='font-family:"Courier New"'>o<span style='font:7.0pt "Times New Roman"'>   </span></span>diminution du taux de potassium dans le sang (très rarement).</p>
+<p class=AmmCorpsTexteGras>Déclaration des effets secondaires</p>
+<p class=AmmCorpsTexte>Si vous ressentez un quelconque effet indésirable, parlez-en à votre médecin ou votre pharmacien. Ceci s’applique aussi à tout effet indésirable qui ne serait pas mentionné dans cette notice. Vous pouvez également déclarer les effets indésirables directement via le système national de déclaration : Agence nationale de sécurité du médicament et des produits de santé (ANSM) et réseau des Centres Régionaux de Pharmacovigilance - Site internet :<span style='color:red'> </span><span class='souligne'><span style='color:blue'>https://signalement.social-sante.gouv.fr</span></span></p>
+<p class=AmmCorpsTexte>En signalant les effets indésirables, vous contribuez à fournir davantage d’informations sur la sécurité du médicament.</p>
+<h2><a name="Ann3bConservation">5. COMMENT CONSERVER VENTOLINE 100 microgrammes/dose, suspension pour inhalation en flacon pressurisé ?</a>&nbsp;&nbsp;<a href='#HautDePage'><img src='img/BackToTop.jpg' width='15px' height='15px' alt='Retour en haut de la page' title='Retour en haut de la page' /></a></h2>
+<p class=AmmCorpsTexte><a name="_Toc142279026"></a><a name="_Toc142279024">Tenir ce médicament hors de la vue et de la portée des enfants.</a></p>
+<p class=AmmCorpsTexte><span lang=FR-BE>N’utilisez pas ce médicament après la date de péremption indiquée sur la boîte. La date de péremption fait référence au dernier jour de ce mois.</span></p>
+<p class=AmmCorpsTexte>Le récipient est sous pression : ne l’exposez pas à une chaleur supérieure à 30°C, ni au soleil. Ne le percez pas, ne le jetez pas au feu même vide. Ne pas congeler.</p>
+<p class=AmmCorpsTexte>Immédiatement après utilisation, repositionnez le capuchon sur l’embout buccal et appuyez fermement pour le remettre en position. Ne forcez pas sur le capuchon.</p>
+<p class=AmmCorpsTexte>Ne jetez aucun médicament au tout-à-l’égout ou avec les ordures ménagères. Demandez à votre pharmacien d’éliminer les médicaments que vous n’utilisez plus. Ces mesures contribueront à protéger l’environnement.</p>
+<h2><a name="Ann3bEmballage">6. CONTENU DE L’EMBALLAGE ET AUTRES INFORMATIONS</a>&nbsp;&nbsp;<a href='#HautDePage'><img src='img/BackToTop.jpg' width='15px' height='15px' alt='Retour en haut de la page' title='Retour en haut de la page' /></a></h2>
+<p class="AmmAnnexeTitre2"><a name="RcpConduite">Ce que contient VENTOLINE 100 microgrammes/dose, suspension pour inhalation en flacon pressurisé </a>&nbsp;&nbsp;<a href='#HautDePage'><img src='img/BackToTop.jpg' width='15px' height='15px' alt='Retour en haut de la page' title='Retour en haut de la page' /></a></p>
+<p class=AmmListePuces1><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>La substance active est :</p>
+<p class=AmmComposition style='margin-bottom:0cm;margin-bottom:.0001pt'>Sulfate de Salbutamol :................................................................................... 120,50 microgrammes </p>
+<p class=AmmCorpsTexte style='margin-bottom:0cm;margin-bottom:.0001pt'>Correspondant à 100,00 microgrammes de salbutamol.</p>
+<p class=AmmComposition align=center style='margin-bottom:0cm;margin-bottom: .0001pt;text-align:center'>Pour une dose.</p>
+<p class=AmmListePuces1><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>L’autre composant est : </p>
+<p class=AmmComposition style='margin-bottom:0cm;margin-bottom:.0001pt'>Gaz propulseur : le norflurane (tétrafluoroéthane ou HFA 134a).</p>
+<p class=AmmCorpsTexte> </p>
+<p class=AmmCorpsTexte>Ce médicament contient des gaz à effet de serre fluorés. </p>
+<p class=AmmCorpsTexte>Chaque inhalateur contient 18 g de<span class=ui-provider> HFC-134a (aussi appelé norflurane ou tétrafluoroéthane ou HFA 134a) correspondant à 0,0257 tonne équivalent CO<sub>2 </sub>(potentiel de réchauffement global (PRG) = 1 430).</span></p>
+<p class="AmmAnnexeTitre2"><a name="RcpConduite">Qu’est-ce que VENTOLINE 100 microgrammes/dose, suspension pour inhalation en flacon pressurisé et contenu de l’emballage extérieur</a>&nbsp;&nbsp;<a href='#HautDePage'><img src='img/BackToTop.jpg' width='15px' height='15px' alt='Retour en haut de la page' title='Retour en haut de la page' /></a></p>
+<p class=AmmCorpsTexte>Ce médicament se présente sous forme de suspension pour inhalation en flacon de 200 doses.</p>
+<p class="AmmAnnexeTitre2"><a name="Ann3bTituAMM">Titulaire de l’autorisation de mise sur le marché</a>&nbsp;&nbsp;<a href='#HautDePage'><img src='img/BackToTop.jpg' width='15px' height='15px' alt='Retour en haut de la page' title='Retour en haut de la page' /></a></p>
+<p class=AmmCorpsTexteGras style='margin-bottom:0cm;margin-bottom:.0001pt'><a name="_Toc142279031">LABORATOIRE GLAXOSMITHKLINE</a></p>
+<p class=AmmCorpsTexte style='margin-bottom:0cm;margin-bottom:.0001pt'>23 RUE FRANCOIS JACOB</p>
+<p class=AmmCorpsTexte style='margin-bottom:0cm;margin-bottom:.0001pt'>92500 RUEIL-MALMAISON</p>
+<p class="AmmAnnexeTitre2"><a name="Ann3bExploitAMM">Exploitant de l’autorisation de mise sur le marché</a>&nbsp;&nbsp;<a href='#HautDePage'><img src='img/BackToTop.jpg' width='15px' height='15px' alt='Retour en haut de la page' title='Retour en haut de la page' /></a></p>
+<p class=AmmCorpsTexteGras style='margin-bottom:0cm;margin-bottom:.0001pt'><a name="_Toc142279032">LABORATOIRE GLAXOSMITHKLINE</a></p>
+<p class=AmmCorpsTexte style='margin-bottom:0cm;margin-bottom:.0001pt'>23 RUE FRANCOIS JACOB</p>
+<p class=AmmTitulaireAdresse>92500 RUEIL-MALMAISON<span class='gras'> </span></p>
+<p class="AmmAnnexeTitre2"><a name="Ann3bFab">Fabricant</a>&nbsp;&nbsp;<a href='#HautDePage'><img src='img/BackToTop.jpg' width='15px' height='15px' alt='Retour en haut de la page' title='Retour en haut de la page' /></a></p>
+<p class=AmmCorpsTexteGras style='margin-bottom:0cm;margin-bottom:.0001pt'><a name="_Toc142279033">GLAXO WELLCOME PRODUCTION</a></p>
+<p class=AmmCorpsTexte style='margin-bottom:0cm;margin-bottom:.0001pt'>ZONE INDUSTRIELLE N° 2</p>
+<p class=AmmCorpsTexte style='margin-bottom:0cm;margin-bottom:.0001pt'>23 RUE LAVOISIER</p>
+<p class=AmmCorpsTexte style='margin-bottom:0cm;margin-bottom:.0001pt'>27000 EVREUX</p>
+<p class=AmmCorpsTexte style='margin-top:6.0pt'>ou</p>
+<p class=AmmCorpsTexteGras style='margin-bottom:0cm;margin-bottom:.0001pt'>GLAXO WELLCOME, S.A.</p>
+<p class=AmmCorpsTexte style='margin-bottom:0cm;margin-bottom:.0001pt'>AVENIDA DE EXTREMADURA 3</p>
+<p class=AmmCorpsTexte style='margin-bottom:0cm;margin-bottom:.0001pt'>09400 ARANDA DE DUERO (BURGOS)</p>
+<p class=AmmCorpsTexte style='margin-bottom:0cm;margin-bottom:.0001pt'>ESPAGNE</p>
+<p class="AmmAnnexeTitre2"><a name="Ann3bNomsMediEEE">Noms du médicament dans les Etats membres de l'Espace Economique Européen</a>&nbsp;&nbsp;<a href='#HautDePage'><img src='img/BackToTop.jpg' width='15px' height='15px' alt='Retour en haut de la page' title='Retour en haut de la page' /></a></p>
+<p class=AmmCorpsTexte>Sans objet.</p>
+<p class="AmmAnnexeTitre2"><a name="Ann3bContenu">La dernière date à laquelle cette notice a été révisée est :</a>&nbsp;&nbsp;<a href='#HautDePage'><img src='img/BackToTop.jpg' width='15px' height='15px' alt='Retour en haut de la page' title='Retour en haut de la page' /></a></p>
+<p class=AmmCorpsTexte><a name="_Toc142279038"><span style='color:#538135'>[à compléter ultérieurement par le titulaire]</span></a></p>
+<p class="AmmAnnexeTitre2"><a name="Ann3bAutres">Autres</a>&nbsp;&nbsp;<a href='#HautDePage'><img src='img/BackToTop.jpg' width='15px' height='15px' alt='Retour en haut de la page' title='Retour en haut de la page' /></a></p>
+<p class=AmmCorpsTexte>Des informations détaillées sur ce médicament sont disponibles sur le site Internet de l’ANSM (France).</p>
+<p class=AmmAnnexeTitre style='margin-top:0cm'> </p>
+<p class=AmmCorpsTexte> </p>
+<p class=AmmCorpsTexte> </p>
+<p class=AmmCorpsTexte> </p>
+<p class=AmmCorpsTexte> </p>
+<p class=AmmCorpsTexte> </p>
+<p class=AmmCorpsTexte align=center style='text-align:center'> </p>
+</div>					
+					<p class="alignright"><a href="#HautDePage">Retour en haut de la page <img src="img/BackToTop.jpg" width="20px" height="20px" alt="Retour en haut de la page" title="Retour en haut de la page" /></a></p>
+				</div>
+			</div>
+		</div>
+	</div>
+
+<table summary="" class="content" width="1000">
+	<tr>
+		<td height="100px">&nbsp;</td>
+	</tr>
+</table>
+<table summary="Pied de page" class="footer" width="1000">
+	<tr>
+		<td>
+			<table summary="" class="tablealigncenter" border="0">
+				<tr>
+					<td width="100px" class="aligncenter"><a id="lien_ansm" href="http://ansm.sante.fr/" target="_blank"><img src="img/Logo_ANSM.png" width="150" height="60" alt="ANSM - Agence nationale de sécurité du médicament et des produits de santé" title="L'ANSM met à disposition les principales informations issues de l'Autorisation de mise sur le marché, l'appartenance à un groupe générique, les liens vers les informations de sécurité qu'elle publie, l'identification des médicaments sous surveillance renforcée - nouvelle fenêtre" /></a></td>
+					          <td>&nbsp;</td>
+					<td width="100px" class="aligncenter"><img src="img/Logo_HAS.png" width="150" height="60" alt="HAS - Haute autorité de santé" title="La HAS met à disposition les informations relatives au service médical rendu, à l'amélioration du service médical rendu ainsi que les liens vers les avis de la Commission de la Transparence correspondants - nouvelle fenêtre" /></td>
+					<td>&nbsp;</td>
+					<td width="100px" class="aligncenter"><img src="img/Logo_CNAM.png" width="150" height="60" alt="UNCAM - Unin nationale des caisses d'assurance maladie" title="L'UNCAM met à disposition le taux de remboursement, le prix et les indications remboursables le cas échéant, ainsi que l'agrément aux collectivités - nouvelle fenêtre" /></td>
+          				</tr>
+			</table> 
+		</td>
+	</tr>
+</table>
+<table summary="" class="finpage" width="1000">
+	<tr>
+		<td height="100px" class="aligncenter">
+			<a class="navigation" href="plan.php">Plan du site</a>&nbsp;|&nbsp;
+			<a class="navigation" href="accessibilite.php">Accessibilité</a>&nbsp;|&nbsp;
+			<a class="navigation" href="contact.php">Contact</a>&nbsp;|&nbsp;
+			<a class="navigation" href="telechargement.php">Téléchargement</a>&nbsp;|&nbsp;
+			<a class="navigation" href="DeclarationConfidentialite.php">Declaration de confidentialité</a>&nbsp;|&nbsp;
+			<a class="navigation" href="http://www.service-public.fr/" title="Service Public - Nouvelle fenêtre" target="_blank">Service-Public.fr</a>&nbsp;|&nbsp;
+			<a class="navigation" href="http://www.legifrance.gouv.fr/" title="Legifrance - Nouvelle fenêtre" target="_blank">Legifrance</a>&nbsp;|&nbsp;
+			<a class="navigation" href="http://www.gouvernement.fr/" title="Gouvernement - Nouvelle fenêtre" target="_blank" >Gouvernement.fr</a>
+		</td>
+	</tr>
+</table>
+
+
+
+<!-- Matomo -->
+<script type="text/javascript">
+  var _paq = window._paq = window._paq || [];
+  /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
+  _paq.push(['trackPageView']);
+  _paq.push(['enableLinkTracking']);
+  (function() {
+    var u="https://stats.integra.fr/";
+    _paq.push(['setTrackerUrl', u+'matomo.php']);
+    _paq.push(['setSiteId', '79']);
+    var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+    g.type='text/javascript'; g.async=true; g.src=u+'matomo.js'; s.parentNode.insertBefore(g,s);
+  })();
+</script>
+<!-- End Matomo Code -->
+
+
+
+</body>
+</html>

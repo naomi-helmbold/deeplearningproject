@@ -1,0 +1,440 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="fr" lang="fr">
+<head>
+	<title>Notice patient - KARDEGIC 160 mg, poudre pour solution buvable en sachet  - Base de données publique des médicaments</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=windows-1252"/>
+	<meta name="robots" content="index, follow"/>
+	<meta name="Description" content="Base de données publique des médicaments"/>
+	<meta name="Keywords" content="base, données, publique, médicaments, Notice patient, KARDEGIC 160 mg, poudre pour solution buvable en sachet "/>
+	<meta name="Subject" content="medicament"/>
+	<link href='https://fonts.googleapis.com/css?family=Noticia+Text' rel='stylesheet' type='text/css' />
+	<link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro' rel='stylesheet' type='text/css' />
+	<link href="style/style_bdm.css?v=2.2.3" type="text/css" rel="stylesheet"/>
+	<link href="style/style_RCP_Notice.css" type="text/css" rel="stylesheet"/>
+  <link rel="alternate" href="http://m.base-donnees-publique.medicaments.gouv.fr/#!info-61348441">
+    <script type="text/javascript" src="scripts/autocomplete.js?v=2.2.3"></script>
+	<script type="text/javascript" src="scripts/jquery.js"></script>
+    <script type="text/javascript" src="scripts/jquery-ui.min.js"></script>
+	<script type="text/javascript" src="scripts/common.js"></script>
+	<link rel="icon" type="image/x-icon" href="favicon.ico" />
+</head>
+
+<body>
+
+<a name="HautDePage" />
+<div id="bandeauhaut">
+	<a id="lien_ministere" class="lienmenu" href="http://www.sante.gouv.fr" target="_blank" title="Site du ministère des affaires sociales et de la santé - nouvelle fenêtre"><img id="logoministere" src="img/Logo_Ministere.jpg"  alt="Logo du ministère des affaires sociales et de la santé"/></a>
+	<h1 class="texteTitreSite">
+		Base <span class="texteBleu">de</span> données <span class="texteBleu">publique</span><br/><span class="texteBleu">des</span> médicaments
+	</h1>
+		<a id="lien_medicament_gouv" class="lienEspaceMedic" target="_blank" href="http://medicaments.gouv.fr" title="Visiter [medicaments.gouv.fr] - nouvelle fenêtre">Visiter [medicaments.gouv.fr] <img src="/img/icone_lien.png" alt="Visiter [medicaments.gouv.fr]"  title="Visiter [medicaments.gouv.fr] - nouvelle fenetre" /></a>
+</div>
+<!--div align="center">
+	<a id="banniere" target="_blank" href="http://social-sante.gouv.fr/soins-et-maladies/medicaments/medicaments-generiques/" title="Visiter [medicaments.gouv.fr] - M?dicaments g?n?riques">
+		<img width="1000"   src ="/img/carrouselbannieres.gif" alt="Visiter [medicaments.gouv.fr] - M?dicaments g?n?riques" title="Visiter [medicaments.gouv.fr] - M?dicaments g?n?riques" />
+	</a>
+</div-->
+
+<div id="menuhaut">
+	<span id="menuhaut_gauche">
+		<a id="lien_accueil" class="navigation" href="index.php">Accueil</a>&nbsp;|&nbsp;
+		<a id="lien_glossaire" class="navigation" href="glossaire.php">Glossaire</a>&nbsp;|&nbsp;
+		<a id="lien_aide" class="navigation" href="aide.php">Aide</a>		
+	</span>
+	
+		
+	<span id="menuhaut_dernmaj">
+        <br>Dernière <span title=" 2.4.4
+">mise à jour</span> le 03/03/2025	</span>
+</div>
+
+	<script language="javascript" type="text/javascript">
+		//<![CDATA[ 
+		function Aff(men) {
+			document.write("<ul class=\"menuDoc\">");
+			for(var no_rub=0;no_rub<men.num_rub;no_rub++) {
+				document.write("<li><a class='leftMenu' href='"+menu[no_rub].page+"'>");
+				document.write(men[no_rub].txt);
+				document.write("</a></li>");
+				if (men[no_rub].nb_lien != 0){
+					document.write("<ul class=\"sousMenuDoc\">");
+				}
+				for(var no_lien=0;no_lien<men[no_rub].nb_lien;no_lien++) {
+					document.write("<li><a class='leftMenu' href='"+men[no_rub][no_lien].page+"'>");
+					document.write(men[no_rub][no_lien].txt);
+					document.write("</a></li>");
+				}
+				if (men[no_rub].nb_lien != 0){
+					document.write("</ul>");
+				}
+			}
+			document.write("</ul>");
+		}
+		
+		function CreerMenu(police,imgRub,imgOption,imgOptionFin,hauteur) {
+			this.num_rub=0;
+			this.police=police;
+			this.imgRub=imgRub;
+			this.imgOpt=imgOption;
+			this.imgOptFin=imgOptionFin;
+			this.hauteur=hauteur;
+			this.AddRub=AddRub;
+			this.AddLien=AddLien;
+		}
+		
+		function AddRub(txt,aff,page) {
+			var rub = new Object;
+				rub.txt=txt;
+				rub.aff=aff;
+				rub.page=page;
+				rub.nb_lien=0;
+			this[this.num_rub]=rub;
+			this.num_rub++;
+		}
+
+		function AddLien(txt,page) {
+			var no_rub = this.num_rub-1;
+			var no_lien= this[no_rub].nb_lien;
+			var lien = new Object;
+				lien.txt=txt;
+				lien.page=page;
+			this[no_rub][no_lien]=lien;
+			this[no_rub].nb_lien++;
+		}
+		var menu=new CreerMenu("arial","img/dyn04.gif","img/dyn22.gif","img/dyn55.gif",18);
+		//]]> 
+		menu.AddRub("Description médicament","O","#Ann3bQuestceque");
+			menu.AddRub("Informations","O","#Ann3bInfoNecessaires");
+			menu.AddRub("Utilisation","O","#Ann3bCommentPrendre");
+			menu.AddRub("Effets indésirables","O","#Ann3bEffetsIndesirables");
+			menu.AddRub("Conservation","O","#Ann3bConservation");
+			menu.AddRub("Info. supplémentaires","O","#Ann3bEmballage");
+				</script>
+
+	<div id="container">
+		<div id="leftnav">
+			<div id="cadreMenuGauche">
+				<h2 class="sommaireMenu">Sommaire</h2>
+				<div id="menuGauche">
+					<script language="JavaScript" type="text/javascript">Aff(menu);</script>
+				</div>
+			</div>
+		</div>
+		<div id="contentPrincipal">
+			<div id="boutonsliens">
+				<a id='lien_fiche_info' href='extrait.php?specid=61348441' ><img id="ongletficheinfo" alt="Onglet fiche information" src="img/onglet_fiche_info_vert.png" /></a><a id='lien_rcp' href='affichageDoc.php?specid=61348441&amp;typedoc=R'><img class="onglet" alt="Onglet résumé des caractéristiques du produit" src="img/onglet_rcp_vert.png" /></a><a id='lien_notice' href='affichageDoc.php?specid=61348441&amp;typedoc=N'><img class="onglet" alt="Onglet notice patient" src="img/onglet_notice_gris.png" /></a>			</div>
+			<div class="titredeno">
+				<table summary="" border="0" cellspacing="0">
+					<tr><td colspan="3" height="10px"></td></tr>
+					<tr>
+						<td width="15px">&nbsp;</td>
+						<td width="685px"><h1 class="textedeno">KARDEGIC 160 mg, poudre pour solution buvable en sachet  - Notice patient</h1></td>
+						<td width="43px" class="tdcenter"><a href="Javascript:void(null)" onclick="print();"><img src="img/imprimante.png" height="20px" width="20px" alt="Imprimer le document" title="Imprimer le document" border="0" /></a></td>
+					</tr>
+					<tr><td colspan="3" height="10px"></td></tr>
+				</table>
+			</div>
+			
+			<div id="contentDocument">
+				<div id="textDocument">
+					<p class="DateNotif">ANSM - Mis à jour le : 18/09/2024</p>
+<div style='border:solid windowtext 1.0pt;padding:1.0pt 4.0pt 1.0pt 4.0pt'>
+<p class=AmmCorpsTexte align=center style='margin-top:12.0pt;margin-right:0cm; margin-bottom:6.0pt;margin-left:0cm;text-align:center;border:none;padding:0cm'><span class='gras'><span style='font-family:"Arial",sans-serif'>ATTENTION</span></span></p>
+<p class=AmmCorpsTexteGras style='border:none;padding:0cm'>KARDEGIC 160 mg, poudre pour solution buvable en sachet QUI EST UN ANTI-INFLAMMATOIRE NON STEROIDIEN (AINS) PEUT ENTRAINER UNE MORT FŒTALE S’IL EST PRIS A PARTIR DU 6<sup>EME</sup> MOIS DE GROSSESSE (24 semaines d’aménorrhée) MEME APRES UNE SEULE PRISE. </p>
+<p class=AmmCorpsTexteGras style='border:none;padding:0cm'>N’utilisez pas ce médicament si vous êtes enceinte de 6 mois et plus (24 semaines d’aménorrhée et plus).</p>
+<p class=AmmCorpsTexteGras style='border:none;padding:0cm'>Avant le 6<sup>ème</sup> mois ou si vous envisagez une grossesse, vous ne devez pas prendre ce médicament, sauf en cas d’absolue nécessité déterminée par votre médecin.</p>
+</div>
+<p class="AmmNoticeTitre1"><a name="Ann3bDenomination">Dénomination du médicament</a></p>
+<p class=AmmCorpsTexteGras align=center style='text-align:center'>KARDEGIC 160 mg, poudre pour solution buvable en sachet</p>
+<p class=AmmCorpsTexteGras align=center style='text-align:center'>Acétylsalicylate de DL-lysine</p>
+<p class="AmmNoticeTitre1"><a name="Ann3bEncadre">Encadré</a></p>
+<p class=AmmCorpsTexteGras><span lang=FR-BE>Veuillez lire attentivement cette notice avant de prendre ce médicament car elle contient des informations importantes pour vous.</span></p>
+<p class=AmmListePuces1><span lang=FR-BE style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span><span lang=FR-BE>Gardez cette notice. Vous pourriez avoir besoin de la relire.</span></p>
+<p class=AmmListePuces1 style='text-align:justify'><span lang=FR-BE style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span><span lang=FR-BE>Si vous avez d’autres questions, interrogez votre médecin ou votre pharmacien.</span></p>
+<p class=AmmListePuces1 style='text-align:justify'><span lang=FR-BE style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span><span lang=FR-BE>Ce médicament vous a été personnellement prescrit. Ne le donnez pas à d’autres personnes. Il pourrait leur être nocif, même si les signes de leur maladie sont identiques aux vôtres.</span></p>
+<p class=AmmListePuces1 style='text-align:justify'><span lang=FR-BE style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span><span lang=FR-BE>Si vous ressentez un quelconque effet indésirable, parlez-en à votre médecin, ou votre pharmacien. Ceci s’applique aussi à tout effet indésirable qui ne serait pas mentionné dans cette notice. </span>Voir rubrique 4.</p>
+<p class="AmmNoticeTitre1"><a name="Ann3bSomm">Que contient cette notice ?</a></p>
+<p class=AmmCorpsTexte style='margin-top:0cm;margin-right:0cm;margin-bottom: 0cm;margin-left:14.2pt;margin-bottom:.0001pt;text-indent:-14.2pt'>1. Qu'est-ce que KARDEGIC 160 mg, poudre pour solution buvable en sachet et dans quels cas est-il utilisé ?</p>
+<p class=AmmCorpsTexte style='margin-top:0cm;margin-right:0cm;margin-bottom: 0cm;margin-left:14.2pt;margin-bottom:.0001pt;text-indent:-14.2pt'>2. Quelles sont les informations à connaître avant de prendre KARDEGIC 160 mg, poudre pour solution buvable en sachet ?</p>
+<p class=AmmCorpsTexte style='margin-top:0cm;margin-right:0cm;margin-bottom: 0cm;margin-left:14.2pt;margin-bottom:.0001pt;text-indent:-14.2pt'>3. Comment prendre KARDEGIC 160 mg, poudre pour solution buvable en sachet ?</p>
+<p class=AmmCorpsTexte style='margin-top:0cm;margin-right:0cm;margin-bottom: 0cm;margin-left:14.2pt;margin-bottom:.0001pt;text-indent:-14.2pt'>4. Quels sont les effets indésirables éventuels ?</p>
+<p class=AmmCorpsTexte style='margin-top:0cm;margin-right:0cm;margin-bottom: 0cm;margin-left:14.2pt;margin-bottom:.0001pt;text-indent:-14.2pt'>5. Comment conserver KARDEGIC 160 mg, poudre pour solution buvable en sachet ?</p>
+<p class=AmmCorpsTexte style='margin-top:0cm;margin-right:0cm;margin-bottom: 0cm;margin-left:14.2pt;margin-bottom:.0001pt;text-indent:-14.2pt'><span style='color:black'>6. Contenu de l’emballage et autres informations.</span></p>
+<h2><a name="Ann3bQuestceque">1. QU’EST-CE QUE KARDEGIC 160 mg, poudre pour solution buvable en sachet ET DANS QUELS CAS EST-IL UTILISE ?</a>&nbsp;&nbsp;<a href='#HautDePage'><img src='img/BackToTop.jpg' width='15px' height='15px' alt='Retour en haut de la page' title='Retour en haut de la page' /></a></h2>
+<p class=AmmCorpsTexteGras>Classe pharmacothérapeutique : </p>
+<p class=AmmCorpsTexte>ANTI-THROMBOTIQUE/INHIBITEUR DE L'AGREGATION PLAQUETTAIRE, HEPARINE EXCLUE.</p>
+<p class=AmmCorpsTexte>Ce médicament contient de l’aspirine. KARDEGIC 160 mg, poudre pour solution buvable en sachet appartient à la famille des inhibiteurs de l’agrégation plaquettaire.</p>
+<p class=AmmCorpsTexte>KARDEGIC 160 mg, poudre pour solution buvable en sachet agit sur les plaquettes présentes dans le sang et permet de fluidifier le sang.</p>
+<p class=AmmCorpsTexteGras>Indications thérapeutiques :</p>
+<p class=AmmCorpsTexte>KARDEGIC 160 mg, poudre pour solution buvable en sachet est utilisé pour prévenir les récidives d’accidents vasculaires cérébraux ou cardiaques provoqués par des caillots dans les artères du cerveau ou du cœur.</p>
+<p class=AmmCorpsTexte>Votre médecin peut décider d’associer ce médicament à d’autres traitements s’il le juge nécessaire.</p>
+<p class=AmmCorpsTexte>Ce médicament est réservé à l’adulte. Vous ne devez pas débuter un traitement par KARDEGIC 160 mg, poudre pour solution buvable en sachet sans l’accord de votre médecin.</p>
+<h2><a name="Ann3bInfoNecessaires">2. QUELLES SONT LES INFORMATIONS A CONNAITRE AVANT DE PRENDRE KARDEGIC 160 mg, poudre pour solution buvable en sachet ?</a>&nbsp;&nbsp;<a href='#HautDePage'><img src='img/BackToTop.jpg' width='15px' height='15px' alt='Retour en haut de la page' title='Retour en haut de la page' /></a></h2>
+<div style='border:solid windowtext 1.0pt;padding:1.0pt 4.0pt 1.0pt 4.0pt'>
+<p class=AmmCorpsTexte style='border:none;padding:0cm'><span class='gras'>Ne prenez jamais KARDEGIC 160 mg, poudre pour solution buvable en sachet si vous êtes enceinte de 24 semaines d’aménorrhée et plus (6 mois et plus de grossesse) (voir ci-dessous « Grossesse, allaitement et fertilité »).</span></p>
+<p class=AmmCorpsTexte style='border:none;padding:0cm'><span class='gras'>Au cours des 5 premiers mois de grossesse, vous ne devez pas prendre KARDEGIC 160 mg, poudre pour solution buvable en sachet, sauf en cas d’absolue nécessité qui est déterminée par votre médecin.</span></p>
+<p class=AmmCorpsTexte style='border:none;padding:0cm'><span class='gras'>Si vous envisagez une grossesse et que vous prenez un AINS, parlez-en à un professionnel de la santé.</span></p>
+</div>
+<p class=AmmCorpsTexteGras>Ne prenez jamais KARDEGIC 160 mg, poudre pour solution buvable en sachet :</p>
+<p class=AmmListePuces1 style='text-align:justify'><span style='font-size:11.0pt; font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>si vous êtes allergique à la substance active (l’acétylsalicylate de DL-lysine) ou à l’un des autres composants contenus dans KARDEGIC 160 mg, poudre pour solution buvable en sachet, mentionnés dans la rubrique 6,</p>
+<p class=AmmListePuces1 style='text-align:justify'><span style='font-size:11.0pt; font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>si vous êtes allergique (hypersensible) à un médicament de la même famille que l’aspirine (les anti-inflammatoires non stéroïdiens = AINS),</p>
+<p class=AmmListePuces1 style='text-align:justify'><span style='font-family: Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>si vous êtes enceinte, à partir du début du 6<sup>ème</sup> mois de grossesse (au-delà de 24 semaines d’aménorrhée),</p>
+<p class=AmmListePuces1 style='text-align:justify'><span style='font-size:11.0pt; font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>si vous avez ou avez déjà eu de l’asthme ou des polypes nasaux associés à un asthme provoqué par la prise d’aspirine ou d’un médicament de la même famille (les AINS),</p>
+<p class=AmmListePuces1 style='text-align:justify'><span style='font-size:11.0pt; font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>si vous avez souffert ou vous souffrez actuellement d’une lésion sur la paroi de l’estomac ou sur la première partie de l’intestin (ulcère gastro-intestinal actif, chronique ou récurrent),</p>
+<p class=AmmListePuces1 style='text-align:justify'><span style='font-size:11.0pt; font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>si vous avez déjà eu une hémorragie ou une perforation au niveau de l’estomac après avoir pris de l’aspirine ou un autre médicament de la même famille (les anti-inflammatoires non stéroïdiens ; médicaments utilisés pour traiter la fièvre et la douleur),</p>
+<p class=AmmListePuces1 style='text-align:justify'><span style='font-size:11.0pt; font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>si vous souffrez de saignements ou si votre médecin a identifié chez vous des risques de saignements,</p>
+<p class=AmmListePuces1 style='text-align:justify'><span style='font-family: Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>si vous avez une maladie grave du foie, des reins ou du cœur,</p>
+<p class=AmmListePuces1 style='text-align:justify'><span style='font-family: Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>si vous êtes atteint d’une mastocytose (maladie des cellules impliquées dans les réactions allergiques) car il existe un risque de réactions allergiques sévères.</p>
+<p class=AmmCorpsTexteGras style='margin-top:6.0pt'>Avertissements et précautions</p>
+<p class=AmmCorpsTexte><span lang=FR-BE>Adressez-vous à votre médecin ou pharmacien avant de prendre KARDEGIC</span> 160 mg, poudre pour solution buvable en sachet<span lang=FR-BE>. </span></p>
+<p class=AmmCorpsTexteGras>Avant de prendre ce médicament, prévenez votre médecin :</p>
+<p class=AmmListePuces1 style='text-align:justify'><span style='font-family: Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>si vous avez une maladie héréditaire des globules rouges, appelée déficit en G6PD, car des doses élevées d’aspirine peuvent alors provoquer une destruction des globules rouges</p>
+<p class=AmmListePuces1 style='text-align:justify'><span style='font-family: Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>si vous avez déjà eu un ulcère de l’estomac ou du duodénum ou une inflammation de l’estomac (gastrite)</p>
+<p class=AmmListePuces1 style='text-align:justify'><span style='font-family: Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>si vous avez déjà eu des saignements digestifs (vomissements de sang ou présence de sang dans les selles)</p>
+<p class=AmmListePuces1 style='text-align:justify'><span style='font-family: Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>si vous avez une maladie des reins ou du foie</p>
+<p class=AmmListePuces1 style='text-align:justify'><span style='font-family: Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>si vous avez une hypertension artérielle (tension artérielle élevée)</p>
+<p class=AmmCorpsTexte style='margin-left:18.0pt;text-indent:-18.0pt'><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>si vous avez des règles abondantes</p>
+<p class=AmmCorpsTexte>Des syndromes de Reye, pathologies très rares mais présentant un risque vital, ont été observés chez des enfants avec des signes d’infection virale (en particulier varicelle et épisodes d’allure grippale) et recevant de l’acide acétylsalicylique. KARDEGIC 160 mg, poudre pour solution buvable en sachet ne doit pas être administré aux enfants et aux adolescents.</p>
+<p class=AmmCorpsTexte>Pendant le traitement, des saignements ou des douleurs dans le ventre peuvent survenir. <span lang=FR-BE>Le risque de survenue de ces effets augmente avec la dose, chez les personnes âgées, chez les personnes de faible poids corporel, chez les personnes ayant déjà souffert d’ulcère de l’estomac et en cas d’association à certains médicaments (voir rubrique « Autres médicaments et </span>KARDEGIC 160 mg, poudre pour solution buvable en sachet »<span lang=FR-BE>). Consultez immédiatement votre médecin en cas de survenue de tels effets.</span></p>
+<p class=AmmCorpsTexteGras>Si une intervention chirurgicale est prévue :</p>
+<p class=AmmCorpsTexte style='margin-bottom:4.0pt'>L’aspirine augmente les risques de saignements même à de très faibles doses, et ce même lorsque la dernière prise de ce médicament date de plusieurs jours.</p>
+<p class=AmmCorpsTexte>Prévenez votre médecin traitant, votre chirurgien, l’anesthésiste ou votre dentiste de la prise de ce médicament, dans le cas où une opération, même mineure, est envisagée.</p>
+<p class=AmmCorpsTexteGras>Enfants et adolescents</p>
+<p class=AmmCorpsTexte>Voir paragraphe ci-dessus « Avant de prendre ce médicament, prévenez votre médecin ».</p>
+<p class=AmmCorpsTexte>KARDEGIC ne doit pas être administré aux enfants et aux adolescents.</p>
+<p class=AmmCorpsTexteGras>Autres médicaments et KARDEGIC 160 mg, poudre pour solution buvable en sachet</p>
+<div align=center>
+<table class=AmmCorpsTexteTable border=1 cellspacing=0 cellpadding=0
+style='border-collapse:collapse;border:none'>
+<tr>
+<td width=614 valign=top style='width:460.5pt;border:solid windowtext 1.0pt;
+padding:0cm 5.4pt 0cm 5.4pt'>
+<p class=AmmCorpsTexteGras style='margin-top:3.0pt;margin-right:0cm; margin-bottom:12.0pt;margin-left:0cm'>Ce médicament contient de l’aspirine. D’autres médicaments en contiennent. <span style='font-weight:normal'>Vous ne devez pas prendre en même temps que KARDEGIC 160 mg, poudre pour solution buvable en sachet d’autres médicaments contenant de l’aspirine ou un médicament de la même famille</span> (les AINS comme par exemple l’ibuprofène) sans en parler à votre médecin ou à votre pharmacien. <span style='font-weight:normal'>L’association de ces médicaments</span> à KARDEGIC 160 mg, poudre pour solution buvable en sachet <span style='font-weight: normal'>pourrait entraîner un surdosage</span> et augmenter ainsi le risque d’effets indésirables, notamment les saignements. </p>
+<p class=AmmCorpsTexteGras style='margin-top:3.0pt'><span style='font-weight: normal'>Lisez attentivement les notices des autres médicaments que vous prenez</span> afin de vous assurer que ces médicaments ne contiennent pas d’aspirine et/ou d’anti-inflammatoire non stéroïdien.</p>
+</td>
+</tr>
+</table>
+</div>
+<p class=AmmCorpsTexte style='margin-top:6.0pt'>Sauf avis contraire de votre médecin, vous ne devez pas prendre KARDEGIC 160 mg, poudre pour solution buvable en sachet en même temps que :</p>
+<p class=AmmListePuces1 style='text-align:justify;line-height:115%;page-break-after: avoid'><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>un anticoagulant oral (médicament utilisé pour fluidifier le sang) si vous avez un antécédent d’ulcère de l’estomac ou du duodénum,</p>
+<p class=AmmListePuces1 style='text-align:justify;line-height:115%'><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>un autre médicament à base de ticlopidine ou clopidogrel (médicaments utilisés pour fluidifier le sang), sauf dans certaines situations où votre médecin pourra vous prescrire conjointement de l’aspirine et du clopidogrel,</p>
+<p class=AmmListePuces1 style='text-align:justify;line-height:115%'><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>un autre médicament à base de benzbromarone ou probénécide (médicaments utilisés pour traiter la goutte),</p>
+<p class=AmmListePuces1 style='text-align:justify;line-height:115%'><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>un autre médicament à base d’anagrélide (médicament utilisé pour diminuer le nombre de plaquettes dans le sang),</p>
+<p class=AmmListePuces1 style='text-align:justify;line-height:115%'><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>le ticagrelor en dehors des indications validées</p>
+<p class=AmmListePuces1 style='text-align:justify;line-height:115%'><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>un autre médicament à base de défibrotide (médicament utilisé pour le traitement d’une maladie dans laquelle les vaisseaux sanguins du foie sont endommagés et obstrués par des caillots sanguins), </p>
+<p class=AmmListePuces1 style='text-align:justify;line-height:115%'><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>nicorandil (médicament utilisé pour traiter l’angine de poitrine) : l’association peut entrainer une augmentation du risque d’ulcère gastro-intestinal, de perforation et de saignement,</p>
+<p class=AmmListePuces1 style='text-align:justify'><span style='font-family: Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>lévothyroxine (médicament utilisé pour traiter une insuffisance de sécrétion de la glande thyroïde) : l’association peut entrainer une augmentation du taux d’hormones thyroïdiennes dans le sang. Les taux d’hormones thyroïdiennes doivent être surveillés par votre médecin,</p>
+<p class=AmmListePuces1 style='text-align:justify'><span style='font-family: Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>pémétrexed (médicament utilisé dans le traitement de certains cancers) : l’association peut entrainer une augmentation du risque de toxicité au pémétrexed. Votre médecin doit surveiller votre état clinique.</p>
+<p class=AmmCorpsTexteGras style='margin-top:6.0pt'>Informer votre médecin si vous prenez un médicament à base de :</p>
+<p class=AmmListePuces1 style='text-align:justify'><span style='font-family: Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>méthotrexate utilisé à des doses supérieures à 20 mg /semaine (médicament utilisé pour traiter certains cancers),</p>
+<p class=AmmListePuces1 style='text-align:justify'><span style='font-family: Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>topiques gastro-intestinaux, antiacides et adsorbants (médicaments utilisés pour traiter les douleurs digestives ou les ulcères digestifs),</p>
+<p class=AmmListePuces1 style='text-align:justify'><span style='font-family: Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>anticoagulant oral, thrombolytiques ou héparines (médicaments utilisés pour fluidifier le sang),</p>
+<p class=AmmListePuces1 style='text-align:justify'><span style='font-family: Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>anti-inflammatoires non stéroïdiens (médicaments utilisés dans le traitement de la douleur et de la fièvre),</p>
+<p class=AmmListePuces1 style='text-align:justify'><span style='font-family: Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>ticagrelor (dans les indications validées),</p>
+<p class=AmmListePuces1 style='text-align:justify'><span style='font-family: Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>cobimétinib, </p>
+<p class=AmmListePuces1 style='text-align:justify'><span style='font-family: Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>ibrutinib,</p>
+<p class=AmmListePuces1 style='text-align:justify'><span style='font-family: Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>un inhibiteur sélectif de la recapture de la sérotonine (médicaments utilisés pour traiter la dépression ou les troubles anxieux).</p>
+<p class=AmmListePuces1 style='text-align:justify'><span style='font-family: Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>médicaments mixtes adrénergiques-sérotoninergiques,</p>
+<p class=AmmListePuces1 style='text-align:justify'><span style='font-family: Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>acétazolamide (médicament utilisé dans le traitement de l’hypertension artérielle) : lors d’une prise concomitante avec l’acide acétylsalicylique, il existe un risque de vomissements, de tachycardie (rythme cardiaque rapide), d’hyperpnée (respiration rapide et profonde), de confusion mentale, de fatigue, de léthargie (somnolence extrême), de somnolence, de confusion, d’acidose métabolique hyperchlorémique (une affection caractérisée par une augmentation de la quantité d’acides dans le sang).</p>
+<p class=AmmListePuces1 style='text-align:justify'><span style='font-family: Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>acide valproïque (médicament utilisé dans le traitement de l’épilepsie) : l’association peut entraîner une augmentation de la quantité d’acide valproïque dans le sang. Votre médecin surveillera donc votre taux de valproate dans le sang,</p>
+<p class=AmmListePuces1 style='text-align:justify'><span style='font-family: Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>ténofovir (médicament utilisé dans le traitement de certaines infections causées par des virus) : l’association avec de l’acide acétylsalicylique peut augmenter le risque de problèmes rénaux (insuffisance rénale). Votre médecin vérifiera donc votre fonction rénale,</p>
+<p class=AmmListePuces1 style='text-align:justify'><span style='font-family: Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>glucocorticoïdes (à l’exception de l’hydrocortisone) utilisés dans le traitement de l’inflammation : l’association avec de l’acide acétylsalicylique à des doses utilisées pour traiter la douleur ou la fièvre peut augmenter le risque de saignement, </p>
+<p class=AmmListePuces1 style='text-align:justify'><span style='font-family: Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>insuline et sulfonylurées (médicament réduisant la glycémie) : l’association augmente l’effet du risque d’hypoglycémie (faible taux de sucre dans le sang),</p>
+<p class=AmmListePuces1 style='text-align:justify'><span style='font-family: Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>métamizole (médicament utilisé contre la douleur) : l’association peut réduire l’effet de l’acide acétylsalicylique sur l’agrégation des plaquettes sanguines. Votre médecin vous prescrira avec prudence du métamizole si vous prenez de faibles doses d’acide acétylsalicylique en prévention cardiovasculaire.</p>
+<p class=AmmCorpsTexte style='margin-top:6.0pt;line-height:115%'>Informez votre médecin ou pharmacien si vous prenez, avez récemment pris ou pourriez prendre tout autre médicament.</p>
+<p class=AmmCorpsTexteGras>KARDEGIC 160 mg, poudre pour solution buvable en sachet avec des aliments, boissons et de l’alcool</p>
+<p class=AmmCorpsTexte>La consommation d’alcool doit être évitée pendant le traitement en raison d’un risque augmenté de lésions au niveau gastro-intestinal et de modifications des tests de coagulations sanguines (allongement du temps de saignement). Ainsi, les patients traités avec de l’acide acétylsalicylique doivent faire preuve de prudence lors de la consommation de boissons alcoolisées jusqu’à 36 heures suivant la prise du traitement.</p>
+<p class=AmmCorpsTexteGras>Grossesse, allaitement et fertilité</p>
+<p class=AmmCorpsTexteGras>Si vous êtes enceinte ou que vous allaitez, si vous pensez être enceinte ou planifiez une grossesse, demandez conseil à votre médecin ou pharmacien avant de prendre tout médicament.</p>
+<p class=AmmAnnexeTitre3><span lang=FR-BE>Grossesse</span></p>
+<p class=AmmCorpsTexte>Ce médicament contient de l'aspirine (acide acétylsalicylique). Ne prendre AUCUN AUTRE médicament contenant de l’aspirine (y compris les médicaments sans ordonnance).</p>
+<p class=AmmListePuces1 style='text-align:justify'><span lang=FR-BE style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span><span class='gras'><span lang=FR-BE>jusqu’à 100 mg par jour</span></span><span lang=FR-BE> : Pendant toute la grossesse, si nécessaire, votre médecin spécialiste peut être amené à vous prescrire de l’aspirine à faibles doses (inférieures ou égales à 100 mg par jour), dans des circonstances exceptionnelles nécessitant une surveillance spécialisée. Si tel est le cas, il est très important de respecter scrupuleusement l’ordonnance de votre médecin, sans dépasser les doses prescrites. </span></p>
+<p class=AmmListePuces1 style='margin-top:6.0pt;text-align:justify'><span lang=FR-BE style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span><span class='gras'><span lang=FR-BE>entre 100 et 500 mg par jour</span></span><span lang=FR-BE> : Par mesure de précaution, les recommandations ci-dessous s’appliquent, sauf prescription contraire de votre médecin spécialiste.</span></p>
+<p class=AmmListePuces1 style='margin-top:6.0pt;margin-right:0cm;margin-bottom: 6.0pt;margin-left:17.85pt;text-align:justify;text-indent:-17.85pt'><span lang=FR-BE style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span><span class='gras'><span lang=FR-BE>à partir de 500 mg par jour</span></span><span lang=FR-BE> : </span></p>
+<p class=AmmCorpsTexte><span class='gras'>A partir du début du 6ème mois </span>(24<sup>ème</sup> semaine d’aménorrhée)<span class='gras'> jusqu’à la fin de la grossesse</span>, KARDEGIC 160 mg, poudre pour solution buvable en sachet est <span class='gras'>contre-indiqué. </span>Au cours de cette période, vous ne devez <span class='gras'>EN AUCUN CAS</span> prendre ce médicament, car ses effets sur votre enfant à naître peuvent avoir des conséquences graves voire fatales. Notamment, il a été observé une toxicité pour le cœur, les poumons et/ou les reins, et cela <span class='gras'>même avec une seule prise</span>. Cela peut également avoir des répercussions sur vous et votre bébé en favorisant les saignements et entraîner un accouchement plus tardif ou plus long que prévu. </p>
+<p class=AmmCorpsTexte><span class='gras'>Avant le début du 6<sup>ème</sup> mois </span>(jusqu’à la 24<sup>ème</sup> semaine d’aménorrhée) <span class='gras'>ou si vous envisagez une grossesse</span>, vous ne devez pas prendre ce médicament, sauf en cas d’absolue nécessité. Celle-ci sera déterminée par votre médecin. Le cas échéant, la dose devra être la plus faible possible et la durée du traitement la plus courte possible. </p>
+<p class=AmmCorpsTexte>En effet, les AINS, dont fait partie KARDEGIC 160 mg, poudre pour solution buvable en sachet,<span class='gras'> </span>peuvent causer des fausses couches et pour certains, des malformations après une exposition en début de grossesse. </p>
+<p class=AmmCorpsTexte>À partir de 2 mois et demi de grossesse (12 semaines d’aménorrhée), KARDEGIC 160 mg, poudre pour solution buvable en sachet peut provoquer des problèmes rénaux chez votre bébé, s’il est pris pendant plusieurs jours, ce qui peut entraîner un faible niveau du liquide amniotique dans lequel il se trouve (oligoamnios). </p>
+<p class=AmmCorpsTexte>Dès le début du 5<sup>ème</sup> mois de grossesse (20 semaines d’aménorrhée), un rétrécissement des vaisseaux sanguins au niveau du cœur de votre bébé (constriction du canal artériel) peut s’observer. Si un traitement de plusieurs jours est nécessaire pendant le 5<sup>ème</sup> mois de grossesse (entre 20 et 24 semaines d’aménorrhée), votre médecin peut recommander une surveillance supplémentaire.</p>
+<p class=AmmCorpsTexteGras>Si vous avez pris ce médicament alors que vous étiez enceinte, parlez-en immédiatement à votre médecin, afin qu’une surveillance adaptée vous soit proposée si nécessaire.<a name=Bodyblank></a></p>
+<p class=AmmAnnexeTitre3>Allaitement</p>
+<p class=AmmCorpsTexte><span lang=FR-BE>L’aspirine</span><span lang=FR-BE> </span>passant dans le lait maternel, ce médicament est déconseillé pendant l’allaitement.</p>
+<p class=AmmCorpsTexte><span lang=FR-BE>Demandez conseil à votre médecin ou à votre pharmacien avant de prendre tout médicament.</span></p>
+<p class=AmmAnnexeTitre3>Fertilité</p>
+<p class=AmmCorpsTexte>L’aspirine, comme tous les anti-inflammatoires non stéroïdiens (AINS), peut altérer la fertilité des femmes et entraîner des difficultés pour devenir enceinte, de façon réversible à l’arrêt du traitement. Informez votre médecin si vous planifiez une grossesse ou si vous avez des difficultés à concevoir.</p>
+<p class=AmmCorpsTexteGras>KARDEGIC 160 mg, poudre pour solution buvable en sachet contient du sodium du lactose</p>
+<p class=AmmCorpsTexteGras><span style='font-weight:normal'>Ce médicament contient moins de 1 mmol (23 mg) de sodium par sachet, c’est-à-dire qu’il est essentiellement « sans sodium ».</span></p>
+<p class=AmmCorpsTexte>Ce médicament contient un sucre (le lactose) qui se décompose en galactose et en glucose. Son utilisation est déconseillée chez les patients présentant une intolérance au galactose, un déficit en lactase de Lapp ou un syndrome de malabsorption du glucose et du galactose (maladies héréditaires rares).</p>
+<p class=AmmCorpsTexte>Si votre médecin vous a déjà dit que vous présentiez une intolérance à certains sucres, contactez-le avant de prendre ce médicament.</p>
+<h2><a name="Ann3bCommentPrendre">3. COMMENT PRENDRE KARDEGIC 160 mg, poudre pour solution buvable en sachet ?</a>&nbsp;&nbsp;<a href='#HautDePage'><img src='img/BackToTop.jpg' width='15px' height='15px' alt='Retour en haut de la page' title='Retour en haut de la page' /></a></h2>
+<p class=AmmAnnexeTitre3>Posologie</p>
+<p class=AmmCorpsTexte>Ce médicament est réservé à l’adulte.</p>
+<p class=AmmCorpsTexte>La dose habituelle est de 1 sachet par jour.</p>
+<p class=AmmCorpsTexte>Votre médecin vous indiquera combien de sachets vous devez prendre chaque jour.</p>
+<p class=AmmCorpsTexte>Respectez toujours la dose indiquée par votre médecin.</p>
+<p class=AmmCorpsTexte>En cas d’incertitude, consultez votre médecin ou votre pharmacien.</p>
+<p class=AmmAnnexeTitre3>Mode d’administration</p>
+<p class=AmmCorpsTexte>Ce médicament est à prendre par voie orale.</p>
+<p class=AmmCorpsTexte>Versez le contenu du sachet dans un grand verre. Ajoutez de l’eau. Attendez que la poudre soit dissoute avant de la boire.</p>
+<p class=AmmAnnexeTitre3>Fréquence d'administration</p>
+<p class=AmmCorpsTexte>Votre médecin vous dira à quel moment de la journée vous devez prendre ce médicament.</p>
+<p class=AmmAnnexeTitre3>Durée du traitement</p>
+<p class=AmmCorpsTexte>Votre médecin vous dira combien de temps vous devez prendre ce médicament.</p>
+<p class=AmmCorpsTexteGras>Si vous avez pris plus de KARDEGIC 160 mg, poudre pour solution buvable en sachet que vous n’auriez dû (ou en cas d’ingestion accidentelle) : </p>
+<p class=AmmCorpsTexte>Prévenez rapidement votre médecin, en particulier s’il s’agit d’un enfant.</p>
+<p class=AmmCorpsTexte>Un surdosage peut être mortel, en particulier chez l’enfant. Les principaux symptômes d’intoxication sont : des bourdonnements d’oreille, une sensation de baisse de l’audition, des maux de tête, des vertiges, voire dans les cas plus graves de la fièvre, une hypoglycémie importante (baisse du taux de sucres dans le sang), une chute rapide de la tension artérielle, une respiration accélérée et une perte de la conscience (coma).</p>
+<div align=center>
+<table class=AmmCorpsTexteTable border=1 cellspacing=0 cellpadding=0
+style='border-collapse:collapse;border:none'>
+<tr>
+<td width=614 valign=top style='width:460.5pt;border:solid windowtext 1.0pt;
+padding:0cm 5.4pt 0cm 5.4pt'>
+<p class=AmmCorpsTexte style='margin-top:6.0pt'>Si ces signes surviennent, vous devez arrêter immédiatement le traitement et vous rendre en urgence dans un hôpital pour que vous y soyez traité.</p>
+</td>
+</tr>
+</table>
+</div>
+<p class=AmmCorpsTexte style='margin-top:6.0pt'>Un œdème du poumon non lié à une insuffisance cardiaque (excès de fluide dans les poumons) menaçant le pronostic vital peut survenir en cas de surdosage aigu et chronique avec l’acide acétylsalicylique (voir rubrique 4. « Quels sont les effets indésirables ? »). Cet œdème peut être mortel en cas de surdosage.</p>
+<p class=AmmCorpsTexteGras>Si vous oubliez de prendre KARDEGIC 160 mg, poudre pour solution buvable en sachet :</p>
+<p class=AmmCorpsTexte>Ne prenez pas de dose double pour compenser la dose que vous avez oublié de prendre.</p>
+<p class=AmmCorpsTexte>Continuez votre traitement normalement et prévenez votre médecin.</p>
+<h2><a name="Ann3bEffetsIndesirables">4. QUELS SONT LES EFFETS INDESIRABLES EVENTUELS ?</a>&nbsp;&nbsp;<a href='#HautDePage'><img src='img/BackToTop.jpg' width='15px' height='15px' alt='Retour en haut de la page' title='Retour en haut de la page' /></a></h2>
+<p class=AmmCorpsTexte>Comme tous les médicaments, ce médicament peut provoquer des effets indésirables, mais ils ne surviennent pas systématiquement chez tout le monde.</p>
+<p class=AmmCorpsTexteGras>Les effets indésirables suivants peuvent survenir :</p>
+<p class=AmmListePuces1><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>douleurs abdominales, difficulté pour digérer, brûlures d’estomac,</p>
+<p class=AmmListePuces1><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>inflammation de l’œsophage, de l’estomac, du duodénum, du côlon,</p>
+<p class=AmmListePuces1 style='text-align:justify'><span style='font-family: Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>ulcération de l’œsophage, de l’estomac, du duodénum, de l’intestin, perforation d’ulcère digestif, perforation de l’intestin,</p>
+<p class=AmmCorpsTexte style='margin-top:6.0pt'>Ces réactions peuvent être ou non associées à des saignements gastriques ou intestinaux visibles ou non (selles noires, sang dans les selles ou vomissements de sang), pouvant entraîner une anémie (diminution du nombre de globules rouges dans le sang pouvant entraîner fatigue, essoufflement, pâleur et vertiges) quelle que soit la dose d’aspirine, et chez les patients avec ou sans signes d’alerte ou d’antécédents gastro-intestinaux graves.</p>
+<p class=AmmListePuces1 style='text-align:justify'><span style='font-family: Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>inflammation aiguë du pancréas au cours d’une réaction allergique (hypersensibilité) à l’acide acétylsalicylique,</p>
+<p class=AmmListePuces1 style='text-align:justify'><span style='font-family: Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>saignements (hémorragies) pouvant engager le pronostic vital,</p>
+<p class=AmmListePuces1 style='text-align:justify'><span style='font-family: Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>saignements cérébraux, pouvant engager le pronostic vital, en particulier chez les sujets âgés. Dans ce cas, il faut avertir <span class='souligne'>immédiatement</span> votre médecin,</p>
+<p class=AmmListePuces1 style='text-align:justify'><span style='font-family: Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>diminution du nombre de plaquettes dans le sang (thrombopénie),</p>
+<p class=AmmListePuces1 style='text-align:justify'><span style='font-family: Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>taux anormalement bas de certaines cellules du sang (pancytopénie, bicytopénie, anémie aplasique),</p>
+<p class=AmmListePuces1 style='text-align:justify'><span style='font-family: Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>appauvrissement de la production des cellules sanguines (insuffisance médullaire),</p>
+<p class=AmmListePuces1 style='text-align:justify'><span style='font-family: Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>taux anormalement bas de certains globules blancs pouvant entrainer des infections graves (leucopénie, neutropénie, agranulocytose),</p>
+<p class=AmmListePuces1 style='text-align:justify'><span style='font-family: Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>destruction des globules rouges dans le sang (anémie hémolytique) chez les patients ayant un déficit en l’enzyme glucose<span style='font-family: "Cambria Math",serif'>&#8208;</span>6<span style='font-family:"Cambria Math",serif'>&#8208;</span>phosphate<span style='font-family:"Cambria Math",serif'>&#8208;</span> déshydrogénase,</p>
+<p class=AmmListePuces1 style='text-align:justify'><span style='font-family: Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span><span lang=FR-BE>syndrome de Reye (apparition de trouble de la conscience ou du comportement et de vomissements) chez un enfant présentant une maladie virale et recevant de l'aspirine (voir rubrique 2 « Avertissements et précautions »).</span></p>
+<p class=AmmListePuces1 style='text-align:justify'><span style='font-family: Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>sang dans les urines, saignements par les voies génitales,</p>
+<p class=AmmListePuces1 style='text-align:justify'><span style='font-family: Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>bleus (hématomes), saignements (nez, gencives), petites taches rouges sur la peau (purpura),</p>
+<p class=AmmListePuces1 style='text-align:justify'><span style='font-family: Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>réaction allergique : boutons et/ou rougeurs sur la peau, urticaire, brusque gonflement du visage et du cou pouvant entraîner une difficulté à respirer (soit œdème de Quincke, soit symptômes comparables à une crise d’asthme), malaise brutal avec baisse importante de la pression artérielle (choc anaphylactique),</p>
+<p class=AmmListePuces1><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>bronchospasme (contraction musculaire bronchique) et asthme (inflammation bronchique et contraction),</p>
+<p class=AmmListePuces1 style='text-align:justify'><span style='font-family: Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>œdèmes (gonflements dus à une accumulation de liquide dans les tissus) si vous prenez des doses élevées de KARDEGIC160 mg, poudre pour solution buvable en sachet,</p>
+<p class=AmmListePuces1 style='text-align:justify'><span style='font-family: Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>œdème du poumon non lié à une insuffisance cardiaque en cas d’utilisation au long cours et dans le contexte d’une réaction allergique à l’aspirine,</p>
+<p class=AmmListePuces1 style='text-align:justify'><span style='font-family: Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>difficultés à respirer,</p>
+<p class=AmmListePuces1 style='text-align:justify'><span style='font-family: Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>bourdonnements d’oreille, sensation de baisse de l’audition, maux de tête, sensations vertigineuses. Il peut alors d’agir d’un surdosage,</p>
+<p class=AmmListePuces1 style='text-align:justify'><span style='font-family: Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>augmentation des enzymes du foie, atteinte du foie (principalement des cellules du foie), maladie du foie chronique (hépatite chronique),</p>
+<p class=AmmListePuces1 style='text-align:justify'><span style='font-family: Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>diminution de l’élimination de l’acide urique, pouvant entraîner une crise de goutte (articulations gonflées et douloureuses liées à un excès d’acide urique),</p>
+<p class=AmmListePuces1 style='text-align:justify'><span style='font-family: Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>éruption cutanée en plaques rouges arrondies avec démangeaison et sensation de brûlure, laissant des tâches colorées et pouvant apparaître aux mêmes endroits en cas de reprise du médicament,</p>
+<p class=AmmListePuces1 style='text-align:justify'><span style='font-family: Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>maladie des reins (insuffisance rénale),</p>
+<p class=AmmListePuces1 style='text-align:justify'><span style='font-family: Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span><span lang=FR-BE>hémorragie potentiellement fatale (perte importante de sang, pouvant engager le pronostic vital) et</span><span lang=FR-BE> </span>inflammation des vaisseaux sanguins pouvant être associée à des atteintes des articulations, du rein, de la peau et du tube digestif <span lang=FR-BE>(vascularite, y compris purpura de Schönlein-Henoch)</span>,</p>
+<p class=AmmListePuces1 style='text-align:justify'><span style='font-family: Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>troubles des artères du cœur avec une douleur localisée dans la poitrine qui peut irradier vers l’épaule gauche et la mâchoire d’origine allergique à l’acide acétylsalicylique (syndrome de Kounis),</p>
+<p class=AmmListePuces1><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>présence de sang dans le sperme (hématospermie).</p>
+<p class=AmmCorpsTexte style='margin-top:6.0pt'>Dans tous ces cas, consultez rapidement un médecin.</p>
+<p class=AmmAnnexeTitre3>Déclaration des effets secondaires</p>
+<p class=AmmCorpsTexte>Si vous ressentez un quelconque effet indésirable, parlez-en à votre médecin ou, votre pharmacien. Ceci s’applique aussi à tout effet indésirable qui ne serait pas mentionné dans cette notice. Vous pouvez également déclarer les effets indésirables directement via le système national de déclaration : Agence nationale de sécurité du médicament et des produits de santé (ANSM) et réseau des Centres Régionaux de Pharmacovigilance - Site internet:<span style='color:red'> </span><span class=MsoHyperlink>https://signalement.social-sante.gouv.fr/</span></p>
+<p class=AmmCorpsTexte>En signalant les effets indésirables, vous contribuez à fournir davantage d’informations sur la sécurité du médicament.</p>
+<h2><a name="Ann3bConservation">5. COMMENT CONSERVER KARDEGIC 160 mg, poudre pour solution buvable en sachet ?</a>&nbsp;&nbsp;<a href='#HautDePage'><img src='img/BackToTop.jpg' width='15px' height='15px' alt='Retour en haut de la page' title='Retour en haut de la page' /></a></h2>
+<p class=AmmCorpsTexte>Tenir ce médicament hors de la vue et de la portée des enfants.</p>
+<p class=AmmCorpsTexte>N’utilisez pas ce médicament après la date mentionnée sur l’emballage.</p>
+<p class=AmmCorpsTexte>A conserver à une température ne dépassant pas 25°C.</p>
+<p class=AmmCorpsTexte>Conserver les sachets dans l’emballage extérieur, à l’abri de l’humidité.</p>
+<p class=AmmCorpsTexte><span lang=FR-BE>Ne jetez aucun médicament au tout-à-l’égout <span style='color:black'>ou avec </span>les ordures ménagères. Demandez à votre pharmacien d’éliminer les médicaments que vous n’utilisez plus. Ces mesures contribueront à protéger l’environnement.</span></p>
+<h2><a name="Ann3bEmballage">6. CONTENU DE L’EMBALLAGE ET AUTRES INFORMATIONS</a>&nbsp;&nbsp;<a href='#HautDePage'><img src='img/BackToTop.jpg' width='15px' height='15px' alt='Retour en haut de la page' title='Retour en haut de la page' /></a></h2>
+<p class="AmmAnnexeTitre2"><a name="Ann3bContenu">Ce que contient KARDEGIC 160 mg, poudre pour solution buvable en sachet</a>&nbsp;&nbsp;<a href='#HautDePage'><img src='img/BackToTop.jpg' width='15px' height='15px' alt='Retour en haut de la page' title='Retour en haut de la page' /></a></p>
+<p class=AmmListePuces1><span style='font-family: Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>La substance active est :</p>
+<p class=AmmComposition style='margin-top:6.0pt;margin-right:0cm;margin-bottom: 6.0pt;margin-left:17.85pt;page-break-after:avoid'>Acétylsalicylate de DL-lysine........................................................................................... 288 mg</p>
+<p class=AmmComposition style='margin-left:18.0pt;page-break-after:avoid'>Quantité correspondante en acide acétylsalicylique (également appelé aspirine)................ 160 mg</p>
+<p class=AmmCorpsTexte style='margin-left:177.25pt;text-indent:35.45pt; page-break-after:avoid'>Pour un sachet.</p>
+<p class=AmmListePuces1><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>Les autres composants sont :</p>
+<p class=AmmComposition style='margin-top:6.0pt;margin-right:0cm;margin-bottom: 6.0pt;margin-left:17.85pt'>Glycine, arôme mandarine, glycyrrhizate d’ammonium.</p>
+<p class="AmmAnnexeTitre2"><a name="RcpEmballage">Qu’est-ce que KARDEGIC 160 mg, poudre pour solution buvable en sachet et contenu de l’emballage extérieur</a>&nbsp;&nbsp;<a href='#HautDePage'><img src='img/BackToTop.jpg' width='15px' height='15px' alt='Retour en haut de la page' title='Retour en haut de la page' /></a></p>
+<p class=AmmCorpsTexte>Ce médicament se présente sous forme de poudre pour solution buvable.</p>
+<p class=AmmCorpsTexte>Chaque boîte contient 30 ou 100 sachets-dose.</p>
+<p class=AmmCorpsTexte>Toutes les présentations peuvent ne pas être commercialisées.</p>
+<p class="AmmAnnexeTitre2"><a name="Ann3bTituAMM">Titulaire de l’autorisation de mise sur le marché</a>&nbsp;&nbsp;<a href='#HautDePage'><img src='img/BackToTop.jpg' width='15px' height='15px' alt='Retour en haut de la page' title='Retour en haut de la page' /></a></p>
+<p class=AmmCorpsTexteGras style='margin-bottom:0cm;margin-bottom:.0001pt'>SANOFI WINTHROP INDUSTRIE</p>
+<p class=AmmCorpsTexte style='margin-bottom:0cm;margin-bottom:.0001pt'>82 AVENUE RASPAIL</p>
+<p class=AmmCorpsTexte style='margin-bottom:0cm;margin-bottom:.0001pt'>94250 GENTILLY</p>
+<p class="AmmAnnexeTitre2"><a name="Ann3bExploitAMM">Exploitant de l’autorisation de mise sur le marché</a>&nbsp;&nbsp;<a href='#HautDePage'><img src='img/BackToTop.jpg' width='15px' height='15px' alt='Retour en haut de la page' title='Retour en haut de la page' /></a></p>
+<p class=AmmCorpsTexteGras style='margin-bottom:0cm;margin-bottom:.0001pt'><span lang=EN-GB>SANOFI WINTHROP INDUSTRIE</span></p>
+<p class=AmmCorpsTexte style='margin-bottom:0cm;margin-bottom:.0001pt'><span lang=EN-GB>82 AVENUE RASPAIL</span></p>
+<p class=AmmCorpsTexte style='margin-bottom:0cm;margin-bottom:.0001pt'><span lang=EN-GB>94250 GENTILLY</span></p>
+<p class="AmmAnnexeTitre2"><a name="Ann3bFab">Fabricant</a>&nbsp;&nbsp;<a href='#HautDePage'><img src='img/BackToTop.jpg' width='15px' height='15px' alt='Retour en haut de la page' title='Retour en haut de la page' /></a></p>
+<p class=AmmTitulaireAdresse><span class='gras'><span lang=FR-BE>Opella Healthcare International SAS</span></span></p>
+<p class=AmmTitulaireAdresse><span lang=FR-BE>56, route de Choisy, </span></p>
+<p class=AmmTitulaireCpVillePays><span lang=FR-BE>60200, Compiègne</span></p>
+<p class=AmmCorpsTexte style='margin-top:6.0pt'>ou</p>
+<p class=AmmCorpsTexteGras style='margin-top:6.0pt;margin-right:0cm;margin-bottom: 0cm;margin-left:0cm;margin-bottom:.0001pt'>SANOFI WINTHROP INDUSTRIE</p>
+<p class=AmmCorpsTexte style='margin-bottom:0cm;margin-bottom:.0001pt'>196, RUE DU MARECHAL JUIN</p>
+<p class=AmmCorpsTexte style='margin-bottom:0cm;margin-bottom:.0001pt'>45200 AMILLY</p>
+<p class="AmmAnnexeTitre2"><a name="Ann3bNomsMediEEE">Noms du médicament dans les Etats membres de l'Espace Economique Européen</a>&nbsp;&nbsp;<a href='#HautDePage'><img src='img/BackToTop.jpg' width='15px' height='15px' alt='Retour en haut de la page' title='Retour en haut de la page' /></a></p>
+<p class=AmmCorpsTexte>Sans objet.</p>
+<p class=AmmAnnexeTitre2>La dernière date à laquelle cette notice a été révisée est</p>
+<p class=AmmCorpsTexte>[à compléter ultérieurement par le titulaire]</p>
+<p class="AmmAnnexeTitre2"><a name="Ann3bAutres">Autres</a>&nbsp;&nbsp;<a href='#HautDePage'><img src='img/BackToTop.jpg' width='15px' height='15px' alt='Retour en haut de la page' title='Retour en haut de la page' /></a></p>
+<p class=AmmCorpsTexte>Des informations détaillées sur ce médicament sont disponibles sur le site Internet de l’ANSM (France).</p>
+</div>					
+					<p class="alignright"><a href="#HautDePage">Retour en haut de la page <img src="img/BackToTop.jpg" width="20px" height="20px" alt="Retour en haut de la page" title="Retour en haut de la page" /></a></p>
+				</div>
+			</div>
+		</div>
+	</div>
+
+<table summary="" class="content" width="1000">
+	<tr>
+		<td height="100px">&nbsp;</td>
+	</tr>
+</table>
+<table summary="Pied de page" class="footer" width="1000">
+	<tr>
+		<td>
+			<table summary="" class="tablealigncenter" border="0">
+				<tr>
+					<td width="100px" class="aligncenter"><a id="lien_ansm" href="http://ansm.sante.fr/" target="_blank"><img src="img/Logo_ANSM.png" width="150" height="60" alt="ANSM - Agence nationale de sécurité du médicament et des produits de santé" title="L'ANSM met à disposition les principales informations issues de l'Autorisation de mise sur le marché, l'appartenance à un groupe générique, les liens vers les informations de sécurité qu'elle publie, l'identification des médicaments sous surveillance renforcée - nouvelle fenêtre" /></a></td>
+					          <td>&nbsp;</td>
+					<td width="100px" class="aligncenter"><img src="img/Logo_HAS.png" width="150" height="60" alt="HAS - Haute autorité de santé" title="La HAS met à disposition les informations relatives au service médical rendu, à l'amélioration du service médical rendu ainsi que les liens vers les avis de la Commission de la Transparence correspondants - nouvelle fenêtre" /></td>
+					<td>&nbsp;</td>
+					<td width="100px" class="aligncenter"><img src="img/Logo_CNAM.png" width="150" height="60" alt="UNCAM - Unin nationale des caisses d'assurance maladie" title="L'UNCAM met à disposition le taux de remboursement, le prix et les indications remboursables le cas échéant, ainsi que l'agrément aux collectivités - nouvelle fenêtre" /></td>
+          				</tr>
+			</table> 
+		</td>
+	</tr>
+</table>
+<table summary="" class="finpage" width="1000">
+	<tr>
+		<td height="100px" class="aligncenter">
+			<a class="navigation" href="plan.php">Plan du site</a>&nbsp;|&nbsp;
+			<a class="navigation" href="accessibilite.php">Accessibilité</a>&nbsp;|&nbsp;
+			<a class="navigation" href="contact.php">Contact</a>&nbsp;|&nbsp;
+			<a class="navigation" href="telechargement.php">Téléchargement</a>&nbsp;|&nbsp;
+			<a class="navigation" href="DeclarationConfidentialite.php">Declaration de confidentialité</a>&nbsp;|&nbsp;
+			<a class="navigation" href="http://www.service-public.fr/" title="Service Public - Nouvelle fenêtre" target="_blank">Service-Public.fr</a>&nbsp;|&nbsp;
+			<a class="navigation" href="http://www.legifrance.gouv.fr/" title="Legifrance - Nouvelle fenêtre" target="_blank">Legifrance</a>&nbsp;|&nbsp;
+			<a class="navigation" href="http://www.gouvernement.fr/" title="Gouvernement - Nouvelle fenêtre" target="_blank" >Gouvernement.fr</a>
+		</td>
+	</tr>
+</table>
+
+
+
+<!-- Matomo -->
+<script type="text/javascript">
+  var _paq = window._paq = window._paq || [];
+  /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
+  _paq.push(['trackPageView']);
+  _paq.push(['enableLinkTracking']);
+  (function() {
+    var u="https://stats.integra.fr/";
+    _paq.push(['setTrackerUrl', u+'matomo.php']);
+    _paq.push(['setSiteId', '79']);
+    var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+    g.type='text/javascript'; g.async=true; g.src=u+'matomo.js'; s.parentNode.insertBefore(g,s);
+  })();
+</script>
+<!-- End Matomo Code -->
+
+
+
+</body>
+</html>

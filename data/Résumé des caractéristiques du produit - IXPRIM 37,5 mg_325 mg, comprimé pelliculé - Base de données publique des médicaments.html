@@ -1,0 +1,578 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="fr" lang="fr">
+<head>
+	<title>Résumé des caractéristiques du produit - IXPRIM 37,5 mg/325 mg, comprimé pelliculé  - Base de données publique des médicaments</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=windows-1252"/>
+	<meta name="robots" content="index, follow"/>
+	<meta name="Description" content="Base de données publique des médicaments"/>
+	<meta name="Keywords" content="base, données, publique, médicaments, Résumé des caractéristiques du produit, IXPRIM 37,5 mg/325 mg, comprimé pelliculé "/>
+	<meta name="Subject" content="medicament"/>
+	<link href='https://fonts.googleapis.com/css?family=Noticia+Text' rel='stylesheet' type='text/css' />
+	<link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro' rel='stylesheet' type='text/css' />
+	<link href="style/style_bdm.css?v=2.2.3" type="text/css" rel="stylesheet"/>
+	<link href="style/style_RCP_Notice.css" type="text/css" rel="stylesheet"/>
+  <link rel="alternate" href="http://m.base-donnees-publique.medicaments.gouv.fr/#!info-61137241">
+    <script type="text/javascript" src="scripts/autocomplete.js?v=2.2.3"></script>
+	<script type="text/javascript" src="scripts/jquery.js"></script>
+    <script type="text/javascript" src="scripts/jquery-ui.min.js"></script>
+	<script type="text/javascript" src="scripts/common.js"></script>
+	<link rel="icon" type="image/x-icon" href="favicon.ico" />
+</head>
+
+<body>
+
+<a name="HautDePage" />
+<div id="bandeauhaut">
+	<a id="lien_ministere" class="lienmenu" href="http://www.sante.gouv.fr" target="_blank" title="Site du ministère des affaires sociales et de la santé - nouvelle fenêtre"><img id="logoministere" src="img/Logo_Ministere.jpg"  alt="Logo du ministère des affaires sociales et de la santé"/></a>
+	<h1 class="texteTitreSite">
+		Base <span class="texteBleu">de</span> données <span class="texteBleu">publique</span><br/><span class="texteBleu">des</span> médicaments
+	</h1>
+		<a id="lien_medicament_gouv" class="lienEspaceMedic" target="_blank" href="http://medicaments.gouv.fr" title="Visiter [medicaments.gouv.fr] - nouvelle fenêtre">Visiter [medicaments.gouv.fr] <img src="/img/icone_lien.png" alt="Visiter [medicaments.gouv.fr]"  title="Visiter [medicaments.gouv.fr] - nouvelle fenetre" /></a>
+</div>
+<!--div align="center">
+	<a id="banniere" target="_blank" href="http://social-sante.gouv.fr/soins-et-maladies/medicaments/medicaments-generiques/" title="Visiter [medicaments.gouv.fr] - M?dicaments g?n?riques">
+		<img width="1000"   src ="/img/carrouselbannieres.gif" alt="Visiter [medicaments.gouv.fr] - M?dicaments g?n?riques" title="Visiter [medicaments.gouv.fr] - M?dicaments g?n?riques" />
+	</a>
+</div-->
+
+<div id="menuhaut">
+	<span id="menuhaut_gauche">
+		<a id="lien_accueil" class="navigation" href="index.php">Accueil</a>&nbsp;|&nbsp;
+		<a id="lien_glossaire" class="navigation" href="glossaire.php">Glossaire</a>&nbsp;|&nbsp;
+		<a id="lien_aide" class="navigation" href="aide.php">Aide</a>		
+	</span>
+	
+		
+	<span id="menuhaut_dernmaj">
+        <br>Dernière <span title=" 2.4.4
+">mise à jour</span> le 03/03/2025	</span>
+</div>
+
+	<script language="javascript" type="text/javascript">
+		//<![CDATA[ 
+		function Aff(men) {
+			document.write("<ul class=\"menuDoc\">");
+			for(var no_rub=0;no_rub<men.num_rub;no_rub++) {
+				document.write("<li><a class='leftMenu' href='"+menu[no_rub].page+"'>");
+				document.write(men[no_rub].txt);
+				document.write("</a></li>");
+				if (men[no_rub].nb_lien != 0){
+					document.write("<ul class=\"sousMenuDoc\">");
+				}
+				for(var no_lien=0;no_lien<men[no_rub].nb_lien;no_lien++) {
+					document.write("<li><a class='leftMenu' href='"+men[no_rub][no_lien].page+"'>");
+					document.write(men[no_rub][no_lien].txt);
+					document.write("</a></li>");
+				}
+				if (men[no_rub].nb_lien != 0){
+					document.write("</ul>");
+				}
+			}
+			document.write("</ul>");
+		}
+		
+		function CreerMenu(police,imgRub,imgOption,imgOptionFin,hauteur) {
+			this.num_rub=0;
+			this.police=police;
+			this.imgRub=imgRub;
+			this.imgOpt=imgOption;
+			this.imgOptFin=imgOptionFin;
+			this.hauteur=hauteur;
+			this.AddRub=AddRub;
+			this.AddLien=AddLien;
+		}
+		
+		function AddRub(txt,aff,page) {
+			var rub = new Object;
+				rub.txt=txt;
+				rub.aff=aff;
+				rub.page=page;
+				rub.nb_lien=0;
+			this[this.num_rub]=rub;
+			this.num_rub++;
+		}
+
+		function AddLien(txt,page) {
+			var no_rub = this.num_rub-1;
+			var no_lien= this[no_rub].nb_lien;
+			var lien = new Object;
+				lien.txt=txt;
+				lien.page=page;
+			this[no_rub][no_lien]=lien;
+			this[no_rub].nb_lien++;
+		}
+		var menu=new CreerMenu("arial","img/dyn04.gif","img/dyn22.gif","img/dyn55.gif",18);
+		//]]> 
+		menu.AddRub("Dénomination","O","#RcpDenomination");
+			menu.AddRub("Composition","O","#RcpCompoQualiQuanti");
+			menu.AddRub("Forme pharma.","O","#RcpFormePharm");
+			menu.AddRub("Clinique","O","#RcpDonneesCliniques");
+			menu.AddLien("Indic. thérapeutiques","#RcpIndicTherap");
+				menu.AddLien("Posologie","#RcpPosoAdmin");
+				menu.AddLien("Contre-indications","#RcpContreindications");
+				menu.AddLien("Mise en garde","#RcpMisesEnGarde");
+				menu.AddLien("Interactions","#RcpInteractionsMed");
+				menu.AddLien("Grossesse, allait.","#RcpFertGrossAllait");
+				menu.AddLien("Conduite véhicules","#RcpConduite");
+				menu.AddLien("Effets indésirables","#RcpEffetsIndesirables");
+				menu.AddLien("Surdosage","#RcpSurdosage");
+				menu.AddRub("Pharmacologie","O","#RcpPropPharmacologiques");
+			menu.AddLien("Pharmacodynamie","#RcpPropPharmacodynamiques");
+				menu.AddLien("Pharmacocinétique","#RcpPropPharmacocinetiques");
+				menu.AddLien("Sécurité préclinique","#RcpSecuritePreclinique");
+				menu.AddRub("Pharmaceutique","O","#RcpDonneesPharmaceutiques");
+			menu.AddLien("Liste excipients","#RcpListeExcipients");
+				menu.AddLien("Incompatibilités","#RcpIncompatibilites");
+				menu.AddLien("Durée conservation","#RcpDureeConservation");
+				menu.AddLien("Conservation","#RcpPrecConservation");
+				menu.AddLien("Emballage","#RcpEmballage");
+				menu.AddLien("Utilisation/manipulation","#RcpPrecEmpl");
+				menu.AddRub("Titulaire AMM","O","#RcpTitulaireAmm");
+			menu.AddRub("Présentations","O","#RcpNumAutor");
+			menu.AddRub("Autorisation, renouv.","O","#RcpPremiereAutorisation");
+			menu.AddRub("Date de révision","O","#RcpDateRevision");
+			menu.AddRub("Dosimétrie","O","#RcpDosimetrie");
+			menu.AddRub("Préparation radiopharma.","O","#RcpInstPrepRadioph");
+				</script>
+
+	<div id="container">
+		<div id="leftnav">
+			<div id="cadreMenuGauche">
+				<h2 class="sommaireMenu">Sommaire</h2>
+				<div id="menuGauche">
+					<script language="JavaScript" type="text/javascript">Aff(menu);</script>
+				</div>
+			</div>
+		</div>
+		<div id="contentPrincipal">
+			<div id="boutonsliens">
+				<a id='lien_fiche_info' href='extrait.php?specid=61137241' ><img id="ongletficheinfo" alt="Onglet fiche information" src="img/onglet_fiche_info_vert.png" /></a><a id='lien_rcp' href='affichageDoc.php?specid=61137241&amp;typedoc=R'><img class="onglet" alt="Onglet résumé des caractéristiques du produit" src="img/onglet_rcp_gris.png" /></a><a id='lien_notice' href='affichageDoc.php?specid=61137241&amp;typedoc=N'><img class="onglet" alt="Onglet notice patient" src="img/onglet_notice_vert.png" /></a>			</div>
+			<div class="titredeno">
+				<table summary="" border="0" cellspacing="0">
+					<tr><td colspan="3" height="10px"></td></tr>
+					<tr>
+						<td width="15px">&nbsp;</td>
+						<td width="685px"><h1 class="textedeno">IXPRIM 37,5 mg/325 mg, comprimé pelliculé  - Résumé des caractéristiques du produit</h1></td>
+						<td width="43px" class="tdcenter"><a href="Javascript:void(null)" onclick="print();"><img src="img/imprimante.png" height="20px" width="20px" alt="Imprimer le document" title="Imprimer le document" border="0" /></a></td>
+					</tr>
+					<tr><td colspan="3" height="10px"></td></tr>
+				</table>
+			</div>
+			
+			<div id="contentDocument">
+				<div id="textDocument">
+					<p class="DateNotif">ANSM - Mis à jour le : 10/01/2025</p>
+<p class="AmmAnnexeTitre1"><a name="RcpDenomination">1. DENOMINATION DU MEDICAMENT</a>&nbsp;&nbsp;<a href='#HautDePage'><img src='img/BackToTop.jpg' width='15px' height='15px' alt='Retour en haut de la page' title='Retour en haut de la page' /></a></p>
+<p class=AmmCorpsTexteGras><a name="_Toc142278913">IXPRIM 37,5 mg/325 mg, comprimé pelliculé</a></p>
+<p class="AmmAnnexeTitre1"><a name="RcpCompoQualiQuanti">2. COMPOSITION QUALITATIVE ET QUANTITATIVE</a>&nbsp;&nbsp;<a href='#HautDePage'><img src='img/BackToTop.jpg' width='15px' height='15px' alt='Retour en haut de la page' title='Retour en haut de la page' /></a></p>
+<p class=AmmComposition><a name="_Toc142278914">Chlorhydrate de tramadol ................................................................................................. 37,50 mg</a></p>
+<p class=AmmComposition>Paracétamol ................................................................................................................ 325, 00 mg</p>
+<p class=AmmCorpsTexte align=center style='text-align:center'>Pour un comprimé pelliculé.</p>
+<p class=AmmCorpsTexte><a name="_Hlk530477736"><span class='souligne'>Excipient à effet notoire :</span> Un comprimé contient 1,878 mg de lactose monohydraté (=1,784 mg de lactose)</a><a name="_Hlk530473094">.</a></p>
+<p class=AmmCorpsTexte>Pour la liste complète des excipients, voir rubrique 6.1.</p>
+<p class="AmmAnnexeTitre1"><a name="RcpFormePharm">3. FORME PHARMACEUTIQUE</a>&nbsp;&nbsp;<a href='#HautDePage'><img src='img/BackToTop.jpg' width='15px' height='15px' alt='Retour en haut de la page' title='Retour en haut de la page' /></a></p>
+<p class=AmmCorpsTexte><a name="_Toc142278915">Comprimé pelliculé.</a></p>
+<p class=AmmCorpsTexte>Comprimé pelliculé jaune pâle, présentant le logo du laboratoire <img alt='' width=19 height=21 id="Image 1" src="https://base-donnees-publique.medicaments.gouv.fr/Rcp_Notices/images//R0428608/image001.gif">sur une des faces et la mention « T5 » sur l’autre face.</p>
+<p class="AmmAnnexeTitre1"><a name="RcpDonneesCliniques">4. DONNEES CLINIQUES</a>&nbsp;&nbsp;<a href='#HautDePage'><img src='img/BackToTop.jpg' width='15px' height='15px' alt='Retour en haut de la page' title='Retour en haut de la page' /></a></p>
+<p class="AmmAnnexeTitre2"><a name="RcpIndicTherap">4.1. Indications thérapeutiques</a>&nbsp;&nbsp;<a href='#HautDePage'><img src='img/BackToTop.jpg' width='15px' height='15px' alt='Retour en haut de la page' title='Retour en haut de la page' /></a></p>
+<p class=AmmCorpsTexte><a name="_Toc142278917">IXPRIM est indiqué dans le traitement symptomatique des douleurs modérées à intenses.</a></p>
+<p class=AmmCorpsTexte>L’utilisation d’IXPRIM doit être limitée aux patients dont la douleur modérée à intense nécessite un traitement par une association de paracétamol et de tramadol (voir rubrique 5.1).</p>
+<p class="AmmAnnexeTitre2"><a name="RcpPosoAdmin">4.2. Posologie et mode d'administration</a>&nbsp;&nbsp;<a href='#HautDePage'><img src='img/BackToTop.jpg' width='15px' height='15px' alt='Retour en haut de la page' title='Retour en haut de la page' /></a></p>
+<p class=AmmAnnexeTitre3><a name="_Toc142278918">Posologie</a></p>
+<p class=AmmCorpsTexte>L’utilisation d’IXPRIM doit être limitée aux patients dont la douleur modérée à intense nécessite un traitement par une association de paracétamol et de chlorhydrate de tramadol.</p>
+<p class=AmmCorpsTexte>La dose devra être individuellement adaptée en fonction de l’intensité de la douleur et de la sensibilité individuelle du patient. La dose efficace antalgique la plus faible doit généralement être choisie. Une dose totale de 8 comprimés par jour (soit 300 mg de chlorhydrate de tramadol et 2600 mg de paracétamol) ne doit pas être dépassée. Les prises doivent être espacées d’au moins 6 heures. </p>
+<p class=AmmAnnexeTitre4>Adulte et adolescent (à partir de 12 ans) : </p>
+<p class=AmmCorpsTexte>La dose initiale recommandée est de 2 comprimés d’IXPRIM (soit 75 mg de chlorhydrate de tramadol et 650 mg de paracétamol). Des doses complémentaires peuvent être administrées en fonction des besoins, sans dépasser 8 comprimés par jour (soit 300 mg de chlorhydrate de tramadol et 2600 mg de paracétamol). </p>
+<p class=AmmCorpsTexte>Les prises doivent être espacées d’au moins 6 heures. </p>
+<p class=AmmCorpsTexte>IXPRIM ne doit en aucun cas être administré plus longtemps qu’il n’est strictement nécessaire (voir rubrique 4.4). Si la nature ou la sévérité de la maladie imposent un traitement répété ou un traitement prolongé, une surveillance attentive et régulière doit être effectuée (avec des pauses thérapeutiques si possible) pour vérifier si la poursuite du traitement est nécessaire.</p>
+<p class=AmmAnnexeTitre4>Population pédiatrique :</p>
+<p class=AmmCorpsTexte>La sécurité d’emploi et l’efficacité d’IXPRIM n’ont pas été établies chez l’enfant de moins de 12 ans. Le traitement n’est donc pas recommandé dans cette population.</p>
+<p class=AmmAnnexeTitre4>Sujets âgés :</p>
+<p class=AmmCorpsTexte>Une adaptation posologique n’est habituellement pas nécessaire chez les patients âgés de moins de 75 ans, en l’absence d’insuffisance hépatique ou rénale cliniquement avérée. Chez les patients âgés de plus de 75 ans, l’élimination du produit peut être retardée. C’est pourquoi l’intervalle posologique devra être allongé, si nécessaire, en fonction des besoins du patient.</p>
+<p class=AmmAnnexeTitre4>Insuffisance rénale / dialyse :</p>
+<p class=AmmCorpsTexte>L’élimination du tramadol est retardée chez les insuffisants rénaux. Chez ces patients, une augmentation de l’intervalle entre les prises doit être soigneusement évaluée en fonction des besoins du patient. </p>
+<p class=AmmAnnexeTitre4>Insuffisance hépatique :</p>
+<p class=AmmCorpsTexte>L’élimination du tramadol est retardée chez les insuffisants hépatiques. Chez ces patients, une augmentation de l’intervalle entre les prises doit être soigneusement évaluée en fonction des besoins du patient (voir rubrique 4.4). En raison de la présence de tramadol, IXPRIM ne doit pas être administré chez les patients souffrant d’insuffisance hépatique sévère (voir rubrique 4.3). </p>
+<p class=AmmAnnexeTitre3>Mode d’administration</p>
+<p class=AmmCorpsTexte>Voie orale<span class='gras'>.</span></p>
+<p class=AmmCorpsTexte>Les comprimés doivent être<span class='gras'> </span>avalés tels quels, avec une quantité suffisante de liquide. Ils ne doivent pas être fractionnés, ni mâchés. </p>
+<p class=AmmAnnexeTitre4><span style='font-style:normal'>Objectifs du traitement et de son arrêt :</span></p>
+<p class=AmmCorpsTexte>Avant l’instauration du traitement avec IXPRIM, une stratégie thérapeutique comprenant la durée et les objectifs du traitement, ainsi qu’un plan pour la fin du traitement, doit être convenue avec le patient, conformément aux recommandations relatives à la prise en charge de la douleur. Pendant le traitement, des contacts fréquents doivent avoir lieu entre le médecin et le patient afin d’évaluer la nécessité de poursuivre le traitement, d’envisager l’arrêt ou d’ajuster la posologie du traitement si nécessaire. Lorsqu’un patient n’a plus besoin du traitement par tramadol, il est conseillé de réduire progressivement la dose pour éviter les symptômes de sevrage. En l’absence de contrôle adéquat de la douleur, la possibilité d’une hyperalgie, d’une tolérance et d’une progression de la maladie sous-jacente doit être envisagée (voir rubrique 4.4).</p>
+<p class="AmmAnnexeTitre2"><a name="RcpContreindications">4.3. Contre-indications</a>&nbsp;&nbsp;<a href='#HautDePage'><img src='img/BackToTop.jpg' width='15px' height='15px' alt='Retour en haut de la page' title='Retour en haut de la page' /></a></p>
+<p class=AmmListePuces1 style='text-align:justify'><a name="_Toc142278919"><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>Hypersensibilité aux substances actives ou à l’un des excipients listés en rubrique 6.1.</a></p>
+<p class=AmmListePuces1 style='text-align:justify'><span style='font-family: Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>Intoxication aiguë par l’alcool, les médicaments hypnotiques, les analgésiques centraux, les opioïdes ou les médicaments psychotropes.</p>
+<p class=AmmListePuces1 style='text-align:justify'><span style='font-family: Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>IXPRIM ne doit pas être administré aux patients qui sont traités simultanément ou qui ont été traités dans les 2 semaines précédentes par les IMAO (voir rubrique 4.5).</p>
+<p class=AmmListePuces1 style='text-align:justify'><span style='font-family: Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>Insuffisance hépatique sévère.</p>
+<p class=AmmListePuces1 style='text-align:justify'><span style='font-family: Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>Epilepsie non contrôlée par un traitement (voir rubrique 4.4).</p>
+<p class="AmmAnnexeTitre2"><a name="RcpMisesEnGarde">4.4. Mises en garde spéciales et précautions d'emploi</a>&nbsp;&nbsp;<a href='#HautDePage'><img src='img/BackToTop.jpg' width='15px' height='15px' alt='Retour en haut de la page' title='Retour en haut de la page' /></a></p>
+<p class=AmmAnnexeTitre3><a name="_Toc142278920">Mises en garde spéciales :</a></p>
+<p class=AmmCorpsTexte><span style='color:black;layout-grid-mode:line'>Chez l’adulte et l’adolescent à partir de 12 ans. La dose maximale de 8 comprimés d’IXPRIM ne doit pas être dépassée. Afin d’éviter tout risque de surdosage accidentel, les patients doivent être informés de ne pas dépasser la dose recommandée et de ne pas utiliser d’autres médicaments contenant du paracétamol (y compris les médicaments disponibles sans ordonnance) ou du tramadol sans avis du médecin.</span></p>
+<p class=AmmCorpsTexte><span style='color:black;layout-grid-mode:line'>IXPRIM n’est pas recommandé en cas d’insuffisance rénale sévère (clairance de la créatinine &lt;10 ml/min). </span></p>
+<p class=AmmCorpsTexte><span style='color:black'>IXPRIM ne doit pas être administré en cas d’insuffisance hépatique sévère (voir rubrique 4.3). Les risques associés à un surdosage en paracétamol sont plus élevés chez les patients présentant une atteinte hépatique alcoolique non cirrhotique. En cas d’insuffisance hépatique modérée, il convient de discuter soigneusement d’un allongement de l’intervalle posologique. </span></p>
+<p class=AmmCorpsTexte><span style='color:black'>IXPRIM n’est pas recommandé en cas d’insuffisance respiratoire sévère.</span></p>
+<p class=AmmCorpsTexte><span style='color:black;layout-grid-mode:line'>Le tramadol n’est pas adapté au traitement de substitution chez les patients présentant une dépendance aux opioïdes. En effet, bien qu’agoniste des opioïdes, le </span>chlorhydrate de <span style='color:black;layout-grid-mode:line'>tramadol ne peut pas corriger les symptômes de sevrage des morphiniques.</span></p>
+<p class=AmmCorpsTexte><span style='color:black;layout-grid-mode:line'>Des convulsions ont été rapportées principalement chez des patients prédisposés traités par tramadol et/ou traités par des médicaments pouvant diminuer le seuil épileptogène, en particulier inhibiteurs sélectifs de la recapture de la sérotonine, antidépresseurs tricycliques, antipsychotiques, analgésiques centraux ou anesthésiques locaux. Les patients épileptiques contrôlés par un traitement ou les patients susceptibles de présenter des convulsions ne devront être traités par IXPRIM qu’en cas de nécessité absolue. Des convulsions ont été rapportées chez des patients recevant du </span>chlorhydrate de<span class='italique'> </span><span style='color:black;layout-grid-mode:line'>tramadol aux doses recommandées. Le risque peut être accru lorsque les doses de </span>chlorhydrate de <span style='color:black;layout-grid-mode:line'>tramadol dépassent la dose maximale recommandée. </span></p>
+<p class=AmmCorpsTexte><span style='color:black;layout-grid-mode:line'>L’administration concomitante de morphiniques agonistes-antagonistes (nalbuphine, buprénorphine, pentazocine) n’est pas recommandée (voir rubrique 4.5.).</span></p>
+<p class=AmmAnnexeTitre4><a name="_Hlk20235770"><span style='layout-grid-mode: line'>Troubles respiratoires liés au sommeil</span></a></p>
+<p class=AmmCorpsTexte><span style='color:black;layout-grid-mode:line'>Les opioïdes peuvent provoquer des troubles respiratoires liés au sommeil, notamment l’apnée centrale du sommeil (ACS) et l’hypoxémie liée au sommeil. Le risque d’ACS augmente en fonction de la dose d’opioïdes utilisée. Chez les patients présentant une ACS, une diminution de la dose totale d’opioïdes doit être envisagée.</span></p>
+<p class=AmmAnnexeTitre4><a name="_Hlk38270039">Syndrome sérotoninergique </a></p>
+<p class=AmmCorpsTexte>Le syndrome sérotoninergique, une affection potentiellement mortelle, a été rapporté chez des patients traités par le tramadol en association avec d’autres agents sérotoninergiques ou par le tramadol seul (voir rubriques 4.5, 4.8 et 4.9). Si un traitement concomitant avec d’autres agents sérotoninergiques est justifié sur le plan clinique, il est conseillé d’observer attentivement le patient, tout particulièrement pendant l’instauration du traitement et les augmentations de dose.</p>
+<p class=AmmCorpsTexte>Les symptômes du syndrome sérotoninergigue peuvent comprendre des modifications de l'état mental, une instabilité autonome, des anomalies neuromusculaires et/ou des symptômes gastro-intestinaux. </p>
+<p class=AmmCorpsTexte>En cas de suspicion de syndrome sérotoninergique, une réduction de dose ou un arrêt du traitement devra être envisagé(e) en fonction de la gravité des symptômes. Le retrait des médicaments sérotoninergiques apporte généralement une amélioration rapide</p>
+<p class=AmmAnnexeTitre4>Métabolisme par le CYP2D6</p>
+<p class=AmmCorpsTexte>Le tramadol est métabolisé par l’intermédiaire d’une enzyme hépatique, le CYP2D6. En cas de déficit ou d’absence totale de cette enzyme chez le patient, l’effet analgésique attendu pourra ne pas être obtenu. Il est estimé que jusqu’à 7 % de la population caucasienne pourrait présenter ce déficit. Toutefois, si le patient est un métaboliseur ultra-rapide, il existe un risque, même à dose recommandée, de manifestation d’effets indésirables liés à la toxicité des opiacés.</p>
+<p class=AmmCorpsTexte>Les symptômes généraux de toxicité des opiacés incluent une confusion mentale, une somnolence, une respiration superficielle, des pupilles contractées, des nausées, des vomissements, une constipation et une perte d’appétit. Dans les cas graves, les patients peuvent présenter les symptômes d’une défaillance circulatoire et respiratoire pouvant engager le pronostic vital et conduire à une issue fatale dans de très rares cas. </p>
+<p class=AmmCorpsTexte>Les prévalences estimées de métaboliseurs ultra-rapides dans différentes populations sont résumées ci-dessous:</p>
+<table class=AmmCorpsTexteTable border=0 cellspacing=0 cellpadding=0 width=0
+style='margin-left:36.0pt;border-collapse:collapse'>
+<tr style='height:79.35pt'>
+<td width="54%" valign=top style='width:54.92%;padding:1.2pt 1.2pt 1.2pt 1.2pt;
+height:79.35pt'>
+<p class=AmmCorpsTexte align=left style='text-align:left;line-height:200%'><span style='font-size:10.0pt;line-height:200%;font-family:"Arial",sans-serif; color:black'>Population</span></p>
+<p class=AmmCorpsTexte align=left style='text-align:left;line-height:200%'><span style='font-size:10.0pt;line-height:200%;font-family:"Arial",sans-serif; color:black'>Africain/Éthiopien</span></p>
+<p class=AmmCorpsTexte align=left style='text-align:left;line-height:200%'><span style='font-size:10.0pt;line-height:200%;font-family:"Arial",sans-serif; color:black'>Afro-américain</span></p>
+<p class=AmmCorpsTexte align=left style='text-align:left;line-height:200%'><span style='font-size:10.0pt;line-height:200%;font-family:"Arial",sans-serif; color:black'>Asiatique</span></p>
+<p class=AmmCorpsTexte align=left style='text-align:left;line-height:200%'><span style='font-size:10.0pt;line-height:200%;font-family:"Arial",sans-serif; color:black'>Caucasien</span></p>
+<p class=AmmCorpsTexte align=left style='text-align:left;line-height:200%'><span style='font-size:10.0pt;line-height:200%;font-family:"Arial",sans-serif; color:black'>Grec</span></p>
+<p class=AmmCorpsTexte align=left style='text-align:left;line-height:200%'><span style='font-size:10.0pt;line-height:200%;font-family:"Arial",sans-serif; color:black'>Hongrois</span></p>
+<p class=AmmCorpsTexte align=left style='text-align:left;line-height:200%'><span style='font-size:10.0pt;line-height:200%;font-family:"Arial",sans-serif; color:black'>Européen du Nord</span></p>
+</td>
+<td width="45%" valign=top style='width:45.08%;padding:1.2pt 1.2pt 1.2pt 1.2pt;
+height:79.35pt'>
+<p class=AmmCorpsTexte align=left style='text-align:left;line-height:200%'><span style='font-size:10.0pt;line-height:200%;font-family:"Arial",sans-serif; color:black'>% de prévalence</span></p>
+<p class=AmmCorpsTexte align=left style='text-align:left;line-height:200%'><span style='font-size:10.0pt;line-height:200%;font-family:"Arial",sans-serif; color:black'>29 %</span></p>
+<p class=AmmCorpsTexte align=left style='text-align:left;line-height:200%'><span style='font-size:10.0pt;line-height:200%;font-family:"Arial",sans-serif; color:black'>de 3,4 % à 6,5 %</span></p>
+<p class=AmmCorpsTexte align=left style='text-align:left;line-height:200%'><span style='font-size:10.0pt;line-height:200%;font-family:"Arial",sans-serif; color:black'>de 1,2 % à 2 %</span></p>
+<p class=AmmCorpsTexte align=left style='text-align:left;line-height:200%'><span style='font-size:10.0pt;line-height:200%;font-family:"Arial",sans-serif; color:black'>de 3,6 % à 6,5 %</span></p>
+<p class=AmmCorpsTexte align=left style='text-align:left;line-height:200%'><span style='font-size:10.0pt;line-height:200%;font-family:"Arial",sans-serif; color:black'>6,0 %</span></p>
+<p class=AmmCorpsTexte align=left style='text-align:left;line-height:200%'><span style='font-size:10.0pt;line-height:200%;font-family:"Arial",sans-serif; color:black'>1,9 %</span></p>
+<p class=AmmCorpsTexte align=left style='text-align:left;line-height:200%'><span style='font-size:10.0pt;line-height:200%;font-family:"Arial",sans-serif; color:black'>de 1 % à 2 %</span></p>
+</td>
+</tr>
+</table>
+<p class=AmmAnnexeTitre4>Utilisation postopératoire chez les enfants</p>
+<p class=AmmCorpsTexte>La littérature rapporte des cas de tramadol administré à des enfants en postopératoire après une amygdalectomie et/ou une adénoïdectomie dans le cadre du traitement de l’apnée obstructive du sommeil, ayant mené à des événements indésirables rares mais pouvant engager le pronostic vital. L’administration de tramadol à des enfants pour le soulagement de douleurs postopératoires doit être sujette à la plus grande prudence et doit s’accompagner d’une étroite surveillance des symptômes en lien avec la toxicité des opiacés, notamment la dépression respiratoire.</p>
+<p class=AmmAnnexeTitre4>Enfants présentant une fonction respiratoire altérée</p>
+<p class=AmmCorpsTexte>L’utilisation du tramadol n’est pas recommandée chez les enfants présentant une fonction respiratoire altérée, notamment en cas de déficit neuromusculaire, d’affections cardiaques ou respiratoires sévères, d’infections des voies aériennes supérieures ou des poumons, de polytraumatismes ou d’interventions chirurgicales lourdes. Ces facteurs sont susceptibles d’aggraver les symptômes de toxicité des opiacés.</p>
+<p class=AmmAnnexeTitre4><a name="_Hlk70088582"></a><a name="_Hlk89607164"></a><a name="_Hlk89605142"><span style='layout-grid-mode:line'>Insuffisance surrénalienne</span></a></p>
+<p class=AmmCorpsTexte><span style='color:black;layout-grid-mode:line'>Les antalgiques opioïdes peuvent occasionnellement provoquer une insuffisance surrénalienne réversible nécessitant une surveillance et un traitement de substitution par glucocorticoïde. Les symptômes d'insuffisance surrénale aiguë ou chronique peuvent inclure par ex. douleur abdominale sévère, nausées et vomissements, hypotension artérielle, fatigue extrême, diminution de l’appétit et perte de poids</span><span style='color:black;layout-grid-mode:line'>.</span></p>
+<p class=AmmAnnexeTitre3>Précautions d’emploi :</p>
+<p class=AmmAnnexeTitre4><a name="_Hlk1137531"></a><a name="_Hlk530473313">Risques liés à l’utilisation concomitante de médicaments sédatifs tels que les benzodiazépines ou autres médicaments apparentés</a></p>
+<p class=AmmCorpsTexte>L’utilisation concomitante d’IXPRIM et de médicaments sédatifs tels que les benzodiazépines et médicaments apparentés, peut entraîner une sédation, une dépression respiratoire, un coma et la mort. <a name="_Hlk8134048">En raison </a>de ces risques, la prescription concomitante avec ces médicaments sédatifs doit être réservée aux patients pour lesquels <a name="_Hlk8134087">d’autres options thérapeutiques ne sont pas possibles</a>. </p>
+<p class=AmmCorpsTexte><a name="_Hlk8134112"></a><a name="_Hlk8135368">Si la décision de prescrire IXPRIM en même temps que des médicaments sédatifs est prise, la dose efficace la plus faible doit être utilisée et la durée du traitement doit être aussi courte que possible</a>. </p>
+<p class=AmmCorpsTexte>La prudence est recommandée en cas d'administration concomitante de paracétamol et de flucloxacilline en raison d'un risque accru d'acidose métabolique à trou anionique élevé (AMTAE), en particulier chez les patients atteints d'insuffisance rénale sévère, de septicémie, de malnutrition et d'autres sources de déficit en glutathion (par exemple, alcoolisme chronique), ainsi que chez ceux qui utilisent des doses quotidiennes maximales de paracétamol. Une surveillance étroite, incluant la mesure de la 5-oxoproline urinaire, est recommandée.</p>
+<p class=AmmCorpsTexte>Les patients doivent être <a name="_Hlk8134150">suivis de près pour surveiller la survenue de </a>signes et symptômes de dépression respiratoire et de sédation. A cet égard, il est fortement recommandé d'informer les patients et leurs soignants <a name="_Hlk8134194">afin qu’ils connaissent </a>ces symptômes (voir rubrique 4.5).</p>
+<p class=AmmCorpsTexte style='margin-top:0cm;margin-right:5.4pt;margin-bottom:7.0pt; margin-left:0cm;line-height:14.0pt;text-autospace:none'><span class='souligne'><span style='font-size:10.0pt;font-family:"Arial",sans-serif'>Tolérance et trouble de l’usage d’opioïdes (abus et pharmacodépendance)</span></span></p>
+<p class=AmmCorpsTexte>L’administration répétée d’opioïdes tels que IXPRIM peut entraîner une accoutumance, une dépendance physique et psychologique et un trouble de l’usage d’opioïdes (TUO). L’utilisation répétée de IXPRIM peut induire un trouble de l’usage d’opioïdes (TUO). Plus la dose est élevée et plus la durée du traitement par opioïdes est prolongée, plus le risque de développer un TUO sera accru. L’abus ou le mésusage intentionnel de IXPRIM peuvent entraîner un surdosage et/ou le décès. Le risque de développer un TUO est accru chez les patients présentant des antécédents personnels ou familiaux (parents ou frères et sœurs) de troubles liés à la consommation de substances (y compris l’alcoolisme), chez les fumeurs actifs ou chez les patients ayant des antécédents personnels de problèmes de santé mentale (par ex. dépression majeure, anxiété et trouble de la personnalité).</p>
+<p class=AmmCorpsTexte>Avant l’instauration du traitement par IXPRIM et pendant toute la durée du traitement, les objectifs thérapeutiques et un plan d’arrêt du traitement doivent être convenus avec le patient (voir rubrique 4.2). Avant et pendant le traitement, le patient doit également être informé des risques et des signes du TUO. Si ces signes apparaissent, il est conseillé aux patients de contacter leur médecin. </p>
+<p class=AmmCorpsTexte>Les patients devront être surveillés pour détecter les signes de consommation excessive de médicament (par ex. des demandes de renouvellement trop précoces). Cela inclut l'examen des opioïdes et des médicaments psychoactifs concomitants (comme les benzodiazépines). Pour les patients présentant des signes et symptômes de TUO, il convient d’envisager une consultation avec un spécialiste en toxicomanie.</p>
+<p class=AmmCorpsTexte>IXPRIM doit être utilisé avec prudence chez les patients dépendants aux opioïdes, chez les patients présentant un traumatisme crânien, chez les patients prédisposés aux convulsions, chez les patients présentant des dysfonctionnements des voies biliaires, un état de choc, ayant une altération de la conscience d’origine inconnue,<span class='italique'> </span>des troubles centraux ou périphériques de la fonction respiratoire ou une<span class='italique'> </span>augmentation de la<span class='italique'> </span>pression intracrânienne.</p>
+<p class=AmmCorpsTexte>Un surdosage en paracétamol peut engendrer une toxicité hépatique chez certains patients.</p>
+<p class=AmmCorpsTexte>Des symptômes de sevrage, similaires à ceux qui surviennent lors d’un sevrage aux opioïdes pourraient survenir même aux doses thérapeutiques et pour des traitements de courte durée (voir section 4.8). Les symptômes du sevrage peuvent être évités en diminuant progressivement les doses lors de l’arrêt du traitement surtout après de longues périodes d’administration. De rares cas de dépendance et d’abus ont été rapportés (voir rubrique 4.8). </p>
+<p class=AmmCorpsTexte>Dans une étude, l’utilisation de chlorhydrate de tramadol au cours d’une anesthésie générale par enflurane et protoxyde d’azote a favorisé la mémoire peropératoire. Dans l’attente de nouvelles données complémentaires, l’utilisation du chlorhydrate de tramadol pendant des anesthésies peu profondes doit être évitée. </p>
+<p class=AmmCorpsTexte>IXPRIM contient du lactose. Les patients ne devront pas prendre ce médicament en cas d’antécédents héréditaires tels qu’une galactosémie, un déficit en lactase ou une malabsorption du glucose-galactose.</p>
+<p class=AmmCorpsTexte><a name="_Hlk530473358">Ce médicament contient moins de 1 mmol de sodium (23 mg) par comprimé, c’est-à-dire qu’il est essentiellement « sans sodium ».</a></p>
+<p class="AmmAnnexeTitre2"><a name="RcpInteractionsMed">4.5. Interactions avec d'autres médicaments et autres formes d'interactions</a>&nbsp;&nbsp;<a href='#HautDePage'><img src='img/BackToTop.jpg' width='15px' height='15px' alt='Retour en haut de la page' title='Retour en haut de la page' /></a></p>
+<p class=AmmAnnexeTitre3>Associations contre-indiquées</p>
+<p class=AmmAnnexeTitre4>IMAO non sélectifs </p>
+<p class=AmmCorpsTexte>Risque d'apparition d'un syndrome sérotoninergique : diarrhée, tachycardie, hyperhidrose, tremblements, état confusionnel, voire coma.</p>
+<p class=AmmAnnexeTitre4>IMAO sélectifs A </p>
+<p class=AmmCorpsTexte>Par extrapolation à partir des IMAO non-sélectifs</p>
+<p class=AmmCorpsTexte>Risque d'apparition d'un syndrome sérotoninergique : diarrhée, tachycardie, hyperhidrose, tremblements, état confusionnel, voire coma.</p>
+<p class=AmmAnnexeTitre4>IMAO sélectifs B </p>
+<p class=AmmCorpsTexte>Manifestations d’excitation centrale évoquant un syndrome sérotoninergique : diarrhée, tachycardie, hyperhidrose, tremblements, état confusionnel, voire coma.</p>
+<p class=AmmCorpsTexte style='margin-top:12.0pt'>En cas de traitement récent par les IMAO, respecter un délai de 2 semaines avant la mise en route d'un traitement par tramadol.</p>
+<p class=AmmAnnexeTitre3><a name="_Toc142278922">Associations déconseillées</a></p>
+<p class=AmmAnnexeTitre4>Alcool </p>
+<p class=AmmCorpsTexte>Majoration par l'alcool de l'effet sédatif des analgésiques morphiniques.</p>
+<p class=AmmCorpsTexte>L'altération de la vigilance peut rendre dangereuse la conduite de véhicules et l'utilisation de machines.</p>
+<p class=AmmCorpsTexte>Eviter la prise de boissons alcoolisées et de médicaments contenant de l'alcool.</p>
+<p class=AmmAnnexeTitre4>Carbamazépine et autres inducteurs enzymatiques</p>
+<p class=AmmCorpsTexte>Risque de diminution de l’efficacité et de la durée d’action en raison de la diminution des concentrations plasmatiques de tramadol.</p>
+<p class=AmmCorpsTexte> </p>
+<p class=AmmAnnexeTitre4>Agonistes-antagonistes morphiniques (buprénorphine, nalbuphine, pentazocine).</p>
+<p class=AmmCorpsTexte style='margin-top:12.0pt'>Diminution de l’effet antalgique par blocage compétitif des récepteurs, avec risque d’apparition d’un syndrome de sevrage.</p>
+<p class=AmmAnnexeTitre3><a name="_Toc142278924">Associations à prendre en compte</a></p>
+<p class=AmmCorpsTexte>Le tramadol peut provoquer des convulsions et accroître le potentiel épileptogène des inhibiteurs sélectifs de la recapture de la sérotonine (ISRS) des inhibiteurs sélectifs de la recapture de la sérotonine et de la noradrénaline (IRSN) des antidépresseurs tricycliques, des antipsychotiques et d’autres produits abaissant le seuil épileptogène (tels que le bupropion, la mirtazapine, le tétrahydrocannabinol).</p>
+<p class=AmmCorpsTexteGras style='margin-top:6.0pt'>L’utilisation concomitante de tramadol et de produits sérotoninergiques tels que les inhibiteurs sélectifs de la recapture de la sérotonine (ISRS), les inhibiteurs de la recapture de la sérotonine et de la noradrénaline (IRSN), les Inhibiteurs de la MAO (voir rubrique 4.3), les antidépresseurs tricycliques et la mirtazapine peut entrainer un syndrome sérotoninergique, une affection potentiellement mortelle (voir rubriques 4.4 et 4.8). </p>
+<p class=AmmCorpsTexteGras>Autres dérivés morphiniques (y compris les médicaments antitussifs et traitements de substitution).</p>
+<p class=AmmCorpsTexte>Risque majoré de dépression respiratoire, pouvant être fatale en cas de surdosage.</p>
+<p class=AmmCorpsTexteGras>Autres dépresseurs du système nerveux central<span class='italique'>, </span>tels qu’autres dérivés morphiniques (incluant les médicaments antitussifs et les traitements de substitution), autres anxiolytiques, hypnotiques, antidépresseurs sédatifs, antihistaminiques sédatifs, neuroleptiques, antihypertenseurs centraux, thalidomide, baclofène. </p>
+<p class=AmmCorpsTexte>Ces médicaments peuvent majorer la dépression centrale. L’altération de la vigilance peut rendre dangereuse la conduite de véhicules et l'utilisation de machines.</p>
+<p class=AmmCorpsTexteGras><a name="_Hlk1137551"></a><a name="_Hlk530478031">Médicaments sédatifs tels que les benzodiazépines ou les médicaments apparentés :</a></p>
+<p class=AmmCorpsTexte>L’utilisation concomitante d'opioïdes avec des médicaments sédatifs tels que les benzodiazépines ou les médicaments apparentés augmente le risque de sédation, de dépression respiratoire, de coma et de décès en raison <a name="_Hlk8133364">d’un effet dépresseur additif sur le </a>système nerveux central. La dose et la durée de l'utilisation concomitante doivent être limitées (voir rubrique 4.4).</p>
+<p class=AmmCorpsTexte>L’utilisation concomitante d’IXPRIM avec des gabapentinoïdes (gabapentine et prégabaline) peut entraîner une dépression respiratoire, une hypotension, une sédation profonde, un coma ou le décès.</p>
+<p class=AmmCorpsTexte>En fonction des besoins cliniques, une évaluation du taux de prothrombine doit être réalisée périodiquement en cas de co-administration d’IXPRIM avec des dérivés de type warfarine, des allongements de l’INR ayant été rapportés.</p>
+<p class=AmmCorpsTexte>Dans un nombre limité d’études, l’utilisation en pré ou post-opératoire de l’anti-émétique antagoniste des récepteurs 5HT3 (ondansetron) a nécessité l’augmentation des doses de chlorhydrate de tramadol chez les patients traités pour douleurs post-opératoires.</p>
+<p class=AmmCorpsTexte>Il convient d'être prudent lors de l'utilisation concomitante de paracétamol et de flucloxacilline, car la prise simultanée a été associée à une acidose métabolique à trou anionique élevé, en particulier chez les patients présentant des facteurs de risque (voir rubrique 4.4).</p>
+<p class="AmmAnnexeTitre2"><a name="RcpFertGrossAllait">4.6. Fertilité, grossesse et allaitement</a>&nbsp;&nbsp;<a href='#HautDePage'><img src='img/BackToTop.jpg' width='15px' height='15px' alt='Retour en haut de la page' title='Retour en haut de la page' /></a></p>
+<p class=AmmAnnexeTitre3>Grossesse</p>
+<p class=AmmCorpsTexte>IXPRIM étant une association fixe de principes actifs à base de tramadol, ce médicament ne doit pas être administré pendant la grossesse. </p>
+<p class=AmmCorpsTexte><span class='souligne'>Données concernant le paracétamol : </span></p>
+<p class=AmmCorpsTexte>Les études sur les animaux sont insuffisantes pour conclure à une toxicité sur la reproduction. Un grand nombre de données sur les femmes enceintes n'ont pas mis en évidence de malformation, ou de toxicité fœtale / néonatale. Les études épidémiologiques sur le développement neurologique chez les enfants exposés au paracétamol in utero montrent des résultats non concluants.</p>
+<p class=AmmCorpsTexte><span class='souligne'>Données concernant le tramadol : </span></p>
+<p class=AmmCorpsTexte>Il n'existe pas de données suffisamment pertinentes pour évaluer la sécurité d’emploi chez la femme enceinte.</p>
+<p class=AmmCorpsTexte>Administré avant ou pendant l’accouchement, le chlorhydrate de tramadol ne modifie pas la contractilité utérine. </p>
+<p class=AmmCorpsTexte>Chez les nouveau-nés, il peut induire des modifications de la fréquence respiratoire habituellement non cliniquement significatives. Une utilisation prolongée pendant la grossesse peut entrainer des symptômes de sevrage chez le nouveau-né après la naissance en conséquence de l’accoutumance.</p>
+<p class=AmmAnnexeTitre3><a name="_Toc142278927">Allaitement</a></p>
+<p class=AmmCorpsTexte>IXPRIM étant une association fixe de principes actifs contenant du chlorhydrate de tramadol, ce médicament ne doit pas être utilisé pendant l’allaitement ou l'allaitement doit être interrompu pendant le traitement par IXPRIM L'arrêt de l'allaitement n'est généralement pas nécessaire après une dose unique d’IXPRIM.</p>
+<p class=AmmCorpsTexte><span class='souligne'>Données concernant le paracétamol : </span></p>
+<p class=AmmCorpsTexte>Le paracétamol est excrété dans le lait maternel mais pas en quantité cliniquement significative.</p>
+<p class=AmmCorpsTexte><span class='souligne'>Données concernant le tramadol : </span></p>
+<p class=AmmCorpsTexte>Environ 0,1 % de la dose de tramadol administrée à la mère est sécrétée dans le lait maternel. Ainsi, dans la période post-partum immédiat, pour une dose maternelle orale quotidienne jusqu’à 400 mg, l’enfant allaité reçoit environ 3 % de la dose maternelle ajustée au poids. Par conséquent, le tramadol ne doit donc pas être utilisé au cours de l’allaitement, ou l'allaitement doit être interrompu en cas de traitement par le tramadol. L’arrêt de l’allaitement n’est généralement pas nécessaire dans le cas d’une prise unique de tramadol.</p>
+<p class=AmmAnnexeTitre3>Fertilité</p>
+<p class=AmmCorpsTexte>Les études après-commercialisation n’ont pas mis en évidence d’effet du tramadol sur la fertilité. Les études chez l’animal n’ont pas montré d’effet du tramadol sur la fertilité. </p>
+<p class=AmmCorpsTexte>Aucune étude sur la fertilité n’a été réalisée avec l’association tramadol et paracétamol.</p>
+<p class="AmmAnnexeTitre2"><a name="RcpConduite">4.7. Effets sur l'aptitude à conduire des véhicules et à utiliser des machines</a>&nbsp;&nbsp;<a href='#HautDePage'><img src='img/BackToTop.jpg' width='15px' height='15px' alt='Retour en haut de la page' title='Retour en haut de la page' /></a></p>
+<p class=AmmCorpsTexte><a name="_Toc142278929">Le chlorhydrate de tramadol peut entraîner une somnolence ou une sensation de vertiges, qui peuvent être exacerbées par l’alcool ou d’autres dépresseurs du système nerveux central. En cas de survenue de ces symptômes, le patient ne doit pas conduire ni utiliser de machines.</a></p>
+<p class="AmmAnnexeTitre2"><a name="RcpEffetsIndesirables">4.8. Effets indésirables</a>&nbsp;&nbsp;<a href='#HautDePage'><img src='img/BackToTop.jpg' width='15px' height='15px' alt='Retour en haut de la page' title='Retour en haut de la page' /></a></p>
+<p class=AmmCorpsTexte>Les effets indésirables les plus fréquemment rapportés au cours des essais cliniques réalisés avec l’association chlorhydrate de tramadol/paracétamol sont des nausées, des sensations vertigineuses et une somnolence, qui sont observés chez plus de 10 % des patients.</p>
+<p class=AmmCorpsTexte>Les fréquences sont définies comme suit :</p>
+<p class=AmmListePuces1><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>Très fréquents : &#8805; 1/10.</p>
+<p class=AmmListePuces1><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>Fréquents : &#8805; 1/100 à &lt; 1/10.</p>
+<p class=AmmListePuces1><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>Peu fréquents : &#8805; 1/1 000 à &lt; 1/100.</p>
+<p class=AmmListePuces1><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>Rares : &#8805; 1/10 000 à &lt; 1/1 000.</p>
+<p class=AmmListePuces1><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>Très rares : &lt; 1/10 000.</p>
+<p class=AmmListePuces1><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>Fréquence i<a name="_Hlk89605197">ndéterminée</a> : fréquence ne pouvant être estimée à partir des données disponibles.</p>
+<p class=AmmCorpsTexte style='margin-top:6.0pt;page-break-after:avoid'>Dans chaque groupe de fréquence, les effets indésirables sont présentés dans un ordre de gravité décroissant. </p>
+<p class=AmmAnnexeTitre4>Troubles cardiaques :</p>
+<p class=AmmListePuces1><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>Peu fréquents : palpitations, tachycardie, arythmie,</p>
+<p class=AmmAnnexeTitre4 style='margin-top:6.0pt'>Troubles oculaires :</p>
+<p class=AmmListePuces1><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>Rares : vision floue, myosis, mydriase.</p>
+<p class=AmmAnnexeTitre4 style='margin-top:6.0pt'>Troubles de l’oreille et du labyrinthe : </p>
+<p class=AmmListePuces1><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>Peu fréquents : acouphènes</p>
+<p class=AmmAnnexeTitre4 style='margin-top:6.0pt;page-break-after:avoid'>Troubles gastro-intestinaux :</p>
+<p class=AmmListePuces1><span style='font-family: Symbol;layout-grid-mode:line'>·<span style='font:7.0pt "Times New Roman"'>         </span></span><span style='layout-grid-mode:line'>Très fréquents: nausées,</span></p>
+<p class=AmmListePuces1><span style='font-family:Symbol;layout-grid-mode:line'>·<span style='font:7.0pt "Times New Roman"'>         </span></span><span style='layout-grid-mode:line'>Fréquents : vomissements, constipation, sécheresse buccale, diarrhée, douleurs abdominales, dyspepsie, flatulences,</span></p>
+<p class=AmmListePuces1><span style='font-family:Symbol;layout-grid-mode:line'>·<span style='font:7.0pt "Times New Roman"'>         </span></span><span style='layout-grid-mode:line'>Peu fréquents  : dysphagie, melaena.</span></p>
+<p class=AmmAnnexeTitre4 style='margin-top:6.0pt'><span style='layout-grid-mode: line'>Troubles généraux et anomalies au site d’administration :</span></p>
+<p class=AmmListePuces1><span style='font-family:Symbol;layout-grid-mode:line'>·<span style='font:7.0pt "Times New Roman"'>         </span></span><span style='layout-grid-mode:line'>Peu fréquents : frissons, douleurs thoraciques. </span></p>
+<p class=AmmAnnexeTitre4 style='margin-top:6.0pt'>Investigations :</p>
+<p class=AmmListePuces1><span style='font-family:Symbol;layout-grid-mode:line'>·<span style='font:7.0pt "Times New Roman"'>         </span></span><span style='layout-grid-mode:line'>Peu fréquent : augmentation des transaminases hépatiques.</span></p>
+<p class=AmmAnnexeTitre4 style='margin-top:6.0pt'>Troubles du métabolisme et de la nutrition : </p>
+<p class=AmmListePuces1><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>Fréquence indéterminée : hypoglycémie</p>
+<p class=AmmAnnexeTitre4 style='margin-top:6.0pt'>Troubles du système nerveux :</p>
+<p class=AmmListePuces1><span style='font-family:Symbol;layout-grid-mode:line'>·<span style='font:7.0pt "Times New Roman"'>         </span></span><span style='layout-grid-mode:line'>Très fréquents : sensations vertigineuses, somnolence,</span></p>
+<p class=AmmListePuces1><span style='font-family:Symbol;layout-grid-mode:line'>·<span style='font:7.0pt "Times New Roman"'>         </span></span><span style='layout-grid-mode:line'>Fréquents : céphalées, tremblements,</span></p>
+<p class=AmmListePuces1><span style='font-family:Symbol;layout-grid-mode:line'>·<span style='font:7.0pt "Times New Roman"'>         </span></span><span style='layout-grid-mode:line'>Peu fréquents : contractions musculaires involontaires, paresthésie, amnésie </span></p>
+<p class=AmmListePuces1><span style='font-family:Symbol;layout-grid-mode:line'>·<span style='font:7.0pt "Times New Roman"'>         </span></span><span style='layout-grid-mode:line'>Rares : ataxie, convulsions, syncope, troubles de la parole.</span></p>
+<p class=AmmAnnexeTitre4 style='margin-top:6.0pt'>Troubles psychiatriques :</p>
+<p class=AmmListePuces1><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>Fréquents : état confusionnel, modification de l’humeur, anxiété, nervosité, humeur euphorique, troubles du sommeil,</p>
+<p class=AmmListePuces1><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>Peu fréquents : dépression, hallucinations, cauchemars,</p>
+<p class=AmmListePuces1><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>Rares : délire, dépendance médicamenteuse </p>
+<p class=AmmAnnexeTitre4 style='margin-top:6.0pt'>Surveillance post-commercialisation :</p>
+<p class=AmmListePuces1><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>Très rare : abus.</p>
+<p class=AmmAnnexeTitre4 style='margin-top:6.0pt;page-break-after:avoid'>Troubles rénaux et urinaires:</p>
+<p class=AmmListePuces1><span style='font-family: Symbol;layout-grid-mode:line'>·<span style='font:7.0pt "Times New Roman"'>         </span></span><span style='layout-grid-mode:line'>Peu fréquents : albuminurie, troubles mictionnels (dysurie et rétention urinaire). </span></p>
+<p class=AmmAnnexeTitre4 style='margin-top:6.0pt'><span style='layout-grid-mode: line'>Troubles respiratoires, thoraciques et médiastinaux :</span></p>
+<p class=AmmListePuces1><span style='font-family:Symbol;layout-grid-mode:line'>·<span style='font:7.0pt "Times New Roman"'>         </span></span><span style='layout-grid-mode:line'>Peu fréquents : dyspnée.</span></p>
+<p class=AmmAnnexeTitre4 style='margin-top:6.0pt'>Troubles cutanés et des tissus sous cutanés :</p>
+<p class=AmmListePuces1><span style='font-family:Symbol;layout-grid-mode:line'>·<span style='font:7.0pt "Times New Roman"'>         </span></span><span style='layout-grid-mode:line'>Fréquents : hyperhidrose, prurit,</span></p>
+<p class=AmmListePuces1><span style='font-family:Symbol;layout-grid-mode:line'>·<span style='font:7.0pt "Times New Roman"'>         </span></span><span style='layout-grid-mode:line'>Peu fréquents : réactions cutanées (par exemple, rash, urticaire).</span></p>
+<p class=AmmAnnexeTitre4 style='margin-top:6.0pt'>Troubles vasculaires : </p>
+<p class=AmmListePuces1><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>Peu fréquents : hypertension, bouffées de chaleur</p>
+<p class=AmmAnnexeTitre4 style='margin-top:6.0pt'><span style='font-style:normal'>Pharmacodépendance</span></p>
+<p class=AmmCorpsTexte><span style='layout-grid-mode:line'>L’utilisation répétée de IXPRIM peut entraîner une dépendance aux médicaments (pharmacodépendance), même aux doses thérapeutiques. Le risque de pharmacodépendance peut varier en fonction des facteurs de risque individuels du patient, de la posologie et de la durée du traitement par opioïdes (voir rubrique 4.4).</span></p>
+<p class=AmmCorpsTexte>Bien que non observée au cours des études cliniques, la survenue d’effets indésirables connus pour être liés à l’administration de chlorhydrate de tramadol ou de paracétamol seuls ne peut être exclue.</p>
+<p class=AmmCorpsTexteGras><span class='souligne'>Tramadol :</span></p>
+<p class=AmmListePuces1 style='text-align:justify'><span style='font-family: Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>Hypotension orthostatique, bradycardie, collapsus (tramadol). </p>
+<p class=AmmListePuces1 style='text-align:justify'><span style='font-family: Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>Les données post-marketing du chlorhydrate de tramadol ont révélé de rares modifications de l’effet de la warfarine, en particulier, une diminution du taux de prothrombine. </p>
+<p class=AmmListePuces1 style='text-align:justify'><span style='font-family: Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>Rarement (&#8805; 1/10 000 à &lt; 1/1 000): réactions allergiques avec symptômes respiratoires (par exemple dyspnée, bronchospasme, respiration sifflante, oedème de Quincke) et anaphylaxie. </p>
+<p class=AmmListePuces1 style='text-align:justify'><span style='font-family: Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>Rarement (&#8805; 1/10 000 à &lt; 1/1 000): modification de l’appétit, faiblesse musculaire, et dépression respiratoire.</p>
+<p class=AmmListePuces1 style='text-align:justify'><span style='font-family: Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>Des effets indésirables psychiques peuvent survenir après administration de chlorhydrate de tramadol, dont l’intensité et la nature varient d’un patient à l’autre (selon la sensibilité individuelle et la durée du traitement). Ils incluent des modifications de l’humeur (habituellement une humeur euphorique, occasionnellement dysphorie), des modifications de l’activité (habituellement une diminution de l’activité, occasionnellement un accroissement) et des modifications des capacités cognitive et sensorielle (par exemple, capacité décisionnelle, troubles comportementaux, troubles de la perception). </p>
+<p class=AmmListePuces1 style='text-align:justify'><span style='font-family: Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>Troubles du système nerveux : fréquence indéterminée : syndrome sérotoninergique.</p>
+<p class=AmmListePuces1 style='text-align:justify'><span style='font-family: Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>L’aggravation d’un asthme a été rapportée bien qu’une relation de causalité n’ait pas été établie.</p>
+<p class=AmmListePuces1 style='text-align:justify'><span style='font-family: Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>Des symptômes de sevrage, analogues à ceux notés lors d’un sevrage aux opiacés peuvent survenir, tels que : agitation, anxiété, nervosité, insomnie, hyperkinésie, tremblements et symptômes gastro-intestinaux. </p>
+<p class=AmmListePuces1 style='text-align:justify'><span style='font-family: Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>D’autres symptômes de sevrage ont été rarement rapportés, incluant : attaque de panique, anxiété sévère, hallucinations, paresthésies, acouphènes, autres troubles du SNC.</p>
+<p class=AmmListePuces1 style='text-align:justify'><a name="_Hlk89605257"></a><a name="_Hlk89620715"></a><a name="_Hlk89607266"><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>Troubles respiratoires, thoraciques et médiastinaux : fréquence indéterminée : hoquet</a>.</p>
+<p class=AmmAnnexeTitre3>Paracétamol :</p>
+<p class=AmmListePuces1><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>Les effets indésirables du paracétamol sont rares, toutefois une hypersensibilité incluant un rash cutané peut survenir. Des cas de dyscrasie sanguine ont été rapportés incluant une thrombocytopénie et une agranulocytose, mais la relation de causalité avec le paracétamol n’a pas été établie dans tous les cas.</p>
+<p class=AmmListePuces1><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>Plusieurs rapports suggèrent que le paracétamol pourrait entraîner une hypoprothrombinémie en cas de co-administration avec des composés de type warfarine. Dans d’autres études, le temps de prothrombine n’a pas été modifié. </p>
+<p class=AmmListePuces1><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>De très rares cas de réactions cutanées graves ont été rapportés.</p>
+<p class=AmmListePuces1 style='text-align:justify'><a name="_Hlk116989156"><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>Troubles du métabolisme et de la nutrition : des cas d’acidose pyroglutamique (APG) ont été rapportés à une fréquence inconnue, lorsque le paracétamol est administré seul ou en association à la flucloxacilline en particulier chez les patients traités au long cours et présentant des facteurs de risque (voir rubriques 4.4 and 4.5).</a></p>
+<p class=AmmAnnexeTitre3>Déclaration des effets indésirables suspectés </p>
+<p class=AmmCorpsTexte>La déclaration des effets indésirables suspectés après autorisation du médicament est importante. Elle permet une surveillance continue du rapport bénéfice/risque du médicament. Les professionnels de santé déclarent tout effet indésirable suspecté via le système national de déclaration : Agence nationale de sécurité du médicament et des produits de santé (ANSM) et réseau des Centres Régionaux de Pharmacovigilance - Site internet :<a href="https://signalement.social-sante.gouv.fr/">https://signalement.social-sante.gouv.fr/</a>.</p>
+<p class="AmmAnnexeTitre2"><a name="RcpSurdosage">4.9. Surdosage</a>&nbsp;&nbsp;<a href='#HautDePage'><img src='img/BackToTop.jpg' width='15px' height='15px' alt='Retour en haut de la page' title='Retour en haut de la page' /></a></p>
+<p class=AmmCorpsTexte><a name="_Toc142278931">IXPRIM est une association fixe de principes actifs. Au cours d’un surdosage, la symptomatologie peut inclure les signes et symptômes de toxicité du chlorhydrate de tramadol, du paracétamol ou de ces deux principes actifs. </a></p>
+<p class=AmmAnnexeTitre3>Symptômes liés au surdosage en chlorhydrate de tramadol : </p>
+<p class=AmmCorpsTexte>En principe lors d’une intoxication par le chlorhydrate de tramadol, des symptômes analogues à ceux provoqués par d’autres analgésiques à action centrale (opioïdes) sont attendus. Il s’agit en particulier d’un myosis, de vomissements, d’un collapsus cardiovasculaire, de troubles de la conscience allant jusqu’au coma, de convulsions et de dépression respiratoire pouvant aller jusqu’à l’arrêt respiratoire.</p>
+<p class=AmmCorpsTexte><a name="_Hlk77000812">Le syndrome sérotoninergique a également été rapporté.</a></p>
+<p class=AmmAnnexeTitre3><span style='layout-grid-mode:line'>Symptômes liés au surdosage en paracétamol :</span></p>
+<p class=AmmCorpsTexte>L'intoxication est particulièrement à craindre chez les jeunes enfants. Au cours des 24 premières heures, les symptômes d’un surdosage en paracétamol se manifestent par : pâleur, nausées, vomissements, anorexie et douleurs abdominales. Une atteinte hépatique peut apparaître dans les 12 à 48 heures suivant l’ingestion. Des anomalies du métabolisme glucidique et une acidose métabolique peuvent survenir. Lors de cas de surdosage massif, l’insuffisance hépatique peut évoluer vers une encéphalopathie, un coma et la mort. </p>
+<p class=AmmCorpsTexte>Une insuffisance rénale aiguë avec nécrose tubulaire aiguë peut apparaître même en l’absence d’atteinte hépatique sévère. Des cas d’arythmie cardiaque et de pancréatite ont été rapportés.</p>
+<p class=AmmCorpsTexte>Une atteinte hépatique peut survenir chez l’adulte après ingestion de 7,5-10 g ou plus de paracétamol. Un excès de métabolites toxiques (habituellement dégradés par la glutathion-oxydase lorsque que le paracétamol est utilisé à dose thérapeutique) pourrait se lier de façon irréversible au tissu hépatique.</p>
+<p class=AmmAnnexeTitre3>Conduite d'urgence :</p>
+<p class=AmmListePuces1 style='text-align:justify'><span style='font-family: Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>Transfert immédiat en milieu spécialisé.</p>
+<p class=AmmListePuces1 style='text-align:justify'><span style='font-family: Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>Maintien des fonctions respiratoire et circulatoire.</p>
+<p class=AmmListePuces1 style='text-align:justify'><span style='font-family: Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>Avant de commencer le traitement, un prélèvement de sang doit être réalisé dès que possible après le surdosage afin de mesurer les concentrations plasmatiques de paracétamol et de tramadol, et de réaliser les tests hépatiques. </p>
+<p class=AmmListePuces1 style='text-align:justify'><span style='font-family: Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>Les tests hépatiques doivent être effectués au départ (du surdosage) et répétés toutes les 24 heures. Habituellement, on observe une augmentation des enzymes hépatiques (ASAT, ALAT), qui se normalisent après une ou deux semaines.</p>
+<p class=AmmListePuces1 style='text-align:justify'><span style='font-family: Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>Pratiquer une vidange gastrique en faisant vomir le patient (patient conscient), par irritation ou par lavage gastrique.</p>
+<p class=AmmListePuces1><span style='font-family:Symbol;color:black'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>Le maintien des fonctions vitales en particulier le maintien de la liberté des voies aériennes et de la fonction cardiovasculaire doit être mis en place; la naloxone est l’antidote en cas de dépression respiratoire; les convulsions doivent être traitées par du diazépam. </p>
+<p class=AmmListePuces1><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>Le tramadol est très faiblement éliminé par hémodialyse ou par hémofiltration. Le traitement de l’intoxication aiguë par IXPRIM par hémodialyse ou hémofitration seule n’est pas approprié à une détoxification. </p>
+<p class=AmmCorpsTexte style='margin-top:6.0pt'>Un traitement immédiat est essentiel dans la prise en charge d’un surdosage par le paracétamol. Même en l’absence de symptômes précoces cliniquement significatifs, les patients doivent être transférés en urgence à l’hôpital et placés sous surveillance médicale. Un lavage gastrique doit être pratiqué chez tout adulte ou adolescent ayant ingéré environ 7,5 g ou plus de paracétamol dans les 4 heures précédentes ou chez un enfant ayant ingéré une dose &gt; 150 mg/kg de paracétamol dans les 4 heures précédentes. Les concentrations plasmatiques en paracétamol doivent être mesurées plus de 4 heures après le surdosage afin d’évaluer le risque de survenue d’atteinte hépatique (en utilisant le nomogramme du surdosage au paracétamol). L’administration de méthionine par voie orale ou de N-acétylcystéine IV (NAC), qui peut avoir un effet bénéfique jusqu’à au moins 48 heures après le surdosage, peut s’avérer nécessaire. L’administration intraveineuse de NAC est plus efficace lorsqu’elle est débutée dans les 8 heures suivant le surdosage. Toutefois, la N-acétylcystéine doit être administrée même si la prise en charge intervient plus de 8 heures après le surdosage et doit être continuée pendant toute la durée du traitement. Le traitement par la N-acétylcystéine doit être immédiatement débuté lorsqu’un surdosage massif est suspecté. Des mesures permettant le maintien des fonctions vitales doivent être mises en oeuvre. </p>
+<p class=AmmCorpsTexte>Indépendamment de la quantité de paracétamol rapportée avoir été ingérée, l’antidote du paracétamol, la N-acétylcystéine, doit être administré par voie orale ou intraveineuse dans les plus brefs délais, si possible dans les 8 heures suivant l’intoxication. </p>
+<p class="AmmAnnexeTitre1"><a name="RcpPropPharmacologiques">5. PROPRIETES PHARMACOLOGIQUES</a>&nbsp;&nbsp;<a href='#HautDePage'><img src='img/BackToTop.jpg' width='15px' height='15px' alt='Retour en haut de la page' title='Retour en haut de la page' /></a></p>
+<p class="AmmAnnexeTitre2"><a name="RcpPropPharmacodynamiques">5.1. Propriétés pharmacodynamiques</a>&nbsp;&nbsp;<a href='#HautDePage'><img src='img/BackToTop.jpg' width='15px' height='15px' alt='Retour en haut de la page' title='Retour en haut de la page' /></a></p>
+<p class=AmmCorpsTexteGras><a name="_Toc142278933">Classe pharmacothérapeutique : opioïdes en association avec des antalgiques non-opioïdes ; </a><span style='color:black'>Tramadol et paracétamol, </span>code ATC : <span style='color:black'>N02A J 13</span></p>
+<p class=AmmCorpsTexte>Le tramadol est un analgésique opioïde d’action centrale. Le tramadol est un agoniste pur non sélectif des récepteurs morphiniques &#956;, &#948; et &#954;, avec une affinité plus élevée pour les récepteurs &#956;. En outre, les autres mécanismes contribuant aux effets analgésiques du produit sont l’inhibition de la recapture neuronale de noradrénaline et l’augmentation de la libération de sérotonine. Le tramadol a un effet antitussif. A l’inverse de la morphine, une large gamme de doses antalgiques de tramadol ne présentent pas d’effet dépresseur respiratoire. La motilité gastro-intestinale n’est pas non plus modifiée.</p>
+<p class=AmmCorpsTexte>Les effets sur le système cardiovasculaire sont généralement peu marqués. </p>
+<p class=AmmCorpsTexte>La puissance du tramadol serait de 1/10 à 1/6 de celle de la morphine </p>
+<p class=AmmCorpsTexte>Le mécanisme d’action précis des propriétés antalgiques du paracétamol reste à établir; il pourrait impliquer des actions centrales et périphériques.</p>
+<p class=AmmCorpsTexte>IXPRIM est un antalgique de niveau II dans l’échelle de l’OMS et doit être considéré comme tel par le prescripteur. </p>
+<p class="AmmAnnexeTitre2"><a name="RcpPropPharmacocinetiques">5.2. Propriétés pharmacocinétiques</a>&nbsp;&nbsp;<a href='#HautDePage'><img src='img/BackToTop.jpg' width='15px' height='15px' alt='Retour en haut de la page' title='Retour en haut de la page' /></a></p>
+<p class=AmmCorpsTexte><a name="_Toc142278934">Le tramadol est administré sous forme racémique et les formes [-] et [+] du tramadol et de son métabolite M1 sont détectées dans la circulation sanguine. Bien que le tramadol soit absorbé rapidement après administration, son absorption est plus lente (et sa demi-vie plus longue) que celle du paracétamol.</a></p>
+<p class=AmmCorpsTexte>Après administration orale unique d’un comprimé de chlorhydrate de tramadol/paracétamol (37,5 mg/325 mg), les pics de concentration plasmatique de 64,3/55,5 ng/ml [(+)-tramadol/(-)-tramadol] et 4,2 <span lang=EN-GB>&#956;</span>g/ml (paracétamol) sont respectivement atteints après 1,8 h [(+)-tramadol/(-) tramadol] et 0,9 h (paracétamol). Les demi-vies d'élimination moyennes t <sub>1/2</sub> sont de 5,1/4,7 h [(+)-tramadol/(-)-tramadol] et de 2,5 h (paracétamol). </p>
+<p class=AmmCorpsTexte>Lors des études pharmacocinétiques chez des volontaires sains après administration orale unique et répétée d’IXPRIM, aucune modification significative des paramètres cinétiques de chaque principe actif n’a été observée par rapport aux paramètres observés après administration de chacun des principes actifs utilisés seuls.</p>
+<p class=AmmAnnexeTitre3>Absorption</p>
+<p class=AmmCorpsTexte>Le tramadol racémique est absorbé rapidement et presque entièrement après administration par voie orale. La biodisponibilité absolue moyenne d’une dose unique de 100 mg est d’environ 75 %. Après administrations répétées, la biodisponibilité augmente et atteint environ 90 %. </p>
+<p class=AmmCorpsTexte>Après administration d’IXPRIM, l’absorption orale de paracétamol est rapide et presque complète et intervient principalement dans l’intestin grêle. Les pics de concentrations plasmatiques du paracétamol sont atteints en 1 heure et ne sont pas modifiés par l’administration concomitante de chlorhydrate de tramadol.</p>
+<p class=AmmCorpsTexte style='margin-bottom:0cm;margin-bottom:.0001pt'>L’administration orale d’IXPRIM avec les aliments n’a pas d’effet significatif sur le pic des concentrations plasmatiques et le taux d’absorption du tramadol ou du paracétamol ; ainsi, IXPRIM peut être administré indépendamment des repas.</p>
+<p class=AmmAnnexeTitre3>Distribution</p>
+<p class=AmmCorpsTexte>Le tramadol présente une forte affinité tissulaire (Vd.<span style='font-family:Symbol'>b</span> = 203 <span style='font-family:Symbol'>±</span> 40 litres). La liaison aux protéines plasmatiques est de l’ordre de 20 %. </p>
+<p class=AmmCorpsTexte><span style='color:black'>Le paracétamol semble être largement distribué aux principaux tissus à l’exception des graisses. Son volume apparent de distribution est d’environ 0,9 l/kg. Une fraction relativement limitée (environ 20 %) de paracétamol se lie aux protéines plasmatiques.</span></p>
+<p class=AmmAnnexeTitre3>Biotransformation</p>
+<p class=AmmCorpsTexte>Le tramadol est métabolisé de façon importante après administration par voie orale. Environ 30 %<span class='italique'> </span>de la dose est excrété dans les urines sous forme inchangée alors que 60 % de la dose est excrété sous forme de métabolites. </p>
+<p class=AmmCorpsTexte>Le tramadol est métabolisé par <span class='italique'>O</span>-déméthylation (catalysée par l’enzyme CYP2D6) en métabolite M1, et par <span class='italique'>N</span>-déméthylation (catalysée par l’enzyme CYP3A) en métabolite M2. Le métabolite M1 est ensuite métabolisé par <span class='italique'>N</span>-déméthylation et conjugaison avec l’acide glucuronique. La demi-vie plasmatique d’élimination du métabolite M1 est de 7 heures. Le métabolite M1 possède des propriétés antalgiques et est plus puissant que la molécule mère. Les concentrations plasmatiques en métabolite M1 sont plusieurs fois inférieures à celles du tramadol et sa contribution à l’effet clinique n’est probablement pas modifiée lors d’administrations répétées.</p>
+<p class=AmmCorpsTexte>Le paracétamol est essentiellement métabolisé au niveau du foie selon 2 voies hépatiques majeures : la glycuroconjugaison et la sulfoconjugaison. Cette dernière voie peut être rapidement saturée aux posologies supérieures aux doses thérapeutiques. Une faible proportion (moins de 4%) est transformée par le cytochrome P 450 en un métabolite actif (la N-acétyl benzoquinone imine) qui, dans les conditions normales d'utilisation, est rapidement détoxifié par le glutathion réduit et éliminé dans les urines après conjugaison à la cystéine et à l'acide mercaptopurique. En revanche, lors d'intoxications massives, la quantité de ce métabolite toxique est augmentée. </p>
+<p class=AmmAnnexeTitre3>Élimination</p>
+<p class=AmmCorpsTexte>Le tramadol et ses métabolites sont principalement éliminés par les reins. La demi-vie du paracétamol est d’environ 2 à 3 heures chez les adultes. Elle est un peu plus courte chez les enfants et un peu plus longue chez les nouveau-nés et les patients cirrhotiques. </p>
+<p class=AmmCorpsTexte>Le paracétamol est principalement éliminé par formation dose-dépendante de dérivés glucuro- et sulfo-conjugués. Moins de 9 % du paracétamol est excrété inchangé dans les urines.</p>
+<p class=AmmCorpsTexte>En cas d’insuffisance rénale, la demi-vie des deux substances est augmentée. </p>
+<p class="AmmAnnexeTitre2"><a name="RcpSecuritePreclinique">5.3. Données de sécurité préclinique</a>&nbsp;&nbsp;<a href='#HautDePage'><img src='img/BackToTop.jpg' width='15px' height='15px' alt='Retour en haut de la page' title='Retour en haut de la page' /></a></p>
+<p class=AmmCorpsTexte><a name="_Hlk38270199">Aucune étude conventionnelle utilisant les normes actuellement acceptées pour l’évaluation de la toxicité sur la reproduction et le développement n’est disponible.</a></p>
+<p class=AmmCorpsTexte><a name="_Toc142278935">Aucune étude préclinique spécifique n’a été réalisée sur l’association fixe (chlorhydrate de tramadol et paracétamol) pour évaluer la carcinogenèse, la mutagenèse ou son éventuel effet sur la fertilité.</a></p>
+<p class=AmmCorpsTexte>Aucun effet tératogène imputable au médicament n’a été observé dans la descendance des rats traités par voie orale avec l’association chlorhydrate de tramadol/paracétamol. </p>
+<p class=AmmCorpsTexte>L’association chlorhydrate de tramadol/paracétamol s’est avérée embryotoxique et fœtotoxique chez le rat à dose materno-toxique (50/434 mg/kg tramadol/paracétamol), soit 8,3 fois la dose maximale thérapeutique chez l’homme. Aucun effet tératogène n’a été observé à cette dose. La toxicité embryonnaire et fœtale s’est traduite par une diminution du poids des fœtus et par une augmentation des côtes surnuméraires. Des posologies plus faibles, entrainant une materno-toxicité moins sévère (10/87 et 25/217 mg/kg chlorhydrate de tramadol/paracétamol) n’ont pas entraîné de toxicité embryonnaire ou fœtale.</p>
+<p class=AmmCorpsTexte>Les résultats des tests classiques de mutagénicité n‘ont pas révélé de risque génotoxique potentiel du chlorhydrate de tramadol chez l’homme.</p>
+<p class=AmmCorpsTexte>Les résultats des tests de carcinogénicité ne suggèrent pas de risque potentiel du chlorhydrate de tramadol chez l’homme.</p>
+<p class=AmmCorpsTexte>Les études réalisées chez l’animal avec le chlorhydrate de tramadol révèlent, à doses très élevées, un effet sur l’organogenèse, l’ossification et la mortalité néonatale, associé à une maternotoxicité. La fertilité, les capacités de reproduction et le développement des descendants ne sont pas modifiés. Le tramadol passe la barrière placentaire. . La fertilité chez le mâle et la femelle n’a pas été modifiée. </p>
+<p class=AmmCorpsTexte>Des études complémentaires n’ont pas mis en évidence de risque génotoxique significatif du paracétamol à doses thérapeutiques (c’est-à-dire, non toxiques). </p>
+<p class=AmmCorpsTexte>Chez le rat et la souris, des études long-terme n’ont pas mis en évidence de risque cancérigène significatif aux doses non hépatotoxiques du paracétamol. </p>
+<p class=AmmCorpsTexte>A ce jour, les études animales et l’expérience chez l’homme n’ont pas mis en évidence de toxicité sur les fonctions de reproduction. </p>
+<p class="AmmAnnexeTitre1"><a name="RcpDonneesPharmaceutiques">6. DONNEES PHARMACEUTIQUES</a>&nbsp;&nbsp;<a href='#HautDePage'><img src='img/BackToTop.jpg' width='15px' height='15px' alt='Retour en haut de la page' title='Retour en haut de la page' /></a></p>
+<p class="AmmAnnexeTitre2"><a name="RcpListeExcipients">6.1. Liste des excipients</a>&nbsp;&nbsp;<a href='#HautDePage'><img src='img/BackToTop.jpg' width='15px' height='15px' alt='Retour en haut de la page' title='Retour en haut de la page' /></a></p>
+<p class=AmmAnnexeTitre4><a name="_Toc142278937">Noyau</a></p>
+<p class=AmmCorpsTexte>Cellulose en poudre, amidon prégélatinisé, carboxyméthylamidon sodique (Type A), amidon de maïs, stéarate de magnésium.</p>
+<p class=AmmAnnexeTitre4>Pelliculage :</p>
+<p class=AmmCorpsTexte>Hypromellose, lactose monohydrate, dioxide de titane (E 171), macrogol 6000, oxyde de fer jaune (E 172), propylèneglycol, talc.</p>
+<p class="AmmAnnexeTitre2"><a name="RcpIncompatibilites">6.2. Incompatibilités</a>&nbsp;&nbsp;<a href='#HautDePage'><img src='img/BackToTop.jpg' width='15px' height='15px' alt='Retour en haut de la page' title='Retour en haut de la page' /></a></p>
+<p class=AmmCorpsTexte><a name="_Toc142278938">Sans objet.</a></p>
+<p class="AmmAnnexeTitre2"><a name="RcpDureeConservation">6.3. Durée de conservation</a>&nbsp;&nbsp;<a href='#HautDePage'><img src='img/BackToTop.jpg' width='15px' height='15px' alt='Retour en haut de la page' title='Retour en haut de la page' /></a></p>
+<p class=AmmCorpsTexte>3 ans</p>
+<p class="AmmAnnexeTitre2"><a name="RcpPrecConservation">6.4. Précautions particulières de conservation</a>&nbsp;&nbsp;<a href='#HautDePage'><img src='img/BackToTop.jpg' width='15px' height='15px' alt='Retour en haut de la page' title='Retour en haut de la page' /></a></p>
+<p class=AmmCorpsTexte><a name="_Toc142278940">Ce médicament ne nécessite pas de précaution particulière de conservation.</a></p>
+<p class="AmmAnnexeTitre2"><a name="RcpEmballage">6.5. Nature et contenu de l'emballage extérieur </a>&nbsp;&nbsp;<a href='#HautDePage'><img src='img/BackToTop.jpg' width='15px' height='15px' alt='Retour en haut de la page' title='Retour en haut de la page' /></a></p>
+<p class=AmmCorpsTexte><a name="_Toc142278942"></a><a name="_Toc142278941">2, 10, 20, 30, 40, 50, 60, 70, 80, 90 et 100 comprimés sous plaquette(s) thermoformée(s) (PVC - Papier/PET/aluminium).</a></p>
+<p class=AmmCorpsTexte>2x1, 10x1, 20x1, 30x1, 40x1, 50x1, 60x1, 70x1, 80x1, 90x1 et 100x1 comprimés sous plaquette(s) prédécoupée(s) unitaire(s) thermoformée(s) (PVC – Papier/PET/aluminium).</p>
+<p class=AmmCorpsTexte>Toutes les présentations peuvent ne pas être commercialisées.</p>
+<p class="AmmAnnexeTitre2"><a name="RcpPrecEmpl">6.6. Précautions particulières d’élimination et de manipulation</a>&nbsp;&nbsp;<a href='#HautDePage'><img src='img/BackToTop.jpg' width='15px' height='15px' alt='Retour en haut de la page' title='Retour en haut de la page' /></a></p>
+<p class=AmmCorpsTexte>Tout produit non utilisé ou déchet doit être éliminé conformément à la réglementation en vigueur</p>
+<p class="AmmAnnexeTitre1"><a name="RcpTitulaireAmm">7. TITULAIRE DE L’AUTORISATION DE MISE SUR LE MARCHE</a>&nbsp;&nbsp;<a href='#HautDePage'><img src='img/BackToTop.jpg' width='15px' height='15px' alt='Retour en haut de la page' title='Retour en haut de la page' /></a></p>
+<p class=AmmCorpsTexteGras style='margin-bottom:0cm;margin-bottom:.0001pt'><a name="_Toc142278943">LABORATOIRES GRÜNENTHAL</a></p>
+<p class=AmmCorpsTexte style='margin-bottom:0cm;margin-bottom:.0001pt'>TOUR PACIFIC </p>
+<p class=AmmCorpsTexte style='margin-bottom:0cm;margin-bottom:.0001pt'>11-13 COURS VALMY</p>
+<p class=AmmCorpsTexte style='margin-bottom:0cm;margin-bottom:.0001pt'>92800 PUTEAUX</p>
+<p class="AmmAnnexeTitre1"><a name="RcpNumAutor">8. NUMERO(S) D’AUTORISATION DE MISE SUR LE MARCHE</a>&nbsp;&nbsp;<a href='#HautDePage'><img src='img/BackToTop.jpg' width='15px' height='15px' alt='Retour en haut de la page' title='Retour en haut de la page' /></a></p>
+<p class=AmmListePuces1 style='text-align:justify;page-break-after:avoid'><a name="_Toc142278944"><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>34009 359 228 3 0 : 2x1 comprimés sous plaquettes prédécoupées unitaires thermoformées (Papier/PET/Aluminium-PVC) blanc opaque.</a></p>
+<p class=AmmListePuces1 style='text-align:justify'><span style='font-family: Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>34009 359 230 8 0 : 10x1 comprimés sous plaquettes prédécoupées unitaires thermoformées (Papier/PET/Aluminium-PVC) blanc opaque.</p>
+<p class=AmmListePuces1 style='text-align:justify'><span style='font-family: Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>34009 358 573 9 2 : 20x1 comprimés sous plaquettes prédécoupées unitaires thermoformées (Papier/PET/Aluminium-PVC) blanc opaque.</p>
+<p class=AmmListePuces1 style='text-align:justify'><span style='font-family: Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>34009 563 605 6 7 : 30x1 comprimés sous plaquettes prédécoupées unitaires thermoformées (Papier/PET/Aluminium-PVC) blanc opaque.</p>
+<p class=AmmListePuces1 style='text-align:justify'><span style='font-family: Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>34009 563 614 5 8 : 40x1 comprimés sous plaquettes prédécoupées unitaires thermoformées (Papier/PET/Aluminium-PVC) blanc opaque.</p>
+<p class=AmmListePuces1 style='text-align:justify'><span style='font-family: Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>34009 563 615 1 9 : 50x1 comprimés sous plaquettes prédécoupées unitaires thermoformées (Papier/PET/Aluminium-PVC) blanc opaque.</p>
+<p class=AmmListePuces1 style='text-align:justify'><span style='font-family: Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>34009 563 606 2 8 : 60x1 comprimés sous plaquettes prédécoupées unitaires thermoformées (Papier/PET/Aluminium-PVC) blanc opaque.</p>
+<p class=AmmListePuces1 style='text-align:justify'><span style='font-family: Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>34009 563 616 8 7 : 70x1 comprimés sous plaquettes prédécoupées unitaires thermoformées (Papier/PET/Aluminium-PVC) blanc opaque.</p>
+<p class=AmmListePuces1 style='text-align:justify'><span style='font-family: Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>34009 563 617 4 8 : 80x1 comprimés sous plaquettes prédécoupées unitaires thermoformées (Papier/PET/Aluminium-PVC) blanc opaque.</p>
+<p class=AmmListePuces1 style='text-align:justify'><span style='font-family: Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>34009 563 618 0 9 : 90x1 comprimés sous plaquettes prédécoupées unitaires thermoformées (Papier/PET/Aluminium-PVC) blanc opaque.</p>
+<p class=AmmListePuces1 style='text-align:justify'><span style='font-family: Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>34009 563 599 6 7 : 100x1 comprimés sous plaquettes prédécoupées unitaires thermoformées (Papier/PET/Aluminium-PVC) blanc opaque.</p>
+<p class=AmmListePuces1 style='text-align:justify'><span style='font-family: Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>34009 302 969 3 6 :  2 comprimés sous plaquettes thermoformées (Papier/PET/Aluminium-PVC) blanc opaque.</p>
+<p class=AmmListePuces1 style='text-align:justify'><span style='font-family: Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>34009 302 969 5 0 : 10 comprimés sous plaquettes thermoformées (Papier/PET/Aluminium-PVC) blanc opaque.</p>
+<p class=AmmListePuces1 style='text-align:justify'><span style='font-family: Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>34009 302 969 6 7 :  20 comprimés sous plaquettes thermoformées (Papier/PET/Aluminium-PVC) blanc opaque.</p>
+<p class=AmmListePuces1 style='text-align:justify'><span style='font-family: Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>34009 551 022 7 4 :  30 comprimés sous plaquettes thermoformées (Papier/PET/Aluminium-PVC) blanc opaque.</p>
+<p class=AmmListePuces1 style='text-align:justify'><span style='font-family: Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>34009 551 022 8 1 :  40 comprimés sous plaquettes thermoformées (Papier/PET/Aluminium-PVC) blanc opaque.</p>
+<p class=AmmListePuces1 style='text-align:justify'><span style='font-family: Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>34009 551 022 9 8 :  50 comprimés sous plaquettes thermoformées (Papier/PET/Aluminium-PVC) blanc opaque.</p>
+<p class=AmmListePuces1 style='text-align:justify'><span style='font-family: Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>34009 551 023 0 4 :  60 comprimés sous plaquettes thermoformées (Papier/PET/Aluminium-PVC) blanc opaque.</p>
+<p class=AmmListePuces1 style='text-align:justify'><span style='font-family: Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>34009 551 023 1 1 :  70 comprimés sous plaquettes thermoformées (Papier/PET/Aluminium-PVC) blanc opaque.</p>
+<p class=AmmListePuces1 style='text-align:justify'><span style='font-family: Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>34009 551 023 2 8 :  80 comprimés sous plaquettes thermoformées (Papier/PET/Aluminium-PVC) blanc opaque.</p>
+<p class=AmmListePuces1 style='text-align:justify'><span style='font-family: Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>34009 551 023 3 5 :  90 comprimés sous plaquettes thermoformées (Papier/PET/Aluminium-PVC) blanc opaque..</p>
+<p class=AmmListePuces1 style='text-align:justify'><span style='font-family: Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>34009 551 023 4 2 :  100 comprimés sous plaquettes thermoformées (Papier/PET/Aluminium-PVC) blanc opaque</p>
+<p class="AmmAnnexeTitre1"><a name="RcpPremiereAutorisation">9. DATE DE PREMIERE AUTORISATION/DE RENOUVELLEMENT DE L’AUTORISATION</a>&nbsp;&nbsp;<a href='#HautDePage'><img src='img/BackToTop.jpg' width='15px' height='15px' alt='Retour en haut de la page' title='Retour en haut de la page' /></a></p>
+<p class=AmmCorpsTexte><a name="_Toc142278945">[à compléter ultérieurement par le titulaire]</a></p>
+<p class=AmmCorpsTexte> </p>
+<p class="AmmAnnexeTitre1"><a name="RcpDateRevision">10. DATE DE MISE A JOUR DU TEXTE</a>&nbsp;&nbsp;<a href='#HautDePage'><img src='img/BackToTop.jpg' width='15px' height='15px' alt='Retour en haut de la page' title='Retour en haut de la page' /></a></p>
+<p class=AmmCorpsTexte><a name="_Toc142278946">[à compléter ultérieurement par le titulaire]</a></p>
+<p class="AmmAnnexeTitre1"><a name="RcpDosimetrie">11. DOSIMETRIE</a>&nbsp;&nbsp;<a href='#HautDePage'><img src='img/BackToTop.jpg' width='15px' height='15px' alt='Retour en haut de la page' title='Retour en haut de la page' /></a></p>
+<p class=AmmCorpsTexte>Sans objet.</p>
+<p class="AmmAnnexeTitre1"><a name="RcpInstPrepRadioph">12. INSTRUCTIONS POUR LA PREPARATION DES RADIOPHARMACEUTIQUES</a>&nbsp;&nbsp;<a href='#HautDePage'><img src='img/BackToTop.jpg' width='15px' height='15px' alt='Retour en haut de la page' title='Retour en haut de la page' /></a></p>
+<p class=AmmCorpsTexte><a name="_Toc142278948">Sans objet.</a></p>
+<div style='border:none;border-top:solid windowtext 1.0pt;padding:1.0pt 0cm 0cm 0cm'>
+<p class="AmmAnnexeTitre"><a name="RcpCondPrescription">CONDITIONS DE PRESCRIPTION ET DE DELIVRANCE</a></p>
+</div>
+<p class=AmmCorpsTexte>Liste I</p>
+<p class=AmmCorpsTexte>Prescription limitée à 12 semaines.</p>
+<span class='gras'><span style='font-size:12.0pt;font-family:"Arial",sans-serif;color:#0B3D92;
+text-transform:uppercase'><br clear=all>
+</span></span>					
+					<p class="alignright"><a href="#HautDePage">Retour en haut de la page <img src="img/BackToTop.jpg" width="20px" height="20px" alt="Retour en haut de la page" title="Retour en haut de la page" /></a></p>
+				</div>
+			</div>
+		</div>
+	</div>
+
+<table summary="" class="content" width="1000">
+	<tr>
+		<td height="100px">&nbsp;</td>
+	</tr>
+</table>
+<table summary="Pied de page" class="footer" width="1000">
+	<tr>
+		<td>
+			<table summary="" class="tablealigncenter" border="0">
+				<tr>
+					<td width="100px" class="aligncenter"><a id="lien_ansm" href="http://ansm.sante.fr/" target="_blank"><img src="img/Logo_ANSM.png" width="150" height="60" alt="ANSM - Agence nationale de sécurité du médicament et des produits de santé" title="L'ANSM met à disposition les principales informations issues de l'Autorisation de mise sur le marché, l'appartenance à un groupe générique, les liens vers les informations de sécurité qu'elle publie, l'identification des médicaments sous surveillance renforcée - nouvelle fenêtre" /></a></td>
+					          <td>&nbsp;</td>
+					<td width="100px" class="aligncenter"><img src="img/Logo_HAS.png" width="150" height="60" alt="HAS - Haute autorité de santé" title="La HAS met à disposition les informations relatives au service médical rendu, à l'amélioration du service médical rendu ainsi que les liens vers les avis de la Commission de la Transparence correspondants - nouvelle fenêtre" /></td>
+					<td>&nbsp;</td>
+					<td width="100px" class="aligncenter"><img src="img/Logo_CNAM.png" width="150" height="60" alt="UNCAM - Unin nationale des caisses d'assurance maladie" title="L'UNCAM met à disposition le taux de remboursement, le prix et les indications remboursables le cas échéant, ainsi que l'agrément aux collectivités - nouvelle fenêtre" /></td>
+          				</tr>
+			</table> 
+		</td>
+	</tr>
+</table>
+<table summary="" class="finpage" width="1000">
+	<tr>
+		<td height="100px" class="aligncenter">
+			<a class="navigation" href="plan.php">Plan du site</a>&nbsp;|&nbsp;
+			<a class="navigation" href="accessibilite.php">Accessibilité</a>&nbsp;|&nbsp;
+			<a class="navigation" href="contact.php">Contact</a>&nbsp;|&nbsp;
+			<a class="navigation" href="telechargement.php">Téléchargement</a>&nbsp;|&nbsp;
+			<a class="navigation" href="DeclarationConfidentialite.php">Declaration de confidentialité</a>&nbsp;|&nbsp;
+			<a class="navigation" href="http://www.service-public.fr/" title="Service Public - Nouvelle fenêtre" target="_blank">Service-Public.fr</a>&nbsp;|&nbsp;
+			<a class="navigation" href="http://www.legifrance.gouv.fr/" title="Legifrance - Nouvelle fenêtre" target="_blank">Legifrance</a>&nbsp;|&nbsp;
+			<a class="navigation" href="http://www.gouvernement.fr/" title="Gouvernement - Nouvelle fenêtre" target="_blank" >Gouvernement.fr</a>
+		</td>
+	</tr>
+</table>
+
+
+
+<!-- Matomo -->
+<script type="text/javascript">
+  var _paq = window._paq = window._paq || [];
+  /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
+  _paq.push(['trackPageView']);
+  _paq.push(['enableLinkTracking']);
+  (function() {
+    var u="https://stats.integra.fr/";
+    _paq.push(['setTrackerUrl', u+'matomo.php']);
+    _paq.push(['setSiteId', '79']);
+    var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+    g.type='text/javascript'; g.async=true; g.src=u+'matomo.js'; s.parentNode.insertBefore(g,s);
+  })();
+</script>
+<!-- End Matomo Code -->
+
+
+
+</body>
+</html>

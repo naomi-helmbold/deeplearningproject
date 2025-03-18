@@ -1,0 +1,424 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="fr" lang="fr">
+<head>
+	<title>Notice patient - IXPRIM 37,5 mg/325 mg, comprimé pelliculé  - Base de données publique des médicaments</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=windows-1252"/>
+	<meta name="robots" content="index, follow"/>
+	<meta name="Description" content="Base de données publique des médicaments"/>
+	<meta name="Keywords" content="base, données, publique, médicaments, Notice patient, IXPRIM 37,5 mg/325 mg, comprimé pelliculé "/>
+	<meta name="Subject" content="medicament"/>
+	<link href='https://fonts.googleapis.com/css?family=Noticia+Text' rel='stylesheet' type='text/css' />
+	<link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro' rel='stylesheet' type='text/css' />
+	<link href="style/style_bdm.css?v=2.2.3" type="text/css" rel="stylesheet"/>
+	<link href="style/style_RCP_Notice.css" type="text/css" rel="stylesheet"/>
+  <link rel="alternate" href="http://m.base-donnees-publique.medicaments.gouv.fr/#!info-61137241">
+    <script type="text/javascript" src="scripts/autocomplete.js?v=2.2.3"></script>
+	<script type="text/javascript" src="scripts/jquery.js"></script>
+    <script type="text/javascript" src="scripts/jquery-ui.min.js"></script>
+	<script type="text/javascript" src="scripts/common.js"></script>
+	<link rel="icon" type="image/x-icon" href="favicon.ico" />
+</head>
+
+<body>
+
+<a name="HautDePage" />
+<div id="bandeauhaut">
+	<a id="lien_ministere" class="lienmenu" href="http://www.sante.gouv.fr" target="_blank" title="Site du ministère des affaires sociales et de la santé - nouvelle fenêtre"><img id="logoministere" src="img/Logo_Ministere.jpg"  alt="Logo du ministère des affaires sociales et de la santé"/></a>
+	<h1 class="texteTitreSite">
+		Base <span class="texteBleu">de</span> données <span class="texteBleu">publique</span><br/><span class="texteBleu">des</span> médicaments
+	</h1>
+		<a id="lien_medicament_gouv" class="lienEspaceMedic" target="_blank" href="http://medicaments.gouv.fr" title="Visiter [medicaments.gouv.fr] - nouvelle fenêtre">Visiter [medicaments.gouv.fr] <img src="/img/icone_lien.png" alt="Visiter [medicaments.gouv.fr]"  title="Visiter [medicaments.gouv.fr] - nouvelle fenetre" /></a>
+</div>
+<!--div align="center">
+	<a id="banniere" target="_blank" href="http://social-sante.gouv.fr/soins-et-maladies/medicaments/medicaments-generiques/" title="Visiter [medicaments.gouv.fr] - M?dicaments g?n?riques">
+		<img width="1000"   src ="/img/carrouselbannieres.gif" alt="Visiter [medicaments.gouv.fr] - M?dicaments g?n?riques" title="Visiter [medicaments.gouv.fr] - M?dicaments g?n?riques" />
+	</a>
+</div-->
+
+<div id="menuhaut">
+	<span id="menuhaut_gauche">
+		<a id="lien_accueil" class="navigation" href="index.php">Accueil</a>&nbsp;|&nbsp;
+		<a id="lien_glossaire" class="navigation" href="glossaire.php">Glossaire</a>&nbsp;|&nbsp;
+		<a id="lien_aide" class="navigation" href="aide.php">Aide</a>		
+	</span>
+	
+		
+	<span id="menuhaut_dernmaj">
+        <br>Dernière <span title=" 2.4.4
+">mise à jour</span> le 03/03/2025	</span>
+</div>
+
+	<script language="javascript" type="text/javascript">
+		//<![CDATA[ 
+		function Aff(men) {
+			document.write("<ul class=\"menuDoc\">");
+			for(var no_rub=0;no_rub<men.num_rub;no_rub++) {
+				document.write("<li><a class='leftMenu' href='"+menu[no_rub].page+"'>");
+				document.write(men[no_rub].txt);
+				document.write("</a></li>");
+				if (men[no_rub].nb_lien != 0){
+					document.write("<ul class=\"sousMenuDoc\">");
+				}
+				for(var no_lien=0;no_lien<men[no_rub].nb_lien;no_lien++) {
+					document.write("<li><a class='leftMenu' href='"+men[no_rub][no_lien].page+"'>");
+					document.write(men[no_rub][no_lien].txt);
+					document.write("</a></li>");
+				}
+				if (men[no_rub].nb_lien != 0){
+					document.write("</ul>");
+				}
+			}
+			document.write("</ul>");
+		}
+		
+		function CreerMenu(police,imgRub,imgOption,imgOptionFin,hauteur) {
+			this.num_rub=0;
+			this.police=police;
+			this.imgRub=imgRub;
+			this.imgOpt=imgOption;
+			this.imgOptFin=imgOptionFin;
+			this.hauteur=hauteur;
+			this.AddRub=AddRub;
+			this.AddLien=AddLien;
+		}
+		
+		function AddRub(txt,aff,page) {
+			var rub = new Object;
+				rub.txt=txt;
+				rub.aff=aff;
+				rub.page=page;
+				rub.nb_lien=0;
+			this[this.num_rub]=rub;
+			this.num_rub++;
+		}
+
+		function AddLien(txt,page) {
+			var no_rub = this.num_rub-1;
+			var no_lien= this[no_rub].nb_lien;
+			var lien = new Object;
+				lien.txt=txt;
+				lien.page=page;
+			this[no_rub][no_lien]=lien;
+			this[no_rub].nb_lien++;
+		}
+		var menu=new CreerMenu("arial","img/dyn04.gif","img/dyn22.gif","img/dyn55.gif",18);
+		//]]> 
+		menu.AddRub("Description médicament","O","#Ann3bQuestceque");
+			menu.AddRub("Informations","O","#Ann3bInfoNecessaires");
+			menu.AddRub("Utilisation","O","#Ann3bCommentPrendre");
+			menu.AddRub("Effets indésirables","O","#Ann3bEffetsIndesirables");
+			menu.AddRub("Conservation","O","#Ann3bConservation");
+			menu.AddRub("Info. supplémentaires","O","#Ann3bEmballage");
+				</script>
+
+	<div id="container">
+		<div id="leftnav">
+			<div id="cadreMenuGauche">
+				<h2 class="sommaireMenu">Sommaire</h2>
+				<div id="menuGauche">
+					<script language="JavaScript" type="text/javascript">Aff(menu);</script>
+				</div>
+			</div>
+		</div>
+		<div id="contentPrincipal">
+			<div id="boutonsliens">
+				<a id='lien_fiche_info' href='extrait.php?specid=61137241' ><img id="ongletficheinfo" alt="Onglet fiche information" src="img/onglet_fiche_info_vert.png" /></a><a id='lien_rcp' href='affichageDoc.php?specid=61137241&amp;typedoc=R'><img class="onglet" alt="Onglet résumé des caractéristiques du produit" src="img/onglet_rcp_vert.png" /></a><a id='lien_notice' href='affichageDoc.php?specid=61137241&amp;typedoc=N'><img class="onglet" alt="Onglet notice patient" src="img/onglet_notice_gris.png" /></a>			</div>
+			<div class="titredeno">
+				<table summary="" border="0" cellspacing="0">
+					<tr><td colspan="3" height="10px"></td></tr>
+					<tr>
+						<td width="15px">&nbsp;</td>
+						<td width="685px"><h1 class="textedeno">IXPRIM 37,5 mg/325 mg, comprimé pelliculé  - Notice patient</h1></td>
+						<td width="43px" class="tdcenter"><a href="Javascript:void(null)" onclick="print();"><img src="img/imprimante.png" height="20px" width="20px" alt="Imprimer le document" title="Imprimer le document" border="0" /></a></td>
+					</tr>
+					<tr><td colspan="3" height="10px"></td></tr>
+				</table>
+			</div>
+			
+			<div id="contentDocument">
+				<div id="textDocument">
+					<p class="DateNotif">ANSM - Mis à jour le : 10/01/2025</p>
+<p class="AmmNoticeTitre1"><a name="Ann3bDenomination">Dénomination du médicament</a></p>
+<p class=AmmCorpsTexteGras align=center style='text-align:center'>IXPRIM 37,5 mg/325 mg, comprimé pelliculé</p>
+<p class=AmmCorpsTexteGras align=center style='text-align:center'>Chlorhydrate de Tramadol / Paracétamol</p>
+<p class="AmmNoticeTitre1"><a name="Ann3bEncadre">Encadré</a></p>
+<p class=AmmCorpsTexteGras><a name="_Toc142279000"><span lang=FR-BE>Veuillez lire attentivement cette notice avant de prendre ce médicament car elle contient des informations importantes pour vous.</span></a></p>
+<p class=AmmListePuces1 style='text-align:justify'><span lang=FR-BE style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span><span lang=FR-BE>Gardez cette notice. Vous pourriez avoir besoin de la relire.</span></p>
+<p class=AmmListePuces1 style='text-align:justify'><span lang=FR-BE style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span><span lang=FR-BE>Si vous avez d’autres questions, interrogez votre médecin ou votre pharmacien.</span></p>
+<p class=AmmListePuces1 style='text-align:justify'><span lang=FR-BE style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span><span lang=FR-BE>Ce médicament vous a été personnellement prescrit. Ne le donnez pas à d’autres personnes. Il pourrait leur être nocif, même si les signes de leur maladie sont identiques aux vôtres.</span></p>
+<p class=AmmListePuces1 style='text-align:justify'><span lang=FR-BE style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span><span lang=FR-BE>Si vous ressentez un quelconque effet indésirable, parlez-en à votre médecin ou votre pharmacien. Ceci s’applique aussi à tout effet indésirable qui ne serait pas mentionné dans cette notice. </span>Voir rubrique 4.</p>
+<p class="AmmNoticeTitre1"><a name="Ann3bSomm">Que contient cette notice ?</a></p>
+<p class=AmmCorpsTexte style='margin-top:0cm;margin-right:0cm;margin-bottom: 0cm;margin-left:14.2pt;margin-bottom:.0001pt;text-indent:-14.2pt'>1. Qu'est-ce que IXPRIM 37,5 mg/325 mg, comprimé pelliculé et dans quels cas est-il utilisé ?</p>
+<p class=AmmCorpsTexte style='margin-top:0cm;margin-right:0cm;margin-bottom: 0cm;margin-left:14.2pt;margin-bottom:.0001pt;text-indent:-14.2pt'>2. Quelles sont les informations à connaître avant de prendre IXPRIM 37,5 mg/325 mg, comprimé pelliculé ?</p>
+<p class=AmmCorpsTexte style='margin-top:0cm;margin-right:0cm;margin-bottom: 0cm;margin-left:14.2pt;margin-bottom:.0001pt;text-indent:-14.2pt'>3. Comment prendre IXPRIM 37,5 mg/325 mg, comprimé pelliculé?</p>
+<p class=AmmCorpsTexte style='margin-top:0cm;margin-right:0cm;margin-bottom: 0cm;margin-left:14.2pt;margin-bottom:.0001pt;text-indent:-14.2pt'>4. Quels sont les effets indésirables éventuels ?</p>
+<p class=AmmCorpsTexte style='margin-top:0cm;margin-right:0cm;margin-bottom: 0cm;margin-left:14.2pt;margin-bottom:.0001pt;text-indent:-14.2pt'>5. Comment conserver IXPRIM 37,5 mg/325 mg, comprimé pelliculé ?</p>
+<p class=AmmCorpsTexte style='margin-top:0cm;margin-right:0cm;margin-bottom: 0cm;margin-left:14.2pt;margin-bottom:.0001pt;text-indent:-14.2pt'><span style='color:black'>6. Contenu de l’emballage et autres informations.</span></p>
+<h2><a name="Ann3bQuestceque">1. QU’EST-CE QUE IXPRIM 37,5 mg/325 mg, comprimé pelliculé ET DANS QUELS CAS EST-IL UTILISE ?</a>&nbsp;&nbsp;<a href='#HautDePage'><img src='img/BackToTop.jpg' width='15px' height='15px' alt='Retour en haut de la page' title='Retour en haut de la page' /></a></h2>
+<p class=AmmCorpsTexte><a name="_Toc142279004">IXPRIM est une association de 2 antalgiques, le tramadol et le paracétamol, qui agissent ensemble pour soulager votre douleur.</a></p>
+<p class=AmmCorpsTexte>IXPRIM est indiqué dans le traitement des douleurs modérées à intenses lorsque votre médecin pense qu'une association de chlorhydrate de tramadol et de paracétamol est nécessaire.</p>
+<p class=AmmCorpsTexte>IXPRIM est réservé à l'adulte et l'adolescent à partir de 12 ans.</p>
+<h2><a name="Ann3bInfoNecessaires">2. QUELLES SONT LES INFORMATIONS A CONNAITRE AVANT DE PRENDRE IXPRIM 37,5 mg/325 mg, comprimé pelliculé ?</a>&nbsp;&nbsp;<a href='#HautDePage'><img src='img/BackToTop.jpg' width='15px' height='15px' alt='Retour en haut de la page' title='Retour en haut de la page' /></a></h2>
+<p class=AmmCorpsTexteGras><a name="_Toc142279015">Ne prenez jamais IXPRIM 37,5 mg/325 mg, comprimé pelliculé :</a></p>
+<p class=AmmListePuces1 style='text-align:justify'><span style='font-family: Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>si vous êtes allergique au chlorhydrate de tramadol, au paracétamol ou à tout autre composant de ce médicament (listés dans la rubrique 6), </p>
+<p class=AmmListePuces1 style='text-align:justify'><span style='font-family: Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>IXPRIM en cas d'intoxication aiguë par l'alcool, par les somnifères, par d'autres médicaments contre la douleur ou des médicaments psychotropes (médicaments qui agissent sur l'humeur et les émotions),</p>
+<p class=AmmListePuces1 style='text-align:justify'><span style='font-family: Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>si vous prenez en même temps des Inhibiteurs de la Monoamine Oxydase (médicaments utilisés pour le traitement de la dépression ou la maladie de Parkinson) ou si vous en avez pris au cours des deux semaines précédant le traitement par IXPRIM,</p>
+<p class=AmmListePuces1 style='text-align:justify'><span style='font-family: Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>si vous avez une maladie grave du foie,</p>
+<p class=AmmListePuces1 style='text-align:justify'><span style='font-family: Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>si vous avez une épilepsie non contrôlée par un traitement.</p>
+<p class=AmmAnnexeTitre3>Avertissements et précautions</p>
+<p class=AmmCorpsTexte><span lang=FR-BE>Adressez-vous à votre médecin avant de prendre </span>IXPRIM si : </p>
+<p class=AmmListePuces1><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>vous prenez d'autres médicaments contenant du paracétamol ou du tramadol,</p>
+<p class=AmmListePuces1><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>vous avez des problèmes au foie ou une maladie du foie ou si vous remarquez que votre peau et vos yeux deviennent jaunes. Cela peut suggérer une jaunisse ou des troubles biliaires.</p>
+<p class=AmmListePuces1><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>vous avez une maladie des reins,</p>
+<p class=AmmListePuces1 style='text-align:justify'><span style='font-family: Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>vous avez des difficultés sévères à respirer telles que de l'asthme ou une maladie sévère des poumons,</p>
+<p class=AmmListePuces1 style='text-align:justify'><span style='font-family: Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>vous êtes épileptique ou si vous avez déjà eu des convulsions,</p>
+<p class=AmmListePuces1><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>vous souffrez de dépression et prenez des antidépresseurs, dans la mesure où certains d’entre eux peuvent interagir avec le tramadol (voir «Autres médicaments et IXPRIM 37,5 mg/325 mg, comprimé pelliculé»), </p>
+<p class=AmmListePuces1 style='text-align:justify'><span style='font-family: Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>vous avez eu récemment une blessure à la tête ou si vous avez de violents maux de tête accompagnés de vomissements,</p>
+<p class=AmmListePuces1 style='text-align:justify'><span style='font-family: Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>vous êtes dépendant de médicaments notamment ceux utilisés pour soulager la douleur comme la morphine,</p>
+<p class=AmmListePuces1 style='text-align:justify'><span style='font-family: Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>vous prenez d'autres médicaments contre la douleur, à base de buprénorphine, de nalbuphine ou de pentazocine,</p>
+<p class=AmmListePuces1 style='text-align:justify'><span style='font-family: Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>vous allez prochainement subir une anesthésie. Dites à votre médecin ou à votre dentiste que vous prenez IXPRIM.</p>
+<p class=AmmAnnexeTitre4 style='margin-top:6.0pt'><span style='font-style:normal'>Tolérance, dépendance et addiction</span></p>
+<p class=AmmCorpsTexte>Ce médicament contient du tramadol qui est un médicament opioïde. L’utilisation répétée d’analgésiques opioides peut entrainer une diminution de l’efficacité du médicament (vous vous y habituez, ce que l’on appelle la tolérance). L’utilisation répétée de IXPRIM peut également entraîner une dépendance, un abus et une addiction, qui peuvent aboutir à un surdosage potentiellement mortel. Plus la dose est élevée et la durée d’utilisation est prolongée, plus le risque de développer ces effets secondaires sera accru.</p>
+<p class=AmmCorpsTexte>La dépendance ou l’addiction peuvent vous donner l’impression de ne plus contrôler la quantité de médicaments que vous devez prendre ou la fréquence à laquelle vous devez les prendre.</p>
+<p class=AmmCorpsTexte>Le risque de développer une dépendance ou une addiction varie d’une personne à l’autre. Vous pouvez présenter un risque accru de développer une dépendance ou une addiction à IXPRIM si :</p>
+<p class=AmmListePuces1 style='text-align:justify'><span style='font-family: Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>Vous ou un membre de votre famille avez déjà développé un abus ou une dépendance à l’alcool, à des médicaments sur ordonnance ou à des substances illicites (« addiction »).</p>
+<p class=AmmListePuces1 style='text-align:justify'><span style='font-family: Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>Vous fumez.</p>
+<p class=AmmListePuces1 style='text-align:justify'><span style='font-family: Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>Vous avez déjà présenté des troubles de l’humeur (dépression, anxiété ou trouble de la personnalité) ou avez été traité(e) par un psychiatre pour d’autres troubles de la santé mentale.</p>
+<p class=AmmCorpsTexte style='margin-top:6.0pt'>Si vous remarquez l’un des signes suivants alors que vous prenez IXPRIM, celui-ci pourrait indiquer que vous avez développé une dépendance ou addiction :</p>
+<p class=AmmListePuces1 style='text-align:justify'><span style='font-family: Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>Vous avez besoin de prendre le médicament pendant une durée supérieure à celle recommandée par votre médecin</p>
+<p class=AmmListePuces1 style='text-align:justify'><span style='font-family: Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>Vous avez besoin de prendre une dose supérieure à la dose recommandée</p>
+<p class=AmmListePuces1 style='text-align:justify'><span style='font-family: Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>Vous utilisez le médicament pour des raisons autres que celles pour lesquelles il vous a été prescrit à l’origine, par exemple, « pour rester calme » ou « pour vous aider à dormir »</p>
+<p class=AmmListePuces1 style='text-align:justify'><span style='font-family: Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>Vous avez fait des tentatives répétées et infructueuses d’arrêter ou de contrôler l’utilisation du médicament</p>
+<p class=AmmListePuces1 style='text-align:justify'><span style='font-family: Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>Vous ne vous sentez pas bien lorsque vous arrêtez de prendre le médicament, et vous vous sentez mieux une fois que vous le prenez à nouveau (« effets de sevrage »)</p>
+<p class=AmmCorpsTexte style='margin-top:6.0pt'>Si vous remarquez l’un de ces signes, parlez-en à votre médecin pour discuter de la démarche à suivre pour vous au sujet du traitement, y compris le moment où il est approprié d’arrêter et la façon d’arrêter en toute sécurité (voir rubrique 3, Si vous arrêtez de prendre IXPRIM 37,5 mg/325 mg, comprimé pelliculé).</p>
+<p class=AmmAnnexeTitre4 style='margin-top:6.0pt'>Troubles respiratoires liés au sommeil</p>
+<p class=AmmCorpsTexte>IXPRIM contient une substance active appartenant au groupe des opioïdes. Les opioïdes peuvent provoquer des troubles respiratoires liés au sommeil, tels que l’apnée centrale du sommeil (respiration superficielle/pause respiratoire pendant le sommeil) et l’hypoxémie liée au sommeil (faible taux d’oxygène dans le sang).</p>
+<p class=AmmCorpsTexte>Le risque de souffrir d’apnée centrale du sommeil dépend de la dose d’opioïdes. Votre médecin peut envisager de diminuer votre dose totale d’opioïdes si vous souffrez d’apnée centrale du sommeil.</p>
+<p class=AmmCorpsTexte style='margin-bottom:6.0pt'><a name="_Hlk38270548"></a><a name="_Hlk77001070"><span style='font-size:10.0pt;font-family:"Arial",sans-serif'>Il existe un faible risque que vous présentiez un syndrome sérotoninergique susceptible de survenir après avoir pris du tramadol en association avec certains antidépresseurs ou du tramadol seul. Consultez immédiatement un médecin si vous avez des symptômes liés à ce syndrome sévère (voir rubrique 4 «Quels sont les effets indésirables éventuels?»).</span></a></p>
+<p class=AmmCorpsTexte>Le tramadol est transformé dans le foie par une enzyme. Des variations au niveau de cette enzyme sont présentes chez certains patients, ce qui peut avoir des conséquences différentes selon les personnes. Chez certains, la douleur pourra ne pas être suffisamment soulagée, tandis que d’autres seront plus susceptibles de présenter des effets indésirables graves. Si vous remarquez l’un des effets indésirables suivants, vous devez arrêter de prendre ce médicament et consulter immédiatement un médecin : respiration lente ou superficielle, confusion, somnolence, rétrécissement des pupilles, nausées ou vomissements, constipation, perte d’appétit.</p>
+<p class=AmmCorpsTexte style='margin-top:6.0pt'>Si vous avez été concerné par l'un des points ci-dessus dans le passé ou si vous êtes concerné pendant la prise d’IXPRIM assurez-vous que le professionnel de santé qui vous suit (médecin, dentiste, anesthésiste, …) est au courant. Il/elle pourra décider de la poursuite éventuelle du traitement.</p>
+<p class=AmmCorpsTexteGras><a name="_Hlk38270611">Enfants et adolescents</a></p>
+<p class=AmmCorpsTexte style='margin-bottom:0cm;margin-bottom:.0001pt'>Utilisation chez les enfants présentant des problèmes respiratoires : </p>
+<p class=AmmCorpsTexte style='margin-bottom:0cm;margin-bottom:.0001pt'>Le tramadol n’est pas recommandé chez les enfants présentant des problèmes respiratoires car les symptômes de toxicité du tramadol peuvent être plus graves chez ces enfants.</p>
+<p class=AmmCorpsTexte style='margin-top:6.0pt;margin-right:0cm;margin-bottom: 0cm;margin-left:0cm;margin-bottom:.0001pt'><a name="_Hlk89605512"><span lang=FR-BE>Adressez-vous</span></a> à votre médecin si vous ressentez l’un des symptômes suivant pendant que vous prenez IXPRIM 37,5 mg / 325 mg, comprimé pelliculé : fatigue extrême, manque d'appétit, douleurs abdominales intenses, nausées, vomissements ou hypotension. Cela peut indiquer que vous avez une insuffisance surrénalienne (faible taux de cortisol). Si vous présentez ces symptômes, contactez votre médecin, qui décidera si vous devez prendre un supplément hormonal.</p>
+<p class=AmmCorpsTexteGras style='margin-top:6.0pt'>Autres médicaments et IXPRIM 37,5 mg / 325 mg, comprimé pelliculé</p>
+<p class=AmmCorpsTexte>Informez votre médecin ou pharmacien si vous prenez, avez récemment pris ou pourriez prendre tout autre médicament.</p>
+<p class=AmmCorpsTexte><span class='gras'>Important: Ce médicament contient du paracétamol et du tramadol. Informez votre médecin si vous prenez</span> <span class='italique'>tout autre médicament contenant du paracétamol ou du chlorhydrate de tramadol</span>, afin de ne pas dépasser les doses quotidiennes maximales.</p>
+<p class=AmmCorpsTexte>Vous <span class='gras'>ne devez pas</span> prendre IXPRIM avec des Inhibiteurs de la Monoamine Oxydase (IMAOs) (<a href="http://afssaps-prd.afssaps.fr/php/ecodex/notice/N0177687.htm#Ann3b_ContreIndic_7#Ann3b_ContreIndic_7"><span style='color:windowtext;text-decoration:none'>voir rubrique «Ne prenez jamais IXPRIM»</span></a>).</p>
+<p class=AmmCorpsTexte><span class='souligne'>Il n'est pas recommandé de prendre IXPRIM avec:</span></p>
+<p class=AmmListePuces1><span style='font-family: Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>la carbamazépine (un médicament fréquemment utilisé pour traiter l'épilepsie ou d'autres types de douleurs tels que les attaques de douleur sévère de la face, appelées névralgies du trijumeau).</p>
+<p class=AmmListePuces1><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>Buprénorphine, nalbuphine ou pentazocine (antalgiques de type opioïde). L'effet antalgique peut être réduit.</p>
+<p class=AmmCorpsTexte style='margin-bottom:0cm;margin-bottom:.0001pt'><span class='souligne'><span style='text-decoration:none'> </span></span></p>
+<p class=AmmCorpsTexte><a name="_Hlk116641403"><span class='souligne'>Veuillez informer votre médecin ou votre pharmacien si vous prenez :</span></a></p>
+<p class=AmmListePuces1 style='text-align:justify'><span style='font-family: Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>de la flucloxacilline (antibiotique), en raison d'un risque grave d'anomalie sanguine et plasmatique (acidose métabolique à trou anionique élevé <a name="_Hlk116566579">se produisant lorsqu’il existe un risque d’augmentation de l’acidité plasmatique sanguine</a>) qui doit faire l'objet d'un traitement urgent et qui peut survenir notamment en cas d'insuffisance rénale ou hépatique sévère, de septicémie (lorsque les bactéries et leurs toxines circulent dans le sang entraînant des lésions aux organes), de malnutrition, d'alcoolisme chronique et si les doses quotidiennes maximales de paracétamol sont utilisées, plus particulièrement si vous prenez la dose maximale pendant une longue période. L'acidose métabolique à trou anionique élevé est une maladie grave qui nécessite un traitement urgent.</p>
+<p class=AmmCorpsTexte style='margin-top:6.0pt'><span class='souligne'>Le risque d'effets indésirables augmente si vous prenez :</span></p>
+<p class=AmmListePuces1 style='text-align:justify'><span style='font-family: Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>des triptans (traitement de la migraine) ou des inhibiteurs sélectifs de la recapture de la sérotonine « IRSS » (traitement de la dépression). Si vous rencontrez les symptômes suivants: confusion, agitation, fièvre, transpiration, mouvements non coordonnés des membres ou des yeux, saccades musculaires incontrôlées ou une diarrhée, vous devez contacter votre médecin,</p>
+<p class=AmmListePuces1 style='margin-left:17.85pt;text-align:justify; text-indent:-17.85pt;page-break-after:avoid'><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>d'autres antalgiques tels que la morphine ou la codéine (qui traite également la toux), le baclofène (relaxant musculaire), des médicaments diminuant la pression artérielle, des antidépresseurs ou des anti-allergiques. Vous risquez de vous sentir somnolent ou de vous sentir faible. Si cela se produit, parlez-en à votre médecin,</p>
+<p class=AmmListePuces1 style='text-align:justify'><a name="_Hlk1137385"><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>L'utilisation concomitante d’IXPRIM et de médicaments sédatifs tels que les benzodiazépines ou les médicaments apparentés augmente le risque de somnolence, de difficultés respiratoires (dépression respiratoire), de coma et peut </a><a name="_Hlk8133545">être mortelle</a>. <a name="_Hlk8133568">Pour cette raison</a>, l'utilisation concomitante ne doit être envisagée <a name="_Hlk8133604">que lorsque d’autres options de traitement ne sont pas possibles</a>. Toutefois, si votre médecin vous prescrit IXPRIM en association avec des médicaments sédatifs, <a name="_Hlk8133669">la posologie et la durée du traitement concomitant doivent être limitées par votre médecin</a>. Veuillez informer votre médecin de tous les médicaments sédatifs que vous prenez et respectez les doses <a name="_Hlk8133707">recommandées</a> par votre médecin. <a name="_Hlk8133733">Il pourrait être utile d’informer des amis ou des proches afin qu’ils aient connaissance des signes et des symptômes mentionnés ci-dessus</a>. Contactez votre médecin si vous <a name="_Hlk8133758">ressentez de tels symptômes</a>.</p>
+<p class=AmmListePuces1 style='text-align:justify'><span style='font-family: Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>des médicaments susceptibles de provoquer des convulsions (crises d’épilepsie), comme certains antidépresseurs ou antipsychotiques. Le risque de crise d’épilepsie peut augmenter si vous prenez IXPRIM en même temps. Votre médecin vous dira si IXPRIM vous convient. </p>
+<p class=AmmListePuces1 style='text-align:justify'><span style='font-family: Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>certains antidépresseurs. IXPRIM peut interagir avec ces médicaments et vous pourrez ressentir un syndrome sérotoninergique (voir la rubrique 4 «Quels sont les effets indésirables éventuels?»).</p>
+<p class=AmmListePuces1 style='text-align:justify'><span style='font-family: Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>de la warfarine ou des dérivés de la coumarine (médicaments qui fluidifient le sang). L'efficacité de ces traitements sur la coagulation peut s'en trouver modifiée et il peut survenir des hémorragies. Tout saignement prolongé ou inattendu doit être rapporté immédiatement à votre médecin.</p>
+<p class=AmmListePuces1><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>de la gabapentine ou la prégabaline pour traiter l’épilepsie ou les douleurs dues à des problèmes nerveux (douleur neuropathique).</p>
+<p class=AmmCorpsTexte style='margin-top:6.0pt;page-break-after:avoid'><span class='souligne'>L'efficacité d’IXPRIM peut être diminuée si vous prenez également des produits à base de:</span></p>
+<p class=AmmListePuces1><span style='font-family: Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>métoclopramide, dompéridone ou ondansétron (pour prévenir les nausées et vomissements),</p>
+<p class=AmmListePuces1><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>cholestyramine (réduit le cholestérol dans le sang).</p>
+<p class=AmmCorpsTexteGras style='margin-top:6.0pt'><span style='font-family: "Arial Gras",serif;text-transform:uppercase'>Ixprim</span> <span style='color:black'>37,5 mg/325 mg, comprimé pelliculé </span>avec des aliments et de l’alcool </p>
+<p class=AmmCorpsTexte style='margin-top:6.0pt'>Votre médecin vous indiquera quels traitements peuvent être pris avec<span class='gras'> </span>IXPRIM.</p>
+<p class=AmmCorpsTexte><a name="_Toc142279012">IXPRIM peut provoquer une somnolence. La prise d’alcool pouvant aggraver la somnolence, il est préférable de ne pas boire d’alcool pendant le traitement par IXPRIM.</a></p>
+<p class=AmmCorpsTexteGras>Grossesse allaitement et fertilité</p>
+<p class=AmmCorpsTexte><a name="_Hlk71561538"></a><a name="_Hlk71561736">Si vous êtes enceinte ou si vous allaitez, si vous pensez être enceinte ou planifiez une grossesse, demandez conseil à votre médecin ou pharmacien avant de prendre ce médicament.</a></p>
+<p class=AmmCorpsTexte>En raison de la présence de chlorhydrate de tramadol, IXPRIM ne doit pas être utilisé pendant la grossesse ou l’allaitement. Si vous découvrez que vous êtes enceinte pendant le traitement par IXPRIM, consultez votre médecin avant de prendre les prochains comprimés.</p>
+<p class=AmmCorpsTexte><span class='souligne'>Allaitement : </span></p>
+<p class=AmmCorpsTexte>Le tramadol est excrété dans le lait maternel. Pour cette raison, IXPRIM ne doit pas être pris plus d'une fois au cours de l'allaitement. Si vous prenez IXPRIM de façon répétée, vous devez arrêter d'allaiter votre enfant.</p>
+<p class=AmmCorpsTexte>D’après les données disponibles chez l’Homme, le tramadol n’aurait pas d’influence sur la fertilité féminine et masculine. Il n’existe aucune donnée disponible sur l’influence de l’association du tramadol et du paracétamol sur la fertilité.</p>
+<p class=AmmCorpsTexte>Demandez conseil à votre médecin ou à votre pharmacien avant de prendre tout médicament.</p>
+<p class=AmmCorpsTexteGras>Conduite de véhicules et utilisation de machines</p>
+<p class=AmmCorpsTexte>L’attention est attirée chez les conducteurs de véhicules ou les utilisateurs de machines sur les risques de somnolence suite à la prise de IXPRIM.</p>
+<p class=AmmCorpsTexteGras>IXPRIM 37,5 mg/325 mg, comprimé pelliculé contient du lactose et du sodium.</p>
+<p class=AmmCorpsTexte>Le lactose est un composant de ces comprimés. </p>
+<p class=AmmCorpsTexte>Si votre médecin vous a dit que vous présentiez une intolérance à certains sucres, consultez-le avant de prendre ce médicament.</p>
+<p class=AmmCorpsTexte><a name="_Hlk530478344"></a><a name="_Hlk530478476">Ce médicament contient moins de 1 mmol de sodium (23 mg) par comprimé, c’est-à-dire qu’il est essentiellement « sans sodium ».</a></p>
+<h2><a name="Ann3bCommentPrendre">3. COMMENT PRENDRE IXPRIM 37,5 mg/325 mg, comprimé pelliculé ?</a>&nbsp;&nbsp;<a href='#HautDePage'><img src='img/BackToTop.jpg' width='15px' height='15px' alt='Retour en haut de la page' title='Retour en haut de la page' /></a></h2>
+<p class=AmmCorpsTexte><a name="_Toc142279021">Veillez à toujours prendre ce médicament en suivant exactement les indications de votre médecin. Vérifiez auprès de votre médecin ou pharmacien en cas de doute.</a></p>
+<p class=AmmCorpsTexte style='margin-bottom:7.0pt;line-height:14.0pt;text-autospace: none'><span style='font-size:10.0pt;font-family:"Arial",sans-serif'>Avant d’initier le traitement et régulièrement durant celui-ci, votre médecin discutera avec vous de ce qui peut être attendu de l’utilisation de IXPRIM 37,5 mg/325 mg, comprimé pelliculé, de quand et pendant combien de temps vous devez le prendre, des situations dans lesquelles vous devez contacter votre médecin et du moment où vous devez arrêter le traitement (voir également la rubrique 2).</span></p>
+<p class=AmmAnnexeTitre3>Posologie</p>
+<p class=AmmCorpsTexte>Prenez toujours ce médicament en respectant strictement les instructions de votre médecin. En cas d'incertitude, consultez votre médecin ou votre pharmacien.</p>
+<p class=AmmCorpsTexte>Il est conseillé de prendre IXPRIM pour une durée la plus courte possible.</p>
+<p class=AmmCorpsTexte>IXPRIM ne convient pas aux enfants de moins de 12 ans.</p>
+<p class=AmmCorpsTexte>La posologie doit être ajustée en fonction de l'intensité de votre douleur et de votre sensibilité personnelle à la douleur. D'une manière générale, il faut prendre la dose minimale qui soulage la douleur.</p>
+<p class=AmmCorpsTexte><span style='color:black'>La dose initiale recommandée chez l'adulte et l'adolescent de plus de 12 ans, sauf prescription différente de votre médecin, est de 2 comprimés.</span></p>
+<p class=AmmCorpsTexte>Des doses supplémentaires peuvent être administrées en fonction des besoins; se conformer à la prescription médicale.</p>
+<p class=AmmCorpsTexte>L'intervalle entre les prises doit être au minimum de 6 heures.</p>
+<p class=AmmAnnexeTitre3>Ne pas prendre plus de 8 comprimés d’IXPRIM par jour.</p>
+<p class=AmmCorpsTexte>Ne pas prendre IXPRIM plus souvent que ce que le médecin vous a prescrit.</p>
+<p class=AmmAnnexeTitre3>Patients âgés</p>
+<p class=AmmCorpsTexte>Chez les patients âgés (plus de 75 ans), l’élimination du tramadol peut être retardée. Si tel est votre cas, votre médecin vous pourrait vous conseiller d'espacer les prises.</p>
+<p class=AmmAnnexeTitre3>Maladie grave du foie ou des reins (insuffisance hépatique/rénale)/patients sous dialyse</p>
+<p class=AmmCorpsTexte>Les patients souffrant d'insuffisance hépatique et/ou rénale sévère ne doivent pas prendre IXPRIM. Si vous présentez une insuffisance légère ou modérée, votre médecin pourra vous recommander d'espacer les prises. </p>
+<p class=AmmAnnexeTitre3>Mode d'administration</p>
+<p class=AmmCorpsTexte>Les comprimés sont destinés à la voie orale.</p>
+<p class=AmmCorpsTexte>Les comprimés doivent être avalés tels quels avec une boisson en quantité suffisante. Ils ne doivent pas être fractionnés, ni mâchés.</p>
+<p class=AmmCorpsTexte>Si vous avez l'impression que l'effet d’IXPRIM est trop fort (par exemple, vous vous sentez très somnolent ou vous avez des difficultés à respirer) ou trop léger (par exemple, soulagement insuffisant de la douleur), contactez votre médecin.</p>
+<p class=AmmCorpsTexteGras>Si vous avez pris plus d’IXPRIM 37,5 mg/325 mg, comprimé pelliculé que vous n’auriez dû :</p>
+<p class=AmmCorpsTexte>Consultez immédiatement votre médecin ou votre pharmacien même si vous sentez bien. Il peut y avoir un risque d’atteinte hépatique dont les symptômes apparaitront ultérieurement.</p>
+<p class=AmmCorpsTexteGras>Si vous oubliez de prendre IXPRIM 37,5 mg/325 mg, comprimé pelliculé :</p>
+<p class=AmmCorpsTexte>Si vous avez oublié de prendre les comprimés, la douleur peut réapparaitre. Ne doublez pas la dose que vous avez oublié de prendre. Continuez votre traitement comme avant.</p>
+<p class=AmmCorpsTexteGras>Si vous arrêtez de prendre IXPRIM 37,5 mg/325 mg, comprimé pelliculé :</p>
+<p class=AmmCorpsTexte><a name="_Hlk71561441"><span style='color:black'>Vous ne devez pas arrêter brutalement de prendre ce médicament, sauf indication contraire de votre médecin. Si vous souhaitez arrêter de prendre ce médicament, parlez-en d’abord à votre médecin, surtout si vous en prenez depuis longtemps. Votre médecin vous indiquera quand et comment arrêter, ceci pourra s’effectuer en diminuant progressivement la dose afin de réduire les risques d’apparition d’effets indésirables évitables (symptômes de sevrage).</span></a></p>
+<p class=AmmCorpsTexte>Si vous avez d'autres questions sur l'utilisation de ce médicament, demandez plus d'informations à votre médecin ou à votre pharmacien.</p>
+<h2><a name="Ann3bEffetsIndesirables">4. QUELS SONT LES EFFETS INDESIRABLES EVENTUELS ?</a>&nbsp;&nbsp;<a href='#HautDePage'><img src='img/BackToTop.jpg' width='15px' height='15px' alt='Retour en haut de la page' title='Retour en haut de la page' /></a></h2>
+<p class=AmmCorpsTexte><a name="_Toc142279023">Comme tous les médicaments, ce médicament peut provoquer des effets indésirables, mais ils ne surviennent pas systématiquement chez tout le monde.</a></p>
+<p class=AmmAnnexeTitre3>Très Fréquents : peut concerner plus d’1 patient sur 10 ;</p>
+<p class=AmmListePuces1><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>nausées,</p>
+<p class=AmmListePuces1><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>sensation de vertige, somnolence.</p>
+<p class=AmmAnnexeTitre3>Fréquents : peut concerner jusqu’à 1 patient sur 10 ;</p>
+<p class=AmmListePuces1><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>vomissements, digestion difficile (constipation, ballonnements, diarrhée), douleurs abdominales, sécheresse de la bouche,</p>
+<p class=AmmListePuces1><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>démangeaisons, sueurs (hyperhidrose),</p>
+<p class=AmmListePuces1><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>maux de tête, tremblements,</p>
+<p class=AmmListePuces1><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>état confusionnel, troubles du sommeil, modifications de l'humeur (anxiété, nervosité, euphorie).</p>
+<p class=AmmAnnexeTitre3>Peu Fréquents : peut concerner jusqu’à 1 patient sur 100 ;</p>
+<p class=AmmListePuces1><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>augmentation de la pression artérielle, troubles du rythme cardiaque,</p>
+<p class=AmmListePuces1><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>picotements, engourdissements, sensations de fourmillement au niveau des membres, bourdonnements d'oreille, contractions musculaires involontaires,</p>
+<p class=AmmListePuces1><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>dépression, cauchemars, hallucinations (perception de choses qui n'existent pas dans la réalité), amnésie,</p>
+<p class=AmmListePuces1><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>gêne respiratoire.</p>
+<p class=AmmListePuces1><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>difficultés à avaler, sang dans les selles,</p>
+<p class=AmmListePuces1><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>réactions cutanées (éruptions, urticaire par exemple),</p>
+<p class=AmmListePuces1><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>augmentation des enzymes du foie.</p>
+<p class=AmmListePuces1><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>Présence d’albumine dans l’urine, difficulté ou douleur lorsque vous urinez,</p>
+<p class=AmmListePuces1><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>frissons, bouffées de chaleur, douleurs dans la poitrine,</p>
+<p class=AmmAnnexeTitre3>Rares : peut concerner jusqu’à 1 patient sur 1000 ;</p>
+<p class=AmmListePuces1><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>convulsions, difficulté à coordonner les mouvements, perte de conscience transitoire (syncope)</p>
+<p class=AmmListePuces1><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>dépendance médicamenteuse, </p>
+<p class=AmmListePuces1><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>délire,</p>
+<p class=AmmListePuces1><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>vision floue, rétrécissement de la pupille, (myosis), </p>
+<p class=AmmListePuces1><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>troubles de la parole,</p>
+<p class=AmmListePuces1><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>dilatation excessive de la pupille (mydriase)</p>
+<p class=AmmAnnexeTitre3>Fréquence indéterminée :<span style='font-weight: normal'> fréquence ne pouvant être estimée à partir des données disponibles</span><span style='font-weight:normal'>)</span>:</p>
+<p class=AmmListePuces1><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>Diminution du taux de sucre dans le sang (hypoglycémie), </p>
+<p class=AmmCorpsTexte style='margin-top:6.0pt'>Les effets indésirables suivants ont été rapportés chez les personnes prenant des médicaments contenant uniquement du chlorhydrate de<span class='italique'> </span>tramadol ou du paracétamol. Contactez votre médecin si vous présentez l'un de ces effets pendant que vous prenez IXPRIM 37,5 mg / 325 mg, comprimé pelliculé :</p>
+<p class=AmmListePuces1 style='text-align:justify'><span style='font-family: Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>sensation de faiblesse lorsque vous vous levez après être resté allongé ou assis, diminution de la fréquence cardiaque, modification de l'appétit, faiblesse musculaire, respiration ralentie ou affaiblie, modification de l'humeur, modification de l'activité, modification de la perception, aggravation d'un asthme existant.</p>
+<p class=AmmListePuces1 style='text-align:justify'><a name="_Hlk116567019"><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>La prise de paracétamol seule ou en association avec l’antibiotique flucloxacilline peut induire une anomalie sanguine et plasmatique (acidose métabolique à trou anionique élevé) lorsqu'il y a une augmentation de l'acidité du plasma sanguin.</a></p>
+<p class=AmmListePuces1 style='text-align:justify'><span style='font-family: Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>Utiliser IXPRIM avec un traitement qui fluidifie le sang (exemple: dérivés de la coumarine, warfarine) peut augmenter le risque de saignement. Vous devez immédiatement signaler à votre médecin tout saignement prolongé ou inattendu.</p>
+<p class=AmmListePuces1 style='margin-left:17.85pt;text-align:justify; text-indent:-17.85pt;page-break-after:avoid'><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>dans de rares cas, une éruption cutanée, signe de réaction allergique, peut se développer avec un gonflement soudain du visage et du cou, des difficultés respiratoires ou une diminution de la pression artérielle et un évanouissement. Si vous êtes concernés, <span class='souligne'>arrêtez votre traitement et consultez immédiatement votre médecin. Vous ne devez pas continuer de prendre ce traitement.</span></p>
+<p class=AmmCorpsTexte style='margin-top:6.0pt'>Dans de rares cas, prendre un médicament à base de chlorhydrate de tramadol peut provoquer une dépendance et rendre difficile l'arrêt du traitement.</p>
+<p class=AmmCorpsTexte>Dans de rares cas, les personnes ayant pris du chlorhydrate de<span class='italique'> </span>tramadol depuis quelques temps peuvent se sentir mal en cas d'arrêt brutal du traitement. Elles peuvent se sentir agitées, anxieuses, nerveuses ou tremblantes. Ces personnes peuvent être hyperactives, avoir des difficultés à dormir et avoir des troubles gastro-intestinaux.</p>
+<p class=AmmCorpsTexte>Quelques personnes ont également eu des attaques de panique, des hallucinations, des sensations inhabituelles telles que des démangeaisons, des picotements ou un engourdissement, et un bourdonnement d'oreilles. Si vous rencontrez ce type de symptômes après l'arrêt d’IXPRIM, contactez votre médecin.</p>
+<p class=AmmCorpsTexte><a name="_Hlk89605630">Fréquence indéterminée : - hoquet</a></p>
+<p class=AmmCorpsTexte>Syndrome sérotoninergique, qui peut se manifester par des modifications de l'état mental (par exemple, une agitation, des hallucinations, un coma), et d'autres effets, tels que de la fièvre, une augmentation de la fréquence cardiaque, une tension artérielle instable, des contractions musculaires involontaires, une rigidité musculaire, un manque de coordination et/ou des symptômes gastro-intestinaux (par exemple des nausées, des vomissements, une diarrhée) (voir rubrique 2 «Quelles sont les informations à connaître avant de prendre IXPRIM 37,5 mg/325 mg, comprimé pelliculé ».</p>
+<p class=AmmCorpsTexte>Exceptionnellement, les bilans sanguins ont pu révéler des anomalies, par exemple un taux anormalement bas de plaquettes, ce qui peut provoquer des saignements de nez ou de gencives.</p>
+<p class=AmmCorpsTexte>De très rares cas de réactions cutanées graves ont été rapportés avec le paracétamol.</p>
+<p class=AmmCorpsTexte>De rares cas de dépression respiratoire ont été rapportés avec le tramadol.</p>
+<p class=AmmAnnexeTitre3>Déclaration des effets secondaires</p>
+<p class=AmmCorpsTexte>Si vous ressentez un quelconque effet indésirable, parlez-en à votre médecin ou votre pharmacien. Ceci s’applique aussi à tout effet indésirable qui ne serait pas mentionné dans cette notice. Vous pouvez également déclarer les effets indésirables directement via le système national de déclaration : Agence nationale de sécurité du médicament et des produits de santé (ANSM) et réseau des Centres Régionaux de Pharmacovigilance - Site internet:<a href="https://signalement.social-sante.gouv.fr/">https://signalement.social-sante.gouv.fr/</a>.</p>
+<p class=AmmCorpsTexte>En signalant les effets indésirables, vous contribuez à fournir davantage d’informations sur la sécurité du médicament.</p>
+<h2><a name="Ann3bConservation">5. COMMENT CONSERVER IXPRIM 37,5 mg/325 mg, comprimé pelliculé ?</a>&nbsp;&nbsp;<a href='#HautDePage'><img src='img/BackToTop.jpg' width='15px' height='15px' alt='Retour en haut de la page' title='Retour en haut de la page' /></a></h2>
+<p class=AmmCorpsTexte><a name="_Toc142279026"></a><a name="_Toc142279024">Tenir ce médicament hors de la vue et de la portée des enfants.</a></p>
+<p class=AmmCorpsTexte>Conservez ce médicament dans un espace de stockage sûr et sécurisé, où d’autres personnes ne peuvent pas y avoir accès. Il peut nuire gravement et même être mortel pour les personnes lorsqu’il ne leur a pas été prescrit.</p>
+<p class=AmmCorpsTexte><a name="_Toc142279025">Ne pas utiliser <span style='text-transform:uppercase'></span>ce médicament après la date de péremption mentionnée sur la boîte et sur la plaquette thermoformée après la mention « EXP ». La date de péremption fait référence au dernier jour du mois. </a></p>
+<p class=AmmCorpsTexte>Pas de précaution particulière de conservation. </p>
+<p class=AmmCorpsTexte><span lang=FR-BE>Ne jetez aucun médicament au tout-à-l’égout <span style='color:black'>ou avec </span>les ordures ménagères. Demandez à votre pharmacien d’éliminer les médicaments que vous n’utilisez plus. Ces mesures contribueront à protéger l’environnement.</span></p>
+<h2><a name="Ann3bEmballage">6. CONTENU DE L’EMBALLAGE ET AUTRES INFORMATIONS</a>&nbsp;&nbsp;<a href='#HautDePage'><img src='img/BackToTop.jpg' width='15px' height='15px' alt='Retour en haut de la page' title='Retour en haut de la page' /></a></h2>
+<p class="AmmAnnexeTitre2"><a name="Ann3bContenu">Ce que contient IXPRIM 37,5 mg/325 mg, comprimé pelliculé</a>&nbsp;&nbsp;<a href='#HautDePage'><img src='img/BackToTop.jpg' width='15px' height='15px' alt='Retour en haut de la page' title='Retour en haut de la page' /></a></p>
+<p class=AmmListePuces1><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>Les substances actives sont:</p>
+<p class=AmmComposition style='margin-top:6.0pt;margin-right:0cm;margin-bottom: 6.0pt;margin-left:17.85pt'>Chlorhydrate de tramadol ............................................................................................ 37,50 mg</p>
+<p class=AmmComposition style='margin-left:18.0pt'>Paracétamol ............................................................................................................ 325,00 mg</p>
+<p class=AmmCorpsTexte align=center style='text-align:center'>Pour un comprimé pelliculé.</p>
+<p class=AmmListePuces1><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>Les autres composants sont : </p>
+<p class=AmmAnnexeTitre4 style='margin-top:6.0pt;margin-right:0cm;margin-bottom: 6.0pt;margin-left:17.85pt'>Noyau : </p>
+<p class=AmmComposition style='margin-left:17.85pt'>Cellulose en poudre, amidon prégélatinisé, carboxyméthylamidon sodique (Type A), amidon de maïs, stéarate de magnésium.</p>
+<p class=AmmAnnexeTitre4 style='margin-left:17.85pt'>Pelliculage :</p>
+<p class=AmmComposition style='margin-left:17.85pt'>Hypromellose, lactose monohydrate, dioxyde de titane (E 171), macrogol 6000, oxyde de fer jaune (E 172), propylène glycol, talc.</p>
+<p class="AmmAnnexeTitre2"><a name="RcpEmballage">Qu’est-ce que IXPRIM 37,5 mg / 325 mg, comprimé pelliculé et contenu de l’emballage extérieur</a>&nbsp;&nbsp;<a href='#HautDePage'><img src='img/BackToTop.jpg' width='15px' height='15px' alt='Retour en haut de la page' title='Retour en haut de la page' /></a></p>
+<p class=AmmCorpsTexte>IXPRIM comprimés pelliculés sont des comprimés pelliculés jaune pâle marqués du logo du fabricant <span lang=EN-GB style='font-family: Wingdings'>d</span> sur l’une des faces et « T5 » sur l’autre face. </p>
+<p class=AmmCorpsTexte>Les comprimés pelliculés d’IXPRIM sont emballés sous des plaquettes thermoformées ou des plaquettes prédécoupées unitaires thermoformées. </p>
+<p class=AmmCorpsTexte>IXPRIM se présente en boîte de 2, 10, 20, 30, 40, 50, 60, 70, 80, 90 et 100 comprimés.</p>
+<p class=AmmCorpsTexte>IXPRIM se présente en boîte de 2x1, 10x1, 20x1, 30x1, 40x1, 50x1, 60x1, 70x1, 80x1, 90x1 et 100x1 comprimés.</p>
+<p class=AmmCorpsTexte>Toutes les présentations peuvent ne pas être commercialisées</p>
+<p class="AmmAnnexeTitre2"><a name="Ann3bTituAMM">Titulaire de l’autorisation de mise sur le marché</a>&nbsp;&nbsp;<a href='#HautDePage'><img src='img/BackToTop.jpg' width='15px' height='15px' alt='Retour en haut de la page' title='Retour en haut de la page' /></a></p>
+<p class=AmmCorpsTexteGras style='margin-bottom:0cm;margin-bottom:.0001pt'><a name="_Toc142279031">LABORATOIRES GRUNENTHAL</a></p>
+<p class=AmmCorpsTexte style='margin-bottom:0cm;margin-bottom:.0001pt'>TOUR PACIFIC </p>
+<p class=AmmCorpsTexte style='margin-bottom:0cm;margin-bottom:.0001pt'>11-13 COURS VALMY</p>
+<p class=AmmCorpsTexte style='margin-bottom:0cm;margin-bottom:.0001pt'>92800 PUTEAUX</p>
+<p class="AmmAnnexeTitre2"><a name="Ann3bExploitAMM">Exploitant de l’autorisation de mise sur le marché</a>&nbsp;&nbsp;<a href='#HautDePage'><img src='img/BackToTop.jpg' width='15px' height='15px' alt='Retour en haut de la page' title='Retour en haut de la page' /></a></p>
+<p class=AmmCorpsTexteGras style='margin-bottom:0cm;margin-bottom:.0001pt; page-break-after:avoid'><a name="_Toc142279032">LABORATOIRES GRUNENTHAL</a></p>
+<p class=AmmCorpsTexte style='margin-bottom:0cm;margin-bottom:.0001pt'>TOUR PACIFIC </p>
+<p class=AmmCorpsTexte style='margin-bottom:0cm;margin-bottom:.0001pt'>11-13 COURS VALMY</p>
+<p class=AmmCorpsTexte style='margin-bottom:0cm;margin-bottom:.0001pt'><span lang=DE>92800 PUTEAUX</span></p>
+<p class="AmmAnnexeTitre2"><a name="Ann3bFab">Fabricant</a>&nbsp;&nbsp;<a href='#HautDePage'><img src='img/BackToTop.jpg' width='15px' height='15px' alt='Retour en haut de la page' title='Retour en haut de la page' /></a></p>
+<p class=AmmCorpsTexteGras style='margin-bottom:0cm;margin-bottom:.0001pt; page-break-after:avoid'><a name="_Toc142279033"><span lang=DE>GRUNENTHAL GMBH</span></a></p>
+<p class=AmmCorpsTexte style='margin-bottom:0cm;margin-bottom:.0001pt; page-break-after:avoid'><span lang=DE>ZIEGLERSTRASSE 6</span></p>
+<p class=AmmCorpsTexte style='margin-bottom:0cm;margin-bottom:.0001pt; page-break-after:avoid'><span lang=DE>52078 AACHEN</span></p>
+<p class=AmmCorpsTexte style='margin-bottom:0cm;margin-bottom:.0001pt; page-break-after:avoid'>ALLEMAGNE</p>
+<p class="AmmAnnexeTitre2"><a name="Ann3bNomsMediEEE">Noms du médicament dans les Etats membres de l'Espace Economique Européen</a>&nbsp;&nbsp;<a href='#HautDePage'><img src='img/BackToTop.jpg' width='15px' height='15px' alt='Retour en haut de la page' title='Retour en haut de la page' /></a></p>
+<p class=AmmCorpsTexteGras>Ce médicament est autorisé dans les Etats membres de l'Espace Economique Européen sous les noms suivants : Conformément à la réglementation en vigueur. </p>
+<p class=AmmCorpsTexte>[À compléter ultérieurement par le titulaire]</p>
+<p class="AmmAnnexeTitre2"><a name="Ann3bContenu">La dernière date à laquelle cette notice a été révisée est :</a>&nbsp;&nbsp;<a href='#HautDePage'><img src='img/BackToTop.jpg' width='15px' height='15px' alt='Retour en haut de la page' title='Retour en haut de la page' /></a></p>
+<p class=AmmCorpsTexte><a name="_Toc142279038">[à compléter ultérieurement par le titulaire]</a></p>
+<p class=AmmCorpsTexteGras>{MM/AAAA}&gt;&lt; {mois AAAA}.</p>
+<p class="AmmAnnexeTitre2"><a name="Ann3bAutres">Autres</a>&nbsp;&nbsp;<a href='#HautDePage'><img src='img/BackToTop.jpg' width='15px' height='15px' alt='Retour en haut de la page' title='Retour en haut de la page' /></a></p>
+<p class=AmmCorpsTexte>Des informations détaillées sur ce médicament sont disponibles sur le site Internet de l’ANSM (France).</p>
+</div>					
+					<p class="alignright"><a href="#HautDePage">Retour en haut de la page <img src="img/BackToTop.jpg" width="20px" height="20px" alt="Retour en haut de la page" title="Retour en haut de la page" /></a></p>
+				</div>
+			</div>
+		</div>
+	</div>
+
+<table summary="" class="content" width="1000">
+	<tr>
+		<td height="100px">&nbsp;</td>
+	</tr>
+</table>
+<table summary="Pied de page" class="footer" width="1000">
+	<tr>
+		<td>
+			<table summary="" class="tablealigncenter" border="0">
+				<tr>
+					<td width="100px" class="aligncenter"><a id="lien_ansm" href="http://ansm.sante.fr/" target="_blank"><img src="img/Logo_ANSM.png" width="150" height="60" alt="ANSM - Agence nationale de sécurité du médicament et des produits de santé" title="L'ANSM met à disposition les principales informations issues de l'Autorisation de mise sur le marché, l'appartenance à un groupe générique, les liens vers les informations de sécurité qu'elle publie, l'identification des médicaments sous surveillance renforcée - nouvelle fenêtre" /></a></td>
+					          <td>&nbsp;</td>
+					<td width="100px" class="aligncenter"><img src="img/Logo_HAS.png" width="150" height="60" alt="HAS - Haute autorité de santé" title="La HAS met à disposition les informations relatives au service médical rendu, à l'amélioration du service médical rendu ainsi que les liens vers les avis de la Commission de la Transparence correspondants - nouvelle fenêtre" /></td>
+					<td>&nbsp;</td>
+					<td width="100px" class="aligncenter"><img src="img/Logo_CNAM.png" width="150" height="60" alt="UNCAM - Unin nationale des caisses d'assurance maladie" title="L'UNCAM met à disposition le taux de remboursement, le prix et les indications remboursables le cas échéant, ainsi que l'agrément aux collectivités - nouvelle fenêtre" /></td>
+          				</tr>
+			</table> 
+		</td>
+	</tr>
+</table>
+<table summary="" class="finpage" width="1000">
+	<tr>
+		<td height="100px" class="aligncenter">
+			<a class="navigation" href="plan.php">Plan du site</a>&nbsp;|&nbsp;
+			<a class="navigation" href="accessibilite.php">Accessibilité</a>&nbsp;|&nbsp;
+			<a class="navigation" href="contact.php">Contact</a>&nbsp;|&nbsp;
+			<a class="navigation" href="telechargement.php">Téléchargement</a>&nbsp;|&nbsp;
+			<a class="navigation" href="DeclarationConfidentialite.php">Declaration de confidentialité</a>&nbsp;|&nbsp;
+			<a class="navigation" href="http://www.service-public.fr/" title="Service Public - Nouvelle fenêtre" target="_blank">Service-Public.fr</a>&nbsp;|&nbsp;
+			<a class="navigation" href="http://www.legifrance.gouv.fr/" title="Legifrance - Nouvelle fenêtre" target="_blank">Legifrance</a>&nbsp;|&nbsp;
+			<a class="navigation" href="http://www.gouvernement.fr/" title="Gouvernement - Nouvelle fenêtre" target="_blank" >Gouvernement.fr</a>
+		</td>
+	</tr>
+</table>
+
+
+
+<!-- Matomo -->
+<script type="text/javascript">
+  var _paq = window._paq = window._paq || [];
+  /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
+  _paq.push(['trackPageView']);
+  _paq.push(['enableLinkTracking']);
+  (function() {
+    var u="https://stats.integra.fr/";
+    _paq.push(['setTrackerUrl', u+'matomo.php']);
+    _paq.push(['setSiteId', '79']);
+    var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+    g.type='text/javascript'; g.async=true; g.src=u+'matomo.js'; s.parentNode.insertBefore(g,s);
+  })();
+</script>
+<!-- End Matomo Code -->
+
+
+
+</body>
+</html>

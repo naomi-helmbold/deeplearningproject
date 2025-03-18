@@ -1,0 +1,1302 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="fr" lang="fr">
+<head>
+	<title>Résumé des caractéristiques du produit - AMOXICILLINE VIATRIS 1 g, comprimé dispersible  - Base de données publique des médicaments</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=windows-1252"/>
+	<meta name="robots" content="index, follow"/>
+	<meta name="Description" content="Base de données publique des médicaments"/>
+	<meta name="Keywords" content="base, données, publique, médicaments, Résumé des caractéristiques du produit, AMOXICILLINE VIATRIS 1 g, comprimé dispersible "/>
+	<meta name="Subject" content="medicament"/>
+	<link href='https://fonts.googleapis.com/css?family=Noticia+Text' rel='stylesheet' type='text/css' />
+	<link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro' rel='stylesheet' type='text/css' />
+	<link href="style/style_bdm.css?v=2.2.3" type="text/css" rel="stylesheet"/>
+	<link href="style/style_RCP_Notice.css" type="text/css" rel="stylesheet"/>
+  <link rel="alternate" href="http://m.base-donnees-publique.medicaments.gouv.fr/#!info-67406937">
+    <script type="text/javascript" src="scripts/autocomplete.js?v=2.2.3"></script>
+	<script type="text/javascript" src="scripts/jquery.js"></script>
+    <script type="text/javascript" src="scripts/jquery-ui.min.js"></script>
+	<script type="text/javascript" src="scripts/common.js"></script>
+	<link rel="icon" type="image/x-icon" href="favicon.ico" />
+</head>
+
+<body>
+
+<a name="HautDePage" />
+<div id="bandeauhaut">
+	<a id="lien_ministere" class="lienmenu" href="http://www.sante.gouv.fr" target="_blank" title="Site du ministère des affaires sociales et de la santé - nouvelle fenêtre"><img id="logoministere" src="img/Logo_Ministere.jpg"  alt="Logo du ministère des affaires sociales et de la santé"/></a>
+	<h1 class="texteTitreSite">
+		Base <span class="texteBleu">de</span> données <span class="texteBleu">publique</span><br/><span class="texteBleu">des</span> médicaments
+	</h1>
+		<a id="lien_medicament_gouv" class="lienEspaceMedic" target="_blank" href="http://medicaments.gouv.fr" title="Visiter [medicaments.gouv.fr] - nouvelle fenêtre">Visiter [medicaments.gouv.fr] <img src="/img/icone_lien.png" alt="Visiter [medicaments.gouv.fr]"  title="Visiter [medicaments.gouv.fr] - nouvelle fenetre" /></a>
+</div>
+<!--div align="center">
+	<a id="banniere" target="_blank" href="http://social-sante.gouv.fr/soins-et-maladies/medicaments/medicaments-generiques/" title="Visiter [medicaments.gouv.fr] - M?dicaments g?n?riques">
+		<img width="1000"   src ="/img/carrouselbannieres.gif" alt="Visiter [medicaments.gouv.fr] - M?dicaments g?n?riques" title="Visiter [medicaments.gouv.fr] - M?dicaments g?n?riques" />
+	</a>
+</div-->
+
+<div id="menuhaut">
+	<span id="menuhaut_gauche">
+		<a id="lien_accueil" class="navigation" href="index.php">Accueil</a>&nbsp;|&nbsp;
+		<a id="lien_glossaire" class="navigation" href="glossaire.php">Glossaire</a>&nbsp;|&nbsp;
+		<a id="lien_aide" class="navigation" href="aide.php">Aide</a>		
+	</span>
+	
+		
+	<span id="menuhaut_dernmaj">
+        <br>Dernière <span title=" 2.4.4
+">mise à jour</span> le 03/03/2025	</span>
+</div>
+
+	<script language="javascript" type="text/javascript">
+		//<![CDATA[ 
+		function Aff(men) {
+			document.write("<ul class=\"menuDoc\">");
+			for(var no_rub=0;no_rub<men.num_rub;no_rub++) {
+				document.write("<li><a class='leftMenu' href='"+menu[no_rub].page+"'>");
+				document.write(men[no_rub].txt);
+				document.write("</a></li>");
+				if (men[no_rub].nb_lien != 0){
+					document.write("<ul class=\"sousMenuDoc\">");
+				}
+				for(var no_lien=0;no_lien<men[no_rub].nb_lien;no_lien++) {
+					document.write("<li><a class='leftMenu' href='"+men[no_rub][no_lien].page+"'>");
+					document.write(men[no_rub][no_lien].txt);
+					document.write("</a></li>");
+				}
+				if (men[no_rub].nb_lien != 0){
+					document.write("</ul>");
+				}
+			}
+			document.write("</ul>");
+		}
+		
+		function CreerMenu(police,imgRub,imgOption,imgOptionFin,hauteur) {
+			this.num_rub=0;
+			this.police=police;
+			this.imgRub=imgRub;
+			this.imgOpt=imgOption;
+			this.imgOptFin=imgOptionFin;
+			this.hauteur=hauteur;
+			this.AddRub=AddRub;
+			this.AddLien=AddLien;
+		}
+		
+		function AddRub(txt,aff,page) {
+			var rub = new Object;
+				rub.txt=txt;
+				rub.aff=aff;
+				rub.page=page;
+				rub.nb_lien=0;
+			this[this.num_rub]=rub;
+			this.num_rub++;
+		}
+
+		function AddLien(txt,page) {
+			var no_rub = this.num_rub-1;
+			var no_lien= this[no_rub].nb_lien;
+			var lien = new Object;
+				lien.txt=txt;
+				lien.page=page;
+			this[no_rub][no_lien]=lien;
+			this[no_rub].nb_lien++;
+		}
+		var menu=new CreerMenu("arial","img/dyn04.gif","img/dyn22.gif","img/dyn55.gif",18);
+		//]]> 
+		menu.AddRub("Dénomination","O","#RcpDenomination");
+			menu.AddRub("Composition","O","#RcpCompoQualiQuanti");
+			menu.AddRub("Forme pharma.","O","#RcpFormePharm");
+			menu.AddRub("Clinique","O","#RcpDonneesCliniques");
+			menu.AddLien("Indic. thérapeutiques","#RcpIndicTherap");
+				menu.AddLien("Posologie","#RcpPosoAdmin");
+				menu.AddLien("Contre-indications","#RcpContreindications");
+				menu.AddLien("Mise en garde","#RcpMisesEnGarde");
+				menu.AddLien("Interactions","#RcpInteractionsMed");
+				menu.AddLien("Grossesse, allait.","#RcpFertGrossAllait");
+				menu.AddLien("Conduite véhicules","#RcpConduite");
+				menu.AddLien("Effets indésirables","#RcpEffetsIndesirables");
+				menu.AddLien("Surdosage","#RcpSurdosage");
+				menu.AddRub("Pharmacologie","O","#RcpPropPharmacologiques");
+			menu.AddLien("Pharmacodynamie","#RcpPropPharmacodynamiques");
+				menu.AddLien("Pharmacocinétique","#RcpPropPharmacocinetiques");
+				menu.AddLien("Sécurité préclinique","#RcpSecuritePreclinique");
+				menu.AddRub("Pharmaceutique","O","#RcpDonneesPharmaceutiques");
+			menu.AddLien("Liste excipients","#RcpListeExcipients");
+				menu.AddLien("Incompatibilités","#RcpIncompatibilites");
+				menu.AddLien("Durée conservation","#RcpDureeConservation");
+				menu.AddLien("Conservation","#RcpPrecConservation");
+				menu.AddLien("Emballage","#RcpEmballage");
+				menu.AddLien("Utilisation/manipulation","#RcpPrecEmpl");
+				menu.AddRub("Titulaire AMM","O","#RcpTitulaireAmm");
+			menu.AddRub("Présentations","O","#RcpNumAutor");
+			menu.AddRub("Autorisation, renouv.","O","#RcpPremiereAutorisation");
+			menu.AddRub("Date de révision","O","#RcpDateRevision");
+			menu.AddRub("Dosimétrie","O","#RcpDosimetrie");
+			menu.AddRub("Préparation radiopharma.","O","#RcpInstPrepRadioph");
+				</script>
+
+	<div id="container">
+		<div id="leftnav">
+			<div id="cadreMenuGauche">
+				<h2 class="sommaireMenu">Sommaire</h2>
+				<div id="menuGauche">
+					<script language="JavaScript" type="text/javascript">Aff(menu);</script>
+				</div>
+			</div>
+		</div>
+		<div id="contentPrincipal">
+			<div id="boutonsliens">
+				<a id='lien_fiche_info' href='extrait.php?specid=67406937' ><img id="ongletficheinfo" alt="Onglet fiche information" src="img/onglet_fiche_info_vert.png" /></a><a id='lien_rcp' href='affichageDoc.php?specid=67406937&amp;typedoc=R'><img class="onglet" alt="Onglet résumé des caractéristiques du produit" src="img/onglet_rcp_gris.png" /></a><a id='lien_notice' href='affichageDoc.php?specid=67406937&amp;typedoc=N'><img class="onglet" alt="Onglet notice patient" src="img/onglet_notice_vert.png" /></a>			</div>
+			<div class="titredeno">
+				<table summary="" border="0" cellspacing="0">
+					<tr><td colspan="3" height="10px"></td></tr>
+					<tr>
+						<td width="15px">&nbsp;</td>
+						<td width="685px"><h1 class="textedeno">AMOXICILLINE VIATRIS 1 g, comprimé dispersible  - Résumé des caractéristiques du produit</h1></td>
+						<td width="43px" class="tdcenter"><a href="Javascript:void(null)" onclick="print();"><img src="img/imprimante.png" height="20px" width="20px" alt="Imprimer le document" title="Imprimer le document" border="0" /></a></td>
+					</tr>
+					<tr><td colspan="3" height="10px"></td></tr>
+				</table>
+			</div>
+			
+			<div id="contentDocument">
+				<div id="textDocument">
+					<p class="DateNotif">ANSM - Mis à jour le : 03/09/2024</p>
+<p class="AmmAnnexeTitre1"><a name="RcpDenomination">1. DENOMINATION DU MEDICAMENT</a>&nbsp;&nbsp;<a href='#HautDePage'><img src='img/BackToTop.jpg' width='15px' height='15px' alt='Retour en haut de la page' title='Retour en haut de la page' /></a></p>
+<p class=AmmCorpsTexteGras>AMOXICILLINE VIATRIS 1 g, comprimé dispersible</p>
+<p class="AmmAnnexeTitre1"><a name="RcpCompoQualiQuanti">2. COMPOSITION QUALITATIVE ET QUANTITATIVE</a>&nbsp;&nbsp;<a href='#HautDePage'><img src='img/BackToTop.jpg' width='15px' height='15px' alt='Retour en haut de la page' title='Retour en haut de la page' /></a></p>
+<p class=AmmComposition>Amoxicilline trihydratée........................................................................................................ 1,148 g</p>
+<p class=AmmCorpsTexte>Equivalent à 1 g d’amoxicilline.</p>
+<p class=AmmCorpsTexte align=center style='text-align:center'>Pour un comprimé dispersible.</p>
+<p class=AmmCorpsTexte><span class='souligne'>Excipient à effet notoire</span> : aspartam (E951) (20 mg), maltodextrine (source de glucose), alcool benzylique (3 µg).</p>
+<p class=AmmCorpsTexte>Pour la liste complète des excipients, voir rubrique 6.1.</p>
+<p class="AmmAnnexeTitre1"><a name="RcpFormePharm">3. FORME PHARMACEUTIQUE</a>&nbsp;&nbsp;<a href='#HautDePage'><img src='img/BackToTop.jpg' width='15px' height='15px' alt='Retour en haut de la page' title='Retour en haut de la page' /></a></p>
+<p class=AmmCorpsTexte>Comprimé dispersible.</p>
+<p class=AmmCorpsTexte>Comprimé de forme ovale (22 x 10 mm), blanc à jaunâtre, avec une barre de cassure sur les 2 côtés. La barre de cassure n'est pas destinée à briser le comprimé.</p>
+<p class="AmmAnnexeTitre1"><a name="RcpDonneesCliniques">4. DONNEES CLINIQUES</a>&nbsp;&nbsp;<a href='#HautDePage'><img src='img/BackToTop.jpg' width='15px' height='15px' alt='Retour en haut de la page' title='Retour en haut de la page' /></a></p>
+<p class="AmmAnnexeTitre2"><a name="RcpIndicTherap">4.1. Indications thérapeutiques</a>&nbsp;&nbsp;<a href='#HautDePage'><img src='img/BackToTop.jpg' width='15px' height='15px' alt='Retour en haut de la page' title='Retour en haut de la page' /></a></p>
+<p class=AmmCorpsTexte>AMOXICILLINE VIATRIS est indiqué dans le traitement des infections suivantes chez l’adulte et l’enfant (voir rubriques 4.2, 4.4 et 5.1) :</p>
+<p class=AmmListePuces1 style='text-align:justify'><span lang=FR-BE style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span><span lang=FR-BE>sinusite bactérienne aigüe ;</span></p>
+<p class=AmmListePuces1 style='text-align:justify'><span lang=FR-BE style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span><span lang=FR-BE>otite moyenne aigüe ;</span></p>
+<p class=AmmListePuces1 style='text-align:justify'><span lang=FR-BE style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span><span lang=FR-BE>angine/pharyngite documentée à streptocoque ;</span></p>
+<p class=AmmListePuces1 style='text-align:justify'><span lang=FR-BE style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span><span lang=FR-BE>exacerbations aigües de bronchite chronique ;</span></p>
+<p class=AmmListePuces1 style='text-align:justify'><span lang=FR-BE style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span><span lang=FR-BE>pneumonie communautaire ;</span></p>
+<p class=AmmListePuces1 style='text-align:justify'><span lang=FR-BE style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span><span lang=FR-BE>cystite aigüe ;</span></p>
+<p class=AmmListePuces1 style='text-align:justify'><span lang=FR-BE style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span><span lang=FR-BE>bactériurie asymptomatique gravidique ;</span></p>
+<p class=AmmListePuces1 style='text-align:justify'><span lang=FR-BE style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span><span lang=FR-BE>pyélonéphrite aigüe ;</span></p>
+<p class=AmmListePuces1 style='text-align:justify'><span lang=FR-BE style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span><span lang=FR-BE>fièvre typhoïde et paratyphoïde ;</span></p>
+<p class=AmmListePuces1 style='text-align:justify'><span lang=FR-BE style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span><span lang=FR-BE>abcès dentaire avec cellulite ;</span></p>
+<p class=AmmListePuces1 style='text-align:justify'><span lang=FR-BE style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span><span lang=FR-BE>infections articulaires sur prothèses ;</span></p>
+<p class=AmmListePuces1 style='text-align:justify'><span lang=FR-BE style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span><span lang=FR-BE>éradication de <span class='italique'>Helicobacter pylori </span>;</span></p>
+<p class=AmmListePuces1 style='text-align:justify'><span lang=FR-BE style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span><span lang=FR-BE>maladie de Lyme.</span></p>
+<p class=AmmCorpsTexte style='margin-top:6.0pt'>AMOXICILLINE VIATRIS est aussi indiqué dans la prophylaxie de l’endocardite. </p>
+<p class=AmmCorpsTexte>Il convient de tenir compte des recommandations officielles concernant l’utilisation appropriée des antibactériens.</p>
+<p class="AmmAnnexeTitre2"><a name="RcpPosoAdmin">4.2. Posologie et mode d'administration</a>&nbsp;&nbsp;<a href='#HautDePage'><img src='img/BackToTop.jpg' width='15px' height='15px' alt='Retour en haut de la page' title='Retour en haut de la page' /></a></p>
+<p class=AmmAnnexeTitre3>Posologie</p>
+<p class=AmmCorpsTexte>La dose d’AMOXICILLINE VIATRIS choisie pour traiter une infection particulière doit prendre en compte :</p>
+<p class=AmmListePuces1 style='text-align:justify'><span lang=FR-BE style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>l<span lang=FR-BE>es pathogènes suspectés et leur sensibilité probable aux agents antibactériens (voir rubrique 4.4) ;</span></p>
+<p class=AmmListePuces1 style='text-align:justify'><span lang=FR-BE style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span><span lang=FR-BE>la sévérité et le foyer de l’infection ;</span></p>
+<p class=AmmListePuces1 style='margin-bottom:6.0pt;text-align:justify'><span lang=FR-BE style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span><span lang=FR-BE>l’âge, le poids et la fonction rénale du patient ; voir ci-dessous.</span></p>
+<p class=AmmCorpsTexte>La durée du traitement dépendra du type d’infection et de la réponse du patient au traitement, et doit généralement être la plus courte possible. Certaines infections imposent un traitement prolongé (voir rubrique 4.4 sur le traitement prolongé).</p>
+<p class=AmmAnnexeTitre4>Adultes et enfants &#8805; 40 kg</p>
+<div align=center>
+<table class=AmmCorpsTexteTable border=1 cellspacing=0 cellpadding=0
+style='border-collapse:collapse;border:none'>
+<tr>
+<td width=300 valign=top style='width:224.85pt;border:solid windowtext 1.0pt;
+padding:0cm 5.4pt 0cm 5.4pt'>
+<p class=AmmCorpsTexteGras>Indication*</p>
+</td>
+<td width=307 valign=top style='width:230.25pt;border:solid windowtext 1.0pt;
+border-left:none;padding:0cm 5.4pt 0cm 5.4pt'>
+<p class=AmmCorpsTexteGras>Dose* </p>
+</td>
+</tr>
+<tr>
+<td width=300 valign=top style='width:224.85pt;border:solid windowtext 1.0pt;
+border-top:none;padding:0cm 5.4pt 0cm 5.4pt'>
+<p class=AmmCorpsTexte>Sinusite bactérienne aigüe</p>
+</td>
+<td width=307 rowspan=5 valign=top style='width:230.25pt;border-top:none;
+border-left:none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+padding:0cm 5.4pt 0cm 5.4pt'>
+<p class=AmmCorpsTexte>250 mg à 500 mg toutes les 8 heures ou 750 mg à 1 g toutes les 12 heures</p>
+<p class=AmmCorpsTexte>Pour les infections sévères 750 mg à 1 g toutes les 8 heures</p>
+<p class=AmmCorpsTexte>Les cystites aigües peuvent être traitées avec 3 g deux fois par jour pendant un jour</p>
+</td>
+</tr>
+<tr>
+<td width=300 valign=top style='width:224.85pt;border:solid windowtext 1.0pt;
+border-top:none;padding:0cm 5.4pt 0cm 5.4pt'>
+<p class=AmmCorpsTexte>Bactériurie asymptomatique gravidique</p>
+</td>
+</tr>
+<tr>
+<td width=300 valign=top style='width:224.85pt;border:solid windowtext 1.0pt;
+border-top:none;padding:0cm 5.4pt 0cm 5.4pt'>
+<p class=AmmCorpsTexte>Pyélonéphrite aigüe</p>
+</td>
+</tr>
+<tr>
+<td width=300 valign=top style='width:224.85pt;border:solid windowtext 1.0pt;
+border-top:none;padding:0cm 5.4pt 0cm 5.4pt'>
+<p class=AmmCorpsTexte>Abcès dentaire avec cellulite</p>
+</td>
+</tr>
+<tr>
+<td width=300 valign=top style='width:224.85pt;border:solid windowtext 1.0pt;
+border-top:none;padding:0cm 5.4pt 0cm 5.4pt'>
+<p class=AmmCorpsTexte>Cystite aigüe</p>
+</td>
+</tr>
+<tr>
+<td width=300 valign=top style='width:224.85pt;border:solid windowtext 1.0pt;
+border-top:none;padding:0cm 5.4pt 0cm 5.4pt'>
+<p class=AmmCorpsTexte>Otite moyenne aigüe</p>
+</td>
+<td width=307 rowspan=3 valign=top style='width:230.25pt;border-top:none;
+border-left:none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+padding:0cm 5.4pt 0cm 5.4pt'>
+<p class=AmmCorpsTexte>500 mg toutes les 8 heures, 750 mg à 1 g toutes les 12 heures</p>
+<p class=AmmCorpsTexte>Pour les infections sévères 750 mg à 1 g toutes les 8 heures pendant 10 jours</p>
+</td>
+</tr>
+<tr>
+<td width=300 valign=top style='width:224.85pt;border:solid windowtext 1.0pt;
+border-top:none;padding:0cm 5.4pt 0cm 5.4pt'>
+<p class=AmmCorpsTexte>Angine/pharyngite documentée à streptocoque</p>
+</td>
+</tr>
+<tr>
+<td width=300 valign=top style='width:224.85pt;border:solid windowtext 1.0pt;
+border-top:none;padding:0cm 5.4pt 0cm 5.4pt'>
+<p class=AmmCorpsTexte>Exacerbations aigües de bronchite chronique</p>
+</td>
+</tr>
+<tr>
+<td width=300 valign=top style='width:224.85pt;border:solid windowtext 1.0pt;
+border-top:none;padding:0cm 5.4pt 0cm 5.4pt'>
+<p class=AmmCorpsTexte>Pneumonie communautaire</p>
+</td>
+<td width=307 valign=top style='width:230.25pt;border-top:none;border-left:
+none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+padding:0cm 5.4pt 0cm 5.4pt'>
+<p class=AmmCorpsTexte>500 mg à 1 g toutes les 8 heures</p>
+</td>
+</tr>
+<tr>
+<td width=300 valign=top style='width:224.85pt;border:solid windowtext 1.0pt;
+border-top:none;padding:0cm 5.4pt 0cm 5.4pt'>
+<p class=AmmCorpsTexte>Fièvre typhoïde et paratyphoïde</p>
+</td>
+<td width=307 valign=top style='width:230.25pt;border-top:none;border-left:
+none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+padding:0cm 5.4pt 0cm 5.4pt'>
+<p class=AmmCorpsTexte>500 mg à 2 g toutes les 8 heures</p>
+</td>
+</tr>
+<tr>
+<td width=300 valign=top style='width:224.85pt;border:solid windowtext 1.0pt;
+border-top:none;padding:0cm 5.4pt 0cm 5.4pt'>
+<p class=AmmCorpsTexte>Infections articulaires sur prothèses</p>
+</td>
+<td width=307 valign=top style='width:230.25pt;border-top:none;border-left:
+none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+padding:0cm 5.4pt 0cm 5.4pt'>
+<p class=AmmCorpsTexte>500 mg à 1 g toutes les 8 heures</p>
+</td>
+</tr>
+<tr>
+<td width=300 valign=top style='width:224.85pt;border:solid windowtext 1.0pt;
+border-top:none;padding:0cm 5.4pt 0cm 5.4pt'>
+<p class=AmmCorpsTexte>Prophylaxie de l’endocardite</p>
+</td>
+<td width=307 valign=top style='width:230.25pt;border-top:none;border-left:
+none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+padding:0cm 5.4pt 0cm 5.4pt'>
+<p class=AmmCorpsTexte>2 g par voie orale, une dose unique 30 à 60 minutes avant l’intervention</p>
+</td>
+</tr>
+<tr>
+<td width=300 valign=top style='width:224.85pt;border:solid windowtext 1.0pt;
+border-top:none;padding:0cm 5.4pt 0cm 5.4pt'>
+<p class=AmmCorpsTexte>Éradication de <span class='italique'>Helicobacter pylori</span></p>
+</td>
+<td width=307 valign=top style='width:230.25pt;border-top:none;border-left:
+none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+padding:0cm 5.4pt 0cm 5.4pt'>
+<p class=AmmCorpsTexte>750 mg à 1 g deux fois par jour en association avec un inhibiteur de la pompe à protons (comme l’oméprazole ou le lansoprazole) et un autre antibiotique (comme la clarithromycine ou le métronidazole) pendant 7 jours</p>
+</td>
+</tr>
+<tr>
+<td width=300 valign=top style='width:224.85pt;border:solid windowtext 1.0pt;
+border-top:none;padding:0cm 5.4pt 0cm 5.4pt'>
+<p class=AmmCorpsTexte>Maladie de Lyme (voir rubrique 4.4)</p>
+</td>
+<td width=307 valign=top style='width:230.25pt;border-top:none;border-left:
+none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+padding:0cm 5.4pt 0cm 5.4pt'>
+<p class=AmmCorpsTexte>Phase précoce : 500 mg à 1 g toutes les 8 heures jusqu’à un maximum de 4 g/jour en doses fractionnées pendant 14 jours (10 à 21 jours)</p>
+<p class=AmmCorpsTexte>Phase tardive (atteinte systémique) : 500 mg à 2 g toutes les 8 heures jusqu’à un maximum de 6 g/jour en doses fractionnées pendant 10 à 30 jours</p>
+</td>
+</tr>
+<tr>
+<td width=607 colspan=2 valign=top style='width:455.1pt;border:solid windowtext 1.0pt;
+border-top:none;padding:0cm 5.4pt 0cm 5.4pt'>
+<p class=AmmCorpsTexte>*Il convient de tenir compte des recommandations thérapeutiques officielles pour chaque indication.</p>
+</td>
+</tr>
+</table>
+</div>
+<p class=AmmAnnexeTitre4 style='margin-top:6.0pt'>Enfants &lt; 40 kg</p>
+<p class=AmmCorpsTexte>Les enfants peuvent être traités par AMOXICILLINE VIATRIS sous forme de gélules, comprimés dispersibles, suspensions.</p>
+<p class=AmmCorpsTexte style='margin-top:6.0pt'>Pour les enfants pesant 40 kg ou plus, la posologie adulte doit être prescrite.</p>
+<p class=AmmCorpsTexte style='margin-top:6.0pt'><span class='italique'>Posologies recommandées</span></p>
+<div align=center>
+<table class=AmmCorpsTexteTable border=1 cellspacing=0 cellpadding=0
+style='border-collapse:collapse;border:none'>
+<tr>
+<td width=300 valign=top style='width:224.85pt;border:solid windowtext 1.0pt;
+padding:0cm 5.4pt 0cm 5.4pt'>
+<p class=AmmCorpsTexteGras>Indication<sup>+</sup></p>
+</td>
+<td width=307 valign=top style='width:230.25pt;border:solid windowtext 1.0pt;
+border-left:none;padding:0cm 5.4pt 0cm 5.4pt'>
+<p class=AmmCorpsTexteGras>Dose<sup>+</sup></p>
+</td>
+</tr>
+<tr>
+<td width=300 valign=top style='width:224.85pt;border:solid windowtext 1.0pt;
+border-top:none;padding:0cm 5.4pt 0cm 5.4pt'>
+<p class=AmmCorpsTexte>Sinusite bactérienne aigüe</p>
+</td>
+<td width=307 rowspan=6 valign=top style='width:230.25pt;border-top:none;
+border-left:none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+padding:0cm 5.4pt 0cm 5.4pt'>
+<p class=AmmCorpsTexte>20 à 90 mg/kg/jour en plusieurs prises*</p>
+</td>
+</tr>
+<tr>
+<td width=300 valign=top style='width:224.85pt;border:solid windowtext 1.0pt;
+border-top:none;padding:0cm 5.4pt 0cm 5.4pt'>
+<p class=AmmCorpsTexte>Otite moyenne aigüe</p>
+</td>
+</tr>
+<tr>
+<td width=300 valign=top style='width:224.85pt;border:solid windowtext 1.0pt;
+border-top:none;padding:0cm 5.4pt 0cm 5.4pt'>
+<p class=AmmCorpsTexte>Pneumonie communautaire</p>
+</td>
+</tr>
+<tr>
+<td width=300 valign=top style='width:224.85pt;border:solid windowtext 1.0pt;
+border-top:none;padding:0cm 5.4pt 0cm 5.4pt'>
+<p class=AmmCorpsTexte>Cystite aigüe</p>
+</td>
+</tr>
+<tr>
+<td width=300 valign=top style='width:224.85pt;border:solid windowtext 1.0pt;
+border-top:none;padding:0cm 5.4pt 0cm 5.4pt'>
+<p class=AmmCorpsTexte>Pyélonéphrite aigüe</p>
+</td>
+</tr>
+<tr>
+<td width=300 valign=top style='width:224.85pt;border:solid windowtext 1.0pt;
+border-top:none;padding:0cm 5.4pt 0cm 5.4pt'>
+<p class=AmmCorpsTexte>Abcès dentaire avec cellulite</p>
+</td>
+</tr>
+<tr>
+<td width=300 valign=top style='width:224.85pt;border:solid windowtext 1.0pt;
+border-top:none;padding:0cm 5.4pt 0cm 5.4pt'>
+<p class=AmmCorpsTexte>Angine/pharyngite documentée à streptocoque</p>
+</td>
+<td width=307 valign=top style='width:230.25pt;border-top:none;border-left:
+none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+padding:0cm 5.4pt 0cm 5.4pt'>
+<p class=AmmCorpsTexte>40 à 90 mg/kg/jour en plusieurs prises *</p>
+</td>
+</tr>
+<tr>
+<td width=300 valign=top style='width:224.85pt;border:solid windowtext 1.0pt;
+border-top:none;padding:0cm 5.4pt 0cm 5.4pt'>
+<p class=AmmCorpsTexte>Fièvre typhoïde et paratyphoïde</p>
+</td>
+<td width=307 valign=top style='width:230.25pt;border-top:none;border-left:
+none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+padding:0cm 5.4pt 0cm 5.4pt'>
+<p class=AmmCorpsTexte>100 mg/kg/jour en 3 prises</p>
+</td>
+</tr>
+<tr>
+<td width=300 valign=top style='width:224.85pt;border:solid windowtext 1.0pt;
+border-top:none;padding:0cm 5.4pt 0cm 5.4pt'>
+<p class=AmmCorpsTexte>Prophylaxie de l’endocardite</p>
+</td>
+<td width=307 valign=top style='width:230.25pt;border-top:none;border-left:
+none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+padding:0cm 5.4pt 0cm 5.4pt'>
+<p class=AmmCorpsTexte>50 mg/kg par voie orale, une dose unique 30 à 60 minutes avant l’intervention</p>
+</td>
+</tr>
+<tr>
+<td width=300 valign=top style='width:224.85pt;border:solid windowtext 1.0pt;
+border-top:none;padding:0cm 5.4pt 0cm 5.4pt'>
+<p class=AmmCorpsTexte>Maladie de Lyme (voir rubrique 4.4)</p>
+</td>
+<td width=307 valign=top style='width:230.25pt;border-top:none;border-left:
+none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+padding:0cm 5.4pt 0cm 5.4pt'>
+<p class=AmmCorpsTexte>Phase précoce : 25 à 50 mg/kg/jour en trois prises pendant 10 à 21 jours</p>
+<p class=AmmCorpsTexte>Phase tardive (atteinte systémique) : 100 mg/kg/jour en trois prises pendant 10 à 30 jours</p>
+</td>
+</tr>
+<tr>
+<td width=607 colspan=2 valign=top style='width:455.1pt;border:solid windowtext 1.0pt;
+border-top:none;padding:0cm 5.4pt 0cm 5.4pt'>
+<p class=AmmCorpsTexte>+ Il convient de tenir compte des recommandations thérapeutiques officielles pour chaque indication.</p>
+<p class=AmmCorpsTexte>*Le schéma posologique en deux prises par jour ne doit être envisagé que pour les posologies les plus élevées.</p>
+</td>
+</tr>
+</table>
+</div>
+<p class=AmmAnnexeTitre4 style='margin-top:6.0pt'>Patients âgés</p>
+<p class=AmmCorpsTexte style='margin-top:6.0pt'>Aucune adaptation posologique n’est considérée nécessaire.</p>
+<p class=AmmAnnexeTitre4 style='margin-top:6.0pt'>Patients insuffisants rénaux</p>
+<div align=center>
+<table class=AmmCorpsTexteTable border=1 cellspacing=0 cellpadding=0
+style='border-collapse:collapse;border:none'>
+<tr>
+<td width=113 valign=top style='width:3.0cm;border:solid windowtext 1.0pt;
+padding:0cm 5.4pt 0cm 5.4pt'>
+<p class=AmmCorpsTexteGras align=left style='text-align:left'>DFG (mL/min)</p>
+</td>
+<td width=236 valign=top style='width:177.2pt;border:solid windowtext 1.0pt;
+border-left:none;padding:0cm 5.4pt 0cm 5.4pt'>
+<p class=AmmCorpsTexteGras align=left style='text-align:left'>Adultes et enfants &#8805; 40 kg</p>
+</td>
+<td width=257 valign=top style='width:192.85pt;border:solid windowtext 1.0pt;
+border-left:none;padding:0cm 5.4pt 0cm 5.4pt'>
+<p class=AmmCorpsTexteGras align=left style='text-align:left'>Enfants &lt; 40 kg<sup>#</sup></p>
+</td>
+</tr>
+<tr>
+<td width=113 valign=top style='width:3.0cm;border:solid windowtext 1.0pt;
+border-top:none;padding:0cm 5.4pt 0cm 5.4pt'>
+<p class=AmmCorpsTexteGras>supérieur à 30</p>
+</td>
+<td width=236 valign=top style='width:177.2pt;border-top:none;border-left:
+none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+padding:0cm 5.4pt 0cm 5.4pt'>
+<p class=AmmCorpsTexte>aucune adaptation nécessaire</p>
+</td>
+<td width=257 valign=top style='width:192.85pt;border-top:none;border-left:
+none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+padding:0cm 5.4pt 0cm 5.4pt'>
+<p class=AmmCorpsTexte>aucune adaptation nécessaire</p>
+</td>
+</tr>
+<tr>
+<td width=113 valign=top style='width:3.0cm;border:solid windowtext 1.0pt;
+border-top:none;padding:0cm 5.4pt 0cm 5.4pt'>
+<p class=AmmCorpsTexteGras>10 à 30</p>
+</td>
+<td width=236 valign=top style='width:177.2pt;border-top:none;border-left:
+none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+padding:0cm 5.4pt 0cm 5.4pt'>
+<p class=AmmCorpsTexte>maximum 500 mg deux fois par jour</p>
+</td>
+<td width=257 valign=top style='width:192.85pt;border-top:none;border-left:
+none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+padding:0cm 5.4pt 0cm 5.4pt'>
+<p class=AmmCorpsTexte>15 mg/kg deux fois par jour (maximum 500 mg deux fois par jour)</p>
+</td>
+</tr>
+<tr>
+<td width=113 valign=top style='width:3.0cm;border:solid windowtext 1.0pt;
+border-top:none;padding:0cm 5.4pt 0cm 5.4pt'>
+<p class=AmmCorpsTexteGras>inférieur à 10</p>
+</td>
+<td width=236 valign=top style='width:177.2pt;border-top:none;border-left:
+none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+padding:0cm 5.4pt 0cm 5.4pt'>
+<p class=AmmCorpsTexte>maximum 500 mg/jour.</p>
+</td>
+<td width=257 valign=top style='width:192.85pt;border-top:none;border-left:
+none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+padding:0cm 5.4pt 0cm 5.4pt'>
+<p class=AmmCorpsTexte>15 mg/kg en une seule prise par jour (maximum 500 mg</p>
+</td>
+</tr>
+<tr>
+<td width=607 colspan=3 valign=top style='width:455.1pt;border:solid windowtext 1.0pt;
+border-top:none;padding:0cm 5.4pt 0cm 5.4pt'>
+<p class=AmmCorpsTexte><sup>#</sup> Dans la majorité des cas, le traitement parentéral est préférable.</p>
+</td>
+</tr>
+</table>
+</div>
+<p class=AmmAnnexeTitre4 style='margin-top:6.0pt'>Patients hémodialysés</p>
+<p class=AmmCorpsTexte style='margin-top:6.0pt'>L’amoxicilline peut être éliminée de la circulation sanguine par hémodialyse.</p>
+<div align=center>
+<table class=AmmCorpsTexteTable border=1 cellspacing=0 cellpadding=0
+style='border-collapse:collapse;border:none'>
+<tr>
+<td width=142 valign=top style='width:106.35pt;border:solid windowtext 1.0pt;
+padding:0cm 5.4pt 0cm 5.4pt'>
+<p class=AmmCorpsTexteGras> </p>
+</td>
+<td width=465 valign=top style='width:348.75pt;border:solid windowtext 1.0pt;
+border-left:none;padding:0cm 5.4pt 0cm 5.4pt'>
+<p class=AmmCorpsTexteGras>Hémodialyse</p>
+</td>
+</tr>
+<tr>
+<td width=142 valign=top style='width:106.35pt;border:solid windowtext 1.0pt;
+border-top:none;padding:0cm 5.4pt 0cm 5.4pt'>
+<p class=AmmCorpsTexteGras>Adultes et enfants de plus de 40 kg</p>
+</td>
+<td width=465 valign=top style='width:348.75pt;border-top:none;border-left:
+none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+padding:0cm 5.4pt 0cm 5.4pt'>
+<p class=AmmCorpsTexte>500 mg toutes les 24h.</p>
+<p class=AmmCorpsTexte>Avant l’hémodialyse, une dose supplémentaire de 15 mg/kg doit être administrée. Afin de rétablir les concentrations du médicament dans la circulation, une autre dose de 15 mg/kg doit être administrée après l’hémodialyse. </p>
+</td>
+</tr>
+<tr>
+<td width=142 valign=top style='width:106.35pt;border:solid windowtext 1.0pt;
+border-top:none;padding:0cm 5.4pt 0cm 5.4pt'>
+<p class=AmmCorpsTexteGras>Enfants de moins de 40 kg</p>
+</td>
+<td width=465 valign=top style='width:348.75pt;border-top:none;border-left:
+none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+padding:0cm 5.4pt 0cm 5.4pt'>
+<p class=AmmCorpsTexte>15 mg/kg/jour en une seule prise (500 mg maximum)</p>
+<p class=AmmCorpsTexte>Avant l’hémodialyse, une dose supplémentaire de 15 mg/kg doit être administrée. Afin de rétablir les concentrations du médicament dans la circulation, une autre dose de 15 mg/kg doit être administrée après l’hémodialyse.</p>
+</td>
+</tr>
+</table>
+</div>
+<p class=AmmAnnexeTitre4 style='margin-top:6.0pt'>Patients sous dialyse péritonéale</p>
+<p class=AmmCorpsTexte style='margin-top:6.0pt'>500 mg/jour d’amoxicilline au maximum.</p>
+<p class=AmmAnnexeTitre4 style='margin-top:6.0pt'>Patients insuffisants hépatiques</p>
+<p class=AmmCorpsTexte style='margin-top:6.0pt'>Utiliser avec précaution et surveiller la fonction hépatique régulièrement (voir rubriques 4.4 et 4.8).</p>
+<p class=AmmAnnexeTitre3>Mode d’administration</p>
+<p class=AmmCorpsTexte>AMOXICILLINE VIATRIS est destiné à une administration orale.</p>
+<p class=AmmCorpsTexte>La prise alimentaire n’a pas d’incidence sur l’absorption d’AMOXICILLINE VIATRIS.</p>
+<p class=AmmCorpsTexte>Le traitement peut être débuté par voie parentérale, selon les recommandations posologiques de la formulation intraveineuse, et être poursuivi avec une formulation pour administration orale.</p>
+<p class=AmmCorpsTexte>Faire dissoudre complétement chaque comprimé dans un verre d’eau et bien remuer le mélange jusqu’à ce qu’il soit homogène. Avaler immédiatement le mélange.</p>
+<p class="AmmAnnexeTitre2"><a name="RcpContreindications">4.3. Contre-indications</a>&nbsp;&nbsp;<a href='#HautDePage'><img src='img/BackToTop.jpg' width='15px' height='15px' alt='Retour en haut de la page' title='Retour en haut de la page' /></a></p>
+<p class=AmmListePuces1 style='text-align:justify'><span lang=FR-BE style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span><span lang=FR-BE>Hypersensibilité à la substance active, aux pénicillines ou à l’un des excipients mentionnés à la rubrique 6.1.</span></p>
+<p class=AmmListePuces1 style='text-align:justify'><span lang=FR-BE style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span><span lang=FR-BE>Antécédents de réaction d’hypersensibilité immédiate sévère (par ex. anaphylaxie) à une autre bêta-lactamine (par ex. céphalosporine, carbapénème ou monobactame).</span></p>
+<p class=AmmListePuces1 style='text-align:justify'><span lang=FR-BE style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span><span lang=FR-BE>En raison de la présence d’aspartam, ce médicament est contre-indiqué en cas de phénylcétonurie.</span></p>
+<p class="AmmAnnexeTitre2"><a name="RcpMisesEnGarde">4.4. Mises en garde spéciales et précautions d'emploi</a>&nbsp;&nbsp;<a href='#HautDePage'><img src='img/BackToTop.jpg' width='15px' height='15px' alt='Retour en haut de la page' title='Retour en haut de la page' /></a></p>
+<p class=AmmCorpsTexte><span class='souligne'>Réactions d’hypersensibilité</span></p>
+<p class=AmmCorpsTexte>Avant de débuter un traitement par amoxicilline, un interrogatoire approfondi est nécessaire afin de rechercher les antécédents de réactions d’hypersensibilité aux pénicillines, aux céphalosporines ou à d’autres bêta-lactamines (voir rubriques 4.3 et 4.8).</p>
+<p class=AmmCorpsTexte>Des réactions d’hypersensibilité (anaphylaxie) graves et parfois fatales (dont des réactions anaphylactoïdes et des réactions indésirables cutanées graves) ont été observées chez des patients traités par pénicillines. Les réactions d’hypersensibilité peuvent également évoluer vers un syndrome de Kounis, une réaction allergique grave pouvant entraîner un infarctus du myocarde (voir rubrique 4.8). La survenue de telles réactions est plus probable chez les patients ayant des antécédents d’hypersensibilité à la pénicilline et chez les personnes atteintes d’atopie. La survenue de toute manifestation allergique impose l’arrêt du traitement par amoxicilline et la mise en œuvre d’un autre traitement adapté.</p>
+<p class=AmmCorpsTexte>Le syndrome d'entérocolite induite par les médicaments (SEIM) a été rapporté principalement chez des enfants recevant de l'amoxicilline (voir rubrique 4.8). Le SEIM est une réaction allergique dont le principal symptôme est un vomissement prolongé (1 à 4 heures après la prise du médicament) en l'absence de symptômes allergiques cutanés ou respiratoires. Les autres symptômes peuvent inclure des douleurs abdominales, des diarrhées, une hypotension ou une leucocytose avec neutrophilie. Des cas sévères ont été rapportés incluant une évolution vers un choc.</p>
+<p class=AmmCorpsTexte><span class='souligne'>Micro-organismes non sensibles</span></p>
+<p class=AmmCorpsTexte>L’amoxicilline n’est pas adaptée au traitement de certains types d’infections sauf si le pathogène est déjà documenté et connu comme étant sensible à l’amoxicilline, ou s’il y a une très grande probabilité que le pathogène y soit sensible (voir rubrique 5.1). Ceci concerne en particulier le traitement de patients ayant des infections urinaires et des infections sévères de l’oreille, du nez et de la gorge.</p>
+<p class=AmmCorpsTexte><span class='souligne'>Convulsions</span></p>
+<p class=AmmCorpsTexte>Des convulsions peuvent apparaître chez les patients insuffisants rénaux ou recevant des doses élevées ou chez les patients présentant des facteurs de prédisposition (par ex. antécédents de convulsions, épilepsie traitée, troubles méningés (voir rubrique 4.8)).</p>
+<p class=AmmCorpsTexte><span class='souligne'>Insuffisance rénale</span></p>
+<p class=AmmCorpsTexte>Chez les patients insuffisants rénaux, la dose doit être adaptée selon le degré d’insuffisance rénale (voir rubrique 4.2).</p>
+<p class=AmmCorpsTexte><span class='souligne'>Réactions cutanées</span></p>
+<p class=AmmCorpsTexte>L’apparition en début de traitement d’un érythème généralisé fébrile, associé à des pustules, peut être le symptôme d’une pustulose exanthématique aigüe généralisée (PEAG) (voir rubrique 4.8). Cette réaction impose l’arrêt de l’amoxicilline et contre-indique toute administration ultérieure de ce médicament.</p>
+<p class=AmmCorpsTexte>L’amoxicilline doit être évitée en cas de suspicion de mononucléose infectieuse car la survenue d’une éruption morbilliforme a été associée à cette pathologie après l’utilisation d’amoxicilline.</p>
+<p class=AmmCorpsTexte><span class='souligne'>Réaction de Jarisch-Herxheimer</span></p>
+<p class=AmmCorpsTexte>Des réactions de Jarisch-Herxheimer ont été observées après traitement de la maladie de Lyme par amoxicilline (voir rubrique 4.8). Il s’agit d’une conséquence directe de l’activité bactéricide de l’amoxicilline sur la bactérie responsable de la maladie de Lyme, le spirochète <span class='italique'>Borrelia burgdorferi</span>. Les patients devront être rassurés sur le fait qu’il s’agit d’une conséquence fréquente et en général spontanément résolutive du traitement antibiotique de la maladie de Lyme.</p>
+<p class=AmmCorpsTexte><span class='souligne'>Prolifération de micro-organismes non-sensibles</span></p>
+<p class=AmmCorpsTexte>Une utilisation prolongée peut entraîner occasionnellement la prolifération d’organismes non- sensibles.</p>
+<p class=AmmCorpsTexte>Des colites associées aux antibiotiques ont été rapportées avec presque tous les agents antibactériens : leur sévérité est variable, de légère à menaçant le pronostic vital (voir rubrique 4.8). Par conséquent, il est important d’envisager ce diagnostic chez les patients présentant des diarrhées pendant ou après l’administration de tout antibiotique. En cas de survenue de colite associée à un antibiotique, la prise d’amoxicilline doit immédiatement être arrêtée, un médecin devra être consulté et un traitement approprié devra être instauré. Les médicaments inhibant le péristaltisme sont contre-indiqués dans cette situation.</p>
+<p class=AmmCorpsTexte><span class='souligne'>Traitement prolongé</span></p>
+<p class=AmmCorpsTexte>En cas de traitement prolongé, il est recommandé de surveiller régulièrement les fonctions organiques, en particulier les fonctions rénale, hépatique et hématopoïétique. </p>
+<p class=AmmCorpsTexte>Une élévation des enzymes hépatiques et des modifications dans la numération sanguine ont été rapportées (voir rubrique 4.8).</p>
+<p class=AmmCorpsTexte><span class='souligne'>Anticoagulants</span></p>
+<p class=AmmCorpsTexte>De rares cas de prolongation du temps de Quick ont été signalés chez des patients recevant de l’amoxicilline. Une surveillance appropriée doit être mise en place lorsque des anticoagulants sont prescrits simultanément. Une adaptation posologique des anticoagulants oraux peut être nécessaire pour maintenir le niveau souhaité d’anticoagulation (voir rubriques 4.5 et 4.8).</p>
+<p class=AmmCorpsTexte><span class='souligne'>Cristallurie</span></p>
+<p class=AmmCorpsTexte>De très rares cas de cristallurie (incluant des lésions rénales aigües) ont été observés chez des patients ayant un faible débit urinaire, principalement lors d’une administration parentérale. En cas d’administration de doses élevées d’amoxicilline, il est conseillé de maintenir un apport hydrique et une émission d’urine adéquats pour réduire le risque de cristallurie de l’amoxicilline. Chez des patients porteurs de sondes vésicales, il convient de contrôler régulièrement la perméabilité de la sonde (voir rubriques 4.8 et 4.9).</p>
+<p class=AmmCorpsTexte><span class='souligne'>Interférence avec les tests diagnostics</span></p>
+<p class=AmmCorpsTexte>Des taux élevés d’amoxicilline dans le sérum et les urines sont susceptibles d’affecter certains tests de laboratoire. En raison des concentrations élevées d’amoxicilline dans les urines, des résultats faussement positifs sont fréquents avec les méthodes chimiques.</p>
+<p class=AmmCorpsTexte>Lors de la recherche de la présence de glucose dans les urines pendant un traitement par l’amoxicilline, la méthode enzymatique avec la glucose-oxydase doit être utilisée.</p>
+<p class=AmmCorpsTexte>La présence d’amoxicilline peut fausser les résultats des dosages d’œstriol chez la femme enceinte.</p>
+<p class=AmmCorpsTexte><span class='gras'>Excipients</span></p>
+<p class=AmmCorpsTexte>Ce médicament contient 20 mg d’aspartam par comprimé dispersible.</p>
+<p class=AmmCorpsTexte>Ce médicament contient de la maltodextrine (source de glucose). Les patients présentant un syndrome de malabsorption du glucose et du galactose (maladie héréditaire rare) ne doivent pas prendre ce médicament. </p>
+<p class=AmmCorpsTexte>Ce médicament contient 3 µg d’alcool benzylique pour un comprimé dispersible. </p>
+<p class=AmmCorpsTexte style='margin-top:6.0pt'>L’alcool benzylique peut provoquer des réactions allergiques. </p>
+<p class=AmmCorpsTexte style='margin-top:6.0pt'>L’alcool benzylique est associé à un risque d’effets secondaires graves y compris des problèmes respiratoires (appelés « syndrome de suffocation ») chez les jeunes enfants.</p>
+<p class=AmmCorpsTexte style='margin-top:6.0pt'>Ne pas utiliser pendant plus d’une semaine chez les jeunes enfants (moins de 3 ans).</p>
+<p class=AmmCorpsTexte style='margin-top:6.0pt'>Les volumes élevés doivent être utilisés avec prudence et en cas de nécessité uniquement, en particulier chez les personnes atteintes d’insuffisance hépatique ou rénale en raison du risque d’accumulation et de toxicité (acidose métabolique). </p>
+<p class="AmmAnnexeTitre2"><a name="RcpInteractionsMed">4.5. Interactions avec d'autres médicaments et autres formes d'interactions</a>&nbsp;&nbsp;<a href='#HautDePage'><img src='img/BackToTop.jpg' width='15px' height='15px' alt='Retour en haut de la page' title='Retour en haut de la page' /></a></p>
+<p class=AmmCorpsTexte><span class='gras'>+ Probénécide</span> : L’utilisation concomitante de probénécide n’est pas recommandée. Le probénécide diminue la sécrétion tubulaire rénale de l’amoxicilline. L’utilisation concomitante de probénécide peut conduire à une augmentation prolongée de la concentration sanguine d’amoxicilline.</p>
+<p class=AmmCorpsTexte><span class='gras'>+ Allopurinol</span> : L’administration concomitante d’allopurinol lors d’un traitement avec de l’amoxicilline peut augmenter la probabilité de réactions cutanées allergiques.</p>
+<p class=AmmCorpsTexte><span class='gras'>+ Tétracyclines</span> : Les tétracyclines et d’autres médicaments bactériostatiques peuvent interférer avec les effets bactéricides de l’amoxicilline.</p>
+<p class=AmmCorpsTexte><span class='gras'>+ Anticoagulants oraux</span> : Les anticoagulants oraux sont souvent administrés de façon concomitante avec des antibiotiques de la famille des pénicillines et aucune interaction n’a été signalée. Toutefois, des cas d’augmentation de l’INR ont été rapportés dans la littérature chez des patients maintenus sous acénocoumarol ou warfarine pendant l’administration d’amoxicilline. Si une co-administration est nécessaire, le temps de Quick ou l’INR lors de l’ajout ou du retrait d’amoxicilline doit être étroitement surveillé. En outre, une adaptation posologique des anticoagulants oraux peut être nécessaire (voir rubriques 4.4 et 4.8).</p>
+<p class=AmmCorpsTexte><span class='gras'>+ Méthotrexate</span> : Les pénicillines peuvent réduire l’excrétion de méthotrexate et augmenter ainsi sa toxicité.</p>
+<p class="AmmAnnexeTitre2"><a name="RcpFertGrossAllait">4.6. Fertilité, grossesse et allaitement</a>&nbsp;&nbsp;<a href='#HautDePage'><img src='img/BackToTop.jpg' width='15px' height='15px' alt='Retour en haut de la page' title='Retour en haut de la page' /></a></p>
+<p class=AmmAnnexeTitre3>Grossesse</p>
+<p class=AmmCorpsTexte>Les études effectuées chez l’animal n’ont pas mis en évidence d’effets délétères directs ou indirects sur la reproduction. Les données limitées sur l’utilisation de l’amoxicilline chez la femme enceinte n’indiquent pas d’augmentation du risque de malformations congénitales. L’amoxicilline peut être utilisée chez la femme enceinte si les bénéfices potentiels l’emportent sur les risques potentiels associés au traitement.</p>
+<p class=AmmAnnexeTitre3>Allaitement</p>
+<p class=AmmCorpsTexte>L’amoxicilline est excrétée dans le lait maternel en petites quantités avec un risque possible de sensibilisation. Par conséquent, une diarrhée et une infection fongique des muqueuses sont possibles chez le nourrisson allaité et pourraient nécessiter l’arrêt de l’allaitement. L’amoxicilline ne peut être utilisée pendant l’allaitement qu’après évaluation du rapport bénéfice/risque par le médecin traitant.</p>
+<p class=AmmAnnexeTitre3>Fertilité</p>
+<p class=AmmCorpsTexte>Il n’y a aucune donnée relative aux effets de l’amoxicilline sur la fertilité humaine. Les études sur la reproduction menées chez l’animal n’ont montré aucun effet sur la fertilité.</p>
+<p class="AmmAnnexeTitre2"><a name="RcpConduite">4.7. Effets sur l'aptitude à conduire des véhicules et à utiliser des machines</a>&nbsp;&nbsp;<a href='#HautDePage'><img src='img/BackToTop.jpg' width='15px' height='15px' alt='Retour en haut de la page' title='Retour en haut de la page' /></a></p>
+<p class=AmmCorpsTexte><span lang=FR-BE>Aucune étude n’a été réalisée concernant l’aptitude à conduire des véhicules et à utiliser des machines. Toutefois, la survenue d’effets indésirables (par ex. réactions allergiques, vertiges, convulsions) pouvant avoir une incidence sur l’aptitude à conduire des véhicules ou à utiliser des machines est possible (voir rubrique 4.8).</span></p>
+<p class="AmmAnnexeTitre2"><a name="RcpEffetsIndesirables">4.8. Effets indésirables</a>&nbsp;&nbsp;<a href='#HautDePage'><img src='img/BackToTop.jpg' width='15px' height='15px' alt='Retour en haut de la page' title='Retour en haut de la page' /></a></p>
+<p class=AmmCorpsTexte>Les effets indésirables les plus fréquents sont les diarrhées, les nausées et les éruptions cutanées.</p>
+<p class=AmmCorpsTexte>Les effets indésirables identifiés dans les études cliniques et depuis la commercialisation de l’amoxicilline sont mentionnés ci-dessous selon la classification MedDRA par système-organe.</p>
+<p class=AmmCorpsTexte>La terminologie suivante est utilisée pour classer les effets indésirables en fonction de leur fréquence :</p>
+<p class=AmmCorpsTexte>Très fréquent (&#8805; 1/10)</p>
+<p class=AmmCorpsTexte>Fréquent (&#8805; 1/100 à &lt; 1/10)</p>
+<p class=AmmCorpsTexte>Peu fréquent (&#8805; 1/1 000 à &lt; 1/100)</p>
+<p class=AmmCorpsTexte>Rare (&#8805; 1/10 000 à &lt; 1/1 000)</p>
+<p class=AmmCorpsTexte>Très rare (&lt; 1/10 000)</p>
+<p class=AmmCorpsTexte>Fréquence indéterminée (ne peut être estimée sur la base des données disponibles)</p>
+<div align=center>
+<table class=AmmCorpsTexteTable border=1 cellspacing=0 cellpadding=0
+style='border-collapse:collapse;border:none'>
+<tr>
+<td width=607 colspan=3 valign=top style='width:455.1pt;border:solid windowtext 1.0pt;
+padding:0cm 5.4pt 0cm 5.4pt'>
+<p class=AmmAnnexeTitre3>Infections et infestations</p>
+</td>
+</tr>
+<tr>
+<td width=300 valign=top style='width:224.85pt;border:solid windowtext 1.0pt;
+border-top:none;padding:0cm 5.4pt 0cm 5.4pt'>
+<p class=AmmCorpsTexte>Très rare</p>
+</td>
+<td width=307 colspan=2 valign=top style='width:230.25pt;border-top:none;
+border-left:none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+padding:0cm 5.4pt 0cm 5.4pt'>
+<p class=AmmCorpsTexte>Candidose cutanéo-muqueuse.</p>
+</td>
+</tr>
+<tr>
+<td width=607 colspan=3 valign=top style='width:455.1pt;border:solid windowtext 1.0pt;
+border-top:none;padding:0cm 5.4pt 0cm 5.4pt'>
+<p class=AmmAnnexeTitre3>Affections hématologiques et du système lymphatique</p>
+</td>
+</tr>
+<tr>
+<td width=300 valign=top style='width:224.85pt;border:solid windowtext 1.0pt;
+border-top:none;padding:0cm 5.4pt 0cm 5.4pt'>
+<p class=AmmCorpsTexte>Très rare</p>
+</td>
+<td width=307 colspan=2 valign=top style='width:230.25pt;border-top:none;
+border-left:none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+padding:0cm 5.4pt 0cm 5.4pt'>
+<p class=AmmCorpsTexte>Leucopénie réversible (y compris agranulocytose ou neutropénie sévère), anémie hémolytique et thrombocytopénie réversibles.</p>
+<p class=AmmCorpsTexte>Prolongation du temps de saignement et du temps de Quick (voir rubrique 4.4).</p>
+</td>
+</tr>
+<tr>
+<td width=607 colspan=3 valign=top style='width:455.1pt;border:solid windowtext 1.0pt;
+border-top:none;padding:0cm 5.4pt 0cm 5.4pt'>
+<p class=AmmAnnexeTitre3>Affections du système immunitaire</p>
+</td>
+</tr>
+<tr>
+<td width=300 valign=top style='width:224.85pt;border:solid windowtext 1.0pt;
+border-top:none;padding:0cm 5.4pt 0cm 5.4pt'>
+<p class=AmmCorpsTexte>Très rare</p>
+</td>
+<td width=307 colspan=2 valign=top style='width:230.25pt;border-top:none;
+border-left:none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+padding:0cm 5.4pt 0cm 5.4pt'>
+<p class=AmmCorpsTexte>Des réactions allergiques sévères, incluant œdème de Quincke, anaphylaxie, maladie sérique et vascularite d’hypersensibilité (voir rubrique 4.4).</p>
+</td>
+</tr>
+<tr>
+<td width=300 valign=top style='width:224.85pt;border:solid windowtext 1.0pt;
+border-top:none;padding:0cm 5.4pt 0cm 5.4pt'>
+<p class=AmmCorpsTexte>Fréquence indéterminée</p>
+</td>
+<td width=307 colspan=2 valign=top style='width:230.25pt;border-top:none;
+border-left:none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+padding:0cm 5.4pt 0cm 5.4pt'>
+<p class=AmmCorpsTexte>Réaction de Jarisch-Herxheimer (voir rubrique 4.4).</p>
+</td>
+</tr>
+<tr>
+<td width=607 colspan=3 valign=top style='width:455.1pt;border:solid windowtext 1.0pt;
+border-top:none;padding:0cm 5.4pt 0cm 5.4pt'>
+<p class=AmmAnnexeTitre3>Affections du système nerveux</p>
+</td>
+</tr>
+<tr>
+<td width=300 valign=top style='width:224.85pt;border:solid windowtext 1.0pt;
+border-top:none;padding:0cm 5.4pt 0cm 5.4pt'>
+<p class=AmmCorpsTexte>Très rare</p>
+</td>
+<td width=307 colspan=2 valign=top style='width:230.25pt;border-top:none;
+border-left:none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+padding:0cm 5.4pt 0cm 5.4pt'>
+<p class=AmmCorpsTexte>Hyperkinésie, vertiges et convulsions (voir rubrique 4.4).</p>
+</td>
+</tr>
+<tr>
+<td width=300 valign=top style='width:224.85pt;border:solid windowtext 1.0pt;
+border-top:none;padding:0cm 5.4pt 0cm 5.4pt'>
+<p class=AmmCorpsTexte>Fréquence indéterminée</p>
+</td>
+<td width=307 colspan=2 valign=top style='width:230.25pt;border-top:none;
+border-left:none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+padding:0cm 5.4pt 0cm 5.4pt'>
+<p class=AmmCorpsTexte>Méningite aseptique</p>
+</td>
+</tr>
+<tr style='height:17.05pt'>
+<td width=607 colspan=3 valign=top style='width:455.1pt;border:solid windowtext 1.0pt;
+border-top:none;padding:0cm 5.4pt 0cm 5.4pt;height:17.05pt'>
+<p class=AmmCorpsTexte style='margin-bottom:0cm;margin-bottom:.0001pt'><span class='gras'><span class='souligne'>Affections cardiaques</span></span></p>
+</td>
+</tr>
+<tr style='height:27.25pt'>
+<td width=303 colspan=2 valign=top style='width:227.55pt;border:solid windowtext 1.0pt;
+border-top:none;padding:0cm 5.4pt 0cm 5.4pt;height:27.25pt'>
+<p class=AmmCorpsTexte style='margin-bottom:0cm;margin-bottom:.0001pt'>Fréquence indéterminée </p>
+</td>
+<td width=303 valign=top style='width:227.55pt;border-top:none;border-left:
+none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+padding:0cm 5.4pt 0cm 5.4pt;height:27.25pt'>
+<p class=AmmCorpsTexte style='margin-bottom:0cm;margin-bottom:.0001pt'>Syndrome de Kounis</p>
+</td>
+</tr>
+<tr>
+<td width=607 colspan=3 valign=top style='width:455.1pt;border:solid windowtext 1.0pt;
+border-top:none;padding:0cm 5.4pt 0cm 5.4pt'>
+<p class=AmmAnnexeTitre3>Affections gastro-intestinales</p>
+</td>
+</tr>
+<tr>
+<td width=607 colspan=3 valign=top style='width:455.1pt;border:solid windowtext 1.0pt;
+border-top:none;padding:0cm 5.4pt 0cm 5.4pt'>
+<p class=AmmCorpsTexte>Données d’études cliniques</p>
+</td>
+</tr>
+<tr>
+<td width=300 valign=top style='width:224.85pt;border:solid windowtext 1.0pt;
+border-top:none;padding:0cm 5.4pt 0cm 5.4pt'>
+<p class=AmmCorpsTexte>*Fréquent</p>
+</td>
+<td width=307 colspan=2 valign=top style='width:230.25pt;border-top:none;
+border-left:none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+padding:0cm 5.4pt 0cm 5.4pt'>
+<p class=AmmCorpsTexte>Diarrhées et nausées.</p>
+</td>
+</tr>
+<tr>
+<td width=300 valign=top style='width:224.85pt;border:solid windowtext 1.0pt;
+border-top:none;padding:0cm 5.4pt 0cm 5.4pt'>
+<p class=AmmCorpsTexte>*Peu fréquent</p>
+</td>
+<td width=307 colspan=2 valign=top style='width:230.25pt;border-top:none;
+border-left:none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+padding:0cm 5.4pt 0cm 5.4pt'>
+<p class=AmmCorpsTexte>Vomissements.</p>
+</td>
+</tr>
+<tr>
+<td width=607 colspan=3 valign=top style='width:455.1pt;border:solid windowtext 1.0pt;
+border-top:none;padding:0cm 5.4pt 0cm 5.4pt'>
+<p class=AmmCorpsTexte>Données post-commercialisation</p>
+</td>
+</tr>
+<tr>
+<td width=300 valign=top style='width:224.85pt;border:solid windowtext 1.0pt;
+border-top:none;padding:0cm 5.4pt 0cm 5.4pt'>
+<p class=AmmCorpsTexte>Très rare</p>
+</td>
+<td width=307 colspan=2 valign=top style='width:230.25pt;border-top:none;
+border-left:none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+padding:0cm 5.4pt 0cm 5.4pt'>
+<p class=AmmCorpsTexte>Colite associée aux antibiotiques (incluant colite pseudo-membraneuse et colite hémorragique, voir rubrique 4.4).</p>
+<p class=AmmCorpsTexte>Langue noire chevelue.</p>
+<p class=AmmCorpsTexte>Coloration dentaire superficielle<sup>#</sup>.</p>
+</td>
+</tr>
+<tr>
+<td width=300 valign=top style='width:224.85pt;border:solid windowtext 1.0pt;
+border-top:none;padding:0cm 5.4pt 0cm 5.4pt'>
+<p class=AmmCorpsTexte>Fréquence indéterminée</p>
+</td>
+<td width=307 colspan=2 valign=top style='width:230.25pt;border-top:none;
+border-left:none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+padding:0cm 5.4pt 0cm 5.4pt'>
+<p class=AmmCorpsTexte>Syndrome d’entérocolite induite par les médicaments</p>
+</td>
+</tr>
+<tr>
+<td width=607 colspan=3 valign=top style='width:455.1pt;border:solid windowtext 1.0pt;
+border-top:none;padding:0cm 5.4pt 0cm 5.4pt'>
+<p class=AmmAnnexeTitre3>Affections hépatobiliaires</p>
+</td>
+</tr>
+<tr>
+<td width=300 valign=top style='width:224.85pt;border:solid windowtext 1.0pt;
+border-top:none;padding:0cm 5.4pt 0cm 5.4pt'>
+<p class=AmmCorpsTexte>Très rare</p>
+</td>
+<td width=307 colspan=2 valign=top style='width:230.25pt;border-top:none;
+border-left:none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+padding:0cm 5.4pt 0cm 5.4pt'>
+<p class=AmmCorpsTexte>Hépatite et ictère cholestatique. Augmentation modérée des ASAT et/ou des ALAT.</p>
+</td>
+</tr>
+<tr>
+<td width=607 colspan=3 valign=top style='width:455.1pt;border:solid windowtext 1.0pt;
+border-top:none;padding:0cm 5.4pt 0cm 5.4pt'>
+<p class=AmmAnnexeTitre3>Affections de la peau et du tissu sous-cutané</p>
+</td>
+</tr>
+<tr>
+<td width=607 colspan=3 valign=top style='width:455.1pt;border:solid windowtext 1.0pt;
+border-top:none;padding:0cm 5.4pt 0cm 5.4pt'>
+<p class=AmmCorpsTexte><span class='italique'>Données d’études cliniques</span></p>
+</td>
+</tr>
+<tr>
+<td width=300 valign=top style='width:224.85pt;border:solid windowtext 1.0pt;
+border-top:none;padding:0cm 5.4pt 0cm 5.4pt'>
+<p class=AmmCorpsTexte>*Fréquent</p>
+</td>
+<td width=307 colspan=2 valign=top style='width:230.25pt;border-top:none;
+border-left:none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+padding:0cm 5.4pt 0cm 5.4pt'>
+<p class=AmmCorpsTexte>Eruption cutanée.</p>
+</td>
+</tr>
+<tr>
+<td width=300 valign=top style='width:224.85pt;border:solid windowtext 1.0pt;
+border-top:none;padding:0cm 5.4pt 0cm 5.4pt'>
+<p class=AmmCorpsTexte>*Peu fréquent</p>
+</td>
+<td width=307 colspan=2 valign=top style='width:230.25pt;border-top:none;
+border-left:none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+padding:0cm 5.4pt 0cm 5.4pt'>
+<p class=AmmCorpsTexte>Urticaire et prurit.</p>
+</td>
+</tr>
+<tr>
+<td width=607 colspan=3 valign=top style='width:455.1pt;border:solid windowtext 1.0pt;
+border-top:none;padding:0cm 5.4pt 0cm 5.4pt'>
+<p class=AmmCorpsTexte><span class='italique'>Données post-commercialisation</span></p>
+</td>
+</tr>
+<tr>
+<td width=300 valign=top style='width:224.85pt;border:solid windowtext 1.0pt;
+border-top:none;padding:0cm 5.4pt 0cm 5.4pt'>
+<p class=AmmCorpsTexte>Très rare</p>
+</td>
+<td width=307 colspan=2 valign=top style='width:230.25pt;border-top:none;
+border-left:none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+padding:0cm 5.4pt 0cm 5.4pt'>
+<p class=AmmCorpsTexte>Réactions cutanées telles qu’érythème polymorphe, syndrome de Stevens-Johnson, nécrolyse épidermique toxique, dermatite bulleuse et exfoliative, pustulose exanthématique aiguë généralisée (PEAG) (voir rubrique 4.4) et syndrome d’hypersensibiité médicamenteuse (DRESS).</p>
+</td>
+</tr>
+<tr>
+<td width=300 valign=top style='width:224.85pt;border:solid windowtext 1.0pt;
+border-top:none;padding:0cm 5.4pt 0cm 5.4pt'>
+<p class=AmmCorpsTexte>Fréquence indéterminée</p>
+</td>
+<td width=307 colspan=2 valign=top style='width:230.25pt;border-top:none;
+border-left:none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+padding:0cm 5.4pt 0cm 5.4pt'>
+<p class=AmmCorpsTexte>Dermatose à IgA linéaire</p>
+</td>
+</tr>
+<tr>
+<td width=607 colspan=3 valign=top style='width:455.1pt;border:solid windowtext 1.0pt;
+border-top:none;padding:0cm 5.4pt 0cm 5.4pt'>
+<p class=AmmAnnexeTitre3>Affections du rein et des voies urinaires</p>
+</td>
+</tr>
+<tr>
+<td width=300 valign=top style='width:224.85pt;border:solid windowtext 1.0pt;
+border-top:none;padding:0cm 5.4pt 0cm 5.4pt'>
+<p class=AmmCorpsTexte>Très rare :</p>
+</td>
+<td width=307 colspan=2 valign=top style='width:230.25pt;border-top:none;
+border-left:none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+padding:0cm 5.4pt 0cm 5.4pt'>
+<p class=AmmCorpsTexte>Néphrite interstitielle.</p>
+</td>
+</tr>
+<tr>
+<td width=300 valign=top style='width:224.85pt;border:solid windowtext 1.0pt;
+border-top:none;padding:0cm 5.4pt 0cm 5.4pt'>
+<p class=AmmCorpsTexte>Fréquence indéterminée</p>
+</td>
+<td width=307 colspan=2 valign=top style='width:230.25pt;border-top:none;
+border-left:none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+padding:0cm 5.4pt 0cm 5.4pt'>
+<p class=AmmCorpsTexte>Cristallurie (incluant des lésions rénales aiguës, voir rubriques 4.4 et 4.9 Surdosage).</p>
+</td>
+</tr>
+<tr>
+<td width=607 colspan=3 valign=top style='width:455.1pt;border:solid windowtext 1.0pt;
+border-top:none;padding:0cm 5.4pt 0cm 5.4pt'>
+<p class=AmmCorpsTexte style='margin-bottom:0cm;margin-bottom:.0001pt'>* La fréquence des ces EI a été déterminée d’après les données des études cliniques portant sur un total d’environ 6 000 patients adultes et pédiatriques sous amoxicilline.</p>
+<p class=AmmCorpsTexte><sup># </sup>Une coloration dentaire superficielle a été rapportée chez les enfants. Une bonne hygiène buccale peut aider à prévenir la coloration dentaire, habituellement réversible après brossage des dents. </p>
+</td>
+</tr>
+<tr height=0>
+<td width=300 style='border:none'></td>
+<td width=4 style='border:none'></td>
+<td width=303 style='border:none'></td>
+</tr>
+</table>
+</div>
+<p class=AmmAnnexeTitre3>Déclaration des effets indésirables suspectés </p>
+<p class=AmmCorpsTexte>La déclaration des effets indésirables suspectés après autorisation du médicament est importante. Elle permet une surveillance continue du rapport bénéfice/risque du médicament. Les professionnels de santé déclarent tout effet indésirable suspecté via le système national de déclaration : Agence nationale de sécurité du médicament et des produits de santé (ANSM) et réseau des Centres Régionaux de Pharmacovigilance - Site internet :<span style='color:red'> <a href="http://www.ansm.sante.fr/">https://signalement.social-sante.gouv.fr</a></span></p>
+<p class="AmmAnnexeTitre2"><a name="RcpSurdosage">4.9. Surdosage</a>&nbsp;&nbsp;<a href='#HautDePage'><img src='img/BackToTop.jpg' width='15px' height='15px' alt='Retour en haut de la page' title='Retour en haut de la page' /></a></p>
+<p class=AmmAnnexeTitre3>Signes et symptômes de surdosage</p>
+<p class=AmmCorpsTexte>Des symptômes gastro-intestinaux (tels que nausées, vomissements et diarrhée) et des troubles de l’équilibre hydro-électrolytique sont possibles. </p>
+<p class=AmmCorpsTexte>Des cristalluries liées à l’amoxicilline, conduisant dans certains cas à une insuffisance rénale ont été observées (voir rubrique 4.4). Des convulsions peuvent survenir chez les patients ayant une insuffisance rénale ou ceux recevant des doses élevées (voir rubriques 4.4 et 4.8).</p>
+<p class=AmmAnnexeTitre3>Traitement de l’intoxication</p>
+<p class=AmmCorpsTexte>Le traitement des signes gastro-intestinaux est symptomatique et fait intervenir une surveillance particulière de l’équilibre hydro-électrolytique.</p>
+<p class=AmmCorpsTexte>L’amoxicilline peut être éliminée de la circulation sanguine par hémodialyse.</p>
+<p class="AmmAnnexeTitre1"><a name="RcpPropPharmacologiques">5. PROPRIETES PHARMACOLOGIQUES</a>&nbsp;&nbsp;<a href='#HautDePage'><img src='img/BackToTop.jpg' width='15px' height='15px' alt='Retour en haut de la page' title='Retour en haut de la page' /></a></p>
+<p class="AmmAnnexeTitre2"><a name="RcpPropPharmacodynamiques">5.1. Propriétés pharmacodynamiques</a>&nbsp;&nbsp;<a href='#HautDePage'><img src='img/BackToTop.jpg' width='15px' height='15px' alt='Retour en haut de la page' title='Retour en haut de la page' /></a></p>
+<p class=AmmCorpsTexteGras>Classe pharmacothérapeutique : pénicillines à large spectre ; code ATC :<span style='font-size:12.0pt'> </span>J01CA04.</p>
+<p class=AmmAnnexeTitre3>Mécanisme d’action</p>
+<p class=AmmCorpsTexte>L’amoxicilline est une pénicilline semi-synthétique (antibiotique de la famille des bêta-lactamines), qui inhibe une ou plusieurs enzymes (souvent désignées par protéines de liaison aux pénicillines ou PLP) de la voie de biosynthèse des peptidoglycanes bactériens, composants structurels de la paroi cellulaire bactérienne. L’inhibition de la synthèse des peptidoglycanes conduit à une fragilisation de la paroi cellulaire, souvent suivie par la lyse et la mort cellulaires.</p>
+<p class=AmmCorpsTexte>L’amoxicilline étant sujette à la dégradation par les bêta-lactamases produites par les bactéries résistantes, son spectre d’activité lorsqu’elle est administrée seule n’inclut pas les organismes produisant ces enzymes.</p>
+<p class=AmmAnnexeTitre3>Relation pharmacocinétique/pharmacodynamique</p>
+<p class=AmmCorpsTexte>Le temps au-dessus de la concentration minimale inhibitrice (T &gt; CMI) est considéré comme étant le paramètre majeur de l’efficacité de l’amoxicilline.</p>
+<p class=AmmAnnexeTitre3>Mécanismes de résistance</p>
+<p class=AmmCorpsTexte>Les deux principaux mécanismes de résistance à l’amoxicilline sont :</p>
+<p class=AmmListePuces1 style='text-align:justify'><span style='font-family: Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>l’inactivation par les bêta-lactamases bactériennes ;</p>
+<p class=AmmListePuces1 style='text-align:justify'><span style='font-family: Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>la modification des PLP, qui réduit l’affinité de l’agent antibactérien pour la cible.</p>
+<p class=AmmCorpsTexte style='margin-top:6.0pt'>L’imperméabilité des bactéries ou les mécanismes de pompe à efflux peuvent entraîner ou favoriser une résistance bactérienne, en particulier chez les bactéries à Gram négatif.</p>
+<p class=AmmAnnexeTitre3>Seuils des tests de sensibilité </p>
+<p class=AmmCorpsTexte style='margin-top:6.0pt'>Les critères d’interprétation des concentrations minimales inhibitrices (CMI) pour les tests de sensibilité ont été établis par le Comité européen des antibiogrammes (EUCAST) pour l’amoxicilline et sont énumérés ci-dessous : &lt;<a href="https://www.ema.europa.eu/documents/other/minimum-inhibitory-concentration-mic-breakpoints_en.xlsx">https://www.ema.europa.eu/documents/other/minimum-inhibitory-concentration-mic-breakpoints_en.xlsx</a>&gt; </p>
+<p class=AmmCorpsTexte style='margin-top:6.0pt'>La prévalence de la résistance peut varier en fonction de la géographie et du temps pour certaines espèces. Il est donc utile de disposer d’information sur la prévalence de la résistance locale, surtout pour le traitement d’infections sévères. Si nécessaire, il est souhaitable d’obtenir un avis spécialisé principalement lorsque l’intérêt du médicament dans certaines infections peut être mis en cause du fait du niveau de la prévalence de la résistance locale.</p>
+<div align=center>
+<table class=AmmCorpsTexteTable border=1 cellspacing=0 cellpadding=0
+style='border-collapse:collapse;border:none'>
+<tr>
+<td width=607 valign=top style='width:455.1pt;border:solid windowtext 1.0pt;
+padding:0cm 5.4pt 0cm 5.4pt'>
+<p class=AmmCorpsTexteGras>Sensibilité <span class='italique'>in vitro </span>des micro-organismes à l’amoxicilline</p>
+</td>
+</tr>
+<tr>
+<td width=607 valign=top style='width:455.1pt;border:solid windowtext 1.0pt;
+border-top:none;padding:0cm 5.4pt 0cm 5.4pt'>
+<p class=AmmAnnexeTitre3>Espèces habituellement sensibles</p>
+</td>
+</tr>
+<tr>
+<td width=607 valign=top style='width:455.1pt;border:solid windowtext 1.0pt;
+border-top:none;padding:0cm 5.4pt 0cm 5.4pt'>
+<p class=AmmCorpsTexteGras><span class='souligne'><span style='font-weight:normal'>Aérobies à Gram positif :</span></span></p>
+<p class=AmmCorpsTexteGras><span class='italique'><span style='font-weight:normal'>Enterococcus faecalis</span></span></p>
+<p class=AmmCorpsTexteGras><span style='font-weight:normal'>Stroptocoque </span><span style='font-weight:normal'>&#946;</span><span style='font-weight:normal'>-hémolyique (Groupe A, B, C et G)</span></p>
+<p class=AmmCorpsTexteGras><span class='italique'><span style='font-weight:normal'>Listeria monocytogenes</span></span></p>
+</td>
+</tr>
+<tr>
+<td width=607 valign=top style='width:455.1pt;border:solid windowtext 1.0pt;
+border-top:none;padding:0cm 5.4pt 0cm 5.4pt'>
+<p class=AmmCorpsTexte><span class='gras'><span class='souligne'>Espèces inconstamment sensibles</span></span><span class='souligne'> (résistance acquise &gt; 10 %)</span></p>
+</td>
+</tr>
+<tr>
+<td width=607 valign=top style='width:455.1pt;border:solid windowtext 1.0pt;
+border-top:none;padding:0cm 5.4pt 0cm 5.4pt'>
+<p class=AmmCorpsTexte><span class='souligne'>Aérobies à Gram négatif :</span></p>
+<p class=AmmCorpsTexte><span class='italique'>Escherichia coli</span></p>
+<p class=AmmCorpsTexte><span class='italique'>Haemophilus influenzae</span></p>
+<p class=AmmCorpsTexte><span class='italique'>Helicobacter pylori</span></p>
+<p class=AmmCorpsTexte><span class='italique'>Proteus mirabilis</span></p>
+<p class=AmmCorpsTexte><span class='italique'>Salmonella typhi</span></p>
+<p class=AmmCorpsTexte><span class='italique'>Salmonella paratyphi</span></p>
+<p class=AmmCorpsTexte><span class='italique'>Pasteurella multocida</span></p>
+</td>
+</tr>
+<tr>
+<td width=607 valign=top style='width:455.1pt;border:solid windowtext 1.0pt;
+border-top:none;padding:0cm 5.4pt 0cm 5.4pt'>
+<p class=AmmCorpsTexte><span class='souligne'>Aérobies à Gram positif :</span></p>
+<p class=AmmCorpsTexte>Staphylocoques à coagulase négative</p>
+<p class=AmmCorpsTexte><span class='italique'>Staphylococcus aureus <sup>£</sup></span></p>
+<p class=AmmCorpsTexte><span class='italique'>Streptococcus pneumoniae</span></p>
+<p class=AmmCorpsTexte>Streptocoques du groupe <span class='italique'>Viridans</span></p>
+</td>
+</tr>
+<tr>
+<td width=607 valign=top style='width:455.1pt;border:solid windowtext 1.0pt;
+border-top:none;padding:0cm 5.4pt 0cm 5.4pt'>
+<p class=AmmCorpsTexte><span class='souligne'>Anaérobies à Gram positif :</span></p>
+<p class=AmmCorpsTexte><span class='italique'>Clostridium </span>spp.</p>
+</td>
+</tr>
+<tr>
+<td width=607 valign=top style='width:455.1pt;border:solid windowtext 1.0pt;
+border-top:none;padding:0cm 5.4pt 0cm 5.4pt'>
+<p class=AmmCorpsTexte><span class='souligne'>Anaérobies à Gram négatif :</span></p>
+<p class=AmmCorpsTexte>Fusobacterium spp.</p>
+</td>
+</tr>
+<tr>
+<td width=607 valign=top style='width:455.1pt;border:solid windowtext 1.0pt;
+border-top:none;padding:0cm 5.4pt 0cm 5.4pt'>
+<p class=AmmCorpsTexte><span class='souligne'>Autre</span> :</p>
+<p class=AmmCorpsTexte><span class='italique'>Borrelia burgdorferi</span></p>
+</td>
+</tr>
+<tr>
+<td width=607 valign=top style='width:455.1pt;border:solid windowtext 1.0pt;
+border-top:none;padding:0cm 5.4pt 0cm 5.4pt'>
+<p class=AmmCorpsTexteGras><span class='souligne'>Espèces naturellement résistantes<sup>†</sup></span></p>
+</td>
+</tr>
+<tr>
+<td width=607 valign=top style='width:455.1pt;border:solid windowtext 1.0pt;
+border-top:none;padding:0cm 5.4pt 0cm 5.4pt'>
+<p class=AmmCorpsTexte><span class='souligne'>Aérobies à Gram positif :</span></p>
+<p class=AmmCorpsTexte><span class='italique'>Enterococcus faecium<sup>†</sup></span></p>
+</td>
+</tr>
+<tr>
+<td width=607 valign=top style='width:455.1pt;border:solid windowtext 1.0pt;
+border-top:none;padding:0cm 5.4pt 0cm 5.4pt'>
+<p class=AmmCorpsTexte><span class='souligne'>Aérobies à Gram négatif :</span></p>
+<p class=AmmCorpsTexte><span class='italique'>Acinetobacter </span>spp.</p>
+<p class=AmmCorpsTexte><span class='italique'>Enterobacter</span> spp.</p>
+<p class=AmmCorpsTexte><span class='italique'>Klebsiella </span>spp.</p>
+<p class=AmmCorpsTexte><span class='italique'>Pseudomonas</span> spp.</p>
+</td>
+</tr>
+<tr>
+<td width=607 valign=top style='width:455.1pt;border:solid windowtext 1.0pt;
+border-top:none;padding:0cm 5.4pt 0cm 5.4pt'>
+<p class=AmmCorpsTexte><span class='souligne'>Anaérobies à Gram négatif :</span></p>
+<p class=AmmCorpsTexte><span class='italique'>Bacteroides</span> spp.<span class='italique'> (de nombreuses souches de Bacteroides fragilis sont résistantes).</span></p>
+</td>
+</tr>
+<tr>
+<td width=607 valign=top style='width:455.1pt;border:solid windowtext 1.0pt;
+border-top:none;padding:0cm 5.4pt 0cm 5.4pt'>
+<p class=AmmCorpsTexte><span class='souligne'>Autres :</span></p>
+<p class=AmmCorpsTexte><span class='italique'>Chlamydia</span> spp.</p>
+<p class=AmmCorpsTexte><span class='italique'>Mycoplasma </span>spp.</p>
+<p class=AmmCorpsTexte><span class='italique'>Legionella</span> spp.</p>
+</td>
+</tr>
+<tr>
+<td width=607 valign=top style='width:455.1pt;border:solid windowtext 1.0pt;
+border-top:none;padding:0cm 5.4pt 0cm 5.4pt'>
+<p class=AmmCorpsTexte><sup>†</sup>Sensibilité intermédiaire naturelle en l’absence de mécanisme acquis de résistance.</p>
+<p class=AmmCorpsTexte style='margin-bottom:0cm;margin-bottom:.0001pt'><sup>£</sup>Presque tous les <span class='italique'>S. aureus</span> sont résistants à l’amoxicilline en raison de leur production de pénicillinase. De plus, toutes les souches méticilline-résistantes sont résistantes à l’amoxicilline.</p>
+</td>
+</tr>
+</table>
+</div>
+<p class="AmmAnnexeTitre2"><a name="RcpPropPharmacocinetiques">5.2. Propriétés pharmacocinétiques</a>&nbsp;&nbsp;<a href='#HautDePage'><img src='img/BackToTop.jpg' width='15px' height='15px' alt='Retour en haut de la page' title='Retour en haut de la page' /></a></p>
+<p class=AmmAnnexeTitre3>Absorption</p>
+<p class=AmmCorpsTexte>L’amoxicilline est totalement dissociée en solution aqueuse à pH physiologique. Elle est rapidement et bien absorbée après administration orale. Après administration orale, l’amoxicilline présente une biodisponibilité d’environ 70 %. Le délai d’obtention de la concentration plasmatique maximale (T<sub>max</sub>) est d’environ une heure.</p>
+<p class=AmmCorpsTexte>Les résultats pharmacocinétiques d’une étude dans laquelle la posologie de 250 mg d’amoxicilline trois fois/jour était administrée à jeun à des groupes de volontaires sains sont présentés ci-dessous.</p>
+<div align=center>
+<table class=AmmCorpsTexteTable border=1 cellspacing=0 cellpadding=0
+style='border-collapse:collapse;border:none'>
+<tr>
+<td width=146 valign=top style='width:109.7pt;border:solid windowtext 1.0pt;
+padding:0cm 5.4pt 0cm 5.4pt'>
+<p class=AmmCorpsTexte align=center style='text-align:center'>C<sub>max</sub></p>
+</td>
+<td width=153 valign=top style='width:115.1pt;border:solid windowtext 1.0pt;
+border-left:none;padding:0cm 5.4pt 0cm 5.4pt'>
+<p class=AmmCorpsTexte align=center style='text-align:center'>T<sub>max</sub> *</p>
+</td>
+<td width=154 valign=top style='width:115.15pt;border:solid windowtext 1.0pt;
+border-left:none;padding:0cm 5.4pt 0cm 5.4pt'>
+<p class=AmmCorpsTexte align=center style='text-align:center'>ASC <sub>(0-24h)</sub></p>
+</td>
+<td width=154 valign=top style='width:115.15pt;border:solid windowtext 1.0pt;
+border-left:none;padding:0cm 5.4pt 0cm 5.4pt'>
+<p class=AmmCorpsTexte align=center style='text-align:center'>T ½</p>
+</td>
+</tr>
+<tr>
+<td width=146 valign=top style='width:109.7pt;border:solid windowtext 1.0pt;
+border-top:none;padding:0cm 5.4pt 0cm 5.4pt'>
+<p class=AmmCorpsTexte align=center style='text-align:center'>(&#956;g/mL)</p>
+</td>
+<td width=153 valign=top style='width:115.1pt;border-top:none;border-left:
+none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+padding:0cm 5.4pt 0cm 5.4pt'>
+<p class=AmmCorpsTexte align=center style='text-align:center'>(h)</p>
+</td>
+<td width=154 valign=top style='width:115.15pt;border-top:none;border-left:
+none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+padding:0cm 5.4pt 0cm 5.4pt'>
+<p class=AmmCorpsTexte align=center style='text-align:center'>(&#956;g.h/mL)</p>
+</td>
+<td width=154 valign=top style='width:115.15pt;border-top:none;border-left:
+none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+padding:0cm 5.4pt 0cm 5.4pt'>
+<p class=AmmCorpsTexte align=center style='text-align:center'>(h)</p>
+</td>
+</tr>
+<tr>
+<td width=146 valign=top style='width:109.7pt;border:solid windowtext 1.0pt;
+border-top:none;padding:0cm 5.4pt 0cm 5.4pt'>
+<p class=AmmCorpsTexte align=center style='text-align:center'>3,3 ± 1,12</p>
+</td>
+<td width=153 valign=top style='width:115.1pt;border-top:none;border-left:
+none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+padding:0cm 5.4pt 0cm 5.4pt'>
+<p class=AmmCorpsTexte align=center style='text-align:center'>1,5 (1,0-2,0)</p>
+</td>
+<td width=154 valign=top style='width:115.15pt;border-top:none;border-left:
+none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+padding:0cm 5.4pt 0cm 5.4pt'>
+<p class=AmmCorpsTexte align=center style='text-align:center'>26,7 ± 4,56</p>
+</td>
+<td width=154 valign=top style='width:115.15pt;border-top:none;border-left:
+none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+padding:0cm 5.4pt 0cm 5.4pt'>
+<p class=AmmCorpsTexte align=center style='text-align:center'>1,36 ± 0,56</p>
+</td>
+</tr>
+<tr>
+<td width=607 colspan=4 valign=top style='width:455.1pt;border:solid windowtext 1.0pt;
+border-top:none;padding:0cm 5.4pt 0cm 5.4pt'>
+<p class=AmmCorpsTexte>*Médiane (intervalle)</p>
+</td>
+</tr>
+</table>
+</div>
+<p class=AmmCorpsTexte style='margin-top:6.0pt'>Dans l’intervalle de doses comprises entre 250 et 3 000 mg, la biodisponibilité est proportionnelle à la dose administrée (mesurée par la C<sub>max</sub> et l’ASC). L’absorption n’est pas influencée par une prise alimentaire simultanée.</p>
+<p class=AmmCorpsTexte style='margin-top:6.0pt'>L’hémodialyse peut être utilisée pour éliminer l’amoxicilline.</p>
+<p class=AmmAnnexeTitre3>Distribution</p>
+<p class=AmmCorpsTexte>Environ 18 % de l’amoxicilline plasmatique totale sont liés aux protéines et le volume apparent de distribution est d’environ 0,3 à 0,4 L/kg.</p>
+<p class=AmmCorpsTexte>Après administration intraveineuse, l’amoxicilline a été détectée dans la vésicule biliaire, le tissu abdominal, la peau, la graisse, les tissus musculaires, les liquides synovial et péritonéal, la bile et le pus. L’amoxicilline ne se distribue pas dans le liquide céphalorachidien de manière adéquate.</p>
+<p class=AmmCorpsTexte>Les études animales n’ont pas montré d’accumulation tissulaire significative de substance dérivée du médicament. L’amoxicilline, comme la majorité des pénicillines, peut être détectée dans le lait maternel (voir rubrique 4.6).</p>
+<p class=AmmCorpsTexte>Il a été montré que l’amoxicilline traverse la barrière placentaire (voir rubrique 4.6).</p>
+<p class=AmmAnnexeTitre3>Biotransformation</p>
+<p class=AmmCorpsTexte>L’amoxicilline est partiellement excrétée dans l’urine sous forme d’acide pénicilloïque inactif, dans une proportion pouvant atteindre 10 à 25 % de la dose initiale.</p>
+<p class=AmmAnnexeTitre3>Élimination</p>
+<p class=AmmCorpsTexte>La principale voie d’élimination de l’amoxicilline est rénale.</p>
+<p class=AmmCorpsTexte>L’amoxicilline possède une demi-vie d’élimination moyenne d’environ une heure et une clairance totale moyenne d’environ 25 L/heure chez les sujets sains. Environ 60 à 70 % de l’amoxicilline est excrétée sous forme inchangée dans l’urine au cours des 6 heures suivant l’administration d’une dose unique de 250 mg ou 500 mg d’amoxicilline. Diverses études ont montré que l’excrétion urinaire est de 50 à 85 % sur une période de 24 heures.</p>
+<p class=AmmCorpsTexte>L’utilisation concomitante de probénécide retarde l’excrétion de l’amoxicilline (voir rubrique 4.5).</p>
+<p class=AmmAnnexeTitre3>Âge</p>
+<p class=AmmCorpsTexte>La demi-vie d’élimination de l’amoxicilline chez les jeunes enfants âgés d’environ 3 mois à 2 ans est semblable à celle des enfants plus âgés et des adultes. Chez les très jeunes enfants (y compris les nouveau-nés prématurés), pendant la première semaine de vie, l’administration doit se limiter à deux fois par jour en raison de l’immaturité de la voie d’élimination rénale. En raison d’une probabilité accrue de détérioration de la fonction rénale chez les patients âgés, il convient de sélectionner la dose avec précaution et il peut être utile de surveiller la fonction rénale.</p>
+<p class=AmmAnnexeTitre3>Sexe</p>
+<p class=AmmCorpsTexte>Après administration orale d’amoxicilline à des hommes et des femmes sains, le sexe n’a pas d’incidence significative sur les caractéristiques pharmacocinétiques de l’amoxicilline.</p>
+<p class=AmmAnnexeTitre3>Insuffisance rénale</p>
+<p class=AmmCorpsTexte>La clairance sérique totale de l’amoxicilline diminue proportionnellement à la baisse de la fonction rénale (voir rubriques 4.2 et 4.4).</p>
+<p class=AmmAnnexeTitre3>Insuffisance hépatique</p>
+<p class=AmmCorpsTexte>L’amoxicilline doit être utilisée avec prudence chez les patients insuffisants hépatiques et la fonction hépatique doit être surveillée régulièrement.</p>
+<p class="AmmAnnexeTitre2"><a name="RcpSecuritePreclinique">5.3. Données de sécurité préclinique</a>&nbsp;&nbsp;<a href='#HautDePage'><img src='img/BackToTop.jpg' width='15px' height='15px' alt='Retour en haut de la page' title='Retour en haut de la page' /></a></p>
+<p class=AmmCorpsTexte>Les données non cliniques issues des études conventionnelles de pharmacologie de sécurité, toxicologie en administration répétée, génotoxicité, cancérogénèse, et des fonctions de reproduction et de développement, n’ont pas révélé de risque particulier pour l’homme.</p>
+<p class=AmmCorpsTexte>Il n’a pas été conduit d’études de cancérogenèse avec l’amoxicilline.</p>
+<p class="AmmAnnexeTitre1"><a name="RcpDonneesPharmaceutiques">6. DONNEES PHARMACEUTIQUES</a>&nbsp;&nbsp;<a href='#HautDePage'><img src='img/BackToTop.jpg' width='15px' height='15px' alt='Retour en haut de la page' title='Retour en haut de la page' /></a></p>
+<p class="AmmAnnexeTitre2"><a name="RcpListeExcipients">6.1. Liste des excipients</a>&nbsp;&nbsp;<a href='#HautDePage'><img src='img/BackToTop.jpg' width='15px' height='15px' alt='Retour en haut de la page' title='Retour en haut de la page' /></a></p>
+<p class=AmmCorpsTexte>Aspartam (E951), arôme fraise*, crospovidone, stéarate de magnésium, cellulose microcristalline.</p>
+<p class=AmmCorpsTexte><span class='souligne'>*Composants de l’arôme fraise :</span><span class='italique'> </span>maltodextrine, citrate de triéthyle, propylène glycol, agent aromatisant. Contient notamment de l’alcool benzylique.</p>
+<p class="AmmAnnexeTitre2"><a name="RcpIncompatibilites">6.2. Incompatibilités</a>&nbsp;&nbsp;<a href='#HautDePage'><img src='img/BackToTop.jpg' width='15px' height='15px' alt='Retour en haut de la page' title='Retour en haut de la page' /></a></p>
+<p class=AmmCorpsTexte>Sans objet.</p>
+<p class="AmmAnnexeTitre2"><a name="RcpDureeConservation">6.3. Durée de conservation</a>&nbsp;&nbsp;<a href='#HautDePage'><img src='img/BackToTop.jpg' width='15px' height='15px' alt='Retour en haut de la page' title='Retour en haut de la page' /></a></p>
+<p class=AmmCorpsTexte>3 ans.</p>
+<p class="AmmAnnexeTitre2"><a name="RcpPrecConservation">6.4. Précautions particulières de conservation</a>&nbsp;&nbsp;<a href='#HautDePage'><img src='img/BackToTop.jpg' width='15px' height='15px' alt='Retour en haut de la page' title='Retour en haut de la page' /></a></p>
+<p class=AmmCorpsTexte><span lang=FR-BE>A conserver à une température ne dépassant pas 25°C.</span></p>
+<p class="AmmAnnexeTitre2"><a name="RcpEmballage">6.5. Nature et contenu de l'emballage extérieur </a>&nbsp;&nbsp;<a href='#HautDePage'><img src='img/BackToTop.jpg' width='15px' height='15px' alt='Retour en haut de la page' title='Retour en haut de la page' /></a></p>
+<p class=AmmCorpsTexte>3, 6 ou 14 comprimés sous plaquettes (PVC/PVDC/Aluminium) ou (PVC/TE/PVDC/Aluminium).</p>
+<p class=AmmCorpsTexte>Toutes les présentations peuvent ne pas être commercialisées.</p>
+<p class="AmmAnnexeTitre2"><a name="RcpPrecEmpl">6.6. Précautions particulières d’élimination et de manipulation</a>&nbsp;&nbsp;<a href='#HautDePage'><img src='img/BackToTop.jpg' width='15px' height='15px' alt='Retour en haut de la page' title='Retour en haut de la page' /></a></p>
+<p class=AmmCorpsTexte><span lang=FR-BE>Tout médicament non utilisé ou déchet doit être éliminé conformément à la réglementation en vigueur.</span></p>
+<p class="AmmAnnexeTitre1"><a name="RcpTitulaireAmm">7. TITULAIRE DE L’AUTORISATION DE MISE SUR LE MARCHE</a>&nbsp;&nbsp;<a href='#HautDePage'><img src='img/BackToTop.jpg' width='15px' height='15px' alt='Retour en haut de la page' title='Retour en haut de la page' /></a></p>
+<p class=AmmCorpsTexte style='margin-bottom:0cm;margin-bottom:.0001pt'><span class='gras'>VIATRIS SANTE</span></p>
+<p class=AmmCorpsTexte style='margin-bottom:0cm;margin-bottom:.0001pt'>1 RUE DE TURIN</p>
+<p class=AmmCorpsTexte style='margin-bottom:0cm;margin-bottom:.0001pt'>69007 LYON</p>
+<p class="AmmAnnexeTitre1"><a name="RcpNumAutor">8. NUMERO(S) D’AUTORISATION DE MISE SUR LE MARCHE</a>&nbsp;&nbsp;<a href='#HautDePage'><img src='img/BackToTop.jpg' width='15px' height='15px' alt='Retour en haut de la page' title='Retour en haut de la page' /></a></p>
+<p class=AmmListePuces1 style='text-align:justify'><span style='font-family: Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>34009 301 371 0 9 : 3 comprimés dispersibles sous plaquettes (PVC/PVDC/Aluminium) </p>
+<p class=AmmListePuces1 style='text-align:justify'><span style='font-family: Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>34009 301 371 1 6 : 6 : comprimés dispersibles sous plaquettes (PVC/PVDC/Aluminium) </p>
+<p class=AmmListePuces1 style='text-align:justify'><span style='font-family: Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>34009 301 371 2 3 : 14 comprimés dispersibles sous plaquettes (PVC/PVDC/Aluminium) </p>
+<p class=AmmListePuces1 style='text-align:justify'><span style='font-family: Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>34009 301 371 3 0 : 3 comprimés dispersibles sous plaquettes (PVC/TE/PVDC/Aluminium) </p>
+<p class=AmmListePuces1 style='text-align:justify'><span style='font-family: Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>34009 301 371 4 7 : 6 : comprimés dispersibles sous plaquettes (PVC/TE/PVDC/Aluminium) </p>
+<p class=AmmListePuces1 style='text-align:justify'><span style='font-family: Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>34009 301 371 5 4 : 14 comprimés dispersibles sous plaquettes (PVC/TE/PVDC/Aluminium)</p>
+<p class="AmmAnnexeTitre1"><a name="RcpPremiereAutorisation">9. DATE DE PREMIERE AUTORISATION/DE RENOUVELLEMENT DE L’AUTORISATION</a>&nbsp;&nbsp;<a href='#HautDePage'><img src='img/BackToTop.jpg' width='15px' height='15px' alt='Retour en haut de la page' title='Retour en haut de la page' /></a></p>
+<p class=AmmCorpsTexte>[à compléter ultérieurement par le titulaire]</p>
+<p class="AmmAnnexeTitre1"><a name="RcpDateRevision">10. DATE DE MISE A JOUR DU TEXTE</a>&nbsp;&nbsp;<a href='#HautDePage'><img src='img/BackToTop.jpg' width='15px' height='15px' alt='Retour en haut de la page' title='Retour en haut de la page' /></a></p>
+<p class=AmmCorpsTexte>[à compléter ultérieurement par le titulaire]</p>
+<p class="AmmAnnexeTitre1"><a name="RcpDosimetrie">11. DOSIMETRIE</a>&nbsp;&nbsp;<a href='#HautDePage'><img src='img/BackToTop.jpg' width='15px' height='15px' alt='Retour en haut de la page' title='Retour en haut de la page' /></a></p>
+<p class=AmmCorpsTexte>Sans objet.</p>
+<p class="AmmAnnexeTitre1"><a name="RcpInstPrepRadioph">12. INSTRUCTIONS POUR LA PREPARATION DES RADIOPHARMACEUTIQUES</a>&nbsp;&nbsp;<a href='#HautDePage'><img src='img/BackToTop.jpg' width='15px' height='15px' alt='Retour en haut de la page' title='Retour en haut de la page' /></a></p>
+<p class=AmmCorpsTexte>Sans objet.</p>
+<div style='border:none;border-top:solid windowtext 1.0pt;padding:1.0pt 0cm 0cm 0cm'>
+<p class="AmmAnnexeTitre"><a name="RcpCondPrescription">CONDITIONS DE PRESCRIPTION ET DE DELIVRANCE</a></p>
+</div>
+<p class=AmmCorpsTexte style='margin-top:6.0pt'>Liste I.</p>
+<span style='font-size:12.0pt;font-family:"Arial",sans-serif;color:#0B3D92'><br
+clear=all>
+</span>					
+					<p class="alignright"><a href="#HautDePage">Retour en haut de la page <img src="img/BackToTop.jpg" width="20px" height="20px" alt="Retour en haut de la page" title="Retour en haut de la page" /></a></p>
+				</div>
+			</div>
+		</div>
+	</div>
+
+<table summary="" class="content" width="1000">
+	<tr>
+		<td height="100px">&nbsp;</td>
+	</tr>
+</table>
+<table summary="Pied de page" class="footer" width="1000">
+	<tr>
+		<td>
+			<table summary="" class="tablealigncenter" border="0">
+				<tr>
+					<td width="100px" class="aligncenter"><a id="lien_ansm" href="http://ansm.sante.fr/" target="_blank"><img src="img/Logo_ANSM.png" width="150" height="60" alt="ANSM - Agence nationale de sécurité du médicament et des produits de santé" title="L'ANSM met à disposition les principales informations issues de l'Autorisation de mise sur le marché, l'appartenance à un groupe générique, les liens vers les informations de sécurité qu'elle publie, l'identification des médicaments sous surveillance renforcée - nouvelle fenêtre" /></a></td>
+					          <td>&nbsp;</td>
+					<td width="100px" class="aligncenter"><img src="img/Logo_HAS.png" width="150" height="60" alt="HAS - Haute autorité de santé" title="La HAS met à disposition les informations relatives au service médical rendu, à l'amélioration du service médical rendu ainsi que les liens vers les avis de la Commission de la Transparence correspondants - nouvelle fenêtre" /></td>
+					<td>&nbsp;</td>
+					<td width="100px" class="aligncenter"><img src="img/Logo_CNAM.png" width="150" height="60" alt="UNCAM - Unin nationale des caisses d'assurance maladie" title="L'UNCAM met à disposition le taux de remboursement, le prix et les indications remboursables le cas échéant, ainsi que l'agrément aux collectivités - nouvelle fenêtre" /></td>
+          				</tr>
+			</table> 
+		</td>
+	</tr>
+</table>
+<table summary="" class="finpage" width="1000">
+	<tr>
+		<td height="100px" class="aligncenter">
+			<a class="navigation" href="plan.php">Plan du site</a>&nbsp;|&nbsp;
+			<a class="navigation" href="accessibilite.php">Accessibilité</a>&nbsp;|&nbsp;
+			<a class="navigation" href="contact.php">Contact</a>&nbsp;|&nbsp;
+			<a class="navigation" href="telechargement.php">Téléchargement</a>&nbsp;|&nbsp;
+			<a class="navigation" href="DeclarationConfidentialite.php">Declaration de confidentialité</a>&nbsp;|&nbsp;
+			<a class="navigation" href="http://www.service-public.fr/" title="Service Public - Nouvelle fenêtre" target="_blank">Service-Public.fr</a>&nbsp;|&nbsp;
+			<a class="navigation" href="http://www.legifrance.gouv.fr/" title="Legifrance - Nouvelle fenêtre" target="_blank">Legifrance</a>&nbsp;|&nbsp;
+			<a class="navigation" href="http://www.gouvernement.fr/" title="Gouvernement - Nouvelle fenêtre" target="_blank" >Gouvernement.fr</a>
+		</td>
+	</tr>
+</table>
+
+
+
+<!-- Matomo -->
+<script type="text/javascript">
+  var _paq = window._paq = window._paq || [];
+  /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
+  _paq.push(['trackPageView']);
+  _paq.push(['enableLinkTracking']);
+  (function() {
+    var u="https://stats.integra.fr/";
+    _paq.push(['setTrackerUrl', u+'matomo.php']);
+    _paq.push(['setSiteId', '79']);
+    var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+    g.type='text/javascript'; g.async=true; g.src=u+'matomo.js'; s.parentNode.insertBefore(g,s);
+  })();
+</script>
+<!-- End Matomo Code -->
+
+
+
+</body>
+</html>

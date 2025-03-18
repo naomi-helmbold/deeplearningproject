@@ -1,0 +1,419 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="fr" lang="fr">
+<head>
+	<title>Notice patient - AUGMENTIN 1 g/125 mg, poudre pour suspension buvable en sachet-dose (rapport amoxicilline/acide clavulanique : 8/1)  - Base de données publique des médicaments</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=windows-1252"/>
+	<meta name="robots" content="index, follow"/>
+	<meta name="Description" content="Base de données publique des médicaments"/>
+	<meta name="Keywords" content="base, données, publique, médicaments, Notice patient, AUGMENTIN 1 g/125 mg, poudre pour suspension buvable en sachet-dose (rapport amoxicilline/acide clavulanique : 8/1) "/>
+	<meta name="Subject" content="medicament"/>
+	<link href='https://fonts.googleapis.com/css?family=Noticia+Text' rel='stylesheet' type='text/css' />
+	<link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro' rel='stylesheet' type='text/css' />
+	<link href="style/style_bdm.css?v=2.2.3" type="text/css" rel="stylesheet"/>
+	<link href="style/style_RCP_Notice.css" type="text/css" rel="stylesheet"/>
+  <link rel="alternate" href="http://m.base-donnees-publique.medicaments.gouv.fr/#!info-66053338">
+    <script type="text/javascript" src="scripts/autocomplete.js?v=2.2.3"></script>
+	<script type="text/javascript" src="scripts/jquery.js"></script>
+    <script type="text/javascript" src="scripts/jquery-ui.min.js"></script>
+	<script type="text/javascript" src="scripts/common.js"></script>
+	<link rel="icon" type="image/x-icon" href="favicon.ico" />
+</head>
+
+<body>
+
+<a name="HautDePage" />
+<div id="bandeauhaut">
+	<a id="lien_ministere" class="lienmenu" href="http://www.sante.gouv.fr" target="_blank" title="Site du ministère des affaires sociales et de la santé - nouvelle fenêtre"><img id="logoministere" src="img/Logo_Ministere.jpg"  alt="Logo du ministère des affaires sociales et de la santé"/></a>
+	<h1 class="texteTitreSite">
+		Base <span class="texteBleu">de</span> données <span class="texteBleu">publique</span><br/><span class="texteBleu">des</span> médicaments
+	</h1>
+		<a id="lien_medicament_gouv" class="lienEspaceMedic" target="_blank" href="http://medicaments.gouv.fr" title="Visiter [medicaments.gouv.fr] - nouvelle fenêtre">Visiter [medicaments.gouv.fr] <img src="/img/icone_lien.png" alt="Visiter [medicaments.gouv.fr]"  title="Visiter [medicaments.gouv.fr] - nouvelle fenetre" /></a>
+</div>
+<!--div align="center">
+	<a id="banniere" target="_blank" href="http://social-sante.gouv.fr/soins-et-maladies/medicaments/medicaments-generiques/" title="Visiter [medicaments.gouv.fr] - M?dicaments g?n?riques">
+		<img width="1000"   src ="/img/carrouselbannieres.gif" alt="Visiter [medicaments.gouv.fr] - M?dicaments g?n?riques" title="Visiter [medicaments.gouv.fr] - M?dicaments g?n?riques" />
+	</a>
+</div-->
+
+<div id="menuhaut">
+	<span id="menuhaut_gauche">
+		<a id="lien_accueil" class="navigation" href="index.php">Accueil</a>&nbsp;|&nbsp;
+		<a id="lien_glossaire" class="navigation" href="glossaire.php">Glossaire</a>&nbsp;|&nbsp;
+		<a id="lien_aide" class="navigation" href="aide.php">Aide</a>		
+	</span>
+	
+		
+	<span id="menuhaut_dernmaj">
+        <br>Dernière <span title=" 2.4.4
+">mise à jour</span> le 03/03/2025	</span>
+</div>
+
+	<script language="javascript" type="text/javascript">
+		//<![CDATA[ 
+		function Aff(men) {
+			document.write("<ul class=\"menuDoc\">");
+			for(var no_rub=0;no_rub<men.num_rub;no_rub++) {
+				document.write("<li><a class='leftMenu' href='"+menu[no_rub].page+"'>");
+				document.write(men[no_rub].txt);
+				document.write("</a></li>");
+				if (men[no_rub].nb_lien != 0){
+					document.write("<ul class=\"sousMenuDoc\">");
+				}
+				for(var no_lien=0;no_lien<men[no_rub].nb_lien;no_lien++) {
+					document.write("<li><a class='leftMenu' href='"+men[no_rub][no_lien].page+"'>");
+					document.write(men[no_rub][no_lien].txt);
+					document.write("</a></li>");
+				}
+				if (men[no_rub].nb_lien != 0){
+					document.write("</ul>");
+				}
+			}
+			document.write("</ul>");
+		}
+		
+		function CreerMenu(police,imgRub,imgOption,imgOptionFin,hauteur) {
+			this.num_rub=0;
+			this.police=police;
+			this.imgRub=imgRub;
+			this.imgOpt=imgOption;
+			this.imgOptFin=imgOptionFin;
+			this.hauteur=hauteur;
+			this.AddRub=AddRub;
+			this.AddLien=AddLien;
+		}
+		
+		function AddRub(txt,aff,page) {
+			var rub = new Object;
+				rub.txt=txt;
+				rub.aff=aff;
+				rub.page=page;
+				rub.nb_lien=0;
+			this[this.num_rub]=rub;
+			this.num_rub++;
+		}
+
+		function AddLien(txt,page) {
+			var no_rub = this.num_rub-1;
+			var no_lien= this[no_rub].nb_lien;
+			var lien = new Object;
+				lien.txt=txt;
+				lien.page=page;
+			this[no_rub][no_lien]=lien;
+			this[no_rub].nb_lien++;
+		}
+		var menu=new CreerMenu("arial","img/dyn04.gif","img/dyn22.gif","img/dyn55.gif",18);
+		//]]> 
+		menu.AddRub("Description médicament","O","#Ann3bQuestceque");
+			menu.AddRub("Informations","O","#Ann3bInfoNecessaires");
+			menu.AddRub("Utilisation","O","#Ann3bCommentPrendre");
+			menu.AddRub("Effets indésirables","O","#Ann3bEffetsIndesirables");
+			menu.AddRub("Conservation","O","#Ann3bConservation");
+			menu.AddRub("Info. supplémentaires","O","#Ann3bEmballage");
+				</script>
+
+	<div id="container">
+		<div id="leftnav">
+			<div id="cadreMenuGauche">
+				<h2 class="sommaireMenu">Sommaire</h2>
+				<div id="menuGauche">
+					<script language="JavaScript" type="text/javascript">Aff(menu);</script>
+				</div>
+			</div>
+		</div>
+		<div id="contentPrincipal">
+			<div id="boutonsliens">
+				<a id='lien_fiche_info' href='extrait.php?specid=66053338' ><img id="ongletficheinfo" alt="Onglet fiche information" src="img/onglet_fiche_info_vert.png" /></a><a id='lien_rcp' href='affichageDoc.php?specid=66053338&amp;typedoc=R'><img class="onglet" alt="Onglet résumé des caractéristiques du produit" src="img/onglet_rcp_vert.png" /></a><a id='lien_notice' href='affichageDoc.php?specid=66053338&amp;typedoc=N'><img class="onglet" alt="Onglet notice patient" src="img/onglet_notice_gris.png" /></a>			</div>
+			<div class="titredeno">
+				<table summary="" border="0" cellspacing="0">
+					<tr><td colspan="3" height="10px"></td></tr>
+					<tr>
+						<td width="15px">&nbsp;</td>
+						<td width="685px"><h1 class="textedeno">AUGMENTIN 1 g/125 mg, poudre pour suspension buvable en sachet-dose (rapport amoxicilline/acide clavulanique : 8/1)  - Notice patient</h1></td>
+						<td width="43px" class="tdcenter"><a href="Javascript:void(null)" onclick="print();"><img src="img/imprimante.png" height="20px" width="20px" alt="Imprimer le document" title="Imprimer le document" border="0" /></a></td>
+					</tr>
+					<tr><td colspan="3" height="10px"></td></tr>
+				</table>
+			</div>
+			
+			<div id="contentDocument">
+				<div id="textDocument">
+					<p class="DateNotif">ANSM - Mis à jour le : 07/01/2025</p>
+<p class="AmmNoticeTitre1"><a name="Ann3bDenomination">Dénomination du médicament</a></p>
+<p class=AmmCorpsTexteGras align=center style='margin-bottom:0cm;margin-bottom: .0001pt;text-align:center'><a name="_Toc142278999">AUGMENTIN 1 g/125 mg, poudre pour suspension buvable en sachet-dose </a></p>
+<p class=AmmCorpsTexteGras align=center style='text-align:center'>(rapport amoxicilline/acide clavulanique : 8/1)</p>
+<p class=AmmCorpsTexteGras align=center style='text-align:center'>Amoxicilline/Acide clavulanique</p>
+<p class="AmmNoticeTitre1"><a name="Ann3bEncadre">Encadré</a></p>
+<p class=AmmCorpsTexteGras>Veuillez lire attentivement cette notice avant de prendre ce médicament car elle contient des informations importantes pour vous.</p>
+<p class=AmmCorpsTexte style='margin-left:18.0pt;text-indent:-18.0pt'><span style='font-size:10.0pt;font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span><span style='font-size:10.0pt;font-family:"Arial",sans-serif'>Gardez cette notice. Vous pourriez avoir besoin de la relire.</span></p>
+<p class=AmmCorpsTexte style='margin-left:18.0pt;text-indent:-18.0pt'><span style='font-size:10.0pt;font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span><span style='font-size:10.0pt;font-family:"Arial",sans-serif'>Si vous avez d’autres questions, </span><span lang=FR-BE style='font-size:10.0pt; font-family:"Arial",sans-serif'>interrogez</span><span style='font-size:10.0pt; font-family:"Arial",sans-serif'> votre médecin ou votre pharmacien.</span></p>
+<p class=AmmCorpsTexte style='margin-left:18.0pt;text-indent:-18.0pt'><span style='font-size:10.0pt;font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span><span style='font-size:10.0pt;font-family:"Arial",sans-serif'>Ce médicament vous a été personnellement prescrit (ou a été prescrit à votre enfant). Ne le donnez pas à d’autres personnes. Il pourrait leur être nocif, même si les signes de leur maladie sont identiques aux vôtres.</span></p>
+<p class=AmmCorpsTexte style='margin-left:18.0pt;text-indent:-18.0pt'><span lang=FR-BE style='font-size:10.0pt;font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span><span style='font-size:10.0pt;font-family:"Arial",sans-serif'>Si </span><span lang=FR-BE style='font-size:10.0pt;font-family:"Arial",sans-serif'>vous ressentez un quelconque effet indésirable</span><span style='font-size:10.0pt; font-family:"Arial",sans-serif'>, parlez-en à votre médecin ou à votre pharmacien. </span><span lang=FR-BE style='font-size:10.0pt;font-family:"Arial",sans-serif'>Ceci s’applique aussi à tout effet indésirable qui ne serait pas mentionné dans cette notice. </span><span style='font-size:10.0pt;font-family:"Arial",sans-serif'>Voir rubrique 4.</span></p>
+<p class="AmmNoticeTitre1"><a name="Ann3bSomm">Que contient cette notice ?</a></p>
+<p class=AmmCorpsTexte style='margin-top:0cm;margin-right:0cm;margin-bottom: 0cm;margin-left:14.2pt;margin-bottom:.0001pt;text-indent:-14.2pt'>1. Qu'est-ce que AUGMENTIN 1 g/125 mg, poudre pour suspension buvable en sachet-dose (rapport amoxicilline/acide clavulanique : 8/1) et dans quels cas est-il utilisé ?</p>
+<p class=AmmCorpsTexte style='margin-top:0cm;margin-right:0cm;margin-bottom: 0cm;margin-left:14.2pt;margin-bottom:.0001pt;text-indent:-14.2pt'>2. Quelles sont les informations à connaître avant de prendre AUGMENTIN 1 g/125 mg, poudre pour suspension buvable en sachet-dose (rapport amoxicilline/acide clavulanique : 8/1) ?</p>
+<p class=AmmCorpsTexte style='margin-top:0cm;margin-right:0cm;margin-bottom: 0cm;margin-left:14.2pt;margin-bottom:.0001pt;text-indent:-14.2pt'>3. Comment prendre AUGMENTIN 1 g/125 mg, poudre pour suspension buvable en sachet-dose (rapport amoxicilline/acide clavulanique : 8/1) ?</p>
+<p class=AmmCorpsTexte style='margin-top:0cm;margin-right:0cm;margin-bottom: 0cm;margin-left:14.2pt;margin-bottom:.0001pt;text-indent:-14.2pt'>4. Quels sont les effets indésirables éventuels ?</p>
+<p class=AmmCorpsTexte style='margin-top:0cm;margin-right:0cm;margin-bottom: 0cm;margin-left:14.2pt;margin-bottom:.0001pt;text-indent:-14.2pt'>5. Comment conserver AUGMENTIN 1 g/125 mg, poudre pour suspension buvable en sachet-dose (rapport amoxicilline/acide clavulanique : 8/1) ?</p>
+<p class=AmmCorpsTexte style='margin-top:0cm;margin-right:0cm;margin-bottom: 0cm;margin-left:14.2pt;margin-bottom:.0001pt;text-indent:-14.2pt'>6. Contenu de l’emballage et autres informations.</p>
+<h2><a name="Ann3bQuestceque">1. QU’EST-CE QUE AUGMENTIN 1 g/125 mg, poudre pour suspension buvable en sachet-dose (rapport amoxicilline/acide clavulanique : 8/1) ET DANS QUELS CAS EST-IL UTILISE ?</a>&nbsp;&nbsp;<a href='#HautDePage'><img src='img/BackToTop.jpg' width='15px' height='15px' alt='Retour en haut de la page' title='Retour en haut de la page' /></a></h2>
+<p class=AmmCorpsTexte><a name="_Toc142279004">Classe pharmacothérapeutique : Association de pénicillines, y compris inhibiteurs de la bêta-lactamase - code ATC : J01CR02</a><span style='font-size:8.0pt'>.</span></p>
+<p class=AmmCorpsTexte>AUGMENTIN est un antibiotique qui tue les bactéries responsables des infections. Il contient deux molécules différentes, appelées amoxicilline et acide clavulanique. L’amoxicilline appartient à un groupe de médicaments appelés « pénicillines », qui peuvent parfois arrêter d’être efficaces (être inactivés). L’autre constituant actif (l’acide clavulanique) empêche cette inactivation.</p>
+<p class=AmmCorpsTexte>AUGMENTIN est utilisé chez l’adulte et chez l’enfant pour traiter les infections suivantes :</p>
+<p class=AmmListePuces1><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>infections de l’oreille moyenne et des sinus,</p>
+<p class=AmmListePuces1><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>infections des voies respiratoires,</p>
+<p class=AmmListePuces1><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>infections des voies urinaires,</p>
+<p class=AmmListePuces1><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>infections de la peau et des tissus mous, incluant les infections dentaires,</p>
+<p class=AmmListePuces1><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>infections des os et des articulations.</p>
+<h2><a name="Ann3bInfoNecessaires">2. QUELLES SONT LES INFORMATIONS A CONNAITRE AVANT DE PRENDRE AUGMENTIN 1 g/125 mg, poudre pour suspension buvable en sachet-dose (rapport amoxicilline/acide clavulanique : 8/1) ?</a>&nbsp;&nbsp;<a href='#HautDePage'><img src='img/BackToTop.jpg' width='15px' height='15px' alt='Retour en haut de la page' title='Retour en haut de la page' /></a></h2>
+<p class=AmmCorpsTexte><a name="_Toc142279015">Si votre médecin vous a informé(e) d’une intolérance à certains sucres, contactez-le avant de prendre ce médicament.</a></p>
+<p class=AmmCorpsTexte>Ne prenez jamais AUGMENTIN 1 g/125 mg, poudre pour suspension buvable en sachet-dose :</p>
+<p class=AmmListePuces1 style='text-align:justify'><span style='font-family: Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>si vous êtes allergique à l’amoxicilline, à l’acide clavulanique, à la pénicilline ou à l’un des autres composants contenus dans ce médicament, mentionnés dans la rubrique 6,</p>
+<p class=AmmListePuces1 style='text-align:justify'><span style='font-family: Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>si vous avez déjà présenté une réaction allergique grave (d’hypersensibilité) à un autre antibiotique. Ceci peut inclure une éruption cutanée ou un gonflement du visage ou du cou,</p>
+<p class=AmmListePuces1 style='text-align:justify'><span style='font-family: Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>si vous avez déjà eu des problèmes au foie ou développé un ictère (jaunissement de la peau) lors de la prise d’un antibiotique.</p>
+<p class=AmmCorpsTexteGras style='margin-top:6.0pt;margin-right:0cm;margin-bottom: 6.0pt;margin-left:32.05pt;text-indent:-17.85pt'><span style='font-family:Wingdings; font-weight:normal'>è<span style='font:7.0pt "Times New Roman"'>  </span></span>Ne prenez pas AUGMENTIN si vous êtes dans l’une des situations mentionnées ci-dessus. </p>
+<p class=AmmCorpsTexte>En cas de doute, demandez conseil à votre médecin ou votre pharmacien avant de prendre AUGMENTIN.</p>
+<p class=AmmCorpsTexteGras>Avertissements et précautions</p>
+<p class=AmmCorpsTexte><span lang=FR-BE>Demandez conseil à votre médecin ou votre pharmacien avant de prendre </span>AUGMENTIN <span style='color:black'>1 g/125 mg, poudre pour suspension buvable en sachet-dose si vous :</span></p>
+<p class=AmmListePuces1><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>souffrez de mononucléose infectieuse,</p>
+<p class=AmmListePuces1><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>êtes traité(e) pour des problèmes au foie ou aux reins,</p>
+<p class=AmmListePuces1><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>n’urinez pas régulièrement.</p>
+<p class=AmmCorpsTexte style='margin-top:6.0pt'>En cas de doute, demandez conseil à votre médecin ou votre pharmacien avant de prendre AUGMENTIN.</p>
+<p class=AmmCorpsTexte>Dans certains cas, votre médecin pourra rechercher le type de bactérie responsable de l’infection. </p>
+<p class=AmmCorpsTexte>Selon les résultats, il pourra vous prescrire un dosage différent d’AUGMENTIN ou un autre médicament.</p>
+<p class=AmmAnnexeTitre4>Réactions nécessitant une attention particulière</p>
+<p class=AmmCorpsTexte>AUGMENTIN peut aggraver certaines maladies ou engendrer des effets secondaires graves, notamment des réactions allergiques, des convulsions et une inflammation du gros intestin. Lorsque vous prenez AUGMENTIN, vous devez surveiller certains symptômes afin de réduire les risques. Voir « <span class='italique'>Réactions nécessitant une attention particulière</span> », à la <span class='gras'>rubrique 4</span>.</p>
+<p class=AmmAnnexeTitre4>Tests sanguins et urinaires</p>
+<p class=AmmCorpsTexte>Si vous effectuez des analyses de sang (nombre de globules rouges ou explorations fonctionnelles hépatiques) ou des analyses d’urine (dosage du glucose), vous devez informer le médecin ou l’infirmier/ère que vous prenez AUGMENTIN. En effet, AUGMENTIN peut influer sur les résultats de ces types de tests.</p>
+<p class=AmmCorpsTexteGras>Enfants</p>
+<p class=AmmCorpsTexte>Sans objet.</p>
+<p class=AmmCorpsTexteGras>Autres médicaments et AUGMENTIN 1 g/125 mg, poudre pour suspension buvable en sachet-dose</p>
+<p class=AmmCorpsTexte>Informez votre médecin ou votre pharmacien si vous prenez, avez récemment pris ou pourriez prendre tout autre médicament.</p>
+<p class=AmmCorpsTexte>Si vous prenez de l’allopurinol (en traitement de la goutte) avec AUGMENTIN, le risque de réaction cutanée allergique est plus élevé.</p>
+<p class=AmmCorpsTexte>Si vous prenez du probénécide (en traitement de la goutte), votre médecin peut décider d’ajuster votre dose d’AUGMENTIN. </p>
+<p class=AmmCorpsTexte>Si des médicaments destinés à empêcher la coagulation du sang (tels que la warfarine) sont pris avec AUGMENTIN, des analyses sanguines supplémentaires peuvent être requises.</p>
+<p class=AmmCorpsTexte>AUGMENTIN peut influer sur l’action du méthotrexate (un médicament utilisé pour traiter le cancer ou les maladies rhumatismales).</p>
+<p class=AmmCorpsTexte>AUGMENTIN peut influer sur l’action du mycophénolate mofétil (traitement pour prévenir le rejet de greffe d’organes).</p>
+<p class=AmmCorpsTexteGras>AUGMENTIN 1 g/125 mg, poudre pour suspension buvable en sachet-dose avec des aliments, boissons et de l’alcool</p>
+<p class=AmmCorpsTexte>Sans objet.</p>
+<p class=AmmCorpsTexteGras><a name="_Toc142279012"><span lang=FR-BE>Grossesse et allaitement</span></a></p>
+<p class=AmmCorpsTexte><span lang=FR-BE>Si vous êtes enceinte ou que vous allaitez, si vous pensez être enceinte ou planifiez une grossesse, demandez conseil à votre médecin ou pharmacien avant de prendre ce médicament.</span></p>
+<p class=AmmCorpsTexteGras>Conduite de véhicules et utilisation de machines</p>
+<p class=AmmCorpsTexte>AUGMENTIN peut provoquer des effets indésirables susceptibles de réduire la capacité à conduire.</p>
+<p class=AmmCorpsTexte>Ne conduisez pas et n’utilisez pas de machines si vous ne vous sentez pas bien.</p>
+<p class=AmmCorpsTexteGras>AUGMENTIN <span style='color:black'>1 g/125 mg, poudre pour suspension buvable en sachet-dose</span> <span style='color:black'>(rapport amoxicilline/acide clavulanique : 8/1) </span>contient de l’aspartam (E951), de la maltodextrine (glucose), du sodium et des traces d’alcool benzylique :</p>
+<p class=AmmCorpsTexte>Ce médicament contient 30 mg d’aspartam par sachet. L’aspartam contient une source de phénylalanine. Peut être dangereux pour les personnes atteintes de phénylcétonurie (PCU), une maladie génétique rare caractérisée par l’accumulation de phénylalanine ne pouvant être éliminée correctement.</p>
+<p class=AmmCorpsTexte><a name="_Hlk51605447">Ce médicament contient des traces d’alcool benzylique. L’alcool benzylique peut provoquer des réactions allergiques.</a> </p>
+<p class=AmmCorpsTexte>AUGMENTIN contient de la maltodextrine (glucose). Si votre médecin vous a dit que vous avez une intolérance à certains sucres, contactez-le avant de prendre ce médicament.</p>
+<p class=AmmCorpsTexte><a name="_Hlk51605569">Ce médicament contient moins de 1 mmol (23 mg) de sodium par sachet, c’est-à-dire qu’il est essentiellement « sans sodium ».</a></p>
+<h2><a name="Ann3bCommentPrendre">3. COMMENT PRENDRE AUGMENTIN 1 g/125 mg, poudre pour suspension buvable en sachet-dose (rapport amoxicilline/acide clavulanique : 8/1) ?</a>&nbsp;&nbsp;<a href='#HautDePage'><img src='img/BackToTop.jpg' width='15px' height='15px' alt='Retour en haut de la page' title='Retour en haut de la page' /></a></h2>
+<p class=AmmCorpsTexte><a name="_Toc142279021">Veillez à toujours prendre ce médicament en suivant exactement les indications de votre médecin ou pharmacien. Vérifiez auprès de votre médecin ou pharmacien en cas de doute.</a></p>
+<p class=AmmAnnexeTitre3>Posologie</p>
+<p class=AmmCorpsTexteGras>Adultes et enfants de 40 kg et plus</p>
+<p class=AmmListePuces1><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>Dose habituelle : 1 sachet trois fois par jour</p>
+<p class=AmmListePuces1 style='margin-top:0cm;margin-right:0cm;margin-bottom: 6.0pt;margin-left:17.85pt;text-indent:-17.85pt'><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>Dose inférieure : 1 sachet deux fois par jour</p>
+<p class=AmmCorpsTexteGras>Enfants pesant moins de 40 kg</p>
+<p class=AmmCorpsTexte>Les sachets AUGMENTIN 1 g/125 mg ne sont pas recommandés.</p>
+<p class=AmmCorpsTexteGras>Patients souffrant de problèmes rénaux et hépatiques</p>
+<p class=AmmListePuces1><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>En cas de problèmes rénaux, une adaptation de la posologie peut être nécessaire. Le médecin pourra prescrire un dosage différent ou un autre médicament. </p>
+<p class=AmmListePuces1><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>En cas de problèmes au foie, des analyses de sang plus fréquentes pourront être nécessaires afin de vérifier le fonctionnement de votre foie.</p>
+<p class=AmmAnnexeTitre3>Mode d’administration</p>
+<p class=AmmListePuces1><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>Juste avant la prise d’AUGMENTIN, ouvrez le sachet et mélangez son contenu dans un demi-verre d’eau.</p>
+<p class=AmmListePuces1><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>Avalez le mélange au début d’un repas ou un peu avant.</p>
+<p class=AmmListePuces1><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>Répartissez les prises de manière régulière au cours de la journée ; elles doivent être espacées d’au moins 4 heures. Ne prenez pas 2 doses en 1 heure.</p>
+<p class=AmmListePuces1 style='margin-top:0cm;margin-right:0cm;margin-bottom: 6.0pt;margin-left:17.85pt;text-indent:-17.85pt'><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>Ne prenez pas AUGMENTIN pendant plus de 2 semaines. Si vos symptômes persistent, consultez de nouveau un médecin.</p>
+<p class=AmmCorpsTexteGras>Si vous avez pris plus d’AUGMENTIN 1 g/125 mg, poudre pour suspension buvable en sachet-dose que vous n’auriez dû :</p>
+<p class=AmmCorpsTexte>La prise d’une quantité excessive d’AUGMENTIN peut entraîner des maux de ventre (nausées, vomissements ou diarrhée) ou des convulsions. Parlez-en à votre médecin le plus tôt possible. Montrez la boîte de médicament au médecin.</p>
+<p class=AmmCorpsTexteGras>Si vous oubliez de prendre AUGMENTIN 1 g/125 mg, poudre pour suspension buvable en sachet-dose :</p>
+<p class=AmmCorpsTexte>Si vous avez oublié une dose, prenez-la dès que vous y pensez. Attendez ensuite environ 4 heures avant de prendre la dose suivante.</p>
+<p class=AmmCorpsTexteGras>Si vous arrêtez de prendre AUGMENTIN 1 g/125 mg, poudre pour suspension buvable en sachet-dose :</p>
+<p class=AmmCorpsTexte>Vous devez continuer de prendre AUGMENTIN jusqu’à la fin du traitement, même si vous vous sentez mieux. Toutes les doses sont importantes pour combattre l’infection. Si certaines bactéries devaient survivre, elles pourraient être à l’origine d’une réapparition de l’infection.</p>
+<p class=AmmCorpsTexte>Si vous avez d’autres questions sur l’utilisation de ce médicament, demandez plus d’informations à votre médecin ou votre pharmacien.</p>
+<h2><a name="Ann3bEffetsIndesirables">4. QUELS SONT LES EFFETS INDESIRABLES EVENTUELS ?</a>&nbsp;&nbsp;<a href='#HautDePage'><img src='img/BackToTop.jpg' width='15px' height='15px' alt='Retour en haut de la page' title='Retour en haut de la page' /></a></h2>
+<p class=AmmCorpsTexte><a name="_Toc142279023">Comme tous les médicaments, ce médicament peut provoquer des effets indésirables, mais ils ne surviennent pas systématiquement chez tout le monde.</a></p>
+<p class=AmmCorpsTexte>Ce médicament peut entraîner les effets indésirables mentionnés ci-dessous.</p>
+<p class=AmmAnnexeTitre3>Réactions nécessitant une attention particulière </p>
+<p class=AmmCorpsTexteGras>Réactions allergiques</p>
+<p class=AmmListePuces1><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>éruption cutanée,</p>
+<p class=AmmListePuces1><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>inflammation des vaisseaux sanguins (<span class='italique'>vascularite</span>) pouvant apparaître sous la forme de taches rouges ou violettes sur la peau, mais pouvant également toucher d’autres parties du corps,</p>
+<p class=AmmListePuces1><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>fièvre, douleurs articulaires, ganglions dans le cou, l’aisselle et l’aine,</p>
+<p class=AmmListePuces1><a name="_DV_C187"></a><a name="_DV_X229"></a><a name="_DV_C188"></a><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span><span class=DeltaViewMoveSource><span style='color:black; text-decoration:none'><span style='text-decoration:none'>gonflement, parfois du visage ou de la bouche (</span></span></span><span class=DeltaViewMoveSource><span class='italique'><span style='color:black;text-decoration:none'><span style='text-decoration:none'>angio-œdè<span style='text-decoration:none'>me</span></span></span></span></span><span class=DeltaViewMoveSource><span style='color:black;text-decoration:none'><span style='text-decoration:none'>), entraînant des difficultés respiratoires,</span></span></span></p>
+<p class=AmmListePuces1><a name="_DV_C189"></a><a name="_DV_X231"></a><a name="_DV_C190"></a><a name="_DV_C191"></a><a name="_DV_X233"></a><a name="_DV_C192"></a><span class=DeltaViewMoveSource><span style='font-family: Symbol;color:black;text-decoration:none'>·<span style='font:7.0pt "Times New Roman"'>         </span></span></span><span class=DeltaViewMoveSource><span style='color:black; text-decoration:none'><span style='text-decoration:none'>malaise brutal avec chute de la pression artérielle,</span></span></span></p>
+<p class=AmmListePuces1><span class=DeltaViewMoveSource><span style='font-family: Symbol;color:black;text-decoration:none'>·<span style='font:7.0pt "Times New Roman"'>         </span></span></span>douleurs thoraciques dans un contexte de réactions allergiques, qui peuvent être le symptôme d'un infarctus du myocarde déclenché par une allergie (<span class='italique'>syndrome de Kounis</span>).</p>
+<p class=AmmCorpsTexte align=left style='margin-top:6.0pt;margin-right:0cm; margin-bottom:6.0pt;margin-left:17.85pt;text-align:left;text-indent:-17.85pt'><span style='font-family:Wingdings;color:black'>è<span style='font:7.0pt "Times New Roman"'> </span></span><span class=AmmCorpsTexteCar><span style='font-size:10.0pt'>Si vous présentez un de ces symptômes,</span></span><span class=DeltaViewMoveSource><span style='font-size:10.0pt;font-family:"Arial",sans-serif; color:black;text-decoration:none'><span style='text-decoration:none'> </span></span></span><span class=AmmCorpsTexteGrasCar><span style='font-size:10.0pt'>contactez un médecin immédiatement. Arrêtez l’administration d’AUGMENTIN.</span></span></p>
+<p class=AmmCorpsTexteGras>Inflammation du gros intestin </p>
+<p class=AmmCorpsTexte>Inflammation du gros intestin, entraînant une diarrhée aqueuse avec du sang et du mucus, des douleurs gastriques et/ou une fièvre.</p>
+<p class=AmmCorpsTexteGras><a name="_Hlk124350250">Syndrome d'entérocolite induite par les médicaments (SEIM)</a></p>
+<p class=AmmCorpsTexte>Le SEIM a été rapporté principalement chez des enfants recevant de l'amoxicilline/acide clavulanique. Il s'agit d'un certain type de réaction allergique avec comme principal symptôme des vomissements répétés (1 à 4 heures après l’administration du médicament). Les autres symptômes peuvent inclure des douleurs abdominales, une léthargie, des diarrhées et une tension artérielle basse.</p>
+<p class=AmmCorpsTexteGras>Inflammation aiguë du pancréas (pancréatite aiguë)</p>
+<p class=AmmCorpsTexte>Si vous ressentez une douleur intense et continue au niveau de l'estomac, cela peut être un signe de pancréatite aiguë.</p>
+<p class=AmmCorpsTexte align=left style='margin-top:0cm;margin-right:0cm; margin-bottom:6.0pt;margin-left:1.0cm;text-align:left;text-indent:-1.0cm'><span style='font-family:Wingdings;color:black'>è<span style='font:7.0pt "Times New Roman"'> </span></span><span class=AmmCorpsTexteCar><span style='font-size:10.0pt'>Si vous présentez ces symptômes,</span></span><span style='font-size:10.0pt; font-family:"Arial",sans-serif;color:black'> </span><span class=AmmCorpsTexteGrasCar><span style='font-size:10.0pt'>demandez conseil le plus tôt possible à votre médecin.</span></span></p>
+<p class=AmmAnnexeTitre3>Effets indésirables très fréquents</p>
+<p class=AmmCorpsTexte>Ils peuvent affecter plus d’une personne sur 10 :</p>
+<p class=AmmListePuces1><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>diarrhée (chez les adultes).</p>
+<p class=AmmAnnexeTitre3>Effets indésirables fréquents</p>
+<p class=AmmCorpsTexte>Ils peuvent affecter moins de 1 personne sur 10 :</p>
+<p class=AmmListePuces1><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>muguet (affection due à un champignon, le <span class='italique'>candida</span>, qui se développe dans le vagin, la bouche ou les plis cutanés),</p>
+<p class=AmmListePuces1><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>nausées, en particulier aux doses élevées.</p>
+<p class=AmmCorpsTexte align=left style='margin-top:0cm;margin-right:0cm; margin-bottom:6.0pt;margin-left:18.0pt;text-align:left;text-indent:-18.0pt'><span style='font-size:10.0pt;font-family:Wingdings;color:black'>è<span style='font:7.0pt "Times New Roman"'>  </span></span><span class=AmmCorpsTexteCar><span style='font-size:10.0pt'>si vous ou votre enfant présentez ces effets indésirables,</span></span><span style='font-size:10.0pt; font-family:"Arial",sans-serif'> <span class=AmmCorpsTexteGrasCar>administrez AUGMENTIN avant les repas.</span></span></p>
+<p class=AmmListePuces1><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>vomissements,</p>
+<p class=AmmListePuces1><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>diarrhée (chez les enfants).</p>
+<p class=AmmAnnexeTitre3>Effets indésirables peu fréquents</p>
+<p class=AmmCorpsTexte>Ils peuvent affecter moins de 1 personne sur 100 : </p>
+<p class=AmmListePuces1><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>éruption cutanée, démangeaisons,</p>
+<p class=AmmListePuces1><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>éruption cutanée en saillie avec démangeaisons (<span class='italique'>urticaire</span>),</p>
+<p class=AmmListePuces1><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>indigestion,</p>
+<p class=AmmListePuces1><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>étourdissements,</p>
+<p class=AmmListePuces1 style='margin-top:0cm;margin-right:0cm;margin-bottom: 6.0pt;margin-left:17.85pt;text-indent:-17.85pt'><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>maux de tête.</p>
+<p class=AmmAnnexeTitre4><span style='font-style:normal'>Effets indésirables peu fréquents pouvant être mis en évidence par les analyses de sang </span><span style='font-style:normal;text-decoration:none'>:</span></p>
+<p class=AmmListePuces1><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>augmentation de certaines substances (<span class='italique'>enzymes</span>) produites par le foie.</p>
+<p class=AmmAnnexeTitre3>Effets indésirables rares</p>
+<p class=AmmCorpsTexte>Ils peuvent affecter moins de 1 personne sur 1 000 :</p>
+<p class=AmmListePuces1><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>éruption cutanée, pouvant former des cloques et ressemblant à de petites taches (points noirs centraux entourés d’une zone plus pâle, avec un anneau sombre tout autour : <span class='italique'>érythème polymorphe</span>).</p>
+<p class=AmmCorpsTexte align=left style='margin-top:0cm;margin-right:0cm; margin-bottom:6.0pt;margin-left:1.0cm;text-align:left;text-indent:-1.0cm'><span style='font-family:Wingdings;color:black'>è<span style='font:7.0pt "Times New Roman"'> </span></span><span class=AmmCorpsTexteCar><span style='font-size:10.0pt'>si vous remarquez un de ces symptômes,</span></span><span style='font-size:10.0pt; font-family:"Arial",sans-serif'> <span class=AmmCorpsTexteGrasCar>contactez un médecin en urgence.</span></span></p>
+<p class=AmmCorpsTexte><span class='souligne'>Effets indésirables rares pouvant être mis en évidence par les analyses de sang</span> :</p>
+<p class=AmmListePuces1><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>faible nombre de cellules participant à la coagulation sanguine (<span class='italique'>plaquettes</span>),</p>
+<p class=AmmListePuces1><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>faible nombre de globules blancs.</p>
+<p class=AmmAnnexeTitre3>Autres effets indésirables</p>
+<p class=AmmCorpsTexte>D’autres effets indésirables ont été observés chez un très petit nombre de personnes, mais leur fréquence exacte est inconnue :</p>
+<p class=AmmListePuces1><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>réactions allergiques (voir ci-dessus),</p>
+<p class=AmmListePuces1><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>inflammation du gros intestin (voir ci-dessus),</p>
+<p class=AmmListePuces1><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>inflammation des membranes enveloppant le cerveau et la moelle épinière (<span class='italique'>méningite aseptique</span>),</p>
+<p class=AmmListePuces1><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>réactions cutanées graves :</p>
+<p class=AmmListePuces2 style='text-align:justify'><span style='font-family: "Courier New"'>o<span style='font:7.0pt "Times New Roman"'>   </span></span>éruption étendue avec cloques et desquamation de la peau, en particulier autour de la bouche, du nez, des yeux et dans la région génitale (<span class='italique'>syndrome de Stevens-Johnson</span>), et une forme plus grave, responsable d’un décollement cutané important (plus de 30 % de la surface corporelle :<span class='italique'> syndrome de Lyell</span>),</p>
+<p class=AmmListePuces2 style='text-align:justify'><span style='font-family: "Courier New"'>o<span style='font:7.0pt "Times New Roman"'>   </span></span>éruption cutanée rouge étendue avec petites cloques contenant du pus (<span class='italique'>dermatite bulleuse</span> <span class='italique'>ou exfoliatrice)</span>,</p>
+<p class=AmmListePuces2 style='text-align:justify'><span style='font-family: "Courier New"'>o<span style='font:7.0pt "Times New Roman"'>   </span></span>éruption squameuse rouge avec masses sous la peau et des cloques (<span class='italique'>pustulose exanthématique</span>),</p>
+<p class=AmmListePuces3 style='margin-left:36.0pt;text-align:justify; text-indent:-18.0pt'><span style='font-family:"Courier New"'>o<span style='font:7.0pt "Times New Roman"'>    </span></span>symptômes de type grippal accompagnés d’une éruption cutanée, de fièvre, de ganglions enflés, et de résultats anormaux des tests sanguins [dont une augmentation des globules blancs (<span class='italique'>éosinophilie</span>) et des enzymes hépatiques] [<span class='italique'>syndrome d’hypersensibilité médicamenteuse (DRESS)</span>], </p>
+<p class=AmmListePuces3 style='margin-left:36.0pt;text-align:justify; text-indent:-13.5pt'><span style='font-family:"Courier New"'>o<span style='font:7.0pt "Times New Roman"'>  </span></span>éruption cutanée rouge fréquemment observée sur les deux côtés des fesses, la partie supérieure de l’intérieur des cuisses, les aisselles, le cou (<span class='italique'>exanthème intertrigineux et de flexion symétrique lié au médicament (SDRIFE)</span>).</p>
+<p class=AmmCorpsTexteGras style='margin-top:6.0pt;margin-right:0cm;margin-bottom: 6.0pt;margin-left:17.85pt;text-indent:-17.85pt'><span style='font-family:Wingdings; color:black;font-weight:normal'>è<span style='font:7.0pt "Times New Roman"'>  </span></span>Si vous présentez l’un de ces symptômes, contactez un médecin immédiatement. </p>
+<p class=AmmListePuces1><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>éruption cutanée avec des cloques disposées en cercle et des croûtes au niveau du centre ou ayant un aspect de collier de perles (<span class='italique'>dermatose à IgA linéaire</span>),</p>
+<p class=AmmListePuces1><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>inflammation du foie (<span class='italique'>hépatite</span>),</p>
+<p class=AmmListePuces1><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>ictère, provoqué par une augmentation du taux sanguin de bilirubine (une substance produite dans le foie), qui donne une coloration jaune à la peau et au blanc des yeux,</p>
+<p class=AmmListePuces1><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>inflammation des reins,</p>
+<p class=AmmListePuces1><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>prolongation du temps de coagulation du sang,</p>
+<p class=AmmListePuces1><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>hyperactivité,</p>
+<p class=AmmListePuces1><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>convulsions (chez les personnes prenant des doses élevées d’AUGMENTIN ou ayant des problèmes rénaux),</p>
+<p class=AmmListePuces1><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>langue noire pileuse (<span class='italique'>glossophytie</span>),</p>
+<p class=AmmListePuces1 style='margin-top:0cm;margin-right:0cm;margin-bottom: 6.0pt;margin-left:17.85pt;text-indent:-17.85pt'><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>coloration des dents (chez les enfants), généralement éliminée au brossage.</p>
+<p class=AmmCorpsTexte><span class='souligne'>Effets indésirables pouvant être mis en évidence par les analyses de sang ou d’urine </span>:</p>
+<p class=AmmListePuces1><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>réduction importante du nombre de globules blancs,</p>
+<p class=AmmListePuces1><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>faible nombre de globules rouges (<span class='italique'>anémie hémolytique</span>),</p>
+<p class=AmmListePuces1><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>cristaux dans les urines <a name="_Hlk124350421">entraînant des lésions rénales aiguës</a>.</p>
+<p class=AmmAnnexeTitre3>Déclaration des effets secondaires</p>
+<p class=AmmCorpsTexte>Si vous ressentez un quelconque effet indésirable, parlez-en à votre médecin ou votre pharmacien. Ceci s’applique aussi à tout effet indésirable qui ne serait pas mentionné dans cette notice. Vous pouvez également déclarer les effets indésirables directement via le système national de déclaration : Agence nationale de sécurité du médicament et des produits de santé (ANSM) et réseau des Centres Régionaux de Pharmacovigilance - Site internet :<span style='color:red'> </span><a href="https://signalement.social-sante.gouv.fr">https://signalement.social-sante.gouv.fr</a><span class=MsoHyperlink>/</span>.</p>
+<p class=AmmCorpsTexte>En signalant les effets indésirables, vous contribuez à fournir davantage d’informations sur la sécurité du médicament.</p>
+<h2><a name="Ann3bConservation">5. COMMENT CONSERVER AUGMENTIN 1 g/125 mg, poudre pour suspension buvable en sachet-dose (rapport amoxicilline/acide clavulanique : 8/1) ?</a>&nbsp;&nbsp;<a href='#HautDePage'><img src='img/BackToTop.jpg' width='15px' height='15px' alt='Retour en haut de la page' title='Retour en haut de la page' /></a></h2>
+<p class=AmmCorpsTexte><a name="_Toc142279026"></a><a name="_Toc142279024">Tenir ce médicament hors de la vue et de la portée des enfants.</a></p>
+<p class=AmmCorpsTexte><span lang=FR-BE>N’utilisez pas ce médicament après la date de péremption indiquée sur l’emballage et le sachet, après EXP. La date de péremption fait référence au dernier jour de ce mois.</span></p>
+<p class=AmmCorpsTexte>A conserver à une température ne dépassant pas 25°C.</p>
+<p class=AmmCorpsTexte><span lang=FR-BE>Ne jetez aucun médicament au tout-à-l’égout ou avec les ordures ménagères. Demandez à votre pharmacien d’éliminer les médicaments que vous n’utilisez plus. Ces mesures contribueront à protéger l’environnement.</span></p>
+<h2><a name="Ann3bEmballage">6. CONTENU DE L’EMBALLAGE ET AUTRES INFORMATIONS</a>&nbsp;&nbsp;<a href='#HautDePage'><img src='img/BackToTop.jpg' width='15px' height='15px' alt='Retour en haut de la page' title='Retour en haut de la page' /></a></h2>
+<p class="AmmAnnexeTitre2"><a name="Ann3bContenu">Ce que contient AUGMENTIN 1 g/125 mg, poudre pour suspension buvable en sachet-dose (rapport amoxicilline/acide clavulanique : 8/1)</a>&nbsp;&nbsp;<a href='#HautDePage'><img src='img/BackToTop.jpg' width='15px' height='15px' alt='Retour en haut de la page' title='Retour en haut de la page' /></a></p>
+<p class=AmmListePuces1><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>Les substances actives sont :</p>
+<p class=AmmComposition style='margin-top:6.0pt;margin-right:0cm;margin-bottom: 6.0pt;margin-left:17.85pt'>Amoxicilline (sous forme d’amoxicilline trihydratée) ....................................................... 1000 mg</p>
+<p class=AmmComposition style='margin-top:6.0pt;margin-right:0cm;margin-bottom: 6.0pt;margin-left:17.85pt'>Acide clavulanique (sous forme de clavulanate de potassium) ......................................... 125 mg</p>
+<p class=AmmCorpsTexte align=center style='text-align:center'>Pour un sachet-dose.</p>
+<p class=AmmListePuces1><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>Les autres composants sont :</p>
+<p class=AmmCorpsTexte style='margin-top:6.0pt;margin-right:0cm;margin-bottom: 6.0pt;margin-left:17.85pt'>Crospovidone, dioxyde de silice, arôme pêche-citron-fraise (contenant de la maltodextrine <a name="_Hlk51658264">et des traces d’alcool benzylique</a>), aspartam (E951).</p>
+<p class=AmmCorpsTexte style='margin-top:6.0pt;margin-right:0cm;margin-bottom: 6.0pt;margin-left:17.85pt'>Voir la rubrique 2 pour plus d’informations importantes <a name="_Hlk51659521">sur l’aspartam (E951), </a><a name="_Hlk51658296">l’alcool benzylique, la maltodextrine et le sodium contenus </a>dans <span style='text-transform:uppercase'>Augmentin</span>.</p>
+<p class="AmmAnnexeTitre2"><a name="RcpEmballage">Qu’est-ce que AUGMENTIN 1 g/125 mg, poudre pour suspension buvable en sachet-dose (rapport amoxicilline/acide clavulanique : 8/1) et contenu de l’emballage extérieur</a>&nbsp;&nbsp;<a href='#HautDePage'><img src='img/BackToTop.jpg' width='15px' height='15px' alt='Retour en haut de la page' title='Retour en haut de la page' /></a></p>
+<p class=AmmCorpsTexte><a name="_Toc142279030">Ce médicament se présente sous forme de poudre pour suspension buvable en sachets-doses. </a></p>
+<p class=AmmCorpsTexte>Boites de 8 ou 12 sachets-doses.</p>
+<p class=AmmCorpsTexte>Toutes les présentations peuvent ne pas être commercialisées.</p>
+<p class="AmmAnnexeTitre2"><a name="Ann3bTituAMM">Titulaire de l’autorisation de mise sur le marché</a>&nbsp;&nbsp;<a href='#HautDePage'><img src='img/BackToTop.jpg' width='15px' height='15px' alt='Retour en haut de la page' title='Retour en haut de la page' /></a></p>
+<p class=AmmCorpsTexteGras style='margin-bottom:0cm;margin-bottom:.0001pt; page-break-after:avoid'><a name="_Toc142279031">LABORATOIRE GLAXOSMITHKLINE</a></p>
+<p class=AmmCorpsTexte style='margin-bottom:0cm;margin-bottom:.0001pt; page-break-after:avoid'>23 RUE FRANCOIS JACOB</p>
+<p class=AmmCorpsTexte>92500 RUEIL-MALMAISON</p>
+<p class="AmmAnnexeTitre2"><a name="Ann3bExploitAMM">Exploitant de l’autorisation de mise sur le marché</a>&nbsp;&nbsp;<a href='#HautDePage'><img src='img/BackToTop.jpg' width='15px' height='15px' alt='Retour en haut de la page' title='Retour en haut de la page' /></a></p>
+<p class=AmmCorpsTexteGras style='margin-bottom:0cm;margin-bottom:.0001pt'><a name="_Toc142279032">LABORATOIRE GLAXOSMITHKLINE</a></p>
+<p class=AmmCorpsTexte style='margin-bottom:0cm;margin-bottom:.0001pt'>23 RUE FRANCOIS JACOB</p>
+<p class=AmmCorpsTexte>92500 RUEIL-MALMAISON</p>
+<p class="AmmAnnexeTitre2"><a name="Ann3bFab">Fabricant</a>&nbsp;&nbsp;<a href='#HautDePage'><img src='img/BackToTop.jpg' width='15px' height='15px' alt='Retour en haut de la page' title='Retour en haut de la page' /></a></p>
+<p class=AmmCorpsTexteGras style='margin-bottom:0cm;margin-bottom:.0001pt'><a name="_Toc142279033">GLAXO WELLCOME PRODUCTION</a></p>
+<p class=AmmCorpsTexte style='margin-bottom:0cm;margin-bottom:.0001pt'>ZI DE LA PEYENNIERE</p>
+<p class=AmmCorpsTexte style='margin-bottom:0cm;margin-bottom:.0001pt'>53100 MAYENNE</p>
+<p class=AmmCorpsTexte>FRANCE</p>
+<p class="AmmAnnexeTitre2"><a name="Ann3bNomsMediEEE">Noms du médicament dans les Etats membres de l'Espace Economique Européen</a>&nbsp;&nbsp;<a href='#HautDePage'><img src='img/BackToTop.jpg' width='15px' height='15px' alt='Retour en haut de la page' title='Retour en haut de la page' /></a></p>
+<p class=AmmCorpsTexte>Sans objet.</p>
+<p class="AmmAnnexeTitre2"><a name="Ann3bContenu">La dernière date à laquelle cette notice a été révisée est :</a>&nbsp;&nbsp;<a href='#HautDePage'><img src='img/BackToTop.jpg' width='15px' height='15px' alt='Retour en haut de la page' title='Retour en haut de la page' /></a></p>
+<p class=AmmCorpsTexte>[à compléter ultérieurement par le titulaire]</p>
+<p class="AmmAnnexeTitre2"><a name="Ann3bAutres">Autres</a>&nbsp;&nbsp;<a href='#HautDePage'><img src='img/BackToTop.jpg' width='15px' height='15px' alt='Retour en haut de la page' title='Retour en haut de la page' /></a></p>
+<p class=AmmCorpsTexte>Des informations détaillées sur ce médicament sont disponibles sur le site Internet de l’ANSM (France).</p>
+<p class=AmmCorpsTexteGras>Conseil d’éducation sanitaire : </p>
+<p class=AmmCorpsTexte>Les antibiotiques sont efficaces pour combattre les infections dues à des bactéries. Ils ne sont pas efficaces sur les infections dues à des virus.</p>
+<p class=AmmCorpsTexte>Parfois, une infection due à une bactérie ne répond pas à un traitement antibiotique. L’une des raisons les plus fréquentes, est que la bactérie à l’origine de l’infection est résistante à l’antibiotique qui a été pris. Cela signifie que les bactéries peuvent survivre et même se multiplier malgré l’antibiotique.</p>
+<p class=AmmCorpsTexte>Les bactéries peuvent devenir résistantes aux antibiotiques pour plusieurs raisons. L’utilisation prudente des antibiotiques peut permettre de réduire le risque que les bactéries deviennent résistantes aux antibiotiques.</p>
+<p class=AmmCorpsTexte>Quand votre médecin vous prescrit un traitement antibiotique, cela a pour unique but de traiter votre maladie actuelle. Faire attention aux conseils suivants permettra de prévenir l’émergence de bactéries résistantes qui pourraient stopper l’activité de l’antibiotique.</p>
+<p class=AmmCorpsTexte>1. Il est très important de respecter la dose d’antibiotique, le moment de la prise et la durée du traitement. Lire les instructions sur l’étiquetage et si vous ne comprenez pas quelque chose demander à votre médecin ou à votre pharmacien de vous expliquer.</p>
+<p class=AmmCorpsTexte>2. Vous ne devez pas prendre un antibiotique à moins qu’il vous ait été spécifiquement prescrit et vous devez l’utiliser uniquement pour traiter l’infection pour laquelle il vous a été prescrit.</p>
+<p class=AmmCorpsTexte>3. Vous ne devez pas prendre d’antibiotiques qui ont été prescrits à d’autres personnes même si elles ont une infection apparemment semblable à la vôtre.</p>
+<p class=AmmCorpsTexte>4. Vous ne devez pas donner d’antibiotiques qui vous ont été prescrits, à d’autres personnes.</p>
+<p class=AmmCorpsTexte>5. S’il vous reste des antibiotiques à la fin de votre traitement prescrit par votre médecin, vous devez les rapporter à votre pharmacien pour destruction appropriée.</p>
+<p class=AmmCorpsTexte> </p>
+<p class=AmmCorpsTexte><span style='font-size:10.0pt;font-family:"Arial",sans-serif'> </span></p>
+<p class=AmmCorpsTexte><span style='font-size:10.0pt;font-family:"Arial",sans-serif'> </span></p>
+<p class=AmmCorpsTexte> </p>
+</div>					
+					<p class="alignright"><a href="#HautDePage">Retour en haut de la page <img src="img/BackToTop.jpg" width="20px" height="20px" alt="Retour en haut de la page" title="Retour en haut de la page" /></a></p>
+				</div>
+			</div>
+		</div>
+	</div>
+
+<table summary="" class="content" width="1000">
+	<tr>
+		<td height="100px">&nbsp;</td>
+	</tr>
+</table>
+<table summary="Pied de page" class="footer" width="1000">
+	<tr>
+		<td>
+			<table summary="" class="tablealigncenter" border="0">
+				<tr>
+					<td width="100px" class="aligncenter"><a id="lien_ansm" href="http://ansm.sante.fr/" target="_blank"><img src="img/Logo_ANSM.png" width="150" height="60" alt="ANSM - Agence nationale de sécurité du médicament et des produits de santé" title="L'ANSM met à disposition les principales informations issues de l'Autorisation de mise sur le marché, l'appartenance à un groupe générique, les liens vers les informations de sécurité qu'elle publie, l'identification des médicaments sous surveillance renforcée - nouvelle fenêtre" /></a></td>
+					          <td>&nbsp;</td>
+					<td width="100px" class="aligncenter"><img src="img/Logo_HAS.png" width="150" height="60" alt="HAS - Haute autorité de santé" title="La HAS met à disposition les informations relatives au service médical rendu, à l'amélioration du service médical rendu ainsi que les liens vers les avis de la Commission de la Transparence correspondants - nouvelle fenêtre" /></td>
+					<td>&nbsp;</td>
+					<td width="100px" class="aligncenter"><img src="img/Logo_CNAM.png" width="150" height="60" alt="UNCAM - Unin nationale des caisses d'assurance maladie" title="L'UNCAM met à disposition le taux de remboursement, le prix et les indications remboursables le cas échéant, ainsi que l'agrément aux collectivités - nouvelle fenêtre" /></td>
+          				</tr>
+			</table> 
+		</td>
+	</tr>
+</table>
+<table summary="" class="finpage" width="1000">
+	<tr>
+		<td height="100px" class="aligncenter">
+			<a class="navigation" href="plan.php">Plan du site</a>&nbsp;|&nbsp;
+			<a class="navigation" href="accessibilite.php">Accessibilité</a>&nbsp;|&nbsp;
+			<a class="navigation" href="contact.php">Contact</a>&nbsp;|&nbsp;
+			<a class="navigation" href="telechargement.php">Téléchargement</a>&nbsp;|&nbsp;
+			<a class="navigation" href="DeclarationConfidentialite.php">Declaration de confidentialité</a>&nbsp;|&nbsp;
+			<a class="navigation" href="http://www.service-public.fr/" title="Service Public - Nouvelle fenêtre" target="_blank">Service-Public.fr</a>&nbsp;|&nbsp;
+			<a class="navigation" href="http://www.legifrance.gouv.fr/" title="Legifrance - Nouvelle fenêtre" target="_blank">Legifrance</a>&nbsp;|&nbsp;
+			<a class="navigation" href="http://www.gouvernement.fr/" title="Gouvernement - Nouvelle fenêtre" target="_blank" >Gouvernement.fr</a>
+		</td>
+	</tr>
+</table>
+
+
+
+<!-- Matomo -->
+<script type="text/javascript">
+  var _paq = window._paq = window._paq || [];
+  /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
+  _paq.push(['trackPageView']);
+  _paq.push(['enableLinkTracking']);
+  (function() {
+    var u="https://stats.integra.fr/";
+    _paq.push(['setTrackerUrl', u+'matomo.php']);
+    _paq.push(['setSiteId', '79']);
+    var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+    g.type='text/javascript'; g.async=true; g.src=u+'matomo.js'; s.parentNode.insertBefore(g,s);
+  })();
+</script>
+<!-- End Matomo Code -->
+
+
+
+</body>
+</html>

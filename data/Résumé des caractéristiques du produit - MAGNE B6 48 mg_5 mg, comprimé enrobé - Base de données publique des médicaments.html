@@ -1,0 +1,450 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="fr" lang="fr">
+<head>
+	<title>Résumé des caractéristiques du produit - MAGNE B6 48 mg/5 mg, comprimé enrobé  - Base de données publique des médicaments</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=windows-1252"/>
+	<meta name="robots" content="index, follow"/>
+	<meta name="Description" content="Base de données publique des médicaments"/>
+	<meta name="Keywords" content="base, données, publique, médicaments, Résumé des caractéristiques du produit, MAGNE B6 48 mg/5 mg, comprimé enrobé "/>
+	<meta name="Subject" content="medicament"/>
+	<link href='https://fonts.googleapis.com/css?family=Noticia+Text' rel='stylesheet' type='text/css' />
+	<link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro' rel='stylesheet' type='text/css' />
+	<link href="style/style_bdm.css?v=2.2.3" type="text/css" rel="stylesheet"/>
+	<link href="style/style_RCP_Notice.css" type="text/css" rel="stylesheet"/>
+  <link rel="alternate" href="http://m.base-donnees-publique.medicaments.gouv.fr/#!info-68617360">
+    <script type="text/javascript" src="scripts/autocomplete.js?v=2.2.3"></script>
+	<script type="text/javascript" src="scripts/jquery.js"></script>
+    <script type="text/javascript" src="scripts/jquery-ui.min.js"></script>
+	<script type="text/javascript" src="scripts/common.js"></script>
+	<link rel="icon" type="image/x-icon" href="favicon.ico" />
+</head>
+
+<body>
+
+<a name="HautDePage" />
+<div id="bandeauhaut">
+	<a id="lien_ministere" class="lienmenu" href="http://www.sante.gouv.fr" target="_blank" title="Site du ministère des affaires sociales et de la santé - nouvelle fenêtre"><img id="logoministere" src="img/Logo_Ministere.jpg"  alt="Logo du ministère des affaires sociales et de la santé"/></a>
+	<h1 class="texteTitreSite">
+		Base <span class="texteBleu">de</span> données <span class="texteBleu">publique</span><br/><span class="texteBleu">des</span> médicaments
+	</h1>
+		<a id="lien_medicament_gouv" class="lienEspaceMedic" target="_blank" href="http://medicaments.gouv.fr" title="Visiter [medicaments.gouv.fr] - nouvelle fenêtre">Visiter [medicaments.gouv.fr] <img src="/img/icone_lien.png" alt="Visiter [medicaments.gouv.fr]"  title="Visiter [medicaments.gouv.fr] - nouvelle fenetre" /></a>
+</div>
+<!--div align="center">
+	<a id="banniere" target="_blank" href="http://social-sante.gouv.fr/soins-et-maladies/medicaments/medicaments-generiques/" title="Visiter [medicaments.gouv.fr] - M?dicaments g?n?riques">
+		<img width="1000"   src ="/img/carrouselbannieres.gif" alt="Visiter [medicaments.gouv.fr] - M?dicaments g?n?riques" title="Visiter [medicaments.gouv.fr] - M?dicaments g?n?riques" />
+	</a>
+</div-->
+
+<div id="menuhaut">
+	<span id="menuhaut_gauche">
+		<a id="lien_accueil" class="navigation" href="index.php">Accueil</a>&nbsp;|&nbsp;
+		<a id="lien_glossaire" class="navigation" href="glossaire.php">Glossaire</a>&nbsp;|&nbsp;
+		<a id="lien_aide" class="navigation" href="aide.php">Aide</a>		
+	</span>
+	
+		
+	<span id="menuhaut_dernmaj">
+        <br>Dernière <span title=" 2.4.4
+">mise à jour</span> le 03/03/2025	</span>
+</div>
+
+	<script language="javascript" type="text/javascript">
+		//<![CDATA[ 
+		function Aff(men) {
+			document.write("<ul class=\"menuDoc\">");
+			for(var no_rub=0;no_rub<men.num_rub;no_rub++) {
+				document.write("<li><a class='leftMenu' href='"+menu[no_rub].page+"'>");
+				document.write(men[no_rub].txt);
+				document.write("</a></li>");
+				if (men[no_rub].nb_lien != 0){
+					document.write("<ul class=\"sousMenuDoc\">");
+				}
+				for(var no_lien=0;no_lien<men[no_rub].nb_lien;no_lien++) {
+					document.write("<li><a class='leftMenu' href='"+men[no_rub][no_lien].page+"'>");
+					document.write(men[no_rub][no_lien].txt);
+					document.write("</a></li>");
+				}
+				if (men[no_rub].nb_lien != 0){
+					document.write("</ul>");
+				}
+			}
+			document.write("</ul>");
+		}
+		
+		function CreerMenu(police,imgRub,imgOption,imgOptionFin,hauteur) {
+			this.num_rub=0;
+			this.police=police;
+			this.imgRub=imgRub;
+			this.imgOpt=imgOption;
+			this.imgOptFin=imgOptionFin;
+			this.hauteur=hauteur;
+			this.AddRub=AddRub;
+			this.AddLien=AddLien;
+		}
+		
+		function AddRub(txt,aff,page) {
+			var rub = new Object;
+				rub.txt=txt;
+				rub.aff=aff;
+				rub.page=page;
+				rub.nb_lien=0;
+			this[this.num_rub]=rub;
+			this.num_rub++;
+		}
+
+		function AddLien(txt,page) {
+			var no_rub = this.num_rub-1;
+			var no_lien= this[no_rub].nb_lien;
+			var lien = new Object;
+				lien.txt=txt;
+				lien.page=page;
+			this[no_rub][no_lien]=lien;
+			this[no_rub].nb_lien++;
+		}
+		var menu=new CreerMenu("arial","img/dyn04.gif","img/dyn22.gif","img/dyn55.gif",18);
+		//]]> 
+		menu.AddRub("Dénomination","O","#RcpDenomination");
+			menu.AddRub("Composition","O","#RcpCompoQualiQuanti");
+			menu.AddRub("Forme pharma.","O","#RcpFormePharm");
+			menu.AddRub("Clinique","O","#RcpDonneesCliniques");
+			menu.AddLien("Indic. thérapeutiques","#RcpIndicTherap");
+				menu.AddLien("Posologie","#RcpPosoAdmin");
+				menu.AddLien("Contre-indications","#RcpContreindications");
+				menu.AddLien("Mise en garde","#RcpMisesEnGarde");
+				menu.AddLien("Interactions","#RcpInteractionsMed");
+				menu.AddLien("Grossesse, allait.","#RcpFertGrossAllait");
+				menu.AddLien("Conduite véhicules","#RcpConduite");
+				menu.AddLien("Effets indésirables","#RcpEffetsIndesirables");
+				menu.AddLien("Surdosage","#RcpSurdosage");
+				menu.AddRub("Pharmacologie","O","#RcpPropPharmacologiques");
+			menu.AddLien("Pharmacodynamie","#RcpPropPharmacodynamiques");
+				menu.AddLien("Pharmacocinétique","#RcpPropPharmacocinetiques");
+				menu.AddLien("Sécurité préclinique","#RcpSecuritePreclinique");
+				menu.AddRub("Pharmaceutique","O","#RcpDonneesPharmaceutiques");
+			menu.AddLien("Liste excipients","#RcpListeExcipients");
+				menu.AddLien("Incompatibilités","#RcpIncompatibilites");
+				menu.AddLien("Durée conservation","#RcpDureeConservation");
+				menu.AddLien("Conservation","#RcpPrecConservation");
+				menu.AddLien("Emballage","#RcpEmballage");
+				menu.AddLien("Utilisation/manipulation","#RcpPrecEmpl");
+				menu.AddRub("Titulaire AMM","O","#RcpTitulaireAmm");
+			menu.AddRub("Présentations","O","#RcpNumAutor");
+			menu.AddRub("Autorisation, renouv.","O","#RcpPremiereAutorisation");
+			menu.AddRub("Date de révision","O","#RcpDateRevision");
+			menu.AddRub("Dosimétrie","O","#RcpDosimetrie");
+			menu.AddRub("Préparation radiopharma.","O","#RcpInstPrepRadioph");
+				</script>
+
+	<div id="container">
+		<div id="leftnav">
+			<div id="cadreMenuGauche">
+				<h2 class="sommaireMenu">Sommaire</h2>
+				<div id="menuGauche">
+					<script language="JavaScript" type="text/javascript">Aff(menu);</script>
+				</div>
+			</div>
+		</div>
+		<div id="contentPrincipal">
+			<div id="boutonsliens">
+				<a id='lien_fiche_info' href='extrait.php?specid=68617360' ><img id="ongletficheinfo" alt="Onglet fiche information" src="img/onglet_fiche_info_vert.png" /></a><a id='lien_rcp' href='affichageDoc.php?specid=68617360&amp;typedoc=R'><img class="onglet" alt="Onglet résumé des caractéristiques du produit" src="img/onglet_rcp_gris.png" /></a><a id='lien_notice' href='affichageDoc.php?specid=68617360&amp;typedoc=N'><img class="onglet" alt="Onglet notice patient" src="img/onglet_notice_vert.png" /></a>			</div>
+			<div class="titredeno">
+				<table summary="" border="0" cellspacing="0">
+					<tr><td colspan="3" height="10px"></td></tr>
+					<tr>
+						<td width="15px">&nbsp;</td>
+						<td width="685px"><h1 class="textedeno">MAGNE B6 48 mg/5 mg, comprimé enrobé  - Résumé des caractéristiques du produit</h1></td>
+						<td width="43px" class="tdcenter"><a href="Javascript:void(null)" onclick="print();"><img src="img/imprimante.png" height="20px" width="20px" alt="Imprimer le document" title="Imprimer le document" border="0" /></a></td>
+					</tr>
+					<tr><td colspan="3" height="10px"></td></tr>
+				</table>
+			</div>
+			
+			<div id="contentDocument">
+				<div id="textDocument">
+					<p class="DateNotif">ANSM - Mis à jour le : 01/07/2023</p>
+<p class="AmmAnnexeTitre1"><a name="RcpDenomination">1. DENOMINATION DU MEDICAMENT</a>&nbsp;&nbsp;<a href='#HautDePage'><img src='img/BackToTop.jpg' width='15px' height='15px' alt='Retour en haut de la page' title='Retour en haut de la page' /></a></p>
+<p class=AmmCorpsTexteGras>MAGNE B6 48 mg/5 mg, comprimé enrobé</p>
+<p class="AmmAnnexeTitre1"><a name="RcpCompoQualiQuanti">2. COMPOSITION QUALITATIVE ET QUANTITATIVE</a>&nbsp;&nbsp;<a href='#HautDePage'><img src='img/BackToTop.jpg' width='15px' height='15px' alt='Retour en haut de la page' title='Retour en haut de la page' /></a></p>
+<p class=AmmComposition>Lactate de magnésium dihydraté..................................................................................... 470,000 mg</p>
+<p class=AmmComposition>Chlorhydrate de pyridoxine................................................................................................. 5,000 mg</p>
+<p class=AmmCorpsTexte align=center style='text-align:center'>Pour un comprimé enrobé.</p>
+<p class=AmmCorpsTexte align=left style='text-align:left'>La teneur totale en magnésium-élément est de 48 mg (1,97 mmol) par comprimé.</p>
+<p class=AmmCorpsTexte>Excipient à effet notoire : saccharose (<span style='color:black'>330,569 mg par comprimé</span>).</p>
+<p class=AmmCorpsTexte>Pour la liste complète des excipients, voir rubrique 6.1.</p>
+<p class="AmmAnnexeTitre1"><a name="RcpFormePharm">3. FORME PHARMACEUTIQUE</a>&nbsp;&nbsp;<a href='#HautDePage'><img src='img/BackToTop.jpg' width='15px' height='15px' alt='Retour en haut de la page' title='Retour en haut de la page' /></a></p>
+<p class=AmmCorpsTexte><a name="_Toc142278915">Comprimé enrobé.</a></p>
+<p class="AmmAnnexeTitre1"><a name="RcpDonneesCliniques">4. DONNEES CLINIQUES</a>&nbsp;&nbsp;<a href='#HautDePage'><img src='img/BackToTop.jpg' width='15px' height='15px' alt='Retour en haut de la page' title='Retour en haut de la page' /></a></p>
+<p class="AmmAnnexeTitre2"><a name="RcpIndicTherap">4.1. Indications thérapeutiques</a>&nbsp;&nbsp;<a href='#HautDePage'><img src='img/BackToTop.jpg' width='15px' height='15px' alt='Retour en haut de la page' title='Retour en haut de la page' /></a></p>
+<p class=AmmCorpsTexte><a name="_Toc142278917">Carences magnésiennes avérées, isolées ou associées.</a></p>
+<p class="AmmAnnexeTitre2"><a name="RcpPosoAdmin">4.2. Posologie et mode d'administration</a>&nbsp;&nbsp;<a href='#HautDePage'><img src='img/BackToTop.jpg' width='15px' height='15px' alt='Retour en haut de la page' title='Retour en haut de la page' /></a></p>
+<p class=AmmAnnexeTitre3><a name="_Toc142278918">Posologie</a></p>
+<p class=AmmCorpsTexte>RESERVE A L'ADULTE ET A L'ENFANT DE PLUS DE 6 ANS.</p>
+<p class=AmmAnnexeTitre4>Chez l’adulte : </p>
+<p class=AmmCorpsTexte>6 à 8 comprimés par jour à répartir en 2 ou 3 prises pendant les repas.</p>
+<p class=AmmAnnexeTitre4>Population pédiatrique :</p>
+<p class=AmmCorpsTexte>Chez l’enfant : 10 à 30 mg/kg/jour (soit 0,4 à 1,2 mmol/kg/j), soit chez l'enfant de plus de 6 ans (environ 20 kg) 4 à 6 comprimés par jour à répartir en 2 ou 3 prises pendant les repas.</p>
+<p class=AmmCorpsTexte>Le traitement sera interrompu dès normalisation de la magnésémie.</p>
+<p class=AmmAnnexeTitre3>Mode d’administration</p>
+<p class=AmmCorpsTexte>Voie orale.</p>
+<p class=AmmCorpsTexte>Les comprimés sont à avaler tels quels avec un grand verre d'eau.</p>
+<p class="AmmAnnexeTitre2"><a name="RcpContreindications">4.3. Contre-indications</a>&nbsp;&nbsp;<a href='#HautDePage'><img src='img/BackToTop.jpg' width='15px' height='15px' alt='Retour en haut de la page' title='Retour en haut de la page' /></a></p>
+<p class=AmmCorpsTexte><a name="_Toc142278919">Ce médicament est contre-indiqué dans les situations suivantes :</a></p>
+<p class=AmmListePuces1><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>hypersensibilité aux substances actives ou à l'un des excipients mentionnés à la rubrique 6.1,</p>
+<p class=AmmListePuces1 style='margin-top:0cm;margin-right:0cm;margin-bottom: 6.0pt;margin-left:17.85pt;text-indent:-17.85pt'><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>en cas d'insuffisance rénale sévère (clairance de la créatinine inférieure à 30 ml/min.),</p>
+<p class=AmmListePuces1><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>utilisation concomitante de levodopa </p>
+<p class="AmmAnnexeTitre2"><a name="RcpMisesEnGarde">4.4. Mises en garde spéciales et précautions d'emploi</a>&nbsp;&nbsp;<a href='#HautDePage'><img src='img/BackToTop.jpg' width='15px' height='15px' alt='Retour en haut de la page' title='Retour en haut de la page' /></a></p>
+<p class=AmmAnnexeTitre3><a name="_Toc142278920">Mises en garde spéciales</a></p>
+<p class=AmmCorpsTexte>En cas de carence sévère, le traitement doit être commencé par la voie veineuse. Il en est de même en cas de malabsorption.</p>
+<p class=AmmCorpsTexte>En cas de carence calcique associée, il est recommandé de procéder d'abord dans la plupart des cas, à la réplétion magnésienne avant la calcithérapie.</p>
+<p class=AmmCorpsTexte>Les patients présentant une intolérance au fructose, un syndrome de malabsorption du glucose et du galactose ou un déficit en sucrase/isomaltase (maladies héréditaires rares) ne doivent pas prendre ce médicament.</p>
+<p class=AmmCorpsTexte>Liés à la pyridoxine :</p>
+<p class=AmmCorpsTexte>Une neuropathie sensorielle peut survenir lors de l'utilisation prolongée de pyridoxine et/ou lors de la consommation chronique de fortes doses de pyridoxine pendant une longue période. </p>
+<p class=AmmAnnexeTitre3>Précautions d'emploi</p>
+<p class=AmmCorpsTexte>CE MEDICAMENT EST RESERVE A L'ADULTE ET A L'ENFANT DE PLUS DE 6 ANS.</p>
+<p class=AmmCorpsTexte>Il existe des formes pharmaceutiques adaptées à l'enfant de moins de 6 ans.</p>
+<p class=AmmCorpsTexte>En cas d'insuffisance rénale modérée, des précautions sont à prendre, afin d'éviter le risque relatif à une hypermagnésémie.</p>
+<p class="AmmAnnexeTitre2"><a name="RcpInteractionsMed">4.5. Interactions avec d'autres médicaments et autres formes d'interactions</a>&nbsp;&nbsp;<a href='#HautDePage'><img src='img/BackToTop.jpg' width='15px' height='15px' alt='Retour en haut de la page' title='Retour en haut de la page' /></a></p>
+<p class=AmmCorpsTexte><a name="_Toc142278921"><span class='gras'>+ Levodopa </span></a></p>
+<p class=AmmAnnexeTitre3><span style='font-weight:normal;text-decoration:none'>Ce produit est contre-indiqué chez les patients utilisant la levodopa seule (par exemple, sans inhibiteurs de la dopa-decarboxylase (DDC) périphérique) car la pyridoxine réduit ou inhibe l’activité de la levodopa. Voir rubrique 4.3.</span></p>
+<p class=AmmCorpsTexteGras>+ Sels de phosphate ou de calcium</p>
+<p class=AmmCorpsTexte>Ces produits inhibent l'absorption intestinale du magnésium.</p>
+<p class=AmmCorpsTexteGras><span style='color:#222222'>+ Tetracyclines </span></p>
+<p class=AmmCorpsTexteGras><span style='color:#222222;font-weight:normal'>La prise de</span><span style='font-weight:normal'> MAGNE B6 48 mg/5 mg, comprimé enrobé, devrait être espacée d’au moins 3 heures après la prise de tétracycline par voie orale. </span></p>
+<p class=AmmCorpsTexteGras>+ Quinolones </p>
+<p class=AmmCorpsTexte>Les quinolones doivent être administrées au moins deux heures avant ou six heures après l’administration des produits contenant du magnésium afin d’éviter toutes interférences dans l’absorption du magnésium.</p>
+<p class="AmmAnnexeTitre2"><a name="RcpFertGrossAllait">4.6. Fertilité, grossesse et allaitement</a>&nbsp;&nbsp;<a href='#HautDePage'><img src='img/BackToTop.jpg' width='15px' height='15px' alt='Retour en haut de la page' title='Retour en haut de la page' /></a></p>
+<p class=AmmAnnexeTitre3>Grossesse</p>
+<p class=AmmCorpsTexte>L'utilisation de magnésium peut être envisagée au cours de la grossesse si besoin, quel qu'en soit le terme. En effet, bien que les données animales soient insuffisantes, les données cliniques limitées sont rassurantes.</p>
+<p class=AmmAnnexeTitre3><a name="_Toc142278927">Allaitement</a></p>
+<p class=AmmCorpsTexte>Le magnésium ou la vitamine B6 pris individuellement est compatible avec l'allaitement.</p>
+<p class=AmmCorpsTexte>Peu de données étant disponibles sur la dose maximum journalière recommandée de vitamine B6, il est recommandé de ne pas dépasser la dose de 20 mg/jour de vitamine B6 chez les femmes allaitant.</p>
+<p class="AmmAnnexeTitre2"><a name="RcpConduite">4.7. Effets sur l'aptitude à conduire des véhicules et à utiliser des machines</a>&nbsp;&nbsp;<a href='#HautDePage'><img src='img/BackToTop.jpg' width='15px' height='15px' alt='Retour en haut de la page' title='Retour en haut de la page' /></a></p>
+<p class=AmmCorpsTexte><a name="_Toc142278929"><span style='color:#222222'>MAGNE B6 48 mg/5 mg, comprimé pelliculé n'a aucun effet ou un effet négligeable sur l’aptitude à conduire des véhicules et à utiliser des machines.</span></a></p>
+<p class="AmmAnnexeTitre2"><a name="RcpEffetsIndesirables">4.8. Effets indésirables</a>&nbsp;&nbsp;<a href='#HautDePage'><img src='img/BackToTop.jpg' width='15px' height='15px' alt='Retour en haut de la page' title='Retour en haut de la page' /></a></p>
+<p class=AmmCorpsTexte>Les effets indésirables pouvant survenir avec MAGNE B6 48 mg/5 mg, comprimé enrobé sont listés ci-dessous par classes de systèmes d’organes et par fréquence selon la convention suivante : Très fréquent <span lang=FI>(</span><span style='font-family:"Arial",sans-serif !msorm'><span style='font-family:Symbol'>³</span></span><span lang=FI>1/10)</span> ; Fréquent (<span style='font-family:"Arial",sans-serif !msorm'><span style='font-family:Symbol'>³</span></span>1/100, &lt;1/10) ; Peu fréquent <span lang=FI>(</span><span style='font-family:"Arial",sans-serif !msorm'><span style='font-family:Symbol'>³</span></span><span lang=FI>1/1 000, &lt;1/100)</span> ; Rare (<span style='font-family:"Arial",sans-serif !msorm'><span style='font-family:Symbol'>³</span></span>1/10 000, &lt;1/1 000) ; Très rare (&lt;1/10 000) ; Fréquence indéterminée (ne peut être estimée sur la base des données disponibles).</p>
+<table class=AmmCorpsTexteTable border=1 cellspacing=0 cellpadding=0
+style='border-collapse:collapse;border:none;border-collapse:collapse !msorm;
+border:none !msorm'>
+<tr>
+<td width=243 valign=top style='width:182.6pt;border:solid windowtext 1.0pt;
+padding:0cm 5.4pt 0cm 5.4pt;border:solid windowtext 1.0pt !msorm;padding:
+0cm 5.4pt 0cm 5.4pt !msorm'>
+<p class=AmmCorpsTexte align=left style='margin-bottom:6.0pt;text-align:left; text-autospace:none'><span class='gras'><span style='font-size:10.0pt;font-family:"Arial",sans-serif'>Classe de systèmes d’organes</span></span></p>
+</td>
+<td width=246 valign=top style='width:184.3pt;border:solid windowtext 1.0pt;
+border-left:none;padding:0cm 5.4pt 0cm 5.4pt;border:solid windowtext 1.0pt !msorm;
+border-left:none !msorm;padding:0cm 5.4pt 0cm 5.4pt !msorm'>
+<p class=AmmCorpsTexte align=left style='margin-bottom:6.0pt;text-align:left; text-autospace:none'><span class='gras'><span style='font-size:10.0pt;font-family:"Arial",sans-serif'>Effets indésirables</span></span></p>
+</td>
+<td width=130 valign=top style='width:97.4pt;border:solid windowtext 1.0pt;
+border-left:none;padding:0cm 5.4pt 0cm 5.4pt;border:solid windowtext 1.0pt !msorm;
+border-left:none !msorm;padding:0cm 5.4pt 0cm 5.4pt !msorm'>
+<p class=AmmCorpsTexte align=left style='margin-bottom:6.0pt;text-align:left; text-autospace:none'><span class='gras'><span style='font-size:10.0pt;font-family:"Arial",sans-serif'>Fréquence</span></span></p>
+</td>
+</tr>
+<tr>
+<td width=243 valign=top style='width:182.6pt;border:solid windowtext 1.0pt;
+border-top:none;padding:0cm 5.4pt 0cm 5.4pt;border:solid windowtext 1.0pt !msorm;
+border-top:none !msorm;padding:0cm 5.4pt 0cm 5.4pt !msorm'>
+<p class=AmmCorpsTexte style='margin-bottom:6.0pt;text-autospace:none'><span class='gras'><span style='font-size:10.0pt;font-family:"Arial",sans-serif'>Affections du système immunitaire</span></span></p>
+</td>
+<td width=246 valign=top style='width:184.3pt;border-top:none;border-left:
+none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+padding:0cm 5.4pt 0cm 5.4pt;border-top:none !msorm;border-left:none !msorm;
+border-bottom:solid windowtext 1.0pt !msorm;border-right:solid windowtext 1.0pt !msorm;
+padding:0cm 5.4pt 0cm 5.4pt !msorm'>
+<p class=AmmCorpsTexte style='margin-bottom:6.0pt;text-autospace:none'><span style='font-size:10.0pt;font-family:"Arial",sans-serif'>Hypersensibilité</span></p>
+</td>
+<td width=130 valign=top style='width:97.4pt;border-top:none;border-left:
+none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+padding:0cm 5.4pt 0cm 5.4pt;border-top:none !msorm;border-left:none !msorm;
+border-bottom:solid windowtext 1.0pt !msorm;border-right:solid windowtext 1.0pt !msorm;
+padding:0cm 5.4pt 0cm 5.4pt !msorm'>
+<p class=AmmCorpsTexte style='margin-bottom:6.0pt;text-autospace:none'><span style='font-size:10.0pt;font-family:"Arial",sans-serif'>Indéterminée</span></p>
+</td>
+</tr>
+<tr>
+<td width=243 valign=top style='width:182.6pt;border:solid windowtext 1.0pt;
+border-top:none;padding:0cm 5.4pt 0cm 5.4pt;border:solid windowtext 1.0pt !msorm;
+border-top:none !msorm;padding:0cm 5.4pt 0cm 5.4pt !msorm'>
+<p class=AmmCorpsTexte style='margin-bottom:6.0pt;text-autospace:none'><span class='gras'><span style='font-size:10.0pt;font-family:"Arial",sans-serif'>Affections gastro-intestinales</span></span></p>
+</td>
+<td width=246 valign=top style='width:184.3pt;border-top:none;border-left:
+none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+padding:0cm 5.4pt 0cm 5.4pt;border-top:none !msorm;border-left:none !msorm;
+border-bottom:solid windowtext 1.0pt !msorm;border-right:solid windowtext 1.0pt !msorm;
+padding:0cm 5.4pt 0cm 5.4pt !msorm'>
+<p class=AmmCorpsTexte style='margin-bottom:6.0pt;text-autospace:none'><span style='font-size:10.0pt;font-family:"Arial",sans-serif'>Diarrhée, douleur abdominale</span></p>
+</td>
+<td width=130 valign=top style='width:97.4pt;border-top:none;border-left:
+none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+padding:0cm 5.4pt 0cm 5.4pt;border-top:none !msorm;border-left:none !msorm;
+border-bottom:solid windowtext 1.0pt !msorm;border-right:solid windowtext 1.0pt !msorm;
+padding:0cm 5.4pt 0cm 5.4pt !msorm'>
+<p class=AmmCorpsTexte style='margin-bottom:6.0pt;text-autospace:none'><span style='font-size:10.0pt;font-family:"Arial",sans-serif'>Indéterminée</span></p>
+</td>
+</tr>
+<tr>
+<td width=243 valign=top style='width:182.6pt;border:solid windowtext 1.0pt;
+border-top:none;padding:0cm 5.4pt 0cm 5.4pt;border:solid windowtext 1.0pt !msorm;
+border-top:none !msorm;padding:0cm 5.4pt 0cm 5.4pt !msorm'>
+<p class=AmmCorpsTexte style='margin-bottom:6.0pt;text-autospace:none'><span class='gras'><span style='font-size:10.0pt;font-family:"Arial",sans-serif'>Affections de la peau et du tissu sous-cutané</span></span></p>
+</td>
+<td width=246 valign=top style='width:184.3pt;border-top:none;border-left:
+none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+padding:0cm 5.4pt 0cm 5.4pt;border-top:none !msorm;border-left:none !msorm;
+border-bottom:solid windowtext 1.0pt !msorm;border-right:solid windowtext 1.0pt !msorm;
+padding:0cm 5.4pt 0cm 5.4pt !msorm'>
+<p class=AmmCorpsTexte style='margin-bottom:6.0pt;text-autospace:none'><span style='font-size:10.0pt;font-family:"Arial",sans-serif'>Réactions cutanées comprenant notamment urticaire, prurit, eczéma, érythème</span></p>
+</td>
+<td width=130 valign=top style='width:97.4pt;border-top:none;border-left:
+none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+padding:0cm 5.4pt 0cm 5.4pt;border-top:none !msorm;border-left:none !msorm;
+border-bottom:solid windowtext 1.0pt !msorm;border-right:solid windowtext 1.0pt !msorm;
+padding:0cm 5.4pt 0cm 5.4pt !msorm'>
+<p class=AmmCorpsTexte style='margin-bottom:6.0pt;text-autospace:none'><span style='font-size:10.0pt;font-family:"Arial",sans-serif'>Indéterminée</span></p>
+</td>
+</tr>
+</table>
+<p class=AmmAnnexeTitre3>Déclaration des effets indésirables suspectés </p>
+<p class=AmmCorpsTexte>La déclaration des effets indésirables suspectés après autorisation du médicament est importante. Elle permet une surveillance continue du rapport bénéfice/risque du médicament. Les professionnels de santé déclarent tout effet indésirable suspecté via le système national de déclaration : Agence nationale de sécurité du médicament et des produits de santé (ANSM) et réseau des Centres Régionaux de Pharmacovigilance - Site internet : <a href="file:///C:\Users\E0426489\Downloads\www.signalement-sante.gouv.fr">www.signalement-sante.gouv.fr</a></p>
+<p class="AmmAnnexeTitre2"><a name="RcpSurdosage">4.9. Surdosage</a>&nbsp;&nbsp;<a href='#HautDePage'><img src='img/BackToTop.jpg' width='15px' height='15px' alt='Retour en haut de la page' title='Retour en haut de la page' /></a></p>
+<p class=AmmAnnexeTitre3>Lié au magnésium</p>
+<p class=AmmCorpsTexte>Le surdosage de magnésium par voie orale n'entraîne pas, en général, de réactions toxiques en cas de fonctionnement normal du rein. L'intoxication au magnésium peut, toutefois, se développer en cas d'insuffisance rénale.</p>
+<p class=AmmCorpsTexte>Les effets toxiques dépendent du taux sanguin en magnésium et les signes sont les suivants :</p>
+<p class=AmmListePuces1><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>diminution de la tension artérielle,</p>
+<p class=AmmListePuces1><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>nausées, vomissements,</p>
+<p class=AmmListePuces1><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>dépression du système nerveux central, diminution des réflexes,</p>
+<p class=AmmListePuces1><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>anomalies de l'ECG,</p>
+<p class=AmmListePuces1><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>début de dépression respiratoire, coma, arrêt cardiaque et paralysie respiratoire,</p>
+<p class=AmmListePuces1 style='margin-top:0cm;margin-right:0cm;margin-bottom: 6.0pt;margin-left:17.85pt;text-indent:-17.85pt'><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>syndrome anurique.</p>
+<p class=AmmCorpsTexte>Traitement : réhydratation, diurèse forcée. En cas d'insuffisance rénale, une hémodialyse ou une dialyse péritonéale est nécessaire.</p>
+<p class=AmmAnnexeTitre3>Lié à la pyridoxine</p>
+<p class=AmmCorpsTexte>Une neuropathie axonale sensorielle est le principal effet pouvant survenir lors de l’utilisation prolongée de pyridoxine et/ou la consommation chronique de fortes doses de pyridoxine (plusieurs mois ou années). </p>
+<p class=AmmAnnexeTitre4>Signes et symptômes</p>
+<p class=AmmCorpsTexte>Ont notamment été rapportés : paresthésie, dysesthésie, hypoesthésie, déficit sensoriel, extrémités douloureuses, contractions musculaires involontaires, sensation de brûlure, troubles de l’équilibre, troubles de la démarche, tremblements des mains et des pieds, et ataxie sensorielle progressive (difficultés dans la coordination des mouvements).</p>
+<p class=AmmAnnexeTitre4>Prise en charge</p>
+<p class=AmmCorpsTexte>Les symptômes neurologiques sont progressivement réversibles à l’arrêt du traitement.</p>
+<p class="AmmAnnexeTitre1"><a name="RcpPropPharmacologiques">5. PROPRIETES PHARMACOLOGIQUES</a>&nbsp;&nbsp;<a href='#HautDePage'><img src='img/BackToTop.jpg' width='15px' height='15px' alt='Retour en haut de la page' title='Retour en haut de la page' /></a></p>
+<p class="AmmAnnexeTitre2"><a name="RcpPropPharmacodynamiques">5.1. Propriétés pharmacodynamiques</a>&nbsp;&nbsp;<a href='#HautDePage'><img src='img/BackToTop.jpg' width='15px' height='15px' alt='Retour en haut de la page' title='Retour en haut de la page' /></a></p>
+<p class=AmmCorpsTexteGras><a name="_Toc142278933">Classe pharmacothérapeutique : Suppléments minéraux, code ATC : A12. </a></p>
+<p class=AmmAnnexeTitre3>Au plan physiologique</p>
+<p class=AmmCorpsTexte>Le magnésium est un cation principalement intracellulaire. Il diminue l'excitabilité neuronale et la transmission neuromusculaire, et intervient dans de nombreuses réactions enzymatiques.</p>
+<p class=AmmCorpsTexte>Elément constitutionnel, la moitié du capital magnésien est osseux.</p>
+<p class=AmmAnnexeTitre3>Au plan clinique</p>
+<p class=AmmCorpsTexte>Une magnésémie sérique :</p>
+<p class=AmmListePuces1><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>comprise entre 12 et 17 mg/l (1 à 1,4 mEq/l ou 0,5 à 0,7 mmol/l) indique une carence magnésienne modérée ;</p>
+<p class=AmmListePuces1 style='margin-top:0cm;margin-right:0cm;margin-bottom: 6.0pt;margin-left:17.85pt;text-indent:-17.85pt'><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>inférieure à 12 mg/l (1 mEq/l ou 0,5 mmol/l) indique une carence magnésienne sévère.</p>
+<p class=AmmCorpsTexte>La carence magnésienne peut être :</p>
+<p class=AmmListePuces1><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>primitive par anomalie congénitale du métabolisme (hypomagnésémie congénitale chronique),</p>
+<p class=AmmListePuces1 style='margin-top:0cm;margin-right:0cm;margin-bottom: 6.0pt;margin-left:17.85pt;text-indent:-17.85pt'><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>secondaire par :</p>
+<p class=AmmListePuces2><span style='font-family:"Courier New"'>o<span style='font:7.0pt "Times New Roman"'>   </span></span>insuffisance des apports (dénutrition sévère, alcoolisme, alimentation parentérale exclusive),</p>
+<p class=AmmListePuces2><span style='font-family:"Courier New"'>o<span style='font:7.0pt "Times New Roman"'>   </span></span>malabsorption digestive (diarrhées chroniques, fistules digestives, hypoparathyroïdies),</p>
+<p class=AmmListePuces2><span style='font-family:"Courier New"'>o<span style='font:7.0pt "Times New Roman"'>   </span></span>exagération des pertes rénales (tubulopathies, polyuries importantes, abus des diurétiques, pyélonéphrites chroniques, hyperaldostéronisme primaire, traitement par le cisplatine).</p>
+<p class="AmmAnnexeTitre2"><a name="RcpPropPharmacocinetiques">5.2. Propriétés pharmacocinétiques</a>&nbsp;&nbsp;<a href='#HautDePage'><img src='img/BackToTop.jpg' width='15px' height='15px' alt='Retour en haut de la page' title='Retour en haut de la page' /></a></p>
+<p class=AmmCorpsTexte><a name="_Toc142278934">L'absorption digestive des sels de magnésium obéit, entre autre, à un mécanisme passif à propos duquel la solubilité du sel est déterminante. L'absorption digestive des sels de magnésium ne dépasse pas 50 %. L'excrétion est principalement urinaire.</a></p>
+<p class="AmmAnnexeTitre2"><a name="RcpSecuritePreclinique">5.3. Données de sécurité préclinique</a>&nbsp;&nbsp;<a href='#HautDePage'><img src='img/BackToTop.jpg' width='15px' height='15px' alt='Retour en haut de la page' title='Retour en haut de la page' /></a></p>
+<p class=AmmCorpsTexte><a name="_Toc142278935">Sans objet.</a></p>
+<p class="AmmAnnexeTitre1"><a name="RcpDonneesPharmaceutiques">6. DONNEES PHARMACEUTIQUES</a>&nbsp;&nbsp;<a href='#HautDePage'><img src='img/BackToTop.jpg' width='15px' height='15px' alt='Retour en haut de la page' title='Retour en haut de la page' /></a></p>
+<p class="AmmAnnexeTitre2"><a name="RcpListeExcipients">6.1. Liste des excipients</a>&nbsp;&nbsp;<a href='#HautDePage'><img src='img/BackToTop.jpg' width='15px' height='15px' alt='Retour en haut de la page' title='Retour en haut de la page' /></a></p>
+<p class=AmmCorpsTexte><a name="_Toc142278937">Saccharose, kaolin lourd, gomme arabique, carboxypolyméthylène (Carbopol 934), talc, stéarate de magnésium, dioxyde de titane, poudre de cire de carnauba.</a></p>
+<p class="AmmAnnexeTitre2"><a name="RcpIncompatibilites">6.2. Incompatibilités</a>&nbsp;&nbsp;<a href='#HautDePage'><img src='img/BackToTop.jpg' width='15px' height='15px' alt='Retour en haut de la page' title='Retour en haut de la page' /></a></p>
+<p class=AmmCorpsTexte><a name="_Toc142278938">Sans objet.</a></p>
+<p class="AmmAnnexeTitre2"><a name="RcpDureeConservation">6.3. Durée de conservation</a>&nbsp;&nbsp;<a href='#HautDePage'><img src='img/BackToTop.jpg' width='15px' height='15px' alt='Retour en haut de la page' title='Retour en haut de la page' /></a></p>
+<p class=AmmCorpsTexte>2 ans.</p>
+<p class="AmmAnnexeTitre2"><a name="RcpPrecConservation">6.4. Précautions particulières de conservation</a>&nbsp;&nbsp;<a href='#HautDePage'><img src='img/BackToTop.jpg' width='15px' height='15px' alt='Retour en haut de la page' title='Retour en haut de la page' /></a></p>
+<p class=AmmCorpsTexte><a name="_Toc142278940">A conserver à une température ne dépassant pas 25°C.</a></p>
+<p class="AmmAnnexeTitre2"><a name="RcpEmballage">6.5. Nature et contenu de l'emballage extérieur </a>&nbsp;&nbsp;<a href='#HautDePage'><img src='img/BackToTop.jpg' width='15px' height='15px' alt='Retour en haut de la page' title='Retour en haut de la page' /></a></p>
+<p class=AmmCorpsTexte>Plaquette (PVC/Aluminium) de 10 comprimés. Boîte de 50, 60, 100, 150 ou 180 comprimés.</p>
+<p class=AmmCorpsTexte>Toutes les présentations peuvent ne pas être commercialisées.</p>
+<p class="AmmAnnexeTitre2"><a name="RcpPrecEmpl">6.6. Précautions particulières d’élimination et de manipulation</a>&nbsp;&nbsp;<a href='#HautDePage'><img src='img/BackToTop.jpg' width='15px' height='15px' alt='Retour en haut de la page' title='Retour en haut de la page' /></a></p>
+<p class=AmmCorpsTexte>Pas d'exigences particulières.</p>
+<p class="AmmAnnexeTitre1"><a name="RcpTitulaireAmm">7. TITULAIRE DE L’AUTORISATION DE MISE SUR LE MARCHE</a>&nbsp;&nbsp;<a href='#HautDePage'><img src='img/BackToTop.jpg' width='15px' height='15px' alt='Retour en haut de la page' title='Retour en haut de la page' /></a></p>
+<p class=AmmCorpsTexteGras style='margin-bottom:0cm;margin-bottom:.0001pt'><a name="_Toc142278943">OPELLA HEALTHCARE FRANCE SAS</a></p>
+<p class=AmmCorpsTexte style='margin-bottom:0cm;margin-bottom:.0001pt'><span style='text-transform:uppercase'>157 avenue Charles de Gaulle</span></p>
+<p class=AmmCorpsTexte><span style='text-transform:uppercase'>92200 Neuilly-sur-Seine</span></p>
+<p class="AmmAnnexeTitre1"><a name="RcpNumAutor">8. NUMERO(S) D’AUTORISATION DE MISE SUR LE MARCHE</a>&nbsp;&nbsp;<a href='#HautDePage'><img src='img/BackToTop.jpg' width='15px' height='15px' alt='Retour en haut de la page' title='Retour en haut de la page' /></a></p>
+<p class=AmmListePuces1><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>34009 312 500 9 8 : 50 comprimés enrobés sous plaquettes (PVC/Aluminium).</p>
+<p class=AmmListePuces1><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>34009 302 261 6 2 : 60 comprimés enrobés sous plaquettes (PVC/Aluminium).</p>
+<p class=AmmListePuces1><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>34009 334 667 3 2 : 100 comprimés enrobés sous plaquettes (PVC/Aluminium).</p>
+<p class=AmmListePuces1><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>34009 334 669 6 1 : 150 comprimés enrobés sous plaquettes (PVC/Aluminium).</p>
+<p class=AmmListePuces1><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>34009 334 670 4 3 : 180 comprimés enrobés sous plaquettes (PVC/Aluminium).</p>
+<p class="AmmAnnexeTitre1"><a name="RcpPremiereAutorisation">9. DATE DE PREMIERE AUTORISATION/DE RENOUVELLEMENT DE L’AUTORISATION</a>&nbsp;&nbsp;<a href='#HautDePage'><img src='img/BackToTop.jpg' width='15px' height='15px' alt='Retour en haut de la page' title='Retour en haut de la page' /></a></p>
+<p class=AmmCorpsTexte><a name="_Toc142278945">A compléter ultérieurement par le titulaire.</a></p>
+<p class="AmmAnnexeTitre1"><a name="RcpDateRevision">10. DATE DE MISE A JOUR DU TEXTE</a>&nbsp;&nbsp;<a href='#HautDePage'><img src='img/BackToTop.jpg' width='15px' height='15px' alt='Retour en haut de la page' title='Retour en haut de la page' /></a></p>
+<p class=AmmCorpsTexte><a name="_Toc142278946">A compléter ultérieurement par le titulaire.</a></p>
+<p class="AmmAnnexeTitre1"><a name="RcpDosimetrie">11. DOSIMETRIE</a>&nbsp;&nbsp;<a href='#HautDePage'><img src='img/BackToTop.jpg' width='15px' height='15px' alt='Retour en haut de la page' title='Retour en haut de la page' /></a></p>
+<p class=AmmCorpsTexte>Sans objet.</p>
+<p class="AmmAnnexeTitre1"><a name="RcpInstPrepRadioph">12. INSTRUCTIONS POUR LA PREPARATION DES RADIOPHARMACEUTIQUES</a>&nbsp;&nbsp;<a href='#HautDePage'><img src='img/BackToTop.jpg' width='15px' height='15px' alt='Retour en haut de la page' title='Retour en haut de la page' /></a></p>
+<p class=AmmCorpsTexte><a name="_Toc142278948">Sans objet.</a></p>
+<div style='border:none;border-top:solid windowtext 1.0pt;padding:1.0pt 0cm 0cm 0cm'>
+<p class="AmmAnnexeTitre"><a name="RcpCondPrescription">CONDITIONS DE PRESCRIPTION ET DE DELIVRANCE</a></p>
+</div>
+<p class=AmmCorpsTexte>Médicament non soumis à prescription médicale.</p>
+<span class='gras'><span style='font-size:12.0pt;font-family:"Arial",sans-serif;color:#0B3D92;
+text-transform:uppercase'><br clear=all>
+</span></span>					
+					<p class="alignright"><a href="#HautDePage">Retour en haut de la page <img src="img/BackToTop.jpg" width="20px" height="20px" alt="Retour en haut de la page" title="Retour en haut de la page" /></a></p>
+				</div>
+			</div>
+		</div>
+	</div>
+
+<table summary="" class="content" width="1000">
+	<tr>
+		<td height="100px">&nbsp;</td>
+	</tr>
+</table>
+<table summary="Pied de page" class="footer" width="1000">
+	<tr>
+		<td>
+			<table summary="" class="tablealigncenter" border="0">
+				<tr>
+					<td width="100px" class="aligncenter"><a id="lien_ansm" href="http://ansm.sante.fr/" target="_blank"><img src="img/Logo_ANSM.png" width="150" height="60" alt="ANSM - Agence nationale de sécurité du médicament et des produits de santé" title="L'ANSM met à disposition les principales informations issues de l'Autorisation de mise sur le marché, l'appartenance à un groupe générique, les liens vers les informations de sécurité qu'elle publie, l'identification des médicaments sous surveillance renforcée - nouvelle fenêtre" /></a></td>
+					          <td>&nbsp;</td>
+					<td width="100px" class="aligncenter"><img src="img/Logo_HAS.png" width="150" height="60" alt="HAS - Haute autorité de santé" title="La HAS met à disposition les informations relatives au service médical rendu, à l'amélioration du service médical rendu ainsi que les liens vers les avis de la Commission de la Transparence correspondants - nouvelle fenêtre" /></td>
+					<td>&nbsp;</td>
+					<td width="100px" class="aligncenter"><img src="img/Logo_CNAM.png" width="150" height="60" alt="UNCAM - Unin nationale des caisses d'assurance maladie" title="L'UNCAM met à disposition le taux de remboursement, le prix et les indications remboursables le cas échéant, ainsi que l'agrément aux collectivités - nouvelle fenêtre" /></td>
+          				</tr>
+			</table> 
+		</td>
+	</tr>
+</table>
+<table summary="" class="finpage" width="1000">
+	<tr>
+		<td height="100px" class="aligncenter">
+			<a class="navigation" href="plan.php">Plan du site</a>&nbsp;|&nbsp;
+			<a class="navigation" href="accessibilite.php">Accessibilité</a>&nbsp;|&nbsp;
+			<a class="navigation" href="contact.php">Contact</a>&nbsp;|&nbsp;
+			<a class="navigation" href="telechargement.php">Téléchargement</a>&nbsp;|&nbsp;
+			<a class="navigation" href="DeclarationConfidentialite.php">Declaration de confidentialité</a>&nbsp;|&nbsp;
+			<a class="navigation" href="http://www.service-public.fr/" title="Service Public - Nouvelle fenêtre" target="_blank">Service-Public.fr</a>&nbsp;|&nbsp;
+			<a class="navigation" href="http://www.legifrance.gouv.fr/" title="Legifrance - Nouvelle fenêtre" target="_blank">Legifrance</a>&nbsp;|&nbsp;
+			<a class="navigation" href="http://www.gouvernement.fr/" title="Gouvernement - Nouvelle fenêtre" target="_blank" >Gouvernement.fr</a>
+		</td>
+	</tr>
+</table>
+
+
+
+<!-- Matomo -->
+<script type="text/javascript">
+  var _paq = window._paq = window._paq || [];
+  /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
+  _paq.push(['trackPageView']);
+  _paq.push(['enableLinkTracking']);
+  (function() {
+    var u="https://stats.integra.fr/";
+    _paq.push(['setTrackerUrl', u+'matomo.php']);
+    _paq.push(['setSiteId', '79']);
+    var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+    g.type='text/javascript'; g.async=true; g.src=u+'matomo.js'; s.parentNode.insertBefore(g,s);
+  })();
+</script>
+<!-- End Matomo Code -->
+
+
+
+</body>
+</html>

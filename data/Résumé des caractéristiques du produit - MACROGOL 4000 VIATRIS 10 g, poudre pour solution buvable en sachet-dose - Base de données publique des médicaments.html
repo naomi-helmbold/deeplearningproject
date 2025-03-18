@@ -1,0 +1,499 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="fr" lang="fr">
+<head>
+	<title>Résumé des caractéristiques du produit - MACROGOL 4000 VIATRIS 10 g, poudre pour solution buvable en sachet-dose  - Base de données publique des médicaments</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=windows-1252"/>
+	<meta name="robots" content="index, follow"/>
+	<meta name="Description" content="Base de données publique des médicaments"/>
+	<meta name="Keywords" content="base, données, publique, médicaments, Résumé des caractéristiques du produit, MACROGOL 4000 VIATRIS 10 g, poudre pour solution buvable en sachet-dose "/>
+	<meta name="Subject" content="medicament"/>
+	<link href='https://fonts.googleapis.com/css?family=Noticia+Text' rel='stylesheet' type='text/css' />
+	<link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro' rel='stylesheet' type='text/css' />
+	<link href="style/style_bdm.css?v=2.2.3" type="text/css" rel="stylesheet"/>
+	<link href="style/style_RCP_Notice.css" type="text/css" rel="stylesheet"/>
+  <link rel="alternate" href="http://m.base-donnees-publique.medicaments.gouv.fr/#!info-66460615">
+    <script type="text/javascript" src="scripts/autocomplete.js?v=2.2.3"></script>
+	<script type="text/javascript" src="scripts/jquery.js"></script>
+    <script type="text/javascript" src="scripts/jquery-ui.min.js"></script>
+	<script type="text/javascript" src="scripts/common.js"></script>
+	<link rel="icon" type="image/x-icon" href="favicon.ico" />
+</head>
+
+<body>
+
+<a name="HautDePage" />
+<div id="bandeauhaut">
+	<a id="lien_ministere" class="lienmenu" href="http://www.sante.gouv.fr" target="_blank" title="Site du ministère des affaires sociales et de la santé - nouvelle fenêtre"><img id="logoministere" src="img/Logo_Ministere.jpg"  alt="Logo du ministère des affaires sociales et de la santé"/></a>
+	<h1 class="texteTitreSite">
+		Base <span class="texteBleu">de</span> données <span class="texteBleu">publique</span><br/><span class="texteBleu">des</span> médicaments
+	</h1>
+		<a id="lien_medicament_gouv" class="lienEspaceMedic" target="_blank" href="http://medicaments.gouv.fr" title="Visiter [medicaments.gouv.fr] - nouvelle fenêtre">Visiter [medicaments.gouv.fr] <img src="/img/icone_lien.png" alt="Visiter [medicaments.gouv.fr]"  title="Visiter [medicaments.gouv.fr] - nouvelle fenetre" /></a>
+</div>
+<!--div align="center">
+	<a id="banniere" target="_blank" href="http://social-sante.gouv.fr/soins-et-maladies/medicaments/medicaments-generiques/" title="Visiter [medicaments.gouv.fr] - M?dicaments g?n?riques">
+		<img width="1000"   src ="/img/carrouselbannieres.gif" alt="Visiter [medicaments.gouv.fr] - M?dicaments g?n?riques" title="Visiter [medicaments.gouv.fr] - M?dicaments g?n?riques" />
+	</a>
+</div-->
+
+<div id="menuhaut">
+	<span id="menuhaut_gauche">
+		<a id="lien_accueil" class="navigation" href="index.php">Accueil</a>&nbsp;|&nbsp;
+		<a id="lien_glossaire" class="navigation" href="glossaire.php">Glossaire</a>&nbsp;|&nbsp;
+		<a id="lien_aide" class="navigation" href="aide.php">Aide</a>		
+	</span>
+	
+		
+	<span id="menuhaut_dernmaj">
+        <br>Dernière <span title=" 2.4.4
+">mise à jour</span> le 03/03/2025	</span>
+</div>
+
+	<script language="javascript" type="text/javascript">
+		//<![CDATA[ 
+		function Aff(men) {
+			document.write("<ul class=\"menuDoc\">");
+			for(var no_rub=0;no_rub<men.num_rub;no_rub++) {
+				document.write("<li><a class='leftMenu' href='"+menu[no_rub].page+"'>");
+				document.write(men[no_rub].txt);
+				document.write("</a></li>");
+				if (men[no_rub].nb_lien != 0){
+					document.write("<ul class=\"sousMenuDoc\">");
+				}
+				for(var no_lien=0;no_lien<men[no_rub].nb_lien;no_lien++) {
+					document.write("<li><a class='leftMenu' href='"+men[no_rub][no_lien].page+"'>");
+					document.write(men[no_rub][no_lien].txt);
+					document.write("</a></li>");
+				}
+				if (men[no_rub].nb_lien != 0){
+					document.write("</ul>");
+				}
+			}
+			document.write("</ul>");
+		}
+		
+		function CreerMenu(police,imgRub,imgOption,imgOptionFin,hauteur) {
+			this.num_rub=0;
+			this.police=police;
+			this.imgRub=imgRub;
+			this.imgOpt=imgOption;
+			this.imgOptFin=imgOptionFin;
+			this.hauteur=hauteur;
+			this.AddRub=AddRub;
+			this.AddLien=AddLien;
+		}
+		
+		function AddRub(txt,aff,page) {
+			var rub = new Object;
+				rub.txt=txt;
+				rub.aff=aff;
+				rub.page=page;
+				rub.nb_lien=0;
+			this[this.num_rub]=rub;
+			this.num_rub++;
+		}
+
+		function AddLien(txt,page) {
+			var no_rub = this.num_rub-1;
+			var no_lien= this[no_rub].nb_lien;
+			var lien = new Object;
+				lien.txt=txt;
+				lien.page=page;
+			this[no_rub][no_lien]=lien;
+			this[no_rub].nb_lien++;
+		}
+		var menu=new CreerMenu("arial","img/dyn04.gif","img/dyn22.gif","img/dyn55.gif",18);
+		//]]> 
+		menu.AddRub("Dénomination","O","#RcpDenomination");
+			menu.AddRub("Composition","O","#RcpCompoQualiQuanti");
+			menu.AddRub("Forme pharma.","O","#RcpFormePharm");
+			menu.AddRub("Clinique","O","#RcpDonneesCliniques");
+			menu.AddLien("Indic. thérapeutiques","#RcpIndicTherap");
+				menu.AddLien("Posologie","#RcpPosoAdmin");
+				menu.AddLien("Contre-indications","#RcpContreindications");
+				menu.AddLien("Mise en garde","#RcpMisesEnGarde");
+				menu.AddLien("Interactions","#RcpInteractionsMed");
+				menu.AddLien("Grossesse, allait.","#RcpFertGrossAllait");
+				menu.AddLien("Conduite véhicules","#RcpConduite");
+				menu.AddLien("Effets indésirables","#RcpEffetsIndesirables");
+				menu.AddLien("Surdosage","#RcpSurdosage");
+				menu.AddRub("Pharmacologie","O","#RcpPropPharmacologiques");
+			menu.AddLien("Pharmacodynamie","#RcpPropPharmacodynamiques");
+				menu.AddLien("Pharmacocinétique","#RcpPropPharmacocinetiques");
+				menu.AddLien("Sécurité préclinique","#RcpSecuritePreclinique");
+				menu.AddRub("Pharmaceutique","O","#RcpDonneesPharmaceutiques");
+			menu.AddLien("Liste excipients","#RcpListeExcipients");
+				menu.AddLien("Incompatibilités","#RcpIncompatibilites");
+				menu.AddLien("Durée conservation","#RcpDureeConservation");
+				menu.AddLien("Conservation","#RcpPrecConservation");
+				menu.AddLien("Emballage","#RcpEmballage");
+				menu.AddLien("Utilisation/manipulation","#RcpPrecEmpl");
+				menu.AddRub("Titulaire AMM","O","#RcpTitulaireAmm");
+			menu.AddRub("Présentations","O","#RcpNumAutor");
+			menu.AddRub("Autorisation, renouv.","O","#RcpPremiereAutorisation");
+			menu.AddRub("Date de révision","O","#RcpDateRevision");
+			menu.AddRub("Dosimétrie","O","#RcpDosimetrie");
+			menu.AddRub("Préparation radiopharma.","O","#RcpInstPrepRadioph");
+				</script>
+
+	<div id="container">
+		<div id="leftnav">
+			<div id="cadreMenuGauche">
+				<h2 class="sommaireMenu">Sommaire</h2>
+				<div id="menuGauche">
+					<script language="JavaScript" type="text/javascript">Aff(menu);</script>
+				</div>
+			</div>
+		</div>
+		<div id="contentPrincipal">
+			<div id="boutonsliens">
+				<a id='lien_fiche_info' href='extrait.php?specid=66460615' ><img id="ongletficheinfo" alt="Onglet fiche information" src="img/onglet_fiche_info_vert.png" /></a><a id='lien_rcp' href='affichageDoc.php?specid=66460615&amp;typedoc=R'><img class="onglet" alt="Onglet résumé des caractéristiques du produit" src="img/onglet_rcp_gris.png" /></a><a id='lien_notice' href='affichageDoc.php?specid=66460615&amp;typedoc=N'><img class="onglet" alt="Onglet notice patient" src="img/onglet_notice_vert.png" /></a>			</div>
+			<div class="titredeno">
+				<table summary="" border="0" cellspacing="0">
+					<tr><td colspan="3" height="10px"></td></tr>
+					<tr>
+						<td width="15px">&nbsp;</td>
+						<td width="685px"><h1 class="textedeno">MACROGOL 4000 VIATRIS 10 g, poudre pour solution buvable en sachet-dose  - Résumé des caractéristiques du produit</h1></td>
+						<td width="43px" class="tdcenter"><a href="Javascript:void(null)" onclick="print();"><img src="img/imprimante.png" height="20px" width="20px" alt="Imprimer le document" title="Imprimer le document" border="0" /></a></td>
+					</tr>
+					<tr><td colspan="3" height="10px"></td></tr>
+				</table>
+			</div>
+			
+			<div id="contentDocument">
+				<div id="textDocument">
+					<p class="DateNotif">ANSM - Mis à jour le : 28/12/2021</p>
+<p class="AmmAnnexeTitre1"><a name="RcpDenomination">1. DENOMINATION DU MEDICAMENT</a>&nbsp;&nbsp;<a href='#HautDePage'><img src='img/BackToTop.jpg' width='15px' height='15px' alt='Retour en haut de la page' title='Retour en haut de la page' /></a></p>
+<p class=AmmCorpsTexteGras>MACROGOL 4000 VIATRIS 10 g, poudre pour solution buvable en sachet&#8209;dose</p>
+<p class="AmmAnnexeTitre1"><a name="RcpCompoQualiQuanti">2. COMPOSITION QUALITATIVE ET QUANTITATIVE</a>&nbsp;&nbsp;<a href='#HautDePage'><img src='img/BackToTop.jpg' width='15px' height='15px' alt='Retour en haut de la page' title='Retour en haut de la page' /></a></p>
+<p class=AmmComposition>Macrogol 4000.................................................................................................................... 10,000 g</p>
+<p class=AmmCorpsTexte align=center style='text-align:center'>Pour un sachet-dose.</p>
+<p class=AmmCorpsTexte>Excipients à effet notoire : anhydride sulfureux (E220), sorbitol (E420), glucose.</p>
+<p class=AmmCorpsTexte>Pour la liste complète des excipients, voir rubrique 6.1.</p>
+<p class="AmmAnnexeTitre1"><a name="RcpFormePharm">3. FORME PHARMACEUTIQUE</a>&nbsp;&nbsp;<a href='#HautDePage'><img src='img/BackToTop.jpg' width='15px' height='15px' alt='Retour en haut de la page' title='Retour en haut de la page' /></a></p>
+<p class=AmmCorpsTexte>Poudre pour solution buvable en sachet&#8209;dose.</p>
+<p class=AmmCorpsTexte>Poudre blanche à blanchâtre avec une odeur et un goût d'orange et de pamplemousse.</p>
+<p class="AmmAnnexeTitre1"><a name="RcpDonneesCliniques">4. DONNEES CLINIQUES</a>&nbsp;&nbsp;<a href='#HautDePage'><img src='img/BackToTop.jpg' width='15px' height='15px' alt='Retour en haut de la page' title='Retour en haut de la page' /></a></p>
+<p class="AmmAnnexeTitre2"><a name="RcpIndicTherap">4.1. Indications thérapeutiques</a>&nbsp;&nbsp;<a href='#HautDePage'><img src='img/BackToTop.jpg' width='15px' height='15px' alt='Retour en haut de la page' title='Retour en haut de la page' /></a></p>
+<p class=AmmCorpsTexte>Traitement symptomatique de la constipation chez l'adulte et chez l'enfant à partir de 8 ans.</p>
+<p class=AmmCorpsTexte>Une cause organique devra être écartée avant d'initier le traitement. MACROGOL 4000 VIATRIS doit rester un traitement temporaire de la constipation, d'une durée n'excédant pas 3 mois chez l'enfant, en association aux mesures hygiéno&#8209;diététiques adaptées. La persistance des troubles malgré les mesures hygiéno&#8209;diététiques associées devra faire rechercher et traiter une pathologie sous&#8209;jacente.</p>
+<p class="AmmAnnexeTitre2"><a name="RcpPosoAdmin">4.2. Posologie et mode d'administration</a>&nbsp;&nbsp;<a href='#HautDePage'><img src='img/BackToTop.jpg' width='15px' height='15px' alt='Retour en haut de la page' title='Retour en haut de la page' /></a></p>
+<p class=AmmAnnexeTitre3>Posologie</p>
+<p class=AmmCorpsTexte>La posologie est de 1 à 2 sachets&#8209;dose par jour (10 à 20 g) à prendre de préférence en une seule prise, le matin.</p>
+<p class=AmmCorpsTexte>La dose journalière doit être adaptée en fonction des effets cliniques obtenus et peut aller de 1 sachet un jour sur deux (en particulier chez l'enfant) à 2 sachets par jour. L'effet de MACROGOL 4000 VIATRIS se manifeste dans les 24 à 48 heures suivant son administration.</p>
+<p class=AmmAnnexeTitre4>Population pédiatrique</p>
+<p class=AmmCorpsTexte>Chez l'enfant, compte tenu de l'absence de donnée clinique au-delà de 3 mois, la durée du traitement ne devra pas dépasser 3 mois.</p>
+<p class=AmmCorpsTexte>L'amélioration du transit intestinal induite par le traitement sera maintenue par les mesures hygiéno&#8209;diététiques.</p>
+<p class=AmmAnnexeTitre3>Mode d’administration</p>
+<p class=AmmCorpsTexte>Voie orale.</p>
+<p class=AmmCorpsTexte>Le contenu de chaque sachet-dose doit être dissous dans un verre d'eau juste avant d'être administré.</p>
+<p class="AmmAnnexeTitre2"><a name="RcpContreindications">4.3. Contre-indications</a>&nbsp;&nbsp;<a href='#HautDePage'><img src='img/BackToTop.jpg' width='15px' height='15px' alt='Retour en haut de la page' title='Retour en haut de la page' /></a></p>
+<p class=AmmListePuces1 style='margin-left:17.85pt;text-indent:-17.85pt'><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>Hypersensibilité à la substance active ou à l'un des excipients mentionnés à la rubrique 6.1.</p>
+<p class=AmmListePuces1 style='margin-left:17.85pt;text-indent:-17.85pt'><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>Maladies inflammatoires sévères de l'intestin (rectocolite hémorragique, maladie de Crohn) ou mégacôlon toxique, </p>
+<p class=AmmListePuces1 style='margin-left:17.85pt;text-indent:-17.85pt'><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>Perforation digestive ou risque de perforation digestive,</p>
+<p class=AmmListePuces1 style='margin-left:17.85pt;text-indent:-17.85pt; page-break-after:avoid'><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>Iléus ou suspicion d'occlusion intestinale, sténose symptomatique,</p>
+<p class=AmmListePuces1 style='margin-left:17.85pt;text-indent:-17.85pt; page-break-after:avoid'><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>Syndromes douloureux abdominaux de cause indéterminée,</p>
+<p class="AmmAnnexeTitre2"><a name="RcpMisesEnGarde">4.4. Mises en garde spéciales et précautions d'emploi</a>&nbsp;&nbsp;<a href='#HautDePage'><img src='img/BackToTop.jpg' width='15px' height='15px' alt='Retour en haut de la page' title='Retour en haut de la page' /></a></p>
+<p class=AmmAnnexeTitre3>Mises en garde spéciales</p>
+<p class=AmmCorpsTexte style='margin-top:6.0pt;page-break-after:avoid'>Le traitement médicamenteux de la constipation n'est qu'un adjuvant au traitement hygiéno-diététique tel que :</p>
+<p class=AmmListePuces1 style='margin-left:17.85pt;text-indent:-17.85pt'><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>enrichissement de l'alimentation en fibres végétales et en boissons,</p>
+<p class=AmmListePuces1 style='margin-top:0cm;margin-right:0cm;margin-bottom: 6.0pt;margin-left:17.85pt;text-indent:-17.85pt'><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>conseils sur l’activité physique adaptée et rééducation de l'exonération.</p>
+<p class=AmmCorpsTexte><span style='color:black'>Une cause organique devra être écartée avant d’initier le traitement.</span></p>
+<p class=AmmCorpsTexte>Ce médicament contient du macrogol (polyéthylène glycol). Des réactions d’hypersensibilité (choc anaphylactique, angio-œdème, urticaire, éruption, prurit, érythème) ont été rapportées avec des spécialités contenant du macrogol, voir rubrique 4.8.</p>
+<p class=AmmCorpsTexte>Ce médicament contient de l’anhydride sulfureux (E220) et peut, dans de rares cas, provoquer des réactions d’hypersensibilité sévères et des bronchospasmes.</p>
+<p class=AmmCorpsTexte>Ce médicament contient du sorbitol. Son utilisation est déconseillée chez les patients présentant une intolérance au fructose (maladie héréditaire rare).</p>
+<p class=AmmCorpsTexte>Ce médicament contient 2 mg de sorbitol par sachet-dose. </p>
+<p class=AmmCorpsTexte>Ce médicament contient moins de 1 mmol (23 mg) de sodium par comprimé, c.-à-d. qu’il est essentiellement « sans sodium ».</p>
+<p class=AmmCorpsTexte>En cas de diarrhée, il convient de surveiller les patients à risque de déséquilibre hydro-électrolytique (par exemple sujet âgé ou patient avec insuffisance hépatique ou insuffisance rénale ou sous traitement diurétique) et d'envisager un contrôle des électrolytes. A utiliser avec précaution chez les patients présentant une altération du réflexe nauséeux et les patients sujets aux régurgitations ou aux fausses routes.</p>
+<p class=AmmCorpsTexte><span style='color:black'>Des cas d’inhalation ont été rapportés lors de l’administration par sonde nasogastrique de volumes importants de polyéthylène glycol et d’électrolytes. Les enfants présentant une atteinte neurologique avec des troubles oromoteurs sont particulièrement exposés à ce risque d’inhalation.</span></p>
+<p class=AmmCorpsTexte>Les patients présentant un syndrome de malabsorption du glucose et du galactose (maladie héréditaire rare) ne doivent pas prendre ce médicament. </p>
+<p class=AmmCorpsTexte>Chez les patients ayant des problèmes de déglutition, qui ont besoin de l'ajout d'un épaississant aux solutions pour favoriser un apport approprié, des interactions doivent être envisagées, voir rubrique 4.5.Précautions particulières d'emploi</p>
+<p class=AmmCorpsTexte>MACROGOL 4000 VIATRIS ne contenant pas une quantité significative de sucre ou de polyol, il peut être prescrit aux patients diabétiques ou aux patients soumis à un régime exempt de galactose.</p>
+<p class="AmmAnnexeTitre2"><a name="RcpInteractionsMed">4.5. Interactions avec d'autres médicaments et autres formes d'interactions</a>&nbsp;&nbsp;<a href='#HautDePage'><img src='img/BackToTop.jpg' width='15px' height='15px' alt='Retour en haut de la page' title='Retour en haut de la page' /></a></p>
+<p class=AmmCorpsTexte>Il est possible que l'absorption d'autres médicaments puisse être transitoirement réduite lors de l’utilisation avec MACROGOL 4000 VIATRIS, en particulier des médicaments ayant un index thérapeutique étroit ou une demi-vie courte comme la digoxine, les antiépileptiques, les coumarines et les immunosuppresseurs, entraînant une diminution de l'efficacité.</p>
+<p class="AmmAnnexeTitre2"><a name="RcpFertGrossAllait">4.6. Fertilité, grossesse et allaitement</a>&nbsp;&nbsp;<a href='#HautDePage'><img src='img/BackToTop.jpg' width='15px' height='15px' alt='Retour en haut de la page' title='Retour en haut de la page' /></a></p>
+<p class=AmmAnnexeTitre3>Grossesse</p>
+<p class=AmmCorpsTexte><span style='color:black'>Les études chez l’animal n’ont pas mis en évidence d’effets délétères directs ou indirects sur la reproduction (voir rubrique 5.3). </span>Il existe des données limitées (moins de 300 grossesses) sur l’utilisation de MACROGOL 4000 VIATRIS chez la femme enceinte.</p>
+<p class=AmmCorpsTexte><span style='color:black'>Aucun effet pendant la grossesse n’est attendu dans la mesure où l’exposition systémique à MACROGOL 4000 VIATRIS est négligeable. MACROGOL 4000 VIATRIS peut être utilisé pendant la grossesse.</span></p>
+<p class=AmmAnnexeTitre3>Allaitement</p>
+<p class=AmmCorpsTexte>Il n'y a pas de donnée concernant l'excrétion du macrogol 4000 dans le lait maternel.</p>
+<p class=AmmCorpsTexte><span style='color:black'>Aucun effet chez les nouveau-nés/nourrissons allaités n’est attendu dans la mesure où l’exposition systémique de la femme qui allaite au </span>macrogol 4000 <span style='color:black'>est négligeable.</span> MACROGOL 4000 VIATRIS peut être utilisé pendant l'allaitement.</p>
+<p class=AmmAnnexeTitre3>Fertilité</p>
+<p class=AmmCorpsTexte>Aucune étude de fertilité n’a été réalisée avec MACROGOL 4000 VIATRIS. Cependant, dans la mesure où le macrogol 4000 n’est pas absorbé de façon significative, aucun effet sur la fertilité n’est attendu.</p>
+<p class="AmmAnnexeTitre2"><a name="RcpConduite">4.7. Effets sur l'aptitude à conduire des véhicules et à utiliser des machines</a>&nbsp;&nbsp;<a href='#HautDePage'><img src='img/BackToTop.jpg' width='15px' height='15px' alt='Retour en haut de la page' title='Retour en haut de la page' /></a></p>
+<p class=AmmCorpsTexte><span lang=FR-BE>Aucune étude sur les effets de MACROGOL 4000 VIATRIS sur l’aptitude à conduire des véhicules et à utiliser des machines n’a été réalisée.</span></p>
+<p class="AmmAnnexeTitre2"><a name="RcpEffetsIndesirables">4.8. Effets indésirables</a>&nbsp;&nbsp;<a href='#HautDePage'><img src='img/BackToTop.jpg' width='15px' height='15px' alt='Retour en haut de la page' title='Retour en haut de la page' /></a></p>
+<p class=AmmCorpsTexte style='margin-top:6.0pt;page-break-after:avoid'><span style='color:black'>La fréquence des effets indésirables peut être classée comme suit :</span></p>
+<p class=AmmCorpsTexte><span style='color:black'>Très fréquent (<span class='souligne'>&gt;</span> 1/10), fréquent (&#8805; 1/100 à &lt; 1/10), peu fréquent (&#8805; 1/1 000 à &lt; 1/100), rare (&#8805; 1/10 000 à &lt;1/1 000), très rare (&lt; 1/10 000), fréquence indéterminée (ne peut être estimée sur la base des données disponibles).</span></p>
+<p class=AmmAnnexeTitre3>Chez l'adulte</p>
+<p class=AmmCorpsTexte>Les effets indésirables listés dans le tableau ci-dessous ont été rapportés au cours des études cliniques (incluant environ 600 patients) et lors de la commercialisation du produit. En général, ces effets indésirables ont toujours été légers et transitoires, et ont concerné principalement l’appareil digestif :</p>
+<div align=center>
+<table class=AmmCorpsTexteTable border=0 cellspacing=0 cellpadding=0 width="97%"
+style='width:97.3%;border-collapse:collapse'>
+<thead>
+<tr>
+<td width="48%" valign=top style='width:48.4%;border:solid windowtext 1.0pt;
+padding:0cm 5.4pt 0cm 5.4pt'>
+<p class=AmmCorpsTexteGras style='margin-bottom:0cm;margin-bottom:.0001pt; page-break-after:avoid'>Système organe</p>
+</td>
+<td width="51%" valign=top style='width:51.6%;border:solid windowtext 1.0pt;
+border-left:none;padding:0cm 5.4pt 0cm 5.4pt'>
+<p class=AmmCorpsTexteGras style='margin-bottom:0cm;margin-bottom:.0001pt; page-break-after:avoid'>Effets indésirables</p>
+</td>
+</tr>
+</thead>
+<tr>
+<td width="100%" colspan=2 valign=top style='width:100.0%;border:solid windowtext 1.0pt;
+border-top:none;padding:0cm 5.4pt 0cm 5.4pt'>
+<p class=AmmCorpsTexteGras style='margin-bottom:0cm;margin-bottom:.0001pt; page-break-after:avoid'>Affections gastro-intestinales</p>
+</td>
+</tr>
+<tr>
+<td width="48%" valign=top style='width:48.4%;border:solid windowtext 1.0pt;
+border-top:none;padding:0cm 5.4pt 0cm 5.4pt'>
+<p class=AmmCorpsTexte style='margin-bottom:0cm;margin-bottom:.0001pt'><span style='color:black'>Fréquent</span></p>
+</td>
+<td width="51%" valign=top style='width:51.6%;border-top:none;border-left:
+none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+padding:0cm 5.4pt 0cm 5.4pt'>
+<p class=AmmCorpsTexte style='margin-bottom:0cm;margin-bottom:.0001pt'><span style='color:black'>Douleurs abdominales</span></p>
+<p class=AmmCorpsTexte style='margin-bottom:0cm;margin-bottom:.0001pt'>Distension abdominale</p>
+<p class=AmmCorpsTexte style='margin-bottom:0cm;margin-bottom:.0001pt'>Diarrhée</p>
+<p class=AmmCorpsTexte style='margin-bottom:0cm;margin-bottom:.0001pt'>Nausées</p>
+</td>
+</tr>
+<tr>
+<td width="48%" valign=top style='width:48.4%;border:solid windowtext 1.0pt;
+border-top:none;padding:0cm 5.4pt 0cm 5.4pt'>
+<p class=AmmCorpsTexte style='margin-bottom:0cm;margin-bottom:.0001pt'><span style='color:black'>Peu fréquent</span></p>
+</td>
+<td width="51%" valign=top style='width:51.6%;border-top:none;border-left:
+none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+padding:0cm 5.4pt 0cm 5.4pt'>
+<p class=AmmCorpsTexte style='margin-bottom:0cm;margin-bottom:.0001pt'><span style='color:black'>Vomissements</span></p>
+<p class=AmmCorpsTexte style='margin-bottom:0cm;margin-bottom:.0001pt'>Défécation impérieuse</p>
+<p class=AmmCorpsTexte style='margin-bottom:0cm;margin-bottom:.0001pt'>Incontinence fécale</p>
+</td>
+</tr>
+<tr>
+<td width="100%" colspan=2 valign=top style='width:100.0%;border:solid windowtext 1.0pt;
+border-top:none;padding:0cm 5.4pt 0cm 5.4pt'>
+<p class=AmmCorpsTexteGras style='margin-bottom:0cm;margin-bottom:.0001pt; page-break-after:avoid'>Troubles du métabolisme et de la nutrition </p>
+</td>
+</tr>
+<tr>
+<td width="48%" valign=top style='width:48.4%;border:solid windowtext 1.0pt;
+border-top:none;padding:0cm 5.4pt 0cm 5.4pt'>
+<p class=AmmCorpsTexte style='margin-bottom:0cm;margin-bottom:.0001pt'><span style='color:black'>Fréquence indéterminée</span></p>
+</td>
+<td width="51%" valign=top style='width:51.6%;border-top:none;border-left:
+none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+padding:0cm 5.4pt 0cm 5.4pt'>
+<p class=AmmCorpsTexte style='margin-bottom:0cm;margin-bottom:.0001pt'><span style='color:black'>Troubles électrolytiques (hyponatrémie, hypokaliémie) et/ou déshydratation en particulier chez le sujet âgé</span></p>
+</td>
+</tr>
+<tr>
+<td width="100%" colspan=2 valign=top style='width:100.0%;border:solid windowtext 1.0pt;
+border-top:none;padding:0cm 5.4pt 0cm 5.4pt'>
+<p class=AmmCorpsTexteGras style='margin-bottom:0cm;margin-bottom:.0001pt; page-break-after:avoid'>Affections du système immunitaire</p>
+</td>
+</tr>
+<tr>
+<td width="48%" valign=top style='width:48.4%;border:solid windowtext 1.0pt;
+border-top:none;padding:0cm 5.4pt 0cm 5.4pt'>
+<p class=AmmCorpsTexte style='margin-bottom:0cm;margin-bottom:.0001pt'><span style='color:black'>Fréquence indéterminée</span></p>
+</td>
+<td width="51%" valign=top style='width:51.6%;border-top:none;border-left:
+none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+padding:0cm 5.4pt 0cm 5.4pt'>
+<p class=AmmCorpsTexte style='margin-bottom:0cm;margin-bottom:.0001pt'><span style='color:black'>Hypersensibilité : choc anaphylactique, angio&#8209;œdème, urticaire, éruption, prurit, érythème</span></p>
+</td>
+</tr>
+</table>
+</div>
+<p class=AmmAnnexeTitre3>Chez l’enfant</p>
+<p class=AmmCorpsTexte>Les effets indésirables listés dans le tableau ci-dessous ont été rapportés au cours des études cliniques incluant 147 enfants âgés de 6 mois à 15 ans et lors de la commercialisation du produit. Comme chez l’adulte, ces effets indésirables ont généralement été légers et transitoires et ont concerné principalement l’appareil digestif :</p>
+<div align=center>
+<table class=AmmCorpsTexteTable border=0 cellspacing=0 cellpadding=0
+style='border-collapse:collapse'>
+<thead>
+<tr>
+<td width=292 valign=top style='width:219.0pt;border:solid windowtext 1.0pt;
+padding:0cm 5.4pt 0cm 5.4pt'>
+<p class=AmmCorpsTexteGras style='margin-bottom:0cm;margin-bottom:.0001pt; page-break-after:avoid'>Système organe</p>
+</td>
+<td width=310 valign=top style='width:232.8pt;border:solid windowtext 1.0pt;
+border-left:none;padding:0cm 5.4pt 0cm 5.4pt'>
+<p class=AmmCorpsTexteGras style='margin-bottom:0cm;margin-bottom:.0001pt; page-break-after:avoid'>Effets indésirables</p>
+</td>
+</tr>
+</thead>
+<tr>
+<td width=602 colspan=2 valign=top style='width:451.8pt;border:solid windowtext 1.0pt;
+border-top:none;padding:0cm 5.4pt 0cm 5.4pt'>
+<p class=AmmCorpsTexteGras style='margin-bottom:0cm;margin-bottom:.0001pt; page-break-after:avoid'>Affections gastro-intestinales</p>
+</td>
+</tr>
+<tr>
+<td width=292 valign=top style='width:219.0pt;border:solid windowtext 1.0pt;
+border-top:none;padding:0cm 5.4pt 0cm 5.4pt'>
+<p class=AmmCorpsTexte style='margin-bottom:0cm;margin-bottom:.0001pt'><span style='color:black'>Fréquent</span></p>
+</td>
+<td width=310 valign=top style='width:232.8pt;border-top:none;border-left:
+none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+padding:0cm 5.4pt 0cm 5.4pt'>
+<p class=AmmCorpsTexte style='margin-bottom:0cm;margin-bottom:.0001pt'><span style='color:black'>Douleurs abdominales</span></p>
+<p class=AmmCorpsTexte style='margin-bottom:0cm;margin-bottom:.0001pt'>Diarrhée*</p>
+</td>
+</tr>
+<tr>
+<td width=292 valign=top style='width:219.0pt;border:solid windowtext 1.0pt;
+border-top:none;padding:0cm 5.4pt 0cm 5.4pt'>
+<p class=AmmCorpsTexte style='margin-bottom:0cm;margin-bottom:.0001pt'><span style='color:black'>Peu fréquent</span></p>
+</td>
+<td width=310 valign=top style='width:232.8pt;border-top:none;border-left:
+none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+padding:0cm 5.4pt 0cm 5.4pt'>
+<p class=AmmCorpsTexte style='margin-bottom:0cm;margin-bottom:.0001pt'><span style='color:black'>Vomissements</span></p>
+<p class=AmmCorpsTexte style='margin-bottom:0cm;margin-bottom:.0001pt'>Distension abdominale, Nausées</p>
+</td>
+</tr>
+<tr>
+<td width=602 colspan=2 valign=top style='width:451.8pt;border:solid windowtext 1.0pt;
+border-top:none;padding:0cm 5.4pt 0cm 5.4pt'>
+<p class=AmmCorpsTexteGras style='margin-bottom:0cm;margin-bottom:.0001pt; page-break-after:avoid'>Affections du système immunitaire</p>
+</td>
+</tr>
+<tr>
+<td width=292 valign=top style='width:219.0pt;border:solid windowtext 1.0pt;
+border-top:none;padding:0cm 5.4pt 0cm 5.4pt'>
+<p class=AmmCorpsTexte style='margin-bottom:0cm;margin-bottom:.0001pt'><span style='color:black'>Fréquence indéterminée</span></p>
+</td>
+<td width=310 valign=top style='width:232.8pt;border-top:none;border-left:
+none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+padding:0cm 5.4pt 0cm 5.4pt'>
+<p class=AmmCorpsTexte style='margin-bottom:0cm;margin-bottom:.0001pt'><span style='color:black'>Hypersensibilité (choc anaphylactique, angio&#8209;œdème, urticaire, éruption, prurit)</span></p>
+</td>
+</tr>
+</table>
+</div>
+<p class=AmmCorpsTexte>* La diarrhée peut entraîner une douleur périanale.</p>
+<p class=AmmAnnexeTitre3>Déclaration des effets indésirables suspectés </p>
+<p class=AmmCorpsTexte>La déclaration des effets indésirables suspectés après autorisation du médicament est importante. Elle permet une surveillance continue du rapport bénéfice/risque du médicament. Les professionnels de santé déclarent tout effet indésirable suspecté via le système national de déclaration : Agence nationale de sécurité du médicament et des produits de santé (ANSM) et réseau des Centres Régionaux de Pharmacovigilance - Site internet : <a href="http://www.signalement-sante.gouv.fr">www.signalement-sante.gouv.fr</a>.</p>
+<p class="AmmAnnexeTitre2"><a name="RcpSurdosage">4.9. Surdosage</a>&nbsp;&nbsp;<a href='#HautDePage'><img src='img/BackToTop.jpg' width='15px' height='15px' alt='Retour en haut de la page' title='Retour en haut de la page' /></a></p>
+<p class=AmmCorpsTexte>Des diarrhées, douleurs abdominales et vomissements ont été rapportés.<span style='font-family:"Arial Narrow",sans-serif'> </span>En cas de diarrhées sévères, une perte de poids et un déséquilibre hydro-électrolytique peuvent survenir. La diarrhée, due à une dose excessive, disparaît à l'arrêt temporaire du traitement, ou après une réduction de la posologie.</p>
+<p class=AmmCorpsTexte>En cas de perte hydrique importante secondaire à la diarrhée ou aux vomissements, il peut être nécessaire de corriger les désordres hydro-électrolytiques.</p>
+<p class="AmmAnnexeTitre1"><a name="RcpPropPharmacologiques">5. PROPRIETES PHARMACOLOGIQUES</a>&nbsp;&nbsp;<a href='#HautDePage'><img src='img/BackToTop.jpg' width='15px' height='15px' alt='Retour en haut de la page' title='Retour en haut de la page' /></a></p>
+<p class="AmmAnnexeTitre2"><a name="RcpPropPharmacodynamiques">5.1. Propriétés pharmacodynamiques</a>&nbsp;&nbsp;<a href='#HautDePage'><img src='img/BackToTop.jpg' width='15px' height='15px' alt='Retour en haut de la page' title='Retour en haut de la page' /></a></p>
+<p class=AmmCorpsTexteGras>Classe pharmacothérapeutique : laxatif osmotique, code ATC : A06AD15 (A : appareil digestif et métabolisme).</p>
+<p class=AmmCorpsTexte>Les macrogols de haut poids moléculaire (4000) sont de longs polymères linéaires sur lesquels sont retenues les molécules d'eau par liaisons hydrogènes. Administrés par voie orale, ils entraînent un accroissement du volume des liquides intestinaux.</p>
+<p class=AmmCorpsTexte>Le volume de liquide intestinal non absorbé est à l'origine des propriétés laxatives de la solution.</p>
+<p class="AmmAnnexeTitre2"><a name="RcpPropPharmacocinetiques">5.2. Propriétés pharmacocinétiques</a>&nbsp;&nbsp;<a href='#HautDePage'><img src='img/BackToTop.jpg' width='15px' height='15px' alt='Retour en haut de la page' title='Retour en haut de la page' /></a></p>
+<p class=AmmCorpsTexte>Les données de pharmacocinétique confirment l'absence de résorption digestive et de biotransformation du macrogol 4000, après ingestion orale.</p>
+<p class="AmmAnnexeTitre2"><a name="RcpSecuritePreclinique">5.3. Données de sécurité préclinique</a>&nbsp;&nbsp;<a href='#HautDePage'><img src='img/BackToTop.jpg' width='15px' height='15px' alt='Retour en haut de la page' title='Retour en haut de la page' /></a></p>
+<p class=AmmCorpsTexte>Les études toxicologiques effectuées chez différentes espèces animales n'ont révélé aucun signe de toxicité systémique ou gastro-intestinale locale. Le macrogol 4000 n'a pas révélé d'effet tératogène ou mutagène.</p>
+<p class=AmmCorpsTexte>Les études d'interactions potentielles, réalisées chez le rat avec certains AINS, anticoagulants, antisécrétoires gastriques et un sulfamide hypoglycémiant, n'ont pas montré d'interférence du MACROGOL 4000 VIATRIS sur la résorption gastro-intestinale des substances étudiées.</p>
+<p class=AmmCorpsTexte><span style='color:black'>Aucune étude de carcinogénicité n’a été conduite.</span></p>
+<p class="AmmAnnexeTitre1"><a name="RcpDonneesPharmaceutiques">6. DONNEES PHARMACEUTIQUES</a>&nbsp;&nbsp;<a href='#HautDePage'><img src='img/BackToTop.jpg' width='15px' height='15px' alt='Retour en haut de la page' title='Retour en haut de la page' /></a></p>
+<p class="AmmAnnexeTitre2"><a name="RcpListeExcipients">6.1. Liste des excipients</a>&nbsp;&nbsp;<a href='#HautDePage'><img src='img/BackToTop.jpg' width='15px' height='15px' alt='Retour en haut de la page' title='Retour en haut de la page' /></a></p>
+<p class=AmmCorpsTexte><a name="Rcp_6_1_ListeExcipients_1"></a>Saccharine sodique (E954) et arôme orange-pamplemousse<sup>*</sup></p>
+<p class=AmmCorpsTexte><sup>*</sup><span class='souligne'>Composition de l'arôme orange-pamplemousse :</span> huiles essentielles d'orange et de pamplemousse, citral, aldéhyde acétique, linalol, éthylbutyrate, alpha terpinéol, octanal, cis 3 hexénol, buthyldroxyanisole (E320), maltodextrine, gomme arabique (E414), sorbitol (E420), anhydride sulfureux (E220).</p>
+<p class="AmmAnnexeTitre2"><a name="RcpIncompatibilites">6.2. Incompatibilités</a>&nbsp;&nbsp;<a href='#HautDePage'><img src='img/BackToTop.jpg' width='15px' height='15px' alt='Retour en haut de la page' title='Retour en haut de la page' /></a></p>
+<p class=AmmCorpsTexte>Sans objet.</p>
+<p class="AmmAnnexeTitre2"><a name="RcpDureeConservation">6.3. Durée de conservation</a>&nbsp;&nbsp;<a href='#HautDePage'><img src='img/BackToTop.jpg' width='15px' height='15px' alt='Retour en haut de la page' title='Retour en haut de la page' /></a></p>
+<p class=AmmCorpsTexte>30 mois</p>
+<p class="AmmAnnexeTitre2"><a name="RcpPrecConservation">6.4. Précautions particulières de conservation</a>&nbsp;&nbsp;<a href='#HautDePage'><img src='img/BackToTop.jpg' width='15px' height='15px' alt='Retour en haut de la page' title='Retour en haut de la page' /></a></p>
+<p class=AmmCorpsTexte>Ce médicament ne nécessite pas de précautions particulières de conservation.</p>
+<p class="AmmAnnexeTitre2"><a name="RcpEmballage">6.5. Nature et contenu de l'emballage extérieur</a>&nbsp;&nbsp;<a href='#HautDePage'><img src='img/BackToTop.jpg' width='15px' height='15px' alt='Retour en haut de la page' title='Retour en haut de la page' /></a></p>
+<p class=AmmCorpsTexte>10, 200 g en sachet-dose (papier/aluminium/PE). Boîte de 10, 20, 50 et 100 sachets.</p>
+<p class=AmmCorpsTexte>Toutes les présentations peuvent ne pas être commercialisées.</p>
+<p class="AmmAnnexeTitre2"><a name="RcpPrecEmpl">6.6. Précautions particulières d’élimination et de manipulation</a>&nbsp;&nbsp;<a href='#HautDePage'><img src='img/BackToTop.jpg' width='15px' height='15px' alt='Retour en haut de la page' title='Retour en haut de la page' /></a></p>
+<p class=AmmCorpsTexte>Pas d'exigences particulières.</p>
+<p class=AmmCorpsTexte>Tout médicament non utilisé ou déchet doit être éliminé conformément à la réglementation en vigueur.</p>
+<p class="AmmAnnexeTitre1"><a name="RcpTitulaireAmm">7. TITULAIRE DE L’AUTORISATION DE MISE SUR LE MARCHE</a>&nbsp;&nbsp;<a href='#HautDePage'><img src='img/BackToTop.jpg' width='15px' height='15px' alt='Retour en haut de la page' title='Retour en haut de la page' /></a></p>
+<p class=AmmCorpsTexteGras style='margin-bottom:0cm;margin-bottom:.0001pt'>VIATRIS SANTE</p>
+<p class=AmmCorpsTexte style='margin-bottom:0cm;margin-bottom:.0001pt'>1 RUE DE TURIN</p>
+<p class=AmmCorpsTexte>69007 LYON</p>
+<p class="AmmAnnexeTitre1"><a name="RcpNumAutor">8. NUMERO(S) D’AUTORISATION DE MISE SUR LE MARCHE</a>&nbsp;&nbsp;<a href='#HautDePage'><img src='img/BackToTop.jpg' width='15px' height='15px' alt='Retour en haut de la page' title='Retour en haut de la page' /></a></p>
+<p class=AmmListePuces1 style='margin-left:17.85pt;text-indent:-17.85pt'><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>34009 389 498 9 6 : 10,200 g en sachet-dose (papier/aluminium/PE). Boîte de 10</p>
+<p class=AmmListePuces1 style='margin-left:17.85pt;text-indent:-17.85pt'><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>34009 389 499 5 7 : 10,200 g en sachet-dose (papier/aluminium/PE). Boîte de 20</p>
+<p class=AmmListePuces1 style='margin-left:17.85pt;text-indent:-17.85pt'><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>34009 389 507 8 6 : 10,200 g en sachet-dose (papier/aluminium/PE). Boîte de 50</p>
+<p class=AmmListePuces1 style='margin-left:17.85pt;text-indent:-17.85pt'><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>34009 573 818 2 0 : 10,200 g en sachet -dose (papier/aluminium/PE). Boîte de 100</p>
+<p class="AmmAnnexeTitre1"><a name="RcpPremiereAutorisation">9. DATE DE PREMIERE AUTORISATION/DE RENOUVELLEMENT DE L’AUTORISATION</a>&nbsp;&nbsp;<a href='#HautDePage'><img src='img/BackToTop.jpg' width='15px' height='15px' alt='Retour en haut de la page' title='Retour en haut de la page' /></a></p>
+<p class=AmmCorpsTexte><span lang=FR-BE>[à </span>compléter<span lang=FR-BE> ultérieurement par le titulaire]</span></p>
+<p class="AmmAnnexeTitre1"><a name="RcpDateRevision">10. DATE DE MISE A JOUR DU TEXTE</a>&nbsp;&nbsp;<a href='#HautDePage'><img src='img/BackToTop.jpg' width='15px' height='15px' alt='Retour en haut de la page' title='Retour en haut de la page' /></a></p>
+<p class=AmmCorpsTexte><span lang=FR-BE>[à </span>compléter<span lang=FR-BE> ultérieurement par le titulaire]</span></p>
+<p class="AmmAnnexeTitre1"><a name="RcpDosimetrie">11. DOSIMETRIE</a>&nbsp;&nbsp;<a href='#HautDePage'><img src='img/BackToTop.jpg' width='15px' height='15px' alt='Retour en haut de la page' title='Retour en haut de la page' /></a></p>
+<p class=AmmCorpsTexte>Sans objet.</p>
+<p class="AmmAnnexeTitre1"><a name="RcpInstPrepRadioph">12. INSTRUCTIONS POUR LA PREPARATION DES RADIOPHARMACEUTIQUES</a>&nbsp;&nbsp;<a href='#HautDePage'><img src='img/BackToTop.jpg' width='15px' height='15px' alt='Retour en haut de la page' title='Retour en haut de la page' /></a></p>
+<p class=AmmCorpsTexte>Sans objet.</p>
+<div style='border:none;border-top:solid windowtext 1.0pt;padding:0cm 0cm 0cm 0cm'>
+<p class="AmmAnnexeTitre"><a name="RcpCondPrescription">CONDITIONS DE PRESCRIPTION ET DE DELIVRANCE</a></p>
+</div>
+<p class=AmmCorpsTexte style='margin-top:6.0pt'>Médicament non soumis à prescription médicale.</p>
+<span class='gras'><span style='font-size:12.0pt;font-family:"Arial",sans-serif;color:#0B3D92;
+text-transform:uppercase'><br clear=all>
+</span></span>					
+					<p class="alignright"><a href="#HautDePage">Retour en haut de la page <img src="img/BackToTop.jpg" width="20px" height="20px" alt="Retour en haut de la page" title="Retour en haut de la page" /></a></p>
+				</div>
+			</div>
+		</div>
+	</div>
+
+<table summary="" class="content" width="1000">
+	<tr>
+		<td height="100px">&nbsp;</td>
+	</tr>
+</table>
+<table summary="Pied de page" class="footer" width="1000">
+	<tr>
+		<td>
+			<table summary="" class="tablealigncenter" border="0">
+				<tr>
+					<td width="100px" class="aligncenter"><a id="lien_ansm" href="http://ansm.sante.fr/" target="_blank"><img src="img/Logo_ANSM.png" width="150" height="60" alt="ANSM - Agence nationale de sécurité du médicament et des produits de santé" title="L'ANSM met à disposition les principales informations issues de l'Autorisation de mise sur le marché, l'appartenance à un groupe générique, les liens vers les informations de sécurité qu'elle publie, l'identification des médicaments sous surveillance renforcée - nouvelle fenêtre" /></a></td>
+					          <td>&nbsp;</td>
+					<td width="100px" class="aligncenter"><img src="img/Logo_HAS.png" width="150" height="60" alt="HAS - Haute autorité de santé" title="La HAS met à disposition les informations relatives au service médical rendu, à l'amélioration du service médical rendu ainsi que les liens vers les avis de la Commission de la Transparence correspondants - nouvelle fenêtre" /></td>
+					<td>&nbsp;</td>
+					<td width="100px" class="aligncenter"><img src="img/Logo_CNAM.png" width="150" height="60" alt="UNCAM - Unin nationale des caisses d'assurance maladie" title="L'UNCAM met à disposition le taux de remboursement, le prix et les indications remboursables le cas échéant, ainsi que l'agrément aux collectivités - nouvelle fenêtre" /></td>
+          				</tr>
+			</table> 
+		</td>
+	</tr>
+</table>
+<table summary="" class="finpage" width="1000">
+	<tr>
+		<td height="100px" class="aligncenter">
+			<a class="navigation" href="plan.php">Plan du site</a>&nbsp;|&nbsp;
+			<a class="navigation" href="accessibilite.php">Accessibilité</a>&nbsp;|&nbsp;
+			<a class="navigation" href="contact.php">Contact</a>&nbsp;|&nbsp;
+			<a class="navigation" href="telechargement.php">Téléchargement</a>&nbsp;|&nbsp;
+			<a class="navigation" href="DeclarationConfidentialite.php">Declaration de confidentialité</a>&nbsp;|&nbsp;
+			<a class="navigation" href="http://www.service-public.fr/" title="Service Public - Nouvelle fenêtre" target="_blank">Service-Public.fr</a>&nbsp;|&nbsp;
+			<a class="navigation" href="http://www.legifrance.gouv.fr/" title="Legifrance - Nouvelle fenêtre" target="_blank">Legifrance</a>&nbsp;|&nbsp;
+			<a class="navigation" href="http://www.gouvernement.fr/" title="Gouvernement - Nouvelle fenêtre" target="_blank" >Gouvernement.fr</a>
+		</td>
+	</tr>
+</table>
+
+
+
+<!-- Matomo -->
+<script type="text/javascript">
+  var _paq = window._paq = window._paq || [];
+  /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
+  _paq.push(['trackPageView']);
+  _paq.push(['enableLinkTracking']);
+  (function() {
+    var u="https://stats.integra.fr/";
+    _paq.push(['setTrackerUrl', u+'matomo.php']);
+    _paq.push(['setSiteId', '79']);
+    var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+    g.type='text/javascript'; g.async=true; g.src=u+'matomo.js'; s.parentNode.insertBefore(g,s);
+  })();
+</script>
+<!-- End Matomo Code -->
+
+
+
+</body>
+</html>

@@ -1,0 +1,525 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="fr" lang="fr">
+<head>
+	<title>Résumé des caractéristiques du produit - EFFERALGAN 1000 mg, comprimé effervescent  - Base de données publique des médicaments</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=windows-1252"/>
+	<meta name="robots" content="index, follow"/>
+	<meta name="Description" content="Base de données publique des médicaments"/>
+	<meta name="Keywords" content="base, données, publique, médicaments, Résumé des caractéristiques du produit, EFFERALGAN 1000 mg, comprimé effervescent "/>
+	<meta name="Subject" content="medicament"/>
+	<link href='https://fonts.googleapis.com/css?family=Noticia+Text' rel='stylesheet' type='text/css' />
+	<link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro' rel='stylesheet' type='text/css' />
+	<link href="style/style_bdm.css?v=2.2.3" type="text/css" rel="stylesheet"/>
+	<link href="style/style_RCP_Notice.css" type="text/css" rel="stylesheet"/>
+  <link rel="alternate" href="http://m.base-donnees-publique.medicaments.gouv.fr/#!info-61574554">
+    <script type="text/javascript" src="scripts/autocomplete.js?v=2.2.3"></script>
+	<script type="text/javascript" src="scripts/jquery.js"></script>
+    <script type="text/javascript" src="scripts/jquery-ui.min.js"></script>
+	<script type="text/javascript" src="scripts/common.js"></script>
+	<link rel="icon" type="image/x-icon" href="favicon.ico" />
+</head>
+
+<body>
+
+<a name="HautDePage" />
+<div id="bandeauhaut">
+	<a id="lien_ministere" class="lienmenu" href="http://www.sante.gouv.fr" target="_blank" title="Site du ministère des affaires sociales et de la santé - nouvelle fenêtre"><img id="logoministere" src="img/Logo_Ministere.jpg"  alt="Logo du ministère des affaires sociales et de la santé"/></a>
+	<h1 class="texteTitreSite">
+		Base <span class="texteBleu">de</span> données <span class="texteBleu">publique</span><br/><span class="texteBleu">des</span> médicaments
+	</h1>
+		<a id="lien_medicament_gouv" class="lienEspaceMedic" target="_blank" href="http://medicaments.gouv.fr" title="Visiter [medicaments.gouv.fr] - nouvelle fenêtre">Visiter [medicaments.gouv.fr] <img src="/img/icone_lien.png" alt="Visiter [medicaments.gouv.fr]"  title="Visiter [medicaments.gouv.fr] - nouvelle fenetre" /></a>
+</div>
+<!--div align="center">
+	<a id="banniere" target="_blank" href="http://social-sante.gouv.fr/soins-et-maladies/medicaments/medicaments-generiques/" title="Visiter [medicaments.gouv.fr] - M?dicaments g?n?riques">
+		<img width="1000"   src ="/img/carrouselbannieres.gif" alt="Visiter [medicaments.gouv.fr] - M?dicaments g?n?riques" title="Visiter [medicaments.gouv.fr] - M?dicaments g?n?riques" />
+	</a>
+</div-->
+
+<div id="menuhaut">
+	<span id="menuhaut_gauche">
+		<a id="lien_accueil" class="navigation" href="index.php">Accueil</a>&nbsp;|&nbsp;
+		<a id="lien_glossaire" class="navigation" href="glossaire.php">Glossaire</a>&nbsp;|&nbsp;
+		<a id="lien_aide" class="navigation" href="aide.php">Aide</a>		
+	</span>
+	
+		
+	<span id="menuhaut_dernmaj">
+        <br>Dernière <span title=" 2.4.4
+">mise à jour</span> le 03/03/2025	</span>
+</div>
+
+	<script language="javascript" type="text/javascript">
+		//<![CDATA[ 
+		function Aff(men) {
+			document.write("<ul class=\"menuDoc\">");
+			for(var no_rub=0;no_rub<men.num_rub;no_rub++) {
+				document.write("<li><a class='leftMenu' href='"+menu[no_rub].page+"'>");
+				document.write(men[no_rub].txt);
+				document.write("</a></li>");
+				if (men[no_rub].nb_lien != 0){
+					document.write("<ul class=\"sousMenuDoc\">");
+				}
+				for(var no_lien=0;no_lien<men[no_rub].nb_lien;no_lien++) {
+					document.write("<li><a class='leftMenu' href='"+men[no_rub][no_lien].page+"'>");
+					document.write(men[no_rub][no_lien].txt);
+					document.write("</a></li>");
+				}
+				if (men[no_rub].nb_lien != 0){
+					document.write("</ul>");
+				}
+			}
+			document.write("</ul>");
+		}
+		
+		function CreerMenu(police,imgRub,imgOption,imgOptionFin,hauteur) {
+			this.num_rub=0;
+			this.police=police;
+			this.imgRub=imgRub;
+			this.imgOpt=imgOption;
+			this.imgOptFin=imgOptionFin;
+			this.hauteur=hauteur;
+			this.AddRub=AddRub;
+			this.AddLien=AddLien;
+		}
+		
+		function AddRub(txt,aff,page) {
+			var rub = new Object;
+				rub.txt=txt;
+				rub.aff=aff;
+				rub.page=page;
+				rub.nb_lien=0;
+			this[this.num_rub]=rub;
+			this.num_rub++;
+		}
+
+		function AddLien(txt,page) {
+			var no_rub = this.num_rub-1;
+			var no_lien= this[no_rub].nb_lien;
+			var lien = new Object;
+				lien.txt=txt;
+				lien.page=page;
+			this[no_rub][no_lien]=lien;
+			this[no_rub].nb_lien++;
+		}
+		var menu=new CreerMenu("arial","img/dyn04.gif","img/dyn22.gif","img/dyn55.gif",18);
+		//]]> 
+		menu.AddRub("Dénomination","O","#RcpDenomination");
+			menu.AddRub("Composition","O","#RcpCompoQualiQuanti");
+			menu.AddRub("Forme pharma.","O","#RcpFormePharm");
+			menu.AddRub("Clinique","O","#RcpDonneesCliniques");
+			menu.AddLien("Indic. thérapeutiques","#RcpIndicTherap");
+				menu.AddLien("Posologie","#RcpPosoAdmin");
+				menu.AddLien("Contre-indications","#RcpContreindications");
+				menu.AddLien("Mise en garde","#RcpMisesEnGarde");
+				menu.AddLien("Interactions","#RcpInteractionsMed");
+				menu.AddLien("Grossesse, allait.","#RcpFertGrossAllait");
+				menu.AddLien("Conduite véhicules","#RcpConduite");
+				menu.AddLien("Effets indésirables","#RcpEffetsIndesirables");
+				menu.AddLien("Surdosage","#RcpSurdosage");
+				menu.AddRub("Pharmacologie","O","#RcpPropPharmacologiques");
+			menu.AddLien("Pharmacodynamie","#RcpPropPharmacodynamiques");
+				menu.AddLien("Pharmacocinétique","#RcpPropPharmacocinetiques");
+				menu.AddLien("Sécurité préclinique","#RcpSecuritePreclinique");
+				menu.AddRub("Pharmaceutique","O","#RcpDonneesPharmaceutiques");
+			menu.AddLien("Liste excipients","#RcpListeExcipients");
+				menu.AddLien("Incompatibilités","#RcpIncompatibilites");
+				menu.AddLien("Durée conservation","#RcpDureeConservation");
+				menu.AddLien("Conservation","#RcpPrecConservation");
+				menu.AddLien("Emballage","#RcpEmballage");
+				menu.AddLien("Utilisation/manipulation","#RcpPrecEmpl");
+				menu.AddRub("Présentations","O","#RcpNumAutor");
+			menu.AddRub("Autorisation, renouv.","O","#RcpPremiereAutorisation");
+			menu.AddRub("Date de révision","O","#RcpDateRevision");
+			menu.AddRub("Dosimétrie","O","#RcpDosimetrie");
+			menu.AddRub("Préparation radiopharma.","O","#RcpInstPrepRadioph");
+				</script>
+
+	<div id="container">
+		<div id="leftnav">
+			<div id="cadreMenuGauche">
+				<h2 class="sommaireMenu">Sommaire</h2>
+				<div id="menuGauche">
+					<script language="JavaScript" type="text/javascript">Aff(menu);</script>
+				</div>
+			</div>
+		</div>
+		<div id="contentPrincipal">
+			<div id="boutonsliens">
+				<a id='lien_fiche_info' href='extrait.php?specid=61574554' ><img id="ongletficheinfo" alt="Onglet fiche information" src="img/onglet_fiche_info_vert.png" /></a><a id='lien_rcp' href='affichageDoc.php?specid=61574554&amp;typedoc=R'><img class="onglet" alt="Onglet résumé des caractéristiques du produit" src="img/onglet_rcp_gris.png" /></a><a id='lien_notice' href='affichageDoc.php?specid=61574554&amp;typedoc=N'><img class="onglet" alt="Onglet notice patient" src="img/onglet_notice_vert.png" /></a>			</div>
+			<div class="titredeno">
+				<table summary="" border="0" cellspacing="0">
+					<tr><td colspan="3" height="10px"></td></tr>
+					<tr>
+						<td width="15px">&nbsp;</td>
+						<td width="685px"><h1 class="textedeno">EFFERALGAN 1000 mg, comprimé effervescent  - Résumé des caractéristiques du produit</h1></td>
+						<td width="43px" class="tdcenter"><a href="Javascript:void(null)" onclick="print();"><img src="img/imprimante.png" height="20px" width="20px" alt="Imprimer le document" title="Imprimer le document" border="0" /></a></td>
+					</tr>
+					<tr><td colspan="3" height="10px"></td></tr>
+				</table>
+			</div>
+			
+			<div id="contentDocument">
+				<div id="textDocument">
+					<p class="DateNotif">ANSM - Mis à jour le : 02/04/2024</p>
+<p class="AmmAnnexeTitre1"><a name="RcpDenomination">1. DENOMINATION DU MEDICAMENT</a>&nbsp;&nbsp;<a href='#HautDePage'><img src='img/BackToTop.jpg' width='15px' height='15px' alt='Retour en haut de la page' title='Retour en haut de la page' /></a></p>
+<p class=AmmCorpsTexteGras>EFFERALGAN 1000 mg, comprimé effervescent</p>
+<p class="AmmAnnexeTitre1"><a name="RcpCompoQualiQuanti">2. COMPOSITION QUALITATIVE ET QUANTITATIVE</a>&nbsp;&nbsp;<a href='#HautDePage'><img src='img/BackToTop.jpg' width='15px' height='15px' alt='Retour en haut de la page' title='Retour en haut de la page' /></a></p>
+<p class=AmmComposition>Paracétamol<span style='color:#0A0C0D'>....................................................................................................................... 1000 mg</span></p>
+<p class=AmmCorpsTexte align=center style='text-align:center'>Pour un comprimé effervescent.</p>
+<p class=AmmCorpsTexteGras><span class=CharacterStyle1><span style='font-weight: normal'>Excipients à effet notoire :</span> </span><span style='font-weight: normal'>un comprimé contient </span><span style='font-weight:normal'>100 mg de benzoate de sodium (E211), </span><span style='font-weight:normal'>394 mg de sodium, 252 mg de sorbitol (E420), et dans l’arôme, 1,93 mg de fructose, 1,65 mg de glucose et 0,55 mg de saccharose.</span></p>
+<p class=AmmCorpsTexte><span class=CharacterStyle1>Pour la liste complète des excipients, voir rubrique 6.1.</span></p>
+<p class="AmmAnnexeTitre1"><a name="RcpFormePharm">3. FORME PHARMACEUTIQUE</a>&nbsp;&nbsp;<a href='#HautDePage'><img src='img/BackToTop.jpg' width='15px' height='15px' alt='Retour en haut de la page' title='Retour en haut de la page' /></a></p>
+<p class=AmmCorpsTexte>Comprimé effervescent.</p>
+<p class=AmmCorpsTexte>Comprimé blanc à blanc cassé, plat, rond, à bords biseautés, avec une barre de cassure, soluble dans l'eau donnant une réaction effervescente.</p>
+<p class=AmmCorpsTexte>La barre de cassure permet seulement de faciliter la prise du comprimé, elle ne le divise pas en doses égales.</p>
+<p class="AmmAnnexeTitre1"><a name="RcpDonneesCliniques">4. DONNEES CLINIQUES</a>&nbsp;&nbsp;<a href='#HautDePage'><img src='img/BackToTop.jpg' width='15px' height='15px' alt='Retour en haut de la page' title='Retour en haut de la page' /></a></p>
+<p class="AmmAnnexeTitre2"><a name="RcpIndicTherap">4.1. Indications thérapeutiques</a>&nbsp;&nbsp;<a href='#HautDePage'><img src='img/BackToTop.jpg' width='15px' height='15px' alt='Retour en haut de la page' title='Retour en haut de la page' /></a></p>
+<p class=AmmCorpsTexte>Traitement symptomatique des douleurs légères à modérées et/ou de la fièvre.</p>
+<p class=AmmCorpsTexte>Adulte et enfant à partir de 50 kg (environ 15 ans).</p>
+<p class="AmmAnnexeTitre2"><a name="RcpPosoAdmin">4.2. Posologie et mode d'administration</a>&nbsp;&nbsp;<a href='#HautDePage'><img src='img/BackToTop.jpg' width='15px' height='15px' alt='Retour en haut de la page' title='Retour en haut de la page' /></a></p>
+<p class=AmmAnnexeTitre3>Posologie</p>
+<p class=AmmCorpsTexte><span class='gras'>Attention : cette présentation contient 1000 mg (1 g) de paracétamol par comprimé : ne pas prendre 2 comprimés à la fois.</span></p>
+<p class=AmmCorpsTexte><span class='gras'>Utiliser la dose efficace la plus faible, pendant la durée la plus courte possible</span>. Utiliser la dose de 1000 mg en cas de douleurs et/ou fièvre non soulagées par une dose de 500 mg de paracétamol.</p>
+<p class=AmmCorpsTexte>Posologie recommandée : environ 60 mg/kg/jour à répartir en plusieurs prises sans dépasser la dose maximale indiquée dans le tableau ci-dessous.</p>
+<p class=AmmCorpsTexte>L’âge approximatif en fonction du poids est donné à titre d’information.</p>
+<div align=center>
+<table class=AmmCorpsTexteTable border=1 cellspacing=0 cellpadding=0
+style='border-collapse:collapse;border:none'>
+<tr style='height:35.55pt'>
+<td width=153 valign=top style='width:115.1pt;border:solid windowtext 1.0pt;
+background:#D9D9D9;padding:0cm 5.4pt 0cm 5.4pt;height:35.55pt'>
+<p class=AmmCorpsTexte align=center style='margin-bottom:0cm;margin-bottom: .0001pt;text-align:center'><span class='gras'>Poids</span></p>
+<p class=AmmCorpsTexte align=center style='margin-bottom:0cm;margin-bottom: .0001pt;text-align:center'>(Age approximatif)</p>
+</td>
+<td width=153 valign=top style='width:115.1pt;border:solid windowtext 1.0pt;
+border-left:none;background:#D9D9D9;padding:0cm 5.4pt 0cm 5.4pt;height:35.55pt'>
+<p class=AmmCorpsTexte align=center style='margin-bottom:0cm;margin-bottom: .0001pt;text-align:center'><span class=AmmCorpsTexteGrasCar>Dose maximale</span></p>
+<p class=AmmCorpsTexte align=center style='margin-bottom:0cm;margin-bottom: .0001pt;text-align:center'>par administration</p>
+</td>
+<td width=154 valign=top style='width:115.15pt;border:solid windowtext 1.0pt;
+border-left:none;background:#D9D9D9;padding:0cm 5.4pt 0cm 5.4pt;height:35.55pt'>
+<p class=AmmCorpsTexte align=center style='margin-bottom:0cm;margin-bottom: .0001pt;text-align:center'><span class='gras'>Intervalle </span>d’administration</p>
+</td>
+<td width=140 valign=top style='width:104.7pt;border:solid windowtext 1.0pt;
+border-left:none;background:#D9D9D9;padding:0cm 5.4pt 0cm 5.4pt;height:35.55pt'>
+<p class=AmmCorpsTexte align=center style='margin-bottom:0cm;margin-bottom: .0001pt;text-align:center'><span class='gras'>Dose journalière maximale</span></p>
+</td>
+</tr>
+<tr>
+<td width=153 valign=top style='width:115.1pt;border:solid windowtext 1.0pt;
+border-top:none;padding:0cm 5.4pt 0cm 5.4pt'>
+<p class=AmmCorpsTexte align=center style='margin-bottom:0cm;margin-bottom: .0001pt;text-align:center'><span class='gras'>Adulte et enfant à partir de 50 kg</span> (environ 15 ans)</p>
+</td>
+<td width=153 valign=top style='width:115.1pt;border-top:none;border-left:
+none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+padding:0cm 5.4pt 0cm 5.4pt'>
+<p class=AmmCorpsTexte align=center style='margin-bottom:0cm;margin-bottom: .0001pt;text-align:center'>1000 mg</p>
+<p class=AmmCorpsTexte align=center style='margin-bottom:0cm;margin-bottom: .0001pt;text-align:center'>soit 1 g<br> (1 comprimé)</p>
+</td>
+<td width=154 valign=top style='width:115.15pt;border-top:none;border-left:
+none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+padding:0cm 5.4pt 0cm 5.4pt'>
+<p class=AmmCorpsTexte align=center style='margin-bottom:0cm;margin-bottom: .0001pt;text-align:center'>4 heures minimum</p>
+</td>
+<td width=140 valign=top style='width:104.7pt;border-top:none;border-left:
+none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+padding:0cm 5.4pt 0cm 5.4pt'>
+<p class=AmmCorpsTexte align=center style='margin-bottom:0cm;margin-bottom: .0001pt;text-align:center'>3000 mg par jour soit 3 g</p>
+<p class=AmmCorpsTexte align=center style='margin-bottom:0cm;margin-bottom: .0001pt;text-align:center'>(3 comprimés)</p>
+</td>
+</tr>
+</table>
+</div>
+<p class=AmmCorpsTexteGras style='margin-top:6.0pt'>Attention : Prendre en compte l'ensemble des médicaments contenant du paracétamol pour éviter un surdosage, y compris si ce sont des médicaments obtenus sans prescription.</p>
+<p class=AmmCorpsTexte>Uniquement sur avis médical et en l’absence de facteurs de risques concomitants, la posologie peut être augmentée jusqu'à 4000 mg (4 g) par jour, soit 4 comprimés par jour, chez les patients pesant au moins 50 kg (environ 15 ans).</p>
+<p class=AmmCorpsTexteGras><span class='souligne'>Populations spéciales</span></p>
+<p class=AmmCorpsTexte>La dose maximale quotidienne ne doit pas dépasser 60 mg/kg/jour ni excéder 3000 mg par jour (3 g/jour) dans les situations suivantes :</p>
+<p class=AmmListePuces1 style='margin-left:17.85pt;text-align:justify; text-indent:-17.85pt;page-break-after:avoid'><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>Adultes de moins de 50 kg,</p>
+<p class=AmmListePuces1 style='margin-left:17.85pt;text-align:justify; text-indent:-17.85pt;page-break-after:avoid'><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>En cas de réserves basses ou déficit en glutathion hépatique (ex : malnutrition chronique, jeûne, amaigrissement récent, anorexie, cachexie),</p>
+<p class=AmmListePuces1 style='margin-left:17.85pt;text-align:justify; text-indent:-17.85pt;page-break-after:avoid'><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>Déshydratation.</p>
+<p class=AmmCorpsTexteGras style='margin-top:6.0pt;margin-right:0cm;margin-bottom: 0cm;margin-left:0cm;margin-bottom:.0001pt'>Insuffisance hépatique (légère à modérée), alcoolisme chronique et syndrome de Gilbert (jaunisse familiale non-hémolytique)</p>
+<p class=AmmCorpsTexte style='margin-top:6.0pt'>Il est recommandé de réduire la dose et d’augmenter l’intervalle minimum entre deux prises. La dose quotidienne de paracétamol ne doit pas dépasser 2000 mg/jour (2 g/jour).</p>
+<p class=AmmCorpsTexte style='margin-top:6.0pt;page-break-after:avoid'><span class='gras'>Insuffisance rénale </span></p>
+<p class=AmmCorpsTexte>En cas d'insuffisance rénale et sauf avis médical, il est recommandé de réduire la dose journalière maximale et d’augmenter l’intervalle minimum entre 2 prises selon le tableau ci-dessous. </p>
+<p class=AmmCorpsTexte>Adultes :</p>
+<table class=AmmCorpsTexteTable border=1 cellspacing=0 cellpadding=0
+style='margin-left:41.5pt;border-collapse:collapse;border:none'>
+<tr style='height:24.8pt'>
+<td width=170 valign=top style='width:127.7pt;border:solid black 1.0pt;
+background:#DFDFDF;padding:0cm 0cm 0cm 0cm;height:24.8pt'>
+<p class=AmmCorpsTexte align=center style='text-align:center'><span class='gras'>Clairance<span style='letter-spacing:-.4pt'> </span>de<span style='letter-spacing:-.25pt'> </span>la<span style='letter-spacing:-.05pt'> </span><span style='letter-spacing:-.1pt'>créatinine</span></span></p>
+</td>
+<td width=175 valign=top style='width:131.55pt;border:solid black 1.0pt;
+border-left:none;background:#DFDFDF;padding:0cm 0cm 0cm 0cm;height:24.8pt'>
+<p class=AmmCorpsTexte align=center style='text-align:center'><span class='gras'>Intervalle<span style='letter-spacing:-.6pt'> </span><span style='letter-spacing:-.1pt'>d’administration</span></span></p>
+</td>
+<td width=178 valign=top style='width:133.85pt;border:solid black 1.0pt;
+border-left:none;background:#DFDFDF;padding:0cm 0cm 0cm 0cm;height:24.8pt'>
+<p class=AmmCorpsTexte align=center style='text-align:center'><span class='gras'>Dose<span style='letter-spacing:-.45pt'> </span>journalière<span style='letter-spacing: -.45pt'> </span><span style='letter-spacing:-.1pt'>maximale</span></span></p>
+</td>
+</tr>
+<tr style='height:24.65pt'>
+<td width=170 valign=top style='width:127.7pt;border:solid black 1.0pt;
+border-top:none;padding:0cm 0cm 0cm 0cm;height:24.65pt'>
+<p class=AmmCorpsTexte align=center style='text-align:center'>10-50<span style='letter-spacing:-.5pt'> </span><span style='letter-spacing:-.1pt'>mL/min</span></p>
+</td>
+<td width=175 valign=top style='width:131.55pt;border-top:none;border-left:
+none;border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;
+padding:0cm 0cm 0cm 0cm;height:24.65pt'>
+<p class=AmmCorpsTexte align=center style='text-align:center'>6<span style='letter-spacing:-.35pt'> </span>heures<span style='letter-spacing:-.2pt'> </span><span style='letter-spacing:-.1pt'>minimum</span></p>
+</td>
+<td width=178 valign=top style='width:133.85pt;border-top:none;border-left:
+none;border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;
+padding:0cm 0cm 0cm 0cm;height:24.65pt'>
+<p class=AmmCorpsTexte align=center style='text-align:center'>3000<span style='letter-spacing:-.25pt'> </span>mg/j<span style='letter-spacing:-.1pt'> </span>(3<span style='letter-spacing:-.2pt'> </span><span style='letter-spacing: -.1pt'>g/jour)</span></p>
+</td>
+</tr>
+<tr style='height:24.8pt'>
+<td width=170 valign=top style='width:127.7pt;border:solid black 1.0pt;
+border-top:none;padding:0cm 0cm 0cm 0cm;height:24.8pt'>
+<p class=AmmCorpsTexte align=center style='text-align:center'>&lt;10<span style='letter-spacing:-.2pt'> </span><span style='letter-spacing:-.1pt'>mL/min</span></p>
+</td>
+<td width=175 valign=top style='width:131.55pt;border-top:none;border-left:
+none;border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;
+padding:0cm 0cm 0cm 0cm;height:24.8pt'>
+<p class=AmmCorpsTexte align=center style='text-align:center'>8<span style='letter-spacing:-.3pt'> </span>heures<span style='letter-spacing:-.2pt'> </span><span style='letter-spacing:-.1pt'>minimum</span></p>
+</td>
+<td width=178 valign=top style='width:133.85pt;border-top:none;border-left:
+none;border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;
+padding:0cm 0cm 0cm 0cm;height:24.8pt'>
+<p class=AmmCorpsTexte align=center style='text-align:center'>2000<span style='letter-spacing:-.2pt'> </span>mg/j<span style='letter-spacing:-.1pt'> </span>(2<span style='letter-spacing:-.25pt'> </span><span style='letter-spacing:-.1pt'>g/jour)</span></p>
+</td>
+</tr>
+</table>
+<p class=AmmCorpsTexte style='margin-top:6.0pt'><span class='gras'>Personnes âgées</span></p>
+<p class=AmmCorpsTexte>L’expérience clinique indique que la posologie recommandée chez les adultes est généralement adéquate. Toutefois, il convient de tenir compte des facteurs de risques concomitants, dont certains surviennent plus souvent chez les sujets âgés, et qui nécessitent une adaptation de la posologie.</p>
+<p class=AmmAnnexeTitre3>Mode d’administration</p>
+<p class=AmmCorpsTexte>Voie orale.</p>
+<p class=AmmCorpsTexte>Laisser dissoudre <span class='gras'><span class='souligne'>complètement</span></span> le comprimé dans un verre d'eau.</p>
+<p class=AmmCorpsTexte>Ne pas avaler ou mâcher les comprimés.</p>
+<p class=AmmCorpsTexte style='margin-top:6.0pt'><span class='gras'><span class='souligne'>Durée de traitement </span></span></p>
+<p class=MsoBodyText style='margin-bottom:6.0pt'>Une<span style='letter-spacing: -.35pt'> </span>utilisation<span style='letter-spacing:-.3pt'> </span>fréquente<span style='letter-spacing:-.3pt'> </span>ou<span style='letter-spacing:-.35pt'> </span>prolongée<span style='letter-spacing:-.35pt'> </span>sans<span style='letter-spacing:-.3pt'> </span>surveillance<span style='letter-spacing:-.3pt'> </span>médicale<span style='letter-spacing:-.3pt'> </span>est<span style='letter-spacing:-.4pt'> </span><span style='letter-spacing: -.1pt'>déconseillée.</span></p>
+<p class=AmmCorpsTexte>Si<span style='letter-spacing:-.05pt'> </span>les<span style='letter-spacing:-.1pt'> </span>symptômes persistent<span style='letter-spacing:-.05pt'> </span>au-delà<span style='letter-spacing:-.15pt'> </span>de 5<span style='letter-spacing:-.15pt'> </span>jours en<span style='letter-spacing:-.05pt'> </span>cas de<span style='letter-spacing:-.05pt'> </span>douleur ou<span style='letter-spacing:-.15pt'> </span>de 3<span style='letter-spacing:-.15pt'> </span>jours<span style='letter-spacing:-.05pt'> </span>en<span style='letter-spacing:-.05pt'> </span>cas de<span style='letter-spacing:-.15pt'> </span>fièvre,<span style='letter-spacing:-.05pt'> </span>si<span style='letter-spacing:-.2pt'> </span>les symptômes s’aggravent ou si de nouveaux symptômes apparaissent, le traitement doit être réévalué.</p>
+<p class="AmmAnnexeTitre2"><a name="RcpContreindications">4.3. Contre-indications</a>&nbsp;&nbsp;<a href='#HautDePage'><img src='img/BackToTop.jpg' width='15px' height='15px' alt='Retour en haut de la page' title='Retour en haut de la page' /></a></p>
+<p class=AmmCorpsTexte>Hypersensibilité au paracétamol ou à l’un des excipients mentionnés à la rubrique 6.1.</p>
+<p class=AmmCorpsTexte>Insuffisance hépatique sévère.</p>
+<p class="AmmAnnexeTitre2"><a name="RcpMisesEnGarde">4.4. Mises en garde spéciales et précautions d'emploi</a>&nbsp;&nbsp;<a href='#HautDePage'><img src='img/BackToTop.jpg' width='15px' height='15px' alt='Retour en haut de la page' title='Retour en haut de la page' /></a></p>
+<p class=AmmCorpsTexte>En raison de la dose unitaire de paracétamol par comprimé (1000 mg soit 1 g), cette présentation n'est pas adaptée aux enfants de moins de 50 kg.</p>
+<p class=AmmCorpsTexte>Les patients doivent être informés qu’ils ne doivent pas prendre d’autres médicaments contenant du paracétamol. La prise de plusieurs doses en une administration peut gravement endommager le<span style='letter-spacing: -.05pt'> </span>foie ; le cas échéant, le patient doit immédiatement appeler un médecin.</p>
+<p class=AmmCorpsTexte>Chez<span style='letter-spacing:1.2pt'> </span>un<span style='letter-spacing:1.2pt'> </span>enfant<span style='letter-spacing:1.3pt'> </span>traité<span style='letter-spacing:1.3pt'> </span>par<span style='letter-spacing:1.25pt'> </span>60<span style='letter-spacing:1.2pt'> </span>mg/kg/jour<span style='letter-spacing: 1.25pt'> </span>de<span style='letter-spacing:1.2pt'> </span>paracétamol,<span style='letter-spacing:1.15pt'> </span>l'association<span style='letter-spacing: 1.3pt'> </span>d'un<span style='letter-spacing:1.25pt'> </span>autre<span style='letter-spacing:1.2pt'> </span>antipyrétique<span style='letter-spacing: 1.2pt'> </span>n'est justifiée qu'en cas d'inefficacité.</p>
+<p class=AmmCorpsTexte>En<span style='letter-spacing:-.3pt'> </span>cas<span style='letter-spacing:-.2pt'> </span>d’hépatite<span style='letter-spacing: -.25pt'> </span>virale<span style='letter-spacing:-.3pt'> </span>aiguë,<span style='letter-spacing:-.1pt'> </span>il<span style='letter-spacing:-.35pt'> </span>convient<span style='letter-spacing:-.3pt'> </span>d'arrêter<span style='letter-spacing:-.15pt'> </span>le<span style='letter-spacing:-.25pt'> </span><span style='letter-spacing: -.1pt'>traitement.</span></p>
+<p class=AmmAnnexeTitre3>Précautions d’emploi</p>
+<p class=MsoBodyText>Le<span style='letter-spacing:-.35pt'> </span>paracétamol<span style='letter-spacing:-.4pt'> </span>doit<span style='letter-spacing:-.35pt'> </span>être<span style='letter-spacing:-.35pt'> </span>administré<span style='letter-spacing: -.4pt'> </span>avec<span style='letter-spacing:-.25pt'> </span>précaution<span style='letter-spacing:-.2pt'> </span>dans<span style='letter-spacing:-.25pt'> </span>les<span style='letter-spacing:-.35pt'> </span>situations<span style='letter-spacing: -.25pt'> </span>suivantes<span style='letter-spacing:-.3pt'> </span>(voir<span style='letter-spacing:-.35pt'> </span>rubrique<span style='letter-spacing:-.2pt'> </span>4.2)<span style='letter-spacing:-.25pt'> </span><span style='letter-spacing: -.5pt'>:</span></p>
+<p class=AmmListePuces1><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>Adulte<span style='letter-spacing:-.2pt'> </span>de<span style='letter-spacing:-.15pt'> </span>poids<span style='letter-spacing:-.25pt'> </span>inférieur<span style='letter-spacing:-.25pt'> </span>à<span style='letter-spacing:-.25pt'> </span>50<span style='letter-spacing:-.3pt'> </span><span style='letter-spacing:-.25pt'>kg</span></p>
+<p class=AmmListePuces1><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>Insuffisance<span style='letter-spacing:-.4pt'> </span>hépatique<span style='letter-spacing:-.2pt'> </span>légère<span style='letter-spacing:-.35pt'> </span>à<span style='letter-spacing:-.35pt'> </span><span style='letter-spacing: -.1pt'>modérée</span></p>
+<p class=AmmListePuces1><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>Alcoolisme<span style='letter-spacing:-.45pt'> </span>chronique<span style='letter-spacing:-.3pt'> </span>et<span style='letter-spacing:-.4pt'> </span>sevrage<span style='letter-spacing:-.3pt'> </span><span style='letter-spacing:-.1pt'>récent</span></p>
+<p class=AmmListePuces1><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>Insuffisance<span style='letter-spacing:-.55pt'> </span><span style='letter-spacing:-.1pt'>rénale</span></p>
+<p class=AmmListePuces1><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>Syndrome<span style='letter-spacing:-.4pt'> </span>de<span style='letter-spacing:-.35pt'> </span><span style='letter-spacing:-.1pt'>Gilbert</span></p>
+<p class=AmmListePuces1 style='text-align:justify'><span style='font-family: Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>Traitement<span style='letter-spacing:-.2pt'> </span>concomitant<span style='letter-spacing:-.2pt'> </span>avec<span style='letter-spacing:-.15pt'> </span>des<span style='letter-spacing:-.15pt'> </span>médicaments<span style='letter-spacing: -.1pt'> </span>affectant<span style='letter-spacing:-.05pt'> </span>la<span style='letter-spacing:-.25pt'> </span>fonction<span style='letter-spacing:-.2pt'> </span>hépatique<span style='letter-spacing:-.2pt'> </span>(ex<span style='letter-spacing:-.1pt'> </span>:<span style='letter-spacing:-.2pt'> </span>médicaments potentiellement<span style='letter-spacing:-.15pt'> </span>hépatotoxiques,<span style='letter-spacing:-.15pt'> </span>médicaments<span style='letter-spacing: -.1pt'> </span>inducteurs<span style='letter-spacing:-.15pt'> </span>enzymatiques<span style='letter-spacing:-.1pt'> </span>du<span style='letter-spacing:-.2pt'> </span>cytochrome<span style='letter-spacing:-.2pt'> </span>P450<span style='letter-spacing:-.2pt'> </span>tels que phénobarbital, phénytoïne, carbamazépine, topiramate, rifampicine)</p>
+<p class=AmmListePuces1 style='text-align:justify'><span style='font-family: Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>Déficit<span style='letter-spacing:-.25pt'> </span>en<span style='letter-spacing:-.2pt'> </span>Glucose-6-Phosphate<span style='letter-spacing: -.1pt'> </span>Déshydrogénase<span style='letter-spacing:-.2pt'> </span>(G6PD)<span style='letter-spacing:-.25pt'> </span>(pouvant<span style='letter-spacing:-.25pt'> </span>conduire<span style='letter-spacing:-.3pt'> </span>à<span style='letter-spacing:-.1pt'> </span>une<span style='letter-spacing:-.3pt'> </span>anémie <span style='letter-spacing:-.1pt'>hémolytique)</span></p>
+<p class=AmmListePuces1><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span><span style='letter-spacing:-.1pt'>Déshydratation</span></p>
+<p class=AmmListePuces1 style='text-align:justify'><span style='font-family: Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>En<span style='letter-spacing:-.15pt'> </span>cas<span style='letter-spacing:-.1pt'> </span>de<span style='letter-spacing:-.2pt'> </span>réserves<span style='letter-spacing:-.1pt'> </span>basses ou<span style='letter-spacing:-.15pt'> </span>déficit<span style='letter-spacing:-.2pt'> </span>en<span style='letter-spacing:-.2pt'> </span>glutathion<span style='letter-spacing: -.1pt'> </span>hépatique<span style='letter-spacing:-.15pt'> </span>(ex<span style='letter-spacing:-.1pt'> </span>:<span style='letter-spacing:-.15pt'> </span>malnutrition<span style='letter-spacing:-.2pt'> </span>chronique,<span style='letter-spacing: -.05pt'> </span>jeûne, amaigrissement récent, anorexie, cachexie)</p>
+<p class=AmmListePuces1><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>Personnes<span style='letter-spacing:-.55pt'> </span><span style='letter-spacing:-.1pt'>âgées</span></p>
+<p class=MsoBodyText style='margin-top:6.0pt;margin-right:0cm;margin-bottom: 6.0pt;margin-left:0cm'>La<span style='letter-spacing:-.35pt'> </span>consommation<span style='letter-spacing:-.35pt'> </span>de<span style='letter-spacing:-.35pt'> </span>boissons<span style='letter-spacing:-.35pt'> </span>alcoolisées<span style='letter-spacing: -.25pt'> </span>pendant<span style='letter-spacing:-.2pt'> </span>le<span style='letter-spacing:-.3pt'> </span>traitement<span style='letter-spacing: -.35pt'> </span>est<span style='letter-spacing:-.4pt'> </span><span style='letter-spacing:-.1pt'>déconseillée.</span></p>
+<p class=MsoBodyText style='margin-bottom:6.0pt;text-align:justify'>En cas de prise au long cours, de fortes doses, ou d’utilisation incorrecte d’analgésiques chez des patients atteints de céphalées chroniques, des céphalées peuvent apparaître ou s’aggraver ; elles ne doivent pas être traitées par des doses plus élevées de ce médicament. Dans de tels cas, l’utilisation d’analgésiques doit être interrompue sur avis médical.</p>
+<p class=AmmCorpsTexte style='margin-top:6.0pt'>La prudence est recommandée en cas d'administration concomitante de paracétamol et de flucloxacilline en raison d'un risque accru d'acidose métabolique à trou anionique élevé (AMTAE), en particulier chez les patients atteints d'insuffisance rénale sévère, de septicémie, de malnutrition et d'autres sources de déficit en glutathion (par exemple, alcoolisme chronique), ainsi que chez ceux utilisant<span style='letter-spacing:-.7pt'> </span>des<span style='letter-spacing:-.7pt'> </span>doses<span style='letter-spacing:-.7pt'> </span>quotidiennes<span style='letter-spacing: -.7pt'> </span>maximales<span style='letter-spacing:-.7pt'> </span>de<span style='letter-spacing:-.7pt'> </span>paracétamol.<span style='letter-spacing: -.7pt'> </span>Une<span style='letter-spacing:-.7pt'> </span>surveillance<span style='letter-spacing:-.7pt'> </span>étroite,<span style='letter-spacing:-.65pt'> </span>incluant<span style='letter-spacing:-.7pt'> </span>la<span style='letter-spacing:-.7pt'> </span>mesure de la 5-oxoproline urinaire, est recommandée.</p>
+<p class=AmmCorpsTexte style='margin-top:6.0pt'>Excipients à effet notoire :</p>
+<p class=AmmCorpsTexte>Ce médicament contient 100 mg de benzoate de sodium (E211) par comprimé effervescent. </p>
+<p class=AmmCorpsTexte align=left style='margin-bottom:6.0pt;text-align:left; text-autospace:none'><span style='font-size:10.0pt;font-family:"Arial",sans-serif'>Ce médicament contient 1,93 mg de fructose par comprimé effervescent. L’effet additif des produits administrés concomitamment contenant du fructose (ou du sorbitol) et l’apport alimentaire de fructose (ou sorbitol) doit être pris en compte.</span></p>
+<p class=AmmCorpsTexte>Ce médicament contient 1,65 mg de glucose par comprimé effervescent. Les patients présentant un syndrome de malabsorption du glucose et du galactose (maladie héréditaire rare) ne doivent pas prendre ce médicament. </p>
+<p class=AmmCorpsTexte>Ce médicament contient 0,55 mg de saccharose par comprimé effervescent. Les patients présentant une intolérance au fructose, un syndrome de malabsorption du glucose et du galactose ou un déficit en sucrase/isomaltase (maladies héréditaires rares) ne doivent pas prendre ce médicament.</p>
+<p class=AmmCorpsTexte>Ce médicament contient 394 mg de sodium par comprimé effervescent, équivalent à 19,7% de l'apport quotidien maximal en sodium recommandé par l'OMS. La posologie quotidienne maximale de ce produit (3 comprimés) est équivalente à 59,1 % de l'apport quotidien maximal en sodium recommandé par l'OMS. EFFERALGAN 1000 mg, comprimé effervescent a une teneur élevée en sodium ; A prendre en compte chez les personnes suivant un régime hyposodé. </p>
+<p class=Default style='margin-bottom:6.0pt;text-align:justify'><span style='font-size:10.0pt;font-family:"Arial",sans-serif;color:windowtext'>Ce médicament contient 252 mg de sorbitol (E420) par comprimé effervescent. Les patients présentant une intolérance héréditaire au fructose (IHF) ne doivent pas prendre/recevoir ce médicament.</span></p>
+<p class="AmmAnnexeTitre2"><a name="RcpInteractionsMed">4.5. Interactions avec d'autres médicaments et autres formes d'interactions</a>&nbsp;&nbsp;<a href='#HautDePage'><img src='img/BackToTop.jpg' width='15px' height='15px' alt='Retour en haut de la page' title='Retour en haut de la page' /></a></p>
+<p class=AmmAnnexeTitre3>Associations faisant l'objet de précautions d'emploi </p>
+<p class=AmmIAM style='margin-left:0cm;text-indent:0cm'>+ Antivitamines K</p>
+<p class=AmmCorpsTexte style='margin-top:6.0pt'>Risque d'augmentation de l'effet de l'antivitamine K et du risque hémorragique en cas de prise de paracétamol aux doses maximales (4 g/j) pendant au moins 4 jours. </p>
+<p class=AmmCorpsTexte>Contrôle plus fréquent de l'INR. Adaptation éventuelle de la posologie de l'antivitamine K pendant le traitement par le paracétamol et après son arrêt.</p>
+<p class=AmmListePuces1 style='margin-left:0cm;text-indent:0cm'><span class='gras'>+ Flucloxacilline</span></p>
+<p class=AmmCorpsTexte style='margin-top:6.0pt'><a name="_Hlk129875895">Il convient d’être prudent lors de l’utilisation concomitante de paracétamol et de flucloxacilline, car la prise simultanée a été associée à une acidose métabolique à trou anionique élevé, en particulier chez les patients présentant des facteurs de risque (voir rubrique 4.4)</a>.</p>
+<p class=AmmAnnexeTitre3>Interactions avec les examens paracliniques </p>
+<p class=AmmCorpsTexte>La prise de paracétamol peut fausser le dosage de la glycémie par la méthode à la glucose oxydase- peroxydase en cas de concentrations anormalement élevées.</p>
+<p class=AmmCorpsTexte>La prise de paracétamol peut fausser le dosage de l'acide urique sanguin par la méthode à l'acide phosphotungstique.</p>
+<p class="AmmAnnexeTitre2"><a name="RcpFertGrossAllait">4.6. Fertilité, grossesse et allaitement</a>&nbsp;&nbsp;<a href='#HautDePage'><img src='img/BackToTop.jpg' width='15px' height='15px' alt='Retour en haut de la page' title='Retour en haut de la page' /></a></p>
+<p class=AmmAnnexeTitre3>Grossesse</p>
+<p class=AmmCorpsTexte>Les études effectuées chez l’animal n’ont pas mis en évidence d’effet tératogène ou foetotoxique du paracétamol.</p>
+<p class=AmmCorpsTexte>Une vaste quantité de données portant sur les femmes enceintes démontrent l’absence de toute malformation ou de toute toxicité fœtale/néonatale. Les études épidémiologiques consacrées au neurodéveloppement des enfants exposés au paracétamol in utero produisent des résultats non concluants. Si cela s’avère nécessaire d’un point de vue clinique, le paracétamol peut être utilisé pendant la grossesse ; cependant, il devra être utilisé à la dose efficace la plus faible, pendant la durée la plus courte possible et à la fréquence la plus réduite possible.</p>
+<p class=AmmAnnexeTitre3>Allaitement</p>
+<p class=AmmCorpsTexte>Après administration, le paracétamol est éliminé en petites quantités dans le lait maternel. Aux doses thérapeutiques, l'administration de ce médicament est possible pendant l'allaitement.</p>
+<p class=AmmAnnexeTitre3>Fertilité</p>
+<p class=AmmCorpsTexte>En raison du mécanisme d’action potentiel sur les cyclo-oxygénases et la synthèse de prostaglandines, le paracétamol pourrait altérer la fertilité chez la femme, par un effet sur l’ovulation réversible à l’arrêt du traitement.</p>
+<p class=AmmCorpsTexte>Des effets sur la fertilité des mâles ont été observés dans une étude chez l'animal. La pertinence de ces effets chez l'homme n'est pas connue.</p>
+<p class="AmmAnnexeTitre2"><a name="RcpConduite">4.7. Effets sur l'aptitude à conduire des véhicules et à utiliser des machines</a>&nbsp;&nbsp;<a href='#HautDePage'><img src='img/BackToTop.jpg' width='15px' height='15px' alt='Retour en haut de la page' title='Retour en haut de la page' /></a></p>
+<p class=AmmCorpsTexte><span lang=FR-BE>Le paracétamol n’a aucun effet ou qu’un effet négligeable sur l’aptitude à conduire des véhicules et à utiliser des machines.</span></p>
+<p class="AmmAnnexeTitre2"><a name="RcpEffetsIndesirables">4.8. Effets indésirables</a>&nbsp;&nbsp;<a href='#HautDePage'><img src='img/BackToTop.jpg' width='15px' height='15px' alt='Retour en haut de la page' title='Retour en haut de la page' /></a></p>
+<p class=AmmCorpsTexte>Les effets indésirables sont classés par système-organe. Leurs fréquences sont définies de la façon suivante :</p>
+<p class=AmmListePuces1 style='text-align:justify'><span style='font-family: Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>Très fréquent (&#8805; 1/10)</p>
+<p class=AmmListePuces1 style='text-align:justify'><span style='font-family: Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>Fréquent (&#8805; 1/100 à &lt; 1/10)</p>
+<p class=AmmListePuces1 style='text-align:justify'><span style='font-family: Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>Peu fréquent (&#8805; 1/1000 à &lt; 1/100)</p>
+<p class=AmmListePuces1 style='text-align:justify'><span style='font-family: Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>Rare (&#8805; 1/10 000 à &lt; 1/1000)</p>
+<p class=AmmListePuces1 style='text-align:justify'><span style='font-family: Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>Très rare (&lt; 1/10 000)</p>
+<p class=AmmListePuces1 style='text-align:justify'><span style='font-family: Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>Fréquence indéterminée (ne peut être estimée sur la base des données disponibles)</p>
+<p class=AmmAnnexeTitre3>Affections hématologiques et du système lymphatique</p>
+<p class=AmmListePuces1 style='text-align:justify'><span style='font-family: Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>Très rares : thrombopénie, leucopénie et neutropénie.</p>
+<p class=AmmAnnexeTitre3>Affections du système immunitaire</p>
+<p class=AmmListePuces1 style='text-align:justify'><span style='font-family: Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>Rares : réactions d'hypersensibilité.</p>
+<p class=AmmListePuces1 style='text-align:justify'><span style='font-family: Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>Fréquence indéterminée : réaction anaphylactique (incluant l’hypotension), choc anaphylactique, angioedème (œdème de Quincke).</p>
+<p class=AmmListePuces1 style='margin-top:6.0pt;margin-right:0cm;margin-bottom: 6.0pt;margin-left:18.0pt;text-align:justify'>Leur survenue impose l'arrêt immédiat et définitif de ce médicament et des médicaments apparentés.</p>
+<p class=AmmAnnexeTitre3>Affections respiratoires, thoraciques et médiastinales</p>
+<p class=AmmListePuces1 style='text-align:justify'><span style='font-family: Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>Fréquence indéterminée : bronchospasme (des cas de bronchospasme ont été identifiés avec le paracétamol, majoritairement chez des patients asthmatiques sensibles à l’aspirine ou à d’autres anti-inflammatoires non-stéroïdiens).</p>
+<p class=AmmAnnexeTitre3>Troubles du métabolisme et de la nutrition</p>
+<p class=AmmListePuces1 style='text-align:justify'><span style='font-family: Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>Fréquence indéterminée : acidose pyroglutamique chez les patients présentant des facteurs prédisposant à la déplétion du glutathion.</p>
+<p class=AmmAnnexeTitre3>Affections gastro-intestinales</p>
+<p class=AmmListePuces1 style='text-align:justify'><span style='font-family: Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>Fréquence indéterminée : diarrhées, douleurs abdominales.</p>
+<p class=AmmAnnexeTitre3>Affections hépatobiliaires</p>
+<p class=AmmListePuces1 style='text-align:justify'><span style='font-family: Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>Fréquence indéterminée : enzymes hépatiques augmentées.</p>
+<p class=AmmAnnexeTitre3>Affections de la peau et du tissu sous-cutané</p>
+<p class=AmmListePuces1 style='text-align:justify'><span style='font-family: Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>Rares : érythème, urticaire, rash cutané. Leur survenue impose l'arrêt immédiat et définitif de ce médicament et des médicaments apparentés.</p>
+<p class=AmmListePuces1 style='text-align:justify'><span style='font-family: Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>Rare : purpura. La survenue de cet effet impose l’arrêt immédiat de ce médicament. Le médicament pourra être réintroduit uniquement sur avis médical.</p>
+<p class=AmmListePuces1 style='text-align:justify'><span style='font-family: Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>Très rares : réactions cutanées graves. Leur survenue impose l'arrêt immédiat et définitif de ce médicament et des médicaments apparentés.</p>
+<p class=AmmListePuces1 style='text-align:justify'><span style='font-family: Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>Fréquence indéterminée : érythème pigmenté fixe.</p>
+<p class=AmmAnnexeTitre3>Déclaration des effets indésirables suspectés </p>
+<p class=AmmCorpsTexte>La déclaration des effets indésirables suspectés après autorisation du médicament est importante. Elle permet une surveillance continue du rapport bénéfice/risque du médicament. Les professionnels de santé déclarent tout effet indésirable suspecté via le système national de déclaration : Agence nationale de sécurité du médicament et des produits de santé (ANSM) et réseau des Centres Régionaux de Pharmacovigilance - Site internet :<span style='color:red'> </span><a href="https://signalement.social-sante.gouv.fr">https://signalement.social-sante.gouv.fr</a><span class=MsoHyperlink>/</span>.</p>
+<p class="AmmAnnexeTitre2"><a name="RcpSurdosage">4.9. Surdosage</a>&nbsp;&nbsp;<a href='#HautDePage'><img src='img/BackToTop.jpg' width='15px' height='15px' alt='Retour en haut de la page' title='Retour en haut de la page' /></a></p>
+<p class=AmmCorpsTexte>Le risque d'une intoxication grave (surdosage thérapeutique ou intoxication accidentelle) peut être particulièrement élevé chez les sujets âgés, chez les jeunes enfants, chez les patients avec une atteinte hépatique, en cas d'alcoolisme chronique, chez les patients souffrant de malnutrition chronique (voir rubrique 4.2), jeûne, amaigrissement récent, cholémie familiale (syndrome de Gilbert), ainsi que les patients recevant des médicaments inducteurs enzymatiques. Dans ces cas, l'intoxication peut être mortelle.</p>
+<p class=AmmCorpsTexte><span class='gras'><span class='souligne'>Symptômes</span></span></p>
+<p class=AmmCorpsTexte>Nausées, vomissements, anorexie, pâleur, malaise, sudation, douleurs abdominales apparaissent généralement dans les 24 premières heures.</p>
+<p class=MsoBodyText style='text-align:justify'>Un surdosage peut provoquer une cytolyse hépatique susceptible d'entraîner une insuffisance hépatocellulaire<span style='letter-spacing:-.3pt'> </span>pouvant<span style='letter-spacing:-.25pt'> </span>nécessiter<span style='letter-spacing:-.3pt'> </span>une<span style='letter-spacing:-.25pt'> </span>greffe<span style='letter-spacing:-.3pt'> </span>hépatique,<span style='letter-spacing:-.25pt'> </span>un<span style='letter-spacing:-.25pt'> </span>saignement<span style='letter-spacing: -.25pt'> </span>gastro<span style='letter-spacing:-.35pt'> </span>intestinal,<span style='letter-spacing:-.35pt'> </span>une<span style='letter-spacing:-.3pt'> </span>acidose métabolique, une encéphalopathie pouvant aller jusqu'au coma et à la mort.</p>
+<p class=AmmCorpsTexte>Des<span style='letter-spacing:-.4pt'> </span>cas<span style='letter-spacing:-.4pt'> </span>de<span style='letter-spacing:-.5pt'> </span>coagulation<span style='letter-spacing:-.55pt'> </span>intravasculaire<span style='letter-spacing: -.45pt'> </span>disséminée<span style='letter-spacing:-.4pt'> </span>ont<span style='letter-spacing:-.3pt'> </span>été<span style='letter-spacing:-.5pt'> </span>observés<span style='letter-spacing:-.4pt'> </span>dans<span style='letter-spacing:-.4pt'> </span>un<span style='letter-spacing:-.5pt'> </span>contexte<span style='letter-spacing:-.5pt'> </span>de<span style='letter-spacing:-.5pt'> </span>surdosage<span style='letter-spacing:-.45pt'> </span>au <span style='letter-spacing:-.1pt'>paracétamol.</span></p>
+<p class=AmmCorpsTexte>Simultanément, on observe une augmentation des transaminases hépatiques, de la lactico-déshydrogénase, de la bilirubine et une diminution du taux de prothrombine pouvant apparaître 12 à 48 heures après l'ingestion. Les symptômes cliniques de l’atteinte hépatique sont généralement observés après 1 à 2 jours, et atteignent un maximum après 3 à 4 jours.</p>
+<p class=AmmCorpsTexte><a name="_Hlk104907583"></a><a name="_Hlk104910034">Le surdosage peut également entraîner une pancréatite aiguë, une hyperamylasémie, une insuffisance rénale aiguë et une pancytopénie.</a></p>
+<p class=AmmCorpsTexte><span class='gras'><span class='souligne'>Conduite d'urgence </span></span></p>
+<p class=AmmListePuces1 style='text-align:justify'><span style='font-family: Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>Arrêt du traitement.</p>
+<p class=AmmListePuces1 style='text-align:justify'><span style='font-family: Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>Transfert immédiat en milieu hospitalier, pour des soins médicaux d’urgence, malgré l’absence de symptômes précoces significatifs.</p>
+<p class=AmmListePuces1 style='text-align:justify'><span style='font-family: Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>Evacuation rapide du produit ingéré, par aspiration et lavage gastrique de préférence dans les 4 heures qui suivent l’ingestion.</p>
+<p class=AmmListePuces1 style='text-align:justify'><span style='font-family: Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>Prélèvement sanguin pour faire le dosage plasmatique initial de paracétamol. La concentration plasmatique du paracétamol doit être mesurée au minimum 4 heures après l’ingestion (un dosage réalisé plus tôt n’est pas fiable)</p>
+<p class=AmmListePuces1 style='text-align:justify'><span style='font-family: Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>Le traitement du surdosage comprend classiquement l'administration aussi précoce que possible de l'antidote N-acétylcystéine par voie I.V. ou voie orale si possible <span class='souligne'>avant</span> la dixième heure. Bien que moins efficace, un effet protecteur de l’antidote peut être obtenu jusqu’à 48 heures post- ingestion. Dans ce cas l’antidote doit être administré plus longtemps.</p>
+<p class=AmmListePuces1 style='text-align:justify'><span style='font-family: Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>Traitement symptomatique.</p>
+<p class=AmmListePuces1 style='text-align:justify'><span style='font-family: Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>Des tests hépatiques doivent être effectués au début du traitement et répétés toutes les 24 heures. Dans la plupart des cas, les transaminases hépatiques reviennent à la normale en 1 à 2 semaines avec une restitution intégrale de la fonction hépatique. Cependant, dans les cas très graves, une transplantation hépatique peut être nécessaire.</p>
+<p class=AmmListePuces1 style='text-align:justify'><span style='font-family: Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>La prise d’autres mesures dépendra de la gravité, de la nature et de l’évolution des symptômes cliniques de l’intoxication au paracétamol et devra suivre les protocoles standards de soins intensifs.</p>
+<p class="AmmAnnexeTitre1"><a name="RcpPropPharmacologiques">5. PROPRIETES PHARMACOLOGIQUES</a>&nbsp;&nbsp;<a href='#HautDePage'><img src='img/BackToTop.jpg' width='15px' height='15px' alt='Retour en haut de la page' title='Retour en haut de la page' /></a></p>
+<p class="AmmAnnexeTitre2"><a name="RcpPropPharmacodynamiques">5.1. Propriétés pharmacodynamiques</a>&nbsp;&nbsp;<a href='#HautDePage'><img src='img/BackToTop.jpg' width='15px' height='15px' alt='Retour en haut de la page' title='Retour en haut de la page' /></a></p>
+<p class=AmmCorpsTexteGras>Classe pharmacothérapeutique : AUTRES ANALGESIQUES et ANTIPYRETIQUES-ANILIDES.</p>
+<p class=AmmCorpsTexteGras><span style='font-weight:normal'>Code ATC :</span> N02BE01.</p>
+<p class=AmmCorpsTexte>Le paracétamol a un mécanisme d’action central et périphérique. </p>
+<p class=AmmCorpsTexte>Dans une étude clinique randomisée comparative auprès de 242 patients adultes (60 patients sous paracétamol effervescent 1000 mg en prise unique ; 60 patients sous paracétamol comprimé sec 1000 mg en prise unique ; 62 patients sous placebo effervescent correspondant ; 60 patients sous placebo comprimé sec correspondant) présentant des douleurs modérées suite à une extraction dentaire chirurgicale, il a été observé un délai médian d’apparition de l’analgésie significativement plus rapide avec la forme paracétamol effervescente qu’avec la forme paracétamol comprimée sèche (0,34 h [0,33 – 0,58] - 20 minutes versus 0,75 h [0,50 – 0,75] – 45 minutes ; p= 0,0081). La tolérance était similaire entre la forme paracétamol effervescente et la forme paracétamol comprimée sèche.</p>
+<p class="AmmAnnexeTitre2"><a name="RcpPropPharmacocinetiques">5.2. Propriétés pharmacocinétiques</a>&nbsp;&nbsp;<a href='#HautDePage'><img src='img/BackToTop.jpg' width='15px' height='15px' alt='Retour en haut de la page' title='Retour en haut de la page' /></a></p>
+<p class=AmmAnnexeTitre3>Absorption </p>
+<p class=AmmCorpsTexte>L'absorption du paracétamol par voie orale est complète et rapide. Les concentrations plasmatiques maximales sont atteintes 30 à 60 minutes après ingestion.</p>
+<p class=AmmAnnexeTitre3>Distribution </p>
+<p class=AmmCorpsTexte>Le paracétamol se distribue rapidement dans tous les tissus. Les concentrations sont comparables dans le sang, la salive et le plasma. La liaison aux protéines plasmatiques est faible.</p>
+<p class=AmmAnnexeTitre3>Biotransformation</p>
+<p class=AmmCorpsTexte>Le paracétamol est métabolisé essentiellement au niveau du foie. Les 2 voies métaboliques majeures sont la glycuroconjugaison et la sulfoconjugaison. Cette dernière voie est rapidement saturable aux posologies supérieures aux doses thérapeutiques. Une voie mineure, catalysée par le cytochrome P 450, est la formation d'un intermédiaire réactif (le N-acétyl benzoquinone imine), qui dans les conditions normales d'utilisation, est rapidement détoxifié par le glutathion réduit et éliminé dans les urines après conjugaison à la cystéine et à l'acide mercaptopurique.</p>
+<p class=AmmCorpsTexte>En revanche, lors d'intoxications massives, la quantité de ce métabolite toxique est augmentée. </p>
+<p class=AmmAnnexeTitre3>Elimination </p>
+<p class=AmmCorpsTexte>L'élimination est essentiellement urinaire. 90 % de la dose ingérée est éliminée par le rein en 24 heures, principalement sous forme glycuroconjuguée (60 à 80 %) et sulfoconjuguée (20 à 30 %). </p>
+<p class=AmmCorpsTexte>Moins de 5 % est éliminé sous forme inchangée. </p>
+<p class=AmmCorpsTexte>La demi-vie d'élimination est d'environ 2 heures. </p>
+<p class=AmmAnnexeTitre3>Variations physiopathologiques : </p>
+<p class=AmmCorpsTexte><span class=AmmCorpsTexteGrasCar>Insuffisance rénale</span> : en cas d'insuffisance rénale (voir rubrique 4.2), l'élimination du paracétamol et de ses métabolites est retardée.</p>
+<p class=AmmCorpsTexte><span class=AmmCorpsTexteGrasCar>Insuffisance hépatique</span><span class='gras'> : </span>le métabolisme du paracétamol est altéré chez les patients présentant une insuffisance<span style='letter-spacing:-.3pt'> </span>hépatique<span style='letter-spacing:-.3pt'> </span>chronique,<span style='letter-spacing: -.25pt'> </span>comme<span style='letter-spacing:-.3pt'> </span>le<span style='letter-spacing:-.3pt'> </span>montrent<span style='letter-spacing:-.25pt'> </span>l’augmentation<span style='letter-spacing:-.25pt'> </span>des<span style='letter-spacing:-.15pt'> </span>concentrations<span style='letter-spacing: -.15pt'> </span>plasmatiques de paracétamol et une demi-vie d’élimination plus longue (voir rubrique 4.2).</p>
+<p class=AmmCorpsTexte><span class=AmmCorpsTexteGrasCar>Sujet âgé</span><span class='italique'> : </span>la capacité de conjugaison n'est pas modifiée (voir rubrique 4.2).</p>
+<p class="AmmAnnexeTitre2"><a name="RcpSecuritePreclinique">5.3. Données de sécurité préclinique</a>&nbsp;&nbsp;<a href='#HautDePage'><img src='img/BackToTop.jpg' width='15px' height='15px' alt='Retour en haut de la page' title='Retour en haut de la page' /></a></p>
+<p class=AmmCorpsTexte>Aucune étude conventionnelle s’appuyant sur les normes actuellement admises pour évaluer la toxicité pour la reproduction et le développement n’est disponible.</p>
+<p class="AmmAnnexeTitre1"><a name="RcpDonneesPharmaceutiques">6. DONNEES PHARMACEUTIQUES</a>&nbsp;&nbsp;<a href='#HautDePage'><img src='img/BackToTop.jpg' width='15px' height='15px' alt='Retour en haut de la page' title='Retour en haut de la page' /></a></p>
+<p class="AmmAnnexeTitre2"><a name="RcpListeExcipients">6.1. Liste des excipients</a>&nbsp;&nbsp;<a href='#HautDePage'><img src='img/BackToTop.jpg' width='15px' height='15px' alt='Retour en haut de la page' title='Retour en haut de la page' /></a></p>
+<p class=AmmCorpsTexte>Acide citrique anhydre, bicarbonate de sodium, carbonate de sodium anhydre, sorbitol (E420), docusate de sodium, povidone, benzoate de sodium (E211), saccharine sodique, arôme agrumes (orange-pamplemousse) (dont fructose, glucose et saccharose).</p>
+<p class="AmmAnnexeTitre2"><a name="RcpIncompatibilites">6.2. Incompatibilités</a>&nbsp;&nbsp;<a href='#HautDePage'><img src='img/BackToTop.jpg' width='15px' height='15px' alt='Retour en haut de la page' title='Retour en haut de la page' /></a></p>
+<p class=AmmCorpsTexte>Sans objet.</p>
+<p class="AmmAnnexeTitre2"><a name="RcpDureeConservation">6.3. Durée de conservation</a>&nbsp;&nbsp;<a href='#HautDePage'><img src='img/BackToTop.jpg' width='15px' height='15px' alt='Retour en haut de la page' title='Retour en haut de la page' /></a></p>
+<p class=AmmCorpsTexte>3 ans.</p>
+<p class="AmmAnnexeTitre2"><a name="RcpPrecConservation">6.4. Précautions particulières de conservation</a>&nbsp;&nbsp;<a href='#HautDePage'><img src='img/BackToTop.jpg' width='15px' height='15px' alt='Retour en haut de la page' title='Retour en haut de la page' /></a></p>
+<p class=AmmCorpsTexte><span style='color:black'>A conserver dans l'emballage d'origine, à l'abri de l'humidité.</span></p>
+<p class="AmmAnnexeTitre2"><a name="RcpEmballage">6.5. Nature et contenu de l'emballage extérieur </a>&nbsp;&nbsp;<a href='#HautDePage'><img src='img/BackToTop.jpg' width='15px' height='15px' alt='Retour en haut de la page' title='Retour en haut de la page' /></a></p>
+<p class=AmmCorpsTexte style='margin-right:7.05pt'>8 comprimés en tube (Polypropylène).</p>
+<p class="AmmAnnexeTitre2"><a name="RcpPrecEmpl">6.6. Précautions particulières d’élimination et de manipulation</a>&nbsp;&nbsp;<a href='#HautDePage'><img src='img/BackToTop.jpg' width='15px' height='15px' alt='Retour en haut de la page' title='Retour en haut de la page' /></a></p>
+<p class=AmmCorpsTexte><span lang=FR-BE>Pas d’exigences particulières </span></p>
+<p class=AmmAnnexeTitre2>7. TITULAIRE DE L’AUTORISATION DE MISE SUR LE MARCHE</p>
+<p class=AmmTitulaireNom>UPSA SAS </p>
+<p class=AmmTitulaireCpVillePays><span style='font-size:10.0pt'>3 RUE JOSEPH MONIER</span></p>
+<p class=AmmTitulaireCpVillePays><span style='font-size:10.0pt'>92500 RUEIL-MALMAISON </span></p>
+<p class=AmmCorpsTexte style='margin-top:6.0pt;margin-right:0cm;margin-bottom: 0cm;margin-left:0cm;margin-bottom:.0001pt'><span style='color:#538135'>[Tel, fax, e-Mail : à compléter ultérieurement par le titulaire]</span></p>
+<p class="AmmAnnexeTitre1"><a name="RcpNumAutor">8. NUMERO(S) D’AUTORISATION DE MISE SUR LE MARCHE</a>&nbsp;&nbsp;<a href='#HautDePage'><img src='img/BackToTop.jpg' width='15px' height='15px' alt='Retour en haut de la page' title='Retour en haut de la page' /></a></p>
+<p class=AmmListePuces1 style='text-align:justify'><span style='font-family: Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>34009 300 963 8 3 : Tube polypropylène de 8 comprimés.</p>
+<p class="AmmAnnexeTitre1"><a name="RcpPremiereAutorisation">9. DATE DE PREMIERE AUTORISATION/DE RENOUVELLEMENT DE L’AUTORISATION</a>&nbsp;&nbsp;<a href='#HautDePage'><img src='img/BackToTop.jpg' width='15px' height='15px' alt='Retour en haut de la page' title='Retour en haut de la page' /></a></p>
+<p class=AmmCorpsTexte><span style='color:#538135'>[à compléter ultérieurement par le titulaire]</span></p>
+<p class=AmmCorpsTexte>Date de première autorisation:{JJ mois AAAA}</p>
+<p class=AmmCorpsTexte>Date de dernier renouvellement:{JJ mois AAAA}</p>
+<p class="AmmAnnexeTitre1"><a name="RcpDateRevision">10. DATE DE MISE A JOUR DU TEXTE</a>&nbsp;&nbsp;<a href='#HautDePage'><img src='img/BackToTop.jpg' width='15px' height='15px' alt='Retour en haut de la page' title='Retour en haut de la page' /></a></p>
+<p class=AmmCorpsTexte><span style='color:#538135'>[à compléter ultérieurement par le titulaire]</span></p>
+<p class=AmmCorpsTexte><span lang=FR-BE>{</span>JJ <span lang=FR-BE>mois AAAA}</span></p>
+<p class="AmmAnnexeTitre1"><a name="RcpDosimetrie">11. DOSIMETRIE</a>&nbsp;&nbsp;<a href='#HautDePage'><img src='img/BackToTop.jpg' width='15px' height='15px' alt='Retour en haut de la page' title='Retour en haut de la page' /></a></p>
+<p class=AmmCorpsTexte>Sans objet.</p>
+<p class="AmmAnnexeTitre1"><a name="RcpInstPrepRadioph">12. INSTRUCTIONS POUR LA PREPARATION DES RADIOPHARMACEUTIQUES</a>&nbsp;&nbsp;<a href='#HautDePage'><img src='img/BackToTop.jpg' width='15px' height='15px' alt='Retour en haut de la page' title='Retour en haut de la page' /></a></p>
+<p class=AmmCorpsTexte>Sans objet.</p>
+<div style='border:none;border-top:solid windowtext 1.0pt;padding:1.0pt 0cm 0cm 0cm'>
+<p class="AmmAnnexeTitre"><a name="RcpCondPrescription">CONDITIONS DE PRESCRIPTION ET DE DELIVRANCE</a></p>
+</div>
+<p class=AmmCorpsTexte style='margin-top:6.0pt'>Médicament non soumis à prescription médicale.</p>
+<span class='gras'><span style='font-size:12.0pt;font-family:"Arial",sans-serif;color:#0B3D92;
+text-transform:uppercase'><br clear=all>
+</span></span>					
+					<p class="alignright"><a href="#HautDePage">Retour en haut de la page <img src="img/BackToTop.jpg" width="20px" height="20px" alt="Retour en haut de la page" title="Retour en haut de la page" /></a></p>
+				</div>
+			</div>
+		</div>
+	</div>
+
+<table summary="" class="content" width="1000">
+	<tr>
+		<td height="100px">&nbsp;</td>
+	</tr>
+</table>
+<table summary="Pied de page" class="footer" width="1000">
+	<tr>
+		<td>
+			<table summary="" class="tablealigncenter" border="0">
+				<tr>
+					<td width="100px" class="aligncenter"><a id="lien_ansm" href="http://ansm.sante.fr/" target="_blank"><img src="img/Logo_ANSM.png" width="150" height="60" alt="ANSM - Agence nationale de sécurité du médicament et des produits de santé" title="L'ANSM met à disposition les principales informations issues de l'Autorisation de mise sur le marché, l'appartenance à un groupe générique, les liens vers les informations de sécurité qu'elle publie, l'identification des médicaments sous surveillance renforcée - nouvelle fenêtre" /></a></td>
+					          <td>&nbsp;</td>
+					<td width="100px" class="aligncenter"><img src="img/Logo_HAS.png" width="150" height="60" alt="HAS - Haute autorité de santé" title="La HAS met à disposition les informations relatives au service médical rendu, à l'amélioration du service médical rendu ainsi que les liens vers les avis de la Commission de la Transparence correspondants - nouvelle fenêtre" /></td>
+					<td>&nbsp;</td>
+					<td width="100px" class="aligncenter"><img src="img/Logo_CNAM.png" width="150" height="60" alt="UNCAM - Unin nationale des caisses d'assurance maladie" title="L'UNCAM met à disposition le taux de remboursement, le prix et les indications remboursables le cas échéant, ainsi que l'agrément aux collectivités - nouvelle fenêtre" /></td>
+          				</tr>
+			</table> 
+		</td>
+	</tr>
+</table>
+<table summary="" class="finpage" width="1000">
+	<tr>
+		<td height="100px" class="aligncenter">
+			<a class="navigation" href="plan.php">Plan du site</a>&nbsp;|&nbsp;
+			<a class="navigation" href="accessibilite.php">Accessibilité</a>&nbsp;|&nbsp;
+			<a class="navigation" href="contact.php">Contact</a>&nbsp;|&nbsp;
+			<a class="navigation" href="telechargement.php">Téléchargement</a>&nbsp;|&nbsp;
+			<a class="navigation" href="DeclarationConfidentialite.php">Declaration de confidentialité</a>&nbsp;|&nbsp;
+			<a class="navigation" href="http://www.service-public.fr/" title="Service Public - Nouvelle fenêtre" target="_blank">Service-Public.fr</a>&nbsp;|&nbsp;
+			<a class="navigation" href="http://www.legifrance.gouv.fr/" title="Legifrance - Nouvelle fenêtre" target="_blank">Legifrance</a>&nbsp;|&nbsp;
+			<a class="navigation" href="http://www.gouvernement.fr/" title="Gouvernement - Nouvelle fenêtre" target="_blank" >Gouvernement.fr</a>
+		</td>
+	</tr>
+</table>
+
+
+
+<!-- Matomo -->
+<script type="text/javascript">
+  var _paq = window._paq = window._paq || [];
+  /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
+  _paq.push(['trackPageView']);
+  _paq.push(['enableLinkTracking']);
+  (function() {
+    var u="https://stats.integra.fr/";
+    _paq.push(['setTrackerUrl', u+'matomo.php']);
+    _paq.push(['setSiteId', '79']);
+    var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+    g.type='text/javascript'; g.async=true; g.src=u+'matomo.js'; s.parentNode.insertBefore(g,s);
+  })();
+</script>
+<!-- End Matomo Code -->
+
+
+
+</body>
+</html>

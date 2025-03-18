@@ -1,0 +1,450 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="fr" lang="fr">
+<head>
+	<title>Notice patient - MOPRAL 10 mg, gélule gastro-résistante  - Base de données publique des médicaments</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=windows-1252"/>
+	<meta name="robots" content="index, follow"/>
+	<meta name="Description" content="Base de données publique des médicaments"/>
+	<meta name="Keywords" content="base, données, publique, médicaments, Notice patient, MOPRAL 10 mg, gélule gastro-résistante "/>
+	<meta name="Subject" content="medicament"/>
+	<link href='https://fonts.googleapis.com/css?family=Noticia+Text' rel='stylesheet' type='text/css' />
+	<link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro' rel='stylesheet' type='text/css' />
+	<link href="style/style_bdm.css?v=2.2.3" type="text/css" rel="stylesheet"/>
+	<link href="style/style_RCP_Notice.css" type="text/css" rel="stylesheet"/>
+  <link rel="alternate" href="http://m.base-donnees-publique.medicaments.gouv.fr/#!info-69606819">
+    <script type="text/javascript" src="scripts/autocomplete.js?v=2.2.3"></script>
+	<script type="text/javascript" src="scripts/jquery.js"></script>
+    <script type="text/javascript" src="scripts/jquery-ui.min.js"></script>
+	<script type="text/javascript" src="scripts/common.js"></script>
+	<link rel="icon" type="image/x-icon" href="favicon.ico" />
+</head>
+
+<body>
+
+<a name="HautDePage" />
+<div id="bandeauhaut">
+	<a id="lien_ministere" class="lienmenu" href="http://www.sante.gouv.fr" target="_blank" title="Site du ministère des affaires sociales et de la santé - nouvelle fenêtre"><img id="logoministere" src="img/Logo_Ministere.jpg"  alt="Logo du ministère des affaires sociales et de la santé"/></a>
+	<h1 class="texteTitreSite">
+		Base <span class="texteBleu">de</span> données <span class="texteBleu">publique</span><br/><span class="texteBleu">des</span> médicaments
+	</h1>
+		<a id="lien_medicament_gouv" class="lienEspaceMedic" target="_blank" href="http://medicaments.gouv.fr" title="Visiter [medicaments.gouv.fr] - nouvelle fenêtre">Visiter [medicaments.gouv.fr] <img src="/img/icone_lien.png" alt="Visiter [medicaments.gouv.fr]"  title="Visiter [medicaments.gouv.fr] - nouvelle fenetre" /></a>
+</div>
+<!--div align="center">
+	<a id="banniere" target="_blank" href="http://social-sante.gouv.fr/soins-et-maladies/medicaments/medicaments-generiques/" title="Visiter [medicaments.gouv.fr] - M?dicaments g?n?riques">
+		<img width="1000"   src ="/img/carrouselbannieres.gif" alt="Visiter [medicaments.gouv.fr] - M?dicaments g?n?riques" title="Visiter [medicaments.gouv.fr] - M?dicaments g?n?riques" />
+	</a>
+</div-->
+
+<div id="menuhaut">
+	<span id="menuhaut_gauche">
+		<a id="lien_accueil" class="navigation" href="index.php">Accueil</a>&nbsp;|&nbsp;
+		<a id="lien_glossaire" class="navigation" href="glossaire.php">Glossaire</a>&nbsp;|&nbsp;
+		<a id="lien_aide" class="navigation" href="aide.php">Aide</a>		
+	</span>
+	
+		
+	<span id="menuhaut_dernmaj">
+        <br>Dernière <span title=" 2.4.4
+">mise à jour</span> le 03/03/2025	</span>
+</div>
+
+	<script language="javascript" type="text/javascript">
+		//<![CDATA[ 
+		function Aff(men) {
+			document.write("<ul class=\"menuDoc\">");
+			for(var no_rub=0;no_rub<men.num_rub;no_rub++) {
+				document.write("<li><a class='leftMenu' href='"+menu[no_rub].page+"'>");
+				document.write(men[no_rub].txt);
+				document.write("</a></li>");
+				if (men[no_rub].nb_lien != 0){
+					document.write("<ul class=\"sousMenuDoc\">");
+				}
+				for(var no_lien=0;no_lien<men[no_rub].nb_lien;no_lien++) {
+					document.write("<li><a class='leftMenu' href='"+men[no_rub][no_lien].page+"'>");
+					document.write(men[no_rub][no_lien].txt);
+					document.write("</a></li>");
+				}
+				if (men[no_rub].nb_lien != 0){
+					document.write("</ul>");
+				}
+			}
+			document.write("</ul>");
+		}
+		
+		function CreerMenu(police,imgRub,imgOption,imgOptionFin,hauteur) {
+			this.num_rub=0;
+			this.police=police;
+			this.imgRub=imgRub;
+			this.imgOpt=imgOption;
+			this.imgOptFin=imgOptionFin;
+			this.hauteur=hauteur;
+			this.AddRub=AddRub;
+			this.AddLien=AddLien;
+		}
+		
+		function AddRub(txt,aff,page) {
+			var rub = new Object;
+				rub.txt=txt;
+				rub.aff=aff;
+				rub.page=page;
+				rub.nb_lien=0;
+			this[this.num_rub]=rub;
+			this.num_rub++;
+		}
+
+		function AddLien(txt,page) {
+			var no_rub = this.num_rub-1;
+			var no_lien= this[no_rub].nb_lien;
+			var lien = new Object;
+				lien.txt=txt;
+				lien.page=page;
+			this[no_rub][no_lien]=lien;
+			this[no_rub].nb_lien++;
+		}
+		var menu=new CreerMenu("arial","img/dyn04.gif","img/dyn22.gif","img/dyn55.gif",18);
+		//]]> 
+		menu.AddRub("Description médicament","O","#Ann3bQuestceque");
+			menu.AddRub("Informations","O","#Ann3bInfoNecessaires");
+			menu.AddRub("Utilisation","O","#Ann3bCommentPrendre");
+			menu.AddRub("Effets indésirables","O","#Ann3bEffetsIndesirables");
+			menu.AddRub("Conservation","O","#Ann3bConservation");
+			menu.AddRub("Info. supplémentaires","O","#Ann3bEmballage");
+				</script>
+
+	<div id="container">
+		<div id="leftnav">
+			<div id="cadreMenuGauche">
+				<h2 class="sommaireMenu">Sommaire</h2>
+				<div id="menuGauche">
+					<script language="JavaScript" type="text/javascript">Aff(menu);</script>
+				</div>
+			</div>
+		</div>
+		<div id="contentPrincipal">
+			<div id="boutonsliens">
+				<a id='lien_fiche_info' href='extrait.php?specid=69606819' ><img id="ongletficheinfo" alt="Onglet fiche information" src="img/onglet_fiche_info_vert.png" /></a><a id='lien_rcp' href='affichageDoc.php?specid=69606819&amp;typedoc=R'><img class="onglet" alt="Onglet résumé des caractéristiques du produit" src="img/onglet_rcp_vert.png" /></a><a id='lien_notice' href='affichageDoc.php?specid=69606819&amp;typedoc=N'><img class="onglet" alt="Onglet notice patient" src="img/onglet_notice_gris.png" /></a>			</div>
+			<div class="titredeno">
+				<table summary="" border="0" cellspacing="0">
+					<tr><td colspan="3" height="10px"></td></tr>
+					<tr>
+						<td width="15px">&nbsp;</td>
+						<td width="685px"><h1 class="textedeno">MOPRAL 10 mg, gélule gastro-résistante  - Notice patient</h1></td>
+						<td width="43px" class="tdcenter"><a href="Javascript:void(null)" onclick="print();"><img src="img/imprimante.png" height="20px" width="20px" alt="Imprimer le document" title="Imprimer le document" border="0" /></a></td>
+					</tr>
+					<tr><td colspan="3" height="10px"></td></tr>
+				</table>
+			</div>
+			
+			<div id="contentDocument">
+				<div id="textDocument">
+					<p class="DateNotif">ANSM - Mis à jour le : 04/09/2023</p>
+<p class="AmmNoticeTitre1"><a name="Ann3bDenomination">Dénomination du médicament</a></p>
+<p class=AmmDenomination align=center style='text-align:center'><a name="_Toc142278999">MOPRAL 10 mg gélule gastro-résistante</a></p>
+<p class=AmmDenomination align=center style='margin-bottom:0cm;margin-bottom: .0001pt;text-align:center'><span style='font-weight:normal'>Oméprazole</span></p>
+<p class="AmmNoticeTitre1"><a name="Ann3bEncadre">Encadré</a></p>
+<p class=AmmCorpsTexteGras><a name="_Toc142279000"><span lang=FR-BE>Veuillez lire attentivement cette notice avant de prendre ce médicament car elle contient des informations importantes pour vous.</span></a></p>
+<p class=AmmListePuces1 style='text-align:justify'><span style='font-family: Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>Gardez cette notice. Vous pourriez avoir besoin de la relire.</p>
+<p class=AmmListePuces1 style='text-align:justify'><span style='font-family: Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>Si vous avez d’autres questions, interrogez votre médecin ou votre pharmacien.</p>
+<p class=AmmListePuces1 style='text-align:justify'><span style='font-family: Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>Ce médicament vous a été personnellement prescrit. Ne le donnez pas à d’autres personnes. Il pourrait leur être nocif, même si les signes de leur maladie sont identiques aux vôtres.</p>
+<p class=AmmListePuces1 style='text-align:justify'><span style='font-family: Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>Si vous ressentez un quelconque effet indésirable, parlez-en à votre médecin ou votre pharmacien. Ceci s’applique aussi à tout effet indésirable qui ne serait pas mentionné dans cette notice. Voir rubrique 4.</p>
+<p class="AmmNoticeTitre1"><a name="Ann3bSomm">Que contient cette notice ?</a></p>
+<p class=AmmCorpsTexte style='margin-top:0cm;margin-right:0cm;margin-bottom: 0cm;margin-left:14.2pt;margin-bottom:.0001pt;text-indent:-14.2pt'>1. Qu'est-ce que MOPRAL 10 mg, gélule gastro-résistante et dans quels cas est-il utilisé ?</p>
+<p class=AmmCorpsTexte style='margin-top:0cm;margin-right:0cm;margin-bottom: 0cm;margin-left:14.2pt;margin-bottom:.0001pt;text-indent:-14.2pt'>2. Quelles sont les informations à connaître avant de prendre MOPRAL 10 mg, gélule gastro-résistante ?</p>
+<p class=AmmCorpsTexte style='margin-top:0cm;margin-right:0cm;margin-bottom: 0cm;margin-left:14.2pt;margin-bottom:.0001pt;text-indent:-14.2pt'>3. Comment prendre MOPRAL 10 mg, gélule gastro-résistante ?</p>
+<p class=AmmCorpsTexte style='margin-top:0cm;margin-right:0cm;margin-bottom: 0cm;margin-left:14.2pt;margin-bottom:.0001pt;text-indent:-14.2pt'>4. Quels sont les effets indésirables éventuels ?</p>
+<p class=AmmCorpsTexte style='margin-top:0cm;margin-right:0cm;margin-bottom: 0cm;margin-left:14.2pt;margin-bottom:.0001pt;text-indent:-14.2pt'>5. Comment conserver MOPRAL 10 mg, gélule gastro-résistante ?</p>
+<p class=AmmCorpsTexte style='margin-top:0cm;margin-right:0cm;margin-bottom: 0cm;margin-left:14.2pt;margin-bottom:.0001pt;text-indent:-14.2pt'><span style='color:black'>6. Contenu de l’emballage et autres informations.</span></p>
+<h2><a name="Ann3bQuestceque">1. QU’EST-CE QUE MOPRAL 10 mg, gélule gastro-résistante ET DANS QUELS CAS EST-IL UTILISE ?</a>&nbsp;&nbsp;<a href='#HautDePage'><img src='img/BackToTop.jpg' width='15px' height='15px' alt='Retour en haut de la page' title='Retour en haut de la page' /></a></h2>
+<p class=AmmCorpsTexte><a name="_Toc142279003">Classe pharmacothérapeutique - code ATC : A02BC01.</a></p>
+<p class=AmmCorpsTexte><a name="_Toc142279004">MOPRAL 10 mg, gélule gastro-résistante contient la substance active oméprazole. Il appartient à la classe des médicaments appelée inhibiteurs de la pompe à protons. Il diminue la quantité d’acide produite par votre estomac.</a></p>
+<p class=AmmCorpsTexte>MOPRAL 10 mg, gélule gastro-résistante est utilisé pour traiter les affections suivantes :</p>
+<p class=AmmCorpsTexteGras><span class='souligne'>Chez les adultes :</span></p>
+<p class=AmmListePuces1 style='text-align:justify'><span style='font-family: Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>le reflux gastro-œsophagien (RGO). L’acide de l’estomac remonte au niveau de l’œsophage (le tube qui relie la gorge à l’estomac) entraînant douleur, inflammation et brûlures.</p>
+<p class=AmmListePuces1 style='text-align:justify'><span style='font-family: Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>les ulcères de la partie haute de votre intestin (ulcère duodénal) ou de votre estomac (ulcère gastrique).</p>
+<p class=AmmListePuces1 style='text-align:justify'><span style='font-family: Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>les ulcères infectés par une bactérie appelée Helicobacter pylori. Dans ce cas, votre médecin peut également vous prescrire des antibiotiques qui permettent de traiter l’infection et de guérir l’ulcère.</p>
+<p class=AmmListePuces1 style='text-align:justify'><span style='font-family: Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>les ulcères de l’estomac associés à la prise d’anti-inflammatoires non stéroïdiens (AINS). MOPRAL 10 mg, gélule gastro-résistante peut aussi être utilisé pour la prévention de ceux-ci si vous prenez des AINS.</p>
+<p class=AmmListePuces1 style='text-align:justify'><span style='font-family: Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>un excès d’acide dans l’estomac dû à une grosseur au niveau du pancréas (syndrome de Zollinger-Ellison)</p>
+<p class=AmmAnnexeTitre3>Chez les enfants :</p>
+<p class=AmmCorpsTexteGras>Enfants âgés de plus d’un an et avec un poids corporel &#8805; 10 kg</p>
+<p class=AmmListePuces1 style='text-align:justify'><span style='font-family: Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>le reflux gastro-œsophagien (RGO). L’acide de l’estomac remonte au niveau de l’œsophage (le tube qui relie la gorge à l’estomac) entraînant douleur, inflammation et brûlures. </p>
+<p class=AmmListePuces1 style='text-align:justify'><span style='font-family: Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>Les symptômes chez l’enfant peuvent comprendre des remontées dans la bouche du contenu de l'estomac (régurgitation), des vomissements et une prise de poids limitée.</p>
+<p class=AmmCorpsTexteGras style='margin-top:6.0pt;page-break-after:avoid'>Enfants âgés de plus de 4 ans et adolescents </p>
+<p class=AmmListePuces1 style='text-align:justify'><span style='font-family: Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>les ulcères infectés par une bactérie appelée Helicobacter pylori. Dans ce cas, le médecin peut également prescrire à votre enfant des antibiotiques qui permettent de traiter l’infection et de guérir l’ulcère.</p>
+<h2><a name="Ann3bInfoNecessaires">2. QUELLES SONT LES INFORMATIONS A CONNAITRE AVANT DE PRENDRE MOPRAL 10 mg, gélule gastro-résistante ?</a>&nbsp;&nbsp;<a href='#HautDePage'><img src='img/BackToTop.jpg' width='15px' height='15px' alt='Retour en haut de la page' title='Retour en haut de la page' /></a></h2>
+<p class=AmmCorpsTexteGras><a name="_Toc142279015">Ne prenez jamais MOPRAL 10 mg, gélule gastro-résistante :</a></p>
+<p class=AmmListePuces1 style='text-align:justify'><span style='font-family: Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>Si vous êtes allergique à l’oméprazole ou à l’un des autres composants contenus dans ce médicament (mentionnés à la rubrique 6).</p>
+<p class=AmmListePuces1 style='text-align:justify'><span style='font-family: Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>Si vous êtes allergique à un autre inhibiteur de la pompe à protons (par exemple pantoprazole, lanzoprazole, rabéprazole, ésoméprazole).</p>
+<p class=AmmListePuces1 style='text-align:justify'><span style='font-family: Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>Si vous prenez un médicament contenant du nelfinavir (utilisé pour traiter l’infection par le VIH).</p>
+<p class=AmmListePuces1><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>Si vous êtes dans une des situations décrites ci-dessus, ne prenez pas Mopral 10 mg, gélule gastro-résistante. Si vous avez des doutes, parlez-en à votre médecin ou votre pharmacien avant de prendre MOPRAL 10 mg, gélule gastro-résistante.</p>
+<p class=AmmCorpsTexteGras style='margin-top:6.0pt'>Avertissements et précautions</p>
+<p class=AmmCorpsTexte>Adressez-vous à votre médecin ou pharmacien avant de prendre MOPRAL 10 mg, gélule gastro-résistante.</p>
+<p class=AmmCorpsTexte>Des réactions cutanées graves, notamment le syndrome de Stevens-Johnson, la nécrolyse épidermique toxique, la réaction médicamenteuse avec éosinophilie et symptômes systémiques (DRESS) et la pustulose exanthématique aiguë généralisée (PEAG), ont été rapportées en association avec le traitement par Losec. Arrêtez d'utiliser Losec et consultez immédiatement un médecin si vous remarquez l'un des symptômes liés à ces réactions cutanées graves décrites dans la rubrique 4.</p>
+<p class=AmmCorpsTexte>MOPRAL 10 mg, gélule gastro-résistante peut masquer des symptômes d’autres maladies. Par conséquent, avant que vous ne commenciez à prendre MOPRAL 10 mg, gélule gastro-résistante ou lorsque vous êtes sous traitement, vous devez informer immédiatement votre médecin si l’un des éléments suivants se produit :</p>
+<p class=AmmListePuces1 style='text-align:justify'><span style='font-family: Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>Vous perdez du poids sans raison ou si vous avez des problèmes à avaler.</p>
+<p class=AmmListePuces1 style='text-align:justify'><span style='font-family: Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>Vous avez des douleurs à l’estomac ou une indigestion.</p>
+<p class=AmmListePuces1 style='text-align:justify'><span style='font-family: Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>Vous vomissez de la nourriture ou du sang.</p>
+<p class=AmmListePuces1 style='text-align:justify'><span style='font-family: Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>Vous avez des selles noires (teintées de sang).</p>
+<p class=AmmListePuces1 style='text-align:justify'><span style='font-family: Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>Vous souffrez de diarrhée sévère ou persistante, car l’oméprazole a été associé à une faible augmentation de diarrhées infectieuses.</p>
+<p class=AmmListePuces1 style='text-align:justify'><span style='font-family: Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>Si vous avez des problèmes hépatiques sévères.</p>
+<p class=AmmListePuces1 style='text-align:justify'><span style='font-family: Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>S’il vous est déjà arrivé de développer une réaction cutanée après un traitement avec un médicament similaire à Mopral qui réduit l'acidité de l'estomac.</p>
+<p class=AmmListePuces1 style='text-align:justify'><span style='font-family: Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>Vous devez faire un examen sanguin spécifique (Chromogranine A).</p>
+<p class=AmmCorpsTexte style='margin-top:6.0pt'><a name="_Toc142279009">Si vous prenez MOPRAL 10 mg, gélule gastro-résistante au long-cours (durée supérieure à un an), votre médecin vous surveillera probablement de façon régulière. Vous devez définir précisément tous les symptômes et évènements nouveaux ou exceptionnels quand vous voyez votre médecin.</a></p>
+<p class=AmmCorpsTexte>La prise d’un inhibiteur de la pompe à protons tel que MOPRAL 10 mg, gélule gastro-résistante, en particulier sur une période supérieure à un an, peut légèrement augmenter le risque de fracture de la hanche, du poignet ou des vertèbres. Prévenez votre médecin si vous souffrez d'ostéoporose ou si vous prenez des corticoïdes (qui peuvent augmenter le risque d'ostéoporose).</p>
+<p class=AmmCorpsTexte>Si vous avez une éruption sur la peau, en particulier dans les zones exposées au soleil, prévenez votre médecin dès que vous le pouvez, car vous devrez peut-être arrêter votre traitement avec Mopral. Rappelez-vous de mentionner également tout autre effet indésirable tel que des douleurs dans vos articulations.</p>
+<p class=AmmCorpsTexte>Lors de la prise d’oméprazole, une inflammation pourrait apparaître au niveau de vos reins. Les signes et symptômes peuvent inclure une diminution du volume urinaire ou la présence de sang dans les urines et/ou des réactions d’hypersensibilité, telles que fièvre, éruption cutanée et raideur articulaire. Vous devez signaler ces symptômes à votre médecin traitant.</p>
+<p class=AmmCorpsTexte>Ce médicament peut affecter la façon dont votre corps absorbe la vitamine B12, en particulier si vous devez le prendre pendant une longue période. Veuillez contacter votre médecin si vous remarquez l'un des symptômes suivants, qui pourraient indiquer un faible taux de vitamine B12 : </p>
+<p class=AmmListePuces1><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>Fatigue extrême ou manque d'énergie </p>
+<p class=AmmListePuces1><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>Sensation de piqures d’épingles ou d'aiguilles </p>
+<p class=AmmListePuces1><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>Langue rouge ou douloureuse, aphtes </p>
+<p class=AmmListePuces1><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>Faiblesse musculaire </p>
+<p class=AmmListePuces1><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>Troubles de la vision </p>
+<p class=AmmListePuces1><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>Problèmes de mémoire, confusion, dépression</p>
+<p class=AmmCorpsTexteGras style='margin-top:6.0pt'>Enfants</p>
+<p class=AmmCorpsTexte>Certains enfants atteints d’une maladie chronique peuvent nécessiter un traitement à long terme bien que cela ne soit pas recommandé. Ne donnez pas ce médicament aux enfants de moins de 1 an ou &lt; 10 kg.</p>
+<p class=AmmCorpsTexteGras>Autres médicaments et MOPRAL 10 mg, gélule gastro-résistante</p>
+<p class=AmmCorpsTexte>Informez votre médecin ou pharmacien si vous prenez, avez récemment pris ou pourriez prendre tout autre médicament. Cela concerne également les médicaments que vous achetez sans ordonnance.</p>
+<p class=AmmCorpsTexte>MOPRAL 10 mg, gélule gastro-résistante peut interagir sur le fonctionnement d’autres médicaments et certains médicaments peuvent avoir un effet sur MOPRAL.</p>
+<p class=AmmCorpsTexte>Vous ne devez pas prendre MOPRAL 10 mg, gélule gastro-résistante si vous prenez un médicament contenant du <span class='gras'>nelfinavir</span> (utilisé pour traiter l’infection par le VIH).</p>
+<p class=AmmCorpsTexte>Vous devez informer votre médecin ou pharmacien si vous prenez l’un des médicaments suivants :</p>
+<p class=AmmListePuces1 style='text-align:justify'><span style='font-family: Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>Kétoconazole, itraconazole, posaconazole ou voriconazole (utilisés dans le traitement des infections fongiques) ;</p>
+<p class=AmmListePuces1 style='text-align:justify'><span style='font-family: Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>Digoxine (utilisé dans le traitement de problèmes cardiaques) ;</p>
+<p class=AmmListePuces1 style='text-align:justify'><span style='font-family: Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>Diazépam (utilisé dans le traitement de l’anxiété, de l’épilepsie ou comme relaxant musculaire) ;</p>
+<p class=AmmListePuces1 style='text-align:justify'><span style='font-family: Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>Phénytoïne (utilisé dans l’épilepsie) ; si vous prenez de la phénytoïne, une surveillance par votre médecin serait nécessaire au début et à l’arrêt de l’administration de MOPRAL 10 mg, gélule gastro-résistante ;</p>
+<p class=AmmListePuces1 style='text-align:justify'><span style='font-family: Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>Médicaments anticoagulants pour fluidifier le sang tel que la warfarine ou autres anti vitamines K ; une surveillance par votre médecin serait nécessaire au début et à l’arrêt de l’administration de MOPRAL 10 mg, gélule gastro-résistante ;</p>
+<p class=AmmListePuces1 style='text-align:justify'><span style='font-family: Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>Rifampicine (utilisé pour traiter la tuberculose) ;</p>
+<p class=AmmListePuces1 style='text-align:justify'><span style='font-family: Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>Atazanavir (utilisé pour traiter l’infection par le VIH) ;</p>
+<p class=AmmListePuces1 style='text-align:justify'><span style='font-family: Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>Tacrolimus (dans le cas de greffe d’organe) ;</p>
+<p class=AmmListePuces1 style='text-align:justify'><span style='font-family: Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>Millepertuis (Hypericum perforatum) (utilisé dans le traitement de la dépression modérée) ;</p>
+<p class=AmmListePuces1 style='text-align:justify'><span style='font-family: Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>Cilostazol (utilisé dans le traitement de la claudication intermittente) ;</p>
+<p class=AmmListePuces1 style='text-align:justify'><span style='font-family: Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>Saquinavir (utilisé pour traiter l’infection par le VIH) ;</p>
+<p class=AmmListePuces1 style='text-align:justify'><span style='font-family: Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>Clopidogrel (utilisé pour prévenir les caillots de sang (thrombus)). ;</p>
+<p class=AmmListePuces1 style='text-align:justify'><span style='font-family: Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>Erlotinib (utilisé dans le traitement du cancer).</p>
+<p class=AmmListePuces1 style='text-align:justify'><span style='font-family: Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>Méthotrexate (médicament utilisé en chimiothérapie à forte dose dans le traitement du cancer) - si vous prenez une forte dose de méthotrexate, votre médecin peut temporairement arrêter votre traitement par Mopral 10 mg, gélule gastro-résistante.</p>
+<p class=AmmCorpsTexte style='margin-top:6.0pt'>Si votre médecin vous a prescrit les antibiotiques suivants : amoxicilline et clarithromycine avec MOPRAL 10 mg, gélule gastro-résistante pour le traitement d’un ulcère à <span class='italique'>Helicobacter pylori</span>, il est important que vous informiez votre médecin de tous les autres médicaments que vous prenez.</p>
+<p class=AmmCorpsTexteGras>MOPRAL 10 mg, gélule gastro-résistante avec les aliments et boissons. </p>
+<p class=AmmCorpsTexte>Voir rubrique 3.</p>
+<p class=AmmCorpsTexteGras><a name="_Toc142279012">Grossesse, allaitement et fertilité</a></p>
+<p class=AmmCorpsTexte>Si vous êtes enceinte ou que vous allaitez, si vous pensez être enceinte ou planifiez une grossesse demandez conseil à votre médecin ou pharmacien avant de prendre ce médicament.</p>
+<p class=AmmCorpsTexte>L’oméprazole est excrété dans le lait maternel mais il est peu probable qu’il y ait une influence sur l’enfant lorsqu’il est utilisé à doses thérapeutiques.</p>
+<p class=AmmCorpsTexte>Votre médecin vous dira si vous pouvez prendre MOPRAL 10 mg, gélule gastro-résistante pendant l’allaitement.</p>
+<p class=AmmCorpsTexteGras>Conduite de véhicules et utilisation de machines</p>
+<p class=AmmCorpsTexte>MOPRAL n’est pas susceptible d’entraîner des effets sur l’aptitude à conduire des véhicules et à utiliser des machines. Des effets secondaires tels qu’un étourdissement et des troubles visuels peuvent se produire (voir rubrique 4). Si c’est le cas, vous ne devez pas conduire de véhicules ou utiliser des machines.</p>
+<p class=AmmCorpsTexteGras>MOPRAL 10 mg, gélule gastro-résistante contient du lactose et du sodium.</p>
+<p class=AmmCorpsTexte>MOPRAL en gélule contient du lactose. Si votre médecin vous a informé(e) d’une intolérance à certains sucres, contactez-le, avant de prendre ce médicament.</p>
+<p class=AmmCorpsTexte>MOPRAL en gélule contient moins de 1 mmol (23 mg) de sodium par gélule, c’est-à-dire qu’il est essentiellement « sans sodium ».</p>
+<h2><a name="Ann3bCommentPrendre">3. COMMENT PRENDRE MOPRAL 10 mg, gélule gastro-résistante ?</a>&nbsp;&nbsp;<a href='#HautDePage'><img src='img/BackToTop.jpg' width='15px' height='15px' alt='Retour en haut de la page' title='Retour en haut de la page' /></a></h2>
+<p class=AmmCorpsTexte><a name="_Toc142279021">Veillez toujours à prendre ce médicament en suivant exactement les indications de votre médecin ou pharmacien.</a></p>
+<p class=AmmCorpsTexte>Vérifiez auprès de votre médecin ou pharmacien en cas de doute.</p>
+<p class=AmmCorpsTexte>Votre médecin vous dira combien de gélules vous devez prendre et pendant combien de temps vous devez les prendre. Cela dépendra de votre état de santé et de votre âge.</p>
+<p class=AmmCorpsTexteGras><span class='souligne'>Posologie</span></p>
+<p class=AmmCorpsTexte>Les doses recommandées sont mentionnées ci-dessous :</p>
+<p class=AmmCorpsTexteGras><span class='souligne'>Utilisation chez les adultes</span></p>
+<p class=AmmCorpsTexte style='margin-top:6.0pt'><span class='souligne'>Traitement des symptômes du reflux gastro-œsophagien tels que brûlures et régurgitation acide :</span></p>
+<p class=AmmListePuces1 style='text-align:justify'><span style='font-family: Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>Si votre médecin constate que votre œsophage a été légèrement endommagé, la dose recommandée est de 20 mg une fois par jour pendant 4-8 semaines. Votre médecin peut vous demander de prendre une dose de 40 mg pendant 8 semaines supplémentaires si votre œsophage n’a pas encore cicatrisé.</p>
+<p class=AmmListePuces1 style='text-align:justify'><span style='font-family: Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>La dose recommandée une fois que votre œsophage a été guéri est de 10 mg une fois par jour.</p>
+<p class=AmmListePuces1 style='text-align:justify'><span style='font-family: Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>Si votre œsophage n’a pas été endommagé, la dose usuelle est de 10 mg une fois par jour.</p>
+<p class=AmmCorpsTexte style='margin-top:6.0pt'><span class='souligne'>Traitement des ulcères dans la partie haute de votre intestin (ulcère duodénal) : </span></p>
+<p class=AmmListePuces1 style='text-align:justify'><span style='font-family: Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>La dose recommandée est de 20 mg une fois par jour pendant 2 semaines. Votre médecin peut vous demander de prendre la même dose pendant 2 semaines supplémentaires si votre ulcère n’a pas été cicatrisé.</p>
+<p class=AmmListePuces1 style='text-align:justify'><span style='font-family: Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>Si l’ulcère n’a pas été complètement cicatrisé, la dose peut être augmentée à 40 mg une fois par jour pendant 4 semaines.</p>
+<p class=AmmCorpsTexte style='margin-top:6.0pt'><span class='souligne'>Traitement des ulcères de l’estomac (ulcère gastrique) :</span></p>
+<p class=AmmListePuces1 style='text-align:justify'><span style='font-family: Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>La dose recommandée est de 20 mg une fois par jour pendant 4 semaines. Votre médecin peut vous demander de prendre la même dose pendant 4 semaines supplémentaires si votre ulcère n’a pas été cicatrisé. </p>
+<p class=AmmListePuces1 style='text-align:justify'><span style='font-family: Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>Si l’ulcère n’est pas complètement cicatrisé, la dose peut être augmentée à 40 mg une fois par jour pendant 8 semaines.</p>
+<p class=AmmCorpsTexte style='margin-top:6.0pt'><span class='souligne'>Prévention de la récidive de l’ulcère duodénal ou gastrique :</span></p>
+<p class=AmmListePuces1 style='text-align:justify'><span style='font-family: Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>La dose recommandée est de 10 mg ou 20 mg une fois par jour. Votre médecin peut augmenter la dose à 40 mg une fois par jour.</p>
+<p class=AmmCorpsTexte style='margin-top:6.0pt'><span class='souligne'>Traitement de l’ulcère duodénal et gastrique provoqué par des AINS (anti-inflammatoires non stéroïdiens) :</span></p>
+<p class=AmmListePuces1 style='text-align:justify'><span style='font-family: Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>La dose recommandée est de 20 mg une fois par jour pendant 4-8 semaines.</p>
+<p class=AmmCorpsTexte style='margin-top:6.0pt'><span class='souligne'>Prévention des ulcères du duodénum et de l’estomac si vous prenez des AINS :</span></p>
+<p class=AmmListePuces1 style='text-align:justify'><span style='font-family: Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>La dose recommandée est de 20 mg une fois par jour.</p>
+<p class=AmmCorpsTexte style='margin-top:6.0pt;page-break-after:avoid'><span class='souligne'>Traitement et prévention des ulcères provoqués par une infection par <span class='italique'>Helicobacter pylori :</span></span></p>
+<p class=AmmListePuces1 style='text-align:justify;page-break-after:avoid'><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>La dose recommandée est de 20 mg de MOPRAL 10 mg, gélule gastro-résistante deux fois par jour pendant une semaine.</p>
+<p class=AmmListePuces1 style='text-align:justify'><span style='font-family: Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>Votre médecin va vous prescrire en même temps deux antibiotiques parmi l’amoxicilline, la clarithromycine et le métronidazole. </p>
+<p class=AmmCorpsTexte style='margin-top:6.0pt'><span class='souligne'>Traitement d’un excès d’acide dans l’estomac dû à une grosseur au niveau du pancréas (syndrome de Zollinger-Ellison)</span></p>
+<p class=AmmListePuces1 style='text-align:justify'><span style='font-family: Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>La dose recommandée est de 60 mg par jour.</p>
+<p class=AmmListePuces1 style='text-align:justify'><span style='font-family: Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>Votre médecin peut ajuster la dose en fonction de vos besoins et il décidera également de la durée pendant laquelle vous prendrez le médicament.</p>
+<p class=AmmCorpsTexteGras style='margin-top:6.0pt'><span class='souligne'>Utilisation chez les enfants et adolescents :</span></p>
+<p class=AmmCorpsTexte><span class='souligne'>Traitement des symptômes du reflux gastro-œsophagien tels que brûlures et régurgitations acides.</span></p>
+<p class=AmmListePuces1 style='text-align:justify'><span style='font-family: Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>Les enfants âgés de plus de 1 an et pesant plus de 10 kg peuvent prendre MOPRAL 10 mg, gélule gastro-résistante. La posologie dépendra du poids de l’enfant et le médecin décidera de la dose correcte à administrer.</p>
+<p class=AmmCorpsTexte style='margin-top:6.0pt'><span class='souligne'>Traitement et prévention des ulcères provoqués par une infection par <span class='italique'>Helicobacter pylori.</span> </span></p>
+<p class=AmmListePuces1 style='text-align:justify'><span style='font-family: Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>Les enfants âgés de plus de 4 ans peuvent prendre MOPRAL 10 mg, gélule gastro-résistante. La posologie dépendra du poids de l’enfant et le médecin décidera de la dose correcte à administrer.</p>
+<p class=AmmListePuces1 style='text-align:justify'><span style='font-family: Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>Votre médecin prescrira à votre enfant deux antibiotiques en même temps : l’amoxicilline et la clarithromycine.</p>
+<p class=AmmCorpsTexteGras style='margin-top:6.0pt'><span class='souligne'>Posologie</span></p>
+<p class=AmmListePuces1><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>Il est recommandé de prendre vos gélules le matin.</p>
+<p class=AmmListePuces1 style='text-align:justify'><span style='font-family: Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>Les gélules peuvent être prises avec de la nourriture ou à jeun.</p>
+<p class=AmmListePuces1 style='text-align:justify'><span style='font-family: Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>Elles doivent être avalées entières avec un demi-verre d'eau. Les gélules ne doivent pas être mâchées ni croquées car elles contiennent des granulés pelliculés ce qui empêche le médicament d’être détruit par l’acidité de l’estomac. Il est important de ne pas détériorer les granulés.</p>
+<p class=AmmCorpsTexteGras style='margin-top:6.0pt'>Que faire si vous ou votre enfant avez des difficultés à avaler les gélules </p>
+<p class=AmmCorpsTexte>Si vous ou votre enfant avez des difficultés à avaler vos gélules :</p>
+<p class=AmmListePuces1 style='text-align:justify'><span style='font-family: Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>Ouvrir la gélule et avaler le contenu directement avec un demi-verre d’eau ou mettre le contenu dans un verre d’eau non gazeuse, un jus de fruit légèrement acide (jus d’orange, pomme ou ananas) ou dans de la compote de pomme.</p>
+<p class=AmmListePuces1 style='text-align:justify'><span style='font-family: Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>Toujours remuer juste avant de boire le mélange (le mélange ne sera pas homogène). Puis boire le mélange immédiatement ou dans les 30 minutes.</p>
+<p class=AmmListePuces1 style='text-align:justify'><span style='font-family: Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>Pour s’assurer que vous avez bu tout le médicament, bien rincer le verre avec un demi-verre d’eau et le boire. Les morceaux solides contiennent le médicament, ne pas les mâcher ni les croquer. </p>
+<p class=AmmCorpsTexteGras style='margin-top:6.0pt'>Si vous avez pris plus de MOPRAL 10 mg, gélule gastro-résistante que vous n’auriez dû</p>
+<p class=AmmCorpsTexte>Consultez immédiatement votre médecin ou votre pharmacien.</p>
+<p class=AmmCorpsTexteGras><a name="OLE_LINK1">Si vous oubliez de prendre </a>MOPRAL 10 mg, gélule gastro-résistante</p>
+<p class=AmmCorpsTexte><a name="_Toc142279020">Si vous oubliez de prendre une dose, prenez-la dès que vous y pensez. Cependant, si vous êtes à proximité du moment de prendre la dose suivante, ne prenez pas la dose que vous avez oubliée.</a></p>
+<p class=AmmCorpsTexte>Ne prenez pas de dose double pour compenser la dose que vous avez oubliée de prendre.</p>
+<p class=AmmCorpsTexte><span class='gras'>Si vous arrêtez de prendre MOPRAL 10 mg, gélule gastro-résistante</span></p>
+<p class=AmmCorpsTexte>N’arrêtez pas de prendre MOPRAL sans avis au préalable de votre médecin ou votre pharmacien.</p>
+<p class=AmmCorpsTexte>Si vous avez d’autres questions sur l’utilisation de ce médicament, demandez plus d’informations à votre médecin ou votre pharmacien.</p>
+<h2><a name="Ann3bEffetsIndesirables">4. QUELS SONT LES EFFETS INDESIRABLES EVENTUELS ?</a>&nbsp;&nbsp;<a href='#HautDePage'><img src='img/BackToTop.jpg' width='15px' height='15px' alt='Retour en haut de la page' title='Retour en haut de la page' /></a></h2>
+<p class=AmmCorpsTexte><a name="_Toc142279023">Comme tous les médicaments, ce médicament peut provoquer des effets indésirables, mais ils ne surviennent pas systématiquement chez tout le monde. </a></p>
+<p class=AmmCorpsTexteGras>Si vous remarquez un des effets indésirables suivants, ceux-ci étant rares (peut affecter jusqu'à 1 personne sur 1 000) ou très rare (peut affecter jusqu'à 1 personne sur 10 000) mais sérieux, arrêtez de prendre MOPRAL 10 mg, gélule gastro-résistante et contactez immédiatement un médecin :</p>
+<p class=AmmListePuces1 style='text-align:justify'><span style='font-family: Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>Apparition soudaine d’une respiration sifflante, gonflement des lèvres, de la langue et de la gorge ou du corps, éruptions cutanées, perte de connaissance ou difficultés à avaler (réactions allergiques graves). (rare)</p>
+<p class=AmmListePuces1 style='text-align:justify'><span style='font-family: Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>Rougeurs de la peau avec des bulles ou une desquamation. Parfois, les bulles peuvent être importantes et s’accompagner d’un saignement au niveau des lèvres, des yeux, de la bouche, du nez et des parties génitales. Ceci peut correspondre à un syndrome de Stevens-Johnson ou à une nécrolyse épidermique toxique. (très rare)</p>
+<p class=AmmListePuces1><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>Éruption cutanée généralisée, température corporelle élevée et ganglions lymphatiques hypertrophiés (syndrome DRESS ou syndrome d'hypersensibilité aux médicaments). (rare)</p>
+<p class=AmmListePuces1><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>Une éruption cutanée rouge, squameuse et généralisée avec des bosses sous la peau et des cloques, accompagnée de fièvre. Les symptômes apparaissent généralement au début du traitement (pustulose exanthématique aiguë généralisée). (rare)</p>
+<p class=AmmListePuces1 style='text-align:justify'><span style='font-family: Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>Jaunisse, urines foncées et fatigue peuvent être des symptômes d’une maladie du foie. (rare)</p>
+<p class=AmmCorpsTexte style='margin-top:6.0pt;page-break-after:avoid'>Les autres effets indésirables sont :</p>
+<p class=AmmCorpsTexteGras>Effets indésirables fréquents (peuvent affecter jusqu’à 1 personne sur 10)</p>
+<p class=AmmListePuces1 style='text-align:justify'><span style='font-family: Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>Maux de tête.</p>
+<p class=AmmListePuces1 style='text-align:justify'><span style='font-family: Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>Effets sur l’estomac ou l’intestin : diarrhée, douleurs à l’estomac, constipation, flatulence.</p>
+<p class=AmmListePuces1 style='text-align:justify'><span style='font-family: Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>Nausées ou vomissements.</p>
+<p class=AmmListePuces1 style='text-align:justify'><span style='font-family: Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>Polypes bénins dans l'estomac.</p>
+<p class=AmmCorpsTexteGras style='margin-top:6.0pt'>Effets indésirables peu fréquents (peuvent affecter jusqu’à 1 personne sur 100)</p>
+<p class=AmmListePuces1 style='text-align:justify'><span style='font-family: Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>Gonflement des pieds et des chevilles.</p>
+<p class=AmmListePuces1 style='text-align:justify'><span style='font-family: Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>Troubles du sommeil (insomnie).</p>
+<p class=AmmListePuces1 style='text-align:justify'><span style='font-family: Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>Etourdissements, fourmillements, somnolence.</p>
+<p class=AmmListePuces1 style='text-align:justify'><span style='font-family: Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>Vertiges.</p>
+<p class=AmmListePuces1 style='text-align:justify'><span style='font-family: Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>Modifications des résultats des tests sanguins contrôlant le fonctionnement de votre foie.</p>
+<p class=AmmListePuces1 style='text-align:justify'><span style='font-family: Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>Eruptions cutanées, urticaire et démangeaisons.</p>
+<p class=AmmListePuces1 style='text-align:justify'><span style='font-family: Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>Malaise général, manque d’énergie.</p>
+<p class=AmmCorpsTexteGras style='margin-top:6.0pt'>Effets indésirables rares (peuvent affecter jusqu’à 1 personne sur 1000)</p>
+<p class=AmmListePuces1 style='text-align:justify'><span style='font-family: Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>Troubles sanguins tels qu’une diminution du nombre de globules blancs ou de plaquettes. Ces effets peuvent provoquer une faiblesse, des ecchymoses ou faciliter la survenue d’infections.</p>
+<p class=AmmListePuces1 style='text-align:justify'><span style='font-family: Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>Diminution du taux de sodium dans le sang. Celle-ci peut provoquer une faiblesse, des vomissements et des crampes.</p>
+<p class=AmmListePuces1 style='text-align:justify'><span style='font-family: Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>Agitation, confusion ou dépression. </p>
+<p class=AmmListePuces1 style='text-align:justify'><span style='font-family: Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>Troubles du goût.</p>
+<p class=AmmListePuces1 style='text-align:justify'><span style='font-family: Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>Troubles de la vue, tels que vision trouble.</p>
+<p class=AmmListePuces1 style='text-align:justify'><span style='font-family: Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>Respiration sifflante ou souffle court (bronchospasme).</p>
+<p class=AmmListePuces1 style='text-align:justify'><span style='font-family: Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>Sécheresse buccale.</p>
+<p class=AmmListePuces1 style='text-align:justify'><span style='font-family: Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>Inflammation de l’intérieur de la bouche.</p>
+<p class=AmmListePuces1 style='text-align:justify'><span style='font-family: Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>Infection appelée « muguet » qui peut affecter l’intestin et est causée par un champignon.</p>
+<p class=AmmListePuces1 style='text-align:justify'><span style='font-family: Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>Perte de cheveux (alopécie).</p>
+<p class=AmmListePuces1 style='text-align:justify'><span style='font-family: Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>Eruption cutanée lors d’une exposition au soleil.</p>
+<p class=AmmListePuces1 style='text-align:justify'><span style='font-family: Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>Douleurs articulaires (arthralgie) ou musculaires (myalgie).</p>
+<p class=AmmListePuces1 style='text-align:justify'><span style='font-family: Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>Problèmes rénaux sévères (néphrite interstitielle).</p>
+<p class=AmmListePuces1 style='text-align:justify'><span style='font-family: Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>Augmentation de la sueur.</p>
+<p class=AmmCorpsTexteGras style='margin-top:6.0pt;page-break-after:avoid'>Effets indésirables très rares (peuvent affecter jusqu’à 1 personne sur 10 000)</p>
+<p class=AmmListePuces1 style='text-align:justify'><span style='font-family: Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>Modification du nombre de cellules du sang incluant l’agranulocytose (déficit en globules blancs).</p>
+<p class=AmmListePuces1 style='text-align:justify'><span style='font-family: Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>Agressivité.</p>
+<p class=AmmListePuces1 style='text-align:justify'><span style='font-family: Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>Hallucinations visuelles, sensorielles ou auditives.</p>
+<p class=AmmListePuces1 style='text-align:justify'><span style='font-family: Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>Troubles hépatiques sévères entraînant une insuffisance hépatique et une inflammation du cerveau.</p>
+<p class=AmmListePuces1 style='text-align:justify'><span style='font-family: Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>Erythème polymorphe.</p>
+<p class=AmmListePuces1 style='text-align:justify'><span style='font-family: Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>Faiblesse musculaire.</p>
+<p class=AmmListePuces1 style='text-align:justify'><span style='font-family: Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>Gonflement des seins chez l’homme.</p>
+<p class=AmmCorpsTexteGras style='margin-top:6.0pt;page-break-after:avoid'>Effets indésirables de fréquence indéterminée (ne peut être estimée à partir des données disponibles). </p>
+<p class=AmmListePuces1 style='text-align:justify'><span style='font-family: Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>Inflammation de l’intestin (entrainant des diarrhées)</p>
+<p class=AmmListePuces1 style='text-align:justify'><span style='font-family: Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>Si vous prenez MOPRAL 10 mg, gélule gastro-résistante pendant plus de trois mois, il est possible que le taux de magnésium dans votre sang diminue. De faibles taux de magnésium peuvent se traduire par une fatigue, des contractions musculaires involontaires, une désorientation, des convulsions, des sensations vertigineuses, une accélération du rythme cardiaque. Si vous présentez l'un de ces symptômes, veuillez en informer immédiatement votre médecin. De faibles taux de magnésium peuvent également entraîner une diminution des taux de potassium ou de calcium dans le sang. Votre médecin pourra décider d'effectuer des examens sanguins réguliers pour surveiller votre taux de magnésium.</p>
+<p class=AmmListePuces1><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>Eruption cutanée, éventuellement avec des douleurs dans les articulations.</p>
+<p class=AmmCorpsTexte style='margin-top:6.0pt'>MOPRAL 10 mg, gélule gastro-résistante peut dans de très rares cas affecter les globules blancs entraînant un déficit immunitaire. Vous devez consulter votre médecin dès que possible si vous avez une infection avec des symptômes tels que de la fièvre avec une fatigue générale très importante, ou de la fièvre avec des symptômes d’infection locale tels que des douleurs dans le cou, la gorge, la bouche, ou des difficultés à uriner. Si vous avez ces symptômes, un déficit de globules blancs (agranulocytose) pourra être éliminé par un test sanguin. Il est important que vous donniez des informations sur vos médicaments dans ce cas. </p>
+<p class=AmmCorpsTexteGras><span class='souligne'>Déclaration des effets secondaires</span></p>
+<p class=AmmCorpsTexte>Si vous ressentez un quelconque effet indésirable, parlez-en à votre médecin ou votre pharmacien. Ceci s’applique aussi à tout effet indésirable qui ne serait pas mentionné dans cette notice. Vous pouvez également déclarer les effets indésirables directement via le système national de déclaration : Agence nationale de sécurité du médicament et des produits de santé (ANSM) et réseau des Centres Régionaux de Pharmacovigilance - Site internet : <a href="https://signalement.social-sante.gouv.fr">https://signalement.social-sante.gouv.fr</a> </p>
+<p class=AmmCorpsTexte>En signalant les effets indésirables, vous contribuez à fournir davantage d’informations sur la sécurité du médicament.</p>
+<h2><a name="Ann3bConservation">5. COMMENT CONSERVER MOPRAL 10 mg, gélule gastro-résistante ?</a>&nbsp;&nbsp;<a href='#HautDePage'><img src='img/BackToTop.jpg' width='15px' height='15px' alt='Retour en haut de la page' title='Retour en haut de la page' /></a></h2>
+<p class=AmmCorpsTexte><a name="_Toc142279026"></a><a name="_Toc142279024">Tenir ce médicament hors de la vue et de la portée des enfants.</a></p>
+<p class=AmmCorpsTexte>N’utilisez pas ce médicament après la date de péremption indiquée sur la boite, l’étiquette du flacon ou le blister après EXP. La date de péremption fait référence au dernier jour de ce mois.</p>
+<p class=AmmCorpsTexte><a name="_Toc142279025">A conserver à une température ne dépassant pas 30°C.</a></p>
+<p class=AmmCorpsTexte>A conserver dans l'emballage d’origine à l’abri de l’humidité</p>
+<p class=AmmCorpsTexte>Conserver le flacon soigneusement fermé à l’abri de l’humidité.</p>
+<p class=AmmCorpsTexte>Ne jetez aucun médicament au tout-à-l’égout ou avec les ordures ménagères. Demandez à votre pharmacien <span lang=FR-BE>d’éliminer les médicaments que vous n’utilisez plus.</span> Ces mesures contribueront à protéger l’environnement.</p>
+<h2><a name="Ann3bEmballage">6. CONTENU DE L’EMBALLAGE ET AUTRES INFORMATIONS</a>&nbsp;&nbsp;<a href='#HautDePage'><img src='img/BackToTop.jpg' width='15px' height='15px' alt='Retour en haut de la page' title='Retour en haut de la page' /></a></h2>
+<p class="AmmAnnexeTitre2"><a name="Ann3bContenu">Ce que contient MOPRAL 10 mg, gélule gastro-résistante</a>&nbsp;&nbsp;<a href='#HautDePage'><img src='img/BackToTop.jpg' width='15px' height='15px' alt='Retour en haut de la page' title='Retour en haut de la page' /></a></p>
+<p class=AmmListePuces1><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>La substance active est : l’oméprazole. </p>
+<p class=AmmCorpsTexte style='margin-top:6.0pt;margin-right:0cm;margin-bottom: 6.0pt;margin-left:17.85pt'>Une gélule contient 10 mg d’oméprazole.</p>
+<p class=AmmListePuces1><a name="_Toc142279028"><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>         </span></span>Les autres composants sont : </a></p>
+<p class=AmmComposition style='margin-top:6.0pt;margin-right:0cm;margin-bottom: 6.0pt;margin-left:17.85pt'>Mannitol, hydroxypropylcellulose à faible substitution, cellulose microcristalline, lactose anhydre, laurylsulfate de sodium, phosphate disodique dihydraté, hypromellose, acide méthacrylique – copolymère d’acrylate d’éthyle (1 : 1) dispersion 30%, macrogol (glycolpolyéthylène 400), stéarate de magnésium.</p>
+<p class=AmmComposition style='margin-top:6.0pt;margin-right:0cm;margin-bottom: 6.0pt;margin-left:17.85pt'><span class='gras'><span class='souligne'>Composition de l’enveloppe de la gélule :</span></span> oxyde de fer rouge (E 172), dioxyde de titane (E 171), gélatine, stéarate de magnésium, laurylsulfate de sodium, encre (contenant de la laque, de l’ammoniaque, de l’hydroxyde de potassium et de l’oxyde de fer noir (E 172)), Silice colloïdale anhydre, paraffine liquide (voir rubrique 2 : MOPRAL 10 mg, gélule gastro-résistante contient du lactose).</p>
+<p class="AmmAnnexeTitre2"><a name="RcpEmballage">Qu’est-ce que MOPRAL 10 mg, gélule gastro-résistante et contenu de l’emballage extérieur</a>&nbsp;&nbsp;<a href='#HautDePage'><img src='img/BackToTop.jpg' width='15px' height='15px' alt='Retour en haut de la page' title='Retour en haut de la page' /></a></p>
+<p class=AmmCorpsTexte><a name="_Toc142279030">Les gélules de MOPRAL 10 mg, gélule gastro-résistante ont un corps rose opaque portant la mention 10 et une tête rose opaque portant la mention A/OS, contenant des granulés gastrorésistants. </a></p>
+<p class=AmmCorpsTexte>Flacons PEHD de : 14, 28, 30 gélules.</p>
+<p class=AmmCorpsTexte>Plaquettes de : 14, 28 (Aluminium/Aluminium).</p>
+<p class=AmmCorpsTexte>Toutes les présentations peuvent ne pas être commercialisées.</p>
+<p class="AmmAnnexeTitre2"><a name="Ann3bTituAMM">Titulaire de l’autorisation de mise sur le marché</a>&nbsp;&nbsp;<a href='#HautDePage'><img src='img/BackToTop.jpg' width='15px' height='15px' alt='Retour en haut de la page' title='Retour en haut de la page' /></a></p>
+<p class=AmmCorpsTexteGras style='margin-bottom:0cm;margin-bottom:.0001pt'><a name="_Toc142279031"><span lang=DE>CHEPLAPHARM ARZNEIMITTEL GMBH</span></a></p>
+<p class=AmmCorpsTexte style='margin-bottom:0cm;margin-bottom:.0001pt'><span lang=DE>ZIEGELHOF 24</span></p>
+<p class=AmmCorpsTexte style='margin-bottom:0cm;margin-bottom:.0001pt'><span lang=DE>17489 GREIFSWALD</span></p>
+<p class=AmmCorpsTexte style='margin-bottom:0cm;margin-bottom:.0001pt'><span lang=DE>ALLEMAGNE</span></p>
+<p class="AmmAnnexeTitre2"><a name="Ann3bExploitAMM">Exploitant de l’autorisation de mise sur le marché</a>&nbsp;&nbsp;<a href='#HautDePage'><img src='img/BackToTop.jpg' width='15px' height='15px' alt='Retour en haut de la page' title='Retour en haut de la page' /></a></p>
+<p class=AmmCorpsTexteGras style='margin-bottom:0cm;margin-bottom:.0001pt'><a name="_Toc142279032">CHEPLAPHARM FRANCE</a></p>
+<p class=AmmCorpsTexte style='margin-bottom:0cm;margin-bottom:.0001pt'>105 RUE ANATOLE FRANCE</p>
+<p class=AmmCorpsTexte>92300 LEVALLOIS-PERRET</p>
+<p class="AmmAnnexeTitre2"><a name="Ann3bFab">Fabricant</a>&nbsp;&nbsp;<a href='#HautDePage'><img src='img/BackToTop.jpg' width='15px' height='15px' alt='Retour en haut de la page' title='Retour en haut de la page' /></a></p>
+<p class=AmmCorpsTexteGras style='margin-bottom:0cm;margin-bottom:.0001pt'><a name="_Toc142279033"><span lang=EN-US>SANECA PHARMACEUTICALS A.S.</span></a></p>
+<p class=AmmCorpsTexte style='margin-bottom:0cm;margin-bottom:.0001pt'>NITRIANSKA 100</p>
+<p class=AmmCorpsTexte style='margin-bottom:0cm;margin-bottom:.0001pt'>HLOHOVEC</p>
+<p class=AmmCorpsTexte style='margin-bottom:0cm;margin-bottom:.0001pt'>92027</p>
+<p class=AmmCorpsTexte style='margin-bottom:0cm;margin-bottom:.0001pt'>SLOVAQUIE</p>
+<p class=AmmCorpsTexte style='margin-top:6.0pt'>OU</p>
+<p class=AmmCorpsTexteGras style='margin-bottom:0cm;margin-bottom:.0001pt'><span lang=EN-US>CHEPLAPHARM ARZNEIMITTEL GMBH</span></p>
+<p class=AmmCorpsTexte style='margin-bottom:0cm;margin-bottom:.0001pt'>ZIEGELHOF 23-24</p>
+<p class=AmmCorpsTexte style='margin-bottom:0cm;margin-bottom:.0001pt'>17489 GREIFSWALD</p>
+<p class=AmmCorpsTexte style='margin-bottom:0cm;margin-bottom:.0001pt'>ALLEMAGNE</p>
+<p class="AmmAnnexeTitre2"><a name="Ann3bNomsMediEEE">Noms du médicament dans les Etats membres de l'Espace Economique Européen</a>&nbsp;&nbsp;<a href='#HautDePage'><img src='img/BackToTop.jpg' width='15px' height='15px' alt='Retour en haut de la page' title='Retour en haut de la page' /></a></p>
+<p class=AmmCorpsTexteGras>Ce médicament est autorisé dans les Etats membres de l'Espace Economique Européen sous les noms suivants : Conformément à la réglementation en vigueur. </p>
+<p class=AmmCorpsTexte>[À compléter ultérieurement par le titulaire]</p>
+<p class="AmmAnnexeTitre2"><a name="Ann3bContenu">La dernière date à laquelle cette notice a été révisée est :</a>&nbsp;&nbsp;<a href='#HautDePage'><img src='img/BackToTop.jpg' width='15px' height='15px' alt='Retour en haut de la page' title='Retour en haut de la page' /></a></p>
+<p class=AmmCorpsTexte><a name="_Toc142279038">[à compléter ultérieurement par le titulaire]</a></p>
+<p class="AmmAnnexeTitre2"><a name="Ann3bAutres">Autres</a>&nbsp;&nbsp;<a href='#HautDePage'><img src='img/BackToTop.jpg' width='15px' height='15px' alt='Retour en haut de la page' title='Retour en haut de la page' /></a></p>
+<p class=AmmCorpsTexte>Des informations détaillées sur ce médicament sont disponibles sur le site Internet de l’ANSM (France).</p>
+</div>					
+					<p class="alignright"><a href="#HautDePage">Retour en haut de la page <img src="img/BackToTop.jpg" width="20px" height="20px" alt="Retour en haut de la page" title="Retour en haut de la page" /></a></p>
+				</div>
+			</div>
+		</div>
+	</div>
+
+<table summary="" class="content" width="1000">
+	<tr>
+		<td height="100px">&nbsp;</td>
+	</tr>
+</table>
+<table summary="Pied de page" class="footer" width="1000">
+	<tr>
+		<td>
+			<table summary="" class="tablealigncenter" border="0">
+				<tr>
+					<td width="100px" class="aligncenter"><a id="lien_ansm" href="http://ansm.sante.fr/" target="_blank"><img src="img/Logo_ANSM.png" width="150" height="60" alt="ANSM - Agence nationale de sécurité du médicament et des produits de santé" title="L'ANSM met à disposition les principales informations issues de l'Autorisation de mise sur le marché, l'appartenance à un groupe générique, les liens vers les informations de sécurité qu'elle publie, l'identification des médicaments sous surveillance renforcée - nouvelle fenêtre" /></a></td>
+					          <td>&nbsp;</td>
+					<td width="100px" class="aligncenter"><img src="img/Logo_HAS.png" width="150" height="60" alt="HAS - Haute autorité de santé" title="La HAS met à disposition les informations relatives au service médical rendu, à l'amélioration du service médical rendu ainsi que les liens vers les avis de la Commission de la Transparence correspondants - nouvelle fenêtre" /></td>
+					<td>&nbsp;</td>
+					<td width="100px" class="aligncenter"><img src="img/Logo_CNAM.png" width="150" height="60" alt="UNCAM - Unin nationale des caisses d'assurance maladie" title="L'UNCAM met à disposition le taux de remboursement, le prix et les indications remboursables le cas échéant, ainsi que l'agrément aux collectivités - nouvelle fenêtre" /></td>
+          				</tr>
+			</table> 
+		</td>
+	</tr>
+</table>
+<table summary="" class="finpage" width="1000">
+	<tr>
+		<td height="100px" class="aligncenter">
+			<a class="navigation" href="plan.php">Plan du site</a>&nbsp;|&nbsp;
+			<a class="navigation" href="accessibilite.php">Accessibilité</a>&nbsp;|&nbsp;
+			<a class="navigation" href="contact.php">Contact</a>&nbsp;|&nbsp;
+			<a class="navigation" href="telechargement.php">Téléchargement</a>&nbsp;|&nbsp;
+			<a class="navigation" href="DeclarationConfidentialite.php">Declaration de confidentialité</a>&nbsp;|&nbsp;
+			<a class="navigation" href="http://www.service-public.fr/" title="Service Public - Nouvelle fenêtre" target="_blank">Service-Public.fr</a>&nbsp;|&nbsp;
+			<a class="navigation" href="http://www.legifrance.gouv.fr/" title="Legifrance - Nouvelle fenêtre" target="_blank">Legifrance</a>&nbsp;|&nbsp;
+			<a class="navigation" href="http://www.gouvernement.fr/" title="Gouvernement - Nouvelle fenêtre" target="_blank" >Gouvernement.fr</a>
+		</td>
+	</tr>
+</table>
+
+
+
+<!-- Matomo -->
+<script type="text/javascript">
+  var _paq = window._paq = window._paq || [];
+  /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
+  _paq.push(['trackPageView']);
+  _paq.push(['enableLinkTracking']);
+  (function() {
+    var u="https://stats.integra.fr/";
+    _paq.push(['setTrackerUrl', u+'matomo.php']);
+    _paq.push(['setSiteId', '79']);
+    var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+    g.type='text/javascript'; g.async=true; g.src=u+'matomo.js'; s.parentNode.insertBefore(g,s);
+  })();
+</script>
+<!-- End Matomo Code -->
+
+
+
+</body>
+</html>
